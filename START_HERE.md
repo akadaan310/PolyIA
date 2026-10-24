@@ -1,25 +1,15 @@
-# Start Poly IA in Codex
+# Poly IA: open the runtime branch
 
-The complete commission is extracted in this repository. **No ZIP upload or manual extraction is required.**
+The extracted commission and deployed runtime are on **[codex/commission-20261024-83906c7](https://github.com/akadaan310/PolyIA/tree/codex/commission-20261024-83906c7)**. This default branch retains the original import transport; it is not the extracted runtime checkout.
 
-Open or clone <https://github.com/akadaan310/PolyIA> in Codex. Read [CODEX_START.md](CODEX_START.md), then [GOD_SEED.md](GOD_SEED.md) completely, and execute the commission. All sources, books, registries, runtime code, tests, and the commissioning interface are repository files.
+Read the **[current safe-checkpoint handoff](https://github.com/akadaan310/PolyIA/blob/codex/commission-20261024-83906c7/docs/HANDOFF_2026-10-24.md)** for the actual live URL, deployed source, ledger checkpoint, access instructions, verification and unfinished work. Runtime 1.4.0 is live; the full mission remains **NOT_COMMISSIONED**. Commissioning stopped at the owner's request after verification. Continue only when the owner requests resumption.
 
-## Copy this into Codex
-
-```text
-Work in https://github.com/akadaan310/PolyIA. The complete commission and all preserved package sources are already extracted in the repository. Inspect the checkout and preserve any concurrent work. Read START_HERE.md and CODEX_START.md, then read GOD_SEED.md completely and follow its linked source, scientific, authority, acceptance, and operating documents. Execute the full Option A commission, including all incorporated B/C requirements.
-
-Your first operational deliverable is the real live, inspectable, machine-operable state service on the actual target environment. Use it throughout commissioning, with durable event history, acknowledged and actually applied guidance, source-linked checkpoints, and evidence-backed completion. Preserve the non-LLM core requirement. Division Infinity is IX; VII and VIII are open research charters. Do not stop at planning, the bootstrap, or its successful demonstration. Keep the full mission NOT_COMMISSIONED until its acceptance gates pass, then carry forward the Automaton Science University mandate.
-```
-
-## First repository checks
+For a new checkout:
 
 ```bash
-python3 tools/verify_package.py --require-release-manifest
-python3 tools/audit_no_llm.py
-python3 -m unittest discover -s tests -v
+git clone --branch codex/commission-20261024-83906c7 https://github.com/akadaan310/PolyIA.git
 ```
 
-Follow [the operator runbook](docs/OPERATOR_RUNBOOK.md) for the actual target installation, supported Python/SQLite/POSIX environment, authentication, persistent storage, and service supervision. The supplied bootstrap is runnable; the full Poly IA mission remains `NOT_COMMISSIONED`.
+For an existing checkout, inspect and preserve local/concurrent work before switching. Do not re-import this transport over an existing runtime tree or initialize a replacement live ledger.
 
-The original commission ZIP and prompt copies remain separately preserved. [GitHub handoff notes](docs/GITHUB_HANDOFF.md) identify the publication-only adjustments and the original release identity.
+Then follow [START_HERE.md](https://github.com/akadaan310/PolyIA/blob/codex/commission-20261024-83906c7/START_HERE.md), [CODEX_START.md](https://github.com/akadaan310/PolyIA/blob/codex/commission-20261024-83906c7/CODEX_START.md), and the complete [GOD_SEED.md](https://github.com/akadaan310/PolyIA/blob/codex/commission-20261024-83906c7/GOD_SEED.md) on the runtime branch. All original sources are retained there. Infinity is IX; VII and VIII remain open research charters. The non-LLM core requirement and all unmet acceptance gates remain binding.
