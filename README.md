@@ -2,21 +2,21 @@
 
 **Commission edition 1.0.0 · 24 October 2026 · Owner: Abed Kadaan**  
 **Destination:** <https://github.com/akadaan310/PolyIA>  
-**Runtime 1.1.0 · ledger schema 2 · full mission: `NOT_COMMISSIONED`**
+**Runtime 1.4.0 · ledger schema 2 · full mission: `NOT_COMMISSIONED`**
 
-**Repository handoff:** all package contents are extracted in this repository. Use [START_HERE.md](START_HERE.md) and [CODEX_START.md](CODEX_START.md) directly; see [GitHub handoff notes](docs/GITHUB_HANDOFF.md) for publication provenance.
+**Runtime branch:** [`codex/commission-20261024-83906c7`](https://github.com/akadaan310/PolyIA/tree/codex/commission-20261024-83906c7). All package contents are extracted there; the default `main` branch retains the earlier import transport. Read the [current safe-checkpoint handoff](docs/HANDOFF_2026-10-24.md), then [START_HERE.md](START_HERE.md) and [CODEX_START.md](CODEX_START.md). Commissioning stopped at the owner's request; the live service remains available.
 
 This is the consolidated **Option A commission, explicitly including the B and C productions**: constitution, scientific foundations, vocabulary, division charters, source reconciliation, acceptance system, runnable state-machine harness, produce/verify lifecycle, acknowledged guidance, and working commissioning interface. It contains the retained sources, executable bootstrap, tests, deployment templates, and instructions for Codex to complete Poly IA and establish its continuing Automaton Science University mandate.
 
-The seed has real local behavior. Codex's first operational deliverable is to install and demonstrate its live, inspectable, machine-operable state service on the actual target environment, then use that service throughout commissioning. The Oracle deployment and full Poly IA application remain execution obligations; a passing bootstrap does not certify them.
+The state service is deployed on Oracle VM `ollama-a1`, with authenticated HTTPS, durable history, applied guidance and source-linked checkpoints. Runtime 1.4 adds typed forms, constructive generators and the durable machine client. Its finite checks and two accepted mission obligations do not complete the full Poly IA application. See [release evidence](docs/RELEASE_1_4_COMMISSIONING.md) and the current handoff for exact scope.
 
 ## 1. Start here
 
-1. Clone or open the PolyIA repository. The complete package is already extracted here; no ZIP upload or manual extraction is required. Start with [START_HERE.md](START_HERE.md). Inspect existing work and preserve concurrent changes.
+1. Clone or open the runtime branch named above. Start with [the handoff](docs/HANDOFF_2026-10-24.md) and [START_HERE.md](START_HERE.md). Inspect existing work and preserve concurrent changes.
 2. Read [GOD_SEED.md](GOD_SEED.md) completely and [CODEX_START.md](CODEX_START.md). The latter contains the copyable execution directive.
 3. Check [source reconciliation](docs/SOURCE_RECONCILIATION.md), [acceptance](docs/ACCEPTANCE_SYSTEM.md), and the [operator runbook](docs/OPERATOR_RUNBOOK.md).
-4. Run the package verifier and tests, then initialize a **fresh** ledger and demonstrate recovery. Schema-1 development databases are refused by this release; no implicit migration is claimed.
-5. Give Codex the start directive with actual project/VM access. Require the real service URL, authenticated access method, source-linked checkpoint, and restart evidence before moving beyond the first operational delivery gate.
+4. Verify the package and inspect the existing service. Use disposable ledgers for tests; never replace the live ledger with a fresh demonstration. Schema-1 development databases are refused by this release.
+5. On an explicit owner request to resume, use the start directive with actual project/VM access and continue from the retained source-linked checkpoint.
 
 The current owner decision is recorded in [authority.json](registry/authority.json): **Division Infinity is IX; VII and VIII are open research charters.** Existing I–VI names and all 62 canonical topic identities remain intact. Provisional VII/VIII research themes are constructive synthesis and evidence-governed evolution; they are not silently frozen as permanent disciplines.
 

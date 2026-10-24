@@ -1,0 +1,21 @@
+{
+  "files": {
+    "DESIGN.md": {
+      "bytes": 20202,
+      "sha256": "e8c5418cce617e1335a49ebe914adc28d339b1cf5672d8c2d46b7efbac284f58"
+    },
+    "source-audit.json": {
+      "bytes": 5322336,
+      "sha256": "5e0a00d6a1b7ee666c4422cd0c0cf9459f6ac8129ccacb684b8298d77b0fac0c"
+    }
+  },
+  "implementation_started": false,
+  "lifecycle_code_written": false,
+  "lifecycle_tests_written_or_run": false,
+  "live_changes": false,
+  "preserved_from": "/tmp/polyia-experiment-design-bw6vwcqu",
+  "sealed_base_commit": "9667b6e9c9e9195fd8ac36fd2f22179e923ee0b8",
+  "status": "DESIGN_ONLY",
+  "stop_reason": "Owner requested stop at next safe checkpoint to conserve usage.",
+  "verification": "Copied design and audit retained; audit JSON parses and source-audit bytes match original. No lifecycle implementation success claimed."
+}

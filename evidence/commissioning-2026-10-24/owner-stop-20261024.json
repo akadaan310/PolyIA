@@ -1,0 +1,252 @@
+{
+  "ok": true,
+  "scope": "owner-requested safe stop after actual runtime1.4 verification",
+  "commands": [
+    {
+      "request": {
+        "command_id": "owner-stop-20261024-0",
+        "expected_revision": 116,
+        "kind": "guidance.submit",
+        "payload": {
+          "target": "research",
+          "text": "Owner instruction: finish current bounded verification, preserve work on the existing branch, commit and push the verified increment, retain unfinished work with status, publish a concise handoff and correct runtime-branch entry instructions. End after handoff to conserve remaining usage. Keep NOT_COMMISSIONED.",
+          "action": {
+            "kind": "pause_research"
+          }
+        }
+      },
+      "receipt": {
+        "ok": true,
+        "command_id": "owner-stop-20261024-0",
+        "actor": "operator",
+        "revision": 117,
+        "head": "a217d4eaf404a0c696322ae75c7e61885aa52e2943dae28da6938fd282b6b70f",
+        "result": {
+          "guidance_id": "owner-stop-20261024-0",
+          "status": "SUBMITTED"
+        }
+      }
+    },
+    {
+      "request": {
+        "command_id": "owner-stop-20261024-1",
+        "expected_revision": 117,
+        "kind": "guidance.ack",
+        "payload": {
+          "guidance_id": "owner-stop-20261024-0",
+          "disposition": "ACKNOWLEDGED",
+          "reason": "Actual1.4 verification completed:22 live checks and8 live Chromium checks; all next-stage implementation stopped before code began. Handoff/publication are the remaining authorized closure tasks."
+        }
+      },
+      "receipt": {
+        "ok": true,
+        "command_id": "owner-stop-20261024-1",
+        "actor": "operator",
+        "revision": 118,
+        "head": "283b79d34293ffddc8862990a06655dc2e81f2ee7901e46fc64b6cf5620c1471",
+        "result": {
+          "guidance_id": "owner-stop-20261024-0",
+          "status": "ACKNOWLEDGED"
+        }
+      }
+    },
+    {
+      "request": {
+        "command_id": "owner-stop-20261024-2",
+        "expected_revision": 118,
+        "kind": "guidance.apply",
+        "payload": {
+          "guidance_id": "owner-stop-20261024-0"
+        }
+      },
+      "receipt": {
+        "ok": true,
+        "command_id": "owner-stop-20261024-2",
+        "actor": "operator",
+        "revision": 119,
+        "head": "0ff2d132f1d8d814702784581bfcac1981e526d693924ccb30f02f1ad8270090",
+        "result": {
+          "guidance_id": "owner-stop-20261024-0",
+          "status": "APPLIED",
+          "applied_revision": 119,
+          "effects": [
+            {
+              "path": "research.paused",
+              "before": false,
+              "after": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "command_id": "owner-stop-20261024-3",
+        "expected_revision": 119,
+        "kind": "checkpoint.create",
+        "payload": {
+          "note": "Owner-requested safe stop. Deployed1.4 local9667b6e/remote19011bd; PIA040042 accepted, full mission NOT_COMMISSIONED. Research pause applied; next promotion/QBundle/lifecycle designs retained; finish repository handoff then end."
+        }
+      },
+      "receipt": {
+        "ok": true,
+        "command_id": "owner-stop-20261024-3",
+        "actor": "operator",
+        "revision": 120,
+        "head": "6334f35f101954ca01a4db0d8ac85f91c9b09c18bc458fb0e775bef0778962d7",
+        "result": {
+          "checkpoint_id": "cp-00000120",
+          "previous_id": "cp-00000116",
+          "source_context": {
+            "schema_version": 1,
+            "version": 12,
+            "captured_revision": 120,
+            "captured_at": "2026-10-24T09:27:21.461004+00:00",
+            "registry_origin": "package",
+            "status": "SOURCED",
+            "objects": [
+              {
+                "role": "constitution",
+                "path": "registry/constitution.json",
+                "origin": "package",
+                "required": true,
+                "sha256": "60d2d8e09680e1ac527c58f004c0df81fee52d29fca3912147b9d8d47f1874a2",
+                "size": 215595
+              },
+              {
+                "role": "source-manifest",
+                "path": "registry/sources.json",
+                "origin": "package",
+                "required": true,
+                "sha256": "17a8157934f1a0a29577c5756389b9de09f9e7f8f2e92a077796a5ba784dc74a",
+                "size": 229273
+              },
+              {
+                "role": "authority",
+                "path": "registry/authority.json",
+                "origin": "package",
+                "required": true,
+                "sha256": "fd26d35be39ad684d31ec4e77100d1ecc791cef936428c01a10d46134ffa829a",
+                "size": 2038
+              },
+              {
+                "role": "repository-pins",
+                "path": "registry/repositories.json",
+                "origin": "package",
+                "required": false,
+                "sha256": "1a211944f676383c51445303286b70c78407d205c9c6c4f928bc076d0bd6f8f1",
+                "size": 286442
+              },
+              {
+                "role": "inherited-obligations",
+                "path": "registry/inherited_obligations.json",
+                "origin": "package",
+                "required": false,
+                "sha256": "3809c52c0678a3e3a0ad3dcbd4c729beb9f49ae915a23f088a2f8196ddabc998",
+                "size": 328173
+              },
+              {
+                "role": "runtime-source",
+                "path": "polyia/__init__.py",
+                "origin": "package",
+                "required": true,
+                "sha256": "0e18f59d169d515a578564334ce81bbd81aa47b9af08b39dd567a3269bfe4ba4",
+                "size": 109
+              },
+              {
+                "role": "runtime-source",
+                "path": "polyia/store.py",
+                "origin": "package",
+                "required": true,
+                "sha256": "c3f50af2810e5f0e1b7b3090adff2b4bf977d3ddad0d27e2b5c7486024d4e334",
+                "size": 102745
+              },
+              {
+                "role": "runtime-source",
+                "path": "polyia/experiments.py",
+                "origin": "package",
+                "required": true,
+                "sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+                "size": 18298
+              },
+              {
+                "role": "runtime-source",
+                "path": "polyia/cli.py",
+                "origin": "package",
+                "required": true,
+                "sha256": "fbc88b11a101f0b3678c7a19266df9a844688226b13feaf5145e3fe407c8adfe",
+                "size": 10506
+              },
+              {
+                "role": "runtime-source",
+                "path": "polyia/server.py",
+                "origin": "package",
+                "required": true,
+                "sha256": "560b8750797e1bfdc4b2ed4c52ec132c0a2d377f605f486d2b58c411541f1c9a",
+                "size": 29965
+              },
+              {
+                "role": "runtime-source",
+                "path": "polyia/__main__.py",
+                "origin": "package",
+                "required": true,
+                "sha256": "0952a82fc4e578988ba64e72bc45884a2a365b90130e04f681c68f8425e6b60f",
+                "size": 114
+              }
+            ],
+            "missing": [],
+            "definition_binding": {
+              "status": "MATCH",
+              "genesis_definitions_sha256": "068eaa5bb10e91f67d63f782dace183d8145bbf05677304e1f7cd4f0b1f0352f",
+              "captured_constitution_requirements_sha256": "068eaa5bb10e91f67d63f782dace183d8145bbf05677304e1f7cd4f0b1f0352f"
+            },
+            "external_sources": {
+              "source_manifest_sha256": "17a8157934f1a0a29577c5756389b9de09f9e7f8f2e92a077796a5ba784dc74a",
+              "storage": "IMMUTABLE_PACKAGE_FILES",
+              "corpus_bytes_copied": 0,
+              "verification_scope": "Manifest bytes captured; corpus files remain external"
+            },
+            "execution_context": {
+              "runtime_version": "1.4.0",
+              "python_version": "3.13.17",
+              "sqlite_version": "3.53.1",
+              "scientific_kernel": {
+                "module": "polyia.experiments",
+                "sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+                "loaded_code_sha256": "b5c12e42c4cb101d20c0c10d3bf56415c334633ee4a54f441734353efaceea64",
+                "package_version": "1.4.0",
+                "python_version": "3.13.17",
+                "source_binding": "PINNED_SOURCE_MATCHES_LOADED_CODE"
+              }
+            },
+            "digest": "45d013db8d32f6f3daa44b3ba1230acd9bdd9a8967750038e6bcb06e28d61ef9"
+          }
+        }
+      }
+    }
+  ],
+  "origin": "https://developed-carmen-recruitment-worm.trycloudflare.com",
+  "revision": 120,
+  "head": "6334f35f101954ca01a4db0d8ac85f91c9b09c18bc458fb0e775bef0778962d7",
+  "checkpoint": {
+    "id": "cp-00000120",
+    "note": "Owner-requested safe stop. Deployed1.4 local9667b6e/remote19011bd; PIA040042 accepted, full mission NOT_COMMISSIONED. Research pause applied; next promotion/QBundle/lifecycle designs retained; finish repository handoff then end.",
+    "previous_id": "cp-00000116",
+    "revision": 120
+  },
+  "accepted": [
+    "BOOT-001",
+    "BOOT-002",
+    "PIA-040",
+    "PIA-042"
+  ],
+  "research": {
+    "paused": true
+  },
+  "acknowledged_text_only": {
+    "live-742694d0c94548f7a8e4cdc08c36d4cf-3": "ACKNOWLEDGED",
+    "live-742694d0c94548f7a8e4cdc08c36d4cf-5": "ACKNOWLEDGED",
+    "owner-book-clarification-20261024": "ACKNOWLEDGED"
+  },
+  "pending_guidance": []
+}

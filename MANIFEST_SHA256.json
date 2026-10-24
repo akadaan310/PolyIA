@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "release": "Poly IA commission1.0.0+runtime1.4.0",
+  "release": "Poly IA commission1.0.0+runtime1.4.0.handoff1",
   "as_of": "2026-10-24",
   "scope": "Complete extracted repository publication; all retained original sources, plus repository launch and import files.",
   "original_release_sha256": "0a3d284e23904cecae2e8b1650b8678b15a79c3580c9ed71a52c0e8a85381803",
@@ -28,8 +28,8 @@
     },
     {
       "path": "CODEX_START.md",
-      "bytes": 5787,
-      "sha256": "ec569bae42642bd2f87458fc365cff423c027cddb21b7137969bddf952d664fb"
+      "bytes": 6287,
+      "sha256": "3f95e11936b834a748de36edf5f1c8a976234d31046101ae4cb8bf2d725d8045"
     },
     {
       "path": "GOD_SEED.md",
@@ -38,13 +38,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 14368,
-      "sha256": "6ab8f1c386f70cdd3cb6ab4865d87f62572fd4718cd44a60c3e45a22834159dd"
+      "bytes": 14567,
+      "sha256": "3814be3fde444736fa3d62f0ff281fe4510b50a14585a204d9d2d16c840c5137"
     },
     {
       "path": "START_HERE.md",
-      "bytes": 2164,
-      "sha256": "4b11f1d6f03d1181824ebd32a1088821a0d30411f6368d827017306ab902807b"
+      "bytes": 3041,
+      "sha256": "d2ef430e506101bf2f4a113723da81e7d7d1e6c06f49afbfac9790be0e88b74d"
     },
     {
       "path": "books/book-of-forms/BOOK.md",
@@ -182,6 +182,16 @@
       "sha256": "bd112117201b0d0a0cf8314c950a602cccfaa5fe34e18c32cf6e34ed478ca10c"
     },
     {
+      "path": "docs/HANDOFF_2026-10-24.md",
+      "bytes": 6010,
+      "sha256": "815960908f5fcba13d1ae0440ceff4e2ea481cfba46938b7f6401a9909eb3e76"
+    },
+    {
+      "path": "docs/HANDOFF_PROMOTION_STATUS_2026-10-24.md",
+      "bytes": 6311,
+      "sha256": "0d7378772023f17299787415a8d93168f537969650ce837ce4634df6926b2c54"
+    },
+    {
       "path": "docs/HTTP_BOUNDARY_LIMITS.md",
       "bytes": 6115,
       "sha256": "d27d265f3ce0ac51024ab10f1d83806333eabe84e60a4661959119a0554fd955"
@@ -307,9 +317,44 @@
       "sha256": "44e2bda8ad59dbe7ec4b09fbfaa4d049764dc8de7a99c312d6e2751c3a13baf7"
     },
     {
+      "path": "docs/designs/experiment-lifecycle/DESIGN.md",
+      "bytes": 20202,
+      "sha256": "e8c5418cce617e1335a49ebe914adc28d339b1cf5672d8c2d46b7efbac284f58"
+    },
+    {
+      "path": "docs/designs/experiment-lifecycle/STATUS.json",
+      "bytes": 828,
+      "sha256": "08f901290e48cabe2e3feadcb1e5e8588e3aeef449063dd5d82cf21a5ddc0b69"
+    },
+    {
+      "path": "docs/designs/experiment-lifecycle/source-audit.json",
+      "bytes": 5322336,
+      "sha256": "5e0a00d6a1b7ee666c4422cd0c0cf9459f6ac8129ccacb684b8298d77b0fac0c"
+    },
+    {
+      "path": "docs/designs/promotion/DESIGN.md",
+      "bytes": 22149,
+      "sha256": "5ad6fea76d61f15b90a8cecbf43f622dd4fd045687191c8e836cfb50bfcd2d1a"
+    },
+    {
+      "path": "docs/designs/promotion/SOURCE_AUDIT.json",
+      "bytes": 582792,
+      "sha256": "d1a25ddab19860878f91c6ca4c48e82c88bdd10a42a99dfd582663a1e53bc647"
+    },
+    {
       "path": "docs/evidence/native_quantitative_20261024.json",
       "bytes": 11918,
       "sha256": "272cdb9dc3d9c46ad37c8ec7186578cf4b5503e80ac9f870ac845fdeb0015cef"
+    },
+    {
+      "path": "docs/plans/qbundle-promotion-next.md",
+      "bytes": 22530,
+      "sha256": "04ed8cf59afb85c7e42bce5589a0c7df8cb000ef1671faef7ae1290ef18db78c"
+    },
+    {
+      "path": "docs/plans/qbundle-promotion-source-audit.json",
+      "bytes": 583197,
+      "sha256": "70666963fea1a8697c9d2e4384b181eb93aa5184b5e5df766897def42cec4597"
     },
     {
       "path": "evidence/RELEASE_VERIFICATION.json",
@@ -422,14 +467,44 @@
       "sha256": "c9de23c455dbb45bc3cbcfb399b215ffaf9fe2f99b5078ee464e7fe4a611b571"
     },
     {
+      "path": "evidence/commissioning-2026-10-24/browser-live-1.4/captured-book.png",
+      "bytes": 142292,
+      "sha256": "df8557249ba944153cef8ffb93019961d2fa21d4808cf5502f9de0b621b81c85"
+    },
+    {
+      "path": "evidence/commissioning-2026-10-24/browser-live-1.4/desktop.png",
+      "bytes": 155253,
+      "sha256": "914b628220c555bbd2684babb0b244988aceb4c706acace398e10b3f8576a4ed"
+    },
+    {
+      "path": "evidence/commissioning-2026-10-24/browser-live-1.4/mobile.png",
+      "bytes": 56620,
+      "sha256": "b62f4617f3d89138ccb3aecae0c636456aec3ebb37624e82411a38e15f240430"
+    },
+    {
+      "path": "evidence/commissioning-2026-10-24/browser-live-1.4/report.json",
+      "bytes": 1088,
+      "sha256": "c9de23c455dbb45bc3cbcfb399b215ffaf9fe2f99b5078ee464e7fe4a611b571"
+    },
+    {
       "path": "evidence/commissioning-2026-10-24/capture-b69a3cd34ba9411880cd55706189babb-receipt.json",
       "bytes": 384878,
       "sha256": "873931ded9c0cd00cc3035d614adabc1b6098d3ef9694e694478b17129425418"
     },
     {
+      "path": "evidence/commissioning-2026-10-24/construction-b0b6eccd1e0d4ef6aa1861a7760abd8b-receipt.json",
+      "bytes": 357893,
+      "sha256": "8595ebf247140cfd439a811596973dcdc35c0df746779166f1eaa99282de088e"
+    },
+    {
       "path": "evidence/commissioning-2026-10-24/deployment-83906c7.json",
       "bytes": 650,
       "sha256": "6be278ccadf9380ce9cf2ab4c3bd476f9af4d6b874cc7bd02f14154b7cbea4ed"
+    },
+    {
+      "path": "evidence/commissioning-2026-10-24/deployment-9667b6e.json",
+      "bytes": 10903,
+      "sha256": "04defde3ecd6e612e4e8d8e511021a8ee00bcd7e906548d3f0b549089c8a6afa"
     },
     {
       "path": "evidence/commissioning-2026-10-24/deployment-9ba6020.json",
@@ -445,6 +520,11 @@
       "path": "evidence/commissioning-2026-10-24/generator-packages-1.4.json",
       "bytes": 2094,
       "sha256": "4119ae9a94af3ee598f2635416118e3e1c619ed8b373b4c3971953a8cdf6658a"
+    },
+    {
+      "path": "evidence/commissioning-2026-10-24/handoff-live-state.json",
+      "bytes": 16313,
+      "sha256": "3284aa186d892781006fe002b02d48b86b308ad82caa9db8acb2af0be07d8de9"
     },
     {
       "path": "evidence/commissioning-2026-10-24/import.log",
@@ -492,6 +572,11 @@
       "sha256": "601f1504c9a1ba71315c28b6fbbee207e6998cd6794945f5fbe48b3cf7c28f0e"
     },
     {
+      "path": "evidence/commissioning-2026-10-24/owner-stop-20261024.json",
+      "bytes": 9614,
+      "sha256": "7a749a5fa46ae9f0454b020f981ea5cb38bdbabdf957d913fc6e09a427f8d0ac"
+    },
+    {
       "path": "evidence/commissioning-2026-10-24/package.json",
       "bytes": 742,
       "sha256": "b87309334ece3b6aa2f465e1c2b6460e3d6d9cf8bc6b177719ff1c2ed336408b"
@@ -500,6 +585,11 @@
       "path": "evidence/commissioning-2026-10-24/publication-83906c7.json",
       "bytes": 801,
       "sha256": "7d8a29d9ce0daf9dc7091c09452103db52121ff680511d789767ec31cca94d8e"
+    },
+    {
+      "path": "evidence/commissioning-2026-10-24/publication-9667b6e.json",
+      "bytes": 668,
+      "sha256": "f407d0c64dc1e6fda82bde90e662dcda8932f74e2cedbdadc5b8ca436b13ec7d"
     },
     {
       "path": "evidence/commissioning-2026-10-24/publication-9ba6020.json",
@@ -6352,7 +6442,7 @@
       "sha256": "e16d35645ae6da6e5ddb5181f23f259fd932e0e2e029f59342cd18689e69c14e"
     }
   ],
-  "previous_manifest_sha256": "1251ab00ad186a7c0b002ce9d1060348c63fc880dd59afac9f8be955eb7f4107",
-  "release_record": "docs/RELEASE_1_4_COMMISSIONING.md",
+  "previous_manifest_sha256": "37f336c84665d8700f99cdbd29e766e814b70b9577874b2d0c2c43d8afa2d399",
+  "release_record": "docs/HANDOFF_2026-10-24.md",
   "full_mission_status": "NOT_COMMISSIONED"
 }
