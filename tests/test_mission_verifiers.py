@@ -28,7 +28,7 @@ class MissionVerifierTests(unittest.TestCase):
         self.workspace.mkdir()
         self.db = Path(self.temp.name) / 'state' / 'ledger.sqlite3'
         definitions = json.loads((ROOT / 'registry/constitution.json').read_text())['requirements']
-        self.definitions = [r for r in definitions if r['id'] in ('PIA-042', 'PIA-040')]
+        self.definitions = [r for r in definitions if r['id'] in ('PIA-042', 'PIA-040', 'PIA-041')]
         self.ledger = Ledger(self.db, self.workspace, self.definitions)
         self.addCleanup(lambda: self.ledger.close())
         self.counter = 0
@@ -119,8 +119,35 @@ class MissionVerifierTests(unittest.TestCase):
         self.assertEqual(error.exception.code, 'INVALID_TRANSITION')
 
     def test_other_mission_remains_unsupported(self):
+        self.candidate('PIA-041')
+        self.assertEqual(self.verify('PIA-041')['outcome'], 'UNSUPPORTED')
+
+    def test_guidance_adapter_proves_actual_effects_and_retains_every_applicability_record(self):
         self.candidate('PIA-040')
-        self.assertEqual(self.verify('PIA-040')['outcome'], 'UNSUPPORTED')
+        before = self.ledger.state()
+        result = self.verify('PIA-040')
+        self.assertEqual(result['outcome'], 'PASS', result)
+        self.assertEqual(result['mission_binding']['adapter'], 'PIA-040/guidance-effects-v1')
+        contract = json.loads(self.ledger.get_blob(result['mission_binding']['contract']['sha256']))
+        applicability = contract['inherited_applicability']
+        self.assertEqual(applicability['core'], [])
+        self.assertEqual(len(applicability['supplemental']), 75)
+        self.assertEqual({r['origin_id'] for r in applicability['supplemental']},
+                         {r['origin_id'] for r in applicability['decisions']})
+        self.assertTrue(all(r['rationale'] and r['classification'] for r in applicability['decisions']))
+        after = self.ledger.state()
+        self.assertEqual(before['guidance'], after['guidance'])
+        self.assertEqual(before['research'], after['research'])
+        self.assertEqual(before['runs'], after['runs'])
+        self.command('requirement.accept', {'requirement_id':'PIA-040'})
+        accepted = self.ledger.state()
+        self.ledger.close()
+        with patch('polyia.mission_verifiers.prepare', side_effect=AssertionError('Replay pinned live source')), \
+             patch('polyia.mission_verifiers.run_guidance_checks', side_effect=AssertionError('Replay ran guidance fixtures')):
+            self.ledger = Ledger(self.db, self.workspace)
+            self.assertEqual(self.ledger.state(), accepted)
+            self.assertTrue(self.ledger.verify()['ok'])
+        self.assertEqual(accepted['commission_status'], 'NOT_COMMISSIONED')
 
     def test_verifier_payload_cannot_supply_descriptor_or_outcome(self):
         self.candidate()
@@ -181,13 +208,19 @@ class MissionVerifierTests(unittest.TestCase):
             self.assertEqual(result['outcome'], 'ERROR', result)
             self.assertEqual(result['report']['reason'], 'IMPLEMENTATION_CHANGED')
 
-    def isolated(self, action, source_change=None):
+    def isolated(self, action, source_change=None, requirement='PIA-042'):
         root = Path(self.temp.name) / ('installed-' + str(self.counter))
         root.mkdir()
         shutil.copytree(ROOT / 'polyia', root / 'polyia', ignore=shutil.ignore_patterns('__pycache__'))
         (root / 'registry').mkdir()
         for name in ('constitution.json', 'acceptance.json', 'inherited_obligations.json', 'inherited_supplemental.json'):
             shutil.copyfile(ROOT / 'registry' / name, root / 'registry' / name)
+        if requirement == 'PIA-040':
+            records = json.loads((ROOT / 'registry/inherited_supplemental.json').read_text())['records']
+            for path in {r['source_path'] for r in records if 'PIA-040' in r['target_obligations']}:
+                target = root / path
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(ROOT / path, target)
         if source_change:
             path = root / 'polyia/store.py'
             text = path.read_text()
@@ -217,7 +250,7 @@ for module,path in mission_verifiers.MODULES:
 command('requirement.produce',{'requirement_id':'PIA-042','artifacts':paths})
 ACTION
 ledger.close()
-'''.replace('ROOT', repr(str(root))).replace('ACTION', action)
+'''.replace('ROOT', repr(str(root))).replace('ACTION', action).replace("'PIA-042'", repr(requirement))
         process = subprocess.run([sys.executable, '-I', '-B', '-c', script], capture_output=True,
                                  text=True, timeout=30, env={'PATH': os.defpath}, cwd=root)
         self.assertEqual(process.returncode, 0, process.stderr)
@@ -263,6 +296,35 @@ else:
         self.assertEqual(result['outcome'], 'FAIL', result)
         self.assertTrue(any(c['name']=='workspace_edit_is_drift_not_changed_evidence' and c['pass'] is False
                             for c in result['report']['checks']))
+
+    def test_guidance_driver_detects_coherent_missing_acknowledgement_and_pause_guards(self):
+        cases = [('if guidance["status"] != "ACKNOWLEDGED":', 'if False:', 'unacknowledged_cannot_apply'),
+                 ('if state["research"]["paused"]:', 'if False:', 'pause_blocks_real_registered_work')]
+        for original, broken, expected in cases:
+            with self.subTest(expected=expected):
+                self.counter += 1
+                result = self.isolated("print(json.dumps(command('requirement.verify',{'requirement_id':'PIA-042'})['result']['verification']))",
+                                       (original, broken), requirement='PIA-040')
+                self.assertEqual(result['outcome'], 'FAIL', result)
+                self.assertTrue(any(c['name'] == expected and c['pass'] is False for c in result['report']['checks']))
+
+    def test_changed_inherited_source_blocks_guidance_verification(self):
+        result = self.isolated('''
+path=base/'sources/expanded/PHONEX_ULWS/ULWS_PHONEX_QIA_v0.1/CODEX_GOD_SEED.md'
+path.write_bytes(path.read_bytes()+b'\\nchanged inherited source\\n')
+print(json.dumps(command('requirement.verify',{'requirement_id':'PIA-042'})['result']['verification']))
+''', requirement='PIA-040')
+        self.assertEqual(result['outcome'], 'FAIL', result)
+        self.assertEqual(result['report']['reason'], 'MISSION_CONTRACT_CHANGED')
+
+    def test_guidance_reproduction_does_not_inherit_prior_acceptance(self):
+        self.candidate('PIA-040')
+        self.assertEqual(self.verify('PIA-040')['outcome'], 'PASS')
+        self.command('requirement.accept', {'requirement_id':'PIA-040'})
+        self.candidate('PIA-040')
+        with self.assertRaises(CommandError) as error:
+            self.command('requirement.accept', {'requirement_id':'PIA-040'})
+        self.assertEqual(error.exception.code, 'INVALID_TRANSITION')
 
 
 if __name__ == '__main__':

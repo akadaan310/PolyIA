@@ -65,6 +65,100 @@ class CapabilityTests(unittest.TestCase):
         self.assertEqual(self.ledger.state()['requirements']['MISSION']['status'], 'NOT_STARTED')
         self.assertEqual(self.ledger.state()['runs'][0]['report']['result']['execution']['outputs']['result']['value'], '1/2')
 
+    def test_constructive_generator_and_typed_forms_are_actual_pinned_runs(self):
+        root = Path(__file__).resolve().parents[1]
+        card = json.loads((root / 'examples/generators/protocol.card.json').read_text())
+        generated = self.run_capability('generators', {'card': card, 'request': {'operation': 'generate'}, 'style': 'tutorial'})
+        self.assertEqual(generated['report']['status'], 'PASS', generated['report'])
+        result = generated['report']['result']
+        self.assertEqual([c['value'] for c in result['execution']['result']['candidates']], [['PING', 'ACK'], ['PING', 'ACK', 'ACK']])
+        self.assertIn('Accepted token sequence', result['illustration']['text'])
+        self.assertEqual({m['identity']['module'] for m in generated['execution_bundle']['modules']}, {'polyia.capabilities', 'polyia.generators'})
+        alphabet = {'version': 'polyia.alphabet/0.1', 'kind': 'numeric', 'entity_id': 'fixture:N',
+            'interpretation': 'Nonnegative integers, queried individually',
+            'sources': [{'source': 'authored:test', 'anchor': 'Natural fixture', 'sha256': 'a'*64}],
+            'generator': {'name': 'naturals', 'start': 0, 'coordinates': 'value'},
+            'group': {'elements': [{'id': 'e', 'rule': 'identity'}]}}
+        parameters = {'version': 'polyia.forms/0.1', 'operation': 'generate', 'alphabet': alphabet, 'index': 10**20}
+        request = self.request('forms', parameters); receipt = self.ledger.command(request)
+        form = receipt['result']['run']
+        self.assertEqual(form['report']['status'], 'PASS', form['report'])
+        self.assertEqual(form['report']['result']['result']['letter']['value'], '100000000000000000000')
+        self.assertEqual({m['identity']['module'] for m in form['execution_bundle']['modules']}, {'polyia.capabilities', 'polyia.forms'})
+        self.ledger.checkpoint('two new exact capability source bundles')
+        before = self.ledger.state(); self.ledger.close()
+        with patch('polyia.generators.run_model', side_effect=AssertionError('replay generated')), \
+             patch('polyia.forms.run_forms', side_effect=AssertionError('replay computed forms')), \
+             patch('polyia.store._pinned_module', side_effect=AssertionError('replay read current source')):
+            self.ledger = Ledger(self.db, self.workspace)
+            self.assertEqual(self.ledger.state(), before)
+            self.assertEqual(self.ledger.command(request), receipt)
+            self.assertTrue(self.ledger.verify()['ok'])
+
+    def test_unavailable_forms_operation_and_generator_style_are_explicit_refusals(self):
+        run = self.run_capability('forms', {'version': 'polyia.forms/0.1', 'operation': 'universal-proof'})
+        self.assertEqual(run['report']['status'], 'REFUSED', run['report'])
+        self.assertEqual(run['report']['result']['status'], 'UNSUPPORTED')
+        run = self.run_capability('generators', {'card': {}, 'request': {}, 'style': 'invent-facts'})
+        self.assertEqual(run['report']['status'], 'REFUSED', run['report'])
+        self.assertEqual(self.ledger.state()['commission_status'], 'NOT_COMMISSIONED')
+
+    def test_forms_long_serialized_word_recovers_through_commands_and_reopen(self):
+        alphabet = {'version': 'polyia.alphabet/0.1', 'kind': 'numeric', 'entity_id': 'fixture:N',
+            'interpretation': 'Nonnegative integers, queried individually',
+            'sources': [{'source': 'authored:test', 'anchor': 'Natural fixture', 'sha256': 'a'*64}],
+            'generator': {'name': 'naturals', 'start': 0, 'coordinates': 'value'},
+            'group': {'elements': [{'id': 'e', 'rule': 'identity'}]}}
+        identity = self.run_capability('forms', {'version': 'polyia.forms/0.1', 'operation': 'alphabet',
+            'alphabet': alphabet})['report']['result']['result']['content_cid']
+        word = {'version': 'polyia.word/0.1', 'entity_id': 'fixture:long-word', 'alphabet_cid': identity,
+                'index': {'kind': 'tuple', 'length': 256}, 'labels': {str(i): '0' for i in range(256)}}
+        produced = self.run_capability('forms', {'version': 'polyia.forms/0.1', 'operation': 'serialize',
+            'alphabet': alphabet, 'word': word})
+        self.assertEqual(produced['report']['status'], 'PASS', produced['report'])
+        text = produced['report']['result']['result']['text']
+        self.assertGreater(len(text), 2048)
+        request = self.request('forms', {'version': 'polyia.forms/0.1', 'operation': 'deserialize',
+            'alphabet': alphabet, 'text': text})
+        try:
+            receipt = self.ledger.command(request)
+        except CommandError as error:
+            self.fail('Exact serialized-word recovery was refused: ' + error.code)
+        self.assertEqual(receipt['result']['run']['report']['status'], 'PASS')
+        self.assertEqual(receipt['result']['run']['report']['result']['result']['word'], word)
+        before = self.ledger.state(); self.ledger.close()
+        with patch('polyia.forms.run_forms', side_effect=AssertionError('replay deserialized')), \
+             patch('polyia.store._pinned_module', side_effect=AssertionError('replay pinned')):
+            self.ledger = Ledger(self.db, self.workspace)
+            self.assertEqual(self.ledger.state(), before)
+            self.assertEqual(self.ledger.command(request), receipt)
+            self.assertTrue(self.ledger.verify()['ok'])
+
+    def test_forms_deserialize_exception_preserves_exact_envelope_and_other_limits(self):
+        parameters = {'version': 'polyia.forms/0.1', 'operation': 'deserialize', 'alphabet': {}, 'text': 'x'*2049}
+        try:
+            Ledger._validate_parameters(parameters, experiment='forms')
+        except CommandError as error:
+            self.fail('Exact forms deserialize text should be admitted: ' + error.code)
+        for change, name in [({'version': 'polyia.forms/0.2'}, 'forms'),
+                             ({'operation': 'serialize'}, 'forms'), ({'extra': True}, 'forms'),
+                             ({}, 'native'), ({}, 'generators')]:
+            with self.subTest(change=change, experiment=name), self.assertRaises(CommandError) as caught:
+                self.ledger.command(self.request(name, dict(parameters, **change)))
+            self.assertEqual(caught.exception.code, 'RESOURCE_LIMIT')
+        for changed in (dict(parameters, text='x'*(48*1024+1)),
+                        dict(parameters, text='x'*2049+'\ud800'),
+                        dict(parameters, text='short', alphabet={'text':'x'*2049}),
+                        dict(parameters, alphabet={'items':list(range(2049))})):
+            with self.subTest(parameter=list(changed)), self.assertRaises(CommandError) as caught:
+                self.ledger.command(self.request('forms', changed))
+            self.assertIn(caught.exception.code, ('RESOURCE_LIMIT', 'INVALID_PAYLOAD'))
+        # The narrow inner allowance cannot bypass the ASCII JSON wire budget.
+        with self.assertRaises(CommandError) as caught:
+            self.ledger.command(self.request('forms', dict(parameters, text='é'*12000)))
+        self.assertEqual(caught.exception.code, 'REQUEST_TOO_LARGE')
+        Ledger._validate_parameters(dict(parameters, text='x'*(48*1024)), experiment='forms')
+
     def test_reopen_retry_and_replay_never_call_handlers_or_live_pinning(self):
         request = self.request('native', {'source': SOURCE})
         receipt = self.ledger.command(request)

@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "scope": "target observer credential file owner repaired from opc UID1000 to actual ubuntu UID1001; no credential content retained",
+  "path": "/home/ubuntu/.config/polyia/observer-access.env",
+  "uid": 1001,
+  "gid": 1001,
+  "mode": "0o600",
+  "read_test": "successful authenticated observer request recorded separately"
+}

@@ -34,7 +34,7 @@ def audit():
     if weights:errors.append('Unexpected model artifacts in runtime: '+','.join(weights))
     from polyia.experiments import run_registered
     from polyia.capabilities import run_registered as run_extension
-    from polyia.mission_verifiers import run_capture_checks
+    from polyia.mission_verifiers import run_capture_checks, run_guidance_checks
     def denied(*args,**kwargs):raise AssertionError('Offline kernel attempted a denied network/process operation')
     with patch.object(socket,'socket',denied),patch.object(subprocess,'Popen',denied),patch.object(urllib.request,'urlopen',denied):
         result=run_registered('acceptance',{})
@@ -45,7 +45,16 @@ def audit():
             ('astra',{'adapter_version':'POLYIA-ASTRA/0.1','source_version':'ASTRA/0.2',
                       'protocol':'ATOM-HANDOFF/0.1','operation':'atom.initialize'}),
             ('rasm',{'version':'polyia.rasm/0.1','chart':'timeless.rsa28/0.1',
-                     'operation':'project','text':'كتب'})]:
+                     'operation':'project','text':'كتب'}),
+            ('forms',{'version':'polyia.forms/0.1','operation':'generate','index':10**20,
+                      'alphabet':{'version':'polyia.alphabet/0.1','kind':'numeric',
+                       'entity_id':'audit:N','interpretation':'Individual effective Naturals.',
+                       'sources':[{'source':'tools/audit_no_llm.py','anchor':'finite offline fixture',
+                                   'sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}],
+                       'generator':{'name':'naturals','start':0,'coordinates':'value'},
+                       'group':{'elements':[{'id':'e','rule':'identity'}]}}}),
+            ('generators',{'card':json.loads((ROOT/'examples/generators/protocol.card.json').read_text()),
+                           'request':{'operation':'generate'},'style':'tutorial'})]:
             observed=run_extension(name,parameters)
             passed=(observed['status']=='PASS' and bool(observed['checks']) and
                     all(c['pass'] is True for c in observed['checks']) and observed['llm_inference'] is False)
@@ -55,11 +64,15 @@ def audit():
         mission=run_capture_checks()
         if mission['status']!='PASS' or not mission['checks'] or not all(c['pass'] is True for c in mission['checks']):
             errors.append('Offline PIA-042 capture conformance failed')
+        guidance=run_guidance_checks()
+        if guidance['status']!='PASS' or not guidance['checks'] or not all(c['pass'] is True for c in guidance['checks']):
+            errors.append('Offline PIA-040 guidance conformance failed')
     if result['status']!='PASS' or not result['checks'] or not all(c['pass'] for c in result['checks']):errors.append('Offline exact-kernel acceptance failed')
-    return {'ok':not errors,'scope':'stdlib runtime source audit plus intercepted seed, native, intake, Astra, rasm and PIA-042 capture executions',
+    return {'ok':not errors,'scope':'stdlib runtime source audit plus intercepted seed, native, intake, Astra, rasm, forms, generators, PIA-040 guidance and PIA-042 capture executions',
             'runtime_modules':modules,'imports':sorted(set(imports)),'model_artifacts':weights,'offline_checks':result['checks'],
             'offline_extensions':extensions,
             'offline_mission':mission,
+            'offline_guidance':guidance,
             'errors':errors,'limitations':['Static imports plus intercepted kernel execution establish this finite bootstrap scope, not every future plugin.',
              'Archived upstream source is retained data, not imported into the running baseline.',
              'The fixed installed scientific module is compiled only to compare its code structure with loaded functions; that comparison object is never executed.',

@@ -1,0 +1,44 @@
+{
+  "scope": "observational public HTTPS Chromium client from the target VM",
+  "checks": [
+    {
+      "name": "observer connected in real browser",
+      "pass": true
+    },
+    {
+      "name": "credential removed from input after connection",
+      "pass": true
+    },
+    {
+      "name": "captured book is actually inspectable",
+      "pass": true
+    },
+    {
+      "name": "mission remains uncommissioned",
+      "pass": true
+    },
+    {
+      "name": "mobile page has no horizontal document overflow",
+      "pass": true
+    },
+    {
+      "name": "session storage and local storage remain empty",
+      "pass": true
+    },
+    {
+      "name": "no credential in request URLs",
+      "pass": true
+    },
+    {
+      "name": "no browser script error",
+      "pass": true
+    }
+  ],
+  "browser": "156.0.8078.4",
+  "origin": "https://developed-carmen-recruitment-worm.trycloudflare.com",
+  "ok": true,
+  "limitations": [
+    "One Chromium build on one VM; no cross-browser or accessibility certification.",
+    "Screenshots show observed rendering, not all possible UI states."
+  ]
+}

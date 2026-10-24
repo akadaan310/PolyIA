@@ -1,0 +1,2214 @@
+{
+  "schema": "polyia.generators-source-audit/0.1",
+  "scope": "Implementation design source audit; no obligation or acceptance status mutation",
+  "direct_core_records_read": [
+    {
+      "origin_id": "POLY-C-020",
+      "title": "Give every generator an admitted grammar, enumerator, checker, lowering pass and execution contract.",
+      "source_id": "SRC-POLYIA96",
+      "source_path": "sources/recovered/CODEX_CONSTITUTION.md",
+      "source_sha256": "cfe0b88f9c701e139372d783db1d9568da272f6433f9e513d6475fe7985a2630",
+      "source_line_start": 73,
+      "source_line_end": 75,
+      "original_text": "**C-020.** Give every generator an admitted grammar, enumerator, checker, lowering pass and execution contract.\n\n",
+      "original_text_sha256": "a9b285b4d2fd00325b7cc1d3331e23ad862ec66dcb623ca759d376f553cd0232",
+      "disposition": "retained",
+      "decision": null,
+      "reason": "Retain the complete source mandate and acceptance conditions under the listed current obligations, subject to explicit current authority and the linked reconciliation register.",
+      "target_requirements": [
+        "PIA-052",
+        "PIA-097",
+        "PIA-106"
+      ],
+      "inherited_acceptance": "retained verbatim in original_text except for the explicitly identified amendment",
+      "implementation_status": "NOT_RUN_BY_COMMISSION",
+      "coverage_status": "MAPPED"
+    },
+    {
+      "origin_id": "POLY-C-021",
+      "title": "Generate reproducible equivalent programs for fixed source, grammar version, dependency lock, seed and policy.",
+      "source_id": "SRC-POLYIA96",
+      "source_path": "sources/recovered/CODEX_CONSTITUTION.md",
+      "source_sha256": "cfe0b88f9c701e139372d783db1d9568da272f6433f9e513d6475fe7985a2630",
+      "source_line_start": 75,
+      "source_line_end": 77,
+      "original_text": "**C-021.** Generate reproducible equivalent programs for fixed source, grammar version, dependency lock, seed and policy.\n\n",
+      "original_text_sha256": "32cf3e3902e71687037f1b34191f122a9338334bd44de290187aeb1699f040cb",
+      "disposition": "retained",
+      "decision": null,
+      "reason": "Retain the complete source mandate and acceptance conditions under the listed current obligations, subject to explicit current authority and the linked reconciliation register.",
+      "target_requirements": [
+        "PIA-086",
+        "PIA-103",
+        "PIA-141"
+      ],
+      "inherited_acceptance": "retained verbatim in original_text except for the explicitly identified amendment",
+      "implementation_status": "NOT_RUN_BY_COMMISSION",
+      "coverage_status": "MAPPED"
+    },
+    {
+      "origin_id": "POLY-C-030",
+      "title": "Store image/preimage/kernel witnesses under declared structures; don't apply linear kernel language indiscriminately.",
+      "source_id": "SRC-POLYIA96",
+      "source_path": "sources/recovered/CODEX_CONSTITUTION.md",
+      "source_sha256": "cfe0b88f9c701e139372d783db1d9568da272f6433f9e513d6475fe7985a2630",
+      "source_line_start": 96,
+      "source_line_end": 98,
+      "original_text": "**C-030.** Store image/preimage/kernel witnesses under declared structures; don't apply linear kernel language indiscriminately.\n\n",
+      "original_text_sha256": "d21f708f73c806f6f4feba9c3869fb7c7c8a4a6c98da0199b8059302cfb42cf8",
+      "disposition": "retained",
+      "decision": null,
+      "reason": "Retain the complete source mandate and acceptance conditions under the listed current obligations, subject to explicit current authority and the linked reconciliation register.",
+      "target_requirements": [
+        "PIA-056",
+        "PIA-104",
+        "PIA-113"
+      ],
+      "inherited_acceptance": "retained verbatim in original_text except for the explicitly identified amendment",
+      "implementation_status": "NOT_RUN_BY_COMMISSION",
+      "coverage_status": "MAPPED"
+    },
+    {
+      "origin_id": "POLY-C-051",
+      "title": "Choose capabilities by constraints and cost, not library names, marketing descriptions or topic keyword coincidences.",
+      "source_id": "SRC-POLYIA96",
+      "source_path": "sources/recovered/CODEX_CONSTITUTION.md",
+      "source_sha256": "cfe0b88f9c701e139372d783db1d9568da272f6433f9e513d6475fe7985a2630",
+      "source_line_start": 147,
+      "source_line_end": 149,
+      "original_text": "**C-051.** Choose capabilities by constraints and cost, not library names, marketing descriptions or topic keyword coincidences.\n\n",
+      "original_text_sha256": "cb337b69e3a6978519c7076c72ea7669205fe02558f61411f72512cf2fb7ec64",
+      "disposition": "retained",
+      "decision": null,
+      "reason": "Retain the complete source mandate and acceptance conditions under the listed current obligations, subject to explicit current authority and the linked reconciliation register.",
+      "target_requirements": [
+        "PIA-080",
+        "PIA-088",
+        "PIA-102"
+      ],
+      "inherited_acceptance": "retained verbatim in original_text except for the explicitly identified amendment",
+      "implementation_status": "NOT_RUN_BY_COMMISSION",
+      "coverage_status": "MAPPED"
+    },
+    {
+      "origin_id": "POLY-C-053",
+      "title": "Construct an SDK by program specialization/partial evaluation, not blind bundling of the entire umbrella repository.",
+      "source_id": "SRC-POLYIA96",
+      "source_path": "sources/recovered/CODEX_CONSTITUTION.md",
+      "source_sha256": "cfe0b88f9c701e139372d783db1d9568da272f6433f9e513d6475fe7985a2630",
+      "source_line_start": 151,
+      "source_line_end": 153,
+      "original_text": "**C-053.** Construct an SDK by program specialization/partial evaluation, not blind bundling of the entire umbrella repository.\n\n",
+      "original_text_sha256": "2620c5984faf86037ffc6e917b621fd1f7963da3c9710c3d45be33751380e8b1",
+      "disposition": "retained",
+      "decision": null,
+      "reason": "Retain the complete source mandate and acceptance conditions under the listed current obligations, subject to explicit current authority and the linked reconciliation register.",
+      "target_requirements": [
+        "PIA-089",
+        "PIA-102"
+      ],
+      "inherited_acceptance": "retained verbatim in original_text except for the explicitly identified amendment",
+      "implementation_status": "NOT_RUN_BY_COMMISSION",
+      "coverage_status": "MAPPED"
+    },
+    {
+      "origin_id": "POLY-C-064",
+      "title": "Treat generated code and plans as untrusted artifacts to validate independently before allowing real execution.",
+      "source_id": "SRC-POLYIA96",
+      "source_path": "sources/recovered/CODEX_CONSTITUTION.md",
+      "source_sha256": "cfe0b88f9c701e139372d783db1d9568da272f6433f9e513d6475fe7985a2630",
+      "source_line_start": 176,
+      "source_line_end": 178,
+      "original_text": "**C-064.** Treat generated code and plans as untrusted artifacts to validate independently before allowing real execution.\n\n",
+      "original_text_sha256": "841edc57b13358abe0c4f463699d1947a3e5a14fcdd889405c84d1eb7ff4733b",
+      "disposition": "retained",
+      "decision": null,
+      "reason": "Retain the complete source mandate and acceptance conditions under the listed current obligations, subject to explicit current authority and the linked reconciliation register.",
+      "target_requirements": [
+        "PIA-093",
+        "PIA-106"
+      ],
+      "inherited_acceptance": "retained verbatim in original_text except for the explicitly identified amendment",
+      "implementation_status": "NOT_RUN_BY_COMMISSION",
+      "coverage_status": "MAPPED"
+    },
+    {
+      "origin_id": "POLY-C-069",
+      "title": "Snapshot canonical input/output formats and enforce determinism under pinned dependencies and explicit seed.",
+      "source_id": "SRC-POLYIA96",
+      "source_path": "sources/recovered/CODEX_CONSTITUTION.md",
+      "source_sha256": "cfe0b88f9c701e139372d783db1d9568da272f6433f9e513d6475fe7985a2630",
+      "source_line_start": 189,
+      "source_line_end": 191,
+      "original_text": "**C-069.** Snapshot canonical input/output formats and enforce determinism under pinned dependencies and explicit seed.\n\n",
+      "original_text_sha256": "8c5217d84b055f49b8afcad725caf445c18e2446fcedfc9493e6c06953bd6495",
+      "disposition": "retained",
+      "decision": null,
+      "reason": "Retain the complete source mandate and acceptance conditions under the listed current obligations, subject to explicit current authority and the linked reconciliation register.",
+      "target_requirements": [
+        "PIA-103",
+        "PIA-141"
+      ],
+      "inherited_acceptance": "retained verbatim in original_text except for the explicitly identified amendment",
+      "implementation_status": "NOT_RUN_BY_COMMISSION",
+      "coverage_status": "MAPPED"
+    },
+    {
+      "origin_id": "POLY-C-070",
+      "title": "Test inverse operations against noninjective counterexamples and preserve original information lost in normalization.",
+      "source_id": "SRC-POLYIA96",
+      "source_path": "sources/recovered/CODEX_CONSTITUTION.md",
+      "source_sha256": "cfe0b88f9c701e139372d783db1d9568da272f6433f9e513d6475fe7985a2630",
+      "source_line_start": 191,
+      "source_line_end": 193,
+      "original_text": "**C-070.** Test inverse operations against noninjective counterexamples and preserve original information lost in normalization.\n\n",
+      "original_text_sha256": "a107314011babd83b6a129744aedee0d5194e9c02e6e1620aceb9a2355461723",
+      "disposition": "retained",
+      "decision": null,
+      "reason": "Retain the complete source mandate and acceptance conditions under the listed current obligations, subject to explicit current authority and the linked reconciliation register.",
+      "target_requirements": [
+        "PIA-056",
+        "PIA-064",
+        "PIA-104"
+      ],
+      "inherited_acceptance": "retained verbatim in original_text except for the explicitly identified amendment",
+      "implementation_status": "NOT_RUN_BY_COMMISSION",
+      "coverage_status": "MAPPED"
+    },
+    {
+      "origin_id": "POLY-C-076",
+      "title": "Use fixed benchmark datasets, random seed, CPU governor/host info, cache-warming method and sample count in reports.",
+      "source_id": "SRC-POLYIA96",
+      "source_path": "sources/recovered/CODEX_CONSTITUTION.md",
+      "source_sha256": "cfe0b88f9c701e139372d783db1d9568da272f6433f9e513d6475fe7985a2630",
+      "source_line_start": 206,
+      "source_line_end": 208,
+      "original_text": "**C-076.** Use fixed benchmark datasets, random seed, CPU governor/host info, cache-warming method and sample count in reports.\n\n",
+      "original_text_sha256": "fc1e63d219c58bcc544a4fc2f2e12879524ad3cddc5b125a0ab24e16253ff152",
+      "disposition": "retained",
+      "decision": null,
+      "reason": "Retain the complete source mandate and acceptance conditions under the listed current obligations, subject to explicit current authority and the linked reconciliation register.",
+      "target_requirements": [
+        "PIA-103",
+        "PIA-137",
+        "PIA-142"
+      ],
+      "inherited_acceptance": "retained verbatim in original_text except for the explicitly identified amendment",
+      "implementation_status": "NOT_RUN_BY_COMMISSION",
+      "coverage_status": "MAPPED"
+    },
+    {
+      "origin_id": "UCG-022",
+      "title": "Image and kernel failures as universal refusals",
+      "source_id": "SRC-UCG156",
+      "source_path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+      "source_sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e",
+      "source_line_start": 195,
+      "source_line_end": 199,
+      "original_text": "#### §022 — Image and kernel failures as universal refusals\n**Mandate.** Every converse operation reports *image failure* (no preimage) or *kernel failure* (non-unique preimage) per GIN-THM-001.\n**Acceptance witness.** Tests cover division, linear systems, reverse dictionary lookup, name→structure and unfold, each with both failure kinds.\n\n",
+      "original_text_sha256": "f23fa021b60b645e85c39c44519eeecc961edb8bac9ca594de1e9feb67d55264",
+      "disposition": "refined",
+      "decision": "REC-EQUALITY",
+      "reason": "General inverse relations use empty/multiple fibres. Linear/ring kernel language requires the corresponding structure; avoid treating every nonunique inverse as a linear kernel.",
+      "target_requirements": [
+        "PIA-056",
+        "PIA-104",
+        "PIA-113"
+      ],
+      "inherited_acceptance": "retained verbatim in original_text except for the explicitly identified amendment",
+      "implementation_status": "NOT_RUN_BY_COMMISSION",
+      "coverage_status": "MAPPED"
+    },
+    {
+      "origin_id": "UCG-040",
+      "title": "Determinism",
+      "source_id": "SRC-UCG156",
+      "source_path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+      "source_sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e",
+      "source_line_start": 271,
+      "source_line_end": 275,
+      "original_text": "#### §040 — Determinism\n**Mandate.** Same input, grammar version, seed and policy yield the same trace and result.\n**Acceptance witness.** Running twice on 1,000 inputs gives identical hashes.\n\n",
+      "original_text_sha256": "717e040edc47a3fa436ff1f70c2a275234e22424874d60625e50a666409101a0",
+      "disposition": "retained",
+      "decision": null,
+      "reason": "Retain the complete source mandate and acceptance conditions under the listed current obligations, subject to explicit current authority and the linked reconciliation register.",
+      "target_requirements": [
+        "PIA-103",
+        "PIA-141"
+      ],
+      "inherited_acceptance": "retained verbatim in original_text except for the explicitly identified amendment",
+      "implementation_status": "NOT_RUN_BY_COMMISSION",
+      "coverage_status": "MAPPED"
+    },
+    {
+      "origin_id": "UCG-050",
+      "title": "Covalent word grammar",
+      "source_id": "SRC-UCG156",
+      "source_path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+      "source_sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e",
+      "source_line_start": 313,
+      "source_line_end": 317,
+      "original_text": "#### §050 — Covalent word grammar\n**Mandate.** Molecules are connected bond multigraphs with valence admissibility. Enumeration is bounded and canonical.\n**Acceptance witness.** Reproduces E02: 738 words; QM9 recall 48/48. Extends to 5–7 heavy atoms with recall measured.\n\n",
+      "original_text_sha256": "e6332aac6fbcbf52640db52632b7896dbaf13cab12dcc9be05ecbf648f1f2f89",
+      "disposition": "retained",
+      "decision": null,
+      "reason": "Retain the complete source mandate and acceptance conditions under the listed current obligations, subject to explicit current authority and the linked reconciliation register.",
+      "target_requirements": [
+        "PIA-116",
+        "PIA-097"
+      ],
+      "inherited_acceptance": "retained verbatim in original_text except for the explicitly identified amendment",
+      "implementation_status": "NOT_RUN_BY_COMMISSION",
+      "coverage_status": "MAPPED"
+    },
+    {
+      "origin_id": "UCG-064",
+      "title": "OCSR boundary",
+      "source_id": "SRC-UCG156",
+      "source_path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+      "source_sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e",
+      "source_line_start": 371,
+      "source_line_end": 375,
+      "original_text": "#### §064 — OCSR boundary\n**Mandate.** Image-to-structure recognition is a separate, later lane with its own witnesses; the form alphabet does not depend on it.\n**Acceptance witness.** The OCSR lane is BLOCKED or implemented with its own benchmark, and is never mixed into E02/E03 metrics.\n\n",
+      "original_text_sha256": "e6897d212891cead8e1f3bfede5c7bd2455556985a683e7b4d889b75a3fccdf6",
+      "disposition": "retained",
+      "decision": null,
+      "reason": "Retain the complete source mandate and acceptance conditions under the listed current obligations, subject to explicit current authority and the linked reconciliation register.",
+      "target_requirements": [
+        "PIA-101",
+        "PIA-116"
+      ],
+      "inherited_acceptance": "retained verbatim in original_text except for the explicitly identified amendment",
+      "implementation_status": "NOT_RUN_BY_COMMISSION",
+      "coverage_status": "MAPPED"
+    },
+    {
+      "origin_id": "UCG-071",
+      "title": "Energy as denotation (optional)",
+      "source_id": "SRC-UCG156",
+      "source_path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+      "source_sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e",
+      "source_line_start": 401,
+      "source_line_end": 405,
+      "original_text": "#### §071 — Energy as denotation (optional)\n**Mandate.** Thermochemical denotations come only from cited data (e.g. G4MP2 values in the witness set). They are never invented.\n**Acceptance witness.** Any energy shown carries its dataset id and hash.\n\n",
+      "original_text_sha256": "88b31288af623cc2cdff0acd86465b054285f19709912654122f622cad4b8b03",
+      "disposition": "retained",
+      "decision": null,
+      "reason": "Retain the complete source mandate and acceptance conditions under the listed current obligations, subject to explicit current authority and the linked reconciliation register.",
+      "target_requirements": [
+        "PIA-101",
+        "PIA-117",
+        "PIA-118"
+      ],
+      "inherited_acceptance": "retained verbatim in original_text except for the explicitly identified amendment",
+      "implementation_status": "NOT_RUN_BY_COMMISSION",
+      "coverage_status": "MAPPED"
+    },
+    {
+      "origin_id": "UCG-087",
+      "title": "Equations as machines",
+      "source_id": "SRC-UCG156",
+      "source_path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+      "source_sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e",
+      "source_line_start": 469,
+      "source_line_end": 473,
+      "original_text": "#### §087 — Equations as machines\n**Mandate.** Linear, quadratic, polynomial and transcendental equation solving as machines with exact and numeric branches and typed refusals.\n**Acceptance witness.** Solution sets are verified by substitution. \"No real solution\" is an image failure.\n\n",
+      "original_text_sha256": "fe3adb8438daeabb2c4d368c5f4e11e093c5d4197d11f3759b634ee6fc96d727",
+      "disposition": "retained",
+      "decision": null,
+      "reason": "Retain the complete source mandate and acceptance conditions under the listed current obligations, subject to explicit current authority and the linked reconciliation register.",
+      "target_requirements": [
+        "PIA-104",
+        "PIA-111",
+        "PIA-112"
+      ],
+      "inherited_acceptance": "retained verbatim in original_text except for the explicitly identified amendment",
+      "implementation_status": "NOT_RUN_BY_COMMISSION",
+      "coverage_status": "MAPPED"
+    },
+    {
+      "origin_id": "UCG-123",
+      "title": "Meta-grammar",
+      "source_id": "SRC-UCG156",
+      "source_path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+      "source_sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e",
+      "source_line_start": 623,
+      "source_line_end": 627,
+      "original_text": "#### §123 — Meta-grammar\n**Mandate.** A meta-grammar whose words are GUC cards. The generator produces, from a card, a **state-machine form** and a **compiler form**.\n**Acceptance witness.** From the card \"integration by parts\", the generator emits a machine equivalent (trace-equivalent on a test corpus) to the hand-written E05 PARTS machine.\n\n",
+      "original_text_sha256": "7e9f50f251163e3eefc56f34d0988d5749a4b7e4232832108cc5f939cd113d05",
+      "disposition": "retained",
+      "decision": null,
+      "reason": "Retain the complete source mandate and acceptance conditions under the listed current obligations, subject to explicit current authority and the linked reconciliation register.",
+      "target_requirements": [
+        "PIA-070",
+        "PIA-102",
+        "PIA-106"
+      ],
+      "inherited_acceptance": "retained verbatim in original_text except for the explicitly identified amendment",
+      "implementation_status": "NOT_RUN_BY_COMMISSION",
+      "coverage_status": "MAPPED"
+    },
+    {
+      "origin_id": "UCG-125",
+      "title": "Generated machines per subject",
+      "source_id": "SRC-UCG156",
+      "source_path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+      "source_sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e",
+      "source_line_start": 631,
+      "source_line_end": 635,
+      "original_text": "#### §125 — Generated machines per subject\n**Mandate.** Emit one machine per integration method, per differentiation rule family, per ODE method, per linear-algebra decomposition, per nomenclature direction.\n**Acceptance witness.** The machine count and tests are listed. Every generated machine passes the schema and its own tests.\n\n",
+      "original_text_sha256": "62a636c30d768358c8966752e32e8f9a59ad8195999b8a38379b1f700c2bd4e5",
+      "disposition": "retained",
+      "decision": null,
+      "reason": "Retain the complete source mandate and acceptance conditions under the listed current obligations, subject to explicit current authority and the linked reconciliation register.",
+      "target_requirements": [
+        "PIA-106",
+        "PIA-119"
+      ],
+      "inherited_acceptance": "retained verbatim in original_text except for the explicitly identified amendment",
+      "implementation_status": "NOT_RUN_BY_COMMISSION",
+      "coverage_status": "MAPPED"
+    },
+    {
+      "origin_id": "UCG-126",
+      "title": "Generative model form",
+      "source_id": "SRC-UCG156",
+      "source_path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+      "source_sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e",
+      "source_line_start": 635,
+      "source_line_end": 639,
+      "original_text": "#### §126 — Generative model form\n**Mandate.** For each subject, a deterministic generative model (grammar × in-grammar × seed) produces new admissible words, e.g. new integrals with known answers, new molecules, new groups.\n**Acceptance witness.** Generated items are admissible and verified. Distribution statistics are reported.\n\n",
+      "original_text_sha256": "d2f5bf34622c2c8ca2478bf5485a795a9b7cfe39bf3d2a5b362829b39b9249eb",
+      "disposition": "retained",
+      "decision": null,
+      "reason": "Retain the complete source mandate and acceptance conditions under the listed current obligations, subject to explicit current authority and the linked reconciliation register.",
+      "target_requirements": [
+        "PIA-097",
+        "PIA-098",
+        "PIA-119"
+      ],
+      "inherited_acceptance": "retained verbatim in original_text except for the explicitly identified amendment",
+      "implementation_status": "NOT_RUN_BY_COMMISSION",
+      "coverage_status": "MAPPED"
+    },
+    {
+      "origin_id": "UCG-127",
+      "title": "Curriculum generator",
+      "source_id": "SRC-UCG156",
+      "source_path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+      "source_sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e",
+      "source_line_start": 639,
+      "source_line_end": 643,
+      "original_text": "#### §127 — Curriculum generator\n**Mandate.** Generate graded exercises for each common-math pillar with answers and solution traces (for Substrate University, as data only).\n**Acceptance witness.** 100 exercises per pillar, each with a verified answer and a trace. The difficulty grade is computed from trace length.\n\n",
+      "original_text_sha256": "e2a7770a539dc353beaf80e3eba1bd14c50fad8e7e7f7881a9891712d8638363",
+      "disposition": "refined",
+      "decision": "REC-CURRICULUM",
+      "reason": "Retain100verified exercises per implemented common-math pillar. Trace length is a declared computational complexity/difficulty proxy, not an empirically validated learner difficulty score without a separate study.",
+      "target_requirements": [
+        "PIA-105",
+        "PIA-189"
+      ],
+      "inherited_acceptance": "retained verbatim in original_text except for the explicitly identified amendment",
+      "implementation_status": "NOT_RUN_BY_COMMISSION",
+      "coverage_status": "MAPPED"
+    },
+    {
+      "origin_id": "UCG-128",
+      "title": "Inverse generation",
+      "source_id": "SRC-UCG156",
+      "source_path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+      "source_sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e",
+      "source_line_start": 643,
+      "source_line_end": 647,
+      "original_text": "#### §128 — Inverse generation\n**Mandate.** Generate problems from desired traces (e.g. \"an integral requiring USUB then PARTS\").\n**Acceptance witness.** Produced problems' actual traces match the requested trace in ≥ 95% of cases.\n\n",
+      "original_text_sha256": "ac8f5fa125563610a62a4624752d5156a1f564eb817a9e8cb54d85d76019853f",
+      "disposition": "retained",
+      "decision": null,
+      "reason": "Retain the complete source mandate and acceptance conditions under the listed current obligations, subject to explicit current authority and the linked reconciliation register.",
+      "target_requirements": [
+        "PIA-104"
+      ],
+      "inherited_acceptance": "retained verbatim in original_text except for the explicitly identified amendment",
+      "implementation_status": "NOT_RUN_BY_COMMISSION",
+      "coverage_status": "MAPPED"
+    },
+    {
+      "origin_id": "UCG-130",
+      "title": "Machine minimization",
+      "source_id": "SRC-UCG156",
+      "source_path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+      "source_sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e",
+      "source_line_start": 651,
+      "source_line_end": 655,
+      "original_text": "#### §130 — Machine minimization\n**Mandate.** Minimize generated automata (Moore/Hopcroft) and report the reduction.\n**Acceptance witness.** The minimized machine is equivalent, verified by product construction.\n\n",
+      "original_text_sha256": "f076db693208640843758e98c48c9a18b5d2e006c7d21733675b7464e8cd6b1a",
+      "disposition": "retained",
+      "decision": null,
+      "reason": "Retain the complete source mandate and acceptance conditions under the listed current obligations, subject to explicit current authority and the linked reconciliation register.",
+      "target_requirements": [
+        "PIA-058",
+        "PIA-107"
+      ],
+      "inherited_acceptance": "retained verbatim in original_text except for the explicitly identified amendment",
+      "implementation_status": "NOT_RUN_BY_COMMISSION",
+      "coverage_status": "MAPPED"
+    },
+    {
+      "origin_id": "UCG-135",
+      "title": "Rapid model generation",
+      "source_id": "SRC-UCG156",
+      "source_path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+      "source_sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e",
+      "source_line_start": 673,
+      "source_line_end": 677,
+      "original_text": "#### §135 — Rapid model generation\n**Mandate.** For a new problem class, the generator produces a candidate machine in one command from a card.\n**Acceptance witness.** Time from card to tested machine is reported for 5 new classes.\n\n",
+      "original_text_sha256": "02d5a38dd2bc8d911ffe7b8bc4dc77a4d78160f940206b642bcd16816642ea58",
+      "disposition": "retained",
+      "decision": null,
+      "reason": "Retain the complete source mandate and acceptance conditions under the listed current obligations, subject to explicit current authority and the linked reconciliation register.",
+      "target_requirements": [
+        "PIA-098",
+        "PIA-102"
+      ],
+      "inherited_acceptance": "retained verbatim in original_text except for the explicitly identified amendment",
+      "implementation_status": "NOT_RUN_BY_COMMISSION",
+      "coverage_status": "MAPPED"
+    },
+    {
+      "origin_id": "UCG-152",
+      "title": "Determinism and reproducibility",
+      "source_id": "SRC-UCG156",
+      "source_path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+      "source_sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e",
+      "source_line_start": 745,
+      "source_line_end": 749,
+      "original_text": "#### §152 — Determinism and reproducibility\n**Mandate.** Same inputs give the same outputs across runs and machines, within declared floating-point tolerance.\n**Acceptance witness.** Cross-machine replay of all E-experiments matches.\n\n",
+      "original_text_sha256": "4f52d31e754c5dccfee81a9690edfe3ba648fa8d5d76d24fbfe84fd552b2ddd8",
+      "disposition": "retained",
+      "decision": null,
+      "reason": "Retain the complete source mandate and acceptance conditions under the listed current obligations, subject to explicit current authority and the linked reconciliation register.",
+      "target_requirements": [
+        "PIA-029",
+        "PIA-103",
+        "PIA-141"
+      ],
+      "inherited_acceptance": "retained verbatim in original_text except for the explicitly identified amendment",
+      "implementation_status": "NOT_RUN_BY_COMMISSION",
+      "coverage_status": "MAPPED"
+    }
+  ],
+  "direct_core_record_count": 23,
+  "mapped_supplemental_total": 1038,
+  "selected_supplemental_records_read": [
+    {
+      "origin_id": "SUP-0400c89054a4fa88-0000003c",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/CONCIERGE_CONTRACT.md",
+      "source_sha256": "0400c89054a4fa88cbb40f8312d38f9548f6373f666746874d7005e30b31692b",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "Deterministic Concierge: from commission to micro-agency",
+          "Input and interpretation"
+        ],
+        "label": "Input and interpretation",
+        "line_start": 3,
+        "line_end": 6,
+        "byte_start": 60,
+        "byte_end_exclusive": 637
+      },
+      "text_sha256": "9fe29ddd7989c4a17fbbf06e2ca6340c3250e43ef90c12df7cd2e5f4552e9189",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-0400c89054a4fa88-0000027d",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/CONCIERGE_CONTRACT.md",
+      "source_sha256": "0400c89054a4fa88cbb40f8312d38f9548f6373f666746874d7005e30b31692b",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "Deterministic Concierge: from commission to micro-agency",
+          "Input and interpretation",
+          "Pipeline"
+        ],
+        "label": "Pipeline",
+        "line_start": 7,
+        "line_end": 12,
+        "byte_start": 637,
+        "byte_end_exclusive": 931
+      },
+      "text_sha256": "8d754ef80247feb9a1d0a10b0ccb9b6401a866eabe1e1cb2fe4b84a0a008a341",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-0400c89054a4fa88-000003a3",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/CONCIERGE_CONTRACT.md",
+      "source_sha256": "0400c89054a4fa88cbb40f8312d38f9548f6373f666746874d7005e30b31692b",
+      "locator": {
+        "kind": "numbered_obligation",
+        "heading_path": [
+          "Deterministic Concierge: from commission to micro-agency",
+          "Input and interpretation",
+          "Pipeline"
+        ],
+        "label": "1. `plan.pir`: canonical textual, inspectable typed intermediate representation.",
+        "line_start": 13,
+        "line_end": 13,
+        "byte_start": 931,
+        "byte_end_exclusive": 1012
+      },
+      "text_sha256": "1542ed029fcf7550b6952984b7faf91cb857e6546c2c2a11a87d94656af8868a",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-0400c89054a4fa88-000003f4",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/CONCIERGE_CONTRACT.md",
+      "source_sha256": "0400c89054a4fa88cbb40f8312d38f9548f6373f666746874d7005e30b31692b",
+      "locator": {
+        "kind": "numbered_obligation",
+        "heading_path": [
+          "Deterministic Concierge: from commission to micro-agency",
+          "Input and interpretation",
+          "Pipeline"
+        ],
+        "label": "2. `automaton.dot`: state transition graph; rendering optional.",
+        "line_start": 14,
+        "line_end": 14,
+        "byte_start": 1012,
+        "byte_end_exclusive": 1076
+      },
+      "text_sha256": "272acf47313c90708e2bea9850d2d5176ce03073b9b22d55157268bcf0d62c1e",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-0400c89054a4fa88-00000434",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/CONCIERGE_CONTRACT.md",
+      "source_sha256": "0400c89054a4fa88cbb40f8312d38f9548f6373f666746874d7005e30b31692b",
+      "locator": {
+        "kind": "numbered_obligation",
+        "heading_path": [
+          "Deterministic Concierge: from commission to micro-agency",
+          "Input and interpretation",
+          "Pipeline"
+        ],
+        "label": "3. `automaton.html`: human projection of the same source, never the source of truth.",
+        "line_start": 15,
+        "line_end": 15,
+        "byte_start": 1076,
+        "byte_end_exclusive": 1161
+      },
+      "text_sha256": "51f871908ba75b8f982626c5e0ca99ee17363b3c94486710a7c0b90e3f919b7b",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-0400c89054a4fa88-00000489",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/CONCIERGE_CONTRACT.md",
+      "source_sha256": "0400c89054a4fa88cbb40f8312d38f9548f6373f666746874d7005e30b31692b",
+      "locator": {
+        "kind": "numbered_obligation",
+        "heading_path": [
+          "Deterministic Concierge: from commission to micro-agency",
+          "Input and interpretation",
+          "Pipeline"
+        ],
+        "label": "4. `automaton.json`: audit/transport payload with hashes and module versions.",
+        "line_start": 16,
+        "line_end": 16,
+        "byte_start": 1161,
+        "byte_end_exclusive": 1239
+      },
+      "text_sha256": "4ee2e1d1d63c4df82ff00ab0a0bbc7c6e7e9f8746f86020179135a053ffc2a01",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-0400c89054a4fa88-000004d7",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/CONCIERGE_CONTRACT.md",
+      "source_sha256": "0400c89054a4fa88cbb40f8312d38f9548f6373f666746874d7005e30b31692b",
+      "locator": {
+        "kind": "numbered_obligation",
+        "heading_path": [
+          "Deterministic Concierge: from commission to micro-agency",
+          "Input and interpretation",
+          "Pipeline"
+        ],
+        "label": "5. Later: self-contained `agency.wasm` or native package plus WIT interface, verified against PIR.",
+        "line_start": 17,
+        "line_end": 17,
+        "byte_start": 1239,
+        "byte_end_exclusive": 1338
+      },
+      "text_sha256": "7e5085484914e7ec1a1e809ebcf8b045ad3bc4301035b5098439eed0073069f4",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-0400c89054a4fa88-00000589",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/CONCIERGE_CONTRACT.md",
+      "source_sha256": "0400c89054a4fa88cbb40f8312d38f9548f6373f666746874d7005e30b31692b",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "Deterministic Concierge: from commission to micro-agency",
+          "Formal obligations"
+        ],
+        "label": "Formal obligations",
+        "line_start": 20,
+        "line_end": 27,
+        "byte_start": 1417,
+        "byte_end_exclusive": 2207
+      },
+      "text_sha256": "dd31e8b1a16c89ae5b44d777c6dbded836534ba550651376c5505f365123a02a",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-0400c89054a4fa88-0000089f",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/CONCIERGE_CONTRACT.md",
+      "source_sha256": "0400c89054a4fa88cbb40f8312d38f9548f6373f666746874d7005e30b31692b",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "Deterministic Concierge: from commission to micro-agency",
+          "Concrete example: topology"
+        ],
+        "label": "Concrete example: topology",
+        "line_start": 28,
+        "line_end": 31,
+        "byte_start": 2207,
+        "byte_end_exclusive": 2794
+      },
+      "text_sha256": "938e1669fe6b1ac374bc9708f2c4704325e1842b8f4f21ab31a2917074a556b0",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-0400c89054a4fa88-00000aea",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/CONCIERGE_CONTRACT.md",
+      "source_sha256": "0400c89054a4fa88cbb40f8312d38f9548f6373f666746874d7005e30b31692b",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "Deterministic Concierge: from commission to micro-agency",
+          "Future model partitions"
+        ],
+        "label": "Future model partitions",
+        "line_start": 32,
+        "line_end": 35,
+        "byte_start": 2794,
+        "byte_end_exclusive": 3370
+      },
+      "text_sha256": "c92f17284dfb582ca8ab77d7b48379072fa3c73ef488651306288187ed7778f2",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-0400c89054a4fa88-00000e23",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/CONCIERGE_CONTRACT.md",
+      "source_sha256": "0400c89054a4fa88cbb40f8312d38f9548f6373f666746874d7005e30b31692b",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "Deterministic Concierge: from commission to micro-agency",
+          "Negative case library"
+        ],
+        "label": "Same script but distinct dialect pronunciations: separate model instances and provenance.",
+        "line_start": 40,
+        "line_end": 40,
+        "byte_start": 3619,
+        "byte_end_exclusive": 3711
+      },
+      "text_sha256": "13517d7effafe3f51af1b2bbb342097b56ca93968196e303b55006d585f2781e",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-48c38a2a24128513-00000000",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/STATE_MACHINE.md",
+      "source_sha256": "48c38a2a24128513fc45c091ba1c26c61feb4cd48a3062f876bb560c6d05fa5e",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "Codex implementation state machine: POLYIA-HARNESS/0.1"
+        ],
+        "label": "Codex implementation state machine: POLYIA-HARNESS/0.1",
+        "line_start": 1,
+        "line_end": 2,
+        "byte_start": 0,
+        "byte_end_exclusive": 58
+      },
+      "text_sha256": "896cd6e422a6509d30e36eefa0fb3dcaab05c1481016e56bf638d7ee341fb2ef",
+      "disposition": "refined"
+    },
+    {
+      "origin_id": "SUP-48c38a2a24128513-0000003a",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/STATE_MACHINE.md",
+      "source_sha256": "48c38a2a24128513fc45c091ba1c26c61feb4cd48a3062f876bb560c6d05fa5e",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "Codex implementation state machine: POLYIA-HARNESS/0.1",
+          "State definition"
+        ],
+        "label": "State definition",
+        "line_start": 3,
+        "line_end": 21,
+        "byte_start": 58,
+        "byte_end_exclusive": 2076
+      },
+      "text_sha256": "d020883890442fe0b93968c5f088c1c524e0e164f1d31508727bb1d40aa9effe",
+      "disposition": "refined"
+    },
+    {
+      "origin_id": "SUP-48c38a2a24128513-0000081c",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/STATE_MACHINE.md",
+      "source_sha256": "48c38a2a24128513fc45c091ba1c26c61feb4cd48a3062f876bb560c6d05fa5e",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "Codex implementation state machine: POLYIA-HARNESS/0.1",
+          "Truthful checkpoint protocol"
+        ],
+        "label": "Truthful checkpoint protocol",
+        "line_start": 22,
+        "line_end": 29,
+        "byte_start": 2076,
+        "byte_end_exclusive": 2698
+      },
+      "text_sha256": "11b018d132eea0ecf56707aa9a8e4c7b13bf35f9658b9bd3b25e669100c25ed8",
+      "disposition": "refined"
+    },
+    {
+      "origin_id": "SUP-48c38a2a24128513-00000a8a",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/STATE_MACHINE.md",
+      "source_sha256": "48c38a2a24128513fc45c091ba1c26c61feb4cd48a3062f876bb560c6d05fa5e",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "Codex implementation state machine: POLYIA-HARNESS/0.1",
+          "Atomic capabilities, nested machines"
+        ],
+        "label": "Atomic capabilities, nested machines",
+        "line_start": 30,
+        "line_end": 33,
+        "byte_start": 2698,
+        "byte_end_exclusive": 3088
+      },
+      "text_sha256": "3554eb9330033589c9a951a64145c1db12eb97781286f443797e9f819e749103",
+      "disposition": "refined"
+    },
+    {
+      "origin_id": "SUP-48c38a2a24128513-00000c10",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/STATE_MACHINE.md",
+      "source_sha256": "48c38a2a24128513fc45c091ba1c26c61feb4cd48a3062f876bb560c6d05fa5e",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "Codex implementation state machine: POLYIA-HARNESS/0.1",
+          "Source-backed extraction rubric"
+        ],
+        "label": "Source-backed extraction rubric",
+        "line_start": 34,
+        "line_end": 37,
+        "byte_start": 3088,
+        "byte_end_exclusive": 3591
+      },
+      "text_sha256": "6aa199f2f134719775ca746bda0baa39ff93c3dedd1493ea9e9b7bb3a8b43c2d",
+      "disposition": "refined"
+    },
+    {
+      "origin_id": "SUP-48c38a2a24128513-00000e07",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/STATE_MACHINE.md",
+      "source_sha256": "48c38a2a24128513fc45c091ba1c26c61feb4cd48a3062f876bb560c6d05fa5e",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "Codex implementation state machine: POLYIA-HARNESS/0.1",
+          "Responsible prioritization"
+        ],
+        "label": "Responsible prioritization",
+        "line_start": 38,
+        "line_end": 39,
+        "byte_start": 3591,
+        "byte_end_exclusive": 3622
+      },
+      "text_sha256": "e97a15ba2d9ee5a902e247fcf3931a03185b1a589529a78e3a6915d66a026a13",
+      "disposition": "refined"
+    },
+    {
+      "origin_id": "SUP-48c38a2a24128513-00000e26",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/STATE_MACHINE.md",
+      "source_sha256": "48c38a2a24128513fc45c091ba1c26c61feb4cd48a3062f876bb560c6d05fa5e",
+      "locator": {
+        "kind": "numbered_obligation",
+        "heading_path": [
+          "Codex implementation state machine: POLYIA-HARNESS/0.1",
+          "Responsible prioritization"
+        ],
+        "label": "1. Source manifests + six-division registry lock.",
+        "line_start": 40,
+        "line_end": 40,
+        "byte_start": 3622,
+        "byte_end_exclusive": 3672
+      },
+      "text_sha256": "e512b54cbfe4feae6e3077e9e959acb921caaa9b54a7ca37842b8f768cbed7a1",
+      "disposition": "refined"
+    },
+    {
+      "origin_id": "SUP-48c38a2a24128513-00000e58",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/STATE_MACHINE.md",
+      "source_sha256": "48c38a2a24128513fc45c091ba1c26c61feb4cd48a3062f876bb560c6d05fa5e",
+      "locator": {
+        "kind": "numbered_obligation",
+        "heading_path": [
+          "Codex implementation state machine: POLYIA-HARNESS/0.1",
+          "Responsible prioritization"
+        ],
+        "label": "2. Contract extraction, compiler kernel and local harness.",
+        "line_start": 41,
+        "line_end": 41,
+        "byte_start": 3672,
+        "byte_end_exclusive": 3731
+      },
+      "text_sha256": "50929f869bc0a4e141c85fb10eac67cb881d5d1a5a3dcee971d359bf8d12eba3",
+      "disposition": "refined"
+    },
+    {
+      "origin_id": "SUP-48c38a2a24128513-00000e93",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/STATE_MACHINE.md",
+      "source_sha256": "48c38a2a24128513fc45c091ba1c26c61feb4cd48a3062f876bb560c6d05fa5e",
+      "locator": {
+        "kind": "numbered_obligation",
+        "heading_path": [
+          "Codex implementation state machine: POLYIA-HARNESS/0.1",
+          "Responsible prioritization"
+        ],
+        "label": "3. First independent atom package (finite-state machine), then one operator from each university division.",
+        "line_start": 42,
+        "line_end": 42,
+        "byte_start": 3731,
+        "byte_end_exclusive": 3838
+      },
+      "text_sha256": "a90b46cacaba7ec7c13b5d4ddb2bf47d719d5ec9d92ca6b5316048c341fcfaf3",
+      "disposition": "refined"
+    },
+    {
+      "origin_id": "SUP-48c38a2a24128513-00000efe",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/STATE_MACHINE.md",
+      "source_sha256": "48c38a2a24128513fc45c091ba1c26c61feb4cd48a3062f876bb560c6d05fa5e",
+      "locator": {
+        "kind": "numbered_obligation",
+        "heading_path": [
+          "Codex implementation state machine: POLYIA-HARNESS/0.1",
+          "Responsible prioritization"
+        ],
+        "label": "4. Compiled P9/parenthology and tower/pillar witness adapter.",
+        "line_start": 43,
+        "line_end": 43,
+        "byte_start": 3838,
+        "byte_end_exclusive": 3900
+      },
+      "text_sha256": "9567bb194279a1811bc073ef507ed1ac2b595647248120994d341f4b0b6ed8e1",
+      "disposition": "refined"
+    },
+    {
+      "origin_id": "SUP-48c38a2a24128513-00000f3c",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/STATE_MACHINE.md",
+      "source_sha256": "48c38a2a24128513fc45c091ba1c26c61feb4cd48a3062f876bb560c6d05fa5e",
+      "locator": {
+        "kind": "numbered_obligation",
+        "heading_path": [
+          "Codex implementation state machine: POLYIA-HARNESS/0.1",
+          "Responsible prioritization"
+        ],
+        "label": "5. PHONEX specialist models: English and Arabic only **after validated corpora**, then more languages by same interface.",
+        "line_start": 44,
+        "line_end": 44,
+        "byte_start": 3900,
+        "byte_end_exclusive": 4021
+      },
+      "text_sha256": "eac92ed878ccad12e19d14422c5e0e3c4a4c084fe479ebe2ffd7320b46b58fcd",
+      "disposition": "refined"
+    },
+    {
+      "origin_id": "SUP-48c38a2a24128513-00000fb5",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/STATE_MACHINE.md",
+      "source_sha256": "48c38a2a24128513fc45c091ba1c26c61feb4cd48a3062f876bb560c6d05fa5e",
+      "locator": {
+        "kind": "numbered_obligation",
+        "heading_path": [
+          "Codex implementation state machine: POLYIA-HARNESS/0.1",
+          "Responsible prioritization"
+        ],
+        "label": "6. Word-set query graph and negative etymology guards.",
+        "line_start": 45,
+        "line_end": 45,
+        "byte_start": 4021,
+        "byte_end_exclusive": 4076
+      },
+      "text_sha256": "825d6a078756a7ea47339074c915270f8ac711ffe584fec33d5df90ff789502f",
+      "disposition": "refined"
+    },
+    {
+      "origin_id": "SUP-48c38a2a24128513-00000fec",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/STATE_MACHINE.md",
+      "source_sha256": "48c38a2a24128513fc45c091ba1c26c61feb4cd48a3062f876bb560c6d05fa5e",
+      "locator": {
+        "kind": "numbered_obligation",
+        "heading_path": [
+          "Codex implementation state machine: POLYIA-HARNESS/0.1",
+          "Responsible prioritization"
+        ],
+        "label": "7. Concierge produces specialized SDK and state-machine composition with real execution.",
+        "line_start": 46,
+        "line_end": 46,
+        "byte_start": 4076,
+        "byte_end_exclusive": 4165
+      },
+      "text_sha256": "8ebbc70c17e4725d11ac1bc635c455916aadee7259b279b986233a81be5b792f",
+      "disposition": "refined"
+    },
+    {
+      "origin_id": "SUP-48c38a2a24128513-00001045",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/STATE_MACHINE.md",
+      "source_sha256": "48c38a2a24128513fc45c091ba1c26c61feb4cd48a3062f876bb560c6d05fa5e",
+      "locator": {
+        "kind": "numbered_obligation",
+        "heading_path": [
+          "Codex implementation state machine: POLYIA-HARNESS/0.1",
+          "Responsible prioritization"
+        ],
+        "label": "8. ASTRO/HOMELESS 3D and physics adapters via ports, without borrowing user projects as if completed.",
+        "line_start": 47,
+        "line_end": 47,
+        "byte_start": 4165,
+        "byte_end_exclusive": 4267
+      },
+      "text_sha256": "c7abc69102b64856dc097e33bda4d06fa94c672f80ac002a4ecc0062e928e4d3",
+      "disposition": "refined"
+    },
+    {
+      "origin_id": "SUP-48c38a2a24128513-000010ab",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/STATE_MACHINE.md",
+      "source_sha256": "48c38a2a24128513fc45c091ba1c26c61feb4cd48a3062f876bb560c6d05fa5e",
+      "locator": {
+        "kind": "numbered_obligation",
+        "heading_path": [
+          "Codex implementation state machine: POLYIA-HARNESS/0.1",
+          "Responsible prioritization"
+        ],
+        "label": "9. CIA Browser/PURL/SEURL/ACSP boundary adapters, no capability escalation.",
+        "line_start": 48,
+        "line_end": 48,
+        "byte_start": 4267,
+        "byte_end_exclusive": 4343
+      },
+      "text_sha256": "d4e1d3a79a475eb38fb32a14c8c5d85bcbba4edafd8c37b417bc1cfeb43bc8b4",
+      "disposition": "refined"
+    },
+    {
+      "origin_id": "SUP-48c38a2a24128513-000010f7",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/STATE_MACHINE.md",
+      "source_sha256": "48c38a2a24128513fc45c091ba1c26c61feb4cd48a3062f876bb560c6d05fa5e",
+      "locator": {
+        "kind": "numbered_obligation",
+        "heading_path": [
+          "Codex implementation state machine: POLYIA-HARNESS/0.1",
+          "Responsible prioritization"
+        ],
+        "label": "10. Efficiency, coverage, independent evaluation and release promotion.",
+        "line_start": 49,
+        "line_end": 50,
+        "byte_start": 4343,
+        "byte_end_exclusive": 4416
+      },
+      "text_sha256": "d2efcd1f4f29f3ee4fcd265d56ed0a82db3f764432c24512cbf4a28cdce5166c",
+      "disposition": "refined"
+    },
+    {
+      "origin_id": "SUP-48c38a2a24128513-00001140",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/STATE_MACHINE.md",
+      "source_sha256": "48c38a2a24128513fc45c091ba1c26c61feb4cd48a3062f876bb560c6d05fa5e",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "Codex implementation state machine: POLYIA-HARNESS/0.1",
+          "CLI reference harness"
+        ],
+        "label": "CLI reference harness",
+        "line_start": 51,
+        "line_end": 61,
+        "byte_start": 4416,
+        "byte_end_exclusive": 4921
+      },
+      "text_sha256": "086be7d0cce4bcd6e7f6b6223e000301ddc9f586fd0ed358d02fb0045dd35ec1",
+      "disposition": "refined"
+    },
+    {
+      "origin_id": "SUP-bed750d816b54029-000002ee",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+      "source_sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "POLYIA mathematical and software foundations",
+          "1. Identity of an independent computational unit"
+        ],
+        "label": "`C` quantitative cost model (build latency, runtime, memory, candidate count, verification).",
+        "line_start": 16,
+        "line_end": 16,
+        "byte_start": 750,
+        "byte_end_exclusive": 845
+      },
+      "text_sha256": "89c10f23bd3e286ffb2e02e1b4194ae9a265c48c8cc542cfe212ad5aa3f2b8f8",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-bed750d816b54029-00000921",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+      "source_sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "POLYIA mathematical and software foundations",
+          "3. A generator with its own compiler"
+        ],
+        "label": "3. A generator with its own compiler",
+        "line_start": 29,
+        "line_end": 32,
+        "byte_start": 2337,
+        "byte_end_exclusive": 2495
+      },
+      "text_sha256": "f4504ca1b5a870c8e9da3a36e4fd50b22a8feed4d6dc38e1327a553ac38282a5",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-bed750d816b54029-000009bf",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+      "source_sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01",
+      "locator": {
+        "kind": "numbered_obligation",
+        "heading_path": [
+          "POLYIA mathematical and software foundations",
+          "3. A generator with its own compiler"
+        ],
+        "label": "1. `Grammar` describes a (possibly infinite) language of lawful source expressions.",
+        "line_start": 33,
+        "line_end": 33,
+        "byte_start": 2495,
+        "byte_end_exclusive": 2579
+      },
+      "text_sha256": "ac6041348aaed7b7324726b30ccec77b9bfdd4fa8c4d09e0047e1212a1ff8ba1",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-bed750d816b54029-00000a13",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+      "source_sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01",
+      "locator": {
+        "kind": "numbered_obligation",
+        "heading_path": [
+          "POLYIA mathematical and software foundations",
+          "3. A generator with its own compiler"
+        ],
+        "label": "2. `Enumerator` can enumerate or conditionally construct candidates under budgets.",
+        "line_start": 34,
+        "line_end": 34,
+        "byte_start": 2579,
+        "byte_end_exclusive": 2662
+      },
+      "text_sha256": "7d5f4dd70126dac426e2f08a47f97ecfaeb818eba6d56dcfa579a112a53b9550",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-bed750d816b54029-00000a66",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+      "source_sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01",
+      "locator": {
+        "kind": "numbered_obligation",
+        "heading_path": [
+          "POLYIA mathematical and software foundations",
+          "3. A generator with its own compiler"
+        ],
+        "label": "3. `Typechecker` rejects invalid port/type/effect combinations.",
+        "line_start": 35,
+        "line_end": 35,
+        "byte_start": 2662,
+        "byte_end_exclusive": 2726
+      },
+      "text_sha256": "bf9f4c08fc6636089c2cd8e413f348caeb8c2a5017586d0d0ebc3fb665d920b4",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-bed750d816b54029-00000aa6",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+      "source_sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01",
+      "locator": {
+        "kind": "numbered_obligation",
+        "heading_path": [
+          "POLYIA mathematical and software foundations",
+          "3. A generator with its own compiler"
+        ],
+        "label": "4. `Compiler` maps a typed AST to PIR, bytecode, WASM/WIT or a backend-specific IR.",
+        "line_start": 36,
+        "line_end": 36,
+        "byte_start": 2726,
+        "byte_end_exclusive": 2810
+      },
+      "text_sha256": "8f7dbe0deafb3fd7cd32aea8ae732d0831e6da83b7f5f41c27a73ac0d3823f2f",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-bed750d816b54029-00000afa",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+      "source_sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01",
+      "locator": {
+        "kind": "numbered_obligation",
+        "heading_path": [
+          "POLYIA mathematical and software foundations",
+          "3. A generator with its own compiler"
+        ],
+        "label": "5. `Executor` runs admitted operations with resource bounds and capability security.",
+        "line_start": 37,
+        "line_end": 37,
+        "byte_start": 2810,
+        "byte_end_exclusive": 2895
+      },
+      "text_sha256": "05df5a617778c0d6d78d142dd8386e007f0b09e10aca9fe2cfff5827236aa284",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-bed750d816b54029-00000b4f",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+      "source_sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01",
+      "locator": {
+        "kind": "numbered_obligation",
+        "heading_path": [
+          "POLYIA mathematical and software foundations",
+          "3. A generator with its own compiler"
+        ],
+        "label": "6. `Verifier` checks observable round trips, safety, contracts, and independent negative cases.",
+        "line_start": 38,
+        "line_end": 41,
+        "byte_start": 2895,
+        "byte_end_exclusive": 3403
+      },
+      "text_sha256": "1313950ef9fc3efa8ca3e272f9b60e982630c051d778e2f5723b8a3b58a3990c",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-bed750d816b54029-00000d4b",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+      "source_sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "POLYIA mathematical and software foundations",
+          "4. Families of classical generative models"
+        ],
+        "label": "4. Families of classical generative models",
+        "line_start": 42,
+        "line_end": 43,
+        "byte_start": 3403,
+        "byte_end_exclusive": 3450
+      },
+      "text_sha256": "ee0bf4cd171dcd86d99982eb26dedd2846cd4f781687ae5e8d40f23bfa63b1c4",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-bed750d816b54029-00000d7a",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+      "source_sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "POLYIA mathematical and software foundations",
+          "4. Families of classical generative models"
+        ],
+        "label": "**Regular / weighted finite-state models** for pronunciation mapping, morphophonology, phonetic matching and bounded rewrite; weighted semiring choice explicit. Compose transducers over matched alphabets, never naive concatenation of incompatible symbol codes.",
+        "line_start": 44,
+        "line_end": 44,
+        "byte_start": 3450,
+        "byte_end_exclusive": 3713
+      },
+      "text_sha256": "371facf77b8eb645a5101b306a32b00b2dafcecb0c7d4b7878c040272b77e6b7",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-bed750d816b54029-00000e81",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+      "source_sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "POLYIA mathematical and software foundations",
+          "4. Families of classical generative models"
+        ],
+        "label": "**Context-free / attribute grammars** for nested syntax, controlled natural-language templates, compiler ASTs and scene graph composition.",
+        "line_start": 45,
+        "line_end": 45,
+        "byte_start": 3713,
+        "byte_end_exclusive": 3854
+      },
+      "text_sha256": "bb08674630f0ebeb0296e521bba8786e5f364438ff58d64097004113220b485c",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-bed750d816b54029-00000f0e",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+      "source_sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "POLYIA mathematical and software foundations",
+          "4. Families of classical generative models"
+        ],
+        "label": "**Constraint-solving & term rewriting** for typed equations, morphological feature unification, normalization and generative law selection.",
+        "line_start": 46,
+        "line_end": 46,
+        "byte_start": 3854,
+        "byte_end_exclusive": 3996
+      },
+      "text_sha256": "bc7324a799d51f052270763d2f982ec38bd862184cfbf4449f163058140a6dae",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-bed750d816b54029-00000f9c",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+      "source_sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "POLYIA mathematical and software foundations",
+          "4. Families of classical generative models"
+        ],
+        "label": "**Datalog / fixed-point inference** for finite relational closures with stratified negation; provenance and monotonicity must be declared.",
+        "line_start": 47,
+        "line_end": 47,
+        "byte_start": 3996,
+        "byte_end_exclusive": 4137
+      },
+      "text_sha256": "6cebef16e52c0a5934e2a9f9c1c09381782dcf849ad00745494ffa69d4b8d31d",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-bed750d816b54029-00001029",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+      "source_sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "POLYIA mathematical and software foundations",
+          "4. Families of classical generative models"
+        ],
+        "label": "**Typed transition systems** for agent behavior, stateful scenes, query plans, handoffs, privacy and authority.",
+        "line_start": 48,
+        "line_end": 48,
+        "byte_start": 4137,
+        "byte_end_exclusive": 4251
+      },
+      "text_sha256": "a9d4f97ef7e7029aea06e8f39b0b25e5ddc5d7e5ba192d7aefad67dd052aebbe",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-bed750d816b54029-0000109b",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+      "source_sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "POLYIA mathematical and software foundations",
+          "4. Families of classical generative models"
+        ],
+        "label": "**Program synthesis & partial evaluation** for assembling a minimal specialized SDK from a larger library; require language/resource bounds.",
+        "line_start": 49,
+        "line_end": 49,
+        "byte_start": 4251,
+        "byte_end_exclusive": 4394
+      },
+      "text_sha256": "4469b3aca81bc63cf87c3c52ba1d6bdfedefa93e75c80c123ebecb98b9615560",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-bed750d816b54029-0000112a",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+      "source_sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "POLYIA mathematical and software foundations",
+          "4. Families of classical generative models"
+        ],
+        "label": "**Grammar-controlled deterministic text generation** for scoped dialogue/speech. Coverage, refusal and fallback are explicit; no claim of open-domain LLM parity.",
+        "line_start": 50,
+        "line_end": 53,
+        "byte_start": 4394,
+        "byte_end_exclusive": 4764
+      },
+      "text_sha256": "c74534a9d2ac25c86f30b4d7c51abf1730b02e73c528204b057b35adb8576ea2",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-bed750d816b54029-0000129c",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+      "source_sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "POLYIA mathematical and software foundations",
+          "5. Composite agency"
+        ],
+        "label": "5. Composite agency",
+        "line_start": 54,
+        "line_end": 63,
+        "byte_start": 4764,
+        "byte_end_exclusive": 5675
+      },
+      "text_sha256": "287aad8f5f8af142babc45eefe154e5489eb62f3511acda7be42b46f65ad3e87",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-bed750d816b54029-0000162b",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+      "source_sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "POLYIA mathematical and software foundations",
+          "6. A composed automaton as result"
+        ],
+        "label": "6. A composed automaton as result",
+        "line_start": 64,
+        "line_end": 67,
+        "byte_start": 5675,
+        "byte_end_exclusive": 6389
+      },
+      "text_sha256": "56aae3ccdda674c7e7256d3639c5ab0ed9823d1a643cedcc68da38b2db07377c",
+      "disposition": "refined"
+    },
+    {
+      "origin_id": "SUP-bed750d816b54029-000018f5",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+      "source_sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "POLYIA mathematical and software foundations",
+          "7. State machine vs parser vs grammar"
+        ],
+        "label": "7. State machine vs parser vs grammar",
+        "line_start": 68,
+        "line_end": 71,
+        "byte_start": 6389,
+        "byte_end_exclusive": 6909
+      },
+      "text_sha256": "0a44a75354ed18fcb7ad37e1b770933c09121a2fe8fe0a6d4bca82b1531176a2",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-bed750d816b54029-00001f55",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+      "source_sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "POLYIA mathematical and software foundations",
+          "10. Benchmarks and honest claims"
+        ],
+        "label": "10. Benchmarks and honest claims",
+        "line_start": 80,
+        "line_end": 83,
+        "byte_start": 8021,
+        "byte_end_exclusive": 8568
+      },
+      "text_sha256": "a250f1ef8966dc6b16c1fef0d56c6a83b696e2889d20476c1b5f901e30ac1a2d",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-bed750d816b54029-0000220e",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+      "source_sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "POLYIA mathematical and software foundations",
+          "External anchors"
+        ],
+        "label": "WebAssembly Component Model and WIT: https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md",
+        "line_start": 87,
+        "line_end": 87,
+        "byte_start": 8718,
+        "byte_end_exclusive": 8832
+      },
+      "text_sha256": "8bb12cb6b89185b71d687e8f7cec704e71e30908bb731b1878ec0c60727eed66",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-bed750d816b54029-000022b4",
+      "source_path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+      "source_sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "POLYIA mathematical and software foundations",
+          "External anchors"
+        ],
+        "label": "URI and capability security for PURL are separate typed surfaces, not generic authority borrowed by a new compiler.",
+        "line_start": 89,
+        "line_end": 89,
+        "byte_start": 8884,
+        "byte_end_exclusive": 9002
+      },
+      "text_sha256": "3fb8f239d6cda9a3ad57e8f5de279109d0e896439038c69f854785eafaa2c010",
+      "disposition": "retained"
+    },
+    {
+      "origin_id": "SUP-8955e70c7d48bb47-00000000",
+      "source_path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/01_MACHINE_COMPILER.md",
+      "source_sha256": "8955e70c7d48bb47588f863382df6c3a046a2301d4701ef84d4fe4bc29d5a14b",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "TRE Virtual Machine and Compiler — Architectural Contract"
+        ],
+        "label": "TRE Virtual Machine and Compiler — Architectural Contract",
+        "line_start": 1,
+        "line_end": 2,
+        "byte_start": 0,
+        "byte_end_exclusive": 63
+      },
+      "text_sha256": "36ce1747846fb9f6fd6a8b1e3e0a5366b46bb38041b873873e448e7fcc67c41d",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-8955e70c7d48bb47-0000003f",
+      "source_path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/01_MACHINE_COMPILER.md",
+      "source_sha256": "8955e70c7d48bb47588f863382df6c3a046a2301d4701ef84d4fe4bc29d5a14b",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "TRE Virtual Machine and Compiler — Architectural Contract",
+          "1. Compilation stages"
+        ],
+        "label": "1. Compilation stages",
+        "line_start": 3,
+        "line_end": 19,
+        "byte_start": 63,
+        "byte_end_exclusive": 1048
+      },
+      "text_sha256": "e897ea494308dd8ba48ffdaa997faeefe77996a649a5799ed32a652b285210c9",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-8955e70c7d48bb47-00000418",
+      "source_path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/01_MACHINE_COMPILER.md",
+      "source_sha256": "8955e70c7d48bb47588f863382df6c3a046a2301d4701ef84d4fe4bc29d5a14b",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "TRE Virtual Machine and Compiler — Architectural Contract",
+          "2. Registers, memory and scheduler"
+        ],
+        "label": "2. Registers, memory and scheduler",
+        "line_start": 20,
+        "line_end": 23,
+        "byte_start": 1048,
+        "byte_end_exclusive": 1180
+      },
+      "text_sha256": "0ae3fd6bb0299d2ed68d44ced621f7c8fe72613890c6c6dda6f80ecdfa5cd2e3",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-8955e70c7d48bb47-0000049c",
+      "source_path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/01_MACHINE_COMPILER.md",
+      "source_sha256": "8955e70c7d48bb47588f863382df6c3a046a2301d4701ef84d4fe4bc29d5a14b",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "TRE Virtual Machine and Compiler — Architectural Contract",
+          "2. Registers, memory and scheduler"
+        ],
+        "label": "`S-REG` — current structure root handle, not an absolute unchecked address.",
+        "line_start": 24,
+        "line_end": 24,
+        "byte_start": 1180,
+        "byte_end_exclusive": 1260
+      },
+      "text_sha256": "e9fb8d0a1b159feb4710a3b81320e9823c37a3d061fd0b3fb731d6dad8825a75",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-8955e70c7d48bb47-000004ec",
+      "source_path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/01_MACHINE_COMPILER.md",
+      "source_sha256": "8955e70c7d48bb47588f863382df6c3a046a2301d4701ef84d4fe4bc29d5a14b",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "TRE Virtual Machine and Compiler — Architectural Contract",
+          "2. Registers, memory and scheduler"
+        ],
+        "label": "`T-STACK` — grammar parsing stack; distinct from the runtime call stack.",
+        "line_start": 25,
+        "line_end": 25,
+        "byte_start": 1260,
+        "byte_end_exclusive": 1337
+      },
+      "text_sha256": "6778130606881a15b97cb4e9693982f0ca19bd2ed0bf7e8237af4ab96c86d8db",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-8955e70c7d48bb47-00000539",
+      "source_path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/01_MACHINE_COMPILER.md",
+      "source_sha256": "8955e70c7d48bb47588f863382df6c3a046a2301d4701ef84d4fe4bc29d5a14b",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "TRE Virtual Machine and Compiler — Architectural Contract",
+          "2. Registers, memory and scheduler"
+        ],
+        "label": "`A-ALU` — bounded symbolic admission/equivalence checker (not a physical ALU).",
+        "line_start": 26,
+        "line_end": 26,
+        "byte_start": 1337,
+        "byte_end_exclusive": 1420
+      },
+      "text_sha256": "82db0ba107edcd3cbfee16c4186092be5cd5b9baba0a9ae6dece0c1c12ff751f",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-8955e70c7d48bb47-0000058c",
+      "source_path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/01_MACHINE_COMPILER.md",
+      "source_sha256": "8955e70c7d48bb47588f863382df6c3a046a2301d4701ef84d4fe4bc29d5a14b",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "TRE Virtual Machine and Compiler — Architectural Contract",
+          "2. Registers, memory and scheduler"
+        ],
+        "label": "`X-REG` — current typed machine state/capability context.",
+        "line_start": 27,
+        "line_end": 27,
+        "byte_start": 1420,
+        "byte_end_exclusive": 1482
+      },
+      "text_sha256": "b1fdac7054f7587e06dce09d5e46167a68876a42838cf786e93ede9640d06000",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-8955e70c7d48bb47-000005ca",
+      "source_path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/01_MACHINE_COMPILER.md",
+      "source_sha256": "8955e70c7d48bb47588f863382df6c3a046a2301d4701ef84d4fe4bc29d5a14b",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "TRE Virtual Machine and Compiler — Architectural Contract",
+          "2. Registers, memory and scheduler"
+        ],
+        "label": "`C-REG` — current corpus commit and license manifest.",
+        "line_start": 28,
+        "line_end": 28,
+        "byte_start": 1482,
+        "byte_end_exclusive": 1540
+      },
+      "text_sha256": "cf903601c5bf3d72445939dc6f15f1cf1157c4e3306545ad3d6fb494917c4dbe",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-8955e70c7d48bb47-00000604",
+      "source_path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/01_MACHINE_COMPILER.md",
+      "source_sha256": "8955e70c7d48bb47588f863382df6c3a046a2301d4701ef84d4fe4bc29d5a14b",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "TRE Virtual Machine and Compiler — Architectural Contract",
+          "2. Registers, memory and scheduler"
+        ],
+        "label": "`R-REG` — currently admitted render graph / GPU capability view.",
+        "line_start": 29,
+        "line_end": 29,
+        "byte_start": 1540,
+        "byte_end_exclusive": 1609
+      },
+      "text_sha256": "cf8bcae216ae4f09887519ebd9897e247fc601020ee64ca301d1a068e670c11e",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-8955e70c7d48bb47-00000649",
+      "source_path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/01_MACHINE_COMPILER.md",
+      "source_sha256": "8955e70c7d48bb47588f863382df6c3a046a2301d4701ef84d4fe4bc29d5a14b",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "TRE Virtual Machine and Compiler — Architectural Contract",
+          "2. Registers, memory and scheduler"
+        ],
+        "label": "`P-REG` — physics world handle and declared simulation tick.",
+        "line_start": 30,
+        "line_end": 30,
+        "byte_start": 1609,
+        "byte_end_exclusive": 1674
+      },
+      "text_sha256": "7a63b48aa05588cb02880e52093f2d53115782a77faca94f0a482047ee0ccd25",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-8955e70c7d48bb47-0000068a",
+      "source_path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/01_MACHINE_COMPILER.md",
+      "source_sha256": "8955e70c7d48bb47588f863382df6c3a046a2301d4701ef84d4fe4bc29d5a14b",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "TRE Virtual Machine and Compiler — Architectural Contract",
+          "2. Registers, memory and scheduler"
+        ],
+        "label": "`K-REG` — independent logical clock; separate clocks for syntax, simulation, renderer, audio and persistence.",
+        "line_start": 31,
+        "line_end": 34,
+        "byte_start": 1674,
+        "byte_end_exclusive": 2150
+      },
+      "text_sha256": "489d507c8892e97d7b43b4310eedc2a9b429fc8adcf09e8a759f50eca4a81a1b",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-8955e70c7d48bb47-00000866",
+      "source_path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/01_MACHINE_COMPILER.md",
+      "source_sha256": "8955e70c7d48bb47588f863382df6c3a046a2301d4701ef84d4fe4bc29d5a14b",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "TRE Virtual Machine and Compiler — Architectural Contract",
+          "3. Correction matrix for supplied Google blueprint"
+        ],
+        "label": "3. Correction matrix for supplied Google blueprint",
+        "line_start": 35,
+        "line_end": 48,
+        "byte_start": 2150,
+        "byte_end_exclusive": 3773
+      },
+      "text_sha256": "425d37a360e9799adebcbccd4a4e66a9860d3d432fab09b9e3648d5ba3964fa1",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-8955e70c7d48bb47-00000ebd",
+      "source_path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/01_MACHINE_COMPILER.md",
+      "source_sha256": "8955e70c7d48bb47588f863382df6c3a046a2301d4701ef84d4fe4bc29d5a14b",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "TRE Virtual Machine and Compiler — Architectural Contract",
+          "4. Rendering machine boundary"
+        ],
+        "label": "4. Rendering machine boundary",
+        "line_start": 49,
+        "line_end": 52,
+        "byte_start": 3773,
+        "byte_end_exclusive": 4237
+      },
+      "text_sha256": "b38a6122b56dd4cb2942ce35e40406b5d80741e2a999c04a20c941eda0ac13c0",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-8955e70c7d48bb47-0000108d",
+      "source_path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/01_MACHINE_COMPILER.md",
+      "source_sha256": "8955e70c7d48bb47588f863382df6c3a046a2301d4701ef84d4fe4bc29d5a14b",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "TRE Virtual Machine and Compiler — Architectural Contract",
+          "5. Physics machine boundary"
+        ],
+        "label": "5. Physics machine boundary",
+        "line_start": 53,
+        "line_end": 56,
+        "byte_start": 4237,
+        "byte_end_exclusive": 4651
+      },
+      "text_sha256": "cc14bedb3d347a178291634279243a76ef63bebcf0075b9e191b2de846cf59c6",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-8955e70c7d48bb47-0000122b",
+      "source_path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/01_MACHINE_COMPILER.md",
+      "source_sha256": "8955e70c7d48bb47588f863382df6c3a046a2301d4701ef84d4fe4bc29d5a14b",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "TRE Virtual Machine and Compiler — Architectural Contract",
+          "6. Packaging / containment"
+        ],
+        "label": "6. Packaging / containment",
+        "line_start": 57,
+        "line_end": 58,
+        "byte_start": 4651,
+        "byte_end_exclusive": 4682
+      },
+      "text_sha256": "efea3f11091d4eb8e5a099bb1d99e0cde25b5fd3f582ed79cd350bc7d50a14c1",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-8955e70c7d48bb47-0000124a",
+      "source_path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/01_MACHINE_COMPILER.md",
+      "source_sha256": "8955e70c7d48bb47588f863382df6c3a046a2301d4701ef84d4fe4bc29d5a14b",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "TRE Virtual Machine and Compiler — Architectural Contract",
+          "6. Packaging / containment"
+        ],
+        "label": "Web: WASM + WebGPU/WebGL (browser and OS remain trusted execution hosts).",
+        "line_start": 59,
+        "line_end": 59,
+        "byte_start": 4682,
+        "byte_end_exclusive": 4758
+      },
+      "text_sha256": "f8e14c16113fac6f3d96f4dd8ec732324e7b4f3881631b1bb881187e9f877ce0",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-8955e70c7d48bb47-00001296",
+      "source_path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/01_MACHINE_COMPILER.md",
+      "source_sha256": "8955e70c7d48bb47588f863382df6c3a046a2301d4701ef84d4fe4bc29d5a14b",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "TRE Virtual Machine and Compiler — Architectural Contract",
+          "6. Packaging / containment"
+        ],
+        "label": "Android: native libraries + NDK/JNI + Activity/Surface, with bounded asset packs; APK is an application bundle, not an emulated CPU.",
+        "line_start": 60,
+        "line_end": 60,
+        "byte_start": 4758,
+        "byte_end_exclusive": 4893
+      },
+      "text_sha256": "17833a4eae88ed5a53cbae1de06f91413e0ad1b62e41ca4da021a85569c90438",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-8955e70c7d48bb47-0000131d",
+      "source_path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/01_MACHINE_COMPILER.md",
+      "source_sha256": "8955e70c7d48bb47588f863382df6c3a046a2301d4701ef84d4fe4bc29d5a14b",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "TRE Virtual Machine and Compiler — Architectural Contract",
+          "6. Packaging / containment"
+        ],
+        "label": "iOS: native framework/static libraries + Metal and signed IPA; Apple toolchain/signing is required for legitimate device deployment.",
+        "line_start": 61,
+        "line_end": 61,
+        "byte_start": 4893,
+        "byte_end_exclusive": 5028
+      },
+      "text_sha256": "d6f8947ba617c54322089d9c07742639dfdcc23a0ee6ff4b072575725ad0d77c",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-8955e70c7d48bb47-000013a4",
+      "source_path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/01_MACHINE_COMPILER.md",
+      "source_sha256": "8955e70c7d48bb47588f863382df6c3a046a2301d4701ef84d4fe4bc29d5a14b",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "TRE Virtual Machine and Compiler — Architectural Contract",
+          "6. Packaging / containment"
+        ],
+        "label": "Desktop/headless: CLI program, software verifier, optional Vulkan/Metal/D3D adapter.",
+        "line_start": 62,
+        "line_end": 64,
+        "byte_start": 5028,
+        "byte_end_exclusive": 5329
+      },
+      "text_sha256": "a2ea2ff549585bb76c36562f1c0b8f67af4c11dd6404279fe8ccf57b1d16035c",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-4ed9074c9d1713f4-00000000",
+      "source_path": "sources/repos/computationalgrammartheory/CGT_SDK_SPEC.md",
+      "source_sha256": "4ed9074c9d1713f4aba14da0f21de08bfea192fdba57bcefcf8219886e87ca9f",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "CGT SDK: specification (version 0.1.0)"
+        ],
+        "label": "CGT SDK: specification (version 0.1.0)",
+        "line_start": 1,
+        "line_end": 4,
+        "byte_start": 0,
+        "byte_end_exclusive": 361
+      },
+      "text_sha256": "59e69956b5e4736e6af95aa82aa43104b0fa868a6aaa2b3a7e07b4b53fa3ac5a",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-4ed9074c9d1713f4-000002be",
+      "source_path": "sources/repos/computationalgrammartheory/CGT_SDK_SPEC.md",
+      "source_sha256": "4ed9074c9d1713f4aba14da0f21de08bfea192fdba57bcefcf8219886e87ca9f",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "CGT SDK: specification (version 0.1.0)",
+          "2. Core model"
+        ],
+        "label": "2. Core model",
+        "line_start": 12,
+        "line_end": 23,
+        "byte_start": 702,
+        "byte_end_exclusive": 1565
+      },
+      "text_sha256": "108c29a3051f1805effb195f5b38910fb87a8e2d565b279e1e4e79ef15445305",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-4ed9074c9d1713f4-0000061d",
+      "source_path": "sources/repos/computationalgrammartheory/CGT_SDK_SPEC.md",
+      "source_sha256": "4ed9074c9d1713f4aba14da0f21de08bfea192fdba57bcefcf8219886e87ca9f",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "CGT SDK: specification (version 0.1.0)",
+          "2. Core model",
+          "2.1 The three layers"
+        ],
+        "label": "2.1 The three layers",
+        "line_start": 24,
+        "line_end": 25,
+        "byte_start": 1565,
+        "byte_end_exclusive": 1591
+      },
+      "text_sha256": "760b0c56cf1fe74ac715aec2dc81aa4d1ce4897c9f94e261530407a1457a276e",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-4ed9074c9d1713f4-00000637",
+      "source_path": "sources/repos/computationalgrammartheory/CGT_SDK_SPEC.md",
+      "source_sha256": "4ed9074c9d1713f4aba14da0f21de08bfea192fdba57bcefcf8219886e87ca9f",
+      "locator": {
+        "kind": "numbered_obligation",
+        "heading_path": [
+          "CGT SDK: specification (version 0.1.0)",
+          "2. Core model",
+          "2.1 The three layers"
+        ],
+        "label": "1. **Syntax**, `check_syntax(expr)`: parsing, known moves, arity, and admissibility. The admissibility check runs the *projection* of the move word onto the letters ℒ mentions (D-015) through a minimal DFA (`compile_regex`: Thompson construction, then subset construction, then Moore minimization). A syntax failure executes nothing and costs nothing.",
+        "line_start": 26,
+        "line_end": 26,
+        "byte_start": 1591,
+        "byte_end_exclusive": 1945
+      },
+      "text_sha256": "af77ece84a9b3bbd7984ae71a274463f12124643225c7437266720335398043a",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-4ed9074c9d1713f4-00000799",
+      "source_path": "sources/repos/computationalgrammartheory/CGT_SDK_SPEC.md",
+      "source_sha256": "4ed9074c9d1713f4aba14da0f21de08bfea192fdba57bcefcf8219886e87ca9f",
+      "locator": {
+        "kind": "numbered_obligation",
+        "heading_path": [
+          "CGT SDK: specification (version 0.1.0)",
+          "2. Core model",
+          "2.1 The three layers"
+        ],
+        "label": "2. **Semantics**, `denote(calls)`: the pure reference semantics. It runs on `abstract()` and never touches the representation. It reports whether the word is defined and where it first becomes undefined.",
+        "line_start": 27,
+        "line_end": 27,
+        "byte_start": 1945,
+        "byte_end_exclusive": 2149
+      },
+      "text_sha256": "468bb6240f38556f9d88e73a9e4fd8c46c698cc41b1272e1f386d2f848cb123d",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-4ed9074c9d1713f4-00000865",
+      "source_path": "sources/repos/computationalgrammartheory/CGT_SDK_SPEC.md",
+      "source_sha256": "4ed9074c9d1713f4aba14da0f21de08bfea192fdba57bcefcf8219886e87ca9f",
+      "locator": {
+        "kind": "numbered_obligation",
+        "heading_path": [
+          "CGT SDK: specification (version 0.1.0)",
+          "2. Core model",
+          "2.1 The three layers"
+        ],
+        "label": "3. **Execution**, `execute(expr)`: runs `apply` on the representation (mutating it) and counts every step.",
+        "line_start": 28,
+        "line_end": 31,
+        "byte_start": 2149,
+        "byte_end_exclusive": 2324
+      },
+      "text_sha256": "3f85afad0588a243844ec0cb474734038e50fc3f1d885e6622c72740f1150d73",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-4ed9074c9d1713f4-00000914",
+      "source_path": "sources/repos/computationalgrammartheory/CGT_SDK_SPEC.md",
+      "source_sha256": "4ed9074c9d1713f4aba14da0f21de08bfea192fdba57bcefcf8219886e87ca9f",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "CGT SDK: specification (version 0.1.0)",
+          "2. Core model",
+          "2.2 Adequacy invariant (the central test)"
+        ],
+        "label": "2.2 Adequacy invariant (the central test)",
+        "line_start": 32,
+        "line_end": 34,
+        "byte_start": 2324,
+        "byte_end_exclusive": 2501
+      },
+      "text_sha256": "1204c6d4dddb0394bdad5b64abf718c001bbb37dedfe4d341920493cc056cb60",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-4ed9074c9d1713f4-000009c5",
+      "source_path": "sources/repos/computationalgrammartheory/CGT_SDK_SPEC.md",
+      "source_sha256": "4ed9074c9d1713f4aba14da0f21de08bfea192fdba57bcefcf8219886e87ca9f",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "CGT SDK: specification (version 0.1.0)",
+          "2. Core model",
+          "2.2 Adequacy invariant (the central test)"
+        ],
+        "label": "the representation's values equal the reference semantics' values; and",
+        "line_start": 35,
+        "line_end": 35,
+        "byte_start": 2501,
+        "byte_end_exclusive": 2574
+      },
+      "text_sha256": "9f23ced8a74c488fb8d9ccfe61b56dbf63876be3751df36486781e25c8bdf732",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-4ed9074c9d1713f4-00000a0e",
+      "source_path": "sources/repos/computationalgrammartheory/CGT_SDK_SPEC.md",
+      "source_sha256": "4ed9074c9d1713f4aba14da0f21de08bfea192fdba57bcefcf8219886e87ca9f",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "CGT SDK: specification (version 0.1.0)",
+          "2. Core model",
+          "2.2 Adequacy invariant (the central test)"
+        ],
+        "label": "both become undefined at the same call, or both stay defined.",
+        "line_start": 36,
+        "line_end": 39,
+        "byte_start": 2574,
+        "byte_end_exclusive": 2824
+      },
+      "text_sha256": "be390aa4e354a206161189de7b1ebbbc3841db8c0f6fb95e6553e6a77eeeb09f",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-4ed9074c9d1713f4-00000b08",
+      "source_path": "sources/repos/computationalgrammartheory/CGT_SDK_SPEC.md",
+      "source_sha256": "4ed9074c9d1713f4aba14da0f21de08bfea192fdba57bcefcf8219886e87ca9f",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "CGT SDK: specification (version 0.1.0)",
+          "2. Core model",
+          "2.3 Cost conventions"
+        ],
+        "label": "2.3 Cost conventions",
+        "line_start": 40,
+        "line_end": 41,
+        "byte_start": 2824,
+        "byte_end_exclusive": 2850
+      },
+      "text_sha256": "35ccbded0434f519e10656b00501cc1481e50f335ac3b5224c8cd326de94e961",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-4ed9074c9d1713f4-00000b22",
+      "source_path": "sources/repos/computationalgrammartheory/CGT_SDK_SPEC.md",
+      "source_sha256": "4ed9074c9d1713f4aba14da0f21de08bfea192fdba57bcefcf8219886e87ca9f",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "CGT SDK: specification (version 0.1.0)",
+          "2. Core model",
+          "2.3 Cost conventions"
+        ],
+        "label": "Categories: `read`, `write`, `compare`, `arith`, `pointer`, `hash`, `probe`, `alloc`, `edge`, `rule`.",
+        "line_start": 42,
+        "line_end": 42,
+        "byte_start": 2850,
+        "byte_end_exclusive": 2954
+      },
+      "text_sha256": "4687e1280c55bfe4d70861e9b309d4d9faba2d58d89712efd806ba21943d94fd",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-4ed9074c9d1713f4-00000b8a",
+      "source_path": "sources/repos/computationalgrammartheory/CGT_SDK_SPEC.md",
+      "source_sha256": "4ed9074c9d1713f4aba14da0f21de08bfea192fdba57bcefcf8219886e87ca9f",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "CGT SDK: specification (version 0.1.0)",
+          "2. Core model",
+          "2.3 Cost conventions"
+        ],
+        "label": "An arithmetic operation on a b-bit integer costs ⌈b/64⌉.",
+        "line_start": 43,
+        "line_end": 43,
+        "byte_start": 2954,
+        "byte_end_exclusive": 3017
+      },
+      "text_sha256": "6ad0ade2847e217c87d288860b06b24c6a497b03497cd2fa096fa6882ecd026d",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-4ed9074c9d1713f4-00000bc9",
+      "source_path": "sources/repos/computationalgrammartheory/CGT_SDK_SPEC.md",
+      "source_sha256": "4ed9074c9d1713f4aba14da0f21de08bfea192fdba57bcefcf8219886e87ca9f",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "CGT SDK: specification (version 0.1.0)",
+          "2. Core model",
+          "2.3 Cost conventions"
+        ],
+        "label": "Models: `UNIT` (every category weighs 1) and `MEMORY` (only `read`, `write`, `pointer` and `probe`); users may define their own `CostModel`.",
+        "line_start": 44,
+        "line_end": 44,
+        "byte_start": 3017,
+        "byte_end_exclusive": 3160
+      },
+      "text_sha256": "18046cac23a60f8c79e9746c07ef0e5439a81394eddfcddb233e2fd9d4f455dc",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-4ed9074c9d1713f4-00000c58",
+      "source_path": "sources/repos/computationalgrammartheory/CGT_SDK_SPEC.md",
+      "source_sha256": "4ed9074c9d1713f4aba14da0f21de08bfea192fdba57bcefcf8219886e87ca9f",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "CGT SDK: specification (version 0.1.0)",
+          "2. Core model",
+          "2.3 Cost conventions"
+        ],
+        "label": "Costs are *counted*, not measured. Wall-clock time appears only where explicitly labelled.",
+        "line_start": 45,
+        "line_end": 46,
+        "byte_start": 3160,
+        "byte_end_exclusive": 3254
+      },
+      "text_sha256": "d98ba4975814592c3d924153b336bda3bd0ca7c8d4470c78eae418dd988e2b9f",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-4ed9074c9d1713f4-00000cb6",
+      "source_path": "sources/repos/computationalgrammartheory/CGT_SDK_SPEC.md",
+      "source_sha256": "4ed9074c9d1713f4aba14da0f21de08bfea192fdba57bcefcf8219886e87ca9f",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "CGT SDK: specification (version 0.1.0)",
+          "3. Modules"
+        ],
+        "label": "3. Modules",
+        "line_start": 47,
+        "line_end": 62,
+        "byte_start": 3254,
+        "byte_end_exclusive": 4811
+      },
+      "text_sha256": "3ab07440a928fe5292e223b8cedea0fc00bdae564e6876bab68c2de8b7583c68",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-4ed9074c9d1713f4-000013b9",
+      "source_path": "sources/repos/computationalgrammartheory/CGT_SDK_SPEC.md",
+      "source_sha256": "4ed9074c9d1713f4aba14da0f21de08bfea192fdba57bcefcf8219886e87ca9f",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "CGT SDK: specification (version 0.1.0)",
+          "3. Modules"
+        ],
+        "label": "**Graphs:** `bfs`, `bfs_path`, `dfs_order`, `topological_sort`, `tarjan_scc`, `dijkstra`, `bellman_ford`, `floyd_warshall`, `transitive_closure`, `kruskal`, `prim`.",
+        "line_start": 64,
+        "line_end": 64,
+        "byte_start": 5049,
+        "byte_end_exclusive": 5216
+      },
+      "text_sha256": "ee3729d9f17a156619f976554705be5957cda60869f237d5bf88ff44d5dfac6a",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-4ed9074c9d1713f4-000014c3",
+      "source_path": "sources/repos/computationalgrammartheory/CGT_SDK_SPEC.md",
+      "source_sha256": "4ed9074c9d1713f4aba14da0f21de08bfea192fdba57bcefcf8219886e87ca9f",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "CGT SDK: specification (version 0.1.0)",
+          "3. Modules"
+        ],
+        "label": "**Grammar-driven, PageRank and SAT:**",
+        "line_start": 66,
+        "line_end": 70,
+        "byte_start": 5315,
+        "byte_end_exclusive": 5611
+      },
+      "text_sha256": "78619cde371d9dea862e2dcf54aa58290aa0d84b69d9c9260c1d68b087a3165c",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-4ed9074c9d1713f4-000015eb",
+      "source_path": "sources/repos/computationalgrammartheory/CGT_SDK_SPEC.md",
+      "source_sha256": "4ed9074c9d1713f4aba14da0f21de08bfea192fdba57bcefcf8219886e87ca9f",
+      "locator": {
+        "kind": "heading",
+        "heading_path": [
+          "CGT SDK: specification (version 0.1.0)",
+          "4. Testing obligations"
+        ],
+        "label": "4. Testing obligations",
+        "line_start": 71,
+        "line_end": 84,
+        "byte_start": 5611,
+        "byte_end_exclusive": 6718
+      },
+      "text_sha256": "a9d7788d8ffa0f2e2635a9ea470c20d1602902f75b650545a8cc16f31e6e6556",
+      "disposition": "scoped_to_upstream"
+    },
+    {
+      "origin_id": "SUP-4ed9074c9d1713f4-00001a51",
+      "source_path": "sources/repos/computationalgrammartheory/CGT_SDK_SPEC.md",
+      "source_sha256": "4ed9074c9d1713f4aba14da0f21de08bfea192fdba57bcefcf8219886e87ca9f",
+      "locator": {
+        "kind": "bullet_obligation",
+        "heading_path": [
+          "CGT SDK: specification (version 0.1.0)",
+          "5. Determinism"
+        ],
+        "label": "All generators take explicit seeds.",
+        "line_start": 87,
+        "line_end": 87,
+        "byte_start": 6737,
+        "byte_end_exclusive": 6775
+      },
+      "text_sha256": "bc3ef36b95cfc5e2d1a687097ae2e539b7e0a2f9af618f1a45832d86569851f3",
+      "disposition": "scoped_to_upstream"
+    }
+  ],
+  "selected_supplemental_record_count": 88,
+  "all_mapped_supplemental_records_read": false,
+  "current_requirements": [
+    "PIA-097",
+    "PIA-098",
+    "PIA-099",
+    "PIA-100",
+    "PIA-101",
+    "PIA-102",
+    "PIA-103",
+    "PIA-104",
+    "PIA-105",
+    "PIA-106",
+    "PIA-107",
+    "PIA-108"
+  ],
+  "sources_read_in_addition": [
+    "GOD_SEED.md Title IX",
+    "docs/SCIENTIFIC_FOUNDATIONS.md SF-06, SF-07, SF-08",
+    "docs/FORMAL_VOCABULARY.md FV-01 through FV-09",
+    "sources/originals/RELATIONAL_GENERATIVITY_FOUNDATION_V0_1.md"
+  ],
+  "full_D_GENERATORS_acceptance": false
+}

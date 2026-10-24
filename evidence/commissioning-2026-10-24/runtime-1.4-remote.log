@@ -1,0 +1,64 @@
+test_actual_command_receipt_is_durable_and_exact_retry_is_observational (test_remote.RemoteTests.test_actual_command_receipt_is_durable_and_exact_retry_is_observational) ... {"event":"http_access","method":"GET","request_id":"42695e2c1c1d49d6936b9ea6638ea50b","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"509d4100dbf74387a4ef735d17efedeb","route":"commands","status":200}
+{"event":"http_access","method":"GET","request_id":"d953911064cc451c9c38491400ac13ef","route":"discovery","status":200}
+{"event":"http_access","method":"GET","request_id":"33d000f2144a47d59cdebac9935f5b67","route":"state","status":200}
+ok
+test_ambiguous_http_envelopes_never_discard_pending_identity (test_remote.RemoteTests.test_ambiguous_http_envelopes_never_discard_pending_identity) ... {"event":"http_access","method":"GET","request_id":"ee7a18cc711149dfb28599da49246c13","route":"discovery","status":200}
+{"event":"http_access","method":"GET","request_id":"2124082f0ec746289c8c519e20e81b67","route":"state","status":200}
+{"event":"http_access","method":"GET","request_id":"f5b616c0ece0488e874e4cef6dc6a125","route":"discovery","status":200}
+{"event":"http_access","method":"GET","request_id":"05df74c1a6d94b2f806a20f1c8fd9115","route":"state","status":200}
+{"event":"http_access","method":"GET","request_id":"da122458416d42728b29a1dcfbb67e73","route":"discovery","status":200}
+{"event":"http_access","method":"GET","request_id":"33c8138e5fa64edca5db638515196eed","route":"state","status":200}
+{"event":"http_access","method":"GET","request_id":"7117607505684e7b8bb94059e839ccc3","route":"discovery","status":200}
+{"event":"http_access","method":"GET","request_id":"337c2993fac04d248069ac8aa52062c3","route":"state","status":200}
+{"event":"http_access","method":"GET","request_id":"cd263761c67441b29b992ac65ce7db26","route":"discovery","status":200}
+{"event":"http_access","method":"GET","request_id":"d6c317ab30a14f398d32aead55b80940","route":"state","status":200}
+{"event":"http_access","method":"GET","request_id":"25aefb96d1514f20895f778652f03ab1","route":"discovery","status":200}
+{"event":"http_access","method":"GET","request_id":"41292a4ff48543b9b86100f2d46bb5f8","route":"state","status":200}
+ok
+test_decoded_credential_and_caller_credential_are_never_journaled (test_remote.RemoteTests.test_decoded_credential_and_caller_credential_are_never_journaled) ... {"event":"http_access","method":"GET","request_id":"328f3d655029439faf8dbb72f1405d82","route":"discovery","status":200}
+{"event":"http_access","method":"GET","request_id":"78861c454cde413a975191479e1de6df","route":"state","status":200}
+ok
+test_id_reuse_cannot_change_request_and_origin_cannot_change (test_remote.RemoteTests.test_id_reuse_cannot_change_request_and_origin_cannot_change) ... {"event":"http_access","method":"GET","request_id":"25c4c6d6003945ba88a4d5ed9d643c74","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"8bb9052c1b9e476291f364c038545ab2","route":"commands","status":200}
+ok
+test_incompatible_protocol_holds_request_without_dispatch (test_remote.RemoteTests.test_incompatible_protocol_holds_request_without_dispatch) ... ok
+test_lost_committed_response_survives_client_restart_and_new_work_is_held (test_remote.RemoteTests.test_lost_committed_response_survives_client_restart_and_new_work_is_held) ... {"event":"http_access","method":"GET","request_id":"c35c36d6c4c8434086990f0e204737f2","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"cbb9606c128b46649cad2a0f98e097b9","route":"commands","status":200}
+{"event":"http_access","method":"GET","request_id":"0afa66d3b0a04e7f82e616696ff605d0","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"a9f97d54729946088a87b7f5022f5e6b","route":"commands","status":200}
+ok
+test_lost_pre_dispatch_recovers_same_request_after_receipt_not_found (test_remote.RemoteTests.test_lost_pre_dispatch_recovers_same_request_after_receipt_not_found) ... {"event":"http_access","method":"GET","request_id":"55dc8cb3e15b4307a370815b3d9d819c","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"3f5f28322d0a4feaa7666cdf2131b63e","route":"commands","status":200}
+ok
+test_read_role_refusal_keeps_pending_for_exact_recovery_with_operator (test_remote.RemoteTests.test_read_role_refusal_keeps_pending_for_exact_recovery_with_operator) ... {"event":"http_access","method":"GET","request_id":"435e035f907b4e98bac0b43e0dc698fb","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"1b803bb0b42149e8bfb40531aed4fd9e","route":"commands","status":403}
+{"event":"http_access","method":"GET","request_id":"e7efde1c9d2147b1adb3a5dc5cf5bb54","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"af8a5966b5004dd5a9fa07e79919d906","route":"commands","status":200}
+ok
+test_real_redirect_cannot_send_bearer_to_a_second_server (test_remote.RemoteTests.test_real_redirect_cannot_send_bearer_to_a_second_server) ... ok
+test_recovery_does_not_adopt_another_request_with_same_id_and_revision (test_remote.RemoteTests.test_recovery_does_not_adopt_another_request_with_same_id_and_revision) ... {"event":"http_access","method":"GET","request_id":"55b6244247ca41fdbda05468817f8174","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"5869bf376e0e424f8077387206dc73d5","route":"commands","status":200}
+{"event":"http_access","method":"GET","request_id":"c6ba0123b9c841d4975d42233b9053f6","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"9cb63caa2e714fe79e98bc7aceb58424","route":"commands","status":409}
+ok
+test_redirects_are_not_followed_and_credentials_are_not_persisted (test_remote.RemoteTests.test_redirects_are_not_followed_and_credentials_are_not_persisted) ... {"event":"http_access","method":"GET","request_id":"bad3bc4e93764b3eae53b4ea0d5ce1b6","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"966cd60c4ac5429992454f770b375fbf","route":"commands","status":200}
+ok
+test_same_python_value_with_different_json_type_is_id_reuse (test_remote.RemoteTests.test_same_python_value_with_different_json_type_is_id_reuse) ... {"event":"http_access","method":"GET","request_id":"aeaff43ec5ec4fa69654e3b73bc6b952","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"abdf776cc25a402a8da02e3871cb9658","route":"commands","status":200}
+ok
+test_tampered_journal_and_invalid_commands_fail_before_network (test_remote.RemoteTests.test_tampered_journal_and_invalid_commands_fail_before_network) ... {"event":"http_access","method":"GET","request_id":"7d17f1a7f9e344c89093733819429941","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"16aaf70e3da045d9a5d7b2c9685a1220","route":"commands","status":200}
+ok
+test_two_clients_cannot_dispatch_different_commands_through_one_journal (test_remote.RemoteTests.test_two_clients_cannot_dispatch_different_commands_through_one_journal) ... ok
+test_unsafe_origins_and_symlink_journal_are_refused (test_remote.RemoteTests.test_unsafe_origins_and_symlink_journal_are_refused) ... ok
+test_well_formed_revision_conflict_is_retained_as_definite_refusal (test_remote.RemoteTests.test_well_formed_revision_conflict_is_retained_as_definite_refusal) ... {"event":"http_access","method":"GET","request_id":"81a6e319d39b44b4b4f49bf0163dbd06","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"b90cad493a1242d291f6be71a208f3ed","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"12c13be5ebb2481982a615bdf78dd007","route":"commands","status":409}
+ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 1.008s
+
+OK

@@ -1,0 +1,83 @@
+{
+  "ok": true,
+  "release_commit": "9ba60201e30ef838fb3079869cf9751b48751b82",
+  "release_tree": "8c11cde12359b8a1b160ed5d6971779eaa258052",
+  "release": "/opt/polyia/releases/9ba6020",
+  "origin": "https://developed-carmen-recruitment-worm.trycloudflare.com",
+  "before_pid": "509758",
+  "after_pid": "514563",
+  "state_preserved": true,
+  "revision": 69,
+  "backup": "/var/lib/polyia/backups/before-9ba6020.sqlite3",
+  "backup_sha256": "5102e4c042e31a635ee39ffab80e47c8d6cf72d4b25a99c1d7a98db1f7b4a29d",
+  "discovery": {
+    "protocol": "polyia.command-plane",
+    "protocol_version": "1.0.0",
+    "api_base": "/v1",
+    "openapi": "/openapi.json",
+    "service": "Poly IA commissioning bootstrap",
+    "authentication": {
+      "scheme": "Bearer",
+      "operator_scopes": [
+        "read",
+        "command"
+      ],
+      "read_scopes": [
+        "read"
+      ]
+    },
+    "capabilities": {
+      "state": true,
+      "event_polling": true,
+      "sse": false,
+      "websocket": false,
+      "command_receipts": true,
+      "checkpoint_reads": true,
+      "ledger_verification": true,
+      "refusal_reads": true,
+      "captured_artifact_reads": true,
+      "llm_inference": false,
+      "remote_binding": false,
+      "commands": [
+        "guidance.submit",
+        "guidance.ack",
+        "guidance.apply",
+        "requirement.produce",
+        "requirement.verify",
+        "requirement.accept",
+        "checkpoint.create",
+        "experiment.run"
+      ],
+      "experiments": [
+        "acceptance",
+        "astra",
+        "grammar-promotion",
+        "intake",
+        "native",
+        "polynomial",
+        "qpath",
+        "rasm"
+      ]
+    },
+    "limits": {
+      "command_body_bytes": 65536,
+      "header_bytes": 16384,
+      "json_nesting_depth": 32,
+      "event_page_size": 1000,
+      "blob_chunk_bytes": 65536,
+      "active_handlers": 32,
+      "connections_per_second": 20.0,
+      "connection_burst": 60
+    },
+    "transport": {
+      "binding": "loopback",
+      "public_origin": "https://developed-carmen-recruitment-worm.trycloudflare.com",
+      "tls": "external reverse proxy when configured",
+      "cors": false
+    },
+    "assurance": {
+      "scope": "portable bootstrap; not full commission acceptance",
+      "http_refusal_audit": "redacted fixed-schema operational logs; separate from the immutable ledger"
+    }
+  }
+}

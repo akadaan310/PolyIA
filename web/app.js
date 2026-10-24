@@ -527,10 +527,45 @@ form('experiment-form', () => {
   if (!parameters || typeof parameters !== 'object' || Array.isArray(parameters)) throw new ProtocolError('INVALID_PARAMETERS', 'Experiment parameters must be a JSON object.');
   return execute('experiment.run', { name: $('experiment-name').value, parameters });
 });
-$('rasm-example').addEventListener('click', () => {
-  $('experiment-name').value = 'rasm';
-  $('experiment-parameters').value = json({ version: 'polyia.rasm/0.1', chart: 'timeless.rsa28/0.1', operation: 'project', text: 'كتب' });
-});
+function loadExperimentExample(name, parameters) {
+  $('experiment-name').value = name;
+  $('experiment-parameters').value = json(parameters);
+  clearMessage(); notice('Example loaded. Review the parameters, then choose Run exact checks.');
+}
+
+const naturalAlphabetExample = {
+  version: 'polyia.alphabet/0.1', entity_id: 'example:natural-numbers', kind: 'numeric',
+  interpretation: 'Nonnegative integers queried individually; this example does not enumerate infinity.',
+  sources: [{ source: 'GOD_SEED.md', anchor: 'PIA-050; Natural example is a declared construction',
+    sha256: '4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38' }],
+  generator: { name: 'naturals', start: 0, coordinates: 'value' },
+  group: { elements: [{ id: 'e', rule: 'identity' }] },
+};
+
+$('rasm-example').addEventListener('click', () => loadExperimentExample('rasm', {
+  version: 'polyia.rasm/0.1', chart: 'timeless.rsa28/0.1', operation: 'project', text: 'كتب',
+}));
+$('generators-example').addEventListener('click', () => loadExperimentExample('generators', {
+  card: {
+    schema: 'polyia.generator-card/0.1', id: 'request-ack-protocol', version: '1.0.0', family: 'regular',
+    alphabet: ['PING', 'ACK'], seed: 0,
+    grammar: { op: 'sequence', parts: [{ op: 'token', token: 'PING' },
+      { op: 'repeat', body: { op: 'token', token: 'ACK' }, min: 1, max: 2 }] },
+    bounds: { work_units: 10000, max_candidates: 64 },
+  },
+  request: { operation: 'generate' }, style: 'tutorial',
+}));
+$('forms-natural-example').addEventListener('click', () => loadExperimentExample('forms', {
+  version: 'polyia.forms/0.1', operation: 'generate', alphabet: naturalAlphabetExample, index: 7,
+}));
+$('forms-word-example').addEventListener('click', () => loadExperimentExample('forms', {
+  version: 'polyia.forms/0.1', operation: 'serialize', alphabet: naturalAlphabetExample,
+  word: {
+    version: 'polyia.word/0.1', entity_id: 'example:ordered-pair',
+    alphabet_cid: '14ada374b35da1fc96a7f057bc6793d88243fb75d9dc01c8908b317c8bf2a615',
+    index: { kind: 'tuple', length: 2 }, labels: { '0': '0', '1': '7' },
+  },
+}));
 form('intake-form', () => {
   const text = $('intake-text').value;
   if (!text.trim() || new TextEncoder().encode(text).byteLength > 16384) {

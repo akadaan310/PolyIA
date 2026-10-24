@@ -1,0 +1,388 @@
+{
+  "environment": {
+    "architecture": "aarch64",
+    "clock": "time.perf_counter_ns",
+    "cpu_governor": "NOT_CONTROLLED",
+    "hardware_hosts_tested": 1,
+    "implementation": "CPython",
+    "platform": "Linux-6.8.0-1060-oracle-aarch64-with-glibc2.35",
+    "python": "3.13.17",
+    "warmup": "none; timings include natural first-call and warm effects; no performance superiority claimed"
+  },
+  "evidence_class": "FINITE_REPRODUCIBLE_DIFFERENTIAL_AND_CONSTRUCTIVE_CHECKS",
+  "failures": [],
+  "historical_package_compatibility": {
+    "checked": 3,
+    "unchanged": true
+  },
+  "implementation": [
+    {
+      "path": "polyia/native.py",
+      "sha256": "e077b0c85905c14303573f52660d9f42396608f53dc1ced52fe33e69b4052ac8"
+    },
+    {
+      "path": "tools/check_native_quantitative.py",
+      "sha256": "4d75acbc73a714237cb3224ffdef81fe90d32b5ede1d08aa9427ab10571a16a5"
+    }
+  ],
+  "limitations": [
+    "Three computational machine templates on one host; no three-host replication or external hardware claim.",
+    "VM/reference share lexer, parser, typechecker, encoding and fractions.Fraction; differential agreement is not formal proof.",
+    "Generated machine inputs are specialized into closed source programs; there is no new dynamic input ABI.",
+    "Grammar-biased seeded corpus is not a uniform sample of all mathematical terms or all native programs.",
+    "Constructive expected values are made by this harness before compilation, not by a sealed blind external oracle.",
+    "Term normalization semantic checks use the same VM before and after; those checks are self-consistency evidence.",
+    "Partial normalization does not implement transcendental functions, general functions, rewriting theories or full common mathematics.",
+    "PILLAR9 binary backend, WASM/native compiler, generic GUC-card generators and wider mission acceptance remain open.",
+    "Runtime timings exclude OS-level isolation and do not establish memory, energy or cross-host performance."
+  ],
+  "llm_inference": false,
+  "machines": [
+    {
+      "checked": 1000,
+      "corpus_sha256": "1940c9c62f787ee18b4958153d53a86afb2e09f83c0ecf3562849ab049d482f3",
+      "failures": 0,
+      "id": "polynomial-division",
+      "independent_witness_checks": 1000,
+      "repeat_observable_checks": 1000,
+      "result_sha256": "73f00e51c26317e747a7cf6e41468e455c76796a5c6b9d6e95aff8c2d32fb83c",
+      "samples": [
+        {
+          "inputs": {
+            "dividend": [
+              7,
+              -21,
+              -19,
+              -31,
+              53,
+              51,
+              56
+            ],
+            "divisor": [
+              4,
+              -1,
+              -2,
+              -7
+            ]
+          },
+          "outputs": {
+            "result": {
+              "type": "Division",
+              "value": {
+                "quotient": [
+                  "2",
+                  "-5",
+                  "-5",
+                  "-8"
+                ],
+                "remainder": [
+                  "-1",
+                  "1"
+                ]
+              }
+            }
+          },
+          "package_sha256": "c8a60bc2db90df972283a350aef4da4b08664a28f4e041fa42a370c675f74bd2",
+          "source": "(commission (profile \"polyia.native/0.1\") (emit result (divmod (poly 7 -21 -19 -31 53 51 56) (poly 4 -1 -2 -7))))"
+        },
+        {
+          "inputs": {
+            "dividend": [
+              -21,
+              18,
+              27,
+              -24,
+              -24
+            ],
+            "divisor": [
+              3
+            ]
+          },
+          "outputs": {
+            "result": {
+              "type": "Division",
+              "value": {
+                "quotient": [
+                  "-7",
+                  "6",
+                  "9",
+                  "-8",
+                  "-8"
+                ],
+                "remainder": [
+                  "0"
+                ]
+              }
+            }
+          },
+          "package_sha256": "1e26e5b04719291498ee650514625b69dce4aa49b1ccca48ac2ba2f75075bc2e",
+          "source": "(commission (profile \"polyia.native/0.1\") (emit result (divmod (poly -21 18 27 -24 -24) (poly 3))))"
+        }
+      ],
+      "timings_ns": {
+        "admitted_execute": {
+          "max": 1619279,
+          "min": 478000,
+          "p50": 859679,
+          "p95": 1236240,
+          "p99": 1473320,
+          "samples": 1000,
+          "total": 871156477
+        },
+        "compile": {
+          "max": 978079,
+          "min": 230160,
+          "p50": 373239,
+          "p95": 494679,
+          "p99": 815719,
+          "samples": 1000,
+          "total": 381838867
+        },
+        "reference": {
+          "max": 448800,
+          "min": 18760,
+          "p50": 61720,
+          "p95": 123000,
+          "p99": 145160,
+          "samples": 1000,
+          "total": 68216398
+        },
+        "vm": {
+          "max": 649240,
+          "min": 26480,
+          "p50": 69560,
+          "p95": 124840,
+          "p99": 144560,
+          "samples": 1000,
+          "total": 75705766
+        }
+      },
+      "witness": "construct dividend = divisor * chosen quotient + chosen degree-bounded remainder",
+      "witness_class": "CONSTRUCTIVE_EXPECTATION_NOT_EXTERNAL_ORACLE"
+    },
+    {
+      "checked": 1000,
+      "corpus_sha256": "fba345b60b64f6aff930a66ee62f382b180edb083052f5c4c8e751a9c1972f32",
+      "failures": 0,
+      "id": "derivative-evaluation",
+      "independent_witness_checks": 1000,
+      "repeat_observable_checks": 1000,
+      "result_sha256": "66261e0144fdff8d83e5c25e644e7e9a034023f2b019246c4d7b4409cfba6e02",
+      "samples": [
+        {
+          "inputs": {
+            "a": "-13/7",
+            "b": "-1",
+            "c": "-12/7",
+            "x": "11/4"
+          },
+          "outputs": {
+            "result": {
+              "type": "Rational",
+              "value": "-157/14"
+            }
+          },
+          "package_sha256": "2f798575b73c2b76e948b7b81e3010dbdc84af2a31cea85584e83d9f08a61872",
+          "source": "(commission (profile \"polyia.native/0.1\") (emit result (evaluate (derivative (poly -12/7 -1 -13/7)) 11/4)))"
+        },
+        {
+          "inputs": {
+            "a": "14",
+            "b": "-20/7",
+            "c": "1",
+            "x": "2/3"
+          },
+          "outputs": {
+            "result": {
+              "type": "Rational",
+              "value": "332/21"
+            }
+          },
+          "package_sha256": "2f74ba0ffc804afd48b2c56ef6f51ab8f894cd4117b305d5125ea246585b69aa",
+          "source": "(commission (profile \"polyia.native/0.1\") (emit result (evaluate (derivative (poly 1 -20/7 14)) 2/3)))"
+        }
+      ],
+      "timings_ns": {
+        "admitted_execute": {
+          "max": 1563119,
+          "min": 569839,
+          "p50": 606959,
+          "p95": 835519,
+          "p99": 1035399,
+          "samples": 1000,
+          "total": 631542305
+        },
+        "compile": {
+          "max": 1254999,
+          "min": 267720,
+          "p50": 284080,
+          "p95": 510600,
+          "p99": 684399,
+          "samples": 1000,
+          "total": 308503306
+        },
+        "reference": {
+          "max": 201199,
+          "min": 21720,
+          "p50": 26680,
+          "p95": 30200,
+          "p99": 52320,
+          "samples": 1000,
+          "total": 27774546
+        },
+        "vm": {
+          "max": 433199,
+          "min": 31599,
+          "p50": 37440,
+          "p95": 53800,
+          "p99": 74040,
+          "samples": 1000,
+          "total": 40019967
+        }
+      },
+      "witness": "closed quadratic-family identity D(c+b*x+a*x^2)(x)=b+2*a*x",
+      "witness_class": "CONSTRUCTIVE_EXPECTATION_NOT_EXTERNAL_ORACLE"
+    },
+    {
+      "checked": 1000,
+      "corpus_sha256": "65b9debeca62950a38e8dfd0776d08d5ce5bf9c41f24ec1e61b31147c9b38cf4",
+      "failures": 0,
+      "id": "literal-substitution",
+      "independent_witness_checks": 1000,
+      "repeat_observable_checks": 1000,
+      "result_sha256": "adf8091edf5038b9460af3a88c054b5f5406801eda906713adebceefd1a97393",
+      "samples": [
+        {
+          "inputs": {
+            "pattern": "::",
+            "replacement": "\n0",
+            "text": "é::كتب::é"
+          },
+          "outputs": {
+            "result": {
+              "type": "Text",
+              "value": "é\n0كتب\n0é"
+            }
+          },
+          "package_sha256": "faa07d463d8f08689275b9fa95b99680adaf38707ac7140a4a3c2b238b905503",
+          "source": "(commission (profile \"polyia.native/0.1\") (emit result (replace \"é::كتب::é\" \"::\" \"\\n0\")))"
+        },
+        {
+          "inputs": {
+            "pattern": "::",
+            "replacement": "\n1",
+            "text": "é::\n::alpha"
+          },
+          "outputs": {
+            "result": {
+              "type": "Text",
+              "value": "é\n1\n\n1alpha"
+            }
+          },
+          "package_sha256": "7634c09b090547eabe7cd7a911893ffdb4484cf0099b41224a3ee8002e786837",
+          "source": "(commission (profile \"polyia.native/0.1\") (emit result (replace \"é::\\n::alpha\" \"::\" \"\\n1\")))"
+        }
+      ],
+      "timings_ns": {
+        "admitted_execute": {
+          "max": 1147079,
+          "min": 377480,
+          "p50": 425160,
+          "p95": 573520,
+          "p99": 919919,
+          "samples": 1000,
+          "total": 445075385
+        },
+        "compile": {
+          "max": 910440,
+          "min": 189160,
+          "p50": 222280,
+          "p95": 283520,
+          "p99": 532199,
+          "samples": 1000,
+          "total": 235069460
+        },
+        "reference": {
+          "max": 3490238,
+          "min": 3480,
+          "p50": 4320,
+          "p95": 298280,
+          "p99": 345679,
+          "samples": 1000,
+          "total": 26898342
+        },
+        "vm": {
+          "max": 224040,
+          "min": 9080,
+          "p50": 11280,
+          "p95": 16520,
+          "p99": 43520,
+          "samples": 1000,
+          "total": 13236316
+        }
+      },
+      "witness": "known two nonoverlapping pattern sites; expected text assembled without replace or split",
+      "witness_class": "CONSTRUCTIVE_EXPECTATION_NOT_EXTERNAL_ORACLE"
+    }
+  ],
+  "mission_acceptance": false,
+  "recorded_at": "2026-10-24T08:34:21.059517+00:00",
+  "schema": "polyia.native.quantitative/0.1",
+  "seed": 20261024,
+  "sources": [
+    {
+      "anchor": "UCG-084 lines 457–461; UCG-124 lines 627–631; UCG-132",
+      "path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+      "sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e"
+    },
+    {
+      "anchor": "POLY-C-017–024, 057–058, 064, 068–070, 074–080",
+      "path": "sources/recovered/CODEX_CONSTITUTION.md",
+      "sha256": "cfe0b88f9c701e139372d783db1d9568da272f6433f9e513d6475fe7985a2630"
+    }
+  ],
+  "status": "PASS",
+  "terms": {
+    "checked": 10000,
+    "corpus_sha256": "a5a5e8d78df55bb8e6983b627961c6c23159fc290567891981be426984545edc",
+    "depth_histogram": {
+      "1": 183,
+      "2": 713,
+      "3": 4612,
+      "4": 3555,
+      "5": 937
+    },
+    "distinct": 10000,
+    "elapsed_ns": 30663006101,
+    "failures": 0,
+    "idempotence_failures": 0,
+    "operations": {
+      "add": 3652,
+      "concat": 6544,
+      "derivative": 1810,
+      "divmod": 5579,
+      "evaluate": 3675,
+      "mul": 3596,
+      "padd": 1922,
+      "pmul": 1981,
+      "poly": 15527,
+      "quotient": 1748,
+      "remainder": 1765,
+      "replace": 6489,
+      "sub": 3705
+    },
+    "result_sha256": "a724493483d0996a806282ade384cb9a868011810f1eb043ecde676055f15b33",
+    "rewrite_steps": 6567,
+    "rewritten_terms": 3893,
+    "root_types": {
+      "Division": 2500,
+      "Polynomial": 2500,
+      "Rational": 2500,
+      "Text": 2500
+    },
+    "roundtrip_failures": 0,
+    "semantic_checks": 10000,
+    "semantic_failures": 0
+  },
+  "thresholds_met": true
+}

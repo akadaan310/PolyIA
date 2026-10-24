@@ -47,7 +47,7 @@ CONTEXT_CODE = tuple(("runtime-source", f"polyia/{name}.py", True)
 COMMANDS = frozenset({"guidance.submit", "guidance.ack", "guidance.apply",
                       "requirement.produce", "requirement.verify", "requirement.accept",
                       "checkpoint.create", "experiment.run"})
-REGISTERED_EXPERIMENTS = frozenset({"polynomial", "grammar-promotion", "qpath", "acceptance", "native", "intake", "astra", "rasm"})
+REGISTERED_EXPERIMENTS = frozenset({"polynomial", "grammar-promotion", "qpath", "acceptance", "native", "intake", "astra", "rasm", "forms", "generators"})
 # Versioned historical bundle contracts: do not expand these in place. A future
 # dependency closure uses a new bundle version so prior journal records remain valid.
 _EXTENSION_DEPENDENCIES_V1 = {
@@ -55,6 +55,8 @@ _EXTENSION_DEPENDENCIES_V1 = {
     "intake": ("polyia.capabilities", "polyia.intake", "polyia.experiments", "polyia.native"),
     "astra": ("polyia.capabilities", "polyia.astra"),
     "rasm": ("polyia.capabilities", "polyia.rasm"),
+    "forms": ("polyia.capabilities", "polyia.forms"),
+    "generators": ("polyia.capabilities", "polyia.generators"),
 }
 _EXTENSION_ENTRYPOINTS = {
     "polyia.capabilities": ("run_registered",),
@@ -62,6 +64,8 @@ _EXTENSION_ENTRYPOINTS = {
     "polyia.intake": ("run_intake",),
     "polyia.astra": ("run_adapter",),
     "polyia.rasm": ("run_rasm",),
+    "polyia.forms": ("run_forms",),
+    "polyia.generators": ("compile_model", "run_model", "render_explanation", "build_curriculum"),
 }
 _EXTENSION_PINS = {}
 LEDGER_TABLES = frozenset({"genesis", "materialized", "events", "receipts", "blobs", "checkpoints", "refusals"})
@@ -1017,6 +1021,13 @@ class Ledger:
                          and parameters.get("version") == "polyia.rasm/0.1"
                          and parameters.get("chart") == "timeless.rsa28/0.1"
                          and set(parameters) == {"version", "chart", "operation", "projection", "side_data"})
+        # A returned serialized word can exceed the generic scalar-string cap.
+        # Only this exact versioned deserialize envelope receives a text grant;
+        # node/depth and complete 64 KiB command limits remain unchanged.
+        forms_deserialization = (experiment == "forms" and parameters.get("version") == "polyia.forms/0.1"
+                                 and parameters.get("operation") == "deserialize"
+                                 and {"version", "operation", "alphabet", "text"} <= set(parameters)
+                                 <= {"version", "operation", "alphabet", "text", "budgets"})
         item_budget = 8192 if rasm_recovery else 2048
         count = 0
         stack = [(parameters, 0, ())]
@@ -1031,12 +1042,15 @@ class Ledger:
                 stack.extend((v, depth + 1, path + (index,)) for index,v in enumerate(value))
             elif isinstance(value, str):
                 long_source = (experiment == "native" and path == ("source",)) or (experiment == "intake" and path == ("text",))
-                if long_source:
+                serialized_word = forms_deserialization and path == ("text",)
+                if long_source or serialized_word:
                     try:
                         size = len(value.encode("utf-8"))
                     except UnicodeError:
-                        _fail("INVALID_PAYLOAD", "Source must contain valid Unicode scalar values")
-                    if size > 16384:
+                        _fail("INVALID_PAYLOAD", "Source/text must contain valid Unicode scalar values")
+                    if serialized_word and size > 48 * 1024:
+                        _fail("RESOURCE_LIMIT", "Forms serialized text exceeds 48 KiB UTF-8 bytes")
+                    if long_source and size > 16384:
                         _fail("RESOURCE_LIMIT", "Native/intake source exceeds 16384 UTF-8 bytes")
                 elif len(value) > 2048:
                     _fail("RESOURCE_LIMIT", "Experiment parameter strings exceed 2048 characters")
@@ -1131,11 +1145,12 @@ class Ledger:
                               report={"reason": error.code, "detail": error.message, "details": error.details})
             except Exception as error:
                 result.update(outcome="ERROR", evidence_class="NONE", report={"reason": type(error).__name__, "detail": str(error)[:1000]})
-        elif name == "commission-evidence" and requirement["id"] == "PIA-042":
+        elif name == "commission-evidence" and requirement["id"] in {"PIA-042", "PIA-040"}:
             try:
                 from . import mission_verifiers
                 binding, contract = mission_verifiers.prepare(self, requirement, state)
-                report = mission_verifiers.run_capture_checks()
+                report = (mission_verifiers.run_guidance_checks() if requirement["id"] == "PIA-040"
+                          else mission_verifiers.run_capture_checks())
                 self._validate_report(report)
                 after, repeated_contract = mission_verifiers.prepare(self, requirement, state)
                 if not _same_json(binding, after) or contract != repeated_contract:
@@ -1162,9 +1177,10 @@ class Ledger:
         binding = verification.get("mission_binding")
         if binding is None:
             return  # Historical unsupported attempts and failures before binding.
+        adapters = {"PIA-042": "PIA-042/capture-v1", "PIA-040": "PIA-040/guidance-effects-v1"}
         if (not isinstance(binding, dict) or type(binding.get("schema_version")) is not int
-                or binding["schema_version"] != 1 or binding.get("adapter") != "PIA-042/capture-v1"
-                or requirement["id"] != "PIA-042" or binding.get("requirement_id") != requirement["id"]
+                or binding["schema_version"] != 1 or binding.get("adapter") != adapters.get(requirement["id"])
+                or requirement["id"] not in adapters or binding.get("requirement_id") != requirement["id"]
                 or verification.get("verifier") != "commission-evidence"
                 or binding.get("digest") != _hash({k: v for k, v in binding.items() if k != "digest"})
                 or not _same_json(binding.get("captured_artifacts"), requirement["artifacts"])

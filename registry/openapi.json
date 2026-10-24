@@ -3,7 +3,7 @@
   "info": {
     "title": "Poly IA commissioning bootstrap",
     "version": "1.0.0",
-    "description": "Authenticated command service bound to loopback behind an exact public HTTPS origin. Native programs use a bounded typed interpreter; intake retains source spans; Astra uses explicit versions. No model inference or full-mission acceptance is claimed. Global connection admission returns 429/503; logs use fixed categories without user content."
+    "description": "Authenticated command service bound to loopback behind an exact public HTTPS origin. Native programs use a bounded typed interpreter; intake retains source spans; Astra, rasm and structured forms use explicit versions. Constructive generators return exact bounded candidates and evidence. No model inference or full-mission acceptance is claimed. Global connection admission returns 429/503; logs use fixed categories without user content."
   },
   "servers": [
     {
@@ -199,7 +199,7 @@
             "operatorBearer": []
           }
         ],
-        "description": "Requires Content-Length, application/json (optional charset=utf-8), at most 65536 body bytes, unique object keys, finite numbers and depth at most 32. Fixed HTTP actor is operator. A 200 receipt means the operation was recorded; inspect result for scientific/verifier status.",
+        "description": "Requires Content-Length, application/json (optional charset=utf-8), at most 65536 body bytes, unique object keys, finite numbers and outer HTTP JSON depth at most 32. Experiment parameters separately have depth at most 12, 2048 values and 2048 characters per ordinary string, with existing native/intake source and exact rasm-recovery exceptions. The exact forms deserialize envelope additionally permits only its top-level text up to 49152 UTF-8 bytes; all depth/value limits remain, and the entire canonical ASCII-JSON command must still fit 65536 bytes. Generators/forms retain these ordinary input limits and have a 524288-byte canonical ASCII JSON report cap, independent of their larger standalone kernel bounds. Fixed HTTP actor is operator. A 200 receipt means the operation was recorded; inspect result for scientific/verifier status and nested original capability reports.",
         "requestBody": {
           "required": true,
           "content": {
@@ -1100,19 +1100,134 @@
                       "native",
                       "intake",
                       "astra",
-                      "rasm"
+                      "rasm",
+                      "generators",
+                      "forms"
                     ]
                   },
                   "parameters": {
                     "type": "object",
                     "additionalProperties": true,
-                    "description": "Bounded registered input. Native requires {source}; intake requires {text}, optional format text/polyia and style concise/tutorial; astra and rasm require explicit versioned operation envelopes. The rasm example uses the authored contextual chart; it does not certify a historical reading. Only original four experiments support {} defaults. No ambient host execution.",
+                    "description": "Bounded registered input. Native requires {source}; intake requires {text}, optional format text/polyia and style concise/tutorial. Astra, rasm and forms require explicit versioned operation envelopes. Generators requires {card,request}, optionally style concise/tutorial; it returns the constructed model, execution and optional first-candidate illustration/curriculum. Forms wraps its complete original report in report.result; an inner UNSUPPORTED is retained while the command report status is REFUSED. Only the original four experiments support {} defaults. All generators/forms requests retain command limits: 65536 body bytes, parameter depth 12, at most 2048 values and 2048 characters per ordinary string. Only the exact forms deserialize envelope (version polyia.forms/0.1, operation deserialize, alphabet, text, optional budgets; no other fields) allows its top-level text up to 49152 UTF-8 bytes. The whole command remains limited to 65536 canonical ASCII-JSON bytes, so escaping can reduce usable text size. Their command reports are limited to 524288 bytes of canonical ASCII JSON. Larger standalone kernel inputs/results are not necessarily admitted by the command service. No ambient host execution.",
                     "examples": [
                       {
                         "version": "polyia.rasm/0.1",
                         "chart": "timeless.rsa28/0.1",
                         "operation": "project",
                         "text": "كتب"
+                      },
+                      {
+                        "card": {
+                          "schema": "polyia.generator-card/0.1",
+                          "id": "request-ack-protocol",
+                          "version": "1.0.0",
+                          "family": "regular",
+                          "alphabet": [
+                            "PING",
+                            "ACK"
+                          ],
+                          "seed": 0,
+                          "grammar": {
+                            "op": "sequence",
+                            "parts": [
+                              {
+                                "op": "token",
+                                "token": "PING"
+                              },
+                              {
+                                "op": "repeat",
+                                "body": {
+                                  "op": "token",
+                                  "token": "ACK"
+                                },
+                                "min": 1,
+                                "max": 2
+                              }
+                            ]
+                          },
+                          "bounds": {
+                            "work_units": 10000,
+                            "max_candidates": 64
+                          }
+                        },
+                        "request": {
+                          "operation": "generate"
+                        },
+                        "style": "tutorial"
+                      },
+                      {
+                        "version": "polyia.forms/0.1",
+                        "operation": "generate",
+                        "alphabet": {
+                          "version": "polyia.alphabet/0.1",
+                          "entity_id": "example:natural-numbers",
+                          "kind": "numeric",
+                          "interpretation": "Nonnegative integers queried individually; this example does not enumerate infinity.",
+                          "sources": [
+                            {
+                              "source": "GOD_SEED.md",
+                              "anchor": "PIA-050; Natural example is a declared construction",
+                              "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38"
+                            }
+                          ],
+                          "generator": {
+                            "name": "naturals",
+                            "start": 0,
+                            "coordinates": "value"
+                          },
+                          "group": {
+                            "elements": [
+                              {
+                                "id": "e",
+                                "rule": "identity"
+                              }
+                            ]
+                          }
+                        },
+                        "index": 7
+                      },
+                      {
+                        "version": "polyia.forms/0.1",
+                        "operation": "serialize",
+                        "alphabet": {
+                          "version": "polyia.alphabet/0.1",
+                          "entity_id": "example:natural-numbers",
+                          "kind": "numeric",
+                          "interpretation": "Nonnegative integers queried individually; this example does not enumerate infinity.",
+                          "sources": [
+                            {
+                              "source": "GOD_SEED.md",
+                              "anchor": "PIA-050; Natural example is a declared construction",
+                              "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38"
+                            }
+                          ],
+                          "generator": {
+                            "name": "naturals",
+                            "start": 0,
+                            "coordinates": "value"
+                          },
+                          "group": {
+                            "elements": [
+                              {
+                                "id": "e",
+                                "rule": "identity"
+                              }
+                            ]
+                          }
+                        },
+                        "word": {
+                          "version": "polyia.word/0.1",
+                          "entity_id": "example:ordered-pair",
+                          "alphabet_cid": "14ada374b35da1fc96a7f057bc6793d88243fb75d9dc01c8908b317c8bf2a615",
+                          "index": {
+                            "kind": "tuple",
+                            "length": 2
+                          },
+                          "labels": {
+                            "0": "0",
+                            "1": "7"
+                          }
+                        }
                       }
                     ]
                   }
@@ -1585,8 +1700,77 @@
   "x-evidence": {
     "tests": [
       "tests/test_server.py",
-      "web/client.test.mjs"
+      "web/client.test.mjs",
+      "web/ui.test.mjs"
     ],
     "scope": "tested finite bootstrap behaviors; deployment and full commission remain separate"
+  },
+  "x-experiment-contracts": {
+    "generators": {
+      "required_parameters": [
+        "card",
+        "request"
+      ],
+      "optional_parameters": [
+        "style"
+      ],
+      "card_schema": "polyia.generator-card/0.1",
+      "style": [
+        "concise",
+        "tutorial"
+      ],
+      "result_fields": [
+        "model",
+        "execution",
+        "illustration",
+        "curriculum"
+      ],
+      "description": "Compilation failure returns a reason/detail refusal. After compilation the execution retains exact candidates, counts, work and trace. With an explicit style, the first candidate may receive an illustration and polynomial-only curriculum; absent/unsupported views remain null."
+    },
+    "forms": {
+      "version": "polyia.forms/0.1",
+      "operations": [
+        "alphabet",
+        "product",
+        "member",
+        "generate",
+        "word",
+        "serialize",
+        "deserialize",
+        "act",
+        "layout",
+        "canonicalize"
+      ],
+      "result": "Complete run_forms report including actual status, checks, identities and limitations. Outer UNSUPPORTED is mapped to REFUSED; the nested original status is preserved.",
+      "documentation": "docs/STRUCTURED_FORMS.md"
+    },
+    "transport": {
+      "command_body_bytes": 65536,
+      "parameter_depth": 12,
+      "parameter_values": 2048,
+      "parameter_string_characters": 2048,
+      "constructive_report_bytes": 524288,
+      "report_encoding": "canonical ASCII JSON; applies to generators/forms report, not the enclosing receipt or accumulated state",
+      "scope": "Standalone kernel maxima do not expand command admission.",
+      "forms_deserialize_text_exception": {
+        "experiment": "forms",
+        "version": "polyia.forms/0.1",
+        "operation": "deserialize",
+        "required_fields": [
+          "version",
+          "operation",
+          "alphabet",
+          "text"
+        ],
+        "optional_fields": [
+          "budgets"
+        ],
+        "path": [
+          "text"
+        ],
+        "max_utf8_bytes": 49152,
+        "scope": "Only this exact envelope/path; other strings remain at 2048 characters. Entire canonical ASCII-JSON command remains at 65536 bytes; escaped content may reach that limit sooner."
+      }
+    }
   }
 }

@@ -1,0 +1,660 @@
+{
+  "host_witness_readable_before": true,
+  "reports": {
+    "native": {
+      "status": "PASS",
+      "policy": {
+        "name": "polyia.native-bwrap/0.1",
+        "readonly_grants": [
+          "/runtime",
+          "/app",
+          "/input",
+          "/lib/aarch64-linux-gnu",
+          "/lib/ld-linux-aarch64.so.1"
+        ],
+        "private_kernel_views": [
+          "/proc",
+          "/dev"
+        ],
+        "network": "private namespace; no host interfaces",
+        "host_home_workspace_witness_dbus": "not mounted",
+        "environment": "cleared; LANG=C.UTF-8",
+        "capabilities": "all dropped",
+        "inherited_descriptors": "closed except stdio"
+      },
+      "llm_inference": false,
+      "independent_scientific_witness": false,
+      "process": {
+        "pid": 520099,
+        "exit_code": 0,
+        "reaped": true,
+        "observed_descendant_pids": [
+          520100,
+          520101
+        ],
+        "observed_descendants_gone": true,
+        "wall_seconds": 0.06657237000763416,
+        "observed_output_bytes": 1345
+      },
+      "budgets": {
+        "wall_seconds": 5.0,
+        "cpu_seconds": 2,
+        "memory_bytes": 268435456,
+        "output_bytes": 262144
+      },
+      "controller": {
+        "path": "polyia/isolation.py",
+        "sha256": "ad4d530154f8265e3bc1c88ec20c569f12bea186867f8d8dffa29e8c40624b74",
+        "size": 15955,
+        "scope": "source-file identity; loaded controller remains trusted"
+      },
+      "implementation": [
+        {
+          "path": "polyia/native.py",
+          "sha256": "e077b0c85905c14303573f52660d9f42396608f53dc1ced52fe33e69b4052ac8",
+          "size": 35537
+        },
+        {
+          "path": "polyia/__init__.py",
+          "sha256": "0e18f59d169d515a578564334ce81bbd81aa47b9af08b39dd567a3269bfe4ba4",
+          "size": 109
+        },
+        {
+          "path": "polyia/isolated_worker.py",
+          "sha256": "7aa02519a3c12c59c2d3d3fe13826ead6a3cb22ceab78fc902462ab4957d960f",
+          "size": 4169
+        }
+      ],
+      "input_sha256": "486cce5c172192694e3a1e07d66381ff62d7f5d3339afe594735597c9b08cffc",
+      "runtime": {
+        "path": "/opt/polyia/runtime",
+        "executable_sha256": "18967306882a268a51f980b66a5b5fab4300954592833e084aafe2243e1c217b",
+        "bubblewrap_sha256": "3db5dee97f330533033b7581233ad10baec6c60fa12419a3ce84dfc52cb26c77",
+        "architecture": "aarch64"
+      },
+      "dependency_roles": {
+        "native_compiler_vm": "constructor",
+        "fractions.Fraction": "constructor arithmetic",
+        "native_ast_evaluator": "shared-dependency internal consistency check"
+      },
+      "limitations": [
+        "Optional Linux read boundary for fixed trusted native code; not an arbitrary-code security service.",
+        "Kernel, Bubblewrap, interpreter, standard library and readonly platform libraries remain trusted.",
+        "No independent post-seal witness, experiment lifecycle, worker queue or mission acceptance is implemented.",
+        "CPU/address-space limits start in the fixed worker; parent wall/output limits also cover startup."
+      ],
+      "result": {
+        "cost": {
+          "instructions": 4,
+          "vm_work_units": 5
+        },
+        "effects": [],
+        "ok": true,
+        "outputs": {
+          "result": {
+            "type": "Rational",
+            "value": "1/2"
+          }
+        },
+        "package_sha256": "554167f810b434b8fb3826f43b2b592a34a254313c3654983101c78baa95bba0",
+        "source_sha256": "76f51ec875d9c62700da2bdf8edc3c0351a33b42ab9f8cedf8f85903a0006bd1",
+        "verification": {
+          "agreement": true,
+          "evidence_class": "differential-check",
+          "limitation": "finite supported profile; agreement is not proof or full mission acceptance",
+          "method": "bytecode versus separate AST evaluator",
+          "shared_dependencies": [
+            "lexer/parser/typechecker",
+            "fractions.Fraction"
+          ]
+        },
+        "version": "polyia.native/0.1"
+      },
+      "worker": {
+        "effective_capabilities": "0000000000000000",
+        "environment_names": [
+          "LANG",
+          "PWD"
+        ],
+        "input_sha256": "486cce5c172192694e3a1e07d66381ff62d7f5d3339afe594735597c9b08cffc",
+        "namespaces": {
+          "mnt": "mnt:[4026532550]",
+          "net": "net:[4026532555]",
+          "pid": "pid:[4026532553]",
+          "user": "user:[4026532623]"
+        },
+        "network_interfaces": [
+          "lo"
+        ],
+        "pid": 2,
+        "python": "3.13.17",
+        "sources": {
+          "isolated_worker.py": "7aa02519a3c12c59c2d3d3fe13826ead6a3cb22ceab78fc902462ab4957d960f",
+          "polyia/__init__.py": "0e18f59d169d515a578564334ce81bbd81aa47b9af08b39dd567a3269bfe4ba4",
+          "polyia/native.py": "e077b0c85905c14303573f52660d9f42396608f53dc1ced52fe33e69b4052ac8"
+        },
+        "visible_fds": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "withheld_read": {
+      "status": "READ_DENIED",
+      "policy": {
+        "name": "polyia.native-bwrap/0.1",
+        "readonly_grants": [
+          "/runtime",
+          "/app",
+          "/input",
+          "/lib/aarch64-linux-gnu",
+          "/lib/ld-linux-aarch64.so.1"
+        ],
+        "private_kernel_views": [
+          "/proc",
+          "/dev"
+        ],
+        "network": "private namespace; no host interfaces",
+        "host_home_workspace_witness_dbus": "not mounted",
+        "environment": "cleared; LANG=C.UTF-8",
+        "capabilities": "all dropped",
+        "inherited_descriptors": "closed except stdio"
+      },
+      "llm_inference": false,
+      "independent_scientific_witness": false,
+      "process": {
+        "pid": 520102,
+        "exit_code": 0,
+        "reaped": true,
+        "observed_descendant_pids": [
+          520103,
+          520104
+        ],
+        "observed_descendants_gone": true,
+        "wall_seconds": 0.03543862421065569,
+        "observed_output_bytes": 805
+      },
+      "budgets": {
+        "wall_seconds": 5.0,
+        "cpu_seconds": 2,
+        "memory_bytes": 268435456,
+        "output_bytes": 262144
+      },
+      "controller": {
+        "path": "polyia/isolation.py",
+        "sha256": "ad4d530154f8265e3bc1c88ec20c569f12bea186867f8d8dffa29e8c40624b74",
+        "size": 15955,
+        "scope": "source-file identity; loaded controller remains trusted"
+      },
+      "implementation": [
+        {
+          "path": "polyia/native.py",
+          "sha256": "e077b0c85905c14303573f52660d9f42396608f53dc1ced52fe33e69b4052ac8",
+          "size": 35537
+        },
+        {
+          "path": "polyia/__init__.py",
+          "sha256": "0e18f59d169d515a578564334ce81bbd81aa47b9af08b39dd567a3269bfe4ba4",
+          "size": 109
+        },
+        {
+          "path": "polyia/isolated_worker.py",
+          "sha256": "7aa02519a3c12c59c2d3d3fe13826ead6a3cb22ceab78fc902462ab4957d960f",
+          "size": 4169
+        }
+      ],
+      "input_sha256": "072ad1c97d3d1e4981f750e5d12a4d74518e67ed47d03960156a0d0a1f1d0f43",
+      "runtime": {
+        "path": "/opt/polyia/runtime",
+        "executable_sha256": "18967306882a268a51f980b66a5b5fab4300954592833e084aafe2243e1c217b",
+        "bubblewrap_sha256": "3db5dee97f330533033b7581233ad10baec6c60fa12419a3ce84dfc52cb26c77",
+        "architecture": "aarch64"
+      },
+      "dependency_roles": {
+        "native_compiler_vm": "constructor",
+        "fractions.Fraction": "constructor arithmetic",
+        "native_ast_evaluator": "shared-dependency internal consistency check"
+      },
+      "limitations": [
+        "Optional Linux read boundary for fixed trusted native code; not an arbitrary-code security service.",
+        "Kernel, Bubblewrap, interpreter, standard library and readonly platform libraries remain trusted.",
+        "No independent post-seal witness, experiment lifecycle, worker queue or mission acceptance is implemented.",
+        "CPU/address-space limits start in the fixed worker; parent wall/output limits also cover startup."
+      ],
+      "denial_errno": "ENOENT",
+      "denied_resource": "/tmp/polyia-1.4-withheld-qcorja97/withheld-answer.txt",
+      "worker": {
+        "effective_capabilities": "0000000000000000",
+        "environment_names": [
+          "LANG",
+          "PWD"
+        ],
+        "input_sha256": "072ad1c97d3d1e4981f750e5d12a4d74518e67ed47d03960156a0d0a1f1d0f43",
+        "namespaces": {
+          "mnt": "mnt:[4026532550]",
+          "net": "net:[4026532555]",
+          "pid": "pid:[4026532553]",
+          "user": "user:[4026532623]"
+        },
+        "network_interfaces": [
+          "lo"
+        ],
+        "pid": 2,
+        "python": "3.13.17",
+        "sources": {
+          "isolated_worker.py": "7aa02519a3c12c59c2d3d3fe13826ead6a3cb22ceab78fc902462ab4957d960f",
+          "polyia/__init__.py": "0e18f59d169d515a578564334ce81bbd81aa47b9af08b39dd567a3269bfe4ba4",
+          "polyia/native.py": "e077b0c85905c14303573f52660d9f42396608f53dc1ced52fe33e69b4052ac8"
+        },
+        "visible_fds": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "wall": {
+      "status": "RESOURCE_LIMIT",
+      "reason": "WALL_LIMIT",
+      "policy": {
+        "name": "polyia.native-bwrap/0.1",
+        "readonly_grants": [
+          "/runtime",
+          "/app",
+          "/input",
+          "/lib/aarch64-linux-gnu",
+          "/lib/ld-linux-aarch64.so.1"
+        ],
+        "private_kernel_views": [
+          "/proc",
+          "/dev"
+        ],
+        "network": "private namespace; no host interfaces",
+        "host_home_workspace_witness_dbus": "not mounted",
+        "environment": "cleared; LANG=C.UTF-8",
+        "capabilities": "all dropped",
+        "inherited_descriptors": "closed except stdio"
+      },
+      "llm_inference": false,
+      "independent_scientific_witness": false,
+      "process": {
+        "pid": 520105,
+        "exit_code": -9,
+        "reaped": true,
+        "observed_descendant_pids": [
+          520106,
+          520107
+        ],
+        "observed_descendants_gone": true,
+        "wall_seconds": 0.26205116091296077,
+        "observed_output_bytes": 0
+      },
+      "budgets": {
+        "wall_seconds": 0.25,
+        "cpu_seconds": 2,
+        "memory_bytes": 268435456,
+        "output_bytes": 262144
+      },
+      "controller": {
+        "path": "polyia/isolation.py",
+        "sha256": "ad4d530154f8265e3bc1c88ec20c569f12bea186867f8d8dffa29e8c40624b74",
+        "size": 15955,
+        "scope": "source-file identity; loaded controller remains trusted"
+      },
+      "implementation": [
+        {
+          "path": "polyia/native.py",
+          "sha256": "e077b0c85905c14303573f52660d9f42396608f53dc1ced52fe33e69b4052ac8",
+          "size": 35537
+        },
+        {
+          "path": "polyia/__init__.py",
+          "sha256": "0e18f59d169d515a578564334ce81bbd81aa47b9af08b39dd567a3269bfe4ba4",
+          "size": 109
+        },
+        {
+          "path": "polyia/isolated_worker.py",
+          "sha256": "7aa02519a3c12c59c2d3d3fe13826ead6a3cb22ceab78fc902462ab4957d960f",
+          "size": 4169
+        }
+      ],
+      "input_sha256": "b9e46b691388f3a6a373ac8629d1f0f99c55e9082531c9c75b38b1b9698c56c1",
+      "runtime": {
+        "path": "/opt/polyia/runtime",
+        "executable_sha256": "18967306882a268a51f980b66a5b5fab4300954592833e084aafe2243e1c217b",
+        "bubblewrap_sha256": "3db5dee97f330533033b7581233ad10baec6c60fa12419a3ce84dfc52cb26c77",
+        "architecture": "aarch64"
+      },
+      "dependency_roles": {
+        "native_compiler_vm": "constructor",
+        "fractions.Fraction": "constructor arithmetic",
+        "native_ast_evaluator": "shared-dependency internal consistency check"
+      },
+      "limitations": [
+        "Optional Linux read boundary for fixed trusted native code; not an arbitrary-code security service.",
+        "Kernel, Bubblewrap, interpreter, standard library and readonly platform libraries remain trusted.",
+        "No independent post-seal witness, experiment lifecycle, worker queue or mission acceptance is implemented.",
+        "CPU/address-space limits start in the fixed worker; parent wall/output limits also cover startup."
+      ]
+    },
+    "cpu": {
+      "status": "RESOURCE_LIMIT",
+      "policy": {
+        "name": "polyia.native-bwrap/0.1",
+        "readonly_grants": [
+          "/runtime",
+          "/app",
+          "/input",
+          "/lib/aarch64-linux-gnu",
+          "/lib/ld-linux-aarch64.so.1"
+        ],
+        "private_kernel_views": [
+          "/proc",
+          "/dev"
+        ],
+        "network": "private namespace; no host interfaces",
+        "host_home_workspace_witness_dbus": "not mounted",
+        "environment": "cleared; LANG=C.UTF-8",
+        "capabilities": "all dropped",
+        "inherited_descriptors": "closed except stdio"
+      },
+      "llm_inference": false,
+      "independent_scientific_witness": false,
+      "process": {
+        "pid": 520108,
+        "exit_code": 0,
+        "reaped": true,
+        "observed_descendant_pids": [
+          520109,
+          520110
+        ],
+        "observed_descendants_gone": true,
+        "wall_seconds": 1.0177112161181867,
+        "observed_output_bytes": 729
+      },
+      "budgets": {
+        "wall_seconds": 5.0,
+        "cpu_seconds": 1,
+        "memory_bytes": 268435456,
+        "output_bytes": 262144
+      },
+      "controller": {
+        "path": "polyia/isolation.py",
+        "sha256": "ad4d530154f8265e3bc1c88ec20c569f12bea186867f8d8dffa29e8c40624b74",
+        "size": 15955,
+        "scope": "source-file identity; loaded controller remains trusted"
+      },
+      "implementation": [
+        {
+          "path": "polyia/native.py",
+          "sha256": "e077b0c85905c14303573f52660d9f42396608f53dc1ced52fe33e69b4052ac8",
+          "size": 35537
+        },
+        {
+          "path": "polyia/__init__.py",
+          "sha256": "0e18f59d169d515a578564334ce81bbd81aa47b9af08b39dd567a3269bfe4ba4",
+          "size": 109
+        },
+        {
+          "path": "polyia/isolated_worker.py",
+          "sha256": "7aa02519a3c12c59c2d3d3fe13826ead6a3cb22ceab78fc902462ab4957d960f",
+          "size": 4169
+        }
+      ],
+      "input_sha256": "1944c98fcdbd167b0e63148a8c65015c5ac7fa30c25936f4ccb99556a1fa3c39",
+      "runtime": {
+        "path": "/opt/polyia/runtime",
+        "executable_sha256": "18967306882a268a51f980b66a5b5fab4300954592833e084aafe2243e1c217b",
+        "bubblewrap_sha256": "3db5dee97f330533033b7581233ad10baec6c60fa12419a3ce84dfc52cb26c77",
+        "architecture": "aarch64"
+      },
+      "dependency_roles": {
+        "native_compiler_vm": "constructor",
+        "fractions.Fraction": "constructor arithmetic",
+        "native_ast_evaluator": "shared-dependency internal consistency check"
+      },
+      "limitations": [
+        "Optional Linux read boundary for fixed trusted native code; not an arbitrary-code security service.",
+        "Kernel, Bubblewrap, interpreter, standard library and readonly platform libraries remain trusted.",
+        "No independent post-seal witness, experiment lifecycle, worker queue or mission acceptance is implemented.",
+        "CPU/address-space limits start in the fixed worker; parent wall/output limits also cover startup."
+      ],
+      "reason": "CPU_LIMIT",
+      "worker": {
+        "effective_capabilities": "0000000000000000",
+        "environment_names": [
+          "LANG",
+          "PWD"
+        ],
+        "input_sha256": "1944c98fcdbd167b0e63148a8c65015c5ac7fa30c25936f4ccb99556a1fa3c39",
+        "namespaces": {
+          "mnt": "mnt:[4026532550]",
+          "net": "net:[4026532555]",
+          "pid": "pid:[4026532553]",
+          "user": "user:[4026532623]"
+        },
+        "network_interfaces": [
+          "lo"
+        ],
+        "pid": 2,
+        "python": "3.13.17",
+        "sources": {
+          "isolated_worker.py": "7aa02519a3c12c59c2d3d3fe13826ead6a3cb22ceab78fc902462ab4957d960f",
+          "polyia/__init__.py": "0e18f59d169d515a578564334ce81bbd81aa47b9af08b39dd567a3269bfe4ba4",
+          "polyia/native.py": "e077b0c85905c14303573f52660d9f42396608f53dc1ced52fe33e69b4052ac8"
+        },
+        "visible_fds": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "memory": {
+      "status": "RESOURCE_LIMIT",
+      "policy": {
+        "name": "polyia.native-bwrap/0.1",
+        "readonly_grants": [
+          "/runtime",
+          "/app",
+          "/input",
+          "/lib/aarch64-linux-gnu",
+          "/lib/ld-linux-aarch64.so.1"
+        ],
+        "private_kernel_views": [
+          "/proc",
+          "/dev"
+        ],
+        "network": "private namespace; no host interfaces",
+        "host_home_workspace_witness_dbus": "not mounted",
+        "environment": "cleared; LANG=C.UTF-8",
+        "capabilities": "all dropped",
+        "inherited_descriptors": "closed except stdio"
+      },
+      "llm_inference": false,
+      "independent_scientific_witness": false,
+      "process": {
+        "pid": 520118,
+        "exit_code": 0,
+        "reaped": true,
+        "observed_descendant_pids": [
+          520119,
+          520120
+        ],
+        "observed_descendants_gone": true,
+        "wall_seconds": 0.034629384987056255,
+        "observed_output_bytes": 732
+      },
+      "budgets": {
+        "wall_seconds": 5.0,
+        "cpu_seconds": 2,
+        "memory_bytes": 67108864,
+        "output_bytes": 262144
+      },
+      "controller": {
+        "path": "polyia/isolation.py",
+        "sha256": "ad4d530154f8265e3bc1c88ec20c569f12bea186867f8d8dffa29e8c40624b74",
+        "size": 15955,
+        "scope": "source-file identity; loaded controller remains trusted"
+      },
+      "implementation": [
+        {
+          "path": "polyia/native.py",
+          "sha256": "e077b0c85905c14303573f52660d9f42396608f53dc1ced52fe33e69b4052ac8",
+          "size": 35537
+        },
+        {
+          "path": "polyia/__init__.py",
+          "sha256": "0e18f59d169d515a578564334ce81bbd81aa47b9af08b39dd567a3269bfe4ba4",
+          "size": 109
+        },
+        {
+          "path": "polyia/isolated_worker.py",
+          "sha256": "7aa02519a3c12c59c2d3d3fe13826ead6a3cb22ceab78fc902462ab4957d960f",
+          "size": 4169
+        }
+      ],
+      "input_sha256": "258feed348d95b69ce9207ca58d127310de2aadd57c5695aa7e704c58113896f",
+      "runtime": {
+        "path": "/opt/polyia/runtime",
+        "executable_sha256": "18967306882a268a51f980b66a5b5fab4300954592833e084aafe2243e1c217b",
+        "bubblewrap_sha256": "3db5dee97f330533033b7581233ad10baec6c60fa12419a3ce84dfc52cb26c77",
+        "architecture": "aarch64"
+      },
+      "dependency_roles": {
+        "native_compiler_vm": "constructor",
+        "fractions.Fraction": "constructor arithmetic",
+        "native_ast_evaluator": "shared-dependency internal consistency check"
+      },
+      "limitations": [
+        "Optional Linux read boundary for fixed trusted native code; not an arbitrary-code security service.",
+        "Kernel, Bubblewrap, interpreter, standard library and readonly platform libraries remain trusted.",
+        "No independent post-seal witness, experiment lifecycle, worker queue or mission acceptance is implemented.",
+        "CPU/address-space limits start in the fixed worker; parent wall/output limits also cover startup."
+      ],
+      "reason": "MEMORY_LIMIT",
+      "worker": {
+        "effective_capabilities": "0000000000000000",
+        "environment_names": [
+          "LANG",
+          "PWD"
+        ],
+        "input_sha256": "258feed348d95b69ce9207ca58d127310de2aadd57c5695aa7e704c58113896f",
+        "namespaces": {
+          "mnt": "mnt:[4026532550]",
+          "net": "net:[4026532555]",
+          "pid": "pid:[4026532553]",
+          "user": "user:[4026532623]"
+        },
+        "network_interfaces": [
+          "lo"
+        ],
+        "pid": 2,
+        "python": "3.13.17",
+        "sources": {
+          "isolated_worker.py": "7aa02519a3c12c59c2d3d3fe13826ead6a3cb22ceab78fc902462ab4957d960f",
+          "polyia/__init__.py": "0e18f59d169d515a578564334ce81bbd81aa47b9af08b39dd567a3269bfe4ba4",
+          "polyia/native.py": "e077b0c85905c14303573f52660d9f42396608f53dc1ced52fe33e69b4052ac8"
+        },
+        "visible_fds": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "output": {
+      "status": "RESOURCE_LIMIT",
+      "reason": "OUTPUT_LIMIT",
+      "policy": {
+        "name": "polyia.native-bwrap/0.1",
+        "readonly_grants": [
+          "/runtime",
+          "/app",
+          "/input",
+          "/lib/aarch64-linux-gnu",
+          "/lib/ld-linux-aarch64.so.1"
+        ],
+        "private_kernel_views": [
+          "/proc",
+          "/dev"
+        ],
+        "network": "private namespace; no host interfaces",
+        "host_home_workspace_witness_dbus": "not mounted",
+        "environment": "cleared; LANG=C.UTF-8",
+        "capabilities": "all dropped",
+        "inherited_descriptors": "closed except stdio"
+      },
+      "llm_inference": false,
+      "independent_scientific_witness": false,
+      "process": {
+        "pid": 520121,
+        "exit_code": -9,
+        "reaped": true,
+        "observed_descendant_pids": [
+          520122,
+          520123
+        ],
+        "observed_descendants_gone": true,
+        "wall_seconds": 0.04222074104472995,
+        "observed_output_bytes": 4096
+      },
+      "budgets": {
+        "wall_seconds": 5.0,
+        "cpu_seconds": 2,
+        "memory_bytes": 268435456,
+        "output_bytes": 1024
+      },
+      "controller": {
+        "path": "polyia/isolation.py",
+        "sha256": "ad4d530154f8265e3bc1c88ec20c569f12bea186867f8d8dffa29e8c40624b74",
+        "size": 15955,
+        "scope": "source-file identity; loaded controller remains trusted"
+      },
+      "implementation": [
+        {
+          "path": "polyia/native.py",
+          "sha256": "e077b0c85905c14303573f52660d9f42396608f53dc1ced52fe33e69b4052ac8",
+          "size": 35537
+        },
+        {
+          "path": "polyia/__init__.py",
+          "sha256": "0e18f59d169d515a578564334ce81bbd81aa47b9af08b39dd567a3269bfe4ba4",
+          "size": 109
+        },
+        {
+          "path": "polyia/isolated_worker.py",
+          "sha256": "7aa02519a3c12c59c2d3d3fe13826ead6a3cb22ceab78fc902462ab4957d960f",
+          "size": 4169
+        }
+      ],
+      "input_sha256": "0927f02d3b7037d77c675c626edf4b2d735080e8849841f0bd64bc37b3bd4882",
+      "runtime": {
+        "path": "/opt/polyia/runtime",
+        "executable_sha256": "18967306882a268a51f980b66a5b5fab4300954592833e084aafe2243e1c217b",
+        "bubblewrap_sha256": "3db5dee97f330533033b7581233ad10baec6c60fa12419a3ce84dfc52cb26c77",
+        "architecture": "aarch64"
+      },
+      "dependency_roles": {
+        "native_compiler_vm": "constructor",
+        "fractions.Fraction": "constructor arithmetic",
+        "native_ast_evaluator": "shared-dependency internal consistency check"
+      },
+      "limitations": [
+        "Optional Linux read boundary for fixed trusted native code; not an arbitrary-code security service.",
+        "Kernel, Bubblewrap, interpreter, standard library and readonly platform libraries remain trusted.",
+        "No independent post-seal witness, experiment lifecycle, worker queue or mission acceptance is implemented.",
+        "CPU/address-space limits start in the fixed worker; parent wall/output limits also cover startup."
+      ]
+    }
+  },
+  "host_witness_unchanged_after": true,
+  "ok": true,
+  "live_service_or_ledger_accessed": false,
+  "mission_acceptance": false
+}

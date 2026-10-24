@@ -20,6 +20,8 @@ if str(ROOT) not in sys.path:
 
 from polyia.astra import run_adapter
 from polyia.experiments import run_registered
+from polyia.forms import run_forms
+from polyia.generators import compile_model, run_model
 from polyia.intake import run_intake
 from polyia.native import compile_program, execute_program
 from polyia.store import Ledger
@@ -34,12 +36,15 @@ SOURCE_PATHS = (
     'docs/DIVISION_CHARTERS.md', 'registry/university.json',
     'polyia/experiments.py', 'polyia/native.py', 'polyia/intake.py',
     'polyia/astra.py', 'polyia/store.py', 'tools/build_book_of_forms.py', EXERCISES,
+    'polyia/forms.py', 'polyia/generators.py', 'docs/STRUCTURED_FORMS.md',
+    'docs/GENERATORS.md', 'GOD_SEED.md', 'sources/originals/PLICASTRATUM.md',
+    'examples/generators/protocol.card.json',
 )
 TOPIC_EXERCISES = {
     'transition-systems': 'BF-10: one durable command and retry',
     'admissibility': 'BF-03, BF-06, BF-11: explicit guard examples',
-    'alphabets-words': 'BF-04: finite words with token identities',
-    'generative-grammars': 'BF-04: finite-language promotion only',
+    'alphabets-words': 'BF-04, BF-13–15: tokens, Naturals and named cyclic/dihedral quotients',
+    'generative-grammars': 'BF-04, BF-16–18: finite promotion and bounded regular generation',
     'alphabet-towers': 'BF-04: one promotion level only',
     'compositional-forms': 'BF-05: two rational hypersteps',
     'typed-machines': 'BF-07: closed pure native program',
@@ -115,9 +120,80 @@ def _execute(name, parameters):
         return run_intake(parameters)
     if name == 'astra':
         return run_adapter(parameters)
+    if name == 'forms':
+        return run_forms(parameters)
+    if name == 'generators':
+        require(set(parameters) == {'card', 'request'}, 'Generator lesson requires exactly card and request')
+        compiled = compile_model(parameters['card'])
+        if not compiled['ok']:
+            return {'status': 'REFUSED', 'result': compiled['error'],
+                    'checks': [{'name': 'generator compilation', 'passed': False}]}
+        return run_model(compiled['model'], parameters['request'])
     if name == 'durable-ledger':
         return _ledger_exercise(parameters)
     raise BookError('Unregistered exercise executor: ' + str(name))
+
+
+def construction_exercises(root=ROOT):
+    """Chapter 9's fixed examples; expected answers are literal, never learned from outputs.
+
+    The original twelve-exercise file remains preserved. These six additive
+    lessons use a separate source-linked construction within the same edition.
+    """
+    root = Path(root)
+    source = {'source': 'GOD_SEED.md', 'anchor': 'PIA-050; Natural construction for chapter 9',
+              'sha256': sha(source_bytes(root, 'GOD_SEED.md'))}
+    alphabet = {'version': 'polyia.alphabet/0.1', 'entity_id': 'book:naturals', 'kind': 'numeric',
+                'interpretation': 'Nonnegative integers queried individually, not an enumeration of infinity.',
+                'sources': [source], 'generator': {'name': 'naturals', 'start': 0, 'coordinates': 'value'},
+                'group': {'elements': [{'id': 'e', 'rule': 'identity'}]}}
+    alphabet_cid = sha(canonical({key: value for key, value in alphabet.items() if key != 'entity_id'}))
+    word = {'version': 'polyia.word/0.1', 'entity_id': 'book:oriented-three-cycle',
+            'alphabet_cid': alphabet_cid, 'index': {'kind': 'cyclic', 'length': 3},
+            'labels': {'0': '0', '1': '7', '2': '1'}}
+    card = json.loads(source_bytes(root, 'examples/generators/protocol.card.json'))
+    forms_sources = [{'path': 'GOD_SEED.md', 'anchor': 'PIA-050'},
+                     {'path': 'docs/STRUCTURED_FORMS.md', 'anchor': '## Declared canonical relations'},
+                     {'path': 'sources/originals/PLICASTRATUM.md', 'anchor': '**D2. Word of rank r'}]
+    generator_sources = [{'path': 'docs/GENERATORS.md', 'anchor': '## Family 1: regular token languages'},
+                         {'path': 'examples/generators/protocol.card.json', 'anchor': 'request-ack-protocol'}]
+
+    def lesson(identifier, title, executor, parameters, expected, scope, sources):
+        return {'id': identifier, 'chapter': 9, 'title': title, 'executor': executor,
+                'input': parameters, 'expected': expected, 'evidence_scope': scope, 'sources': sources}
+
+    return [
+        lesson('BF-13', 'Query an effective alphabet without enumerating infinity', 'forms',
+               {'version': 'polyia.forms/0.1', 'operation': 'generate', 'alphabet': alphabet, 'index': 7},
+               {'status': 'PASS', 'result.letter.value': '7', 'result.letter.coordinates': ['7'], 'result.enumerated': False},
+               'One exact bounded Natural query. The countably infinite definition is not an enumerated result.', forms_sources),
+        lesson('BF-14', 'Keep orientation when only rotations are declared', 'forms',
+               {'version': 'polyia.forms/0.1', 'operation': 'canonicalize', 'alphabet': alphabet,
+                'word': word, 'relation': 'cyclic_rotations'},
+               {'status': 'PASS', 'result.canonical.form.labels': ['0', '7', '1'],
+                'result.index_candidates_checked': 3, 'result.preserved_relation': 'declared-structural-orbit-only'},
+               'All three rotations of one labeled cycle, with fixed letter identities. No domain-denotation equivalence is inferred.', forms_sources),
+        lesson('BF-15', 'Declare reversal before identifying an orientation', 'forms',
+               {'version': 'polyia.forms/0.1', 'operation': 'canonicalize', 'alphabet': alphabet,
+                'word': word, 'relation': 'dihedral'},
+               {'status': 'PASS', 'result.canonical.form.labels': ['0', '1', '7'],
+                'result.index_candidates_checked': 6, 'result.preserved_relation': 'declared-structural-orbit-only'},
+               'All six positional dihedral transformations of the same input. This many-to-one quotient does not recover its original orientation.', forms_sources),
+        lesson('BF-16', 'Construct the two admitted protocol words', 'generators',
+               {'card': card, 'request': {'operation': 'generate'}},
+               {'status': 'PASS', 'result.candidates.0.value': ['PING', 'ACK'],
+                'result.candidates.1.value': ['PING', 'ACK', 'ACK'], 'result.counts.admitted': 2, 'result.complete': True},
+               'Finite regular-language construction with compiled-machine and source-interpreter checks. It does not verify a network protocol or a human language.', generator_sources),
+        lesson('BF-17', 'A successful membership check can answer no', 'generators',
+               {'card': card, 'request': {'operation': 'recognize', 'word': ['ACK']}},
+               {'status': 'PASS', 'result.accepted': False, 'result.reference_accepted': False, 'result.complete': True},
+               'Both exact recognizers reject one word within the supplied alphabet. PASS records completion of the check, not membership.', generator_sources),
+        lesson('BF-18', 'An exhausted prefix search has not proved emptiness', 'generators',
+               {'card': card, 'request': {'operation': 'generate', 'search_budget': 1}},
+               {'status': 'RESOURCE_LIMIT', 'result.candidates': [], 'result.complete': False,
+                'result.stop_reason': 'SEARCH_BUDGET', 'result.counts.frontier_visits': 1},
+               'A one-prefix budget produces no admitted words and leaves the frontier incomplete. BF-16 already supplies two witnesses, so this is not an empty-language claim.', generator_sources),
+    ]
 
 
 def _select(value, path):
@@ -142,7 +218,7 @@ def run_exercises(specification, root=ROOT):
         name = exercise['id']
         require(type(name) is str and re.fullmatch(r'BF-[0-9]{2}', name) and name not in seen, 'Exercise IDs must be unique')
         seen.add(name)
-        require(type(exercise['chapter']) is int and 1 <= exercise['chapter'] <= 8, 'Invalid chapter')
+        require(type(exercise['chapter']) is int and 1 <= exercise['chapter'] <= 9, 'Invalid chapter')
         require(type(exercise['expected']) is dict and exercise['expected'], 'Expected fields cannot be empty')
         require(type(exercise['sources']) is list and exercise['sources'], 'Every exercise needs a source')
         sources = []
@@ -158,7 +234,7 @@ def run_exercises(specification, root=ROOT):
         if result.get('status') == 'PASS':
             checks = result.get('checks')
             require(type(checks) is list and bool(checks) and all(
-                type(c) is dict and (c['pass'] is True if 'pass' in c else c.get('verdict') == 'PASS')
+                type(c) is dict and (c['pass'] is True if 'pass' in c else c['passed'] is True if 'passed' in c else c.get('verdict') == 'PASS')
                 for c in checks), name + ': computation needs nonempty, explicitly passing checks')
         if result.get('ok') is True and exercise['executor'] == 'native':
             require(result['verification']['agreement'] is True, name + ': VM/reference disagreement')
@@ -168,7 +244,7 @@ def run_exercises(specification, root=ROOT):
                          'expectations_match': True, 'result_sha256': sha(canonical(result)),
                          'computation_status': result.get('status', 'PASS' if result.get('ok', result.get('verified')) else 'REFUSED'),
                          'evidence_scope': exercise['evidence_scope'], 'sources': sources})
-    require({e['chapter'] for e in exercises} == set(range(1, 9)), 'Each chapter needs an executed exercise')
+    require({e['chapter'] for e in exercises} in (set(range(1, 9)), set(range(1, 10))), 'Each retained chapter needs an executed exercise')
     return receipts
 
 
@@ -207,6 +283,7 @@ def _replace_block(book, name, content):
 def build(root=ROOT, *, write=False, check=False):
     root = Path(root).resolve()
     specification = json.loads(source_bytes(root, EXERCISES))
+    specification['exercises'].extend(construction_exercises(root))
     receipts = run_exercises(specification, root)
     atlas = load_atlas(root, json.loads(source_bytes(root, 'registry/university.json')))
     book = source_bytes(root, BOOK).decode('utf-8')
@@ -251,6 +328,7 @@ def main():
     mode = parser.add_mutually_exclusive_group(required=True)
     mode.add_argument('--write', action='store_true', help='execute lessons and update generated sections/evidence')
     mode.add_argument('--check', action='store_true', help='execute lessons and verify reproducible checked-in outputs')
+    mode.add_argument('--preview', action='store_true', help='execute all lessons in memory without requiring or changing retained outputs')
     args = parser.parse_args()
     try:
         result = build(write=args.write, check=args.check)
@@ -258,6 +336,7 @@ def main():
         print(json.dumps({'ok': False, 'error': str(error)}))
         return 2
     print(json.dumps({'ok': True, 'book_id': 'BOOK-OF-FORMS', 'edition': '0.1.0',
+                      'mode': 'PREVIEW_NOT_WRITTEN' if args.preview else 'WRITE' if args.write else 'CHECK',
                       'book_sha256': result['evidence']['book_sha256'], 'atlas_topics': 62,
                       'exercises': len(result['evidence']['exercises']), 'mission_status': 'NOT_COMMISSIONED'}))
     return 0

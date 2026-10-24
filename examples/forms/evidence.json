@@ -1,0 +1,3404 @@
+{
+  "calls": [
+    {
+      "parameters": {
+        "alphabet": {
+          "entity_id": "example:lettered",
+          "group": {
+            "elements": [
+              {
+                "id": "e",
+                "images": [
+                  "H",
+                  "He"
+                ]
+              }
+            ]
+          },
+          "interpretation": "Two transcribed periodic-table positions. This is a supplied layout, not a chemical law.",
+          "kind": "lettered",
+          "letters": [
+            {
+              "coordinates": [
+                "1",
+                "1"
+              ],
+              "id": "H",
+              "sort": "ElementToken",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": "H"
+            },
+            {
+              "coordinates": [
+                "1",
+                "18"
+              ],
+              "id": "He",
+              "sort": "ElementToken",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": "He"
+            }
+          ],
+          "sources": [
+            {
+              "anchor": "run_examples literal constructions",
+              "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+              "source": "examples/forms/demo.py"
+            }
+          ],
+          "version": "polyia.alphabet/0.1"
+        },
+        "operation": "alphabet",
+        "version": "polyia.forms/0.1"
+      },
+      "report": {
+        "budgets": {
+          "cells": 256,
+          "depth": 64,
+          "output_bytes": 524288,
+          "work": 1000000
+        },
+        "checks": [
+          {
+            "name": "typed-alphabet-and-declared-group",
+            "passed": true,
+            "scope": "validated exact permutations or built-in natural identity; supplied sources are references"
+          }
+        ],
+        "effects": [],
+        "evidence_class": "EXACTLY_CHECKED",
+        "limitations": [
+          "Established finite permutation/group algorithms implement a chosen versioned representation; no general semantic preservation is asserted.",
+          "Only the named structural equivalence is checked. Alphabet permutations preserve declared sorts, not inferred geometry, sound, physics or chemistry.",
+          "A supplied periodic-table layout is data, not an aufbau, valence or molecular generative law. UCG-055/062/066/102 remain open.",
+          "Graph words are simple directed or undirected vertex-labeled graphs with optional loops; no multiedges, edge labels, hyperedges or general graph grammar.",
+          "Graph canonicalization exhausts vertex permutations within the declared budget; larger cases return RESOURCE_LIMIT without an equivalence digest.",
+          "Tree canonicalization is for rooted unordered labeled trees; boxes have rank 0 through 3 and ordered coordinates. No implicit lattice isometry is applied.",
+          "Naturals supplies an effective definition and individual bounded queries, never a finite enumeration of infinity. Generated products are unsupported.",
+          "Serialization restores JSON values and complete labeled structure, not original whitespace or original JSON bytes. Quotients are not reversible encodings.",
+          "Source references supplied with letters are custody declarations, not independently authenticated facts. Embedded implementation source pins are not read at runtime.",
+          "No chemical domain validation, acoustic synthesis, native compiler integration, store/API registration or full mission acceptance is supplied."
+        ],
+        "llm_inference": false,
+        "mission_acceptance": false,
+        "result": {
+          "alphabet": {
+            "entity_id": "example:lettered",
+            "group": {
+              "elements": [
+                {
+                  "id": "e",
+                  "images": [
+                    "H",
+                    "He"
+                  ]
+                }
+              ]
+            },
+            "interpretation": "Two transcribed periodic-table positions. This is a supplied layout, not a chemical law.",
+            "kind": "lettered",
+            "letters": [
+              {
+                "coordinates": [
+                  "1",
+                  "1"
+                ],
+                "id": "H",
+                "sort": "ElementToken",
+                "sources": [
+                  {
+                    "anchor": "run_examples literal constructions",
+                    "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                    "source": "examples/forms/demo.py"
+                  }
+                ],
+                "value": "H"
+              },
+              {
+                "coordinates": [
+                  "1",
+                  "18"
+                ],
+                "id": "He",
+                "sort": "ElementToken",
+                "sources": [
+                  {
+                    "anchor": "run_examples literal constructions",
+                    "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                    "source": "examples/forms/demo.py"
+                  }
+                ],
+                "value": "He"
+              }
+            ],
+            "sources": [
+              {
+                "anchor": "run_examples literal constructions",
+                "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                "source": "examples/forms/demo.py"
+              }
+            ],
+            "version": "polyia.alphabet/0.1"
+          },
+          "cardinality": "finite",
+          "content_cid": "5585acb7d64f00be79ebf943a599bca3880cb89c1a71aa8152ec3159a79d02cb",
+          "entity_id": "example:lettered",
+          "group": {
+            "convention": "row g, column h means g after h: (gh)(x)=g(h(x))",
+            "elements": [
+              "e"
+            ],
+            "identity": "e",
+            "inverse": {
+              "e": "e"
+            },
+            "multiplication": [
+              [
+                "e"
+              ]
+            ],
+            "order": 1
+          },
+          "letter_count": 2,
+          "resolved_letters": [
+            {
+              "coordinates": [
+                "1",
+                "1"
+              ],
+              "id": "H",
+              "sort": "ElementToken",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": "H"
+            },
+            {
+              "coordinates": [
+                "1",
+                "18"
+              ],
+              "id": "He",
+              "sort": "ElementToken",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": "He"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "anchor": "PIA-050, PIA-051",
+            "path": "GOD_SEED.md",
+            "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38"
+          },
+          {
+            "anchor": "SF-01, SF-02",
+            "path": "docs/SCIENTIFIC_FOUNDATIONS.md",
+            "sha256": "78dff0f8c6637449d043e3816d2d4f6cfc5a42a2d4aad6dd662f2d6b5e9cd8f0"
+          },
+          {
+            "anchor": "FV-01 through FV-09; especially FV-03, FV-04, FV-05",
+            "path": "docs/FORMAL_VOCABULARY.md",
+            "sha256": "45455b3d908b5ca978a510902337c08363478db378aa52b0825c91a5deb5ce24"
+          },
+          {
+            "anchor": "§§2.1–2.2, 4 D1–D3, 6.3, 7; complete source read",
+            "path": "sources/originals/PLICASTRATUM.md",
+            "sha256": "3a11ee1c6998d740cd556847ae8b64115bdac17c21e78efa85c5701e2606fcdd"
+          },
+          {
+            "anchor": "§013 Alphabet kinds; §014 Words of any rank",
+            "path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+            "sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e"
+          },
+          {
+            "anchor": "§§0–1, 3.1–3.3, 5; complete source read",
+            "path": "sources/originals/UCG_FOUNDATIONS.md",
+            "sha256": "699d8e6bbb286b41512f746bd27fb353d506d7a7f7128e80dd41a27479043d1d"
+          }
+        ],
+        "status": "PASS",
+        "version": "polyia.forms/0.1",
+        "work_used": 2
+      }
+    },
+    {
+      "parameters": {
+        "alphabet": {
+          "entity_id": "example:geometric",
+          "group": {
+            "elements": [
+              {
+                "id": "r0",
+                "images": [
+                  "E",
+                  "N",
+                  "W",
+                  "S"
+                ]
+              },
+              {
+                "id": "r1",
+                "images": [
+                  "N",
+                  "W",
+                  "S",
+                  "E"
+                ]
+              },
+              {
+                "id": "r2",
+                "images": [
+                  "W",
+                  "S",
+                  "E",
+                  "N"
+                ]
+              },
+              {
+                "id": "r3",
+                "images": [
+                  "S",
+                  "E",
+                  "N",
+                  "W"
+                ]
+              }
+            ]
+          },
+          "interpretation": "Four rational points with declared cyclic letter permutations. No general isometry checker.",
+          "kind": "geometric",
+          "letters": [
+            {
+              "coordinates": [
+                "1",
+                "0"
+              ],
+              "id": "E",
+              "sort": "Point",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": {
+                "ports": [
+                  "E"
+                ],
+                "shape": "point",
+                "vertices": [
+                  [
+                    "1",
+                    "0"
+                  ]
+                ]
+              }
+            },
+            {
+              "coordinates": [
+                "0",
+                "1"
+              ],
+              "id": "N",
+              "sort": "Point",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": {
+                "ports": [
+                  "N"
+                ],
+                "shape": "point",
+                "vertices": [
+                  [
+                    "0",
+                    "1"
+                  ]
+                ]
+              }
+            },
+            {
+              "coordinates": [
+                "-1",
+                "0"
+              ],
+              "id": "W",
+              "sort": "Point",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": {
+                "ports": [
+                  "W"
+                ],
+                "shape": "point",
+                "vertices": [
+                  [
+                    "-1",
+                    "0"
+                  ]
+                ]
+              }
+            },
+            {
+              "coordinates": [
+                "0",
+                "-1"
+              ],
+              "id": "S",
+              "sort": "Point",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": {
+                "ports": [
+                  "S"
+                ],
+                "shape": "point",
+                "vertices": [
+                  [
+                    "0",
+                    "-1"
+                  ]
+                ]
+              }
+            }
+          ],
+          "sources": [
+            {
+              "anchor": "run_examples literal constructions",
+              "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+              "source": "examples/forms/demo.py"
+            }
+          ],
+          "version": "polyia.alphabet/0.1"
+        },
+        "operation": "alphabet",
+        "version": "polyia.forms/0.1"
+      },
+      "report": {
+        "budgets": {
+          "cells": 256,
+          "depth": 64,
+          "output_bytes": 524288,
+          "work": 1000000
+        },
+        "checks": [
+          {
+            "name": "typed-alphabet-and-declared-group",
+            "passed": true,
+            "scope": "validated exact permutations or built-in natural identity; supplied sources are references"
+          }
+        ],
+        "effects": [],
+        "evidence_class": "EXACTLY_CHECKED",
+        "limitations": [
+          "Established finite permutation/group algorithms implement a chosen versioned representation; no general semantic preservation is asserted.",
+          "Only the named structural equivalence is checked. Alphabet permutations preserve declared sorts, not inferred geometry, sound, physics or chemistry.",
+          "A supplied periodic-table layout is data, not an aufbau, valence or molecular generative law. UCG-055/062/066/102 remain open.",
+          "Graph words are simple directed or undirected vertex-labeled graphs with optional loops; no multiedges, edge labels, hyperedges or general graph grammar.",
+          "Graph canonicalization exhausts vertex permutations within the declared budget; larger cases return RESOURCE_LIMIT without an equivalence digest.",
+          "Tree canonicalization is for rooted unordered labeled trees; boxes have rank 0 through 3 and ordered coordinates. No implicit lattice isometry is applied.",
+          "Naturals supplies an effective definition and individual bounded queries, never a finite enumeration of infinity. Generated products are unsupported.",
+          "Serialization restores JSON values and complete labeled structure, not original whitespace or original JSON bytes. Quotients are not reversible encodings.",
+          "Source references supplied with letters are custody declarations, not independently authenticated facts. Embedded implementation source pins are not read at runtime.",
+          "No chemical domain validation, acoustic synthesis, native compiler integration, store/API registration or full mission acceptance is supplied."
+        ],
+        "llm_inference": false,
+        "mission_acceptance": false,
+        "result": {
+          "alphabet": {
+            "entity_id": "example:geometric",
+            "group": {
+              "elements": [
+                {
+                  "id": "r0",
+                  "images": [
+                    "E",
+                    "N",
+                    "W",
+                    "S"
+                  ]
+                },
+                {
+                  "id": "r1",
+                  "images": [
+                    "N",
+                    "W",
+                    "S",
+                    "E"
+                  ]
+                },
+                {
+                  "id": "r2",
+                  "images": [
+                    "W",
+                    "S",
+                    "E",
+                    "N"
+                  ]
+                },
+                {
+                  "id": "r3",
+                  "images": [
+                    "S",
+                    "E",
+                    "N",
+                    "W"
+                  ]
+                }
+              ]
+            },
+            "interpretation": "Four rational points with declared cyclic letter permutations. No general isometry checker.",
+            "kind": "geometric",
+            "letters": [
+              {
+                "coordinates": [
+                  "1",
+                  "0"
+                ],
+                "id": "E",
+                "sort": "Point",
+                "sources": [
+                  {
+                    "anchor": "run_examples literal constructions",
+                    "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                    "source": "examples/forms/demo.py"
+                  }
+                ],
+                "value": {
+                  "ports": [
+                    "E"
+                  ],
+                  "shape": "point",
+                  "vertices": [
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                }
+              },
+              {
+                "coordinates": [
+                  "0",
+                  "1"
+                ],
+                "id": "N",
+                "sort": "Point",
+                "sources": [
+                  {
+                    "anchor": "run_examples literal constructions",
+                    "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                    "source": "examples/forms/demo.py"
+                  }
+                ],
+                "value": {
+                  "ports": [
+                    "N"
+                  ],
+                  "shape": "point",
+                  "vertices": [
+                    [
+                      "0",
+                      "1"
+                    ]
+                  ]
+                }
+              },
+              {
+                "coordinates": [
+                  "-1",
+                  "0"
+                ],
+                "id": "W",
+                "sort": "Point",
+                "sources": [
+                  {
+                    "anchor": "run_examples literal constructions",
+                    "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                    "source": "examples/forms/demo.py"
+                  }
+                ],
+                "value": {
+                  "ports": [
+                    "W"
+                  ],
+                  "shape": "point",
+                  "vertices": [
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                }
+              },
+              {
+                "coordinates": [
+                  "0",
+                  "-1"
+                ],
+                "id": "S",
+                "sort": "Point",
+                "sources": [
+                  {
+                    "anchor": "run_examples literal constructions",
+                    "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                    "source": "examples/forms/demo.py"
+                  }
+                ],
+                "value": {
+                  "ports": [
+                    "S"
+                  ],
+                  "shape": "point",
+                  "vertices": [
+                    [
+                      "0",
+                      "-1"
+                    ]
+                  ]
+                }
+              }
+            ],
+            "sources": [
+              {
+                "anchor": "run_examples literal constructions",
+                "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                "source": "examples/forms/demo.py"
+              }
+            ],
+            "version": "polyia.alphabet/0.1"
+          },
+          "cardinality": "finite",
+          "content_cid": "4c5400dc86a716ebafaecd8c1de031656e46eb006b29a23f49035d5642297ff2",
+          "entity_id": "example:geometric",
+          "group": {
+            "convention": "row g, column h means g after h: (gh)(x)=g(h(x))",
+            "elements": [
+              "r0",
+              "r1",
+              "r2",
+              "r3"
+            ],
+            "identity": "r0",
+            "inverse": {
+              "r0": "r0",
+              "r1": "r3",
+              "r2": "r2",
+              "r3": "r1"
+            },
+            "multiplication": [
+              [
+                "r0",
+                "r1",
+                "r2",
+                "r3"
+              ],
+              [
+                "r1",
+                "r2",
+                "r3",
+                "r0"
+              ],
+              [
+                "r2",
+                "r3",
+                "r0",
+                "r1"
+              ],
+              [
+                "r3",
+                "r0",
+                "r1",
+                "r2"
+              ]
+            ],
+            "order": 4
+          },
+          "letter_count": 4,
+          "resolved_letters": [
+            {
+              "coordinates": [
+                "1",
+                "0"
+              ],
+              "id": "E",
+              "sort": "Point",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": {
+                "ports": [
+                  "E"
+                ],
+                "shape": "point",
+                "vertices": [
+                  [
+                    "1",
+                    "0"
+                  ]
+                ]
+              }
+            },
+            {
+              "coordinates": [
+                "0",
+                "1"
+              ],
+              "id": "N",
+              "sort": "Point",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": {
+                "ports": [
+                  "N"
+                ],
+                "shape": "point",
+                "vertices": [
+                  [
+                    "0",
+                    "1"
+                  ]
+                ]
+              }
+            },
+            {
+              "coordinates": [
+                "-1",
+                "0"
+              ],
+              "id": "W",
+              "sort": "Point",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": {
+                "ports": [
+                  "W"
+                ],
+                "shape": "point",
+                "vertices": [
+                  [
+                    "-1",
+                    "0"
+                  ]
+                ]
+              }
+            },
+            {
+              "coordinates": [
+                "0",
+                "-1"
+              ],
+              "id": "S",
+              "sort": "Point",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": {
+                "ports": [
+                  "S"
+                ],
+                "shape": "point",
+                "vertices": [
+                  [
+                    "0",
+                    "-1"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        "sources": [
+          {
+            "anchor": "PIA-050, PIA-051",
+            "path": "GOD_SEED.md",
+            "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38"
+          },
+          {
+            "anchor": "SF-01, SF-02",
+            "path": "docs/SCIENTIFIC_FOUNDATIONS.md",
+            "sha256": "78dff0f8c6637449d043e3816d2d4f6cfc5a42a2d4aad6dd662f2d6b5e9cd8f0"
+          },
+          {
+            "anchor": "FV-01 through FV-09; especially FV-03, FV-04, FV-05",
+            "path": "docs/FORMAL_VOCABULARY.md",
+            "sha256": "45455b3d908b5ca978a510902337c08363478db378aa52b0825c91a5deb5ce24"
+          },
+          {
+            "anchor": "§§2.1–2.2, 4 D1–D3, 6.3, 7; complete source read",
+            "path": "sources/originals/PLICASTRATUM.md",
+            "sha256": "3a11ee1c6998d740cd556847ae8b64115bdac17c21e78efa85c5701e2606fcdd"
+          },
+          {
+            "anchor": "§013 Alphabet kinds; §014 Words of any rank",
+            "path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+            "sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e"
+          },
+          {
+            "anchor": "§§0–1, 3.1–3.3, 5; complete source read",
+            "path": "sources/originals/UCG_FOUNDATIONS.md",
+            "sha256": "699d8e6bbb286b41512f746bd27fb353d506d7a7f7128e80dd41a27479043d1d"
+          }
+        ],
+        "status": "PASS",
+        "version": "polyia.forms/0.1",
+        "work_used": 64
+      }
+    },
+    {
+      "parameters": {
+        "alphabet": {
+          "entity_id": "example:numeric",
+          "group": {
+            "elements": [
+              {
+                "id": "e",
+                "images": [
+                  "0",
+                  "1"
+                ]
+              },
+              {
+                "id": "flip",
+                "images": [
+                  "1",
+                  "0"
+                ]
+              }
+            ]
+          },
+          "interpretation": "Exact bit values; identity and complement are explicitly declared.",
+          "kind": "numeric",
+          "letters": [
+            {
+              "coordinates": [
+                "0"
+              ],
+              "id": "0",
+              "sort": "Bit",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": "0"
+            },
+            {
+              "coordinates": [
+                "1"
+              ],
+              "id": "1",
+              "sort": "Bit",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": "1"
+            }
+          ],
+          "sources": [
+            {
+              "anchor": "run_examples literal constructions",
+              "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+              "source": "examples/forms/demo.py"
+            }
+          ],
+          "version": "polyia.alphabet/0.1"
+        },
+        "operation": "alphabet",
+        "version": "polyia.forms/0.1"
+      },
+      "report": {
+        "budgets": {
+          "cells": 256,
+          "depth": 64,
+          "output_bytes": 524288,
+          "work": 1000000
+        },
+        "checks": [
+          {
+            "name": "typed-alphabet-and-declared-group",
+            "passed": true,
+            "scope": "validated exact permutations or built-in natural identity; supplied sources are references"
+          }
+        ],
+        "effects": [],
+        "evidence_class": "EXACTLY_CHECKED",
+        "limitations": [
+          "Established finite permutation/group algorithms implement a chosen versioned representation; no general semantic preservation is asserted.",
+          "Only the named structural equivalence is checked. Alphabet permutations preserve declared sorts, not inferred geometry, sound, physics or chemistry.",
+          "A supplied periodic-table layout is data, not an aufbau, valence or molecular generative law. UCG-055/062/066/102 remain open.",
+          "Graph words are simple directed or undirected vertex-labeled graphs with optional loops; no multiedges, edge labels, hyperedges or general graph grammar.",
+          "Graph canonicalization exhausts vertex permutations within the declared budget; larger cases return RESOURCE_LIMIT without an equivalence digest.",
+          "Tree canonicalization is for rooted unordered labeled trees; boxes have rank 0 through 3 and ordered coordinates. No implicit lattice isometry is applied.",
+          "Naturals supplies an effective definition and individual bounded queries, never a finite enumeration of infinity. Generated products are unsupported.",
+          "Serialization restores JSON values and complete labeled structure, not original whitespace or original JSON bytes. Quotients are not reversible encodings.",
+          "Source references supplied with letters are custody declarations, not independently authenticated facts. Embedded implementation source pins are not read at runtime.",
+          "No chemical domain validation, acoustic synthesis, native compiler integration, store/API registration or full mission acceptance is supplied."
+        ],
+        "llm_inference": false,
+        "mission_acceptance": false,
+        "result": {
+          "alphabet": {
+            "entity_id": "example:numeric",
+            "group": {
+              "elements": [
+                {
+                  "id": "e",
+                  "images": [
+                    "0",
+                    "1"
+                  ]
+                },
+                {
+                  "id": "flip",
+                  "images": [
+                    "1",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            "interpretation": "Exact bit values; identity and complement are explicitly declared.",
+            "kind": "numeric",
+            "letters": [
+              {
+                "coordinates": [
+                  "0"
+                ],
+                "id": "0",
+                "sort": "Bit",
+                "sources": [
+                  {
+                    "anchor": "run_examples literal constructions",
+                    "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                    "source": "examples/forms/demo.py"
+                  }
+                ],
+                "value": "0"
+              },
+              {
+                "coordinates": [
+                  "1"
+                ],
+                "id": "1",
+                "sort": "Bit",
+                "sources": [
+                  {
+                    "anchor": "run_examples literal constructions",
+                    "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                    "source": "examples/forms/demo.py"
+                  }
+                ],
+                "value": "1"
+              }
+            ],
+            "sources": [
+              {
+                "anchor": "run_examples literal constructions",
+                "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                "source": "examples/forms/demo.py"
+              }
+            ],
+            "version": "polyia.alphabet/0.1"
+          },
+          "cardinality": "finite",
+          "content_cid": "04d2d87788735919f56c3a16fa281660762aada556536e64c1f262c30ca780df",
+          "entity_id": "example:numeric",
+          "group": {
+            "convention": "row g, column h means g after h: (gh)(x)=g(h(x))",
+            "elements": [
+              "e",
+              "flip"
+            ],
+            "identity": "e",
+            "inverse": {
+              "e": "e",
+              "flip": "flip"
+            },
+            "multiplication": [
+              [
+                "e",
+                "flip"
+              ],
+              [
+                "flip",
+                "e"
+              ]
+            ],
+            "order": 2
+          },
+          "letter_count": 2,
+          "resolved_letters": [
+            {
+              "coordinates": [
+                "0"
+              ],
+              "id": "0",
+              "sort": "Bit",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": "0"
+            },
+            {
+              "coordinates": [
+                "1"
+              ],
+              "id": "1",
+              "sort": "Bit",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": "1"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "anchor": "PIA-050, PIA-051",
+            "path": "GOD_SEED.md",
+            "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38"
+          },
+          {
+            "anchor": "SF-01, SF-02",
+            "path": "docs/SCIENTIFIC_FOUNDATIONS.md",
+            "sha256": "78dff0f8c6637449d043e3816d2d4f6cfc5a42a2d4aad6dd662f2d6b5e9cd8f0"
+          },
+          {
+            "anchor": "FV-01 through FV-09; especially FV-03, FV-04, FV-05",
+            "path": "docs/FORMAL_VOCABULARY.md",
+            "sha256": "45455b3d908b5ca978a510902337c08363478db378aa52b0825c91a5deb5ce24"
+          },
+          {
+            "anchor": "§§2.1–2.2, 4 D1–D3, 6.3, 7; complete source read",
+            "path": "sources/originals/PLICASTRATUM.md",
+            "sha256": "3a11ee1c6998d740cd556847ae8b64115bdac17c21e78efa85c5701e2606fcdd"
+          },
+          {
+            "anchor": "§013 Alphabet kinds; §014 Words of any rank",
+            "path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+            "sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e"
+          },
+          {
+            "anchor": "§§0–1, 3.1–3.3, 5; complete source read",
+            "path": "sources/originals/UCG_FOUNDATIONS.md",
+            "sha256": "699d8e6bbb286b41512f746bd27fb353d506d7a7f7128e80dd41a27479043d1d"
+          }
+        ],
+        "status": "PASS",
+        "version": "polyia.forms/0.1",
+        "work_used": 8
+      }
+    },
+    {
+      "parameters": {
+        "alphabet": {
+          "entity_id": "example:retial",
+          "group": {
+            "elements": [
+              {
+                "id": "e",
+                "images": [
+                  "edge"
+                ]
+              }
+            ]
+          },
+          "interpretation": "An explicit graph motif used as a letter; no chemical interpretation.",
+          "kind": "retial",
+          "letters": [
+            {
+              "coordinates": [
+                "0"
+              ],
+              "id": "edge",
+              "sort": "GraphMotif",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": {
+                "directed": false,
+                "edges": [
+                  [
+                    "u",
+                    "v"
+                  ]
+                ],
+                "vertices": [
+                  "u",
+                  "v"
+                ]
+              }
+            }
+          ],
+          "sources": [
+            {
+              "anchor": "run_examples literal constructions",
+              "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+              "source": "examples/forms/demo.py"
+            }
+          ],
+          "version": "polyia.alphabet/0.1"
+        },
+        "operation": "alphabet",
+        "version": "polyia.forms/0.1"
+      },
+      "report": {
+        "budgets": {
+          "cells": 256,
+          "depth": 64,
+          "output_bytes": 524288,
+          "work": 1000000
+        },
+        "checks": [
+          {
+            "name": "typed-alphabet-and-declared-group",
+            "passed": true,
+            "scope": "validated exact permutations or built-in natural identity; supplied sources are references"
+          }
+        ],
+        "effects": [],
+        "evidence_class": "EXACTLY_CHECKED",
+        "limitations": [
+          "Established finite permutation/group algorithms implement a chosen versioned representation; no general semantic preservation is asserted.",
+          "Only the named structural equivalence is checked. Alphabet permutations preserve declared sorts, not inferred geometry, sound, physics or chemistry.",
+          "A supplied periodic-table layout is data, not an aufbau, valence or molecular generative law. UCG-055/062/066/102 remain open.",
+          "Graph words are simple directed or undirected vertex-labeled graphs with optional loops; no multiedges, edge labels, hyperedges or general graph grammar.",
+          "Graph canonicalization exhausts vertex permutations within the declared budget; larger cases return RESOURCE_LIMIT without an equivalence digest.",
+          "Tree canonicalization is for rooted unordered labeled trees; boxes have rank 0 through 3 and ordered coordinates. No implicit lattice isometry is applied.",
+          "Naturals supplies an effective definition and individual bounded queries, never a finite enumeration of infinity. Generated products are unsupported.",
+          "Serialization restores JSON values and complete labeled structure, not original whitespace or original JSON bytes. Quotients are not reversible encodings.",
+          "Source references supplied with letters are custody declarations, not independently authenticated facts. Embedded implementation source pins are not read at runtime.",
+          "No chemical domain validation, acoustic synthesis, native compiler integration, store/API registration or full mission acceptance is supplied."
+        ],
+        "llm_inference": false,
+        "mission_acceptance": false,
+        "result": {
+          "alphabet": {
+            "entity_id": "example:retial",
+            "group": {
+              "elements": [
+                {
+                  "id": "e",
+                  "images": [
+                    "edge"
+                  ]
+                }
+              ]
+            },
+            "interpretation": "An explicit graph motif used as a letter; no chemical interpretation.",
+            "kind": "retial",
+            "letters": [
+              {
+                "coordinates": [
+                  "0"
+                ],
+                "id": "edge",
+                "sort": "GraphMotif",
+                "sources": [
+                  {
+                    "anchor": "run_examples literal constructions",
+                    "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                    "source": "examples/forms/demo.py"
+                  }
+                ],
+                "value": {
+                  "directed": false,
+                  "edges": [
+                    [
+                      "u",
+                      "v"
+                    ]
+                  ],
+                  "vertices": [
+                    "u",
+                    "v"
+                  ]
+                }
+              }
+            ],
+            "sources": [
+              {
+                "anchor": "run_examples literal constructions",
+                "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                "source": "examples/forms/demo.py"
+              }
+            ],
+            "version": "polyia.alphabet/0.1"
+          },
+          "cardinality": "finite",
+          "content_cid": "d158d09ec7d5735ea3e6d2451ea92653dbb11b060e4954c28d95c0a372e32c8b",
+          "entity_id": "example:retial",
+          "group": {
+            "convention": "row g, column h means g after h: (gh)(x)=g(h(x))",
+            "elements": [
+              "e"
+            ],
+            "identity": "e",
+            "inverse": {
+              "e": "e"
+            },
+            "multiplication": [
+              [
+                "e"
+              ]
+            ],
+            "order": 1
+          },
+          "letter_count": 1,
+          "resolved_letters": [
+            {
+              "coordinates": [
+                "0"
+              ],
+              "id": "edge",
+              "sort": "GraphMotif",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": {
+                "directed": false,
+                "edges": [
+                  [
+                    "u",
+                    "v"
+                  ]
+                ],
+                "vertices": [
+                  "u",
+                  "v"
+                ]
+              }
+            }
+          ]
+        },
+        "sources": [
+          {
+            "anchor": "PIA-050, PIA-051",
+            "path": "GOD_SEED.md",
+            "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38"
+          },
+          {
+            "anchor": "SF-01, SF-02",
+            "path": "docs/SCIENTIFIC_FOUNDATIONS.md",
+            "sha256": "78dff0f8c6637449d043e3816d2d4f6cfc5a42a2d4aad6dd662f2d6b5e9cd8f0"
+          },
+          {
+            "anchor": "FV-01 through FV-09; especially FV-03, FV-04, FV-05",
+            "path": "docs/FORMAL_VOCABULARY.md",
+            "sha256": "45455b3d908b5ca978a510902337c08363478db378aa52b0825c91a5deb5ce24"
+          },
+          {
+            "anchor": "§§2.1–2.2, 4 D1–D3, 6.3, 7; complete source read",
+            "path": "sources/originals/PLICASTRATUM.md",
+            "sha256": "3a11ee1c6998d740cd556847ae8b64115bdac17c21e78efa85c5701e2606fcdd"
+          },
+          {
+            "anchor": "§013 Alphabet kinds; §014 Words of any rank",
+            "path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+            "sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e"
+          },
+          {
+            "anchor": "§§0–1, 3.1–3.3, 5; complete source read",
+            "path": "sources/originals/UCG_FOUNDATIONS.md",
+            "sha256": "699d8e6bbb286b41512f746bd27fb353d506d7a7f7128e80dd41a27479043d1d"
+          }
+        ],
+        "status": "PASS",
+        "version": "polyia.forms/0.1",
+        "work_used": 4
+      }
+    },
+    {
+      "parameters": {
+        "alphabet": {
+          "entity_id": "example:phonetic",
+          "group": {
+            "elements": [
+              {
+                "id": "e",
+                "images": [
+                  "p",
+                  "b"
+                ]
+              }
+            ]
+          },
+          "interpretation": "Supplied IPA transcription tokens. No acoustic or universal phonological model.",
+          "kind": "phonetic",
+          "letters": [
+            {
+              "coordinates": [
+                "0"
+              ],
+              "id": "p",
+              "sort": "Segment",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": {
+                "notation": "ipa",
+                "transcription": "p"
+              }
+            },
+            {
+              "coordinates": [
+                "1"
+              ],
+              "id": "b",
+              "sort": "Segment",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": {
+                "notation": "ipa",
+                "transcription": "b"
+              }
+            }
+          ],
+          "sources": [
+            {
+              "anchor": "run_examples literal constructions",
+              "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+              "source": "examples/forms/demo.py"
+            }
+          ],
+          "version": "polyia.alphabet/0.1"
+        },
+        "operation": "alphabet",
+        "version": "polyia.forms/0.1"
+      },
+      "report": {
+        "budgets": {
+          "cells": 256,
+          "depth": 64,
+          "output_bytes": 524288,
+          "work": 1000000
+        },
+        "checks": [
+          {
+            "name": "typed-alphabet-and-declared-group",
+            "passed": true,
+            "scope": "validated exact permutations or built-in natural identity; supplied sources are references"
+          }
+        ],
+        "effects": [],
+        "evidence_class": "EXACTLY_CHECKED",
+        "limitations": [
+          "Established finite permutation/group algorithms implement a chosen versioned representation; no general semantic preservation is asserted.",
+          "Only the named structural equivalence is checked. Alphabet permutations preserve declared sorts, not inferred geometry, sound, physics or chemistry.",
+          "A supplied periodic-table layout is data, not an aufbau, valence or molecular generative law. UCG-055/062/066/102 remain open.",
+          "Graph words are simple directed or undirected vertex-labeled graphs with optional loops; no multiedges, edge labels, hyperedges or general graph grammar.",
+          "Graph canonicalization exhausts vertex permutations within the declared budget; larger cases return RESOURCE_LIMIT without an equivalence digest.",
+          "Tree canonicalization is for rooted unordered labeled trees; boxes have rank 0 through 3 and ordered coordinates. No implicit lattice isometry is applied.",
+          "Naturals supplies an effective definition and individual bounded queries, never a finite enumeration of infinity. Generated products are unsupported.",
+          "Serialization restores JSON values and complete labeled structure, not original whitespace or original JSON bytes. Quotients are not reversible encodings.",
+          "Source references supplied with letters are custody declarations, not independently authenticated facts. Embedded implementation source pins are not read at runtime.",
+          "No chemical domain validation, acoustic synthesis, native compiler integration, store/API registration or full mission acceptance is supplied."
+        ],
+        "llm_inference": false,
+        "mission_acceptance": false,
+        "result": {
+          "alphabet": {
+            "entity_id": "example:phonetic",
+            "group": {
+              "elements": [
+                {
+                  "id": "e",
+                  "images": [
+                    "p",
+                    "b"
+                  ]
+                }
+              ]
+            },
+            "interpretation": "Supplied IPA transcription tokens. No acoustic or universal phonological model.",
+            "kind": "phonetic",
+            "letters": [
+              {
+                "coordinates": [
+                  "0"
+                ],
+                "id": "p",
+                "sort": "Segment",
+                "sources": [
+                  {
+                    "anchor": "run_examples literal constructions",
+                    "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                    "source": "examples/forms/demo.py"
+                  }
+                ],
+                "value": {
+                  "notation": "ipa",
+                  "transcription": "p"
+                }
+              },
+              {
+                "coordinates": [
+                  "1"
+                ],
+                "id": "b",
+                "sort": "Segment",
+                "sources": [
+                  {
+                    "anchor": "run_examples literal constructions",
+                    "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                    "source": "examples/forms/demo.py"
+                  }
+                ],
+                "value": {
+                  "notation": "ipa",
+                  "transcription": "b"
+                }
+              }
+            ],
+            "sources": [
+              {
+                "anchor": "run_examples literal constructions",
+                "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                "source": "examples/forms/demo.py"
+              }
+            ],
+            "version": "polyia.alphabet/0.1"
+          },
+          "cardinality": "finite",
+          "content_cid": "65b6a1bd95ce5986851286ecc02b87498040d0cfa9641f3a96a7cffe01306da0",
+          "entity_id": "example:phonetic",
+          "group": {
+            "convention": "row g, column h means g after h: (gh)(x)=g(h(x))",
+            "elements": [
+              "e"
+            ],
+            "identity": "e",
+            "inverse": {
+              "e": "e"
+            },
+            "multiplication": [
+              [
+                "e"
+              ]
+            ],
+            "order": 1
+          },
+          "letter_count": 2,
+          "resolved_letters": [
+            {
+              "coordinates": [
+                "0"
+              ],
+              "id": "p",
+              "sort": "Segment",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": {
+                "notation": "ipa",
+                "transcription": "p"
+              }
+            },
+            {
+              "coordinates": [
+                "1"
+              ],
+              "id": "b",
+              "sort": "Segment",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": {
+                "notation": "ipa",
+                "transcription": "b"
+              }
+            }
+          ]
+        },
+        "sources": [
+          {
+            "anchor": "PIA-050, PIA-051",
+            "path": "GOD_SEED.md",
+            "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38"
+          },
+          {
+            "anchor": "SF-01, SF-02",
+            "path": "docs/SCIENTIFIC_FOUNDATIONS.md",
+            "sha256": "78dff0f8c6637449d043e3816d2d4f6cfc5a42a2d4aad6dd662f2d6b5e9cd8f0"
+          },
+          {
+            "anchor": "FV-01 through FV-09; especially FV-03, FV-04, FV-05",
+            "path": "docs/FORMAL_VOCABULARY.md",
+            "sha256": "45455b3d908b5ca978a510902337c08363478db378aa52b0825c91a5deb5ce24"
+          },
+          {
+            "anchor": "§§2.1–2.2, 4 D1–D3, 6.3, 7; complete source read",
+            "path": "sources/originals/PLICASTRATUM.md",
+            "sha256": "3a11ee1c6998d740cd556847ae8b64115bdac17c21e78efa85c5701e2606fcdd"
+          },
+          {
+            "anchor": "§013 Alphabet kinds; §014 Words of any rank",
+            "path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+            "sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e"
+          },
+          {
+            "anchor": "§§0–1, 3.1–3.3, 5; complete source read",
+            "path": "sources/originals/UCG_FOUNDATIONS.md",
+            "sha256": "699d8e6bbb286b41512f746bd27fb353d506d7a7f7128e80dd41a27479043d1d"
+          }
+        ],
+        "status": "PASS",
+        "version": "polyia.forms/0.1",
+        "work_used": 2
+      }
+    },
+    {
+      "parameters": {
+        "components": [
+          {
+            "entity_id": "example:phonetic",
+            "group": {
+              "elements": [
+                {
+                  "id": "e",
+                  "images": [
+                    "p",
+                    "b"
+                  ]
+                }
+              ]
+            },
+            "interpretation": "Supplied IPA transcription tokens. No acoustic or universal phonological model.",
+            "kind": "phonetic",
+            "letters": [
+              {
+                "coordinates": [
+                  "0"
+                ],
+                "id": "p",
+                "sort": "Segment",
+                "sources": [
+                  {
+                    "anchor": "run_examples literal constructions",
+                    "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                    "source": "examples/forms/demo.py"
+                  }
+                ],
+                "value": {
+                  "notation": "ipa",
+                  "transcription": "p"
+                }
+              },
+              {
+                "coordinates": [
+                  "1"
+                ],
+                "id": "b",
+                "sort": "Segment",
+                "sources": [
+                  {
+                    "anchor": "run_examples literal constructions",
+                    "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                    "source": "examples/forms/demo.py"
+                  }
+                ],
+                "value": {
+                  "notation": "ipa",
+                  "transcription": "b"
+                }
+              }
+            ],
+            "sources": [
+              {
+                "anchor": "run_examples literal constructions",
+                "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                "source": "examples/forms/demo.py"
+              }
+            ],
+            "version": "polyia.alphabet/0.1"
+          },
+          {
+            "entity_id": "example:numeric",
+            "group": {
+              "elements": [
+                {
+                  "id": "e",
+                  "images": [
+                    "0",
+                    "1"
+                  ]
+                },
+                {
+                  "id": "flip",
+                  "images": [
+                    "1",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            "interpretation": "Exact bit values; identity and complement are explicitly declared.",
+            "kind": "numeric",
+            "letters": [
+              {
+                "coordinates": [
+                  "0"
+                ],
+                "id": "0",
+                "sort": "Bit",
+                "sources": [
+                  {
+                    "anchor": "run_examples literal constructions",
+                    "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                    "source": "examples/forms/demo.py"
+                  }
+                ],
+                "value": "0"
+              },
+              {
+                "coordinates": [
+                  "1"
+                ],
+                "id": "1",
+                "sort": "Bit",
+                "sources": [
+                  {
+                    "anchor": "run_examples literal constructions",
+                    "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                    "source": "examples/forms/demo.py"
+                  }
+                ],
+                "value": "1"
+              }
+            ],
+            "sources": [
+              {
+                "anchor": "run_examples literal constructions",
+                "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                "source": "examples/forms/demo.py"
+              }
+            ],
+            "version": "polyia.alphabet/0.1"
+          }
+        ],
+        "entity_id": "example:phonetic-bit",
+        "interpretation": "Ordered phonetic token × exact bit.",
+        "operation": "product",
+        "sources": [
+          {
+            "anchor": "run_examples literal constructions",
+            "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+            "source": "examples/forms/demo.py"
+          }
+        ],
+        "version": "polyia.forms/0.1"
+      },
+      "report": {
+        "budgets": {
+          "cells": 256,
+          "depth": 64,
+          "output_bytes": 524288,
+          "work": 1000000
+        },
+        "checks": [
+          {
+            "name": "typed-alphabet-and-declared-group",
+            "passed": true,
+            "scope": "validated exact permutations or built-in natural identity; supplied sources are references"
+          }
+        ],
+        "effects": [],
+        "evidence_class": "EXACTLY_CHECKED",
+        "limitations": [
+          "Established finite permutation/group algorithms implement a chosen versioned representation; no general semantic preservation is asserted.",
+          "Only the named structural equivalence is checked. Alphabet permutations preserve declared sorts, not inferred geometry, sound, physics or chemistry.",
+          "A supplied periodic-table layout is data, not an aufbau, valence or molecular generative law. UCG-055/062/066/102 remain open.",
+          "Graph words are simple directed or undirected vertex-labeled graphs with optional loops; no multiedges, edge labels, hyperedges or general graph grammar.",
+          "Graph canonicalization exhausts vertex permutations within the declared budget; larger cases return RESOURCE_LIMIT without an equivalence digest.",
+          "Tree canonicalization is for rooted unordered labeled trees; boxes have rank 0 through 3 and ordered coordinates. No implicit lattice isometry is applied.",
+          "Naturals supplies an effective definition and individual bounded queries, never a finite enumeration of infinity. Generated products are unsupported.",
+          "Serialization restores JSON values and complete labeled structure, not original whitespace or original JSON bytes. Quotients are not reversible encodings.",
+          "Source references supplied with letters are custody declarations, not independently authenticated facts. Embedded implementation source pins are not read at runtime.",
+          "No chemical domain validation, acoustic synthesis, native compiler integration, store/API registration or full mission acceptance is supplied."
+        ],
+        "llm_inference": false,
+        "mission_acceptance": false,
+        "result": {
+          "alphabet": {
+            "components": [
+              {
+                "entity_id": "example:phonetic",
+                "group": {
+                  "elements": [
+                    {
+                      "id": "e",
+                      "images": [
+                        "p",
+                        "b"
+                      ]
+                    }
+                  ]
+                },
+                "interpretation": "Supplied IPA transcription tokens. No acoustic or universal phonological model.",
+                "kind": "phonetic",
+                "letters": [
+                  {
+                    "coordinates": [
+                      "0"
+                    ],
+                    "id": "p",
+                    "sort": "Segment",
+                    "sources": [
+                      {
+                        "anchor": "run_examples literal constructions",
+                        "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                        "source": "examples/forms/demo.py"
+                      }
+                    ],
+                    "value": {
+                      "notation": "ipa",
+                      "transcription": "p"
+                    }
+                  },
+                  {
+                    "coordinates": [
+                      "1"
+                    ],
+                    "id": "b",
+                    "sort": "Segment",
+                    "sources": [
+                      {
+                        "anchor": "run_examples literal constructions",
+                        "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                        "source": "examples/forms/demo.py"
+                      }
+                    ],
+                    "value": {
+                      "notation": "ipa",
+                      "transcription": "b"
+                    }
+                  }
+                ],
+                "sources": [
+                  {
+                    "anchor": "run_examples literal constructions",
+                    "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                    "source": "examples/forms/demo.py"
+                  }
+                ],
+                "version": "polyia.alphabet/0.1"
+              },
+              {
+                "entity_id": "example:numeric",
+                "group": {
+                  "elements": [
+                    {
+                      "id": "e",
+                      "images": [
+                        "0",
+                        "1"
+                      ]
+                    },
+                    {
+                      "id": "flip",
+                      "images": [
+                        "1",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                "interpretation": "Exact bit values; identity and complement are explicitly declared.",
+                "kind": "numeric",
+                "letters": [
+                  {
+                    "coordinates": [
+                      "0"
+                    ],
+                    "id": "0",
+                    "sort": "Bit",
+                    "sources": [
+                      {
+                        "anchor": "run_examples literal constructions",
+                        "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                        "source": "examples/forms/demo.py"
+                      }
+                    ],
+                    "value": "0"
+                  },
+                  {
+                    "coordinates": [
+                      "1"
+                    ],
+                    "id": "1",
+                    "sort": "Bit",
+                    "sources": [
+                      {
+                        "anchor": "run_examples literal constructions",
+                        "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                        "source": "examples/forms/demo.py"
+                      }
+                    ],
+                    "value": "1"
+                  }
+                ],
+                "sources": [
+                  {
+                    "anchor": "run_examples literal constructions",
+                    "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                    "source": "examples/forms/demo.py"
+                  }
+                ],
+                "version": "polyia.alphabet/0.1"
+              }
+            ],
+            "entity_id": "example:phonetic-bit",
+            "interpretation": "Ordered phonetic token × exact bit.",
+            "kind": "product",
+            "sources": [
+              {
+                "anchor": "run_examples literal constructions",
+                "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                "source": "examples/forms/demo.py"
+              }
+            ],
+            "version": "polyia.alphabet/0.1"
+          },
+          "cardinality": "finite",
+          "content_cid": "be14a79311f68f7c7cf6c23f3221756f7e90186feb6ce318f7726e8ba5fff050",
+          "entity_id": "example:phonetic-bit",
+          "group": {
+            "convention": "row g, column h means g after h: (gh)(x)=g(h(x))",
+            "elements": [
+              "[\"e\",\"e\"]",
+              "[\"e\",\"flip\"]"
+            ],
+            "identity": "[\"e\",\"e\"]",
+            "inverse": {
+              "[\"e\",\"e\"]": "[\"e\",\"e\"]",
+              "[\"e\",\"flip\"]": "[\"e\",\"flip\"]"
+            },
+            "multiplication": [
+              [
+                "[\"e\",\"e\"]",
+                "[\"e\",\"flip\"]"
+              ],
+              [
+                "[\"e\",\"flip\"]",
+                "[\"e\",\"e\"]"
+              ]
+            ],
+            "order": 2
+          },
+          "letter_count": 4,
+          "resolved_letters": [
+            {
+              "coordinates": [
+                "0",
+                "0"
+              ],
+              "id": "[\"p\",\"0\"]",
+              "sort": "[\"Segment\",\"Bit\"]",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": [
+                "p",
+                "0"
+              ]
+            },
+            {
+              "coordinates": [
+                "0",
+                "1"
+              ],
+              "id": "[\"p\",\"1\"]",
+              "sort": "[\"Segment\",\"Bit\"]",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": [
+                "p",
+                "1"
+              ]
+            },
+            {
+              "coordinates": [
+                "1",
+                "0"
+              ],
+              "id": "[\"b\",\"0\"]",
+              "sort": "[\"Segment\",\"Bit\"]",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": [
+                "b",
+                "0"
+              ]
+            },
+            {
+              "coordinates": [
+                "1",
+                "1"
+              ],
+              "id": "[\"b\",\"1\"]",
+              "sort": "[\"Segment\",\"Bit\"]",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": [
+                "b",
+                "1"
+              ]
+            }
+          ]
+        },
+        "sources": [
+          {
+            "anchor": "PIA-050, PIA-051",
+            "path": "GOD_SEED.md",
+            "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38"
+          },
+          {
+            "anchor": "SF-01, SF-02",
+            "path": "docs/SCIENTIFIC_FOUNDATIONS.md",
+            "sha256": "78dff0f8c6637449d043e3816d2d4f6cfc5a42a2d4aad6dd662f2d6b5e9cd8f0"
+          },
+          {
+            "anchor": "FV-01 through FV-09; especially FV-03, FV-04, FV-05",
+            "path": "docs/FORMAL_VOCABULARY.md",
+            "sha256": "45455b3d908b5ca978a510902337c08363478db378aa52b0825c91a5deb5ce24"
+          },
+          {
+            "anchor": "§§2.1–2.2, 4 D1–D3, 6.3, 7; complete source read",
+            "path": "sources/originals/PLICASTRATUM.md",
+            "sha256": "3a11ee1c6998d740cd556847ae8b64115bdac17c21e78efa85c5701e2606fcdd"
+          },
+          {
+            "anchor": "§013 Alphabet kinds; §014 Words of any rank",
+            "path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+            "sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e"
+          },
+          {
+            "anchor": "§§0–1, 3.1–3.3, 5; complete source read",
+            "path": "sources/originals/UCG_FOUNDATIONS.md",
+            "sha256": "699d8e6bbb286b41512f746bd27fb353d506d7a7f7128e80dd41a27479043d1d"
+          }
+        ],
+        "status": "PASS",
+        "version": "polyia.forms/0.1",
+        "work_used": 26
+      }
+    },
+    {
+      "parameters": {
+        "alphabet": {
+          "entity_id": "example:N",
+          "generator": {
+            "coordinates": "value",
+            "name": "naturals",
+            "start": 0
+          },
+          "group": {
+            "elements": [
+              {
+                "id": "e",
+                "rule": "identity"
+              }
+            ]
+          },
+          "interpretation": "The effective nonnegative integer definition, queried individually.",
+          "kind": "numeric",
+          "sources": [
+            {
+              "anchor": "run_examples literal constructions",
+              "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+              "source": "examples/forms/demo.py"
+            }
+          ],
+          "version": "polyia.alphabet/0.1"
+        },
+        "index": 1000000000000000000000000000000,
+        "operation": "generate",
+        "version": "polyia.forms/0.1"
+      },
+      "report": {
+        "budgets": {
+          "cells": 256,
+          "depth": 64,
+          "output_bytes": 524288,
+          "work": 1000000
+        },
+        "checks": [
+          {
+            "name": "typed-alphabet-and-declared-group",
+            "passed": true,
+            "scope": "validated exact permutations or built-in natural identity; supplied sources are references"
+          },
+          {
+            "name": "bounded-natural-query",
+            "passed": true
+          }
+        ],
+        "effects": [],
+        "evidence_class": "EXACTLY_CHECKED",
+        "limitations": [
+          "Established finite permutation/group algorithms implement a chosen versioned representation; no general semantic preservation is asserted.",
+          "Only the named structural equivalence is checked. Alphabet permutations preserve declared sorts, not inferred geometry, sound, physics or chemistry.",
+          "A supplied periodic-table layout is data, not an aufbau, valence or molecular generative law. UCG-055/062/066/102 remain open.",
+          "Graph words are simple directed or undirected vertex-labeled graphs with optional loops; no multiedges, edge labels, hyperedges or general graph grammar.",
+          "Graph canonicalization exhausts vertex permutations within the declared budget; larger cases return RESOURCE_LIMIT without an equivalence digest.",
+          "Tree canonicalization is for rooted unordered labeled trees; boxes have rank 0 through 3 and ordered coordinates. No implicit lattice isometry is applied.",
+          "Naturals supplies an effective definition and individual bounded queries, never a finite enumeration of infinity. Generated products are unsupported.",
+          "Serialization restores JSON values and complete labeled structure, not original whitespace or original JSON bytes. Quotients are not reversible encodings.",
+          "Source references supplied with letters are custody declarations, not independently authenticated facts. Embedded implementation source pins are not read at runtime.",
+          "No chemical domain validation, acoustic synthesis, native compiler integration, store/API registration or full mission acceptance is supplied."
+        ],
+        "llm_inference": false,
+        "mission_acceptance": false,
+        "result": {
+          "enumerated": false,
+          "letter": {
+            "coordinates": [
+              "1000000000000000000000000000000"
+            ],
+            "id": "1000000000000000000000000000000",
+            "sort": "Natural",
+            "sources": [
+              {
+                "anchor": "run_examples literal constructions",
+                "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                "source": "examples/forms/demo.py"
+              }
+            ],
+            "value": "1000000000000000000000000000000"
+          }
+        },
+        "sources": [
+          {
+            "anchor": "PIA-050, PIA-051",
+            "path": "GOD_SEED.md",
+            "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38"
+          },
+          {
+            "anchor": "SF-01, SF-02",
+            "path": "docs/SCIENTIFIC_FOUNDATIONS.md",
+            "sha256": "78dff0f8c6637449d043e3816d2d4f6cfc5a42a2d4aad6dd662f2d6b5e9cd8f0"
+          },
+          {
+            "anchor": "FV-01 through FV-09; especially FV-03, FV-04, FV-05",
+            "path": "docs/FORMAL_VOCABULARY.md",
+            "sha256": "45455b3d908b5ca978a510902337c08363478db378aa52b0825c91a5deb5ce24"
+          },
+          {
+            "anchor": "§§2.1–2.2, 4 D1–D3, 6.3, 7; complete source read",
+            "path": "sources/originals/PLICASTRATUM.md",
+            "sha256": "3a11ee1c6998d740cd556847ae8b64115bdac17c21e78efa85c5701e2606fcdd"
+          },
+          {
+            "anchor": "§013 Alphabet kinds; §014 Words of any rank",
+            "path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+            "sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e"
+          },
+          {
+            "anchor": "§§0–1, 3.1–3.3, 5; complete source read",
+            "path": "sources/originals/UCG_FOUNDATIONS.md",
+            "sha256": "699d8e6bbb286b41512f746bd27fb353d506d7a7f7128e80dd41a27479043d1d"
+          }
+        ],
+        "status": "PASS",
+        "version": "polyia.forms/0.1",
+        "work_used": 1
+      }
+    },
+    {
+      "parameters": {
+        "alphabet": {
+          "entity_id": "example:N",
+          "generator": {
+            "coordinates": "value",
+            "name": "naturals",
+            "start": 0
+          },
+          "group": {
+            "elements": [
+              {
+                "id": "e",
+                "rule": "identity"
+              }
+            ]
+          },
+          "interpretation": "The effective nonnegative integer definition, queried individually.",
+          "kind": "numeric",
+          "sources": [
+            {
+              "anchor": "run_examples literal constructions",
+              "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+              "source": "examples/forms/demo.py"
+            }
+          ],
+          "version": "polyia.alphabet/0.1"
+        },
+        "candidate": -3,
+        "operation": "member",
+        "version": "polyia.forms/0.1"
+      },
+      "report": {
+        "budgets": {
+          "cells": 256,
+          "depth": 64,
+          "output_bytes": 524288,
+          "work": 1000000
+        },
+        "checks": [
+          {
+            "name": "typed-alphabet-and-declared-group",
+            "passed": true,
+            "scope": "validated exact permutations or built-in natural identity; supplied sources are references"
+          },
+          {
+            "name": "bounded-natural-query",
+            "passed": true
+          }
+        ],
+        "effects": [],
+        "evidence_class": "EXACTLY_CHECKED",
+        "limitations": [
+          "Established finite permutation/group algorithms implement a chosen versioned representation; no general semantic preservation is asserted.",
+          "Only the named structural equivalence is checked. Alphabet permutations preserve declared sorts, not inferred geometry, sound, physics or chemistry.",
+          "A supplied periodic-table layout is data, not an aufbau, valence or molecular generative law. UCG-055/062/066/102 remain open.",
+          "Graph words are simple directed or undirected vertex-labeled graphs with optional loops; no multiedges, edge labels, hyperedges or general graph grammar.",
+          "Graph canonicalization exhausts vertex permutations within the declared budget; larger cases return RESOURCE_LIMIT without an equivalence digest.",
+          "Tree canonicalization is for rooted unordered labeled trees; boxes have rank 0 through 3 and ordered coordinates. No implicit lattice isometry is applied.",
+          "Naturals supplies an effective definition and individual bounded queries, never a finite enumeration of infinity. Generated products are unsupported.",
+          "Serialization restores JSON values and complete labeled structure, not original whitespace or original JSON bytes. Quotients are not reversible encodings.",
+          "Source references supplied with letters are custody declarations, not independently authenticated facts. Embedded implementation source pins are not read at runtime.",
+          "No chemical domain validation, acoustic synthesis, native compiler integration, store/API registration or full mission acceptance is supplied."
+        ],
+        "llm_inference": false,
+        "mission_acceptance": false,
+        "result": {
+          "domain": "Naturals-including-zero",
+          "enumerated": false,
+          "member": false
+        },
+        "sources": [
+          {
+            "anchor": "PIA-050, PIA-051",
+            "path": "GOD_SEED.md",
+            "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38"
+          },
+          {
+            "anchor": "SF-01, SF-02",
+            "path": "docs/SCIENTIFIC_FOUNDATIONS.md",
+            "sha256": "78dff0f8c6637449d043e3816d2d4f6cfc5a42a2d4aad6dd662f2d6b5e9cd8f0"
+          },
+          {
+            "anchor": "FV-01 through FV-09; especially FV-03, FV-04, FV-05",
+            "path": "docs/FORMAL_VOCABULARY.md",
+            "sha256": "45455b3d908b5ca978a510902337c08363478db378aa52b0825c91a5deb5ce24"
+          },
+          {
+            "anchor": "§§2.1–2.2, 4 D1–D3, 6.3, 7; complete source read",
+            "path": "sources/originals/PLICASTRATUM.md",
+            "sha256": "3a11ee1c6998d740cd556847ae8b64115bdac17c21e78efa85c5701e2606fcdd"
+          },
+          {
+            "anchor": "§013 Alphabet kinds; §014 Words of any rank",
+            "path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+            "sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e"
+          },
+          {
+            "anchor": "§§0–1, 3.1–3.3, 5; complete source read",
+            "path": "sources/originals/UCG_FOUNDATIONS.md",
+            "sha256": "699d8e6bbb286b41512f746bd27fb353d506d7a7f7128e80dd41a27479043d1d"
+          }
+        ],
+        "status": "PASS",
+        "version": "polyia.forms/0.1",
+        "work_used": 1
+      }
+    },
+    {
+      "parameters": {
+        "alphabet": {
+          "entity_id": "example:numeric",
+          "group": {
+            "elements": [
+              {
+                "id": "e",
+                "images": [
+                  "0",
+                  "1"
+                ]
+              },
+              {
+                "id": "flip",
+                "images": [
+                  "1",
+                  "0"
+                ]
+              }
+            ]
+          },
+          "interpretation": "Exact bit values; identity and complement are explicitly declared.",
+          "kind": "numeric",
+          "letters": [
+            {
+              "coordinates": [
+                "0"
+              ],
+              "id": "0",
+              "sort": "Bit",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": "0"
+            },
+            {
+              "coordinates": [
+                "1"
+              ],
+              "id": "1",
+              "sort": "Bit",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": "1"
+            }
+          ],
+          "sources": [
+            {
+              "anchor": "run_examples literal constructions",
+              "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+              "source": "examples/forms/demo.py"
+            }
+          ],
+          "version": "polyia.alphabet/0.1"
+        },
+        "operation": "canonicalize",
+        "relation": "dihedral",
+        "version": "polyia.forms/0.1",
+        "word": {
+          "alphabet_cid": "04d2d87788735919f56c3a16fa281660762aada556536e64c1f262c30ca780df",
+          "entity_id": "example:word",
+          "index": {
+            "kind": "cyclic",
+            "length": 4
+          },
+          "labels": {
+            "0": "1",
+            "1": "0",
+            "2": "0",
+            "3": "1"
+          },
+          "version": "polyia.word/0.1"
+        }
+      },
+      "report": {
+        "budgets": {
+          "cells": 256,
+          "depth": 64,
+          "output_bytes": 524288,
+          "work": 1000000
+        },
+        "checks": [
+          {
+            "name": "typed-alphabet-and-declared-group",
+            "passed": true,
+            "scope": "validated exact permutations or built-in natural identity; supplied sources are references"
+          },
+          {
+            "name": "complete-labeling-and-index-structure",
+            "passed": true
+          },
+          {
+            "name": "complete-bounded-canonicalization",
+            "passed": true
+          }
+        ],
+        "effects": [],
+        "evidence_class": "EXACTLY_CHECKED",
+        "limitations": [
+          "Established finite permutation/group algorithms implement a chosen versioned representation; no general semantic preservation is asserted.",
+          "Only the named structural equivalence is checked. Alphabet permutations preserve declared sorts, not inferred geometry, sound, physics or chemistry.",
+          "A supplied periodic-table layout is data, not an aufbau, valence or molecular generative law. UCG-055/062/066/102 remain open.",
+          "Graph words are simple directed or undirected vertex-labeled graphs with optional loops; no multiedges, edge labels, hyperedges or general graph grammar.",
+          "Graph canonicalization exhausts vertex permutations within the declared budget; larger cases return RESOURCE_LIMIT without an equivalence digest.",
+          "Tree canonicalization is for rooted unordered labeled trees; boxes have rank 0 through 3 and ordered coordinates. No implicit lattice isometry is applied.",
+          "Naturals supplies an effective definition and individual bounded queries, never a finite enumeration of infinity. Generated products are unsupported.",
+          "Serialization restores JSON values and complete labeled structure, not original whitespace or original JSON bytes. Quotients are not reversible encodings.",
+          "Source references supplied with letters are custody declarations, not independently authenticated facts. Embedded implementation source pins are not read at runtime.",
+          "No chemical domain validation, acoustic synthesis, native compiler integration, store/API registration or full mission acceptance is supplied."
+        ],
+        "llm_inference": false,
+        "mission_acceptance": false,
+        "result": {
+          "alphabet_element": "e",
+          "alphabet_elements_checked": 1,
+          "candidate_count_meaning": "candidate transformations checked per alphabet element, not number of distinct orbit images; tree/multiset use direct canonical algorithms",
+          "canonical": {
+            "alphabet_cid": "04d2d87788735919f56c3a16fa281660762aada556536e64c1f262c30ca780df",
+            "alphabet_symmetry": false,
+            "form": {
+              "index": {
+                "kind": "cyclic",
+                "length": 4
+              },
+              "labels": [
+                "0",
+                "0",
+                "1",
+                "1"
+              ]
+            },
+            "relation": "dihedral",
+            "version": "polyia.form-quotient/0.1"
+          },
+          "equivalence_cid": "57b2623f4ebcf462a624bfe7d86154c9e2961c45563a2ccd1764535b82b35fc4",
+          "index_candidates_checked": 8,
+          "preserved_relation": "declared-structural-orbit-only"
+        },
+        "sources": [
+          {
+            "anchor": "PIA-050, PIA-051",
+            "path": "GOD_SEED.md",
+            "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38"
+          },
+          {
+            "anchor": "SF-01, SF-02",
+            "path": "docs/SCIENTIFIC_FOUNDATIONS.md",
+            "sha256": "78dff0f8c6637449d043e3816d2d4f6cfc5a42a2d4aad6dd662f2d6b5e9cd8f0"
+          },
+          {
+            "anchor": "FV-01 through FV-09; especially FV-03, FV-04, FV-05",
+            "path": "docs/FORMAL_VOCABULARY.md",
+            "sha256": "45455b3d908b5ca978a510902337c08363478db378aa52b0825c91a5deb5ce24"
+          },
+          {
+            "anchor": "§§2.1–2.2, 4 D1–D3, 6.3, 7; complete source read",
+            "path": "sources/originals/PLICASTRATUM.md",
+            "sha256": "3a11ee1c6998d740cd556847ae8b64115bdac17c21e78efa85c5701e2606fcdd"
+          },
+          {
+            "anchor": "§013 Alphabet kinds; §014 Words of any rank",
+            "path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+            "sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e"
+          },
+          {
+            "anchor": "§§0–1, 3.1–3.3, 5; complete source read",
+            "path": "sources/originals/UCG_FOUNDATIONS.md",
+            "sha256": "699d8e6bbb286b41512f746bd27fb353d506d7a7f7128e80dd41a27479043d1d"
+          }
+        ],
+        "status": "PASS",
+        "version": "polyia.forms/0.1",
+        "work_used": 44
+      }
+    },
+    {
+      "parameters": {
+        "alphabet": {
+          "entity_id": "example:numeric",
+          "group": {
+            "elements": [
+              {
+                "id": "e",
+                "images": [
+                  "0",
+                  "1"
+                ]
+              },
+              {
+                "id": "flip",
+                "images": [
+                  "1",
+                  "0"
+                ]
+              }
+            ]
+          },
+          "interpretation": "Exact bit values; identity and complement are explicitly declared.",
+          "kind": "numeric",
+          "letters": [
+            {
+              "coordinates": [
+                "0"
+              ],
+              "id": "0",
+              "sort": "Bit",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": "0"
+            },
+            {
+              "coordinates": [
+                "1"
+              ],
+              "id": "1",
+              "sort": "Bit",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": "1"
+            }
+          ],
+          "sources": [
+            {
+              "anchor": "run_examples literal constructions",
+              "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+              "source": "examples/forms/demo.py"
+            }
+          ],
+          "version": "polyia.alphabet/0.1"
+        },
+        "element": "flip",
+        "operation": "act",
+        "version": "polyia.forms/0.1",
+        "word": {
+          "alphabet_cid": "04d2d87788735919f56c3a16fa281660762aada556536e64c1f262c30ca780df",
+          "entity_id": "example:word",
+          "index": {
+            "kind": "cyclic",
+            "length": 4
+          },
+          "labels": {
+            "0": "1",
+            "1": "0",
+            "2": "0",
+            "3": "1"
+          },
+          "version": "polyia.word/0.1"
+        }
+      },
+      "report": {
+        "budgets": {
+          "cells": 256,
+          "depth": 64,
+          "output_bytes": 524288,
+          "work": 1000000
+        },
+        "checks": [
+          {
+            "name": "typed-alphabet-and-declared-group",
+            "passed": true,
+            "scope": "validated exact permutations or built-in natural identity; supplied sources are references"
+          },
+          {
+            "name": "complete-labeling-and-index-structure",
+            "passed": true
+          },
+          {
+            "name": "declared-letter-permutation",
+            "passed": true
+          }
+        ],
+        "effects": [],
+        "evidence_class": "EXACTLY_CHECKED",
+        "limitations": [
+          "Established finite permutation/group algorithms implement a chosen versioned representation; no general semantic preservation is asserted.",
+          "Only the named structural equivalence is checked. Alphabet permutations preserve declared sorts, not inferred geometry, sound, physics or chemistry.",
+          "A supplied periodic-table layout is data, not an aufbau, valence or molecular generative law. UCG-055/062/066/102 remain open.",
+          "Graph words are simple directed or undirected vertex-labeled graphs with optional loops; no multiedges, edge labels, hyperedges or general graph grammar.",
+          "Graph canonicalization exhausts vertex permutations within the declared budget; larger cases return RESOURCE_LIMIT without an equivalence digest.",
+          "Tree canonicalization is for rooted unordered labeled trees; boxes have rank 0 through 3 and ordered coordinates. No implicit lattice isometry is applied.",
+          "Naturals supplies an effective definition and individual bounded queries, never a finite enumeration of infinity. Generated products are unsupported.",
+          "Serialization restores JSON values and complete labeled structure, not original whitespace or original JSON bytes. Quotients are not reversible encodings.",
+          "Source references supplied with letters are custody declarations, not independently authenticated facts. Embedded implementation source pins are not read at runtime.",
+          "No chemical domain validation, acoustic synthesis, native compiler integration, store/API registration or full mission acceptance is supplied."
+        ],
+        "llm_inference": false,
+        "mission_acceptance": false,
+        "result": {
+          "content_cid": "e02c9ab728067fb7a36bb8044c8c5e473d9454c757e18461f71dd2f5718ed78d",
+          "entity_id": "example:word",
+          "preserved_relation": "same-index-with-sort-preserving-pointwise-letter-action",
+          "representation_cid": "f869819995b42fb4852a79536800c036fa5ac63868497e179550c93487d65e43",
+          "view_cid": null,
+          "word": {
+            "alphabet_cid": "04d2d87788735919f56c3a16fa281660762aada556536e64c1f262c30ca780df",
+            "entity_id": "example:word",
+            "index": {
+              "kind": "cyclic",
+              "length": 4
+            },
+            "labels": {
+              "0": "0",
+              "1": "1",
+              "2": "1",
+              "3": "0"
+            },
+            "version": "polyia.word/0.1"
+          }
+        },
+        "sources": [
+          {
+            "anchor": "PIA-050, PIA-051",
+            "path": "GOD_SEED.md",
+            "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38"
+          },
+          {
+            "anchor": "SF-01, SF-02",
+            "path": "docs/SCIENTIFIC_FOUNDATIONS.md",
+            "sha256": "78dff0f8c6637449d043e3816d2d4f6cfc5a42a2d4aad6dd662f2d6b5e9cd8f0"
+          },
+          {
+            "anchor": "FV-01 through FV-09; especially FV-03, FV-04, FV-05",
+            "path": "docs/FORMAL_VOCABULARY.md",
+            "sha256": "45455b3d908b5ca978a510902337c08363478db378aa52b0825c91a5deb5ce24"
+          },
+          {
+            "anchor": "§§2.1–2.2, 4 D1–D3, 6.3, 7; complete source read",
+            "path": "sources/originals/PLICASTRATUM.md",
+            "sha256": "3a11ee1c6998d740cd556847ae8b64115bdac17c21e78efa85c5701e2606fcdd"
+          },
+          {
+            "anchor": "§013 Alphabet kinds; §014 Words of any rank",
+            "path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+            "sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e"
+          },
+          {
+            "anchor": "§§0–1, 3.1–3.3, 5; complete source read",
+            "path": "sources/originals/UCG_FOUNDATIONS.md",
+            "sha256": "699d8e6bbb286b41512f746bd27fb353d506d7a7f7128e80dd41a27479043d1d"
+          }
+        ],
+        "status": "PASS",
+        "version": "polyia.forms/0.1",
+        "work_used": 16
+      }
+    },
+    {
+      "parameters": {
+        "alphabet": {
+          "entity_id": "example:lettered",
+          "group": {
+            "elements": [
+              {
+                "id": "e",
+                "images": [
+                  "H",
+                  "He"
+                ]
+              }
+            ]
+          },
+          "interpretation": "Two transcribed periodic-table positions. This is a supplied layout, not a chemical law.",
+          "kind": "lettered",
+          "letters": [
+            {
+              "coordinates": [
+                "1",
+                "1"
+              ],
+              "id": "H",
+              "sort": "ElementToken",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": "H"
+            },
+            {
+              "coordinates": [
+                "1",
+                "18"
+              ],
+              "id": "He",
+              "sort": "ElementToken",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": "He"
+            }
+          ],
+          "sources": [
+            {
+              "anchor": "run_examples literal constructions",
+              "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+              "source": "examples/forms/demo.py"
+            }
+          ],
+          "version": "polyia.alphabet/0.1"
+        },
+        "operation": "word",
+        "version": "polyia.forms/0.1",
+        "word": {
+          "alphabet_cid": "5585acb7d64f00be79ebf943a599bca3880cb89c1a71aa8152ec3159a79d02cb",
+          "entity_id": "example:word",
+          "index": {
+            "directed": false,
+            "edges": [
+              [
+                "atom-one",
+                "atom-two"
+              ]
+            ],
+            "kind": "graph",
+            "vertices": [
+              "atom-one",
+              "atom-two"
+            ]
+          },
+          "labels": {
+            "atom-one": "H",
+            "atom-two": "He"
+          },
+          "version": "polyia.word/0.1"
+        }
+      },
+      "report": {
+        "budgets": {
+          "cells": 256,
+          "depth": 64,
+          "output_bytes": 524288,
+          "work": 1000000
+        },
+        "checks": [
+          {
+            "name": "typed-alphabet-and-declared-group",
+            "passed": true,
+            "scope": "validated exact permutations or built-in natural identity; supplied sources are references"
+          },
+          {
+            "name": "complete-labeling-and-index-structure",
+            "passed": true
+          }
+        ],
+        "effects": [],
+        "evidence_class": "EXACTLY_CHECKED",
+        "limitations": [
+          "Established finite permutation/group algorithms implement a chosen versioned representation; no general semantic preservation is asserted.",
+          "Only the named structural equivalence is checked. Alphabet permutations preserve declared sorts, not inferred geometry, sound, physics or chemistry.",
+          "A supplied periodic-table layout is data, not an aufbau, valence or molecular generative law. UCG-055/062/066/102 remain open.",
+          "Graph words are simple directed or undirected vertex-labeled graphs with optional loops; no multiedges, edge labels, hyperedges or general graph grammar.",
+          "Graph canonicalization exhausts vertex permutations within the declared budget; larger cases return RESOURCE_LIMIT without an equivalence digest.",
+          "Tree canonicalization is for rooted unordered labeled trees; boxes have rank 0 through 3 and ordered coordinates. No implicit lattice isometry is applied.",
+          "Naturals supplies an effective definition and individual bounded queries, never a finite enumeration of infinity. Generated products are unsupported.",
+          "Serialization restores JSON values and complete labeled structure, not original whitespace or original JSON bytes. Quotients are not reversible encodings.",
+          "Source references supplied with letters are custody declarations, not independently authenticated facts. Embedded implementation source pins are not read at runtime.",
+          "No chemical domain validation, acoustic synthesis, native compiler integration, store/API registration or full mission acceptance is supplied."
+        ],
+        "llm_inference": false,
+        "mission_acceptance": false,
+        "result": {
+          "content_cid": "1396dcac70b363bac4e185bbe7382c64491127db2c6db8cb5eae41464bc19bd9",
+          "entity_id": "example:word",
+          "representation_cid": "a479883f4a4bb370f0bd1542847e022817755d3f8e66b598f8b5dbfb1b7d4efd",
+          "view_cid": null,
+          "word": {
+            "alphabet_cid": "5585acb7d64f00be79ebf943a599bca3880cb89c1a71aa8152ec3159a79d02cb",
+            "entity_id": "example:word",
+            "index": {
+              "directed": false,
+              "edges": [
+                [
+                  "atom-one",
+                  "atom-two"
+                ]
+              ],
+              "kind": "graph",
+              "vertices": [
+                "atom-one",
+                "atom-two"
+              ]
+            },
+            "labels": {
+              "atom-one": "H",
+              "atom-two": "He"
+            },
+            "version": "polyia.word/0.1"
+          }
+        },
+        "sources": [
+          {
+            "anchor": "PIA-050, PIA-051",
+            "path": "GOD_SEED.md",
+            "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38"
+          },
+          {
+            "anchor": "SF-01, SF-02",
+            "path": "docs/SCIENTIFIC_FOUNDATIONS.md",
+            "sha256": "78dff0f8c6637449d043e3816d2d4f6cfc5a42a2d4aad6dd662f2d6b5e9cd8f0"
+          },
+          {
+            "anchor": "FV-01 through FV-09; especially FV-03, FV-04, FV-05",
+            "path": "docs/FORMAL_VOCABULARY.md",
+            "sha256": "45455b3d908b5ca978a510902337c08363478db378aa52b0825c91a5deb5ce24"
+          },
+          {
+            "anchor": "§§2.1–2.2, 4 D1–D3, 6.3, 7; complete source read",
+            "path": "sources/originals/PLICASTRATUM.md",
+            "sha256": "3a11ee1c6998d740cd556847ae8b64115bdac17c21e78efa85c5701e2606fcdd"
+          },
+          {
+            "anchor": "§013 Alphabet kinds; §014 Words of any rank",
+            "path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+            "sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e"
+          },
+          {
+            "anchor": "§§0–1, 3.1–3.3, 5; complete source read",
+            "path": "sources/originals/UCG_FOUNDATIONS.md",
+            "sha256": "699d8e6bbb286b41512f746bd27fb353d506d7a7f7128e80dd41a27479043d1d"
+          }
+        ],
+        "status": "PASS",
+        "version": "polyia.forms/0.1",
+        "work_used": 7
+      }
+    },
+    {
+      "parameters": {
+        "alphabet": {
+          "entity_id": "example:lettered",
+          "group": {
+            "elements": [
+              {
+                "id": "e",
+                "images": [
+                  "H",
+                  "He"
+                ]
+              }
+            ]
+          },
+          "interpretation": "Two transcribed periodic-table positions. This is a supplied layout, not a chemical law.",
+          "kind": "lettered",
+          "letters": [
+            {
+              "coordinates": [
+                "1",
+                "1"
+              ],
+              "id": "H",
+              "sort": "ElementToken",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": "H"
+            },
+            {
+              "coordinates": [
+                "1",
+                "18"
+              ],
+              "id": "He",
+              "sort": "ElementToken",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": "He"
+            }
+          ],
+          "sources": [
+            {
+              "anchor": "run_examples literal constructions",
+              "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+              "source": "examples/forms/demo.py"
+            }
+          ],
+          "version": "polyia.alphabet/0.1"
+        },
+        "coordinates": {
+          "atom-one": [
+            "1/3",
+            "2"
+          ],
+          "atom-two": [
+            "-3",
+            "0"
+          ]
+        },
+        "operation": "layout",
+        "version": "polyia.forms/0.1",
+        "word": {
+          "alphabet_cid": "5585acb7d64f00be79ebf943a599bca3880cb89c1a71aa8152ec3159a79d02cb",
+          "entity_id": "example:word",
+          "index": {
+            "directed": false,
+            "edges": [
+              [
+                "atom-one",
+                "atom-two"
+              ]
+            ],
+            "kind": "graph",
+            "vertices": [
+              "atom-one",
+              "atom-two"
+            ]
+          },
+          "labels": {
+            "atom-one": "H",
+            "atom-two": "He"
+          },
+          "version": "polyia.word/0.1"
+        }
+      },
+      "report": {
+        "budgets": {
+          "cells": 256,
+          "depth": 64,
+          "output_bytes": 524288,
+          "work": 1000000
+        },
+        "checks": [
+          {
+            "name": "typed-alphabet-and-declared-group",
+            "passed": true,
+            "scope": "validated exact permutations or built-in natural identity; supplied sources are references"
+          },
+          {
+            "name": "complete-labeling-and-index-structure",
+            "passed": true
+          },
+          {
+            "name": "layout-preserves-index-and-labels",
+            "passed": true
+          }
+        ],
+        "effects": [],
+        "evidence_class": "EXACTLY_CHECKED",
+        "limitations": [
+          "Established finite permutation/group algorithms implement a chosen versioned representation; no general semantic preservation is asserted.",
+          "Only the named structural equivalence is checked. Alphabet permutations preserve declared sorts, not inferred geometry, sound, physics or chemistry.",
+          "A supplied periodic-table layout is data, not an aufbau, valence or molecular generative law. UCG-055/062/066/102 remain open.",
+          "Graph words are simple directed or undirected vertex-labeled graphs with optional loops; no multiedges, edge labels, hyperedges or general graph grammar.",
+          "Graph canonicalization exhausts vertex permutations within the declared budget; larger cases return RESOURCE_LIMIT without an equivalence digest.",
+          "Tree canonicalization is for rooted unordered labeled trees; boxes have rank 0 through 3 and ordered coordinates. No implicit lattice isometry is applied.",
+          "Naturals supplies an effective definition and individual bounded queries, never a finite enumeration of infinity. Generated products are unsupported.",
+          "Serialization restores JSON values and complete labeled structure, not original whitespace or original JSON bytes. Quotients are not reversible encodings.",
+          "Source references supplied with letters are custody declarations, not independently authenticated facts. Embedded implementation source pins are not read at runtime.",
+          "No chemical domain validation, acoustic synthesis, native compiler integration, store/API registration or full mission acceptance is supplied."
+        ],
+        "llm_inference": false,
+        "mission_acceptance": false,
+        "result": {
+          "content_cid": "1396dcac70b363bac4e185bbe7382c64491127db2c6db8cb5eae41464bc19bd9",
+          "entity_id": "example:word",
+          "representation_cid": "6f8ad65cc813a70bcea077f3de048d338562d5cdc9916c23f6c8aeb89c42c2c7",
+          "view_cid": "182ff932a6f26f427fe054b79dbb36911fb3c62d62466563df1d97c96ed32006",
+          "word": {
+            "alphabet_cid": "5585acb7d64f00be79ebf943a599bca3880cb89c1a71aa8152ec3159a79d02cb",
+            "entity_id": "example:word",
+            "index": {
+              "directed": false,
+              "edges": [
+                [
+                  "atom-one",
+                  "atom-two"
+                ]
+              ],
+              "kind": "graph",
+              "vertices": [
+                "atom-one",
+                "atom-two"
+              ]
+            },
+            "labels": {
+              "atom-one": "H",
+              "atom-two": "He"
+            },
+            "version": "polyia.word/0.1",
+            "view": {
+              "coordinates": {
+                "atom-one": [
+                  "1/3",
+                  "2"
+                ],
+                "atom-two": [
+                  "-3",
+                  "0"
+                ]
+              }
+            }
+          }
+        },
+        "sources": [
+          {
+            "anchor": "PIA-050, PIA-051",
+            "path": "GOD_SEED.md",
+            "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38"
+          },
+          {
+            "anchor": "SF-01, SF-02",
+            "path": "docs/SCIENTIFIC_FOUNDATIONS.md",
+            "sha256": "78dff0f8c6637449d043e3816d2d4f6cfc5a42a2d4aad6dd662f2d6b5e9cd8f0"
+          },
+          {
+            "anchor": "FV-01 through FV-09; especially FV-03, FV-04, FV-05",
+            "path": "docs/FORMAL_VOCABULARY.md",
+            "sha256": "45455b3d908b5ca978a510902337c08363478db378aa52b0825c91a5deb5ce24"
+          },
+          {
+            "anchor": "§§2.1–2.2, 4 D1–D3, 6.3, 7; complete source read",
+            "path": "sources/originals/PLICASTRATUM.md",
+            "sha256": "3a11ee1c6998d740cd556847ae8b64115bdac17c21e78efa85c5701e2606fcdd"
+          },
+          {
+            "anchor": "§013 Alphabet kinds; §014 Words of any rank",
+            "path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+            "sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e"
+          },
+          {
+            "anchor": "§§0–1, 3.1–3.3, 5; complete source read",
+            "path": "sources/originals/UCG_FOUNDATIONS.md",
+            "sha256": "699d8e6bbb286b41512f746bd27fb353d506d7a7f7128e80dd41a27479043d1d"
+          }
+        ],
+        "status": "PASS",
+        "version": "polyia.forms/0.1",
+        "work_used": 7
+      }
+    },
+    {
+      "parameters": {
+        "alphabet": {
+          "entity_id": "example:lettered",
+          "group": {
+            "elements": [
+              {
+                "id": "e",
+                "images": [
+                  "H",
+                  "He"
+                ]
+              }
+            ]
+          },
+          "interpretation": "Two transcribed periodic-table positions. This is a supplied layout, not a chemical law.",
+          "kind": "lettered",
+          "letters": [
+            {
+              "coordinates": [
+                "1",
+                "1"
+              ],
+              "id": "H",
+              "sort": "ElementToken",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": "H"
+            },
+            {
+              "coordinates": [
+                "1",
+                "18"
+              ],
+              "id": "He",
+              "sort": "ElementToken",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": "He"
+            }
+          ],
+          "sources": [
+            {
+              "anchor": "run_examples literal constructions",
+              "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+              "source": "examples/forms/demo.py"
+            }
+          ],
+          "version": "polyia.alphabet/0.1"
+        },
+        "operation": "serialize",
+        "version": "polyia.forms/0.1",
+        "word": {
+          "alphabet_cid": "5585acb7d64f00be79ebf943a599bca3880cb89c1a71aa8152ec3159a79d02cb",
+          "entity_id": "example:word",
+          "index": {
+            "directed": false,
+            "edges": [
+              [
+                "atom-one",
+                "atom-two"
+              ]
+            ],
+            "kind": "graph",
+            "vertices": [
+              "atom-one",
+              "atom-two"
+            ]
+          },
+          "labels": {
+            "atom-one": "H",
+            "atom-two": "He"
+          },
+          "version": "polyia.word/0.1",
+          "view": {
+            "coordinates": {
+              "atom-one": [
+                "1/3",
+                "2"
+              ],
+              "atom-two": [
+                "-3",
+                "0"
+              ]
+            }
+          }
+        }
+      },
+      "report": {
+        "budgets": {
+          "cells": 256,
+          "depth": 64,
+          "output_bytes": 524288,
+          "work": 1000000
+        },
+        "checks": [
+          {
+            "name": "typed-alphabet-and-declared-group",
+            "passed": true,
+            "scope": "validated exact permutations or built-in natural identity; supplied sources are references"
+          },
+          {
+            "name": "complete-labeling-and-index-structure",
+            "passed": true
+          }
+        ],
+        "effects": [],
+        "evidence_class": "EXACTLY_CHECKED",
+        "limitations": [
+          "Established finite permutation/group algorithms implement a chosen versioned representation; no general semantic preservation is asserted.",
+          "Only the named structural equivalence is checked. Alphabet permutations preserve declared sorts, not inferred geometry, sound, physics or chemistry.",
+          "A supplied periodic-table layout is data, not an aufbau, valence or molecular generative law. UCG-055/062/066/102 remain open.",
+          "Graph words are simple directed or undirected vertex-labeled graphs with optional loops; no multiedges, edge labels, hyperedges or general graph grammar.",
+          "Graph canonicalization exhausts vertex permutations within the declared budget; larger cases return RESOURCE_LIMIT without an equivalence digest.",
+          "Tree canonicalization is for rooted unordered labeled trees; boxes have rank 0 through 3 and ordered coordinates. No implicit lattice isometry is applied.",
+          "Naturals supplies an effective definition and individual bounded queries, never a finite enumeration of infinity. Generated products are unsupported.",
+          "Serialization restores JSON values and complete labeled structure, not original whitespace or original JSON bytes. Quotients are not reversible encodings.",
+          "Source references supplied with letters are custody declarations, not independently authenticated facts. Embedded implementation source pins are not read at runtime.",
+          "No chemical domain validation, acoustic synthesis, native compiler integration, store/API registration or full mission acceptance is supplied."
+        ],
+        "llm_inference": false,
+        "mission_acceptance": false,
+        "result": {
+          "content_cid": "1396dcac70b363bac4e185bbe7382c64491127db2c6db8cb5eae41464bc19bd9",
+          "entity_id": "example:word",
+          "representation_cid": "6f8ad65cc813a70bcea077f3de048d338562d5cdc9916c23f6c8aeb89c42c2c7",
+          "text": "{\"alphabet_cid\":\"5585acb7d64f00be79ebf943a599bca3880cb89c1a71aa8152ec3159a79d02cb\",\"entity_id\":\"example:word\",\"index\":{\"directed\":false,\"edges\":[[\"atom-one\",\"atom-two\"]],\"kind\":\"graph\",\"vertices\":[\"atom-one\",\"atom-two\"]},\"labels\":{\"atom-one\":\"H\",\"atom-two\":\"He\"},\"version\":\"polyia.word/0.1\",\"view\":{\"coordinates\":{\"atom-one\":[\"1/3\",\"2\"],\"atom-two\":[\"-3\",\"0\"]}}}",
+          "view_cid": "182ff932a6f26f427fe054b79dbb36911fb3c62d62466563df1d97c96ed32006",
+          "word": {
+            "alphabet_cid": "5585acb7d64f00be79ebf943a599bca3880cb89c1a71aa8152ec3159a79d02cb",
+            "entity_id": "example:word",
+            "index": {
+              "directed": false,
+              "edges": [
+                [
+                  "atom-one",
+                  "atom-two"
+                ]
+              ],
+              "kind": "graph",
+              "vertices": [
+                "atom-one",
+                "atom-two"
+              ]
+            },
+            "labels": {
+              "atom-one": "H",
+              "atom-two": "He"
+            },
+            "version": "polyia.word/0.1",
+            "view": {
+              "coordinates": {
+                "atom-one": [
+                  "1/3",
+                  "2"
+                ],
+                "atom-two": [
+                  "-3",
+                  "0"
+                ]
+              }
+            }
+          }
+        },
+        "sources": [
+          {
+            "anchor": "PIA-050, PIA-051",
+            "path": "GOD_SEED.md",
+            "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38"
+          },
+          {
+            "anchor": "SF-01, SF-02",
+            "path": "docs/SCIENTIFIC_FOUNDATIONS.md",
+            "sha256": "78dff0f8c6637449d043e3816d2d4f6cfc5a42a2d4aad6dd662f2d6b5e9cd8f0"
+          },
+          {
+            "anchor": "FV-01 through FV-09; especially FV-03, FV-04, FV-05",
+            "path": "docs/FORMAL_VOCABULARY.md",
+            "sha256": "45455b3d908b5ca978a510902337c08363478db378aa52b0825c91a5deb5ce24"
+          },
+          {
+            "anchor": "§§2.1–2.2, 4 D1–D3, 6.3, 7; complete source read",
+            "path": "sources/originals/PLICASTRATUM.md",
+            "sha256": "3a11ee1c6998d740cd556847ae8b64115bdac17c21e78efa85c5701e2606fcdd"
+          },
+          {
+            "anchor": "§013 Alphabet kinds; §014 Words of any rank",
+            "path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+            "sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e"
+          },
+          {
+            "anchor": "§§0–1, 3.1–3.3, 5; complete source read",
+            "path": "sources/originals/UCG_FOUNDATIONS.md",
+            "sha256": "699d8e6bbb286b41512f746bd27fb353d506d7a7f7128e80dd41a27479043d1d"
+          }
+        ],
+        "status": "PASS",
+        "version": "polyia.forms/0.1",
+        "work_used": 7
+      }
+    },
+    {
+      "parameters": {
+        "alphabet": {
+          "entity_id": "example:lettered",
+          "group": {
+            "elements": [
+              {
+                "id": "e",
+                "images": [
+                  "H",
+                  "He"
+                ]
+              }
+            ]
+          },
+          "interpretation": "Two transcribed periodic-table positions. This is a supplied layout, not a chemical law.",
+          "kind": "lettered",
+          "letters": [
+            {
+              "coordinates": [
+                "1",
+                "1"
+              ],
+              "id": "H",
+              "sort": "ElementToken",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": "H"
+            },
+            {
+              "coordinates": [
+                "1",
+                "18"
+              ],
+              "id": "He",
+              "sort": "ElementToken",
+              "sources": [
+                {
+                  "anchor": "run_examples literal constructions",
+                  "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+                  "source": "examples/forms/demo.py"
+                }
+              ],
+              "value": "He"
+            }
+          ],
+          "sources": [
+            {
+              "anchor": "run_examples literal constructions",
+              "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+              "source": "examples/forms/demo.py"
+            }
+          ],
+          "version": "polyia.alphabet/0.1"
+        },
+        "operation": "deserialize",
+        "text": "{\"alphabet_cid\":\"5585acb7d64f00be79ebf943a599bca3880cb89c1a71aa8152ec3159a79d02cb\",\"entity_id\":\"example:word\",\"index\":{\"directed\":false,\"edges\":[[\"atom-one\",\"atom-two\"]],\"kind\":\"graph\",\"vertices\":[\"atom-one\",\"atom-two\"]},\"labels\":{\"atom-one\":\"H\",\"atom-two\":\"He\"},\"version\":\"polyia.word/0.1\",\"view\":{\"coordinates\":{\"atom-one\":[\"1/3\",\"2\"],\"atom-two\":[\"-3\",\"0\"]}}}",
+        "version": "polyia.forms/0.1"
+      },
+      "report": {
+        "budgets": {
+          "cells": 256,
+          "depth": 64,
+          "output_bytes": 524288,
+          "work": 1000000
+        },
+        "checks": [
+          {
+            "name": "typed-alphabet-and-declared-group",
+            "passed": true,
+            "scope": "validated exact permutations or built-in natural identity; supplied sources are references"
+          },
+          {
+            "name": "complete-labeling-and-index-structure",
+            "passed": true
+          }
+        ],
+        "effects": [],
+        "evidence_class": "EXACTLY_CHECKED",
+        "limitations": [
+          "Established finite permutation/group algorithms implement a chosen versioned representation; no general semantic preservation is asserted.",
+          "Only the named structural equivalence is checked. Alphabet permutations preserve declared sorts, not inferred geometry, sound, physics or chemistry.",
+          "A supplied periodic-table layout is data, not an aufbau, valence or molecular generative law. UCG-055/062/066/102 remain open.",
+          "Graph words are simple directed or undirected vertex-labeled graphs with optional loops; no multiedges, edge labels, hyperedges or general graph grammar.",
+          "Graph canonicalization exhausts vertex permutations within the declared budget; larger cases return RESOURCE_LIMIT without an equivalence digest.",
+          "Tree canonicalization is for rooted unordered labeled trees; boxes have rank 0 through 3 and ordered coordinates. No implicit lattice isometry is applied.",
+          "Naturals supplies an effective definition and individual bounded queries, never a finite enumeration of infinity. Generated products are unsupported.",
+          "Serialization restores JSON values and complete labeled structure, not original whitespace or original JSON bytes. Quotients are not reversible encodings.",
+          "Source references supplied with letters are custody declarations, not independently authenticated facts. Embedded implementation source pins are not read at runtime.",
+          "No chemical domain validation, acoustic synthesis, native compiler integration, store/API registration or full mission acceptance is supplied."
+        ],
+        "llm_inference": false,
+        "mission_acceptance": false,
+        "result": {
+          "content_cid": "1396dcac70b363bac4e185bbe7382c64491127db2c6db8cb5eae41464bc19bd9",
+          "entity_id": "example:word",
+          "representation_cid": "6f8ad65cc813a70bcea077f3de048d338562d5cdc9916c23f6c8aeb89c42c2c7",
+          "view_cid": "182ff932a6f26f427fe054b79dbb36911fb3c62d62466563df1d97c96ed32006",
+          "word": {
+            "alphabet_cid": "5585acb7d64f00be79ebf943a599bca3880cb89c1a71aa8152ec3159a79d02cb",
+            "entity_id": "example:word",
+            "index": {
+              "directed": false,
+              "edges": [
+                [
+                  "atom-one",
+                  "atom-two"
+                ]
+              ],
+              "kind": "graph",
+              "vertices": [
+                "atom-one",
+                "atom-two"
+              ]
+            },
+            "labels": {
+              "atom-one": "H",
+              "atom-two": "He"
+            },
+            "version": "polyia.word/0.1",
+            "view": {
+              "coordinates": {
+                "atom-one": [
+                  "1/3",
+                  "2"
+                ],
+                "atom-two": [
+                  "-3",
+                  "0"
+                ]
+              }
+            }
+          }
+        },
+        "sources": [
+          {
+            "anchor": "PIA-050, PIA-051",
+            "path": "GOD_SEED.md",
+            "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38"
+          },
+          {
+            "anchor": "SF-01, SF-02",
+            "path": "docs/SCIENTIFIC_FOUNDATIONS.md",
+            "sha256": "78dff0f8c6637449d043e3816d2d4f6cfc5a42a2d4aad6dd662f2d6b5e9cd8f0"
+          },
+          {
+            "anchor": "FV-01 through FV-09; especially FV-03, FV-04, FV-05",
+            "path": "docs/FORMAL_VOCABULARY.md",
+            "sha256": "45455b3d908b5ca978a510902337c08363478db378aa52b0825c91a5deb5ce24"
+          },
+          {
+            "anchor": "§§2.1–2.2, 4 D1–D3, 6.3, 7; complete source read",
+            "path": "sources/originals/PLICASTRATUM.md",
+            "sha256": "3a11ee1c6998d740cd556847ae8b64115bdac17c21e78efa85c5701e2606fcdd"
+          },
+          {
+            "anchor": "§013 Alphabet kinds; §014 Words of any rank",
+            "path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+            "sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e"
+          },
+          {
+            "anchor": "§§0–1, 3.1–3.3, 5; complete source read",
+            "path": "sources/originals/UCG_FOUNDATIONS.md",
+            "sha256": "699d8e6bbb286b41512f746bd27fb353d506d7a7f7128e80dd41a27479043d1d"
+          }
+        ],
+        "status": "PASS",
+        "version": "polyia.forms/0.1",
+        "work_used": 7
+      }
+    }
+  ],
+  "checks": {
+    "all_six_kinds": true,
+    "complete_labeled_roundtrip": true,
+    "dihedral_known_minimum": true,
+    "natural_exact_value": true,
+    "negative_not_natural": true,
+    "pointwise_complement": true,
+    "product_four_ordered_pairs": true,
+    "view_preserves_content": true,
+    "view_preserves_incidence": true
+  },
+  "kernel_sha256": "30624a5b7e91b11609d1e8d304e70c4660056c311ce76c87244ba6dddc92de65",
+  "llm_inference": false,
+  "mission_acceptance": false,
+  "schema": "polyia.forms-example-evidence/0.1",
+  "scope": "Executed construction examples with literal expected outputs, not blind external evidence or chemical validation.",
+  "source": {
+    "anchor": "run_examples literal constructions",
+    "sha256": "96be251c88df21738d43a6660435f8bedb19ac065d52de02cd3148289bcd04a0",
+    "source": "examples/forms/demo.py"
+  },
+  "status": "PASS"
+}

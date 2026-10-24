@@ -77,6 +77,8 @@ class TestDocument extends Element {
 }
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+const experimentDocumentation = JSON.parse(readFileSync(path.join(root, 'registry/openapi.json'), 'utf8'))
+  .components.schemas.Command.oneOf.find(command => command.properties.kind.const === 'experiment.run').properties.payload.properties;
 const operatorToken = 'ui-development-operator-token', readerToken = 'ui-development-read-token';
 let server, base, doc, interval, gate = null, release = null, serviceFailure = '', blobReads = 0;
 const nativeFetch = globalThis.fetch, nativeInterval = globalThis.setInterval;
@@ -309,6 +311,103 @@ test('rasm example runs its actual versioned contextual projection', async () =>
   assert.equal(run.name, 'rasm');
   assert.equal(run.report.result.projection.skeleton, 'كٮٮ');
   assert.equal(run.report.result.inverse.candidate_total, 15);
+});
+
+test('generator example loads without submission and computes both protocol sequences', async () => {
+  await connect();
+  assert.ok($('experiment-name').querySelectorAll('option').some(option => option.value === 'generators'));
+  const before = await state();
+  assert.ok(doc.ids.has('generators-example'), 'Generator needs an explicit example loader');
+  $('generators-example').fire('click');
+  assert.equal($('experiment-name').value, 'generators');
+  assert.equal((await state()).revision, before.revision, 'Loading an example must not submit it');
+  const parameters = JSON.parse($('experiment-parameters').value);
+  assert.ok(experimentDocumentation.name.enum.includes('generators'));
+  assert.deepEqual(parameters, experimentDocumentation.parameters.examples.find(example => example.card));
+  assert.deepEqual(parameters.card, JSON.parse(readFileSync(path.join(root, 'examples/generators/protocol.card.json'), 'utf8')));
+  assert.deepEqual(parameters.request, { operation: 'generate' });
+  await submit('experiment-form');
+  const run = (await state()).runs.at(-1);
+  assert.equal(run.name, 'generators');
+  assert.equal(run.report.status, 'PASS');
+  assert.deepEqual(run.report.result.execution.result.candidates.map(candidate => candidate.value),
+    [['PING', 'ACK'], ['PING', 'ACK', 'ACK']]);
+  assert.equal(run.report.result.execution.result.complete, true);
+  assert.ok(run.report.result.illustration);
+  assert.equal(run.report.result.curriculum, null);
+  assert.ok($('runs-list').textContent.includes('PING'));
+  assert.ok($('runs-list').textContent.includes('limitations'));
+});
+
+test('forms examples compute a Natural and preserve the explicit ordered word index', async () => {
+  await connect();
+  assert.ok($('experiment-name').querySelectorAll('option').some(option => option.value === 'forms'));
+  const before = (await state()).revision;
+  assert.ok(doc.ids.has('forms-natural-example'), 'Forms needs a Natural example');
+  assert.ok(doc.ids.has('forms-word-example'), 'Forms needs an indexed word example');
+  $('forms-natural-example').fire('click');
+  assert.equal($('experiment-name').value, 'forms');
+  assert.ok(experimentDocumentation.name.enum.includes('forms'));
+  assert.deepEqual(JSON.parse($('experiment-parameters').value), experimentDocumentation.parameters.examples
+    .find(example => example.version === 'polyia.forms/0.1' && example.operation === 'generate'));
+  assert.equal((await state()).revision, before);
+  await submit('experiment-form');
+  let run = (await state()).runs.at(-1);
+  assert.equal(run.name, 'forms');
+  assert.equal(run.report.result.status, 'PASS');
+  assert.equal(run.report.result.result.letter.value, '7');
+  assert.equal(run.report.result.result.enumerated, false);
+  const revision = run.revision;
+  $('forms-word-example').fire('click');
+  assert.equal((await state()).revision, revision);
+  const submitted = JSON.parse($('experiment-parameters').value);
+  assert.deepEqual(submitted, experimentDocumentation.parameters.examples
+    .find(example => example.version === 'polyia.forms/0.1' && example.operation === 'serialize'));
+  await submit('experiment-form');
+  run = (await state()).runs.at(-1);
+  assert.equal(run.report.status, 'PASS');
+  assert.equal(run.report.result.status, 'PASS');
+  assert.deepEqual(JSON.parse(run.report.result.result.text), submitted.word);
+  assert.deepEqual(run.report.result.result.word.index, { kind: 'tuple', length: 2 });
+  assert.deepEqual(run.report.result.result.word.labels, { '0': '0', '1': '7' });
+  assert.ok($('runs-list').textContent.includes('alphabet_cid'));
+});
+
+test('unsupported forms requests retain the actual status and explanation as inspectable text', async () => {
+  await connect();
+  assert.ok(doc.ids.has('forms-natural-example'));
+  $('forms-natural-example').fire('click');
+  const parameters = JSON.parse($('experiment-parameters').value);
+  parameters.operation = 'chemical_valence';
+  $('experiment-parameters').value = JSON.stringify(parameters);
+  await submit('experiment-form');
+  const run = (await state()).runs.at(-1);
+  assert.equal(run.report.status, 'REFUSED');
+  assert.equal(run.report.result.status, 'UNSUPPORTED');
+  assert.equal(run.report.result.result.reason, 'UNSUPPORTED');
+  assert.ok($('runs-list').textContent.includes('Unknown structured-forms operation'));
+  assert.ok($('runs-list').textContent.includes('UNSUPPORTED'));
+  assert.ok($('receipt-output').textContent.includes('UNSUPPORTED'));
+});
+
+test('forms transport limits show a visible refusal without silently changing the request', async () => {
+  await connect();
+  $('forms-natural-example').fire('click');
+  const parameters = JSON.parse($('experiment-parameters').value);
+  parameters.alphabet.interpretation = 'x'.repeat(2049);
+  const exactInput = JSON.stringify(parameters);
+  $('experiment-parameters').value = exactInput;
+  const revision = (await state()).revision;
+  $('experiment-form').fire('submit');
+  await until(() => !$('error-banner').hidden, 'Transport limit refusal was not visible');
+  assert.equal($('error-title').textContent, 'RESOURCE_LIMIT');
+  assert.equal($('experiment-parameters').value, exactInput);
+  assert.equal((await state()).revision, revision);
+  // The shared client conservatively retains an unresolved exact request after
+  // non-revision HTTP refusals, including this admission failure.
+  await until(() => !$('retry-command').disabled, 'Refused request did not expose recovery');
+  assert.equal($('retry-panel').hidden, false);
+  assert.equal($('run-experiment').disabled, true);
 });
 
 test('captured book inspection is explicit, private and displays hostile markup as inert text', async () => {

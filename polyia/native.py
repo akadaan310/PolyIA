@@ -187,6 +187,33 @@ def _literal(node):
     return str(_rational(Fraction(raw), node['span']))
 
 
+def _typed_expression(node, symbols):
+    span = node['span']
+    if node['kind'] == 'number':
+        out = {'kind': 'literal', 'type': 'Rational', 'value': _literal(node), 'span': span}
+    elif node['kind'] == 'string':
+        out = {'kind': 'literal', 'type': 'Text', 'value': node['value'], 'span': span}
+    elif node['kind'] == 'name':
+        if node['value'] not in symbols: _refuse('UNBOUND_NAME', 'Name has no earlier binding.', span)
+        out = {'kind': 'reference', 'type': symbols[node['value']], 'name': node['value'], 'span': span}
+    else:
+        operation, values = _head(node)
+        if operation == 'poly':
+            if not values: _refuse('ARITY', 'A polynomial requires at least one coefficient.', span)
+            if len(values) > LIMITS['polynomial_degree']+1:
+                _refuse('POLYNOMIAL_BUDGET', 'Too many polynomial coefficients.', span)
+            expected, result_type = ['Rational'] * len(values), 'Polynomial'
+        elif operation in SIGNATURES:
+            expected, result_type = SIGNATURES[operation]
+        else: _refuse('UNKNOWN_OPERATION', 'Operation is not admitted by this pure profile.', span)
+        if len(values) != len(expected): _refuse('ARITY', 'Incorrect number of operation arguments.', span)
+        children = [_typed_expression(value, symbols) for value in values]
+        if [child['type'] for child in children] != expected:
+            _refuse('TYPE_ERROR', 'Argument types do not match the operation signature.', span)
+        out = {'kind': 'call', 'operation': operation, 'type': result_type, 'arguments': children, 'span': span}
+    return out
+
+
 def _compile(source):
     if type(source) is not str: _refuse('SOURCE_TYPE', 'Source must be a string.')
     try: raw = source.encode('utf-8')
@@ -203,32 +230,6 @@ def _compile(source):
         _refuse('STATEMENT_BUDGET', 'Too many statements.', root['span'])
     symbols, outputs, ast, instructions = {}, {}, [], []
     budget, budget_seen, body_seen = LIMITS['instructions'], False, False
-
-    def expression(node):
-        span = node['span']
-        if node['kind'] == 'number':
-            out = {'kind': 'literal', 'type': 'Rational', 'value': _literal(node), 'span': span}
-        elif node['kind'] == 'string':
-            out = {'kind': 'literal', 'type': 'Text', 'value': node['value'], 'span': span}
-        elif node['kind'] == 'name':
-            if node['value'] not in symbols: _refuse('UNBOUND_NAME', 'Name has no earlier binding.', span)
-            out = {'kind': 'reference', 'type': symbols[node['value']], 'name': node['value'], 'span': span}
-        else:
-            operation, values = _head(node)
-            if operation == 'poly':
-                if not values: _refuse('ARITY', 'A polynomial requires at least one coefficient.', span)
-                if len(values) > LIMITS['polynomial_degree']+1:
-                    _refuse('POLYNOMIAL_BUDGET', 'Too many polynomial coefficients.', span)
-                expected, result_type = ['Rational'] * len(values), 'Polynomial'
-            elif operation in SIGNATURES:
-                expected, result_type = SIGNATURES[operation]
-            else: _refuse('UNKNOWN_OPERATION', 'Operation is not admitted by this pure profile.', span)
-            if len(values) != len(expected): _refuse('ARITY', 'Incorrect number of operation arguments.', span)
-            children = [expression(value) for value in values]
-            if [child['type'] for child in children] != expected:
-                _refuse('TYPE_ERROR', 'Argument types do not match the operation signature.', span)
-            out = {'kind': 'call', 'operation': operation, 'type': result_type, 'arguments': children, 'span': span}
-        return out
 
     def lower(node):
         common = {'type': node['type'], 'span': node['span'], 'effects': []}
@@ -259,7 +260,7 @@ def _compile(source):
             declared = _name(args[1])
             if declared not in ('Rational', 'Polynomial', 'Text', 'Division'): _refuse('UNKNOWN_TYPE', 'Unsupported type.', args[1]['span'])
         elif identifier in outputs: _refuse('DUPLICATE_OUTPUT', 'Output names must be unique.', span)
-        value = expression(args[-1])
+        value = _typed_expression(args[-1], symbols)
         if kind == 'let' and declared != value['type']: _refuse('TYPE_ERROR', 'Declared type does not match expression.', span)
         ast.append({'kind': kind, 'name': identifier, 'type': value['type'], 'expression': value, 'span': span})
         if len(ast) > LIMITS['statements']:
@@ -503,6 +504,175 @@ def execute_program(program: dict) -> dict:
                 'evidence_class': 'differential-check', 'shared_dependencies': ['lexer/parser/typechecker', 'fractions.Fraction'],
                 'limitation': 'finite supported profile; agreement is not proof or full mission acceptance'}}
     except Refusal as exc: return {'ok': False, 'error': exc.error}
+
+
+
+# Public expression operations extend the API without altering program packages.
+TERM_VERSION = 'polyia.term/0.1'
+_TERM_TYPES = ('Rational', 'Polynomial', 'Division', 'Text')
+
+
+def _term_bindings(bindings):
+    if bindings is None:
+        return {}
+    if type(bindings) is not dict or len(bindings) > 32:
+        _refuse('TERM_CONTEXT', 'Term context must contain at most 32 typed free variables.')
+    for name, kind in bindings.items():
+        if (type(name) is not str or len(name) > 128 or not NAME.fullmatch(name)
+                or type(kind) is not str or kind not in _TERM_TYPES):
+            _refuse('TERM_CONTEXT', 'Free variables require bounded native names and supported types.')
+    return dict(bindings)
+
+
+def _term_without_spans(node):
+    return {key: [_term_without_spans(child) for child in value] if key == 'arguments' else value
+            for key, value in node.items() if key != 'span'}
+
+
+def _parse_term(source, bindings):
+    if type(source) is not str:
+        _refuse('SOURCE_TYPE', 'Term source must be a string.')
+    if len(source) > LIMITS['source_bytes']:
+        _refuse('SOURCE_BUDGET', 'Term source exceeds its character budget.')
+    try:
+        data = source.encode('utf-8')
+    except UnicodeEncodeError:
+        _refuse('INVALID_UNICODE', 'Term source must contain Unicode scalar values.')
+    if len(data) > LIMITS['source_bytes']:
+        _refuse('SOURCE_BUDGET', 'Term source exceeds its byte budget.')
+    return _term_without_spans(_typed_expression(_parse(_lex(source)), bindings))
+
+
+def parse_term(source: str, bindings=None) -> dict:
+    """Parse one typed expression; retain raw source separately from its term."""
+    try:
+        context = _term_bindings(bindings)
+        term = _parse_term(source, context)
+        return {'ok': True, 'version': TERM_VERSION, 'source': source,
+                'source_sha256': hashlib.sha256(source.encode()).hexdigest(),
+                'bindings': context, 'term': term}
+    except Refusal as exc:
+        return {'ok': False, 'error': exc.error}
+
+
+def _term_text(term, bindings):
+    count = 0
+    source_bytes = 0
+
+    def charge(text):
+        nonlocal source_bytes
+        source_bytes += len(text.encode('utf-8'))
+        if source_bytes > LIMITS['source_bytes']:
+            _refuse('SOURCE_BUDGET', 'Printed term exceeds its byte budget.')
+        return text
+
+    def render(node, depth):
+        nonlocal count
+        count += 1
+        if count > LIMITS['tokens'] or depth > LIMITS['depth']:
+            _refuse('TERM_BUDGET', 'Term node or nesting budget exceeded.')
+        if type(node) is not dict or len(node) > 4:
+            _refuse('TERM_FORMAT', 'A typed term node must be an object.')
+        kind = node.get('kind')
+        if kind == 'literal':
+            if set(node) != {'kind', 'type', 'value'} or type(node['value']) is not str:
+                _refuse('TERM_FORMAT', 'Invalid literal node.')
+            value = node['value']
+            if len(value) > LIMITS['text_bytes']:
+                _refuse('TERM_BUDGET', 'Literal term value exceeds its character bound.')
+            if node['type'] == 'Rational':
+                if not NUMBER.fullmatch(value):
+                    _refuse('TERM_FORMAT', 'Invalid rational literal.')
+                if _literal({'value': value, 'span': None}) != value:
+                    _refuse('TERM_FORMAT', 'Rational term literals must already be canonical.')
+                return charge(value)
+            if node['type'] == 'Text':
+                try:
+                    _text(value)
+                except UnicodeEncodeError:
+                    _refuse('INVALID_UNICODE', 'Term text must contain Unicode scalar values.')
+                if any(ord(char) < 32 and char != '\n' for char in value):
+                    _refuse('TERM_FORMAT', 'Text contains controls unavailable in native syntax.')
+                return charge('"' + value.replace('\\', '\\\\').replace('"', '\\"').replace('\n', '\\n') + '"')
+            _refuse('TERM_FORMAT', 'Only Rational and Text use literal nodes.')
+        if kind == 'reference':
+            if set(node) != {'kind', 'type', 'name'} or type(node['name']) is not str:
+                _refuse('TERM_FORMAT', 'Invalid reference node.')
+            name = node['name']
+            if name not in bindings or node['type'] != bindings[name]:
+                _refuse('TERM_CONTEXT', 'Reference does not match its explicit free-variable context.')
+            return charge(name)
+        if kind == 'call':
+            if set(node) != {'kind', 'type', 'operation', 'arguments'}:
+                _refuse('TERM_FORMAT', 'Invalid call node.')
+            operation, arguments = node['operation'], node['arguments']
+            if type(operation) is not str or operation not in (*SIGNATURES, 'poly'):
+                _refuse('UNKNOWN_OPERATION', 'Term operation is not registered.')
+            if type(arguments) is not list or len(arguments) > LIMITS['polynomial_degree'] + 1:
+                _refuse('TERM_FORMAT', 'Invalid argument list.')
+            charge('(' + operation + ' ' * len(arguments) + ')')
+            return '(' + operation + ''.join(' ' + render(child, depth+1) for child in arguments) + ')'
+        _refuse('TERM_FORMAT', 'Unknown term node kind.')
+
+    text = render(term, 0)
+    # The same frontend validates all signatures and return types. Exact node
+    # equality also refuses booleans, foreign fields and noncanonical literals.
+    reparsed = _parse_term(text, bindings)
+    if reparsed != term:
+        _refuse('TERM_FORMAT', 'Term differs from the canonical typed parse of its printed form.')
+    return text, reparsed
+
+
+def print_term(term: dict, bindings=None) -> dict:
+    """Print an admitted canonical term; source trivia is intentionally absent."""
+    try:
+        context = _term_bindings(bindings)
+        text, _ = _term_text(term, context)
+        return {'ok': True, 'version': TERM_VERSION, 'source': text, 'bindings': context}
+    except Refusal as exc:
+        return {'ok': False, 'error': exc.error}
+
+
+def normalize_term(term: dict, bindings=None) -> dict:
+    """Bottom-up partial normalization; no cancellation of undefined operations.
+
+Rules fold constant exact rational add/sub/mul, concatenate constant text, and
+trim trailing literal polynomial zeros. Every rewrite removes AST nodes; each
+rule's output is irreducible at its node. This is no general algebraic solver.
+"""
+    try:
+        context = _term_bindings(bindings)
+        _, admitted = _term_text(term, context)
+        rewrites = 0
+
+        def normalize(node):
+            nonlocal rewrites
+            if node['kind'] != 'call':
+                return dict(node)
+            args = [normalize(child) for child in node['arguments']]
+            operation = node['operation']
+            if operation in ('add', 'sub', 'mul') and all(arg['kind'] == 'literal' for arg in args):
+                a, b = (Fraction(arg['value']) for arg in args)
+                value = _rational(a+b if operation == 'add' else a-b if operation == 'sub' else a*b)
+                rewrites += 1
+                return {'kind': 'literal', 'type': 'Rational', 'value': str(value)}
+            if operation == 'concat' and all(arg['kind'] == 'literal' for arg in args):
+                value = _text(args[0]['value'] + args[1]['value'])
+                rewrites += 1
+                return {'kind': 'literal', 'type': 'Text', 'value': value}
+            if operation == 'poly':
+                while len(args) > 1 and args[-1] == {'kind': 'literal', 'type': 'Rational', 'value': '0'}:
+                    args.pop()
+                    rewrites += 1
+            return dict(node, arguments=args)
+
+        normalized = normalize(admitted)
+        return {'ok': True, 'version': TERM_VERSION, 'term': normalized,
+                'bindings': context, 'rewrites': rewrites,
+                'scope': 'constant rational arithmetic, constant text concatenation, literal polynomial zero tails',
+                'effects': []}
+    except Refusal as exc:
+        return {'ok': False, 'error': exc.error}
 
 
 def main():

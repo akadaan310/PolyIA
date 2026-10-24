@@ -72,7 +72,7 @@ class BookOfFormsTests(unittest.TestCase):
         self.assertEqual(first['evidence']['mission_status'], 'NOT_COMMISSIONED')
         self.assertEqual(first['evidence']['book_id'], 'BOOK-OF-FORMS')
         self.assertEqual(first['evidence']['atlas_count'], 62)
-        self.assertGreaterEqual(len(first['evidence']['exercises']), 10)
+        self.assertEqual(len(first['evidence']['exercises']), 18)
         builder.build(ROOT, check=True)
 
     def test_kernel_pass_without_actual_checks_cannot_publish(self):
@@ -86,6 +86,50 @@ class BookOfFormsTests(unittest.TestCase):
             with self.subTest(checks=checks), patch.object(builder, '_execute', empty_checks):
                 with self.assertRaises(builder.BookError):
                     builder.run_exercises(self.exercises(), ROOT)
+
+    def construction_specification(self):
+        data = self.exercises()
+        data['exercises'].extend(builder.construction_exercises(ROOT))
+        return data
+
+    def test_constructed_alphabets_symmetries_and_generators_have_exact_answers(self):
+        results = {r['id']: r for r in builder.run_exercises(self.construction_specification(), ROOT)}
+        self.assertEqual(len(results), 18)
+        self.assertEqual(results['BF-13']['observed']['result.letter.value'], '7')
+        self.assertEqual(results['BF-14']['observed']['result.canonical.form.labels'], ['0', '7', '1'])
+        self.assertEqual(results['BF-15']['observed']['result.canonical.form.labels'], ['0', '1', '7'])
+        self.assertEqual(results['BF-16']['observed']['result.candidates.1.value'], ['PING', 'ACK', 'ACK'])
+        self.assertIs(results['BF-17']['observed']['result.accepted'], False)
+        self.assertEqual(results['BF-18']['computation_status'], 'RESOURCE_LIMIT')
+
+    def test_wrong_construction_answers_cannot_be_derived_from_current_outputs(self):
+        for index, path, value in [(12, 'result.letter.value', '8'),
+                                   (15, 'result.candidates.1.value', ['ACK']),
+                                   (16, 'result.accepted', True), (17, 'status', 'PASS')]:
+            data = self.construction_specification()
+            data['exercises'][index]['expected'][path] = value
+            with self.subTest(index=index), self.assertRaises(builder.BookError):
+                builder.run_exercises(data, ROOT)
+
+    def test_constructive_executors_require_nonempty_boolean_checks(self):
+        original = builder._execute
+        for checks in ([], [{'name': 'forged truth value', 'passed': 'false'}]):
+            def altered(name, parameters):
+                result = original(name, parameters)
+                if name in ('forms', 'generators') and result.get('status') == 'PASS':
+                    result['checks'] = checks
+                return result
+            with self.subTest(checks=checks), patch.object(builder, '_execute', altered):
+                with self.assertRaises(builder.BookError):
+                    builder.run_exercises(self.construction_specification(), ROOT)
+
+    def test_preview_preserves_all_registered_book_artifacts(self):
+        paths = [ROOT / 'books/book-of-forms' / name for name in ('BOOK.md', 'exercises.json', 'evidence.json')]
+        before = [p.read_bytes() for p in paths]
+        result = builder.build(ROOT)
+        self.assertIn('## 9. Constructing words and their witnesses', result['book'])
+        self.assertEqual(result['evidence']['mission_status'], 'NOT_COMMISSIONED')
+        self.assertEqual(before, [p.read_bytes() for p in paths])
 
 
 if __name__ == '__main__': unittest.main()

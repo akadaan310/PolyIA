@@ -2,6 +2,8 @@
 
 This initial D-COMPILER increment is authorized implementation work. It does not complete PIA-085–096 or replace any retained acceptance threshold.
 
+The subsequent [typed-term and quantitative increment](NATIVE_QUANTITATIVE.md) adds public expression parsing, canonical printing and partial normalization, and records 10,000 term checks plus three computational machines with 1,000 inputs each. It preserves the existing serialized program representation. Its finite evidence does not complete the wider compiler mandate.
+
 Design: a versioned parenthesized `.polyia` grammar is lexed and parsed into a typed AST, lowered to typed stack instructions, and executed by a bounded pure VM. A separate recursive AST evaluator checks the returned observable values. JSON serializes the resulting package; it is not the source language. Fixed rational, univariate polynomial and literal text operations demonstrate nonlinguistic and linguistic lowering through the same contract. Unknown syntax, types, operations, effects, budget excess and altered packages are refusals.
 
 Alternatives considered: directly interpreting JSON would violate POLY-C-017/018; adding a full general-purpose language would expand the unreviewed effect/termination surface. The bounded typed bytecode profile implements the assigned increment and leaves modules, general generators, native/WASM backends and tool brokers open.
@@ -68,7 +70,7 @@ The CLI explicitly reads an operator-selected file; this effect is outside the g
 
 Ceilings: 65,536 source UTF-8 bytes; 4,096 tokens; 48 nested forms; 128 executable statements; 2,048 instructions (source may lower this); 512 bits per reduced rational numerator/denominator; polynomial degree 64; 16,384 bytes per text value; 65,536 combined serialized output bytes; 200,000 VM work units. Growth checks precede text expansion and bound polynomial arithmetic. The VM stops before the reference check when a resource guard fails. Source/package validation bounds nested metadata and rejects foreign value types/cycles. Work units are deterministic proxies; they are not measured CPU time or an OS sandbox. The independent evaluator is also bounded by the admitted finite AST and numerical degree/bit limits, but its work is not included in `vm_work_units`.
 
-Open: general grammar/enumerator generation; module/provider/ABI resolution; dependency specialization; binary/native/WASM/JS backends; effectful tool broker and process isolation; independent external proof; parser/printer round trips on 10,000 random terms (UCG-084); three machines across 1,000 inputs with timing (UCG-124); the rest of PIA-085–096. No mission verifier or acceptance status is changed by this increment.
+Open: general grammar/enumerator generation; module/provider/ABI resolution; dependency specialization; binary/native/WASM/JS backends; effectful tool broker and process isolation; independent external proof; full mathematical function breadth and generalized generated-machine coverage; the rest of PIA-085–096. The UCG-084/124 quantitative counts have since been executed for the explicit finite profile in [NATIVE_QUANTITATIVE.md](NATIVE_QUANTITATIVE.md). No mission verifier or acceptance status is changed by these kernel increments.
 
 ## Verification recorded 2026-10-24
 

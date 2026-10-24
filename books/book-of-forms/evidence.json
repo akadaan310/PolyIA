@@ -121,7 +121,7 @@
       "subject": "Complexity"
     },
     {
-      "book_exercise_scope": "BF-04: finite words with token identities",
+      "book_exercise_scope": "BF-04, BF-13–15: tokens, Naturals and named cyclic/dihedral quotients",
       "custody": "preserved",
       "division": "relational",
       "division_numeral": "II",
@@ -133,7 +133,7 @@
       "subject": "Alphabets and words"
     },
     {
-      "book_exercise_scope": "BF-04: finite-language promotion only",
+      "book_exercise_scope": "BF-04, BF-16–18: finite promotion and bounded regular generation",
       "custody": "preserved",
       "division": "relational",
       "division_numeral": "II",
@@ -747,7 +747,7 @@
   ],
   "atlas_count": 62,
   "book_id": "BOOK-OF-FORMS",
-  "book_sha256": "8a449f2b504adf9d522591eb9dfe2fcd030fb50c32031abcfaa99aec06e2ad06",
+  "book_sha256": "b24f4352ec54e990287c43419d85be418f8d3de1b1d2439b2df960f067c6385c",
   "claim_kind": "CONSTRUCTED_RESEARCH_AND_TEACHING_ARTIFACT",
   "edition": "0.1.0",
   "exercises": [
@@ -776,7 +776,7 @@
         {
           "anchor": "Source grammar and semantics",
           "path": "docs/NATIVE_LANGUAGE.md",
-          "sha256": "5132bd0579cc8963557906e816085fdee4248f182c78d2efac4aba87c0e82f11"
+          "sha256": "8e91ecaa0edfb267f527a65b0ba423faebb51385bd018bf3787ab50736815405"
         }
       ],
       "title": "A typed rational expression"
@@ -1076,7 +1076,7 @@
         {
           "anchor": "API, package and execution",
           "path": "docs/NATIVE_LANGUAGE.md",
-          "sha256": "5132bd0579cc8963557906e816085fdee4248f182c78d2efac4aba87c0e82f11"
+          "sha256": "8e91ecaa0edfb267f527a65b0ba423faebb51385bd018bf3787ab50736815405"
         }
       ],
       "title": "Compile, serialize, and execute a small program"
@@ -1267,6 +1267,502 @@
         }
       ],
       "title": "A geometric observation is separate from meaning"
+    },
+    {
+      "chapter": 9,
+      "computation_status": "PASS",
+      "evidence_scope": "One exact bounded Natural query. The countably infinite definition is not an enumerated result.",
+      "executor": "forms",
+      "expectations_match": true,
+      "expected": {
+        "result.enumerated": false,
+        "result.letter.coordinates": [
+          "7"
+        ],
+        "result.letter.value": "7",
+        "status": "PASS"
+      },
+      "id": "BF-13",
+      "input": {
+        "alphabet": {
+          "entity_id": "book:naturals",
+          "generator": {
+            "coordinates": "value",
+            "name": "naturals",
+            "start": 0
+          },
+          "group": {
+            "elements": [
+              {
+                "id": "e",
+                "rule": "identity"
+              }
+            ]
+          },
+          "interpretation": "Nonnegative integers queried individually, not an enumeration of infinity.",
+          "kind": "numeric",
+          "sources": [
+            {
+              "anchor": "PIA-050; Natural construction for chapter 9",
+              "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38",
+              "source": "GOD_SEED.md"
+            }
+          ],
+          "version": "polyia.alphabet/0.1"
+        },
+        "index": 7,
+        "operation": "generate",
+        "version": "polyia.forms/0.1"
+      },
+      "observed": {
+        "result.enumerated": false,
+        "result.letter.coordinates": [
+          "7"
+        ],
+        "result.letter.value": "7",
+        "status": "PASS"
+      },
+      "result_sha256": "f7fa16825a5da6d3ac604c5bea96538b47e47213437e68cda70be22c6a45de1f",
+      "sources": [
+        {
+          "anchor": "PIA-050",
+          "path": "GOD_SEED.md",
+          "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38"
+        },
+        {
+          "anchor": "## Declared canonical relations",
+          "path": "docs/STRUCTURED_FORMS.md",
+          "sha256": "217005ad6bbbeb5c341b4ad24f1e9d7dc95ae53a940f36521f71248b33db4e2d"
+        },
+        {
+          "anchor": "**D2. Word of rank r",
+          "path": "sources/originals/PLICASTRATUM.md",
+          "sha256": "3a11ee1c6998d740cd556847ae8b64115bdac17c21e78efa85c5701e2606fcdd"
+        }
+      ],
+      "title": "Query an effective alphabet without enumerating infinity"
+    },
+    {
+      "chapter": 9,
+      "computation_status": "PASS",
+      "evidence_scope": "All three rotations of one labeled cycle, with fixed letter identities. No domain-denotation equivalence is inferred.",
+      "executor": "forms",
+      "expectations_match": true,
+      "expected": {
+        "result.canonical.form.labels": [
+          "0",
+          "7",
+          "1"
+        ],
+        "result.index_candidates_checked": 3,
+        "result.preserved_relation": "declared-structural-orbit-only",
+        "status": "PASS"
+      },
+      "id": "BF-14",
+      "input": {
+        "alphabet": {
+          "entity_id": "book:naturals",
+          "generator": {
+            "coordinates": "value",
+            "name": "naturals",
+            "start": 0
+          },
+          "group": {
+            "elements": [
+              {
+                "id": "e",
+                "rule": "identity"
+              }
+            ]
+          },
+          "interpretation": "Nonnegative integers queried individually, not an enumeration of infinity.",
+          "kind": "numeric",
+          "sources": [
+            {
+              "anchor": "PIA-050; Natural construction for chapter 9",
+              "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38",
+              "source": "GOD_SEED.md"
+            }
+          ],
+          "version": "polyia.alphabet/0.1"
+        },
+        "operation": "canonicalize",
+        "relation": "cyclic_rotations",
+        "version": "polyia.forms/0.1",
+        "word": {
+          "alphabet_cid": "c7454194cfd6250df27de9ea757ae99cdce2ad5f68429e6c111f9a8f7599e508",
+          "entity_id": "book:oriented-three-cycle",
+          "index": {
+            "kind": "cyclic",
+            "length": 3
+          },
+          "labels": {
+            "0": "0",
+            "1": "7",
+            "2": "1"
+          },
+          "version": "polyia.word/0.1"
+        }
+      },
+      "observed": {
+        "result.canonical.form.labels": [
+          "0",
+          "7",
+          "1"
+        ],
+        "result.index_candidates_checked": 3,
+        "result.preserved_relation": "declared-structural-orbit-only",
+        "status": "PASS"
+      },
+      "result_sha256": "e00b1b56bcdf8f97dd274f935025fd143a597608ebf24f9e749989bf959ebab2",
+      "sources": [
+        {
+          "anchor": "PIA-050",
+          "path": "GOD_SEED.md",
+          "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38"
+        },
+        {
+          "anchor": "## Declared canonical relations",
+          "path": "docs/STRUCTURED_FORMS.md",
+          "sha256": "217005ad6bbbeb5c341b4ad24f1e9d7dc95ae53a940f36521f71248b33db4e2d"
+        },
+        {
+          "anchor": "**D2. Word of rank r",
+          "path": "sources/originals/PLICASTRATUM.md",
+          "sha256": "3a11ee1c6998d740cd556847ae8b64115bdac17c21e78efa85c5701e2606fcdd"
+        }
+      ],
+      "title": "Keep orientation when only rotations are declared"
+    },
+    {
+      "chapter": 9,
+      "computation_status": "PASS",
+      "evidence_scope": "All six positional dihedral transformations of the same input. This many-to-one quotient does not recover its original orientation.",
+      "executor": "forms",
+      "expectations_match": true,
+      "expected": {
+        "result.canonical.form.labels": [
+          "0",
+          "1",
+          "7"
+        ],
+        "result.index_candidates_checked": 6,
+        "result.preserved_relation": "declared-structural-orbit-only",
+        "status": "PASS"
+      },
+      "id": "BF-15",
+      "input": {
+        "alphabet": {
+          "entity_id": "book:naturals",
+          "generator": {
+            "coordinates": "value",
+            "name": "naturals",
+            "start": 0
+          },
+          "group": {
+            "elements": [
+              {
+                "id": "e",
+                "rule": "identity"
+              }
+            ]
+          },
+          "interpretation": "Nonnegative integers queried individually, not an enumeration of infinity.",
+          "kind": "numeric",
+          "sources": [
+            {
+              "anchor": "PIA-050; Natural construction for chapter 9",
+              "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38",
+              "source": "GOD_SEED.md"
+            }
+          ],
+          "version": "polyia.alphabet/0.1"
+        },
+        "operation": "canonicalize",
+        "relation": "dihedral",
+        "version": "polyia.forms/0.1",
+        "word": {
+          "alphabet_cid": "c7454194cfd6250df27de9ea757ae99cdce2ad5f68429e6c111f9a8f7599e508",
+          "entity_id": "book:oriented-three-cycle",
+          "index": {
+            "kind": "cyclic",
+            "length": 3
+          },
+          "labels": {
+            "0": "0",
+            "1": "7",
+            "2": "1"
+          },
+          "version": "polyia.word/0.1"
+        }
+      },
+      "observed": {
+        "result.canonical.form.labels": [
+          "0",
+          "1",
+          "7"
+        ],
+        "result.index_candidates_checked": 6,
+        "result.preserved_relation": "declared-structural-orbit-only",
+        "status": "PASS"
+      },
+      "result_sha256": "307402fbb01fe80b6efc252f31d993ba3c6d99d3318fb6f4127db531c51ada04",
+      "sources": [
+        {
+          "anchor": "PIA-050",
+          "path": "GOD_SEED.md",
+          "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38"
+        },
+        {
+          "anchor": "## Declared canonical relations",
+          "path": "docs/STRUCTURED_FORMS.md",
+          "sha256": "217005ad6bbbeb5c341b4ad24f1e9d7dc95ae53a940f36521f71248b33db4e2d"
+        },
+        {
+          "anchor": "**D2. Word of rank r",
+          "path": "sources/originals/PLICASTRATUM.md",
+          "sha256": "3a11ee1c6998d740cd556847ae8b64115bdac17c21e78efa85c5701e2606fcdd"
+        }
+      ],
+      "title": "Declare reversal before identifying an orientation"
+    },
+    {
+      "chapter": 9,
+      "computation_status": "PASS",
+      "evidence_scope": "Finite regular-language construction with compiled-machine and source-interpreter checks. It does not verify a network protocol or a human language.",
+      "executor": "generators",
+      "expectations_match": true,
+      "expected": {
+        "result.candidates.0.value": [
+          "PING",
+          "ACK"
+        ],
+        "result.candidates.1.value": [
+          "PING",
+          "ACK",
+          "ACK"
+        ],
+        "result.complete": true,
+        "result.counts.admitted": 2,
+        "status": "PASS"
+      },
+      "id": "BF-16",
+      "input": {
+        "card": {
+          "alphabet": [
+            "PING",
+            "ACK"
+          ],
+          "bounds": {
+            "max_candidates": 64,
+            "work_units": 10000
+          },
+          "family": "regular",
+          "grammar": {
+            "op": "sequence",
+            "parts": [
+              {
+                "op": "token",
+                "token": "PING"
+              },
+              {
+                "body": {
+                  "op": "token",
+                  "token": "ACK"
+                },
+                "max": 2,
+                "min": 1,
+                "op": "repeat"
+              }
+            ]
+          },
+          "id": "request-ack-protocol",
+          "schema": "polyia.generator-card/0.1",
+          "seed": 0,
+          "version": "1.0.0"
+        },
+        "request": {
+          "operation": "generate"
+        }
+      },
+      "observed": {
+        "result.candidates.0.value": [
+          "PING",
+          "ACK"
+        ],
+        "result.candidates.1.value": [
+          "PING",
+          "ACK",
+          "ACK"
+        ],
+        "result.complete": true,
+        "result.counts.admitted": 2,
+        "status": "PASS"
+      },
+      "result_sha256": "91399e0bec25c6c6e500a3def1b48ae9b3f292e7f2bc65ae6c2a5c37cf38eafb",
+      "sources": [
+        {
+          "anchor": "## Family 1: regular token languages",
+          "path": "docs/GENERATORS.md",
+          "sha256": "f278c6208f795c1a3f25008a702307c11230b45aae665475620f1fd837824300"
+        },
+        {
+          "anchor": "request-ack-protocol",
+          "path": "examples/generators/protocol.card.json",
+          "sha256": "b5d632741bf03dbc448d283bebc688e523b330cdbcdb8062ea5d15bdec2e6f67"
+        }
+      ],
+      "title": "Construct the two admitted protocol words"
+    },
+    {
+      "chapter": 9,
+      "computation_status": "PASS",
+      "evidence_scope": "Both exact recognizers reject one word within the supplied alphabet. PASS records completion of the check, not membership.",
+      "executor": "generators",
+      "expectations_match": true,
+      "expected": {
+        "result.accepted": false,
+        "result.complete": true,
+        "result.reference_accepted": false,
+        "status": "PASS"
+      },
+      "id": "BF-17",
+      "input": {
+        "card": {
+          "alphabet": [
+            "PING",
+            "ACK"
+          ],
+          "bounds": {
+            "max_candidates": 64,
+            "work_units": 10000
+          },
+          "family": "regular",
+          "grammar": {
+            "op": "sequence",
+            "parts": [
+              {
+                "op": "token",
+                "token": "PING"
+              },
+              {
+                "body": {
+                  "op": "token",
+                  "token": "ACK"
+                },
+                "max": 2,
+                "min": 1,
+                "op": "repeat"
+              }
+            ]
+          },
+          "id": "request-ack-protocol",
+          "schema": "polyia.generator-card/0.1",
+          "seed": 0,
+          "version": "1.0.0"
+        },
+        "request": {
+          "operation": "recognize",
+          "word": [
+            "ACK"
+          ]
+        }
+      },
+      "observed": {
+        "result.accepted": false,
+        "result.complete": true,
+        "result.reference_accepted": false,
+        "status": "PASS"
+      },
+      "result_sha256": "36be20978ba3536798c2fc6f8c00f5491b1773397a6cac7ec6fff617d32a2826",
+      "sources": [
+        {
+          "anchor": "## Family 1: regular token languages",
+          "path": "docs/GENERATORS.md",
+          "sha256": "f278c6208f795c1a3f25008a702307c11230b45aae665475620f1fd837824300"
+        },
+        {
+          "anchor": "request-ack-protocol",
+          "path": "examples/generators/protocol.card.json",
+          "sha256": "b5d632741bf03dbc448d283bebc688e523b330cdbcdb8062ea5d15bdec2e6f67"
+        }
+      ],
+      "title": "A successful membership check can answer no"
+    },
+    {
+      "chapter": 9,
+      "computation_status": "RESOURCE_LIMIT",
+      "evidence_scope": "A one-prefix budget produces no admitted words and leaves the frontier incomplete. BF-16 already supplies two witnesses, so this is not an empty-language claim.",
+      "executor": "generators",
+      "expectations_match": true,
+      "expected": {
+        "result.candidates": [],
+        "result.complete": false,
+        "result.counts.frontier_visits": 1,
+        "result.stop_reason": "SEARCH_BUDGET",
+        "status": "RESOURCE_LIMIT"
+      },
+      "id": "BF-18",
+      "input": {
+        "card": {
+          "alphabet": [
+            "PING",
+            "ACK"
+          ],
+          "bounds": {
+            "max_candidates": 64,
+            "work_units": 10000
+          },
+          "family": "regular",
+          "grammar": {
+            "op": "sequence",
+            "parts": [
+              {
+                "op": "token",
+                "token": "PING"
+              },
+              {
+                "body": {
+                  "op": "token",
+                  "token": "ACK"
+                },
+                "max": 2,
+                "min": 1,
+                "op": "repeat"
+              }
+            ]
+          },
+          "id": "request-ack-protocol",
+          "schema": "polyia.generator-card/0.1",
+          "seed": 0,
+          "version": "1.0.0"
+        },
+        "request": {
+          "operation": "generate",
+          "search_budget": 1
+        }
+      },
+      "observed": {
+        "result.candidates": [],
+        "result.complete": false,
+        "result.counts.frontier_visits": 1,
+        "result.stop_reason": "SEARCH_BUDGET",
+        "status": "RESOURCE_LIMIT"
+      },
+      "result_sha256": "71d08dc6b494ea788005fa9076ce0e80077dcbb7c6c5f2b187db6843a85bb626",
+      "sources": [
+        {
+          "anchor": "## Family 1: regular token languages",
+          "path": "docs/GENERATORS.md",
+          "sha256": "f278c6208f795c1a3f25008a702307c11230b45aae665475620f1fd837824300"
+        },
+        {
+          "anchor": "request-ack-protocol",
+          "path": "examples/generators/protocol.card.json",
+          "sha256": "b5d632741bf03dbc448d283bebc688e523b330cdbcdb8062ea5d15bdec2e6f67"
+        }
+      ],
+      "title": "An exhausted prefix search has not proved emptiness"
     }
   ],
   "limitations": [
@@ -1280,6 +1776,10 @@
   "mission_status": "NOT_COMMISSIONED",
   "schema": "BOOK-OF-FORMS-EVIDENCE/0.1",
   "sources": [
+    {
+      "path": "GOD_SEED.md",
+      "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38"
+    },
     {
       "path": "books/book-of-forms/exercises.json",
       "sha256": "8842cff578d4fd6c3f7474882adf968043e541e6dc4b3cd56a8a55709bd6952f"
@@ -1305,12 +1805,24 @@
       "sha256": "45455b3d908b5ca978a510902337c08363478db378aa52b0825c91a5deb5ce24"
     },
     {
+      "path": "docs/GENERATORS.md",
+      "sha256": "f278c6208f795c1a3f25008a702307c11230b45aae665475620f1fd837824300"
+    },
+    {
       "path": "docs/NATIVE_LANGUAGE.md",
-      "sha256": "5132bd0579cc8963557906e816085fdee4248f182c78d2efac4aba87c0e82f11"
+      "sha256": "8e91ecaa0edfb267f527a65b0ba423faebb51385bd018bf3787ab50736815405"
     },
     {
       "path": "docs/SCIENTIFIC_FOUNDATIONS.md",
       "sha256": "78dff0f8c6637449d043e3816d2d4f6cfc5a42a2d4aad6dd662f2d6b5e9cd8f0"
+    },
+    {
+      "path": "docs/STRUCTURED_FORMS.md",
+      "sha256": "217005ad6bbbeb5c341b4ad24f1e9d7dc95ae53a940f36521f71248b33db4e2d"
+    },
+    {
+      "path": "examples/generators/protocol.card.json",
+      "sha256": "b5d632741bf03dbc448d283bebc688e523b330cdbcdb8062ea5d15bdec2e6f67"
     },
     {
       "path": "polyia/astra.py",
@@ -1321,20 +1833,32 @@
       "sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809"
     },
     {
+      "path": "polyia/forms.py",
+      "sha256": "30624a5b7e91b11609d1e8d304e70c4660056c311ce76c87244ba6dddc92de65"
+    },
+    {
+      "path": "polyia/generators.py",
+      "sha256": "7ed24c06988e7323607871e1c5cb27c4b6cb6d397fed4817ebec66a79b303bef"
+    },
+    {
       "path": "polyia/intake.py",
       "sha256": "d4599280705ea8387821815393b561b46371c45c585e7a51aa334bd062f8c41b"
     },
     {
       "path": "polyia/native.py",
-      "sha256": "c4b92f3026edd94db730a765c0b3afb72276298d2bafd0ab577d68e10dc06d21"
+      "sha256": "e077b0c85905c14303573f52660d9f42396608f53dc1ced52fe33e69b4052ac8"
     },
     {
       "path": "polyia/store.py",
-      "sha256": "717e299d30c0be5a92cfe48cc825a74cdb414ed9ec5095eb31e82f5d18c32dbe"
+      "sha256": "c3f50af2810e5f0e1b7b3090adff2b4bf977d3ddad0d27e2b5c7486024d4e334"
     },
     {
       "path": "registry/university.json",
       "sha256": "374492c191f9525de6395379db55bec35ada20e03f4f972c11860b506cf470fd"
+    },
+    {
+      "path": "sources/originals/PLICASTRATUM.md",
+      "sha256": "3a11ee1c6998d740cd556847ae8b64115bdac17c21e78efa85c5701e2606fcdd"
     },
     {
       "path": "sources/repos/abedkadaancom/src/content/registry.ts",
@@ -1366,7 +1890,7 @@
     },
     {
       "path": "tools/build_book_of_forms.py",
-      "sha256": "d72359505c8d8ecc7cdf9eb3628c0c78490a1c358c897efbf55816eeae417e1c"
+      "sha256": "01138f3fa0eada36b7fde4efd7f3bc62a29f7f084369bc8558b7cde5abaf8aa3"
     }
   ]
 }

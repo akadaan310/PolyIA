@@ -35,12 +35,12 @@
       "path": "books/book-of-forms/BOOK.md",
       "construction_authority": "DEC-004",
       "verification": "tools/build_book_of_forms.py --check",
-      "runtime_validation": "12 executed exercises and62 source-linked topic entries; scoped teaching checks, not whole-topic or mission acceptance",
+      "runtime_validation": "18 executed exercises across nine chapters and 62 source-linked topic entries; scoped teaching checks, not whole-topic or mission acceptance",
       "artifacts": [
         {
           "path": "books/book-of-forms/BOOK.md",
-          "bytes": 44578,
-          "sha256": "8a449f2b504adf9d522591eb9dfe2fcd030fb50c32031abcfaa99aec06e2ad06"
+          "bytes": 54243,
+          "sha256": "b24f4352ec54e990287c43419d85be418f8d3de1b1d2439b2df960f067c6385c"
         },
         {
           "path": "books/book-of-forms/exercises.json",
@@ -49,12 +49,12 @@
         },
         {
           "path": "books/book-of-forms/evidence.json",
-          "bytes": 51749,
-          "sha256": "024b7f4113783caa3f21cb3c50d782bc0a66c9fcfe6466eaae769a3b13cd873c"
+          "bytes": 68000,
+          "sha256": "a3b1e753dd42b4ce71b697bcd6791010c9d3f52d6bbaec61c796616e5e353cf8"
         }
       ],
-      "bytes": 44578,
-      "sha256": "8a449f2b504adf9d522591eb9dfe2fcd030fb50c32031abcfaa99aec06e2ad06"
+      "bytes": 54243,
+      "sha256": "b24f4352ec54e990287c43419d85be418f8d3de1b1d2439b2df960f067c6385c"
     }
   ],
   "book_source_files": [

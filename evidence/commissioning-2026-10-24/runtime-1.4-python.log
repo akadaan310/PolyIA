@@ -1,0 +1,280 @@
+{"event":"http_access","method":"GET","request_id":"c891dc28afde496b85d50e366dd60761","route":"discovery","status":200}
+{"event":"http_access","method":"GET","request_id":"3d4b980831174375b7195581944c24a1","route":"schema","status":200}
+{"event":"http_access","method":"GET","request_id":"6c186a490ff44de587b6c38ce3095093","route":"blob","status":200}
+{"event":"http_access","method":"GET","request_id":"1c378af1cf0c41a48b064ffa698e7101","route":"blob","status":200}
+{"event":"http_access","method":"GET","request_id":"04a33d51863f48ebb267fa34030f0d2f","route":"blob","status":200}
+{"event":"http_access","method":"GET","request_id":"ea5c5b04a72a48658a1f0c2a25e3d04a","route":"blob","status":416}
+{"event":"http_access","method":"GET","request_id":"90790bf849154e4aadb75fd2fdfd17b4","route":"blob","status":200}
+{"event":"http_access","method":"HEAD","request_id":"1a8dfaf3175542789ddf671aa5e1da6c","route":"blob","status":200}
+{"event":"http_access","method":"POST","request_id":"9ed8e4b0e8fa4bf4bdb39d092772353f","route":"blob","status":405}
+{"event":"http_access","method":"GET","request_id":"07e4a22aa744438bb17d70dd81ffef67","route":"blob","status":400}
+{"event":"http_access","method":"GET","request_id":"95a564601a2a4468abdc660996db2b2f","route":"blob","status":400}
+{"event":"http_access","method":"GET","request_id":"3eec920153e947b69e06a40acf4c75be","route":"blob","status":400}
+{"event":"http_access","method":"GET","request_id":"5850b8fc25f14da0893cdd2d7cfeba7a","route":"blob","status":400}
+{"event":"http_access","method":"GET","request_id":"66fb98bce05c4c11a7525e8602fdac23","route":"blob","status":400}
+{"event":"http_access","method":"GET","request_id":"627eb843c6df4b5f9402c4143f598b1c","route":"blob","status":400}
+{"event":"http_access","method":"GET","request_id":"f79c49d1a66a48c990efa1faa75b408a","route":"blob","status":400}
+{"event":"http_access","method":"GET","request_id":"8f0b5fc60df44534b14b6bbd14f734cf","route":"blob","status":400}
+{"event":"http_access","method":"GET","request_id":"5eba6a39a28a4535b0a16b50ed79b09e","route":"blob","status":400}
+{"event":"http_access","method":"GET","request_id":"f4304ee5f60a49bb8c54a654fc906770","route":"blob","status":400}
+{"event":"http_access","method":"GET","request_id":"2d192187f296495ab649dc59903d3056","route":"blob","status":400}
+{"event":"http_access","method":"GET","request_id":"88f358927eea44a1ab8a437be2fe573f","route":"blob","status":400}
+{"event":"http_access","method":"GET","request_id":"dde89b4d892b4e199222c25b0057b68b","route":"unparsed","status":400}
+{"event":"http_access","method":"GET","request_id":"73d02846bc654ab9a70b6c8cc346f6bf","route":"blob","status":400}
+{"event":"http_access","method":"GET","request_id":"76f7914761254a1ab1e6eabf29fb6d61","route":"blob","status":400}
+{"event":"http_access","method":"GET","request_id":"a89e23b5e34149d5b4f79d5366ced59b","route":"blob","status":400}
+{"event":"http_access","method":"GET","request_id":"b8cfbe01fcf0483f8e22570324eaa8ab","route":"blob","status":400}
+{"event":"http_access","method":"GET","request_id":"2ec2f62e3432495f963b5114b9c255ff","route":"blob","status":400}
+{"event":"http_access","method":"GET","request_id":"8e885a17991d4e3baa1bad9b92eaace5","route":"unparsed","status":400}
+{"event":"http_access","method":"GET","request_id":"8e8cbef19f02455c971e13362f1e1a65","route":"blob","status":400}
+{"event":"http_access","method":"GET","request_id":"27097b2b17434d77a2909814345ce170","route":"blob","status":404}
+{"event":"http_access","method":"GET","request_id":"b759cc286b3b42f8a8267f262f0cc354","route":"blob","status":409}
+{"event":"http_access","method":"HEAD","request_id":"9cb6f749c3184133bbf6c0d1fce91166","route":"blob","status":409}
+{"event":"http_access","method":"GET","request_id":"048074a7990e426f80fc781428deb743","route":"blob","status":409}
+{"event":"http_access","method":"HEAD","request_id":"9734e10b15684397833946efeae28150","route":"blob","status":409}
+{"event":"http_access","method":"GET","request_id":"b393cec8fa3e46e7b9dfd91063456f1e","route":"blob","status":200}
+{"event":"http_access","method":"GET","request_id":"89932e6c2d4944aeb38ec0227c32176a","route":"blob","status":200}
+{"event":"http_access","method":"GET","request_id":"d5ed7ae05f3e418d815905dd27fbe2d1","route":"blob","status":200}
+{"event":"http_access","method":"GET","request_id":"ff851b9ed5c44a69ba97b6c33416e075","route":"blob","status":200}
+{"event":"http_access","method":"GET","request_id":"1a99d31338ff4ab69e7826062b485895","route":"blob","status":401}
+{"event":"http_access","method":"GET","request_id":"06a971baeaac47bf938ed8295b291d46","route":"blob","status":401}
+{"event":"http_access","method":"GET","request_id":"ed91d642569b41b5ba69c866d02be3bb","route":"blob","status":401}
+{"event":"http_access","method":"GET","request_id":"775cbd389d45488fb2280b4ca5957385","route":"blob","status":400}
+{"event":"http_access","method":"GET","request_id":"f34bcbe231ab4af78fbe44973938de66","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"9a2b997dc17f4dc7854ada9688f75f14","route":"commands","status":200}
+{"event":"http_access","method":"GET","request_id":"61cff8bb7bdc49258679f695a656eea9","route":"discovery","status":200}
+{"event":"http_access","method":"GET","request_id":"381e135bcf374314b2a7b049b4390cec","route":"state","status":200}
+{"event":"http_access","method":"GET","request_id":"cf2522d9cb1c40f6bf10c651ef385e8a","route":"discovery","status":200}
+{"event":"http_access","method":"GET","request_id":"b848b94d06c241aba3540aa2fead6830","route":"state","status":200}
+{"event":"http_access","method":"GET","request_id":"609bd512649a4a618db2eb6aa8d27e8b","route":"discovery","status":200}
+{"event":"http_access","method":"GET","request_id":"b973970d44a141c4870aef137aa0ccd0","route":"state","status":200}
+{"event":"http_access","method":"GET","request_id":"12289767736348b287e764e8cb75fdb4","route":"discovery","status":200}
+{"event":"http_access","method":"GET","request_id":"4647a60ad267459f91bee303a976503b","route":"state","status":200}
+{"event":"http_access","method":"GET","request_id":"b988214e6b8b460891267702d253fccf","route":"discovery","status":200}
+{"event":"http_access","method":"GET","request_id":"c4d099c874c449728ea9e53ad5622ace","route":"state","status":200}
+{"event":"http_access","method":"GET","request_id":"ea48b4b8a11b4b53be1a29a8d38dd4b1","route":"discovery","status":200}
+{"event":"http_access","method":"GET","request_id":"b9e9a61cb67a426fb2cf1076ad4bf9bc","route":"state","status":200}
+{"event":"http_access","method":"GET","request_id":"7b1d281b117e4153b163747d53f78ec2","route":"discovery","status":200}
+{"event":"http_access","method":"GET","request_id":"480b24d4cce14e3792b2437d199a57f4","route":"state","status":200}
+{"event":"http_access","method":"GET","request_id":"1be86e3630ee48b2ad109db2a9ef7636","route":"discovery","status":200}
+{"event":"http_access","method":"GET","request_id":"b8f90387add24da4b6b8583396a4ff96","route":"state","status":200}
+{"event":"http_access","method":"GET","request_id":"799fbe1060c443a79ce7b9c9669b7d3e","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"7f792e65f30f47a8ba5a6bbb94ef78b0","route":"commands","status":200}
+{"event":"http_access","method":"GET","request_id":"fd71ba093f4e4438920cf33a5e060063","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"a3179756852b4274bb5308e87f3cdb4f","route":"commands","status":200}
+{"event":"http_access","method":"GET","request_id":"600f878519ad45c6a04aa29a5a8221c0","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"e767468f7319489b984a21fdefe553d8","route":"commands","status":200}
+{"event":"http_access","method":"GET","request_id":"2accfb74564f4baa8bf2f2cddf4de7c1","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"044e254afa5d480c8386704095fbcac3","route":"commands","status":200}
+{"event":"http_access","method":"GET","request_id":"24f1c3ca2b09468381ff4a1725dc5c2c","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"fcdd18ba53d54e518b20a3f17de5c300","route":"commands","status":403}
+{"event":"http_access","method":"GET","request_id":"8683bd3022834235ae5367aa6082ffd6","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"671674fb6003404b868f985efd47e137","route":"commands","status":200}
+{"event":"http_access","method":"GET","request_id":"3ef7b6df357d4ce490d833c03a99ee30","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"4d2e79ba84f3443d90a1e27df127c807","route":"commands","status":200}
+{"event":"http_access","method":"GET","request_id":"d776ac545509455d89a174bf8fd3e6bf","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"1d976b9fb5fc49c2bcb6f878cb2d89e6","route":"commands","status":409}
+{"event":"http_access","method":"GET","request_id":"4d011ea19a1d44db914911ccc6b35ca9","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"f64494ea7b1a4dd48098b08a316c6353","route":"commands","status":200}
+{"event":"http_access","method":"GET","request_id":"c346d085e80c4fdfbefb66d34146a7a3","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"26b3f29d0297498ea2f6ce9e036de68e","route":"commands","status":200}
+{"event":"http_access","method":"GET","request_id":"4ba9175fc3e64a4e96345c4a0a2609b3","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"f93da6188b79431a9da5bab00822fed1","route":"commands","status":200}
+{"event":"http_access","method":"GET","request_id":"b40558308cd745788605eb47ad7ee5e8","route":"discovery","status":200}
+{"event":"http_access","method":"POST","request_id":"125a3d3f40d746d593311e326a1b1b76","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"9a41e05759d14665892ad08aabdf87e4","route":"commands","status":409}
+{"event":"http_access","method":"GET","request_id":"57ebb532a35e4b2e83c88fad318fca48","route":"state","status":401}
+{"event":"http_access","method":"GET","request_id":"fc81959da891487a96a25e8cb517e0b8","route":"events","status":401}
+{"event":"http_access","method":"GET","request_id":"0f0d411ac6af4999b4d3f2fc2d4f6d87","route":"verification","status":401}
+{"event":"http_access","method":"GET","request_id":"c681c8368e1a4e4f89412d036de11dcb","route":"command_receipt","status":401}
+{"event":"http_access","method":"GET","request_id":"dac44aa5029642bdae3aeab655633213","route":"checkpoint","status":401}
+{"event":"http_access","method":"GET","request_id":"2d39a49415d54668a9eaa90ab2123164","route":"refusals","status":401}
+{"event":"http_access","method":"GET","request_id":"80a58ffae28744d5a9dc508676dd2544","route":"state","status":401}
+{"event":"http_access","method":"POST","request_id":"d42d038be53641a79a6bef194e43b597","route":"unparsed","status":400}
+{"event":"http_access","method":"POST","request_id":"4abc8467f85a46f3a6bf2a31bb3b0aaf","route":"unparsed","status":400}
+{"event":"http_access","method":"POST","request_id":"028811d4a76b4b548a75a9857450881f","route":"commands","status":411}
+{"event":"http_access","method":"POST","request_id":"631683db034a4fa98f9e41751d4197b3","route":"unparsed","status":400}
+{"event":"http_access","method":"POST","request_id":"620876eb3e55407287f600d9268a45e2","route":"unparsed","status":403}
+{"event":"http_access","method":"POST","request_id":"2368fbc7f4e6488cbcc7380a83ac8847","route":"unparsed","status":403}
+{"event":"http_access","method":"POST","request_id":"d8540c0aa68d4f3ba23cd3af270e06aa","route":"unparsed","status":403}
+{"event":"http_access","method":"GET","request_id":"c6dd41c3bce84470b2b0d47c458c6061","route":"unparsed","status":421}
+{"event":"http_access","method":"POST","request_id":"78af791063fa44f3ad551c567a931321","route":"unparsed","status":403}
+{"event":"http_access","method":"POST","request_id":"21d75e8cf61d4511a3982f9df6a002bc","route":"commands","status":200}
+{"event":"http_access","method":"GET","request_id":"e81c18215f7a47479bb1d28a7ebc79f4","route":"state","status":400}
+{"event":"http_access","method":"GET","request_id":"21a1ed7ec69b4cb492cf3582af4f7344","route":"unparsed","status":400}
+{"event":"http_access","method":"GET","request_id":"f68a992c3eb548f7b507dcb20aa1d45b","route":"unparsed","status":400}
+{"event":"http_access","method":"POST","request_id":"3d7eca0b12894304a95d3d56b1241e47","route":"commands","status":400}
+{"event":"http_access","method":"POST","request_id":"d98bfb016b8b41ed858a7d3cfb755b1d","route":"commands","status":400}
+{"event":"http_access","method":"POST","request_id":"0b8263b46a324564b054718c29bdc049","route":"commands","status":400}
+{"event":"http_access","method":"POST","request_id":"275bd8518d8a441daec47116865af459","route":"commands","status":400}
+{"event":"http_access","method":"POST","request_id":"b5c2462496bf4edd8bbff8647232bbf9","route":"commands","status":400}
+{"event":"http_access","method":"POST","request_id":"3a391991bcc74a10b02224063ed970e2","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"a08317bf945142b68b14c3ed6e5e3519","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"3af56a3637db472e9925a8ba6ebd096e","route":"commands","status":200}
+{"event":"http_access","method":"GET","request_id":"87dd92fdd5ae47eeb38fa4edef67c6d6","route":"state","status":200}
+{"event":"http_access","method":"HEAD","request_id":"7effb932ff1b4e98831581a90e3163ba","route":"asset","status":200}
+{"event":"http_access","method":"HEAD","request_id":"ba2acc8ed406410c88838bd5fb00a944","route":"state","status":401}
+{"event":"http_access","method":"GET","request_id":"d703558d3c304641b62f890f05bcda82","route":"events","status":400}
+{"event":"http_access","method":"GET","request_id":"fd0d859f544f4242a5f083b85ef90c7f","route":"events","status":400}
+{"event":"http_access","method":"GET","request_id":"5f8ee8fa208542d8ab5e5d38f368593f","route":"events","status":400}
+{"event":"http_access","method":"GET","request_id":"4f3edf68806d4df7a2ec7fdbb3f5c3f4","route":"events","status":400}
+{"event":"http_access","method":"GET","request_id":"64d3d5f1015d4b73ad8cfe65abf5a06d","route":"events","status":400}
+{"event":"http_access","method":"GET","request_id":"bf28fa98d0c34439b783f15ac4189cb4","route":"events","status":400}
+{"event":"http_access","method":"GET","request_id":"4b2b8af7ffb84357b683e7c6cd436b7c","route":"events","status":400}
+{"event":"http_access","method":"GET","request_id":"018a7cc1255f447593a0e0f4a78133cb","route":"events","status":400}
+{"event":"http_access","method":"GET","request_id":"64cc153cad4847b9a94e092c85a7910b","route":"events","status":400}
+{"event":"http_access","method":"GET","request_id":"119f6d36d4434a0c88493c67b271b664","route":"unknown","status":404}
+{"event":"http_access","method":"GET","request_id":"4bb7c913cd4047eabb99ffdb274bdf8c","route":"unparsed","status":400}
+{"event":"http_access","method":"GET","request_id":"b11d2d06171c401bab348993ce7893ac","route":"unparsed","status":400}
+{"event":"http_access","method":"GET","request_id":"f9be5268b60644d6a66d50e8fd265e67","route":"unknown","status":404}
+{"event":"http_access","method":"GET","request_id":"391af6e08cb5495fbd5a0f7142975ed2","route":"unparsed","status":400}
+{"event":"http_access","method":"GET","request_id":"7ee96f1736554bebb4636ffb3d403c15","route":"state","status":400}
+{"event":"http_access","method":"POST","request_id":"2cdbbe926e5c491fb92d9d11f733c092","route":"commands","status":415}
+{"event":"http_access","method":"POST","request_id":"e932184530a84088b201c3a76e000fd7","route":"commands","status":415}
+{"event":"http_access","method":"POST","request_id":"3e7c8a40ea7543589f37e9fc85e6667b","route":"unparsed","status":413}
+{"event":"http_access","method":"OPTIONS","request_id":"c37ba8cb469346dc8f6f8dfbb0be4026","route":"unparsed","status":403}
+{"event":"http_access","method":"GET","request_id":"b53acecd249749ffb26a75a1bbb116ca","route":"commands","status":405}
+{"event":"http_access","method":"DELETE","request_id":"c4fdaa39954c41aa9c889440771ab0dd","route":"state","status":405}
+{"event":"http_access","method":"POST","request_id":"7c6d1be96fe14defacb704c777f1e122","route":"commands","status":400}
+{"event":"http_access","method":"POST","request_id":"28aa0191807e4415aa32d329d1dbc057","route":"commands","status":400}
+{"event":"http_access","method":"POST","request_id":"63c94face16247c69bf8e08441b65de4","route":"commands","status":400}
+{"event":"http_access","method":"POST","request_id":"7dae38edb95247cd9e331f94d3f9b935","route":"commands","status":400}
+{"event":"http_access","method":"POST","request_id":"3dc01684b34248d8b432e89f6beab64c","route":"commands","status":400}
+{"event":"http_access","method":"POST","request_id":"00f498d65d9f4f889ba9b8dda10d8010","route":"commands","status":400}
+{"event":"http_access","method":"POST","request_id":"f3600acda4d5479ebef9332109eeec08","route":"commands","status":400}
+{"event":"http_access","method":"POST","request_id":"360bdb7341fc443ebea0f513a9de9cc6","route":"commands","status":400}
+{"event":"http_access","method":"GET","request_id":"2dc753c3545d4132b40dbbc465748c1a","route":"discovery","status":200}
+{"event":"http_access","method":"GET","request_id":"421f57e31c2341008e71560696bb1576","route":"schema","status":200}
+{"event":"http_access","method":"GET","request_id":"725dd84128cd49d4ad480d6ee013ef1e","route":"state","status":200}
+{"event":"http_access","method":"GET","request_id":"3e9c1bb9913e4983841974fa2e1ede4b","route":"state","status":200}
+{"event":"http_access","method":"POST","request_id":"0b70636787c245a98dd7b86eb321c589","route":"commands","status":403}
+{"event":"http_access","method":"POST","request_id":"5e9c2f04d6ae4382ad19421e4c3919eb","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"574d03e1cad548d794bb9ee855614dee","route":"commands","status":409}
+{"event":"http_access","method":"POST","request_id":"9fc56e58a0634eb788b09ec0bd3a5076","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"c3a50ceee9c047759bdaccf2e93b7676","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"63e91c0fdc774c69a8fcfdcd50ce3830","route":"commands","status":200}
+{"event":"http_access","method":"GET","request_id":"e54bc6892379404ca8ae6eef56af6145","route":"checkpoint","status":200}
+{"event":"http_access","method":"GET","request_id":"dd7ad0c6d22f4243a3115eadfe6e314f","route":"checkpoint","status":200}
+{"event":"http_access","method":"GET","request_id":"e1fe5e97721345e9a75c625d33dc8f0c","route":"verification","status":200}
+{"event":"http_access","method":"GET","request_id":"63a12b63041842fcb487b06048bb4733","route":"state","status":200}
+{"event":"http_access","method":"GET","request_id":"1ab8f76b9d884c8b94c44180ca4b8417","route":"state","status":200}
+{"event":"http_access","method":"GET","request_id":"fee9fb1bf37049b79bdbc0ac0503428a","route":"unparsed","status":403}
+{"event":"http_access","method":"GET","request_id":"26e4e592a8d2410f81eba9d8d1368a5a","route":"unparsed","status":403}
+{"event":"http_access","method":"GET","request_id":"3da5341520e849598f456ec8d7e234b1","route":"state","status":200}
+{"event":"http_access","method":"GET","request_id":"528ca48a8be149c9a2f9b3501c6617da","route":"health","status":200}
+{"event":"http_access","method":"GET","request_id":"a4c3a090e2e44aea8ce5e53d6c6383c2","route":"discovery","status":200}
+{"event":"http_access","method":"GET","request_id":"6c9a4fdf9039492d952e55bd7f7a09b1","route":"asset","status":200}
+{"event":"http_access","method":"GET","request_id":"0b7465092eb74687b74a41c5e5c63e0e","route":"asset","status":200}
+{"event":"http_access","method":"GET","request_id":"092c6603b2bf4296bd1ae24af1850517","route":"asset","status":200}
+{"event":"http_access","method":"GET","request_id":"ba794afe255740cc8135d572e052c958","route":"asset","status":200}
+{"event":"http_access","method":"POST","request_id":"787e49c283f64119a934f76f4b295cbc","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"19265cc0d4a8470191518850b51ffa40","route":"commands","status":200}
+{"event":"http_access","method":"GET","request_id":"f1314a158df14c4397addb42f7faf202","route":"command_receipt","status":200}
+{"event":"http_access","method":"POST","request_id":"b3e4e6515b97472db8e2234000407774","route":"commands","status":409}
+{"event":"http_access","method":"POST","request_id":"ee0ddf8d8c684e1fb16d24bba5aa868c","route":"commands","status":409}
+{"event":"http_access","method":"POST","request_id":"acf95291af11484299153e4907355152","route":"commands","status":200}
+{"event":"http_access","method":"GET","request_id":"b243bd5f15414adb81de657d0808b523","route":"events","status":200}
+{"event":"http_access","method":"GET","request_id":"9009db29f03f4e82b3a3e20fd97247d2","route":"events","status":200}
+{"event":"http_access","method":"GET","request_id":"cbe0c35ebb634f6a8518400ed4410757","route":"refusals","status":200}
+{"event":"http_access","method":"POST","request_id":"3a35aac78bcf4d3791ae0815cd862bf1","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"fe3d1701e15e4bb9bcb23ed6b2f7a5f0","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"5e0ca2b9121c4aada3d2c96d64ad3832","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"40ec124a150546cda64ddc0282bdf715","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"68bf4d76f7cf4411b5b4925947b93177","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"242b6399ff5f4cc896a4800ccf7a6a2e","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"5f7e02dce8444781821db3ecca6e9d4a","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"73e573d513894dddb08e405b855862e0","route":"commands","status":409}
+{"event":"http_access","method":"GET","request_id":"05e1f35ca3d84604bcbfdda7c1a31b65","route":"state","status":200}
+{"event":"http_access","method":"POST","request_id":"f8c7b4c1e0334fb3aa7f3043f9e66d8e","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"21186d89c1924e46b188692b25a65ebe","route":"commands","status":409}
+{"event":"http_access","method":"GET","request_id":"ac5a6a4d501b43cfae369bd4780af797","route":"command_receipt","status":404}
+{"event":"http_access","method":"GET","request_id":"b14b53915779497e9a504eb5c40dd1b1","route":"checkpoint","status":404}
+{"event":"http_access","method":"GET","request_id":"842c7a6e92134d239a41ae77975a815d","route":"checkpoint","status":404}
+{"event":"http_access","method":"POST","request_id":"b4ea009f38aa4878983c46d87e09f808","route":"commands","status":400}
+{"event":"http_access","method":"GET","request_id":"eeeee9bec7c346e7974e83c12c43471c","route":"health","status":200}
+{"event":"http_access","method":"GET","request_id":"d6af9ccd81a04bf39f5a5bf9df728573","route":"state","status":401}
+{"event":"http_access","method":"GET","request_id":"658090a3402d4a4e9a4be545566c0070","route":"health","status":200}
+{"event":"http_access","method":"POST","request_id":"2c94fab0bcc744c987bea0c37a4e7657","route":"commands","status":400}
+{"event":"http_access","method":"GET","request_id":"568e5ed934464144833e7dbc1b091943","route":"health","status":200}
+{"event":"http_access","method":"GET","request_id":"b81955f39dc742c3b0b7990cb679c725","route":"state","status":401}
+{"event":"http_access","method":"GET","request_id":"2cd17a2ed95c47a1bedebbecd5e32bca","route":"state","status":401}
+{"event":"http_access","method":"OTHER","request_id":"31b8470abb0d43769c0b54c65d62b9e6","route":"unparsed","status":429}
+{"event":"http_access","method":"GET","request_id":"9c40a4b262554053a8cc9592f802a02a","route":"health","status":200}
+{"event":"http_access","method":"GET","request_id":"71ee76f64dcf429dadbbd9134cb67866","route":"unparsed","status":0}
+{"event":"http_access","method":"GET","request_id":"0e0de5fe6ae047a291fe6e5b2f515b4f","route":"health","status":200}
+{"event":"http_access","method":"GET","request_id":"da31925d6e9e4947bb7530fbd3e11bf1","route":"health","status":200}
+{"event":"http_access","method":"GET","request_id":"af97e867bd3945dabeaf7c66fc4a5daa","route":"health","status":200}
+{"event":"http_access","method":"GET","request_id":"62d377706da24e3483cfa55afaaca115","route":"health","status":200}
+{"event":"http_access","method":"OTHER","request_id":"f1374bba42764b4f887aab580062569a","route":"unparsed","status":429}
+{"event":"http_access","method":"OTHER","request_id":"aad0ef4817c04ddf9735bd6ae4f130ed","route":"unparsed","status":429}
+{"event":"http_access","method":"OTHER","request_id":"e105f4674570428b95441c22aff3568e","route":"unparsed","status":429}
+{"event":"http_access","method":"OTHER","request_id":"e1001823060340de81469594c44b9ed5","route":"unparsed","status":429}
+{"event":"http_access","method":"OTHER","request_id":"6de7f0eb3e4142b28478ce03b5b21755","route":"unparsed","status":429}
+{"event":"http_access","method":"OTHER","request_id":"9082c66bc01e4ae6bf1a2187003b5190","route":"unparsed","status":503}
+{"event":"http_access","method":"GET","request_id":"849b4e50247341229dd40f2455e15834","route":"health","status":200}
+{"event":"http_access","method":"GET","request_id":"bbf2c82648d340e5a666a3f17f0ab802","route":"health","status":200}
+{"event":"http_access","method":"GET","request_id":"836fd553dc184b08a37a67fa5ae72c44","route":"health","status":200}
+/opt/polyia/runtime/lib/python3.13/json/encoder.py:254: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xebd94007e5c0>
+  _iterencode = c_make_encoder(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:143: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xebd94007e5c0>
+  return {"type": "tuple", "value": [constant(item) for item in value]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:143: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xebd94007f790>
+  return {"type": "tuple", "value": [constant(item) for item in value]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:143: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xebd94007e980>
+  return {"type": "tuple", "value": [constant(item) for item in value]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/polyia/runtime/lib/python3.13/json/decoder.py:361: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xebd93fe4c220>
+  obj, end = self.scan_once(s, idx)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:147: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xebd93fe4fc40>
+  return {"bytecode": code.co_code.hex(), "constants": [constant(value) for value in code.co_consts],
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:147: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xebd93fe4e6b0>
+  return {"bytecode": code.co_code.hex(), "constants": [constant(value) for value in code.co_consts],
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:147: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xebd93fe4d990>
+  return {"bytecode": code.co_code.hex(), "constants": [constant(value) for value in code.co_consts],
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:147: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xebd93fe4ef20>
+  return {"bytecode": code.co_code.hex(), "constants": [constant(value) for value in code.co_consts],
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/polyia/runtime/lib/python3.13/json/encoder.py:254: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xebd93ff257b0>
+  _iterencode = c_make_encoder(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/polyia/runtime/lib/python3.13/json/encoder.py:254: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xebd93fe4f4c0>
+  _iterencode = c_make_encoder(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/polyia/runtime/lib/python3.13/json/encoder.py:254: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xebd93fe4ef20>
+  _iterencode = c_make_encoder(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/polyia/runtime/lib/python3.13/json/encoder.py:254: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xebd93fe4f1f0>
+  _iterencode = c_make_encoder(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/polyia/runtime/lib/python3.13/json/encoder.py:254: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xebd93fe4d990>
+  _iterencode = c_make_encoder(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/polyia/runtime/lib/python3.13/json/encoder.py:254: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xebd93fe4fc40>
+  _iterencode = c_make_encoder(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/polyia/runtime/lib/python3.13/json/encoder.py:254: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xebd93fe4fd30>
+  _iterencode = c_make_encoder(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/polyia/runtime/lib/python3.13/json/encoder.py:254: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xebd93fe4df30>
+  _iterencode = c_make_encoder(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:147: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xebd93fe4ff10>
+  return {"bytecode": code.co_code.hex(), "constants": [constant(value) for value in code.co_consts],
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:147: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xebd93fe4fe20>
+  return {"bytecode": code.co_code.hex(), "constants": [constant(value) for value in code.co_consts],
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:147: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xebd93fe4df30>
+  return {"bytecode": code.co_code.hex(), "constants": [constant(value) for value in code.co_consts],
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+----------------------------------------------------------------------
+Ran 336 tests in 34.385s
+
+OK

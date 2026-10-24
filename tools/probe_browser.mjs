@@ -95,6 +95,21 @@ finally:s.server_close();l.close()
     await page.waitForFunction(() => document.querySelector('#runs-list').textContent.includes('rasm'));
     const state = await page.evaluate(async token => (await fetch('/v1/state', { headers: { Authorization: 'Bearer ' + token } })).json(), reader);
     check('rasm browser submission records actual fifteen-candidate result', state.runs.at(-1).report.result.inverse.candidate_total === 15);
+    for (const [button, name, predicate] of [
+      ['generators-example', 'generators', run => JSON.stringify(run.report.result.execution.result.candidates.map(c => c.value)) === JSON.stringify([['PING', 'ACK'], ['PING', 'ACK', 'ACK']])],
+      ['forms-natural-example', 'forms', run => run.report.result.result.letter.value === '7'],
+      ['forms-word-example', 'forms', run => JSON.parse(run.report.result.result.text).index.kind === 'tuple'],
+    ]) {
+      const before = await page.evaluate(async token => (await fetch('/v1/state', { headers: { Authorization: 'Bearer ' + token } })).json(), reader);
+      await page.locator('#' + button).click();
+      const loaded = await page.evaluate(async token => (await fetch('/v1/state', { headers: { Authorization: 'Bearer ' + token } })).json(), reader);
+      check(button + ' fills parameters without submitting', loaded.revision === before.revision);
+      await page.locator('#run-experiment').click();
+      await page.waitForFunction(count => Number(document.querySelector('#run-total').textContent.split(' ')[0]) === count, before.runs.length + 1);
+      const after = await page.evaluate(async token => (await fetch('/v1/state', { headers: { Authorization: 'Bearer ' + token } })).json(), reader);
+      const run = after.runs.at(-1);
+      check(button + ' computes its exact declared result', run.name === name && run.report.status === 'PASS' && predicate(run));
+    }
     await page.locator('#intake-text').fill('Teach polynomial division\nUnrecognized <img src=x onerror=alert(1)>');
     await page.locator('#run-intake').click();
     await page.waitForFunction(() => document.querySelector('#intake-result').textContent.includes('Unrecognized'));

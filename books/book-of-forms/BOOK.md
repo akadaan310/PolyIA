@@ -32,6 +32,7 @@ The chapter sequence is:
 6. [Source custody and interpretation](#6-source-custody-and-interpretation)
 7. [Durable state and the meaning of a receipt](#7-durable-state-and-the-meaning-of-a-receipt)
 8. [A research program with explicit limits](#8-a-research-program-with-explicit-limits)
+9. [Constructing words and their witnesses](#9-constructing-words-and-their-witnesses)
 
 ## Reading claims and running lessons
 
@@ -43,7 +44,10 @@ A **conjecture** awaits a suitable proof or experiment. A **pedagogical design**
 organizes learning; successful execution alone does not measure how well a
 student learns. These categories remain separate throughout this edition.
 
-The machine-readable lessons are in [exercises.json](exercises.json).
+The original twelve machine-readable lessons remain in [exercises.json](exercises.json).
+Chapter 9 adds six fixed construction lessons in
+[`construction_exercises`](../../tools/build_book_of_forms.py); the builder
+combines both sets without rewriting the original exercise source.
 [evidence.json](evidence.json) records executed inputs, expected and observed
 outputs, result hashes, source hashes and the atlas. The expected answers were
 declared from the worked mathematics before the builder was implemented. A
@@ -53,6 +57,7 @@ From the repository root, run:
 
 ```bash
 /opt/polyia/runtime/bin/python3 -B tools/build_book_of_forms.py --check
+/opt/polyia/runtime/bin/python3 -B tools/build_book_of_forms.py --preview
 /opt/polyia/runtime/bin/python3 -B -m unittest discover -s tests -p test_book_of_forms.py -v
 ```
 
@@ -65,7 +70,9 @@ an admitted edit, run:
 /opt/polyia/runtime/bin/python3 -B tools/build_book_of_forms.py --write
 ```
 
-`--check` executes lessons without editing the book. `--write` updates this file's
+`--check` executes lessons without editing the book. `--preview` executes and
+renders everything in memory, without requiring already regenerated evidence.
+`--write` updates this file's
 marked atlas/answer sections and the local evidence file. Neither command changes
 the commission ledger, accepts requirements, installs a program, or publishes a
 University course. The one database exercise uses an isolated temporary store.
@@ -444,6 +451,129 @@ Sources: [University mandate](../../docs/AUTOMATON_SCIENCE_UNIVERSITY.md),
 [Scientific Foundations, SF-10–12](../../docs/SCIENTIFIC_FOUNDATIONS.md), and
 [Astra Integration](../../docs/ASTRA_INTEGRATION.md).
 
+## 9. Constructing words and their witnesses
+
+The earlier chapters treat a form as something with a type, interpretation and
+evidence. We can now construct such objects through two more bounded kernels:
+typed alphabets and indexed words, and generators compiled from explicit cards.
+Their common interface does not make their meanings interchangeable. A word
+orbit identifies representations under a named symmetry; a generator builds
+members of its declared family. Neither operation establishes a chemical law,
+understands an arbitrary human sentence, or accepts a University topic.
+
+### An infinite definition, one finite query
+
+**BF-13** uses the effective alphabet of Naturals, starting at zero. Its only
+declared action is identity. Asking for index 7 produces a letter whose exact
+value is `"7"`, coordinate is `["7"]`, and `enumerated` flag is false. The
+definition describes a countably infinite set; this computation returns one
+element. Implementation bounds still apply to the integer supplied. A request
+beyond those bounds is a resource limit, not a mathematical assertion that the
+number lies outside the Naturals.
+
+The letter's identity, numeric value, coordinates and source reference are
+distinct fields. In a word, the **index structure** is another object: a map
+from the positions of a tuple, grid, graph or cycle to those letter identities.
+Moving a rendered graph vertex changes its view coordinates, not its incidence.
+Reordering a tuple is not automatically allowed because a multiset could hold
+the same letters. These are declared equivalences, not consequences of similar
+appearance. See the [exact schemas and bounds](../../docs/STRUCTURED_FORMS.md).
+
+### A reversal needs its own declaration
+
+**BF-14 and BF-15** use the same three-position cyclic word, labeled in order
+`["0", "7", "1"]`. With fixed letter identities, its rotations are:
+
+```text
+0 7 1
+7 1 0
+1 0 7
+```
+
+The minimum under the declared lexical comparison is `0 7 1`. Allowing reversal
+adds the opposite orientation and its rotations; the minimum becomes `0 1 7`.
+The first request checks three positional transformations, the second six.
+Here all letters differ, so their images also differ. In a word with repeated
+letters, several transformations could give the same image.
+
+This is exact finite orbit computation. It preserves precisely the selected
+structural relation. It is not a claim that reversed music sounds the same,
+that a directed process can run backward, or that a chemical structure has
+unchanged behavior. The dihedral quotient also cannot recover the original
+orientation by itself. Lossless serialization retains that original labeling
+separately, as chapter 3's distinction between abbreviation and quotient requires.
+
+Run the three literal constructions from the repository root:
+
+```python
+from tools.build_book_of_forms import construction_exercises
+from polyia.forms import run_forms
+
+lessons = construction_exercises()
+natural = run_forms(lessons[0]["input"])
+rotation = run_forms(lessons[1]["input"])
+dihedral = run_forms(lessons[2]["input"])
+assert natural["result"]["letter"]["value"] == "7"
+assert rotation["result"]["canonical"]["form"]["labels"] == ["0", "7", "1"]
+assert dihedral["result"]["canonical"]["form"]["labels"] == ["0", "1", "7"]
+```
+
+The lesson inputs are inspectable data built by the linked source function;
+the expected arrays above are declared answers, not values copied from a run.
+
+### A small grammar that actually constructs words
+
+The [protocol card](../../examples/generators/protocol.card.json) declares two
+tokens, `PING` and `ACK`, and the grammar “one PING followed by one or two ACKs.”
+Its family is `regular`, its seed is zero, and its finite limits are explicit.
+The compiler constructs a finite machine; execution searches the bounded word
+space and checks admitted words with both that machine and a separate recursive
+interpreter of the source grammar. **BF-16** has exactly these answers:
+
+```json
+[["PING", "ACK"], ["PING", "ACK", "ACK"]]
+```
+
+This is a construction from rules, not retrieval of a supplied answer list.
+It is also only a token language. Real packet loss, timing, concurrent devices
+and network protocol correctness would need different models and witnesses.
+
+```python
+import json
+from pathlib import Path
+from polyia.generators import compile_model, run_model
+
+card = json.loads(Path("examples/generators/protocol.card.json").read_text())
+compiled = compile_model(card)
+assert compiled["ok"] is True
+report = run_model(compiled["model"], {"operation": "generate"})
+assert report["status"] == "PASS"
+assert report["result"]["complete"] is True
+assert [c["value"] for c in report["result"]["candidates"]] == [
+    ["PING", "ACK"], ["PING", "ACK", "ACK"]]
+```
+
+**BF-17** asks whether `["ACK"]` belongs. Both recognizers answer false, while
+the report status is `PASS`: the membership check completed successfully; the
+word did not become a member. **BF-18** instead limits generation to one visited
+prefix. It returns no candidates, `RESOURCE_LIMIT`, `complete: false`, and
+`stop_reason: "SEARCH_BUDGET"`. That empty list cannot prove the language empty;
+BF-16 already supplies two witnesses. This distinction is essential when larger
+searches stop before their frontier is exhausted.
+
+The independent recognition algorithms share the supplied grammar and trusted
+Python runtime. Their agreement is scoped computational evidence, not a proof
+of the interpreter or hardware. The lesson's organization is pedagogical; its
+successful execution does not measure learning. The broader chemistry and
+vector-field obligations, general language understanding, and full curricular
+acceptance remain open. Chapter numbering is reading order; **University IX
+remains Infinity and VII/VIII remain open research charters**.
+
+Sources: [PIA-050/051](../../GOD_SEED.md), [Plicastratum D2 and §6.3](../../sources/originals/PLICASTRATUM.md),
+[Formal Vocabulary FV-03/04](../../docs/FORMAL_VOCABULARY.md),
+[structured forms implementation](../../docs/STRUCTURED_FORMS.md), and
+[generator families, witnesses and limits](../../docs/GENERATORS.md).
+
 ## Canonical 62-topic atlas
 
 Each source link resolves the original topic ID at its recorded line. The local
@@ -464,8 +594,8 @@ this edition's teaching boundary and does not dismiss the preserved source.
 | I | [`numerical-grammars` — Numerical grammars](../../sources/repos/abedkadaancom/src/content/topics/foundations.ts#L200) | `NOT_ADMITTED_BY_THIS_PACKAGE` | Source-linked reading; no executed topic lesson in this edition |
 | I | [`graph-theory` — Graph theory](../../sources/repos/abedkadaancom/src/content/topics/foundations.ts#L228) | `NOT_ADMITTED_BY_THIS_PACKAGE` | Source-linked reading; no executed topic lesson in this edition |
 | I | [`complexity` — Complexity](../../sources/repos/abedkadaancom/src/content/topics/foundations.ts#L256) | `NOT_ADMITTED_BY_THIS_PACKAGE` | Source-linked reading; no executed topic lesson in this edition |
-| II | [`alphabets-words` — Alphabets and words](../../sources/repos/abedkadaancom/src/content/topics/relational.ts#L11) | `NOT_ADMITTED_BY_THIS_PACKAGE` | BF-04: finite words with token identities |
-| II | [`generative-grammars` — Grammatical generation](../../sources/repos/abedkadaancom/src/content/topics/relational.ts#L39) | `NOT_ADMITTED_BY_THIS_PACKAGE` | BF-04: finite-language promotion only |
+| II | [`alphabets-words` — Alphabets and words](../../sources/repos/abedkadaancom/src/content/topics/relational.ts#L11) | `NOT_ADMITTED_BY_THIS_PACKAGE` | BF-04, BF-13–15: tokens, Naturals and named cyclic/dihedral quotients |
+| II | [`generative-grammars` — Grammatical generation](../../sources/repos/abedkadaancom/src/content/topics/relational.ts#L39) | `NOT_ADMITTED_BY_THIS_PACKAGE` | BF-04, BF-16–18: finite promotion and bounded regular generation |
 | II | [`plicastratum` — Plicastratum](../../sources/repos/abedkadaancom/src/content/topics/relational.ts#L65) | `NOT_ADMITTED_BY_THIS_PACKAGE` | Source-linked reading; no executed topic lesson in this edition |
 | II | [`alphabet-towers` — Structured alphabets](../../sources/repos/abedkadaancom/src/content/topics/relational.ts#L96) | `NOT_ADMITTED_BY_THIS_PACKAGE` | BF-04: one promotion level only |
 | II | [`ingrammatica` — Ingrammatica](../../sources/repos/abedkadaancom/src/content/topics/relational.ts#L123) | `NOT_ADMITTED_BY_THIS_PACKAGE` | Source-linked reading; no executed topic lesson in this edition |
@@ -744,17 +874,133 @@ Executed result: `PASS`. The declared answer matches.
 
 One finite binary64 projection in the Astra visualization convention; no astronomical or semantic correspondence proof.
 
+### BF-13 — Query an effective alphabet without enumerating infinity
+
+Executed result: `PASS`. The declared answer matches.
+
+```json
+{
+  "result.enumerated": false,
+  "result.letter.coordinates": [
+    "7"
+  ],
+  "result.letter.value": "7",
+  "status": "PASS"
+}
+```
+
+One exact bounded Natural query. The countably infinite definition is not an enumerated result.
+
+### BF-14 — Keep orientation when only rotations are declared
+
+Executed result: `PASS`. The declared answer matches.
+
+```json
+{
+  "result.canonical.form.labels": [
+    "0",
+    "7",
+    "1"
+  ],
+  "result.index_candidates_checked": 3,
+  "result.preserved_relation": "declared-structural-orbit-only",
+  "status": "PASS"
+}
+```
+
+All three rotations of one labeled cycle, with fixed letter identities. No domain-denotation equivalence is inferred.
+
+### BF-15 — Declare reversal before identifying an orientation
+
+Executed result: `PASS`. The declared answer matches.
+
+```json
+{
+  "result.canonical.form.labels": [
+    "0",
+    "1",
+    "7"
+  ],
+  "result.index_candidates_checked": 6,
+  "result.preserved_relation": "declared-structural-orbit-only",
+  "status": "PASS"
+}
+```
+
+All six positional dihedral transformations of the same input. This many-to-one quotient does not recover its original orientation.
+
+### BF-16 — Construct the two admitted protocol words
+
+Executed result: `PASS`. The declared answer matches.
+
+```json
+{
+  "result.candidates.0.value": [
+    "PING",
+    "ACK"
+  ],
+  "result.candidates.1.value": [
+    "PING",
+    "ACK",
+    "ACK"
+  ],
+  "result.complete": true,
+  "result.counts.admitted": 2,
+  "status": "PASS"
+}
+```
+
+Finite regular-language construction with compiled-machine and source-interpreter checks. It does not verify a network protocol or a human language.
+
+### BF-17 — A successful membership check can answer no
+
+Executed result: `PASS`. The declared answer matches.
+
+```json
+{
+  "result.accepted": false,
+  "result.complete": true,
+  "result.reference_accepted": false,
+  "status": "PASS"
+}
+```
+
+Both exact recognizers reject one word within the supplied alphabet. PASS records completion of the check, not membership.
+
+### BF-18 — An exhausted prefix search has not proved emptiness
+
+Executed result: `RESOURCE_LIMIT`. The declared answer matches.
+
+```json
+{
+  "result.candidates": [],
+  "result.complete": false,
+  "result.counts.frontier_visits": 1,
+  "result.stop_reason": "SEARCH_BUDGET",
+  "status": "RESOURCE_LIMIT"
+}
+```
+
+A one-prefix budget produces no admitted words and leaves the frontier incomplete. BF-16 already supplies two witnesses, so this is not an empty-language claim.
+
 <!-- END VERIFIED EXERCISES -->
 
 ## Edition record
 
 This is the first constructed Book of Forms edition. Its human prose is authored
 here; its atlas and executed answers are reproducible projections. The builder
-requires all eight chapters to have an executed exercise, preserves all 62 topic
+requires the original eight chapters and the added construction chapter to have
+executed exercises, preserves all 62 topic
 identities, refuses changed source anchors/digests and stops on an incorrect
 expected answer. The initial test run preceded the builder and failed all six
 tests because the implementation was absent. Later verification belongs to the
 actual build/test receipts, not to an inherited historical test claim.
+
+The construction supplement retains those twelve original exercise definitions
+and adds BF-13–18. Its red run had four failing/erroring checks before the new
+executors and lesson definitions existed. Regeneration records the actual
+current source hashes and all eighteen observed answers; it does not rewrite
+the authority or publication history of the original edition.
 
 The edition may be extended through new source-linked chapters and separately
 versioned exercises. Keep earlier sources, answers, limitations and corrections

@@ -1,0 +1,40 @@
+[
+  {
+    "files": 18,
+    "manifest_sha256": "e557097a8dbbd0c888fa3d3d0c93587269dca68bc408c7006c58f8bce541e4a9",
+    "model_cid": "dfb51b34cfe8aa8f5f529b40d984535514b6f4644257400c2d1c7640addedab4",
+    "output": "/tmp/polyia-generator-admitted-jnmgipq7/protocol",
+    "runtime_sha256": "7ed24c06988e7323607871e1c5cb27c4b6cb6d397fed4817ebec66a79b303bef",
+    "scope": "source-locked portable package; full D-GENERATORS acceptance remains open",
+    "status": "PASS",
+    "independent_verification": {
+      "files": 18,
+      "model_cid": "dfb51b34cfe8aa8f5f529b40d984535514b6f4644257400c2d1c7640addedab4",
+      "runtime_admission": "installation-owned exact source SHA-256",
+      "runtime_sha256": "7ed24c06988e7323607871e1c5cb27c4b6cb6d397fed4817ebec66a79b303bef",
+      "scope": "external manifest custody, registered runtime and independent fixture execution; no full mission acceptance",
+      "status": "PASS"
+    },
+    "verified_location": "/tmp/polyia-generator-admitted-jnmgipq7/protocol-moved",
+    "generated_count": 2
+  },
+  {
+    "files": 21,
+    "manifest_sha256": "03e4ea209645031c10c82e6ce57b204d97981f271caf975bdf0ba363abacd736",
+    "model_cid": "5d3b2ad3c46c2f244dae81426e3f8f55ab4363b383991d5b810579ce306b6310",
+    "output": "/tmp/polyia-generator-admitted-jnmgipq7/rational-division",
+    "runtime_sha256": "7ed24c06988e7323607871e1c5cb27c4b6cb6d397fed4817ebec66a79b303bef",
+    "scope": "source-locked portable package; full D-GENERATORS acceptance remains open",
+    "status": "PASS",
+    "independent_verification": {
+      "files": 21,
+      "model_cid": "5d3b2ad3c46c2f244dae81426e3f8f55ab4363b383991d5b810579ce306b6310",
+      "runtime_admission": "installation-owned exact source SHA-256",
+      "runtime_sha256": "7ed24c06988e7323607871e1c5cb27c4b6cb6d397fed4817ebec66a79b303bef",
+      "scope": "external manifest custody, registered runtime and independent fixture execution; no full mission acceptance",
+      "status": "PASS"
+    },
+    "verified_location": "/tmp/polyia-generator-admitted-jnmgipq7/rational-division-moved",
+    "generated_count": 18
+  }
+]
