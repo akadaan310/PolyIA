@@ -1,0 +1,100 @@
+TAP version 13
+# Subtest: actual UI connection shows state and enables only permitted controls
+ok 1 - actual UI connection shows state and enables only permitted controls
+  ---
+  duration_ms: 349.634886
+  type: 'test'
+  ...
+# Subtest: actual guidance form preserves markup as text and applies its explicit action
+ok 2 - actual guidance form preserves markup as text and applies its explicit action
+  ---
+  duration_ms: 102.110692
+  type: 'test'
+  ...
+# Subtest: switching session during a pending response does not leave controls locked
+ok 3 - switching session during a pending response does not leave controls locked
+  ---
+  duration_ms: 61.107199
+  type: 'test'
+  ...
+# Subtest: pagehide clears the visible session before a page can return from history cache
+ok 4 - pagehide clears the visible session before a page can return from history cache
+  ---
+  duration_ms: 14.43411
+  type: 'test'
+  ...
+# Subtest: actual experiment form records science and polling reads external transitions
+ok 5 - actual experiment form records science and polling reads external transitions
+  ---
+  duration_ms: 64.069757
+  type: 'test'
+  ...
+# Subtest: actual artifact controls produce verify accept and expose checkpoint integrity receipts
+ok 6 - actual artifact controls produce verify accept and expose checkpoint integrity receipts
+  ---
+  duration_ms: 136.373668
+  type: 'test'
+  ...
+# Subtest: malformed scientific parameters show a visible refusal without a mutation
+ok 7 - malformed scientific parameters show a visible refusal without a mutation
+  ---
+  duration_ms: 20.326787
+  type: 'test'
+  ...
+# Subtest: intake submits real text, computes supported spans and displays unknown markup as text
+ok 8 - intake submits real text, computes supported spans and displays unknown markup as text
+  ---
+  duration_ms: 105.094009
+  type: 'test'
+  ...
+# Subtest: native intake executes typed output and oversized input refuses before a command
+ok 9 - native intake executes typed output and oversized input refuses before a command
+  ---
+  duration_ms: 68.766914
+  type: 'test'
+  ...
+# Subtest: rasm example runs its actual versioned contextual projection
+ok 10 - rasm example runs its actual versioned contextual projection
+  ---
+  duration_ms: 78.003668
+  type: 'test'
+  ...
+# Subtest: captured book inspection is explicit, private and displays hostile markup as inert text
+ok 11 - captured book inspection is explicit, private and displays hostile markup as inert text
+  ---
+  duration_ms: 89.1555
+  type: 'test'
+  ...
+# Subtest: artifact viewer labels binary and partial UTF-8 while keeping exact chunk bytes
+ok 12 - artifact viewer labels binary and partial UTF-8 while keeping exact chunk bytes
+  ---
+  duration_ms: 30.48526
+  type: 'test'
+  ...
+# Subtest: disconnect clears captured content and rejects a stale inspection response
+ok 13 - disconnect clears captured content and rejects a stale inspection response
+  ---
+  duration_ms: 28.356341
+  type: 'test'
+  ...
+# Subtest: review: selecting another capture invalidates the previous slow response
+ok 14 - review: selecting another capture invalidates the previous slow response
+  ---
+  duration_ms: 53.637964
+  type: 'test'
+  ...
+# Subtest: review: pagehide clears a held artifact response and session
+ok 15 - review: pagehide clears a held artifact response and session
+  ---
+  duration_ms: 37.950334
+  type: 'test'
+  ...
+1..15
+# tests 15
+# suites 0
+# pass 15
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1327.482752

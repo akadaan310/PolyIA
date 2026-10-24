@@ -78,7 +78,7 @@ class TestDocument extends Element {
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const operatorToken = 'ui-development-operator-token', readerToken = 'ui-development-read-token';
-let server, base, doc, interval, gate = null, release = null, serviceFailure = '';
+let server, base, doc, interval, gate = null, release = null, serviceFailure = '', blobReads = 0;
 const nativeFetch = globalThis.fetch, nativeInterval = globalThis.setInterval;
 const windowEvents = new Map();
 const $ = id => doc.getElementById(id);
@@ -118,6 +118,9 @@ from polyia.server import make_server
 with tempfile.TemporaryDirectory() as directory:
     root=Path(directory); workspace=root/'workspace'; workspace.mkdir()
     (workspace/'evidence.txt').write_text('Actual UI captured evidence.\\n')
+    (workspace/'BOOK.md').write_text('# Book of Forms\\nChapter 1: Forms and types\\n<img src=x onerror=alert(1)>\\n<script>globalThis.pwned=true</script>\\n', encoding='utf-8')
+    (workspace/'binary.dat').write_bytes(bytes([255, 0, 65]))
+    (workspace/'unicode.txt').write_text('€', encoding='utf-8')
     with Ledger(root/'state'/'ledger.sqlite3', workspace, [{'id':'R-1','title':'UI contract','verifier':'artifact-integrity'}]) as ledger:
         # This suite rapidly exercises form wiring. Admission limits have their
         # own actual-socket tests; reserve enough burst for these independent flows.
@@ -138,8 +141,9 @@ with tempfile.TemporaryDirectory() as directory:
   globalThis.window = { addEventListener(type, callback) { windowEvents.set(type, callback); } };
   globalThis.setInterval = callback => { interval = callback; return 0; };
   globalThis.fetch = async (url, options) => {
+    if (url.startsWith('/v1/blobs/')) blobReads += 1;
     const response = await nativeFetch(base + url, options);
-    if (gate && options.method === 'POST') {
+    if (gate === true && options.method === 'POST' || gate === 'blob' && url.startsWith('/v1/blobs/')) {
       gate = null;
       await new Promise(resolve => { release = resolve; });
     }
@@ -292,4 +296,76 @@ test('native intake executes typed output and oversized input refuses before a c
   await until(() => !$('error-banner').hidden, 'Intake byte limit refusal not displayed');
   assert.equal($('error-title').textContent, 'INTAKE_LIMIT');
   assert.equal((await state()).revision, revision);
+});
+
+test('rasm example runs its actual versioned contextual projection', async () => {
+  await connect();
+  assert.ok($('experiment-name').querySelectorAll('option').some(option => option.value === 'rasm'), 'Rasm must be selectable');
+  assert.ok(doc.ids.has('rasm-example'), 'Rasm needs a usable versioned example');
+  $('rasm-example').fire('click');
+  assert.equal($('experiment-name').value, 'rasm');
+  await submit('experiment-form');
+  const run = (await state()).runs.at(-1);
+  assert.equal(run.name, 'rasm');
+  assert.equal(run.report.result.projection.skeleton, 'كٮٮ');
+  assert.equal(run.report.result.inverse.candidate_total, 15);
+});
+
+test('captured book inspection is explicit, private and displays hostile markup as inert text', async () => {
+  await connect();
+  const readsBefore = blobReads;
+  $('requirement-select').value = 'R-1';
+  $('artifact-paths').value = 'BOOK.md\nbinary.dat\nunicode.txt';
+  await submit('produce-form');
+  const listing = doc.ids.get('captured-artifacts');
+  assert.ok(listing, 'Selected requirement must expose captured artifacts');
+  assert.ok(listing.textContent.includes('BOOK.md'));
+  assert.ok(listing.textContent.includes((await state()).requirements['R-1'].artifacts[0].sha256));
+  assert.equal(blobReads, readsBefore, 'Rendering metadata must not fetch captured content');
+  await connect(readerToken);
+  const revision = (await state()).revision;
+  listing.querySelector('button').fire('click');
+  await until(() => $('artifact-output').textContent.includes('Chapter 1: Forms and types'), 'Captured book content was not displayed');
+  assert.ok($('artifact-output').textContent.includes('<img src=x onerror=alert(1)>'));
+  assert.equal($('artifact-output').querySelector('img'), null);
+  assert.equal($('artifact-output').querySelector('script'), null);
+  assert.equal(globalThis.pwned, undefined);
+  assert.ok($('artifact-status').textContent.includes('Complete'));
+  $('artifact-encoding').value = 'base64'; $('artifact-encoding').fire('change');
+  const decoded = Buffer.from($('artifact-output').textContent, 'base64').toString('utf8');
+  assert.ok(decoded.startsWith('# Book of Forms\n'));
+  assert.ok(decoded.includes('<script>globalThis.pwned=true</script>'));
+  assert.equal((await state()).revision, revision);
+});
+
+test('artifact viewer labels binary and partial UTF-8 while keeping exact chunk bytes', async () => {
+  assert.ok(doc.ids.get('captured-artifacts'), 'Captured artifact viewer is required');
+  $('captured-artifacts').querySelectorAll('button')[1].fire('click');
+  await until(() => $('artifact-status').textContent.includes('Binary or incomplete UTF-8'), 'Binary bytes were not identified');
+  assert.equal($('artifact-output').textContent, '/wBB');
+  $('captured-artifacts').querySelectorAll('button')[2].fire('click');
+  await until(() => $('artifact-output').textContent === '€', 'Unicode artifact was not read');
+  $('artifact-limit').value = '1'; $('artifact-offset').value = '0'; $('artifact-chunk-form').fire('submit');
+  await until(() => $('artifact-status').textContent.includes('Partial') && $('artifact-output').textContent === '4g==', 'Split UTF-8 must retain exact first byte');
+  assert.equal($('artifact-next').disabled, false);
+  $('artifact-next').fire('click');
+  await until(() => $('artifact-output').textContent === 'gg==', 'Next byte chunk was not inspected');
+  assert.equal($('artifact-offset').value, '1');
+  $('artifact-next').fire('click');
+  await until(() => $('artifact-output').textContent === 'rA==', 'Final byte chunk was not inspected');
+  assert.equal($('artifact-next').disabled, true);
+});
+
+test('disconnect clears captured content and rejects a stale inspection response', async () => {
+  assert.ok(doc.ids.get('captured-artifacts'), 'Captured artifact viewer is required');
+  gate = 'blob'; release = null;
+  $('captured-artifacts').querySelector('button').fire('click');
+  await until(() => release !== null, 'Delayed blob read did not reach the server');
+  $('disconnect-button').fire('click');
+  assert.equal($('artifact-panel').hidden, true);
+  assert.equal($('artifact-output').textContent, '');
+  release(); release = null;
+  await new Promise(resolve => setTimeout(resolve, 20));
+  assert.equal($('artifact-output').textContent, '');
+  assert.equal($('artifact-next').disabled, true);
 });

@@ -1,0 +1,68 @@
+{
+  "scope": "isolated local HTTP Chromium client and actual SQLite fixture",
+  "checks": [
+    {
+      "name": "observer connected in real browser",
+      "pass": true
+    },
+    {
+      "name": "credential removed from input after connection",
+      "pass": true
+    },
+    {
+      "name": "captured book is actually inspectable",
+      "pass": true
+    },
+    {
+      "name": "mission remains uncommissioned",
+      "pass": true
+    },
+    {
+      "name": "hostile captured HTML remains inert",
+      "pass": true
+    },
+    {
+      "name": "large captured content is explicitly partial",
+      "pass": true
+    },
+    {
+      "name": "next chunk uses real captured continuation",
+      "pass": true
+    },
+    {
+      "name": "disconnect clears captured bytes",
+      "pass": true
+    },
+    {
+      "name": "rasm browser submission records actual fifteen-candidate result",
+      "pass": true
+    },
+    {
+      "name": "unsupported source remains visible",
+      "pass": true
+    },
+    {
+      "name": "mobile page has no horizontal document overflow",
+      "pass": true
+    },
+    {
+      "name": "session storage and local storage remain empty",
+      "pass": true
+    },
+    {
+      "name": "no credential in request URLs",
+      "pass": true
+    },
+    {
+      "name": "no browser script error",
+      "pass": true
+    }
+  ],
+  "browser": "156.0.8078.4",
+  "origin": "http://127.0.0.1:41203",
+  "ok": true,
+  "limitations": [
+    "One Chromium build on one VM; no cross-browser or accessibility certification.",
+    "Screenshots show observed rendering, not all possible UI states."
+  ]
+}

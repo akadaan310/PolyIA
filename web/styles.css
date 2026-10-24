@@ -10,3 +10,4 @@
 .badge-neutral{color:#566950}.sidebar .small-label{color:#a3bba5}.sidebar-label,.sidebar nav a span{color:#98b7a1}input::placeholder,textarea::placeholder{color:#66755f}
 .eyebrow,.metric-label,.small-label,.card-kicker,th{font-size:10px}.live-meta,.section-aside,.card-foot,footer{font-size:10px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+.artifact-heading{margin-top:24px}.artifact-list{list-style:none;margin:0;padding:0}.artifact-list li{padding:12px 0;border-top:1px solid var(--line);overflow-wrap:anywhere}.artifact-list li p{margin:5px 0 8px}.artifact-list button{font-size:12px}.artifact-panel{margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}.artifact-panel .mono{overflow-wrap:anywhere}.artifact-panel .button-row{margin-top:12px}#artifact-output{white-space:pre-wrap;unicode-bidi:plaintext;max-height:450px}

@@ -11,6 +11,11 @@ let renderedHead = null;
 let eventCursor = 0;
 let loadedEvents = [];
 let loadingEvents = false;
+let selectedArtifact = null;
+let artifactRequirement = null;
+let artifactChunk = null;
+let artifactRequest = 0;
+let loadingArtifact = false;
 
 function node(tag, text = '', className = '') {
   const element = document.createElement(tag);
@@ -89,6 +94,8 @@ function updateControls() {
   $('run-experiment').disabled = !command || Boolean(client.state?.research?.paused);
   $('run-intake').disabled = !command || Boolean(client.state?.research?.paused);
   $('load-checkpoint').disabled = !read || !client.state?.latest_checkpoint;
+  $('artifact-load').disabled = !read || !selectedArtifact || loadingArtifact;
+  $('artifact-next').disabled = !read || !selectedArtifact || loadingArtifact || artifactChunk?.next_offset == null;
   $('retry-panel').hidden = !client.hasPending;
   $('retry-command').disabled = working || !read || client.scope !== 'operator';
   $('retry-text').textContent = client.hasPending
@@ -128,7 +135,93 @@ function renderSelectedRequirement() {
   $('selected-requirement-meta').textContent = requirement
     ? requirement.status + ' · Verifier: ' + requirement.verifier + ' · Priority ' + requirement.priority : '';
   $('requirement-detail').textContent = requirement ? json(requirement) : 'No obligation selected.';
+  renderArtifacts(requirement);
   updateControls();
+}
+
+function clearArtifact() {
+  artifactRequest += 1;
+  selectedArtifact = null; artifactChunk = null; loadingArtifact = false;
+  $('artifact-panel').hidden = true;
+  $('artifact-identity').textContent = ''; $('artifact-status').textContent = '';
+  $('artifact-output').textContent = '';
+}
+
+function renderArtifacts(requirement) {
+  const artifacts = requirement?.artifacts || [];
+  if (artifactRequirement !== requirement?.id || selectedArtifact &&
+      !artifacts.some(item => item.sha256 === selectedArtifact.sha256 && item.path === selectedArtifact.path)) clearArtifact();
+  artifactRequirement = requirement?.id;
+  const items = artifacts.map(artifact => {
+    const item = node('li');
+    const inspect = node('button', 'Inspect bytes'); inspect.type = 'button';
+    inspect.setAttribute('data-read', '');
+    inspect.setAttribute('aria-label', 'Inspect captured bytes of ' + artifact.path);
+    inspect.addEventListener('click', () => {
+      clearArtifact(); selectedArtifact = artifact;
+      $('artifact-panel').hidden = false;
+      $('artifact-identity').textContent = artifact.path + ' · SHA-256 ' + artifact.sha256;
+      $('artifact-offset').value = '0'; $('artifact-limit').value = '65536';
+      $('artifact-encoding').value = 'utf8';
+      loadArtifactChunk();
+    });
+    item.append(node('strong', artifact.path), node('p', artifact.size + ' bytes · ' + artifact.sha256, 'mono small'), inspect);
+    return item;
+  });
+  $('captured-artifacts').replaceChildren(...(items.length ? items : [node('li', 'No captured artifacts for this obligation.', 'muted')]));
+}
+
+function renderArtifactChunk() {
+  if (!artifactChunk) return;
+  const chunk = artifactChunk;
+  const partial = chunk.offset !== 0 || chunk.next_offset !== null;
+  const textView = $('artifact-encoding').value === 'utf8' && chunk.text !== null;
+  $('artifact-status').textContent = (partial ? 'Partial' : 'Complete') + ' captured object · bytes [' + chunk.offset + ', '
+    + (chunk.offset + chunk.byteLength) + ') of ' + chunk.total_size + '. '
+    + (chunk.text === null ? 'Binary or incomplete UTF-8 sequence. ' : '')
+    + (textView ? 'UTF-8 text view.' : 'Exact bytes shown as base64.');
+  $('artifact-output').textContent = textView ? chunk.text : chunk.data;
+  updateControls();
+}
+
+async function loadArtifactChunk() {
+  if (!client.connected || !selectedArtifact || loadingArtifact) return;
+  const epoch = session, request = ++artifactRequest, artifact = selectedArtifact;
+  clearMessage(); artifactChunk = null; $('artifact-output').textContent = '';
+  loadingArtifact = true; $('artifact-status').textContent = 'Reading captured bytes…'; updateControls();
+  try {
+    const offset = Number($('artifact-offset').value), limit = Number($('artifact-limit').value);
+    if (!/^[0-9]+$/.test($('artifact-offset').value) || !Number.isSafeInteger(offset) || offset > artifact.size ||
+        !/^[0-9]+$/.test($('artifact-limit').value) || !Number.isSafeInteger(limit) || limit < 1 || limit > 65536) {
+      throw new ProtocolError('INVALID_RANGE', 'Use a byte offset within the captured object and a chunk size from 1 to 65,536.');
+    }
+    const chunk = await client.read('/v1/blobs/' + artifact.sha256 + '?offset=' + offset + '&limit=' + limit);
+    if (epoch !== session || request !== artifactRequest) return;
+    if (chunk?.digest !== artifact.sha256 || chunk.total_size !== artifact.size || chunk.offset !== offset ||
+        chunk.encoding !== 'base64' || typeof chunk.data !== 'string' || chunk.data.length > 87384 ||
+        !/^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$/.test(chunk.data)) {
+      throw new ProtocolError('INVALID_RESPONSE', 'The artifact response does not match the selected capture.');
+    }
+    const binary = atob(chunk.data);
+    const expectedLength = Math.min(limit, artifact.size - offset);
+    const next = offset + expectedLength < artifact.size ? offset + expectedLength : null;
+    if (binary.length !== expectedLength || btoa(binary) !== chunk.data || chunk.next_offset !== next) {
+      throw new ProtocolError('INVALID_RESPONSE', 'The artifact response has an invalid byte length or continuation.');
+    }
+    let text = null;
+    try {
+      text = new TextDecoder('utf-8', { fatal: true, ignoreBOM: true }).decode(Uint8Array.from(binary, char => char.charCodeAt(0)));
+      if (/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/.test(text)) text = null;
+    } catch (_) { /* Keep exact base64 when a chunk is binary or splits UTF-8. */ }
+    artifactChunk = { ...chunk, text, byteLength: binary.length };
+    renderArtifactChunk();
+  } catch (error) {
+    if (epoch === session && request === artifactRequest) {
+      $('artifact-status').textContent = 'No chunk loaded.'; showError(error);
+    }
+  } finally {
+    if (epoch === session && request === artifactRequest) { loadingArtifact = false; updateControls(); }
+  }
 }
 
 function renderSelectedGuidance() {
@@ -231,6 +324,7 @@ function renderState(force = false) {
 }
 
 function renderDisconnected() {
+  clearArtifact(); artifactRequirement = null;
   renderedHead = null; loadedEvents = []; eventCursor = 0;
   ['revision', 'accepted-count', 'pending-guidance', 'research-state'].forEach(id => { $(id).textContent = '—'; });
   $('head-short').textContent = 'Connect to read state'; $('head-short').removeAttribute('title');
@@ -360,6 +454,7 @@ function form(id, handler) {
 form('connect-form', async () => {
   const token = $('token').value; $('token').value = '';
   const epoch = ++session;
+  clearArtifact();
   clearMessage(); live = false; working = false; renderedHead = null; refreshing = null; loadingEvents = false;
   loadedEvents = []; eventCursor = 0;
   $('connect-button').disabled = true; connection('Connecting…');
@@ -385,6 +480,13 @@ $('refresh-button').addEventListener('click', () => { clearMessage(); sync(); })
 $('requirement-search').addEventListener('input', renderRequirements);
 $('requirement-filter').addEventListener('change', renderRequirements);
 $('requirement-select').addEventListener('change', renderSelectedRequirement);
+form('artifact-chunk-form', loadArtifactChunk);
+$('artifact-encoding').addEventListener('change', renderArtifactChunk);
+$('artifact-next').addEventListener('click', () => {
+  if (artifactChunk?.next_offset == null) return;
+  $('artifact-offset').value = String(artifactChunk.next_offset);
+  loadArtifactChunk();
+});
 $('guidance-select').addEventListener('change', renderSelectedGuidance);
 $('guidance-action').addEventListener('change', () => {
   const action = $('guidance-action').value;
@@ -424,6 +526,10 @@ form('experiment-form', () => {
   }
   if (!parameters || typeof parameters !== 'object' || Array.isArray(parameters)) throw new ProtocolError('INVALID_PARAMETERS', 'Experiment parameters must be a JSON object.');
   return execute('experiment.run', { name: $('experiment-name').value, parameters });
+});
+$('rasm-example').addEventListener('click', () => {
+  $('experiment-name').value = 'rasm';
+  $('experiment-parameters').value = json({ version: 'polyia.rasm/0.1', chart: 'timeless.rsa28/0.1', operation: 'project', text: 'كتب' });
 });
 form('intake-form', () => {
   const text = $('intake-text').value;

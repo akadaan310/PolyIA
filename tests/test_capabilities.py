@@ -237,4 +237,69 @@ ledger.close()
         self.assertEqual(result.returncode,0,result.stderr)
         self.assertEqual(json.loads(result.stdout),{'status':'ERROR','reason':'IMPLEMENTATION_CHANGED','binding':'NOT_EXECUTED','integrity':True})
 
+    def test_rasm_uses_declared_chart_and_captured_code_without_lexical_claims(self):
+        parameters = {'version':'polyia.rasm/0.1','chart':'timeless.rsa28/0.1',
+                      'operation':'project','text':'كتب'}
+        request = self.request('rasm', parameters)
+        receipt = self.ledger.command(request)
+        run = receipt['result']['run']
+        self.assertEqual(run['report']['status'], 'PASS', run['report'])
+        self.assertEqual({x['identity']['module'] for x in run['execution_bundle']['modules']},
+                         {'polyia.capabilities', 'polyia.rasm'})
+        self.assertFalse(run['report']['su_registry_export_authorized'])
+        self.ledger.close()
+        with patch('polyia.rasm.run_rasm', side_effect=AssertionError('Replay executed rasm')):
+            self.ledger = Ledger(self.db, self.workspace)
+            self.assertEqual(self.ledger.command(request), receipt)
+            self.assertTrue(self.ledger.verify()['ok'])
+
+    def test_rasm_mark_rich_projection_recovers_exactly_through_durable_commands(self):
+        base = {'version':'polyia.rasm/0.1', 'chart':'timeless.rsa28/0.1'}
+        original = 'ب' + 'َ' * 400
+        projected = self.run_capability('rasm', dict(base, operation='project', text=original))
+        self.assertEqual(projected['report']['status'], 'PASS', projected)
+        result = projected['report']['result']
+        parameters = dict(base, operation='recover', projection=result['projection'], side_data=result['side_data'])
+        request = self.request('rasm', parameters)
+        from polyia.store import _json, MAX_REQUEST_BYTES
+        self.assertLess(len(_json(request).encode('utf-8')), MAX_REQUEST_BYTES)
+        receipt = self.ledger.command(request)
+        recovered = receipt['result']['run']['report']
+        self.assertEqual(recovered['status'], 'PASS', recovered)
+        self.assertEqual(recovered['result']['original_text'], original)
+        self.assertEqual(recovered['result']['utf8_hex'], original.encode('utf-8').hex())
+        self.assertEqual(recovered['result']['source_sha256'], hashlib.sha256(original.encode('utf-8')).hexdigest())
+        self.ledger.close()
+        with patch('polyia.rasm.run_rasm', side_effect=AssertionError('Replay executed rasm')):
+            self.ledger = Ledger(self.db, self.workspace)
+            self.assertEqual(self.ledger.command(request), receipt)
+            self.assertTrue(self.ledger.verify()['ok'])
+
+    def test_rasm_recovery_allowance_keeps_node_depth_byte_and_other_operation_limits(self):
+        base = {'version':'polyia.rasm/0.1', 'chart':'timeless.rsa28/0.1', 'operation':'recover',
+                'projection':{}, 'side_data':{'surface_codepoints':[0] * 8192}}
+        nested = 0
+        for _ in range(13):
+            nested = [nested]
+        cases = [('rasm', base), ('rasm', dict(base, projection=nested, side_data={})),
+                 ('polynomial', dict(base, side_data={'surface_codepoints':[0] * 2100})),
+                 ('rasm', dict(base, operation='chart', side_data={'surface_codepoints':[0] * 2100})),
+                 ('rasm', dict(base, extra=[0] * 2100, side_data={}))]
+        for name, parameters in cases:
+            with self.subTest(name=name, operation=parameters['operation']):
+                before = self.ledger.state()
+                with self.assertRaises(CommandError) as error:
+                    self.ledger.command(self.request(name, parameters))
+                self.assertEqual(error.exception.code, 'RESOURCE_LIMIT')
+                self.assertEqual(self.ledger.state(), before)
+        projected = self.run_capability('rasm', {'version':'polyia.rasm/0.1', 'chart':'timeless.rsa28/0.1',
+                                               'operation':'project', 'text':'ب' + 'َ' * 1023})
+        self.assertEqual(projected['report']['status'], 'PASS', projected)
+        result = projected['report']['result']
+        request = self.request('rasm', {'version':'polyia.rasm/0.1', 'chart':'timeless.rsa28/0.1',
+            'operation':'recover', 'projection':result['projection'], 'side_data':result['side_data']})
+        with self.assertRaises(CommandError) as error:
+            self.ledger.command(request)
+        self.assertEqual(error.exception.code, 'REQUEST_TOO_LARGE')
+
 if __name__=='__main__': unittest.main()

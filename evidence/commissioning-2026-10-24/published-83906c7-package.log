@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "counts": {
+    "source_files": 1035,
+    "repository_snapshots": 8,
+    "repository_blobs": 757,
+    "unique_expanded_archives": 13,
+    "expanded_members": 253,
+    "mission_obligations": 192,
+    "core_inherited_obligations": 252,
+    "supplemental_documents": 130,
+    "supplemental_segments": 3706,
+    "supplemental_partition_bytes": 1055041,
+    "supplemental_registry_bytes": 10270078,
+    "release_manifest_files": 1176
+  },
+  "errors": [],
+  "full_mission_status": "NOT_COMMISSIONED",
+  "unresolved_source_identities": [],
+  "scope": "Package byte custody, references and coverage; does not certify every source claim or full commission implementation."
+}

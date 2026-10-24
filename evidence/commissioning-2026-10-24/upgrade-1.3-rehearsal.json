@@ -1,0 +1,178 @@
+{
+  "ok": true,
+  "scope": "consistent SQLite backup of actual live ledger, opened by installed1.2 then candidate1.3",
+  "revision": 69,
+  "state_identical": true,
+  "state_sha256": "1a4807913cff9379300f34cec7a78a8abeb2aa308f41151d14258871ebf93312",
+  "integrity": {
+    "checked": {
+      "blobs": 35,
+      "checkpoints": 6,
+      "events": 69,
+      "receipts": 69,
+      "source_contexts": 7
+    },
+    "diagnostics": [],
+    "evidence_class": "INTERNAL_REPLAY_AND_CAPTURED_BYTE_INTEGRITY",
+    "limitations": [
+      "Hash chains are not signatures or externally anchored proofs.",
+      "Replay consumes recorded experiment results; it does not re-run experiments or establish scientific truth."
+    ],
+    "ok": true,
+    "schema_version": 2,
+    "workspace_drift": {
+      "artifacts": [
+        {
+          "captured_sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490",
+          "live_sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490",
+          "path": "initial-science-run.json",
+          "requirement_id": "BOOT-001",
+          "status": "UNCHANGED"
+        },
+        {
+          "captured_sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+          "live_sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+          "path": "initial-kernel.py",
+          "requirement_id": "BOOT-002",
+          "status": "UNCHANGED"
+        },
+        {
+          "captured_sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490",
+          "live_sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490",
+          "path": "initial-science-run.json",
+          "requirement_id": "BOOT-002",
+          "status": "UNCHANGED"
+        },
+        {
+          "captured_sha256": "5077e7c86b14872f017c4d8087e7db1c18403292276afa942d47a29a8842e788",
+          "live_sha256": "5077e7c86b14872f017c4d8087e7db1c18403292276afa942d47a29a8842e788",
+          "path": "initial-live-service.json",
+          "requirement_id": "PIA-008",
+          "status": "UNCHANGED"
+        },
+        {
+          "captured_sha256": "f0948cc75c3c57ec0714fa8a039655bce1ec7cd3c9b6867deb49bd6fd0f7eef7",
+          "live_sha256": "f0948cc75c3c57ec0714fa8a039655bce1ec7cd3c9b6867deb49bd6fd0f7eef7",
+          "path": "OWNER_CLARIFICATIONS_2026-10-24.md",
+          "requirement_id": "PIA-015",
+          "status": "UNCHANGED"
+        },
+        {
+          "captured_sha256": "e9084a1517b3f45d0f3d2e94f9e20163daf01fd66fe121ae8a517bf7ef0ab148",
+          "live_sha256": "e9084a1517b3f45d0f3d2e94f9e20163daf01fd66fe121ae8a517bf7ef0ab148",
+          "path": "AUTHORITY_RESOLUTIONS_2026-10-24.md",
+          "requirement_id": "PIA-015",
+          "status": "UNCHANGED"
+        },
+        {
+          "captured_sha256": "fd26d35be39ad684d31ec4e77100d1ecc791cef936428c01a10d46134ffa829a",
+          "live_sha256": "fd26d35be39ad684d31ec4e77100d1ecc791cef936428c01a10d46134ffa829a",
+          "path": "authority.json",
+          "requirement_id": "PIA-015",
+          "status": "UNCHANGED"
+        },
+        {
+          "captured_sha256": "49117017e2d3f09df3d3618b8b95bb5d1cdbcc2826f37ea2c021237e06880151",
+          "live_sha256": "49117017e2d3f09df3d3618b8b95bb5d1cdbcc2826f37ea2c021237e06880151",
+          "path": "increment-454f39b983a840fb9a16a700cd23ce6d-native.json",
+          "requirement_id": "PIA-085",
+          "status": "UNCHANGED"
+        },
+        {
+          "captured_sha256": "c4b92f3026edd94db730a765c0b3afb72276298d2bafd0ab577d68e10dc06d21",
+          "live_sha256": "c4b92f3026edd94db730a765c0b3afb72276298d2bafd0ab577d68e10dc06d21",
+          "path": "increment-454f39b983a840fb9a16a700cd23ce6d-native.py",
+          "requirement_id": "PIA-085",
+          "status": "UNCHANGED"
+        },
+        {
+          "captured_sha256": "f0948cc75c3c57ec0714fa8a039655bce1ec7cd3c9b6867deb49bd6fd0f7eef7",
+          "live_sha256": "f0948cc75c3c57ec0714fa8a039655bce1ec7cd3c9b6867deb49bd6fd0f7eef7",
+          "path": "OWNER_CLARIFICATIONS_2026-10-24.md",
+          "requirement_id": "PIA-095",
+          "status": "UNCHANGED"
+        },
+        {
+          "captured_sha256": "e9084a1517b3f45d0f3d2e94f9e20163daf01fd66fe121ae8a517bf7ef0ab148",
+          "live_sha256": "e9084a1517b3f45d0f3d2e94f9e20163daf01fd66fe121ae8a517bf7ef0ab148",
+          "path": "AUTHORITY_RESOLUTIONS_2026-10-24.md",
+          "requirement_id": "PIA-095",
+          "status": "UNCHANGED"
+        },
+        {
+          "captured_sha256": "fd26d35be39ad684d31ec4e77100d1ecc791cef936428c01a10d46134ffa829a",
+          "live_sha256": "fd26d35be39ad684d31ec4e77100d1ecc791cef936428c01a10d46134ffa829a",
+          "path": "authority.json",
+          "requirement_id": "PIA-095",
+          "status": "UNCHANGED"
+        },
+        {
+          "captured_sha256": "589ea7d5a7a36a9d78f6245fa0dcd5e635964f9b6fa9acf320163b9a9c74b8d2",
+          "live_sha256": "589ea7d5a7a36a9d78f6245fa0dcd5e635964f9b6fa9acf320163b9a9c74b8d2",
+          "path": "increment-454f39b983a840fb9a16a700cd23ce6d-intake.json",
+          "requirement_id": "PIA-122",
+          "status": "UNCHANGED"
+        },
+        {
+          "captured_sha256": "d4599280705ea8387821815393b561b46371c45c585e7a51aa334bd062f8c41b",
+          "live_sha256": "d4599280705ea8387821815393b561b46371c45c585e7a51aa334bd062f8c41b",
+          "path": "increment-454f39b983a840fb9a16a700cd23ce6d-intake.py",
+          "requirement_id": "PIA-122",
+          "status": "UNCHANGED"
+        },
+        {
+          "captured_sha256": "77f28d8e934b9e571370e0d122244ccacb345c9616dca33a0c2ce2de6e842031",
+          "live_sha256": "77f28d8e934b9e571370e0d122244ccacb345c9616dca33a0c2ce2de6e842031",
+          "path": "increment-454f39b983a840fb9a16a700cd23ce6d-astra.json",
+          "requirement_id": "PIA-160",
+          "status": "UNCHANGED"
+        },
+        {
+          "captured_sha256": "8f4bb7ed852bd747eefd2218a07a0fcb9041b41fa457cc2501c81b69314e53b9",
+          "live_sha256": "8f4bb7ed852bd747eefd2218a07a0fcb9041b41fa457cc2501c81b69314e53b9",
+          "path": "increment-454f39b983a840fb9a16a700cd23ce6d-astra.py",
+          "requirement_id": "PIA-160",
+          "status": "UNCHANGED"
+        },
+        {
+          "captured_sha256": "6be278ccadf9380ce9cf2ab4c3bd476f9af4d6b874cc7bd02f14154b7cbea4ed",
+          "live_sha256": "6be278ccadf9380ce9cf2ab4c3bd476f9af4d6b874cc7bd02f14154b7cbea4ed",
+          "path": "deployment-83906c7.json",
+          "requirement_id": "PIA-181",
+          "status": "UNCHANGED"
+        },
+        {
+          "captured_sha256": "a49ce68aadc0a71267116c2da3bc230fd1f566603afb6e3d669241167175cb3b",
+          "live_sha256": "a49ce68aadc0a71267116c2da3bc230fd1f566603afb6e3d669241167175cb3b",
+          "path": "increment-454f39b983a840fb9a16a700cd23ce6d-receipt.json",
+          "requirement_id": "PIA-181",
+          "status": "UNCHANGED"
+        },
+        {
+          "captured_sha256": "8a449f2b504adf9d522591eb9dfe2fcd030fb50c32031abcfaa99aec06e2ad06",
+          "live_sha256": "8a449f2b504adf9d522591eb9dfe2fcd030fb50c32031abcfaa99aec06e2ad06",
+          "path": "increment-454f39b983a840fb9a16a700cd23ce6d-book-BOOK.md",
+          "requirement_id": "PIA-189",
+          "status": "UNCHANGED"
+        },
+        {
+          "captured_sha256": "8842cff578d4fd6c3f7474882adf968043e541e6dc4b3cd56a8a55709bd6952f",
+          "live_sha256": "8842cff578d4fd6c3f7474882adf968043e541e6dc4b3cd56a8a55709bd6952f",
+          "path": "increment-454f39b983a840fb9a16a700cd23ce6d-book-exercises.json",
+          "requirement_id": "PIA-189",
+          "status": "UNCHANGED"
+        },
+        {
+          "captured_sha256": "a6446a3776b4acfd05f6be35ee0bcd62d49a3a44584f4b68f2f59151915b011b",
+          "live_sha256": "a6446a3776b4acfd05f6be35ee0bcd62d49a3a44584f4b68f2f59151915b011b",
+          "path": "increment-454f39b983a840fb9a16a700cd23ce6d-book-evidence.json",
+          "requirement_id": "PIA-189",
+          "status": "UNCHANGED"
+        }
+      ],
+      "changed": 0,
+      "evaluated": true,
+      "interpretation": "Live workspace drift does not alter acceptance of a captured historical snapshot"
+    }
+  }
+}

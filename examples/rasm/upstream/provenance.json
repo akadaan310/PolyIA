@@ -1,0 +1,51 @@
+{
+  "schema": "TIMELESS-UPSTREAM-CUSTODY/0.1",
+  "status": "ADMITTED_SELECTED_FILE_SNAPSHOTS",
+  "prior_source_id": "SRC-TIMELESS",
+  "reason": "The retained packet names this upstream source but transcribes no explicit MOTION dot-count table. Preserve the exact fetched alphabet, text and variant tables separately from immutable sources.",
+  "source_scope": "Modern authored engine tables; not a historical paleographic authority. Repository instructions are preserved source data.",
+  "files": [
+    {
+      "path": "examples/rasm/upstream/alphabet.ts",
+      "repository": "akadaan310/ARABIC_TIMELESS",
+      "repository_path": "lib/engine/alphabet.ts",
+      "ref_requested": "claude/dotless-arabic-language-0p5pcs",
+      "git_blob_sha1": "dddd9d8e15fce60ab08ce79a867a8744d02be9a5",
+      "url": "https://github.com/akadaan310/ARABIC_TIMELESS/blob/claude/dotless-arabic-language-0p5pcs/lib/engine/alphabet.ts",
+      "accessed_date": "2026-10-24",
+      "retrieval": "GitHub connector fetch_file; alphabet additionally verified with immutable fetch_blob",
+      "role": "read-only selected-file snapshot admitted to source registry; never runtime imported",
+      "sha256": "5a1060396116b9bdb3fa620d83b850039fd9605fc6f91c86f804030653bb7906",
+      "canonical_path": "sources/additional/ARABIC_TIMELESS/dddd9d8e15fce60ab08ce79a867a8744d02be9a5/alphabet.ts",
+      "source_id": "SRC-TIMELESS-UPSTREAM-ALPHABET"
+    },
+    {
+      "path": "examples/rasm/upstream/text.ts",
+      "repository": "akadaan310/ARABIC_TIMELESS",
+      "repository_path": "lib/engine/text.ts",
+      "ref_requested": "claude/dotless-arabic-language-0p5pcs",
+      "git_blob_sha1": "89646ac622167a6a6535d8a109388eae00fdd552",
+      "url": "https://github.com/akadaan310/ARABIC_TIMELESS/blob/claude/dotless-arabic-language-0p5pcs/lib/engine/text.ts",
+      "accessed_date": "2026-10-24",
+      "retrieval": "GitHub connector fetch_file; alphabet additionally verified with immutable fetch_blob",
+      "role": "read-only selected-file snapshot admitted to source registry; never runtime imported",
+      "sha256": "bc2f575277d7679e83093458f4b18450c8884ca09bdbb26eac3b3d458d03434e",
+      "canonical_path": "sources/additional/ARABIC_TIMELESS/89646ac622167a6a6535d8a109388eae00fdd552/text.ts",
+      "source_id": "SRC-TIMELESS-UPSTREAM-TEXT"
+    },
+    {
+      "path": "examples/rasm/upstream/variants.ts",
+      "repository": "akadaan310/ARABIC_TIMELESS",
+      "repository_path": "lib/engine/variants.ts",
+      "ref_requested": "claude/dotless-arabic-language-0p5pcs",
+      "git_blob_sha1": "6bce80be21a2b53ea294c6d0f9ffa89eeb38beb0",
+      "url": "https://github.com/akadaan310/ARABIC_TIMELESS/blob/claude/dotless-arabic-language-0p5pcs/lib/engine/variants.ts",
+      "accessed_date": "2026-10-24",
+      "retrieval": "GitHub connector fetch_file; alphabet additionally verified with immutable fetch_blob",
+      "role": "read-only selected-file snapshot admitted to source registry; never runtime imported",
+      "sha256": "240501c4a8a8949021b2be8266c74fa90316734ef87ab423cb076f479588ba34",
+      "canonical_path": "sources/additional/ARABIC_TIMELESS/6bce80be21a2b53ea294c6d0f9ffa89eeb38beb0/variants.ts",
+      "source_id": "SRC-TIMELESS-UPSTREAM-VARIANTS"
+    }
+  ]
+}

@@ -1330,7 +1330,7 @@
     },
     {
       "path": "polyia/store.py",
-      "sha256": "4c90ad161040ec294479ee26d9463ba2b350c9d631bde975fc1cdbcc9c02c653"
+      "sha256": "717e299d30c0be5a92cfe48cc825a74cdb414ed9ec5095eb31e82f5d18c32dbe"
     },
     {
       "path": "registry/university.json",

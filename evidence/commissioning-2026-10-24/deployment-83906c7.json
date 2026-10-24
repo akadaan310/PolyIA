@@ -1,0 +1,16 @@
+{
+  "release": "83906c7",
+  "origin": "https://developed-carmen-recruitment-worm.trycloudflare.com",
+  "host": "ollama-a1",
+  "prior_release": "/opt/polyia/releases/3d019a4",
+  "installed_release": "/opt/polyia/releases/83906c7",
+  "before_pid": "506318",
+  "after_pid": "507403",
+  "before_revision": 32,
+  "after_revision": 32,
+  "head": "8aa09a94ab301ca812423306fefa88adca5dd740e543bb21ae8d6cbdc0cb6877",
+  "checkpoint": "cp-00000032",
+  "backup": "/var/lib/polyia/backups/before-83906c7.sqlite3",
+  "mission": "NOT_COMMISSIONED",
+  "scope": "Actual supervised immutable-release upgrade; history continuity only, not full commission acceptance"
+}

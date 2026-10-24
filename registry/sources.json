@@ -373,9 +373,72 @@
       "custody": "complete-tracked-tree",
       "inventory": "registry/repositories.json",
       "original_modified": false
+    },
+    {
+      "id": "SRC-TIMELESS-UPSTREAM-ALPHABET",
+      "kind": "selected_upstream_file_snapshot",
+      "repository": "akadaan310/ARABIC_TIMELESS",
+      "repository_path": "lib/engine/alphabet.ts",
+      "git_blob_sha1": "dddd9d8e15fce60ab08ce79a867a8744d02be9a5",
+      "ref_requested": "claude/dotless-arabic-language-0p5pcs",
+      "accessed_date": "2026-10-24",
+      "custody": "byte-and-git-blob-verified",
+      "authority": "source-reference-for-modern-authored-chart",
+      "claim_verification": "custody and table comparison only; no historical or lexical truth implied",
+      "original_modified": false,
+      "path": "sources/additional/ARABIC_TIMELESS/dddd9d8e15fce60ab08ce79a867a8744d02be9a5/alphabet.ts",
+      "bytes": 15183,
+      "sha256": "5a1060396116b9bdb3fa620d83b850039fd9605fc6f91c86f804030653bb7906"
+    },
+    {
+      "id": "SRC-TIMELESS-UPSTREAM-TEXT",
+      "kind": "selected_upstream_file_snapshot",
+      "repository": "akadaan310/ARABIC_TIMELESS",
+      "repository_path": "lib/engine/text.ts",
+      "git_blob_sha1": "89646ac622167a6a6535d8a109388eae00fdd552",
+      "ref_requested": "claude/dotless-arabic-language-0p5pcs",
+      "accessed_date": "2026-10-24",
+      "custody": "byte-and-git-blob-verified",
+      "authority": "source-reference-for-modern-authored-chart",
+      "claim_verification": "custody and table comparison only; no historical or lexical truth implied",
+      "original_modified": false,
+      "path": "sources/additional/ARABIC_TIMELESS/89646ac622167a6a6535d8a109388eae00fdd552/text.ts",
+      "bytes": 5952,
+      "sha256": "bc2f575277d7679e83093458f4b18450c8884ca09bdbb26eac3b3d458d03434e"
+    },
+    {
+      "id": "SRC-TIMELESS-UPSTREAM-VARIANTS",
+      "kind": "selected_upstream_file_snapshot",
+      "repository": "akadaan310/ARABIC_TIMELESS",
+      "repository_path": "lib/engine/variants.ts",
+      "git_blob_sha1": "6bce80be21a2b53ea294c6d0f9ffa89eeb38beb0",
+      "ref_requested": "claude/dotless-arabic-language-0p5pcs",
+      "accessed_date": "2026-10-24",
+      "custody": "byte-and-git-blob-verified",
+      "authority": "source-reference-for-modern-authored-chart",
+      "claim_verification": "custody and table comparison only; no historical or lexical truth implied",
+      "original_modified": false,
+      "path": "sources/additional/ARABIC_TIMELESS/6bce80be21a2b53ea294c6d0f9ffa89eeb38beb0/variants.ts",
+      "bytes": 1464,
+      "sha256": "240501c4a8a8949021b2be8266c74fa90316734ef87ab423cb076f479588ba34"
     }
   ],
   "files": [
+    {
+      "path": "sources/additional/ARABIC_TIMELESS/6bce80be21a2b53ea294c6d0f9ffa89eeb38beb0/variants.ts",
+      "bytes": 1464,
+      "sha256": "240501c4a8a8949021b2be8266c74fa90316734ef87ab423cb076f479588ba34"
+    },
+    {
+      "path": "sources/additional/ARABIC_TIMELESS/89646ac622167a6a6535d8a109388eae00fdd552/text.ts",
+      "bytes": 5952,
+      "sha256": "bc2f575277d7679e83093458f4b18450c8884ca09bdbb26eac3b3d458d03434e"
+    },
+    {
+      "path": "sources/additional/ARABIC_TIMELESS/dddd9d8e15fce60ab08ce79a867a8744d02be9a5/alphabet.ts",
+      "bytes": 15183,
+      "sha256": "5a1060396116b9bdb3fa620d83b850039fd9605fc6f91c86f804030653bb7906"
+    },
     {
       "path": "sources/current/OWNER_CLARIFICATIONS_2026-10-24.md",
       "bytes": 1789,
@@ -5553,14 +5616,15 @@
     }
   ],
   "unresolved_inputs": [],
-  "complete_scope": "Every byte of all ten locally supplied attachments, twelve recovered source files and eight complete pinned repository trees; recursively expanded archives indexed separately. Current directive and initial intuition are chat text transcriptions, not original message transport bytes; the intuition preserves its repetitions and explains paragraph/edge whitespace normalization. Two subsequent owner replies are transcribed in OWNER_CLARIFICATIONS_2026-10-24.md with their questions and interpretation distinguished.",
+  "complete_scope": "Every byte of all ten locally supplied attachments, twelve recovered source files and eight complete pinned repository trees; recursively expanded archives indexed separately. Current directive and initial intuition are chat text transcriptions, not original message transport bytes; the intuition preserves its repetitions and explains paragraph/edge whitespace normalization. Two subsequent owner replies are transcribed in OWNER_CLARIFICATIONS_2026-10-24.md with their questions and interpretation distinguished. Three individually pinned ARABIC_TIMELESS engine files supplement the retained packet; this does not assert custody of that whole repository.",
   "counts": {
     "supplied_attachments": 10,
     "recovered_files": 12,
     "owner_chat_transcriptions": 3,
     "repository_snapshots": 8,
     "repository_files": 757,
-    "source_files_including_expansions": 1035
+    "source_files_including_expansions": 1038,
+    "additional_selected_upstream_files": 3
   },
   "resolved_inputs": [
     {

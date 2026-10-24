@@ -6,6 +6,7 @@ Poly IA programs run only through the bounded registered native interpreter.
 """
 from __future__ import annotations
 
+import base64
 import hmac
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import ipaddress
@@ -26,6 +27,7 @@ MAX_BODY_BYTES = 64 * 1024
 MAX_HEADER_BYTES = 16 * 1024
 MAX_JSON_DEPTH = 32
 MAX_PAGE_SIZE = 1000
+MAX_BLOB_CHUNK_BYTES = 64 * 1024
 SOCKET_TIMEOUT = 10
 MAX_ACTIVE_REQUESTS = 32
 REQUEST_RATE = 20.0
@@ -61,6 +63,8 @@ def _http_log(request_id, method, route, status):
         category = "command_receipt"
     elif route is not None and route.startswith("/v1/checkpoints/"):
         category = "checkpoint"
+    elif route is not None and route.startswith("/v1/blobs/"):
+        category = "blob"
     record = {"event": "http_access", "request_id": request_id,
               "method": method if method in _LOG_METHODS else "OTHER",
               "route": category, "status": status}
@@ -411,11 +415,13 @@ class _Handler(BaseHTTPRequestHandler):
             "capabilities": {
                 "state": True, "event_polling": True, "sse": False, "websocket": False,
                 "command_receipts": True, "checkpoint_reads": True, "ledger_verification": True,
-                "refusal_reads": True, "llm_inference": False, "remote_binding": False,
+                "refusal_reads": True, "captured_artifact_reads": True,
+                "llm_inference": False, "remote_binding": False,
                 "commands": list(_COMMANDS), "experiments": sorted(REGISTERED_EXPERIMENTS),
             },
             "limits": {"command_body_bytes": MAX_BODY_BYTES, "header_bytes": MAX_HEADER_BYTES,
                        "json_nesting_depth": MAX_JSON_DEPTH, "event_page_size": MAX_PAGE_SIZE,
+                       "blob_chunk_bytes": MAX_BLOB_CHUNK_BYTES,
                        "active_handlers": self.server.max_active_requests,
                        "connections_per_second": self.server.request_rate,
                        "connection_burst": self.server.request_burst},
@@ -437,6 +443,8 @@ class _Handler(BaseHTTPRequestHandler):
                 if not _IDENTIFIER.fullmatch(identifier):
                     _refuse("NOT_FOUND", "Route not found", 404)
                 break
+        if path.startswith("/v1/blobs/"):
+            identifier, kind = path[len("/v1/blobs/"):], "blob"
         if path not in _PUBLIC and path not in _PRIVATE and kind is None:
             _refuse("NOT_FOUND", "Route not found", 404)
         if path not in _PUBLIC:
@@ -445,6 +453,23 @@ class _Handler(BaseHTTPRequestHandler):
         permitted = "POST" if path == "/v1/commands" else "GET"
         if method != permitted:
             _refuse("METHOD_NOT_ALLOWED", "Method is not allowed for this route", 405)
+        if kind == "blob":
+            parameters = self._query_numbers({"offset": (0, 0, _MAX_INTEGER),
+                                              "limit": (MAX_BLOB_CHUNK_BYTES, 1, MAX_BLOB_CHUNK_BYTES)})
+            if self._one_header("Range") is not None:
+                _refuse("INVALID_QUERY", "Use offset and limit query parameters instead of a Range header")
+            # get_blob validates the digest and complete captured bytes. Never
+            # resolve an artifact path against the current workspace here.
+            data = self.server.ledger.get_blob(identifier)
+            offset, limit = parameters["offset"], parameters["limit"]
+            if offset > len(data):
+                _refuse("INVALID_RANGE", "offset exceeds the captured byte object size", 416)
+            chunk = data[offset:offset + limit]
+            end = offset + len(chunk)
+            self._send(200, {"digest": identifier, "total_size": len(data), "offset": offset,
+                             "encoding": "base64", "data": base64.b64encode(chunk).decode("ascii"),
+                             "next_offset": end if end < len(data) else None})
+            return
         if path == "/v1/events":
             parameters = self._query_numbers({"after": (0, 0, _MAX_INTEGER), "limit": (100, 1, MAX_PAGE_SIZE)})
             events = self.server.ledger.events(**parameters)

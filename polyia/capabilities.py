@@ -17,7 +17,7 @@ def _refused(code, message):
 
 
 def run_registered(name, parameters):
-    """Only native, intake and astra are admitted; seed dispatch stays separate."""
+    """Only fixed capability names are admitted; seed dispatch stays separate."""
     if type(parameters) is not dict:
         return _refused('PARAMETER_SCHEMA', 'Parameters must be an object.')
     if name == 'native':
@@ -47,4 +47,7 @@ def run_registered(name, parameters):
                 'evidence_class': 'ASTRA_BOUNDED_ADAPTER_CHECK' if adapted['ok'] else 'REFUSAL',
                 'result': adapted, 'checks': checks, 'limitations': adapted['limitations'],
                 'kernel_version': VERSION, 'llm_inference': False}
-    return _refused('UNKNOWN_EXPERIMENT', 'Only native, intake and astra extensions are registered.')
+    if name == 'rasm':
+        from . import rasm
+        return rasm.run_rasm(parameters)
+    return _refused('UNKNOWN_EXPERIMENT', 'Only native, intake, astra and rasm extensions are registered.')

@@ -6,7 +6,7 @@ This implements the owner's execution request and `GOD_SEED.md`, including all B
 
 The designated target available in this session is Oracle VM `ollama-a1`, Ubuntu 22.04 arm64. Preserve its existing Ollama, Pearl, PostgreSQL and other services. The working checkout is a new isolated clone on `codex/commission-20261024`; initial upstream HEAD was `0e5f83d89c636047e521347fe4f5e54717511f8b`. The staged source transport was reconstructed by its supplied importer, which checked all pinned bytes before installation. Imported source commit: `3d019a4`.
 
-Use Python >=3.11 with the runbook's patched SQLite floor, a dedicated service account, persistent state outside source, authenticated commands and supervised loopback service. A temporary HTTPS tunnel can provide commissioning inspection; it cannot establish the stable production hostname/uptime gate. Tokens stay outside the repository and evidence. All original source bytes remain unchanged. IX is Infinity; VII/VIII are provisional research charters. Required runtime capabilities use no LLM inference.
+Use Python >=3.11 with the runbook's patched SQLite floor, a dedicated service account, persistent state outside source, authenticated commands and supervised loopback service. The current HTTPS tunnel provides real commissioning inspection. Its address can change on a tunnel restart, a continuity limitation under PIA-037; the sources do not specify a permanent hostname or minimum uptime duration. Tokens stay outside the repository and evidence. All original source bytes remain unchanged. IX is Infinity; VII/VIII are provisional research charters. Required runtime capabilities use no LLM inference.
 
 ## Execution and review order
 

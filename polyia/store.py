@@ -47,19 +47,21 @@ CONTEXT_CODE = tuple(("runtime-source", f"polyia/{name}.py", True)
 COMMANDS = frozenset({"guidance.submit", "guidance.ack", "guidance.apply",
                       "requirement.produce", "requirement.verify", "requirement.accept",
                       "checkpoint.create", "experiment.run"})
-REGISTERED_EXPERIMENTS = frozenset({"polynomial", "grammar-promotion", "qpath", "acceptance", "native", "intake", "astra"})
+REGISTERED_EXPERIMENTS = frozenset({"polynomial", "grammar-promotion", "qpath", "acceptance", "native", "intake", "astra", "rasm"})
 # Versioned historical bundle contracts: do not expand these in place. A future
 # dependency closure uses a new bundle version so prior journal records remain valid.
 _EXTENSION_DEPENDENCIES_V1 = {
     "native": ("polyia.capabilities", "polyia.native"),
     "intake": ("polyia.capabilities", "polyia.intake", "polyia.experiments", "polyia.native"),
     "astra": ("polyia.capabilities", "polyia.astra"),
+    "rasm": ("polyia.capabilities", "polyia.rasm"),
 }
 _EXTENSION_ENTRYPOINTS = {
     "polyia.capabilities": ("run_registered",),
     "polyia.native": ("compile_program", "execute_program"),
     "polyia.intake": ("run_intake",),
     "polyia.astra": ("run_adapter",),
+    "polyia.rasm": ("run_rasm",),
 }
 _EXTENSION_PINS = {}
 LEDGER_TABLES = frozenset({"genesis", "materialized", "events", "receipts", "blobs", "checkpoints", "refusals"})
@@ -283,7 +285,7 @@ def _source_constant(node, values):
 def _extension_imports(tree, module):
     """Resolve installed fixed imports, including captured transitive aliases."""
     bindings, descriptions = {}, {}
-    stdlib = {"fractions", "hashlib", "json", "re", "copy", "math", "typing", "unicodedata"}
+    stdlib = {"fractions", "hashlib", "json", "re", "copy", "math", "typing", "unicodedata", "itertools"}
     project = set(_EXTENSION_ENTRYPOINTS) | {"polyia.experiments"}
     for node in tree.body:
         if isinstance(node, ast.Import):
@@ -882,6 +884,11 @@ class Ledger:
             if requirement["verifier"] == "scientific-contracts" and not _same_json(
                     verification["code_identity"], _code_identity("polyia.experiments")):
                 _fail("STALE_VERIFICATION", "Scientific verification belongs to a different running implementation", 409)
+            if requirement["verifier"] == "commission-evidence":
+                from . import mission_verifiers
+                binding, _ = mission_verifiers.prepare(self, requirement, state)
+                if not _same_json(verification.get("mission_binding"), binding):
+                    _fail("STALE_VERIFICATION", "Mission verification belongs to a different candidate, implementation or contract", 409)
             return {"requirement_id": payload["requirement_id"], "status": "ACCEPTED", "verification_revision": verification["revision"]}
         if kind == "checkpoint.create":
             _keys(payload, (), ("note",))
@@ -1002,12 +1009,21 @@ class Ledger:
     def _validate_parameters(parameters, *, experiment=None):
         if not isinstance(parameters, dict):
             _fail("INVALID_PAYLOAD", "parameters must be a JSON object")
+        # Loss records and retained codepoints make a valid mark-rich recovery
+        # larger than the generic value census. Only this exact, versioned
+        # recovery envelope receives the bounded allowance; the 64 KiB command,
+        # depth, string and integer limits still apply before execution.
+        rasm_recovery = (experiment == "rasm" and parameters.get("operation") == "recover"
+                         and parameters.get("version") == "polyia.rasm/0.1"
+                         and parameters.get("chart") == "timeless.rsa28/0.1"
+                         and set(parameters) == {"version", "chart", "operation", "projection", "side_data"})
+        item_budget = 8192 if rasm_recovery else 2048
         count = 0
         stack = [(parameters, 0, ())]
         while stack:
             value, depth, path = stack.pop()
             count += 1
-            if depth > 12 or count > 2048:
+            if depth > 12 or count > item_budget:
                 _fail("RESOURCE_LIMIT", "Experiment parameters exceed the depth or item budget")
             if isinstance(value, dict):
                 stack.extend((v, depth + 1, path + (key,)) for key,v in value.items())
@@ -1115,9 +1131,76 @@ class Ledger:
                               report={"reason": error.code, "detail": error.message, "details": error.details})
             except Exception as error:
                 result.update(outcome="ERROR", evidence_class="NONE", report={"reason": type(error).__name__, "detail": str(error)[:1000]})
+        elif name == "commission-evidence" and requirement["id"] == "PIA-042":
+            try:
+                from . import mission_verifiers
+                binding, contract = mission_verifiers.prepare(self, requirement, state)
+                report = mission_verifiers.run_capture_checks()
+                self._validate_report(report)
+                after, repeated_contract = mission_verifiers.prepare(self, requirement, state)
+                if not _same_json(binding, after) or contract != repeated_contract:
+                    _fail("IMPLEMENTATION_CHANGED", "Mission implementation or contract changed during verification", 409)
+                artifact = binding["contract"]
+                self._conn.execute("INSERT OR IGNORE INTO blobs(digest,data,size) VALUES(?,?,?)",
+                                   (artifact["sha256"], contract, len(contract)))
+                result.update(mission_binding=binding, inputs=deepcopy(requirement["artifacts"]),
+                              code_identity=deepcopy(binding["implementation"][-1]["identity"]),
+                              outcome="PASS" if report["status"] == "PASS" else "FAIL",
+                              evidence_class=report["evidence_class"], report=report)
+            except CommandError as error:
+                result.update(outcome="ERROR" if error.code == "IMPLEMENTATION_CHANGED" else "FAIL", evidence_class="NONE",
+                              report={"reason": error.code, "detail": error.message})
+            except Exception as error:
+                result.update(outcome="ERROR", evidence_class="NONE",
+                              report={"reason": type(error).__name__, "detail": str(error)[:1000]})
         else:
             result.update(outcome="UNSUPPORTED", evidence_class="NONE", report={"reason": "No registered verifier is available for this requirement"})
         return result
+
+    def _verify_mission_receipt(self, requirement, verification, state, referenced_blobs):
+        """Validate retained version-one bindings without importing/running the adapter."""
+        binding = verification.get("mission_binding")
+        if binding is None:
+            return  # Historical unsupported attempts and failures before binding.
+        if (not isinstance(binding, dict) or type(binding.get("schema_version")) is not int
+                or binding["schema_version"] != 1 or binding.get("adapter") != "PIA-042/capture-v1"
+                or requirement["id"] != "PIA-042" or binding.get("requirement_id") != requirement["id"]
+                or verification.get("verifier") != "commission-evidence"
+                or binding.get("digest") != _hash({k: v for k, v in binding.items() if k != "digest"})
+                or not _same_json(binding.get("captured_artifacts"), requirement["artifacts"])
+                or not _same_json(binding.get("production_revision"), requirement.get("produced_revision"))
+                or binding.get("production_actor") != requirement.get("produced_by")
+                or binding.get("source_context_digest") != state["source_context"]["digest"]):
+            raise ValueError("Mission verification binding does not match its production")
+        contract_blob = binding["contract"]
+        self._check_artifacts([contract_blob])
+        referenced_blobs.add(contract_blob["sha256"])
+        contract = json.loads(self.get_blob(contract_blob["sha256"]))
+        genesis = json.loads(self._conn.execute("SELECT document_json FROM genesis WHERE singleton=1").fetchone()[0])
+        definition = genesis["definitions"][requirement["id"]]
+        if (contract.get("adapter") != binding["adapter"] or not _same_json(contract.get("schema_version"), 1)
+                or not _same_json(contract.get("definition"), definition)
+                or binding.get("definition_sha256") != _hash(definition)):
+            raise ValueError("Mission contract differs from its immutable requirement")
+        expected = {"polyia": "polyia/__init__.py", "polyia.store": "polyia/store.py",
+                    "polyia.experiments": "polyia/experiments.py", "polyia.mission_verifiers": "polyia/mission_verifiers.py"}
+        seen = set()
+        for module in binding["implementation"]:
+            identity, artifact = module["identity"], module["source"]
+            name = identity["module"]
+            if (name not in expected or name in seen or artifact["path"] != expected[name]
+                    or artifact not in requirement["artifacts"] or identity["sha256"] != artifact["sha256"]
+                    or not _HEX_DIGEST.fullmatch(identity["loaded_code_sha256"])
+                    or identity["source_binding"] != "PINNED_SOURCE_MATCHES_LOADED_CODE"):
+                raise ValueError("Mission implementation identity is inconsistent")
+            self._check_artifacts([artifact])
+            referenced_blobs.add(artifact["sha256"])
+            seen.add(name)
+        if seen != set(expected):
+            raise ValueError("Mission implementation dependency is missing")
+        self._validate_report(verification["report"])
+        if (verification["outcome"] == "PASS") != (verification["report"]["status"] == "PASS"):
+            raise ValueError("Mission outcome differs from its retained report")
 
     @staticmethod
     def _safe_artifact_name(path):
@@ -1417,6 +1500,10 @@ class Ledger:
                             raise ValueError(f"Malformed artifact identity at {sequence}")
                         self._check_artifacts([artifact])
                         referenced_blobs.add(artifact["sha256"])
+                if event["kind"] == "requirement.verify":
+                    requirement = state["requirements"][request["payload"]["requirement_id"]]
+                    verification = event["payload"]["result"]["verification"]
+                    self._verify_mission_receipt(requirement, verification, state, referenced_blobs)
                 if event["kind"] == "experiment.run":
                     run = event["payload"]["result"]["run"]
                     if (run["name"] != request["payload"]["name"] or not _same_json(run["parameters"],request["payload"]["parameters"])

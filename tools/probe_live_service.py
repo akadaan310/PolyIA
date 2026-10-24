@@ -88,11 +88,11 @@ def main():
         and after['requirements']['PIA-008']['priority'] == 9)
 
     for target, text in [
-        ('PIA-181', 'HOLD permanent public hosting: actual inspection URL is a temporary Cloudflare tunnel. Stable authorized hostname and production boundary still required.'),
-        ('PIA-015', 'HOLD exact Book of Forms identity: MISSING-BOOK-OF-FORMS remains unresolved; preserved Library of Forms is not silently substituted.')]:
+        ('PIA-037', 'Inspect the actual supplied HTTPS address and preserve checkpoint continuity. A tunnel address may change; source gates do not invent a permanent-domain or minimum-uptime condition.'),
+        ('PIA-015', 'DEC-004 resolves Book of Forms as a new construction under the owner clarification. Inspect the constructed book and its executed exercises; retained prior books remain distinct.')]:
         receipt = command('guidance.submit', {'target': target, 'text': text})
-        command('guidance.ack', {'guidance_id': receipt['command_id'], 'disposition': 'DEFERRED',
-            'reason': 'Keep the affected acceptance gate open; continue independent authorized commissioning work.'})
+        command('guidance.ack', {'guidance_id': receipt['command_id'], 'disposition': 'ACKNOWLEDGED',
+            'reason': 'Current owner clarification and source-based gate audit incorporated; text records do not claim an executable applied effect.'})
 
     code = (args.release / 'polyia/experiments.py').read_bytes()
     (args.artifacts / 'initial-kernel.py').write_bytes(code)

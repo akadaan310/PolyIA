@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit the *new bootstrap runtime*, not inert preserved upstream archives."""
+"""Audit the installed runtime and finite kernels, not inert upstream archives."""
 import ast
 import hashlib
 import json
@@ -34,6 +34,7 @@ def audit():
     if weights:errors.append('Unexpected model artifacts in runtime: '+','.join(weights))
     from polyia.experiments import run_registered
     from polyia.capabilities import run_registered as run_extension
+    from polyia.mission_verifiers import run_capture_checks
     def denied(*args,**kwargs):raise AssertionError('Offline kernel attempted a denied network/process operation')
     with patch.object(socket,'socket',denied),patch.object(subprocess,'Popen',denied),patch.object(urllib.request,'urlopen',denied):
         result=run_registered('acceptance',{})
@@ -42,17 +43,23 @@ def audit():
             ('native',{'source':'(commission (profile "polyia.native/0.1") (emit answer (add 1/3 1/6)))'}),
             ('intake',{'text':'Teach polynomial division'}),
             ('astra',{'adapter_version':'POLYIA-ASTRA/0.1','source_version':'ASTRA/0.2',
-                      'protocol':'ATOM-HANDOFF/0.1','operation':'atom.initialize'})]:
+                      'protocol':'ATOM-HANDOFF/0.1','operation':'atom.initialize'}),
+            ('rasm',{'version':'polyia.rasm/0.1','chart':'timeless.rsa28/0.1',
+                     'operation':'project','text':'كتب'})]:
             observed=run_extension(name,parameters)
             passed=(observed['status']=='PASS' and bool(observed['checks']) and
                     all(c['pass'] is True for c in observed['checks']) and observed['llm_inference'] is False)
             extensions.append({'name':name,'pass':passed,'result_sha256':hashlib.sha256(
                 json.dumps(observed,sort_keys=True,ensure_ascii=False,allow_nan=False).encode()).hexdigest()})
             if not passed:errors.append('Offline registered extension failed: '+name)
+        mission=run_capture_checks()
+        if mission['status']!='PASS' or not mission['checks'] or not all(c['pass'] is True for c in mission['checks']):
+            errors.append('Offline PIA-042 capture conformance failed')
     if result['status']!='PASS' or not result['checks'] or not all(c['pass'] for c in result['checks']):errors.append('Offline exact-kernel acceptance failed')
-    return {'ok':not errors,'scope':'stdlib runtime source audit plus intercepted seed, native, intake and Astra executions',
+    return {'ok':not errors,'scope':'stdlib runtime source audit plus intercepted seed, native, intake, Astra, rasm and PIA-042 capture executions',
             'runtime_modules':modules,'imports':sorted(set(imports)),'model_artifacts':weights,'offline_checks':result['checks'],
             'offline_extensions':extensions,
+            'offline_mission':mission,
             'errors':errors,'limitations':['Static imports plus intercepted kernel execution establish this finite bootstrap scope, not every future plugin.',
              'Archived upstream source is retained data, not imported into the running baseline.',
              'The fixed installed scientific module is compiled only to compare its code structure with loaded functions; that comparison object is never executed.',

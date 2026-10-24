@@ -1,0 +1,254 @@
+{
+  "ok": true,
+  "scope": "stdlib runtime source audit plus intercepted seed, native, intake, Astra, rasm and PIA-042 capture executions",
+  "runtime_modules": [
+    {
+      "path": "polyia/__init__.py",
+      "sha256": "16d9a5dad97e26a3c7ff0b245fc877828c88000910ceb7a912bf2d50c3399a0f"
+    },
+    {
+      "path": "polyia/__main__.py",
+      "sha256": "0952a82fc4e578988ba64e72bc45884a2a365b90130e04f681c68f8425e6b60f"
+    },
+    {
+      "path": "polyia/astra.py",
+      "sha256": "8f4bb7ed852bd747eefd2218a07a0fcb9041b41fa457cc2501c81b69314e53b9"
+    },
+    {
+      "path": "polyia/capabilities.py",
+      "sha256": "8612ee57acff5ab5692da08561738581a142e55e97a50bcf33705ee06689fd05"
+    },
+    {
+      "path": "polyia/cli.py",
+      "sha256": "fbc88b11a101f0b3678c7a19266df9a844688226b13feaf5145e3fe407c8adfe"
+    },
+    {
+      "path": "polyia/experiments.py",
+      "sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809"
+    },
+    {
+      "path": "polyia/intake.py",
+      "sha256": "d4599280705ea8387821815393b561b46371c45c585e7a51aa334bd062f8c41b"
+    },
+    {
+      "path": "polyia/mission_verifiers.py",
+      "sha256": "1ae39fd0c67a03a4e9d4c251036a9130fb5a97165220c7499d43cd694588eca0"
+    },
+    {
+      "path": "polyia/native.py",
+      "sha256": "c4b92f3026edd94db730a765c0b3afb72276298d2bafd0ab577d68e10dc06d21"
+    },
+    {
+      "path": "polyia/rasm.py",
+      "sha256": "7efb76ab70af95bc95148ba16cadcc74c54f599c370e2855d2e347772343be88"
+    },
+    {
+      "path": "polyia/server.py",
+      "sha256": "560b8750797e1bfdc4b2ed4c52ec132c0a2d377f605f486d2b58c411541f1c9a"
+    },
+    {
+      "path": "polyia/store.py",
+      "sha256": "717e299d30c0be5a92cfe48cc825a74cdb414ed9ec5095eb31e82f5d18c32dbe"
+    }
+  ],
+  "imports": [
+    "__future__",
+    "argparse",
+    "ast",
+    "base64",
+    "contextlib",
+    "copy",
+    "datetime",
+    "fractions",
+    "hashlib",
+    "hmac",
+    "http",
+    "importlib",
+    "inspect",
+    "ipaddress",
+    "itertools",
+    "json",
+    "logging",
+    "math",
+    "os",
+    "pathlib",
+    "platform",
+    "re",
+    "signal",
+    "socket",
+    "sqlite3",
+    "stat",
+    "sys",
+    "tempfile",
+    "threading",
+    "time",
+    "types",
+    "typing",
+    "unicodedata",
+    "urllib",
+    "uuid"
+  ],
+  "model_artifacts": [],
+  "offline_checks": [
+    {
+      "name": "exact polynomial division and derivative identities",
+      "pass": true
+    },
+    {
+      "name": "polynomial divisor guard",
+      "pass": true
+    },
+    {
+      "name": "domain exclusion retained",
+      "pass": true
+    },
+    {
+      "name": "grammar promotion expansion",
+      "pass": true
+    },
+    {
+      "name": "finite grammar exact denotation",
+      "pass": true
+    },
+    {
+      "name": "joint-premise constructive hyperpath",
+      "pass": true
+    },
+    {
+      "name": "missing joint premise rejected",
+      "pass": true
+    },
+    {
+      "name": "context mismatch rejected",
+      "pass": true
+    },
+    {
+      "name": "type mismatch rejected",
+      "pass": true
+    },
+    {
+      "name": "inexact float input rejected",
+      "pass": true
+    },
+    {
+      "name": "unknown alphabet symbol rejected",
+      "pass": true
+    },
+    {
+      "name": "registered implementations use no model inference",
+      "pass": true
+    }
+  ],
+  "offline_extensions": [
+    {
+      "name": "native",
+      "pass": true,
+      "result_sha256": "69d12d178cf61013ee85a40f1209e4bff4fcb39d88487194d770029aa5f282a2"
+    },
+    {
+      "name": "intake",
+      "pass": true,
+      "result_sha256": "cb23be01e325fe79516575c984c2f06f9937e189165146b0d69c2cdc9bfe8132"
+    },
+    {
+      "name": "astra",
+      "pass": true,
+      "result_sha256": "7707e4affba0b157c1522b664ca899f889abb6ec1096a3a31c4f631c02ecf513"
+    },
+    {
+      "name": "rasm",
+      "pass": true,
+      "result_sha256": "eb48a4f3a912968a10139bf49fb8c629b7b1e9c94fa21222b9a4c7373e4ed973"
+    }
+  ],
+  "offline_mission": {
+    "status": "PASS",
+    "evidence_class": "SOFTWARE_CONFORMANCE",
+    "checks": [
+      {
+        "name": "actual_bytes_path_size_and_digest",
+        "pass": true
+      },
+      {
+        "name": "production_version_actor_and_semantic_scope",
+        "pass": true
+      },
+      {
+        "name": "workspace_edit_is_drift_not_changed_evidence",
+        "pass": true
+      },
+      {
+        "name": "reopen_resolves_original_snapshot",
+        "pass": true
+      },
+      {
+        "name": "missing_workspace_preserves_captured_snapshot",
+        "pass": true
+      },
+      {
+        "name": "explicit_reproduction_creates_new_candidate",
+        "pass": true
+      },
+      {
+        "name": "historical_accepted_snapshot_stays_resolvable",
+        "pass": true
+      },
+      {
+        "name": "stale_acceptance_refused",
+        "pass": true
+      },
+      {
+        "name": "caller_pass_flag_refused",
+        "pass": true
+      },
+      {
+        "name": "empty_capture_refused",
+        "pass": true
+      },
+      {
+        "name": "missing_capture_rolls_back_partial_batch",
+        "pass": true
+      },
+      {
+        "name": "symlink_capture_refused",
+        "pass": true
+      },
+      {
+        "name": "path_traversal_refused",
+        "pass": true
+      },
+      {
+        "name": "oversized_capture_refused_before_read",
+        "pass": true
+      },
+      {
+        "name": "captured_blob_corruption_detected",
+        "pass": true
+      },
+      {
+        "name": "corrupt_snapshot_cannot_reopen",
+        "pass": true
+      }
+    ],
+    "result": {
+      "adapter": "PIA-042/capture-v1",
+      "fixture_scope": "fresh disposable SQLite ledgers",
+      "command": "polyia.mission_verifiers.run_capture_checks",
+      "python": "3.13.17",
+      "sqlite": "3.53.1"
+    },
+    "limitations": [
+      "Finite software conformance checks, not proof over every filesystem or crash schedule.",
+      "Interpreter, standard library, installed verifier and privileged host remain trusted.",
+      "No live deployment, unrelated mission or scientific content is certified."
+    ]
+  },
+  "errors": [],
+  "limitations": [
+    "Static imports plus intercepted kernel execution establish this finite bootstrap scope, not every future plugin.",
+    "Archived upstream source is retained data, not imported into the running baseline.",
+    "The fixed installed scientific module is compiled only to compare its code structure with loaded functions; that comparison object is never executed.",
+    "The HTTP service necessarily uses a loopback socket; this audit disables networking for the scientific kernels.",
+    "Full commission requires the broader no-inference process/tool/model-artifact gate as capabilities are added."
+  ]
+}
