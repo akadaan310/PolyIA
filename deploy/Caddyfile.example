@@ -1,0 +1,6 @@
+# TEMPLATE ONLY: replace the .invalid hostname with the verified actual host.
+# Set POLYIA_PUBLIC_ORIGIN=https://the-same-actual-host in the service secret env.
+# Validate with the installed Caddy version before enabling; this file is not a deployment receipt.
+polyia.example.invalid {
+    reverse_proxy 127.0.0.1:8765
+}

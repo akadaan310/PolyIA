@@ -1,0 +1,181 @@
+{
+  "executed": 5,
+  "results": [
+    {
+      "atom": "scientific-spectrum",
+      "kind": "science",
+      "checkpoint": "aa8e311d27181a181f14967ddfec96b4d98cf1962ac41dd0238685ade656ed3a",
+      "outcome": {
+        "measured": false,
+        "model": "H_balmer_3_to_2",
+        "source": "analytical-model",
+        "wavelength_nm": 656.28
+      }
+    },
+    {
+      "atom": "first-journey",
+      "kind": "journey",
+      "checkpoint": "c992a167536026e502d1e3adf71c1b016eee95907bb3e750e00a22cb519ed741",
+      "outcome": {
+        "from": "Earth",
+        "mode": "simulated-shift",
+        "physical_ephemeris": "NOT_VERIFIED",
+        "to": "Mars"
+      }
+    },
+    {
+      "atom": "layered-render",
+      "kind": "render",
+      "checkpoint": "0966d44b7d3deb69b4ee170111bf2f9b98e3ced154b6e0008a491afec3ace496",
+      "outcome": {
+        "plates": [
+          {
+            "name": "stars",
+            "z": 0.12
+          },
+          {
+            "name": "plasma",
+            "z": 0.48
+          },
+          {
+            "name": "focus",
+            "z": 0.91
+          }
+        ],
+        "renderer": "canvas2d-plate-compositor"
+      }
+    },
+    {
+      "atom": "rehearsal-focus",
+      "kind": "focus",
+      "checkpoint": "c401fa3d9f1700466c6cd3f79b34411fd5eb68651c0450336558de4182aaa905",
+      "outcome": {
+        "is_eye_tracking": false,
+        "source": "pointer-proxy",
+        "x": 0.49,
+        "y": 0.53
+      }
+    },
+    {
+      "atom": "research-credit",
+      "kind": "economy",
+      "checkpoint": "66214ae61cbd29555a542eb08bb7db80e617f5616155745076f5937db7f21fb2",
+      "outcome": {
+        "credited": 5,
+        "currency": "PLAY_CREDIT_ONLY",
+        "reason": "verified-tour-demo",
+        "redeemable": false
+      }
+    }
+  ],
+  "report": {
+    "protocol": "ATOM-HANDOFF/0.1",
+    "state_digest": "89999547a1e5e6619ecaeeff066ef1aa29d682be0cd9035b7ddb07323c24eca1",
+    "tick": 39,
+    "phase": "HOLD",
+    "active": "research-credit",
+    "checkpoint_head": "66214ae61cbd29555a542eb08bb7db80e617f5616155745076f5937db7f21fb2",
+    "recent": [
+      {
+        "atom": "scientific-spectrum",
+        "kind": "science",
+        "output": {
+          "measured": false,
+          "model": "H_balmer_3_to_2",
+          "source": "analytical-model",
+          "wavelength_nm": 656.28
+        },
+        "witness": {
+          "kind": "science",
+          "output_hash": "7e4884702e85f0fef4405eae49e5b0225ea94f8310a2c076ce520354e985a246",
+          "verdict": "PASS"
+        }
+      },
+      {
+        "atom": "first-journey",
+        "kind": "journey",
+        "output": {
+          "from": "Earth",
+          "mode": "simulated-shift",
+          "physical_ephemeris": "NOT_VERIFIED",
+          "to": "Mars"
+        },
+        "witness": {
+          "kind": "journey",
+          "output_hash": "7df4b38e6d3cd89b56f10e3aaeff1cd3cd2ead86e2ce8461ddba5f56cdefffd3",
+          "verdict": "PASS"
+        }
+      },
+      {
+        "atom": "layered-render",
+        "kind": "render",
+        "output": {
+          "plates": [
+            {
+              "name": "stars",
+              "z": 0.12
+            },
+            {
+              "name": "plasma",
+              "z": 0.48
+            },
+            {
+              "name": "focus",
+              "z": 0.91
+            }
+          ],
+          "renderer": "canvas2d-plate-compositor"
+        },
+        "witness": {
+          "kind": "render",
+          "output_hash": "e7e4d6e3f029eb7f054459b653a722ca696b15d872aba2b6eab5cc95f8e598f6",
+          "verdict": "PASS"
+        }
+      },
+      {
+        "atom": "rehearsal-focus",
+        "kind": "focus",
+        "output": {
+          "is_eye_tracking": false,
+          "source": "pointer-proxy",
+          "x": 0.49,
+          "y": 0.53
+        },
+        "witness": {
+          "kind": "focus",
+          "output_hash": "c134af31d3a01bbe17a09390f8d7d3d750c4ca620a7834cf0cced1d69ad83865",
+          "verdict": "PASS"
+        }
+      },
+      {
+        "atom": "research-credit",
+        "kind": "economy",
+        "output": {
+          "credited": 5,
+          "currency": "PLAY_CREDIT_ONLY",
+          "reason": "verified-tour-demo",
+          "redeemable": false
+        },
+        "witness": {
+          "kind": "economy",
+          "output_hash": "95a3502e2194286665fea1ea93c184a4bdb98b15eb2bd357ff7b75f97b67cc68",
+          "verdict": "PASS"
+        }
+      }
+    ],
+    "verification": {
+      "verified": true,
+      "events": 39,
+      "checkpoints": 5,
+      "head": "8c3458e091adaae50132814bcc0587c3520358b468593217e4d4aaa231cf9245",
+      "phase": "HOLD"
+    },
+    "next_action": "advance",
+    "limits": [
+      "hashes not signatures",
+      "no LLM integration",
+      "no real eye tracking",
+      "play credits have no monetary value"
+    ]
+  }
+}

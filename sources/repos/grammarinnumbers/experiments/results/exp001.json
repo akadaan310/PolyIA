@@ -1,0 +1,845 @@
+{
+ "experiment": "GIN-EXP-001",
+ "hypotheses": [
+  "GIN-H-001",
+  "GIN-H-002",
+  "GIN-H-003",
+  "GIN-H-004",
+  "GIN-H-005"
+ ],
+ "seed": null,
+ "environment": {
+  "python": "3.13.16",
+  "implementation": "CPython",
+  "machine": "x86_64",
+  "system": "Linux 6.18.44-fc-v80",
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.80GHz"
+ },
+ "data": {
+  "non_injectivity": {
+   "standard base 2": {
+    "max_length": 8,
+    "rows": [
+     {
+      "n": 0,
+      "canonical": "ε",
+      "words": 9,
+      "formula_L_minus_len_plus_1": 9
+     },
+     {
+      "n": 1,
+      "canonical": "1",
+      "words": 8,
+      "formula_L_minus_len_plus_1": 8
+     },
+     {
+      "n": 2,
+      "canonical": "10",
+      "words": 7,
+      "formula_L_minus_len_plus_1": 7
+     },
+     {
+      "n": 3,
+      "canonical": "11",
+      "words": 7,
+      "formula_L_minus_len_plus_1": 7
+     },
+     {
+      "n": 4,
+      "canonical": "100",
+      "words": 6,
+      "formula_L_minus_len_plus_1": 6
+     },
+     {
+      "n": 5,
+      "canonical": "101",
+      "words": 6,
+      "formula_L_minus_len_plus_1": 6
+     },
+     {
+      "n": 6,
+      "canonical": "110",
+      "words": 6,
+      "formula_L_minus_len_plus_1": 6
+     },
+     {
+      "n": 7,
+      "canonical": "111",
+      "words": 6,
+      "formula_L_minus_len_plus_1": 6
+     },
+     {
+      "n": 8,
+      "canonical": "1000",
+      "words": 5,
+      "formula_L_minus_len_plus_1": 5
+     },
+     {
+      "n": 9,
+      "canonical": "1001",
+      "words": 5,
+      "formula_L_minus_len_plus_1": 5
+     },
+     {
+      "n": 10,
+      "canonical": "1010",
+      "words": 5,
+      "formula_L_minus_len_plus_1": 5
+     },
+     {
+      "n": 11,
+      "canonical": "1011",
+      "words": 5,
+      "formula_L_minus_len_plus_1": 5
+     },
+     {
+      "n": 12,
+      "canonical": "1100",
+      "words": 5,
+      "formula_L_minus_len_plus_1": 5
+     },
+     {
+      "n": 13,
+      "canonical": "1101",
+      "words": 5,
+      "formula_L_minus_len_plus_1": 5
+     },
+     {
+      "n": 14,
+      "canonical": "1110",
+      "words": 5,
+      "formula_L_minus_len_plus_1": 5
+     },
+     {
+      "n": 15,
+      "canonical": "1111",
+      "words": 5,
+      "formula_L_minus_len_plus_1": 5
+     },
+     {
+      "n": 16,
+      "canonical": "10000",
+      "words": 4,
+      "formula_L_minus_len_plus_1": 4
+     },
+     {
+      "n": 17,
+      "canonical": "10001",
+      "words": 4,
+      "formula_L_minus_len_plus_1": 4
+     },
+     {
+      "n": 18,
+      "canonical": "10010",
+      "words": 4,
+      "formula_L_minus_len_plus_1": 4
+     },
+     {
+      "n": 19,
+      "canonical": "10011",
+      "words": 4,
+      "formula_L_minus_len_plus_1": 4
+     },
+     {
+      "n": 20,
+      "canonical": "10100",
+      "words": 4,
+      "formula_L_minus_len_plus_1": 4
+     },
+     {
+      "n": 21,
+      "canonical": "10101",
+      "words": 4,
+      "formula_L_minus_len_plus_1": 4
+     },
+     {
+      "n": 22,
+      "canonical": "10110",
+      "words": 4,
+      "formula_L_minus_len_plus_1": 4
+     },
+     {
+      "n": 23,
+      "canonical": "10111",
+      "words": 4,
+      "formula_L_minus_len_plus_1": 4
+     },
+     {
+      "n": 24,
+      "canonical": "11000",
+      "words": 4,
+      "formula_L_minus_len_plus_1": 4
+     },
+     {
+      "n": 25,
+      "canonical": "11001",
+      "words": 4,
+      "formula_L_minus_len_plus_1": 4
+     },
+     {
+      "n": 26,
+      "canonical": "11010",
+      "words": 4,
+      "formula_L_minus_len_plus_1": 4
+     },
+     {
+      "n": 27,
+      "canonical": "11011",
+      "words": 4,
+      "formula_L_minus_len_plus_1": 4
+     },
+     {
+      "n": 28,
+      "canonical": "11100",
+      "words": 4,
+      "formula_L_minus_len_plus_1": 4
+     },
+     {
+      "n": 29,
+      "canonical": "11101",
+      "words": 4,
+      "formula_L_minus_len_plus_1": 4
+     }
+    ],
+    "all_match_formula": true
+   },
+   "standard base 3": {
+    "max_length": 8,
+    "rows": [
+     {
+      "n": 0,
+      "canonical": "ε",
+      "words": 9,
+      "formula_L_minus_len_plus_1": 9
+     },
+     {
+      "n": 1,
+      "canonical": "1",
+      "words": 8,
+      "formula_L_minus_len_plus_1": 8
+     },
+     {
+      "n": 2,
+      "canonical": "2",
+      "words": 8,
+      "formula_L_minus_len_plus_1": 8
+     },
+     {
+      "n": 3,
+      "canonical": "10",
+      "words": 7,
+      "formula_L_minus_len_plus_1": 7
+     },
+     {
+      "n": 4,
+      "canonical": "11",
+      "words": 7,
+      "formula_L_minus_len_plus_1": 7
+     },
+     {
+      "n": 5,
+      "canonical": "12",
+      "words": 7,
+      "formula_L_minus_len_plus_1": 7
+     },
+     {
+      "n": 6,
+      "canonical": "20",
+      "words": 7,
+      "formula_L_minus_len_plus_1": 7
+     },
+     {
+      "n": 7,
+      "canonical": "21",
+      "words": 7,
+      "formula_L_minus_len_plus_1": 7
+     },
+     {
+      "n": 8,
+      "canonical": "22",
+      "words": 7,
+      "formula_L_minus_len_plus_1": 7
+     },
+     {
+      "n": 9,
+      "canonical": "100",
+      "words": 6,
+      "formula_L_minus_len_plus_1": 6
+     },
+     {
+      "n": 10,
+      "canonical": "101",
+      "words": 6,
+      "formula_L_minus_len_plus_1": 6
+     },
+     {
+      "n": 11,
+      "canonical": "102",
+      "words": 6,
+      "formula_L_minus_len_plus_1": 6
+     },
+     {
+      "n": 12,
+      "canonical": "110",
+      "words": 6,
+      "formula_L_minus_len_plus_1": 6
+     },
+     {
+      "n": 13,
+      "canonical": "111",
+      "words": 6,
+      "formula_L_minus_len_plus_1": 6
+     },
+     {
+      "n": 14,
+      "canonical": "112",
+      "words": 6,
+      "formula_L_minus_len_plus_1": 6
+     },
+     {
+      "n": 15,
+      "canonical": "120",
+      "words": 6,
+      "formula_L_minus_len_plus_1": 6
+     },
+     {
+      "n": 16,
+      "canonical": "121",
+      "words": 6,
+      "formula_L_minus_len_plus_1": 6
+     },
+     {
+      "n": 17,
+      "canonical": "122",
+      "words": 6,
+      "formula_L_minus_len_plus_1": 6
+     },
+     {
+      "n": 18,
+      "canonical": "200",
+      "words": 6,
+      "formula_L_minus_len_plus_1": 6
+     },
+     {
+      "n": 19,
+      "canonical": "201",
+      "words": 6,
+      "formula_L_minus_len_plus_1": 6
+     },
+     {
+      "n": 20,
+      "canonical": "202",
+      "words": 6,
+      "formula_L_minus_len_plus_1": 6
+     },
+     {
+      "n": 21,
+      "canonical": "210",
+      "words": 6,
+      "formula_L_minus_len_plus_1": 6
+     },
+     {
+      "n": 22,
+      "canonical": "211",
+      "words": 6,
+      "formula_L_minus_len_plus_1": 6
+     },
+     {
+      "n": 23,
+      "canonical": "212",
+      "words": 6,
+      "formula_L_minus_len_plus_1": 6
+     },
+     {
+      "n": 24,
+      "canonical": "220",
+      "words": 6,
+      "formula_L_minus_len_plus_1": 6
+     },
+     {
+      "n": 25,
+      "canonical": "221",
+      "words": 6,
+      "formula_L_minus_len_plus_1": 6
+     },
+     {
+      "n": 26,
+      "canonical": "222",
+      "words": 6,
+      "formula_L_minus_len_plus_1": 6
+     },
+     {
+      "n": 27,
+      "canonical": "1000",
+      "words": 5,
+      "formula_L_minus_len_plus_1": 5
+     },
+     {
+      "n": 28,
+      "canonical": "1001",
+      "words": 5,
+      "formula_L_minus_len_plus_1": 5
+     },
+     {
+      "n": 29,
+      "canonical": "1002",
+      "words": 5,
+      "formula_L_minus_len_plus_1": 5
+     }
+    ],
+    "all_match_formula": true
+   },
+   "standard base 10": {
+    "max_length": 4,
+    "rows": [
+     {
+      "n": 0,
+      "canonical": "ε",
+      "words": 5,
+      "formula_L_minus_len_plus_1": 5
+     },
+     {
+      "n": 1,
+      "canonical": "1",
+      "words": 4,
+      "formula_L_minus_len_plus_1": 4
+     },
+     {
+      "n": 2,
+      "canonical": "2",
+      "words": 4,
+      "formula_L_minus_len_plus_1": 4
+     },
+     {
+      "n": 3,
+      "canonical": "3",
+      "words": 4,
+      "formula_L_minus_len_plus_1": 4
+     },
+     {
+      "n": 4,
+      "canonical": "4",
+      "words": 4,
+      "formula_L_minus_len_plus_1": 4
+     },
+     {
+      "n": 5,
+      "canonical": "5",
+      "words": 4,
+      "formula_L_minus_len_plus_1": 4
+     },
+     {
+      "n": 6,
+      "canonical": "6",
+      "words": 4,
+      "formula_L_minus_len_plus_1": 4
+     },
+     {
+      "n": 7,
+      "canonical": "7",
+      "words": 4,
+      "formula_L_minus_len_plus_1": 4
+     },
+     {
+      "n": 8,
+      "canonical": "8",
+      "words": 4,
+      "formula_L_minus_len_plus_1": 4
+     },
+     {
+      "n": 9,
+      "canonical": "9",
+      "words": 4,
+      "formula_L_minus_len_plus_1": 4
+     },
+     {
+      "n": 10,
+      "canonical": "10",
+      "words": 3,
+      "formula_L_minus_len_plus_1": 3
+     },
+     {
+      "n": 11,
+      "canonical": "11",
+      "words": 3,
+      "formula_L_minus_len_plus_1": 3
+     },
+     {
+      "n": 12,
+      "canonical": "12",
+      "words": 3,
+      "formula_L_minus_len_plus_1": 3
+     },
+     {
+      "n": 13,
+      "canonical": "13",
+      "words": 3,
+      "formula_L_minus_len_plus_1": 3
+     },
+     {
+      "n": 14,
+      "canonical": "14",
+      "words": 3,
+      "formula_L_minus_len_plus_1": 3
+     },
+     {
+      "n": 15,
+      "canonical": "15",
+      "words": 3,
+      "formula_L_minus_len_plus_1": 3
+     },
+     {
+      "n": 16,
+      "canonical": "16",
+      "words": 3,
+      "formula_L_minus_len_plus_1": 3
+     },
+     {
+      "n": 17,
+      "canonical": "17",
+      "words": 3,
+      "formula_L_minus_len_plus_1": 3
+     },
+     {
+      "n": 18,
+      "canonical": "18",
+      "words": 3,
+      "formula_L_minus_len_plus_1": 3
+     },
+     {
+      "n": 19,
+      "canonical": "19",
+      "words": 3,
+      "formula_L_minus_len_plus_1": 3
+     },
+     {
+      "n": 20,
+      "canonical": "20",
+      "words": 3,
+      "formula_L_minus_len_plus_1": 3
+     },
+     {
+      "n": 21,
+      "canonical": "21",
+      "words": 3,
+      "formula_L_minus_len_plus_1": 3
+     },
+     {
+      "n": 22,
+      "canonical": "22",
+      "words": 3,
+      "formula_L_minus_len_plus_1": 3
+     },
+     {
+      "n": 23,
+      "canonical": "23",
+      "words": 3,
+      "formula_L_minus_len_plus_1": 3
+     },
+     {
+      "n": 24,
+      "canonical": "24",
+      "words": 3,
+      "formula_L_minus_len_plus_1": 3
+     },
+     {
+      "n": 25,
+      "canonical": "25",
+      "words": 3,
+      "formula_L_minus_len_plus_1": 3
+     },
+     {
+      "n": 26,
+      "canonical": "26",
+      "words": 3,
+      "formula_L_minus_len_plus_1": 3
+     },
+     {
+      "n": 27,
+      "canonical": "27",
+      "words": 3,
+      "formula_L_minus_len_plus_1": 3
+     },
+     {
+      "n": 28,
+      "canonical": "28",
+      "words": 3,
+      "formula_L_minus_len_plus_1": 3
+     },
+     {
+      "n": 29,
+      "canonical": "29",
+      "words": 3,
+      "formula_L_minus_len_plus_1": 3
+     }
+    ],
+    "all_match_formula": true
+   }
+  },
+  "bijective": {
+   "bijective base 1": {
+    "max_length": 20,
+    "words": 21,
+    "distinct_values": 21,
+    "collisions": 0,
+    "values_form_initial_segment": true,
+    "max_value": 20
+   },
+   "bijective base 2": {
+    "max_length": 14,
+    "words": 32767,
+    "distinct_values": 32767,
+    "collisions": 0,
+    "values_form_initial_segment": true,
+    "max_value": 32766
+   },
+   "bijective base 3": {
+    "max_length": 9,
+    "words": 29524,
+    "distinct_values": 29524,
+    "collisions": 0,
+    "values_form_initial_segment": true,
+    "max_value": 29523
+   },
+   "bijective base 10": {
+    "max_length": 5,
+    "words": 111111,
+    "distinct_values": 111111,
+    "collisions": 0,
+    "values_form_initial_segment": true,
+    "max_value": 111110
+   }
+  },
+  "heap_conjugacy": {
+   "checked_n_below": 200000,
+   "mismatches": 0,
+   "examples": {
+    "0": {
+     "bijective2": "ε",
+     "heap_of_n_plus_1": ""
+    },
+    "1": {
+     "bijective2": "1",
+     "heap_of_n_plus_1": "L"
+    },
+    "2": {
+     "bijective2": "2",
+     "heap_of_n_plus_1": "R"
+    },
+    "3": {
+     "bijective2": "11",
+     "heap_of_n_plus_1": "LL"
+    },
+    "4": {
+     "bijective2": "12",
+     "heap_of_n_plus_1": "LR"
+    },
+    "5": {
+     "bijective2": "21",
+     "heap_of_n_plus_1": "RL"
+    },
+    "6": {
+     "bijective2": "22",
+     "heap_of_n_plus_1": "RR"
+    },
+    "7": {
+     "bijective2": "111",
+     "heap_of_n_plus_1": "LLL"
+    },
+    "8": {
+     "bijective2": "112",
+     "heap_of_n_plus_1": "LLR"
+    }
+   }
+  },
+  "twos_complement": {
+   "widths": [
+    4,
+    8,
+    16
+   ],
+   "mismatches": 0,
+   "expansion_of_minus_1_status": "periodic",
+   "expansion_of_minus_5": "1011 (then repeats)"
+  },
+  "unary_vs_binary_cost": [
+   {
+    "bits": 1,
+    "n": 1,
+    "peano_add_rules": 2,
+    "binary_add_bit_ops": 2,
+    "peano_mul_rules": 4,
+    "binary_school_mul_bit_ops": 1
+   },
+   {
+    "bits": 2,
+    "n": 3,
+    "peano_add_rules": 4,
+    "binary_add_bit_ops": 3,
+    "peano_mul_rules": 16,
+    "binary_school_mul_bit_ops": 4
+   },
+   {
+    "bits": 3,
+    "n": 7,
+    "peano_add_rules": 8,
+    "binary_add_bit_ops": 4,
+    "peano_mul_rules": 64,
+    "binary_school_mul_bit_ops": 9
+   },
+   {
+    "bits": 4,
+    "n": 15,
+    "peano_add_rules": 16,
+    "binary_add_bit_ops": 5,
+    "peano_mul_rules": 256,
+    "binary_school_mul_bit_ops": 16
+   },
+   {
+    "bits": 5,
+    "n": 31,
+    "peano_add_rules": 32,
+    "binary_add_bit_ops": 6,
+    "peano_mul_rules": 1024,
+    "binary_school_mul_bit_ops": 25
+   },
+   {
+    "bits": 6,
+    "n": 63,
+    "peano_add_rules": 64,
+    "binary_add_bit_ops": 7,
+    "peano_mul_rules": 4096,
+    "binary_school_mul_bit_ops": 36
+   },
+   {
+    "bits": 7,
+    "n": 127,
+    "peano_add_rules": 128,
+    "binary_add_bit_ops": 8,
+    "peano_mul_rules": 16384,
+    "binary_school_mul_bit_ops": 49
+   },
+   {
+    "bits": 8,
+    "n": 255,
+    "peano_add_rules": 256,
+    "binary_add_bit_ops": 9,
+    "peano_mul_rules": 65536,
+    "binary_school_mul_bit_ops": 64
+   },
+   {
+    "bits": 9,
+    "n": 511,
+    "peano_add_rules": 512,
+    "binary_add_bit_ops": 10,
+    "peano_mul_rules": 262144,
+    "binary_school_mul_bit_ops": 81
+   },
+   {
+    "bits": 10,
+    "n": 1023,
+    "peano_add_rules": 1024,
+    "binary_add_bit_ops": 11,
+    "peano_mul_rules": 1048576,
+    "binary_school_mul_bit_ops": 100
+   },
+   {
+    "bits": 11,
+    "n": 2047,
+    "peano_add_rules": 2048,
+    "binary_add_bit_ops": 12,
+    "peano_mul_rules": null,
+    "binary_school_mul_bit_ops": 121
+   },
+   {
+    "bits": 12,
+    "n": 4095,
+    "peano_add_rules": 4096,
+    "binary_add_bit_ops": 13,
+    "peano_mul_rules": null,
+    "binary_school_mul_bit_ops": 144
+   },
+   {
+    "bits": 13,
+    "n": 8191,
+    "peano_add_rules": 8192,
+    "binary_add_bit_ops": 14,
+    "peano_mul_rules": null,
+    "binary_school_mul_bit_ops": 169
+   },
+   {
+    "bits": 14,
+    "n": 16383,
+    "peano_add_rules": 16384,
+    "binary_add_bit_ops": 15,
+    "peano_mul_rules": null,
+    "binary_school_mul_bit_ops": 196
+   },
+   {
+    "bits": 15,
+    "n": 32767,
+    "peano_add_rules": 32768,
+    "binary_add_bit_ops": 16,
+    "peano_mul_rules": null,
+    "binary_school_mul_bit_ops": 225
+   },
+   {
+    "bits": 16,
+    "n": 65535,
+    "peano_add_rules": 65536,
+    "binary_add_bit_ops": 17,
+    "peano_mul_rules": null,
+    "binary_school_mul_bit_ops": 256
+   },
+   {
+    "bits": 17,
+    "n": 131071,
+    "peano_add_rules": 131072,
+    "binary_add_bit_ops": 18,
+    "peano_mul_rules": null,
+    "binary_school_mul_bit_ops": 289
+   },
+   {
+    "bits": 18,
+    "n": 262143,
+    "peano_add_rules": 262144,
+    "binary_add_bit_ops": 19,
+    "peano_mul_rules": null,
+    "binary_school_mul_bit_ops": 324
+   },
+   {
+    "bits": 19,
+    "n": 524287,
+    "peano_add_rules": 524288,
+    "binary_add_bit_ops": 20,
+    "peano_mul_rules": null,
+    "binary_school_mul_bit_ops": 361
+   },
+   {
+    "bits": 20,
+    "n": 1048575,
+    "peano_add_rules": 1048576,
+    "binary_add_bit_ops": 21,
+    "peano_mul_rules": null,
+    "binary_school_mul_bit_ops": 400
+   }
+  ],
+  "address_lengths": [
+   {
+    "base": 2,
+    "max_len_standard_1999": 11,
+    "max_len_bijective_1999": 10
+   },
+   {
+    "base": 3,
+    "max_len_standard_1999": 7,
+    "max_len_bijective_1999": 7
+   },
+   {
+    "base": 10,
+    "max_len_standard_1999": 4,
+    "max_len_bijective_1999": 4
+   }
+  ]
+ }
+}

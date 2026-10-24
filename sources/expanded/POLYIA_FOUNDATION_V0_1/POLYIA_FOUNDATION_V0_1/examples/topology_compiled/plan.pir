@@ -1,0 +1,10 @@
+(polyia-plan "8e81a9f8eeb57b4df9357edc0a1644d765f206e814210a3122e679cbdfec0281"
+  (invoke "text.surface@0.1" (TaskText) (Surface))
+  (invoke "lang.identity@0.1" (Surface) (LanguageScope))
+  (invoke "pronunciation.fixture@0.1" (LanguageScope) (Pronunciations))
+  (invoke "ipa.feature.fixture@0.1" (Pronunciations) (PhoneFeatures))
+  (invoke "prefix.match.fixture@0.1" (PhoneFeatures) (PhoneticMatches))
+  (invoke "morphology.fixture@0.1" (LanguageScope) (MorphCandidates))
+  (invoke "evidence.graph.fixture@0.1" (PhoneticMatches MorphCandidates) (Wordset))
+  (invoke "automaton.package@0.1" (Wordset) (StateArtifact))
+)

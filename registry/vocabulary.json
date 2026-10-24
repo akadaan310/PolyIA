@@ -1,0 +1,1532 @@
+{
+  "schema_version": "polyia-vocabulary/1.0",
+  "status": "COMMISSION_SPECIFICATION",
+  "edition_date": "2026-10-24",
+  "definition_policy": "Source definitions are namespaced. New package constructions do not silently replace historical senses. Machine-readable entries prescribe contracts; they do not certify implementation.",
+  "source_key_index": "docs/SCIENTIFIC_FOUNDATIONS.md#sources-and-local-locator-convention",
+  "terms": [
+    {
+      "id": "VOC-001",
+      "namespace": "polyia",
+      "term": "substrate",
+      "qualified_name": "polyia.substrate",
+      "definition": "A specified space of configurations and admitted transformations with observation and validation interfaces.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-SEM",
+        "K-STATE"
+      ],
+      "source_keys": [
+        "S-RG"
+      ],
+      "acceptance_obligation": "Name states, operations, invariants and at least one explicit refusal."
+    },
+    {
+      "id": "VOC-002",
+      "namespace": "polyia",
+      "term": "substration",
+      "qualified_name": "polyia.substration",
+      "definition": "The disciplined construction, comparison and testing of candidate substrates.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-GEN",
+        "K-EVD"
+      ],
+      "source_keys": [
+        "S-RG"
+      ],
+      "acceptance_obligation": "Record the candidate, baseline, test and outcome."
+    },
+    {
+      "id": "VOC-003",
+      "namespace": "polyia",
+      "term": "subject",
+      "qualified_name": "polyia.subject",
+      "definition": "A versioned package of definitions, substrates, laws, methods, evidence, failures and cross-subject relations.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-COVER",
+        "K-SRC"
+      ],
+      "source_keys": [
+        "S-RG"
+      ],
+      "acceptance_obligation": "Resolve every included definition and source and report unavailable capabilities."
+    },
+    {
+      "id": "VOC-004",
+      "namespace": "formal",
+      "term": "alphabet",
+      "qualified_name": "formal.alphabet",
+      "definition": "A declared set of distinguishable units used by formation rules, optionally typed and structured.",
+      "claim_kind": "ESTABLISHED_CONCEPT",
+      "continuity_keys": [
+        "K-SEM"
+      ],
+      "source_keys": [
+        "S-RG",
+        "S-UCG"
+      ],
+      "acceptance_obligation": "Give identity, membership and admissible use of each registered unit."
+    },
+    {
+      "id": "VOC-005",
+      "namespace": "formal",
+      "term": "token",
+      "qualified_name": "formal.token",
+      "definition": "A lexical unit produced by a declared scanner from source text and source positions.",
+      "claim_kind": "ESTABLISHED_CONCEPT",
+      "continuity_keys": [
+        "K-SEM",
+        "K-SRC"
+      ],
+      "source_keys": [
+        "S-TRE"
+      ],
+      "acceptance_obligation": "Preserve offsets and reject or retain unrecognized text explicitly."
+    },
+    {
+      "id": "VOC-006",
+      "namespace": "formal",
+      "term": "grammar",
+      "qualified_name": "formal.grammar",
+      "definition": "A versioned specification of symbols and formation rules, with declared entry sorts and interpretation where supplied.",
+      "claim_kind": "ESTABLISHED_CONCEPT",
+      "continuity_keys": [
+        "K-SEM",
+        "K-GEN"
+      ],
+      "source_keys": [
+        "S-UCG",
+        "S-TRE"
+      ],
+      "acceptance_obligation": "Distinguish membership, typing and evaluation."
+    },
+    {
+      "id": "VOC-007",
+      "namespace": "formal",
+      "term": "expression",
+      "qualified_name": "formal.expression",
+      "definition": "A well-formed term in a declared grammar; it may denote a value, proposition or operation.",
+      "claim_kind": "ESTABLISHED_CONCEPT",
+      "continuity_keys": [
+        "K-SEM"
+      ],
+      "source_keys": [
+        "S-UCG"
+      ],
+      "acceptance_obligation": "Return its typed syntax and assumptions before evaluation."
+    },
+    {
+      "id": "VOC-008",
+      "namespace": "formal",
+      "term": "program",
+      "qualified_name": "formal.program",
+      "definition": "An expression or structured specification equipped with execution semantics and declared effects.",
+      "claim_kind": "ESTABLISHED_CONCEPT",
+      "continuity_keys": [
+        "K-SEM",
+        "K-STATE"
+      ],
+      "source_keys": [
+        "S-RG",
+        "S-TRE"
+      ],
+      "acceptance_obligation": "Bind execution model, permitted effects and refusal behavior."
+    },
+    {
+      "id": "VOC-009",
+      "namespace": "formal",
+      "term": "type",
+      "qualified_name": "formal.type",
+      "definition": "A declared classification and constraint on values or operations used in admissibility judgments.",
+      "claim_kind": "ESTABLISHED_CONCEPT",
+      "continuity_keys": [
+        "K-SEM",
+        "K-PATH"
+      ],
+      "source_keys": [
+        "S-RG",
+        "S-INF"
+      ],
+      "acceptance_obligation": "Reject a mismatched port rather than coerce silently."
+    },
+    {
+      "id": "VOC-010",
+      "namespace": "formal",
+      "term": "denotation",
+      "qualified_name": "formal.denotation",
+      "definition": "The interpretation assigned to a well-formed expression relative to a declared semantic domain and context.",
+      "claim_kind": "ESTABLISHED_CONCEPT",
+      "continuity_keys": [
+        "K-SEM"
+      ],
+      "source_keys": [
+        "S-RG",
+        "S-UCG"
+      ],
+      "acceptance_obligation": "Identify the semantic domain and partiality."
+    },
+    {
+      "id": "VOC-011",
+      "namespace": "polyia",
+      "term": "context",
+      "qualified_name": "polyia.context",
+      "definition": "The pinned assumptions, versions, environment and authority relevant to interpreting or executing an object.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-SEM",
+        "K-REPLAY"
+      ],
+      "source_keys": [
+        "S-RG"
+      ],
+      "acceptance_obligation": "Equal relevant inputs reproduce a deterministic resolution."
+    },
+    {
+      "id": "VOC-012",
+      "namespace": "polyia",
+      "term": "source_identity",
+      "qualified_name": "polyia.source_identity",
+      "definition": "The identity of an exact source object and its custody record, distinct from its interpretation or execution.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-SRC"
+      ],
+      "source_keys": [
+        "S-RG",
+        "S-INF"
+      ],
+      "acceptance_obligation": "Rehash original bytes without normalization."
+    },
+    {
+      "id": "VOC-013",
+      "namespace": "polyia",
+      "term": "execution_identity",
+      "qualified_name": "polyia.execution_identity",
+      "definition": "Identity of a resolved operation including code, inputs, context, authority and nondeterminism policy.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-STATE",
+        "K-REPLAY"
+      ],
+      "source_keys": [
+        "S-RG"
+      ],
+      "acceptance_obligation": "Distinguish changed dependencies even when output bytes coincide."
+    },
+    {
+      "id": "VOC-014",
+      "namespace": "polyia",
+      "term": "form",
+      "qualified_name": "polyia.form",
+      "definition": "A typed representation with source, context and interpretation metadata; it is not automatically its referent.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-SEM",
+        "K-SRC"
+      ],
+      "source_keys": [
+        "S-INF"
+      ],
+      "acceptance_obligation": "Separate representation identity from referent claims."
+    },
+    {
+      "id": "VOC-015",
+      "namespace": "polyia",
+      "term": "form_card",
+      "qualified_name": "polyia.form_card",
+      "definition": "A source-linked corpus record for a term or form, its senses, analyses and claim statuses.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-SRC",
+        "K-LANG"
+      ],
+      "source_keys": [
+        "S-CORPUS"
+      ],
+      "acceptance_obligation": "Resolve every source span and retain alternative analyses."
+    },
+    {
+      "id": "VOC-016",
+      "namespace": "polyia",
+      "term": "grammar_letter",
+      "qualified_name": "polyia.grammar_letter",
+      "definition": "A higher-level symbol referring to a pinned grammar or certified construction and its typed boundary.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-GEN",
+        "K-SEM"
+      ],
+      "source_keys": [
+        "S-PL",
+        "S-INF"
+      ],
+      "acceptance_obligation": "Resolve the original grammar and expansion contract."
+    },
+    {
+      "id": "VOC-017",
+      "namespace": "polyia",
+      "term": "promotion",
+      "qualified_name": "polyia.promotion",
+      "definition": "Versioned admission of a certified construction as a reusable higher-level letter.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-GEN",
+        "K-EVD"
+      ],
+      "source_keys": [
+        "S-PL"
+      ],
+      "acceptance_obligation": "Check both exact expansion and separately stated semantic guarantees."
+    },
+    {
+      "id": "VOC-018",
+      "namespace": "polyia",
+      "term": "expansion",
+      "qualified_name": "polyia.expansion",
+      "definition": "A declared map from a promoted letter to its lower-level representation.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-GEN",
+        "K-REPLAY"
+      ],
+      "source_keys": [
+        "S-PL"
+      ],
+      "acceptance_obligation": "Recover the stated representation exactly or declare loss."
+    },
+    {
+      "id": "VOC-019",
+      "namespace": "polyia",
+      "term": "semantic_preservation",
+      "qualified_name": "polyia.semantic_preservation",
+      "definition": "Equality of declared observables between two interpretations under explicit assumptions.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-SEM",
+        "K-EVD"
+      ],
+      "source_keys": [
+        "S-RG",
+        "S-PL"
+      ],
+      "acceptance_obligation": "State scope and evidence; finite examples do not establish a universal law."
+    },
+    {
+      "id": "VOC-020",
+      "namespace": "formal",
+      "term": "quotient",
+      "qualified_name": "formal.quotient",
+      "definition": "A construction identifying objects under a specified equivalence relation.",
+      "claim_kind": "ESTABLISHED_CONCEPT",
+      "continuity_keys": [
+        "K-SEM"
+      ],
+      "source_keys": [
+        "S-INF"
+      ],
+      "acceptance_obligation": "State the equivalence and information no longer recoverable."
+    },
+    {
+      "id": "VOC-021",
+      "namespace": "formal",
+      "term": "fiber",
+      "qualified_name": "formal.fiber",
+      "definition": "For a map f and output y, the set of inputs x satisfying f(x)=y.",
+      "claim_kind": "ESTABLISHED_CONCEPT",
+      "continuity_keys": [
+        "K-SEM"
+      ],
+      "source_keys": [
+        "S-INF"
+      ],
+      "acceptance_obligation": "Return a set-valued inverse when uniqueness is absent."
+    },
+    {
+      "id": "VOC-022",
+      "namespace": "formal",
+      "term": "kernel_pair",
+      "qualified_name": "formal.kernel_pair",
+      "definition": "The equivalence x~x' defined by f(x)=f(x') for a specified map f.",
+      "claim_kind": "ESTABLISHED_CONCEPT",
+      "continuity_keys": [
+        "K-SEM"
+      ],
+      "source_keys": [
+        "S-INF"
+      ],
+      "acceptance_obligation": "Do not identify it with a linear nullspace without linear structure."
+    },
+    {
+      "id": "VOC-023",
+      "namespace": "linear_algebra",
+      "term": "kernel",
+      "qualified_name": "linear_algebra.kernel",
+      "definition": "The nullspace of a linear map between declared vector spaces.",
+      "claim_kind": "ESTABLISHED_CONCEPT",
+      "continuity_keys": [
+        "K-SEM"
+      ],
+      "source_keys": [
+        "S-INF"
+      ],
+      "acceptance_obligation": "State scalar field, matrix shape and equation Av=0."
+    },
+    {
+      "id": "VOC-024",
+      "namespace": "formal",
+      "term": "image",
+      "qualified_name": "formal.image",
+      "definition": "The set of outputs attained by a specified map on its admitted domain.",
+      "claim_kind": "ESTABLISHED_CONCEPT",
+      "continuity_keys": [
+        "K-SEM"
+      ],
+      "source_keys": [
+        "S-INF"
+      ],
+      "acceptance_obligation": "Distinguish algebraic image from rendered image."
+    },
+    {
+      "id": "VOC-025",
+      "namespace": "formal",
+      "term": "hyperedge",
+      "qualified_name": "formal.hyperedge",
+      "definition": "An incidence object connecting explicitly named or ordered collections of ports, allowing arbitrary finite arity.",
+      "claim_kind": "ESTABLISHED_CONCEPT",
+      "continuity_keys": [
+        "K-PATH"
+      ],
+      "source_keys": [
+        "S-INF"
+      ],
+      "acceptance_obligation": "A multi-input rule cannot fire with one required input missing."
+    },
+    {
+      "id": "VOC-026",
+      "namespace": "polyia",
+      "term": "entangled_form_complex",
+      "qualified_name": "polyia.entangled_form_complex",
+      "definition": "The inherited typed structure (V,H,P,tau,Omega,C,W,mu) for forms and evidence-bearing relations.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-PATH",
+        "K-SEM"
+      ],
+      "source_keys": [
+        "S-INF"
+      ],
+      "acceptance_obligation": "Validate incidence, context and evidence per strand."
+    },
+    {
+      "id": "VOC-027",
+      "namespace": "polyia",
+      "term": "strand",
+      "qualified_name": "polyia.strand",
+      "definition": "One independently typed and graded claim about an entanglement's incidence.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-EVD",
+        "K-PATH"
+      ],
+      "source_keys": [
+        "S-INF"
+      ],
+      "acceptance_obligation": "Retain competing or rejected strands without conflation."
+    },
+    {
+      "id": "VOC-028",
+      "namespace": "polyia",
+      "term": "q_string",
+      "qualified_name": "polyia.q_string",
+      "definition": "A quantifiable typed grammar-bearing relational incidence with content identity, plural metadata strands and compiled registered operations under a named versioned profile.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-PATH",
+        "K-SRC"
+      ],
+      "source_keys": [
+        "S-Q"
+      ],
+      "acceptance_obligation": "Record profile version; do not infer physical quantum computation."
+    },
+    {
+      "id": "VOC-029",
+      "namespace": "polyia",
+      "term": "q_step",
+      "qualified_name": "polyia.q_step",
+      "definition": "One operation application with typed role bindings, context, outputs, evidence and loss/effect metadata.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-PATH",
+        "K-EVD"
+      ],
+      "source_keys": [
+        "S-INF"
+      ],
+      "acceptance_obligation": "Check all roles and compatible contexts before application."
+    },
+    {
+      "id": "VOC-030",
+      "namespace": "polyia",
+      "term": "q_path",
+      "qualified_name": "polyia.q_path",
+      "definition": "A typed evidence-bearing derivation; a sequence for unary composition and a tree or DAG for joint-input composition.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-PATH"
+      ],
+      "source_keys": [
+        "S-INF"
+      ],
+      "acceptance_obligation": "Retain shared premises, ordering and joint enablement."
+    },
+    {
+      "id": "VOC-031",
+      "namespace": "polyia",
+      "term": "g_ship",
+      "qualified_name": "polyia.g_ship",
+      "definition": "The historical directed labeled multigraph H=(V,E,Sigma,tau), whose composable relational edge paths form words in the declared alphabet.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-PATH",
+        "K-SRC"
+      ],
+      "source_keys": [
+        "S-Q"
+      ],
+      "acceptance_obligation": "Preserve source-specific meaning and refuse an untyped executable claim."
+    },
+    {
+      "id": "VOC-032",
+      "namespace": "polyia",
+      "term": "grammar_ship",
+      "qualified_name": "polyia.grammar_ship",
+      "definition": "A typed bridge or composition between grammar packages with preserved contracts, evidence and loss declarations.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-PATH",
+        "K-GEN"
+      ],
+      "source_keys": [
+        "S-TRE",
+        "S-Q"
+      ],
+      "acceptance_obligation": "Supply source/target schemas and a positive and negative composition test."
+    },
+    {
+      "id": "VOC-033",
+      "namespace": "polyia",
+      "term": "bridge",
+      "qualified_name": "polyia.bridge",
+      "definition": "A partial typed transformation or relation between representations with an explicit evidence and loss contract.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-PATH",
+        "K-SEM"
+      ],
+      "source_keys": [
+        "S-TRE",
+        "S-INF"
+      ],
+      "acceptance_obligation": "Matching field names alone cannot establish semantic equivalence."
+    },
+    {
+      "id": "VOC-034",
+      "namespace": "formal",
+      "term": "closure",
+      "qualified_name": "formal.closure",
+      "definition": "The least fixed point of a declared consequence operator when the needed monotonicity and domain assumptions hold.",
+      "claim_kind": "ESTABLISHED_CONCEPT",
+      "continuity_keys": [
+        "K-PATH",
+        "K-COST"
+      ],
+      "source_keys": [
+        "S-INF"
+      ],
+      "acceptance_obligation": "Distinguish fixed finite registry closure from unbounded generation."
+    },
+    {
+      "id": "VOC-035",
+      "namespace": "polyia",
+      "term": "reachable",
+      "qualified_name": "polyia.reachable",
+      "definition": "Derivable from specified starting forms by admitted operations in a fixed context and search scope.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-PATH",
+        "K-FRONTIER"
+      ],
+      "source_keys": [
+        "S-INF"
+      ],
+      "acceptance_obligation": "Return witness or bounded-search status; no path is not automatically impossibility."
+    },
+    {
+      "id": "VOC-036",
+      "namespace": "polyia",
+      "term": "reification",
+      "qualified_name": "polyia.reification",
+      "definition": "Representing an operation or relation as a form at a declared reflection level.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-GEN",
+        "K-SEM"
+      ],
+      "source_keys": [
+        "S-INF"
+      ],
+      "acceptance_obligation": "Track levels and reject circular self-certification."
+    },
+    {
+      "id": "VOC-037",
+      "namespace": "plica",
+      "term": "explicate",
+      "qualified_name": "plica.explicate",
+      "definition": "Replace letters by their declared lower-level blocks or paths.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-GEN"
+      ],
+      "source_keys": [
+        "S-PL"
+      ],
+      "acceptance_obligation": "Preserve expansion identity and declared boundaries."
+    },
+    {
+      "id": "VOC-038",
+      "namespace": "plica",
+      "term": "implicate",
+      "qualified_name": "plica.implicate",
+      "definition": "Recognize a declared lower-level fold and return the corresponding higher-level letter, refusing invalid folds.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-GEN"
+      ],
+      "source_keys": [
+        "S-PL"
+      ],
+      "acceptance_obligation": "Reject a word outside the fold's image."
+    },
+    {
+      "id": "VOC-039",
+      "namespace": "plica",
+      "term": "complicate",
+      "qualified_name": "plica.complicate",
+      "definition": "Construct a product alphabet whose letters carry the component coordinates.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-GEN",
+        "K-SEM"
+      ],
+      "source_keys": [
+        "S-PL"
+      ],
+      "acceptance_obligation": "Retain both coordinate projections."
+    },
+    {
+      "id": "VOC-040",
+      "namespace": "plica",
+      "term": "applicate",
+      "qualified_name": "plica.applicate",
+      "definition": "Attach the fold framework to a domain through an explicit adapter.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-PATH"
+      ],
+      "source_keys": [
+        "S-PL"
+      ],
+      "acceptance_obligation": "State adapter invariants and losses."
+    },
+    {
+      "id": "VOC-041",
+      "namespace": "plica",
+      "term": "holonomy",
+      "qualified_name": "plica.holonomy",
+      "definition": "The source's declared group-valued aggregate of an ordered event path.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-STATE",
+        "K-REPLAY"
+      ],
+      "source_keys": [
+        "S-PL"
+      ],
+      "acceptance_obligation": "Declare the group and aggregation order; do not claim physical transport."
+    },
+    {
+      "id": "VOC-042",
+      "namespace": "plica",
+      "term": "closable",
+      "qualified_name": "plica.closable",
+      "definition": "A path that ends in the same machine state where it began.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-STATE"
+      ],
+      "source_keys": [
+        "S-PL"
+      ],
+      "acceptance_obligation": "Check start/end state equality under a named criterion."
+    },
+    {
+      "id": "VOC-043",
+      "namespace": "rg",
+      "term": "closable",
+      "qualified_name": "rg.closable",
+      "definition": "A capability asserting a declared composition or closure law over a stated domain.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-SEM",
+        "K-EVD"
+      ],
+      "source_keys": [
+        "S-RG"
+      ],
+      "acceptance_obligation": "Supply a law and a scoped witness; distinguish plica.closable."
+    },
+    {
+      "id": "VOC-044",
+      "namespace": "plica",
+      "term": "complete",
+      "qualified_name": "plica.complete",
+      "definition": "An alphabet whose declared successor forms a single cycle over all its letters.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-SEM"
+      ],
+      "source_keys": [
+        "S-PL"
+      ],
+      "acceptance_obligation": "Verify finite cycle coverage; do not imply logical completeness."
+    },
+    {
+      "id": "VOC-045",
+      "namespace": "plica",
+      "term": "seven_complete",
+      "qualified_name": "plica.seven_complete",
+      "definition": "The source's scoped return/tower construction; no universal complexity or computability property is implied.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-SEM",
+        "K-FRONTIER"
+      ],
+      "source_keys": [
+        "S-PL"
+      ],
+      "acceptance_obligation": "State the exact versioned predicate before claiming it."
+    },
+    {
+      "id": "VOC-046",
+      "namespace": "polyia",
+      "term": "state_machine",
+      "qualified_name": "polyia.state_machine",
+      "definition": "A declared control/data system with states, events, guards, transitions, effects and observations.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-STATE"
+      ],
+      "source_keys": [
+        "S-RG",
+        "S-ASTRA"
+      ],
+      "acceptance_obligation": "Test admitted and refused transitions."
+    },
+    {
+      "id": "VOC-047",
+      "namespace": "polyia",
+      "term": "state_variance",
+      "qualified_name": "polyia.state_variance",
+      "definition": "A named difference between two versioned states under a declared projection and comparison law.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-STATE",
+        "K-SEM"
+      ],
+      "source_keys": [
+        "S-RG"
+      ],
+      "acceptance_obligation": "Distinguish source, semantic, behavioral and view differences."
+    },
+    {
+      "id": "VOC-048",
+      "namespace": "polyia",
+      "term": "guard",
+      "qualified_name": "polyia.guard",
+      "definition": "A decidable or explicitly bounded admission predicate checked before an operation is executed.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-STATE",
+        "K-AUTH"
+      ],
+      "source_keys": [
+        "S-ASTRA"
+      ],
+      "acceptance_obligation": "A failed or inconclusive guard cannot authorize an effect."
+    },
+    {
+      "id": "VOC-049",
+      "namespace": "polyia",
+      "term": "effect",
+      "qualified_name": "polyia.effect",
+      "definition": "A declared change or interaction outside a pure returned value.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-STATE",
+        "K-AUTH"
+      ],
+      "source_keys": [
+        "S-ASTRA",
+        "S-TRE"
+      ],
+      "acceptance_obligation": "Record scope, intent, dispatch and outcome where external."
+    },
+    {
+      "id": "VOC-050",
+      "namespace": "polyia",
+      "term": "invariant",
+      "qualified_name": "polyia.invariant",
+      "definition": "A property required to hold for admitted states or transitions in a declared domain.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-STATE",
+        "K-EVD"
+      ],
+      "source_keys": [
+        "S-RG"
+      ],
+      "acceptance_obligation": "Attach checker or proof obligations and counterexamples."
+    },
+    {
+      "id": "VOC-051",
+      "namespace": "polyia",
+      "term": "event",
+      "qualified_name": "polyia.event",
+      "definition": "An immutable record of a committed command or observation with sufficient payload for its declared replay.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-STATE",
+        "K-REPLAY"
+      ],
+      "source_keys": [
+        "S-ASTRA",
+        "S-TRE"
+      ],
+      "acceptance_obligation": "Rebuild from records without hidden tool reexecution."
+    },
+    {
+      "id": "VOC-052",
+      "namespace": "polyia",
+      "term": "checkpoint",
+      "qualified_name": "polyia.checkpoint",
+      "definition": "An immutable state snapshot linked to history, sources, produced outputs and verification records.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-STATE",
+        "K-SRC"
+      ],
+      "source_keys": [
+        "S-ASTRA"
+      ],
+      "acceptance_obligation": "Verify linked objects; distinguish from a Git commit."
+    },
+    {
+      "id": "VOC-053",
+      "namespace": "polyia",
+      "term": "replay",
+      "qualified_name": "polyia.replay",
+      "definition": "Reconstructing recorded state from pinned events and results under the declared reducer.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-REPLAY"
+      ],
+      "source_keys": [
+        "S-RG",
+        "S-ASTRA"
+      ],
+      "acceptance_obligation": "Do not silently repeat external side effects."
+    },
+    {
+      "id": "VOC-054",
+      "namespace": "polyia",
+      "term": "reproduction",
+      "qualified_name": "polyia.reproduction",
+      "definition": "A new execution attempting to obtain a prior result from pinned inputs and environment.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-REPLAY",
+        "K-EVD"
+      ],
+      "source_keys": [
+        "S-RG"
+      ],
+      "acceptance_obligation": "Issue a new run ID and report environmental differences."
+    },
+    {
+      "id": "VOC-055",
+      "namespace": "polyia",
+      "term": "guidance",
+      "qualified_name": "polyia.guidance",
+      "definition": "A source-linked instruction or proposal addressed to a known target and governed by acknowledgement and effect tracking.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-GUIDE",
+        "K-AUTH"
+      ],
+      "source_keys": [
+        "S-ASTRA"
+      ],
+      "acceptance_obligation": "Submission and acknowledgement alone do not count as application."
+    },
+    {
+      "id": "VOC-056",
+      "namespace": "polyia",
+      "term": "produced",
+      "qualified_name": "polyia.produced",
+      "definition": "Status indicating that actual output bytes have been captured for a requirement.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-EVD",
+        "K-STATE"
+      ],
+      "source_keys": [
+        "S-ASTRA"
+      ],
+      "acceptance_obligation": "Require resolvable artifacts, not a caller-supplied success label."
+    },
+    {
+      "id": "VOC-057",
+      "namespace": "polyia",
+      "term": "verified",
+      "qualified_name": "polyia.verified",
+      "definition": "Status for a captured version evaluated successfully by a registered verifier for its stated claim.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-EVD",
+        "K-STATE"
+      ],
+      "source_keys": [
+        "S-UCG",
+        "S-ASTRA"
+      ],
+      "acceptance_obligation": "Bind verifier identity, inputs, evidence class and limitations."
+    },
+    {
+      "id": "VOC-058",
+      "namespace": "polyia",
+      "term": "accepted",
+      "qualified_name": "polyia.accepted",
+      "definition": "A scoped completion decision grounded in current successful verification and required authority.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-EVD",
+        "K-AUTH"
+      ],
+      "source_keys": [
+        "S-ASTRA"
+      ],
+      "acceptance_obligation": "Reject stale verification or newly changed outputs."
+    },
+    {
+      "id": "VOC-059",
+      "namespace": "polyia",
+      "term": "witness",
+      "qualified_name": "polyia.witness",
+      "definition": "A proof, computation, observation or attestation offered for a named claim under stated assumptions.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-EVD"
+      ],
+      "source_keys": [
+        "S-UCG",
+        "S-INF"
+      ],
+      "acceptance_obligation": "Name evidence class and independence; strings are not executable checkers."
+    },
+    {
+      "id": "VOC-060",
+      "namespace": "polyia",
+      "term": "proleptic_run",
+      "qualified_name": "polyia.proleptic_run",
+      "definition": "A generate-seal-witness-compare run with declared and enforced information access boundaries.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-GEN",
+        "K-EVD"
+      ],
+      "source_keys": [
+        "S-UCG"
+      ],
+      "acceptance_obligation": "Seal before witness access and label subsequent witness-informed revisions."
+    },
+    {
+      "id": "VOC-061",
+      "namespace": "polyia",
+      "term": "negative_grammar",
+      "qualified_name": "polyia.negative_grammar",
+      "definition": "A versioned set of excluded patterns or refutation rules relative to a domain and evidence source.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-SEM",
+        "K-EVD"
+      ],
+      "source_keys": [
+        "S-UCG"
+      ],
+      "acceptance_obligation": "A dataset exclusion cannot silently become physical impossibility."
+    },
+    {
+      "id": "VOC-062",
+      "namespace": "polyia",
+      "term": "refusal",
+      "qualified_name": "polyia.refusal",
+      "definition": "An explicit result declining an operation because of a named unmet contract or unsupported capability.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-STATE",
+        "K-EVD"
+      ],
+      "source_keys": [
+        "S-UCG",
+        "S-TRE"
+      ],
+      "acceptance_obligation": "Distinguish invalidity, unsupported method and exhausted budget."
+    },
+    {
+      "id": "VOC-063",
+      "namespace": "polyia",
+      "term": "unknown",
+      "qualified_name": "polyia.unknown",
+      "definition": "A result indicating insufficient evidence or an unresolved interpretation.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-EVD",
+        "K-FRONTIER"
+      ],
+      "source_keys": [
+        "S-INF",
+        "S-GL"
+      ],
+      "acceptance_obligation": "Retain alternatives and conditions for resolution."
+    },
+    {
+      "id": "VOC-064",
+      "namespace": "polyia",
+      "term": "resource_limit",
+      "qualified_name": "polyia.resource_limit",
+      "definition": "A run ended at a declared time, memory, search-depth or other budget.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-COST",
+        "K-FRONTIER"
+      ],
+      "source_keys": [
+        "S-RG"
+      ],
+      "acceptance_obligation": "Record budget consumed and do not infer impossibility."
+    },
+    {
+      "id": "VOC-065",
+      "namespace": "polyia",
+      "term": "generator",
+      "qualified_name": "polyia.generator",
+      "definition": "A registered procedure constructing candidates with derivations from specifications, contexts, budgets and seeds.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-GEN",
+        "K-COST"
+      ],
+      "source_keys": [
+        "S-RG",
+        "S-UCG"
+      ],
+      "acceptance_obligation": "Emit candidates and provenance without requiring LLM inference."
+    },
+    {
+      "id": "VOC-066",
+      "namespace": "polyia",
+      "term": "model_adapter",
+      "qualified_name": "polyia.model_adapter",
+      "definition": "An optional declared predictive or generative model component behind typed input/output and evidence boundaries.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-GEN",
+        "K-AUTH"
+      ],
+      "source_keys": [
+        "S-ASTRA"
+      ],
+      "acceptance_obligation": "Its absence cannot break core no-LLM acceptance."
+    },
+    {
+      "id": "VOC-067",
+      "namespace": "polyia",
+      "term": "tool_contract",
+      "qualified_name": "polyia.tool_contract",
+      "definition": "A versioned operation specification including schemas, guards, effects, authority, costs, failure and evidence behavior.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-AUTH",
+        "K-SHIP"
+      ],
+      "source_keys": [
+        "S-ASTRA",
+        "S-TRE"
+      ],
+      "acceptance_obligation": "Check runtime capability against the contract before execution."
+    },
+    {
+      "id": "VOC-068",
+      "namespace": "polyia",
+      "term": "capability",
+      "qualified_name": "polyia.capability",
+      "definition": "An operation that a package can demonstrably perform under its declared conditions.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-SHIP",
+        "K-EVD"
+      ],
+      "source_keys": [
+        "S-RG"
+      ],
+      "acceptance_obligation": "A name or discovery manifest alone cannot grant authority."
+    },
+    {
+      "id": "VOC-069",
+      "namespace": "polyia",
+      "term": "capability_witness",
+      "qualified_name": "polyia.capability_witness",
+      "definition": "Evidence supporting a scoped runnable, composable, replayable or other capability claim.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-SHIP",
+        "K-EVD"
+      ],
+      "source_keys": [
+        "S-RG"
+      ],
+      "acceptance_obligation": "State predicate, domain, checker and negative controls."
+    },
+    {
+      "id": "VOC-070",
+      "namespace": "polyia",
+      "term": "runnable",
+      "qualified_name": "polyia.runnable",
+      "definition": "Admissible and executable under the declared runtime, dependencies, authority and budget profile.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-SHIP",
+        "K-COST"
+      ],
+      "source_keys": [
+        "S-RG"
+      ],
+      "acceptance_obligation": "A clean invocation succeeds with stated outputs."
+    },
+    {
+      "id": "VOC-071",
+      "namespace": "polyia",
+      "term": "composable",
+      "qualified_name": "polyia.composable",
+      "definition": "Compatible input/output types, contexts, effects and evidence thresholds admit the proposed combination.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-PATH",
+        "K-SHIP"
+      ],
+      "source_keys": [
+        "S-RG"
+      ],
+      "acceptance_obligation": "Test incompatible contexts and conflicting effects."
+    },
+    {
+      "id": "VOC-072",
+      "namespace": "polyia",
+      "term": "reversible",
+      "qualified_name": "polyia.reversible",
+      "definition": "A specified inverse restores declared observables over a stated domain.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-SEM",
+        "K-EVD"
+      ],
+      "source_keys": [
+        "S-RG",
+        "S-INF"
+      ],
+      "acceptance_obligation": "Do not equate compensation with exact inverse execution."
+    },
+    {
+      "id": "VOC-073",
+      "namespace": "polyia",
+      "term": "observable",
+      "qualified_name": "polyia.observable",
+      "definition": "A named read-only projection exposes declared quantities together with its losses and uncertainty.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-VIEW",
+        "K-SEM"
+      ],
+      "source_keys": [
+        "S-RG",
+        "S-ASTRA"
+      ],
+      "acceptance_obligation": "Reading must not mutate authoritative domain state."
+    },
+    {
+      "id": "VOC-074",
+      "namespace": "polyia",
+      "term": "innovation_candidate",
+      "qualified_name": "polyia.innovation_candidate",
+      "definition": "A proposed new or improved construction relative to a declared baseline with a falsifiable objective.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-EVOLVE",
+        "K-FRONTIER"
+      ],
+      "source_keys": [
+        "S-INF",
+        "S-UCG"
+      ],
+      "acceptance_obligation": "Record novelty scope, cost and counterexamples."
+    },
+    {
+      "id": "VOC-075",
+      "namespace": "polyia",
+      "term": "improvement_epoch",
+      "qualified_name": "polyia.improvement_epoch",
+      "definition": "A versioned activation of a candidate after the required comparative evidence and compatibility checks.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-EVOLVE",
+        "K-STATE"
+      ],
+      "source_keys": [
+        "S-UCG"
+      ],
+      "acceptance_obligation": "Retain predecessor, evidence, migration and reversal policy."
+    },
+    {
+      "id": "VOC-076",
+      "namespace": "polyia",
+      "term": "coverage",
+      "qualified_name": "polyia.coverage",
+      "definition": "A vector of source, conceptual, constructive, verification and teaching coverage over a declared inventory.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-COVER",
+        "K-EVD"
+      ],
+      "source_keys": [
+        "S-INF"
+      ],
+      "acceptance_obligation": "Do not report source ingestion as solved operational competence."
+    },
+    {
+      "id": "VOC-077",
+      "namespace": "polyia",
+      "term": "research_frontier",
+      "qualified_name": "polyia.research_frontier",
+      "definition": "Versioned unresolved questions, absent bridges, hypotheses, limits and candidate improvements.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-FRONTIER",
+        "K-EVOLVE"
+      ],
+      "source_keys": [
+        "S-INF"
+      ],
+      "acceptance_obligation": "Every frontier item names an executable or scholarly next test."
+    },
+    {
+      "id": "VOC-078",
+      "namespace": "astra",
+      "term": "atom",
+      "qualified_name": "astra.atom",
+      "definition": "A typed primitive (I,O,Q,delta,g,e,w,c) with guards, effects, witness and cost bound.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-STATE",
+        "K-SHIP"
+      ],
+      "source_keys": [
+        "S-ASTRA"
+      ],
+      "acceptance_obligation": "Preserve the exact ATOM phase and admission semantics in an adapter."
+    },
+    {
+      "id": "VOC-079",
+      "namespace": "astra",
+      "term": "view_state",
+      "qualified_name": "astra.view_state",
+      "definition": "Camera, layout and transient presentation controls separate from persistent semantic machine state.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-VIEW",
+        "K-STATE"
+      ],
+      "source_keys": [
+        "S-ASTRA"
+      ],
+      "acceptance_obligation": "Camera motion cannot silently mutate a corpus relation."
+    },
+    {
+      "id": "VOC-080",
+      "namespace": "tre",
+      "term": "structural_tree",
+      "qualified_name": "tre.structural_tree",
+      "definition": "The rooted parent-child arborescence, distinct from cyclic support or dependency couplings.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-SEM",
+        "K-STATE"
+      ],
+      "source_keys": [
+        "S-TRE"
+      ],
+      "acceptance_obligation": "Check one structural parent and acyclicity separately from coupling edges."
+    },
+    {
+      "id": "VOC-081",
+      "namespace": "tre",
+      "term": "fruit",
+      "qualified_name": "tre.fruit",
+      "definition": "A verified, portable, self-describing output that may seed another machine or package.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-SHIP",
+        "K-EVD"
+      ],
+      "source_keys": [
+        "S-TRE"
+      ],
+      "acceptance_obligation": "Resolve its source, build recipe, interfaces and verification receipt."
+    },
+    {
+      "id": "VOC-082",
+      "namespace": "polyia",
+      "term": "continuity_key",
+      "qualified_name": "polyia.continuity_key",
+      "definition": "A stable cross-section reference identifying a persistent obligation family.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-SRC",
+        "K-EVOLVE"
+      ],
+      "source_keys": [
+        "PACKAGE"
+      ],
+      "acceptance_obligation": "Preserve meaning when sections or implementation phases change."
+    },
+    {
+      "id": "VOC-083",
+      "namespace": "polyia",
+      "term": "dodge",
+      "qualified_name": "polyia.dodge",
+      "definition": "The package's new mnemonic: Deliverable, Obligations, Dependencies, Guards, Evidence.",
+      "claim_kind": "HOUSE_DEFINITION",
+      "continuity_keys": [
+        "K-SHIP",
+        "K-EVD"
+      ],
+      "source_keys": [
+        "PACKAGE"
+      ],
+      "acceptance_obligation": "Each work item names all five fields and its source references."
+    },
+    {
+      "id": "VOC-084",
+      "namespace": "polyia",
+      "term": "q_bundle",
+      "qualified_name": "polyia.q_bundle",
+      "definition": "A higher-arity Q relation with ordered typed input/output roles and separate contextual evidence strands.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-PATH",
+        "K-EVD"
+      ],
+      "source_keys": [
+        "S-Q"
+      ],
+      "acceptance_obligation": "Refuse a missing required premise or incompatible role."
+    },
+    {
+      "id": "VOC-085",
+      "namespace": "polyia",
+      "term": "q_ship",
+      "qualified_name": "polyia.q_ship",
+      "definition": "A port-checked composition of G-ship edges or Q-Strings.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-PATH"
+      ],
+      "source_keys": [
+        "S-Q"
+      ],
+      "acceptance_obligation": "Check all typed ports, contexts and effects."
+    },
+    {
+      "id": "VOC-086",
+      "namespace": "polyia",
+      "term": "q_address",
+      "qualified_name": "polyia.q_address",
+      "definition": "A versioned self-identifying locator for stored Q content; dereference requires the referenced store and schema.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-SRC",
+        "K-PATH"
+      ],
+      "source_keys": [
+        "S-Q"
+      ],
+      "acceptance_obligation": "Resolve exact bytes; do not pretend to invert a digest."
+    },
+    {
+      "id": "VOC-087",
+      "namespace": "polyia",
+      "term": "q_index",
+      "qualified_name": "polyia.q_index",
+      "definition": "Indexes and materialized views over Q records with explicit workload, construction, storage and invalidation costs.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-COST",
+        "K-PATH"
+      ],
+      "source_keys": [
+        "S-Q"
+      ],
+      "acceptance_obligation": "Measure output-sensitive cost and freshness."
+    },
+    {
+      "id": "VOC-088",
+      "namespace": "polyia",
+      "term": "computational_atom",
+      "qualified_name": "polyia.computational_atom",
+      "definition": "The inherited package tuple (id,version,Sigma,G,I,O,delta,Gamma,epsilon,P,C,B), independently specifiable and testable.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-SHIP",
+        "K-SEM"
+      ],
+      "source_keys": [
+        "S-POLY"
+      ],
+      "acceptance_obligation": "Distinguish it from Astra ATOM and declare every dependency."
+    },
+    {
+      "id": "VOC-089",
+      "namespace": "polyia",
+      "term": "generative_capability_class",
+      "qualified_name": "polyia.generative_capability_class",
+      "definition": "The inherited (Grammar,Enumerator,Typechecker,Compiler,Executor,Verifier) construction for generating and checking programs.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-GEN",
+        "K-SHIP"
+      ],
+      "source_keys": [
+        "S-POLY"
+      ],
+      "acceptance_obligation": "A produced program passes compiler, effect and verification contracts."
+    },
+    {
+      "id": "VOC-090",
+      "namespace": "pic",
+      "term": "grammar_card",
+      "qualified_name": "pic.grammar_card",
+      "definition": "A grammar specification with formalism, semantics, operand types, witnesses and effects, accepted before metageneration.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-GEN",
+        "K-SEM"
+      ],
+      "source_keys": [
+        "S-PIC"
+      ],
+      "acceptance_obligation": "Reject a card lacking denotation or admissibility scope."
+    },
+    {
+      "id": "VOC-091",
+      "namespace": "pic",
+      "term": "generation_receipt",
+      "qualified_name": "pic.generation_receipt",
+      "definition": "Artifact, typed derivation, source/grammar versions, machine trace, invariant checks, refusals, unresolved items, replay manifest and hash.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-GEN",
+        "K-EVD"
+      ],
+      "source_keys": [
+        "S-PIC"
+      ],
+      "acceptance_obligation": "Every referenced input and output is resolvable."
+    },
+    {
+      "id": "VOC-092",
+      "namespace": "grammatonomia",
+      "term": "pack",
+      "qualified_name": "grammatonomia.pack",
+      "definition": "A versioned per-variety language bundle (VarietyID,Sigma,O,T,P,M,X,E) plus negative grammar.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-LANG",
+        "K-SRC"
+      ],
+      "source_keys": [
+        "S-GRAM"
+      ],
+      "acceptance_obligation": "Keep sound, orthography, phonotactics, morphology, lexicon and evidence distinct."
+    },
+    {
+      "id": "VOC-093",
+      "namespace": "grammatonomia",
+      "term": "privative_profile",
+      "qualified_name": "grammatonomia.privative_profile",
+      "definition": "A level, feature, status, replacement and evidence record for a scoped linguistic absence or contrast.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-LANG",
+        "K-EVD"
+      ],
+      "source_keys": [
+        "S-GRAM"
+      ],
+      "acceptance_obligation": "Missing data is not promoted to an attested absence."
+    },
+    {
+      "id": "VOC-094",
+      "namespace": "grammatonomia",
+      "term": "ubiquity_set",
+      "qualified_name": "grammatonomia.ubiquity_set",
+      "definition": "A proposed intersection of cross-pack attested features, recomputed from the scoped dataset.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-LANG",
+        "K-FRONTIER"
+      ],
+      "source_keys": [
+        "S-GRAM"
+      ],
+      "acceptance_obligation": "Record attestation counts and counterexamples; do not assume universality."
+    },
+    {
+      "id": "VOC-095",
+      "namespace": "phonex",
+      "term": "semantic_interface",
+      "qualified_name": "phonex.semantic_interface",
+      "definition": "The common variety-ID, IPA/feature-stream and evidence boundary for language-pack interoperability.",
+      "claim_kind": "SOURCE_DEFINITION",
+      "continuity_keys": [
+        "K-LANG",
+        "K-PATH"
+      ],
+      "source_keys": [
+        "S-POLY"
+      ],
+      "acceptance_obligation": "Shared schema does not imply shared phonology or proven cognacy."
+    }
+  ]
+}

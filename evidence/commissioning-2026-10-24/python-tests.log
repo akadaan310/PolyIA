@@ -1,0 +1,181 @@
+test_command_file_retry_reuses_durable_receipt_in_new_process (test_cli.CLITests.test_command_file_retry_reuses_durable_receipt_in_new_process) ... ok
+test_commit_survives_process_exit_before_receipt_delivery (test_cli.CLITests.test_commit_survives_process_exit_before_receipt_delivery) ... ok
+test_demo_executes_artifact_science_guidance_and_checkpoint_flow (test_cli.CLITests.test_demo_executes_artifact_science_guidance_and_checkpoint_flow) ... ok
+test_init_status_verify_across_distinct_processes (test_cli.CLITests.test_init_status_verify_across_distinct_processes) ... ok
+test_read_commands_do_not_silently_initialize_a_missing_ledger (test_cli.CLITests.test_read_commands_do_not_silently_initialize_a_missing_ledger) ... ok
+test_serve_process_commits_authenticated_command_and_shuts_down_cleanly (test_cli.CLITests.test_serve_process_commits_authenticated_command_and_shuts_down_cleanly) ... ok
+test_serve_requires_environment_operator_token (test_cli.CLITests.test_serve_requires_environment_operator_token) ... ok
+test_stale_cli_command_is_explicit_error_and_leaves_revision (test_cli.CLITests.test_stale_cli_command_is_explicit_error_and_leaves_revision) ... ok
+test_worker_records_the_requested_finite_number_of_real_runs (test_cli.CLITests.test_worker_records_the_requested_finite_number_of_real_runs) ... ok
+test_worker_respects_applied_research_pause (test_cli.CLITests.test_worker_respects_applied_research_pause) ... ok
+test_worker_zero_iterations_does_not_claim_unperformed_experiments (test_cli.CLITests.test_worker_zero_iterations_does_not_claim_unperformed_experiments) ... ok
+test_acceptance_has_real_positive_and_negative_checks (test_experiments.ScientificContracts.test_acceptance_has_real_positive_and_negative_checks) ... ok
+test_degree_budget (test_experiments.ScientificContracts.test_degree_budget) ... ok
+test_divide_by_zero_refused (test_experiments.ScientificContracts.test_divide_by_zero_refused) ... ok
+test_exact_division_fraction_coefficients (test_experiments.ScientificContracts.test_exact_division_fraction_coefficients) ... ok
+test_exponent_denial_happens_before_fraction_construction (test_experiments.ScientificContracts.test_exponent_denial_happens_before_fraction_construction) ... ok
+test_finite_grammar_promoted_and_expanded (test_experiments.ScientificContracts.test_finite_grammar_promoted_and_expanded) ... ok
+test_grammar_bad_symbol_rejected (test_experiments.ScientificContracts.test_grammar_bad_symbol_rejected) ... ok
+test_grammar_order_and_identity_do_not_depend_on_dict_order (test_experiments.ScientificContracts.test_grammar_order_and_identity_do_not_depend_on_dict_order) ... ok
+test_input_coefficients_not_float_or_bool (test_experiments.ScientificContracts.test_input_coefficients_not_float_or_bool) ... ok
+test_integer_budget_precedes_decimal_string_conversion (test_experiments.ScientificContracts.test_integer_budget_precedes_decimal_string_conversion) ... ok
+test_qpath_context_mismatch_refused (test_experiments.ScientificContracts.test_qpath_context_mismatch_refused) ... ok
+test_qpath_joint_inputs_and_exact_result (test_experiments.ScientificContracts.test_qpath_joint_inputs_and_exact_result) ... ok
+test_qpath_missing_joint_premise_is_not_reachable (test_experiments.ScientificContracts.test_qpath_missing_joint_premise_is_not_reachable) ... ok
+test_qpath_type_mismatch_refused (test_experiments.ScientificContracts.test_qpath_type_mismatch_refused) ... ok
+test_qpath_zero_divisor_and_overwrite_refused (test_experiments.ScientificContracts.test_qpath_zero_divisor_and_overwrite_refused) ... ok
+test_quotient_derivative_certificate (test_experiments.ScientificContracts.test_quotient_derivative_certificate) ... ok
+test_short_dividend_and_constant_divisor (test_experiments.ScientificContracts.test_short_dividend_and_constant_divisor) ... ok
+test_unknown_or_executable_parameters_refused (test_experiments.ScientificContracts.test_unknown_or_executable_parameters_refused) ... ok
+test_zero_polynomial_no_vacuous_numerical_pass (test_experiments.ScientificContracts.test_zero_polynomial_no_vacuous_numerical_pass) ... ok
+test_exact_staging_and_transport_deletion (test_github_import.ImportTests.test_exact_staging_and_transport_deletion) ... ok
+test_existing_conflicting_seed_refused_without_overwrite (test_github_import.ImportTests.test_existing_conflicting_seed_refused_without_overwrite) ... ok
+test_payload_duplicate_member_refused (test_github_import.ImportTests.test_payload_duplicate_member_refused) ... ok
+test_payload_exact_hash_census_and_bytes (test_github_import.ImportTests.test_payload_exact_hash_census_and_bytes) ... ok
+test_payload_symlink_refused (test_github_import.ImportTests.test_payload_symlink_refused) ... ok
+test_payload_traversal_and_git_paths_refused (test_github_import.ImportTests.test_payload_traversal_and_git_paths_refused) ... ok
+test_payload_unregistered_member_refused (test_github_import.ImportTests.test_payload_unregistered_member_refused) ... ok
+test_payload_wrong_digest_refused_before_extraction (test_github_import.ImportTests.test_payload_wrong_digest_refused_before_extraction) ... ok
+test_snapshot_archive_identity_mismatch_refused (test_github_import.ImportTests.test_snapshot_archive_identity_mismatch_refused) ... ok
+test_snapshot_git_blob_mismatch_refused (test_github_import.ImportTests.test_snapshot_git_blob_mismatch_refused) ... ok
+test_snapshot_hashes_and_executable_mode_preserved (test_github_import.ImportTests.test_snapshot_hashes_and_executable_mode_preserved) ... ok
+test_snapshot_missing_file_refused (test_github_import.ImportTests.test_snapshot_missing_file_refused) ... ok
+test_all_private_reads_require_bearer_authorization (test_server.HTTPTests.test_all_private_reads_require_bearer_authorization) ... ok
+test_ambiguous_framing_headers_are_rejected_before_mutation (test_server.HTTPTests.test_ambiguous_framing_headers_are_rejected_before_mutation) ... ok
+test_cross_origin_and_host_rebinding_are_refused (test_server.HTTPTests.test_cross_origin_and_host_rebinding_are_refused) ... ok
+test_duplicate_authorization_host_and_origin_are_not_ambiguous (test_server.HTTPTests.test_duplicate_authorization_host_and_origin_are_not_ambiguous) ... ok
+test_exact_top_level_schema_cannot_smuggle_status_or_boolean_revision (test_server.HTTPTests.test_exact_top_level_schema_cannot_smuggle_status_or_boolean_revision) ... ok
+test_guidance_submit_acknowledge_apply_changes_real_state (test_server.HTTPTests.test_guidance_submit_acknowledge_apply_changes_real_state) ... ok
+test_head_responses_have_no_body_and_private_head_still_requires_auth (test_server.HTTPTests.test_head_responses_have_no_body_and_private_head_still_requires_auth) ... ok
+test_invalid_event_parameters_and_unknown_paths_are_safe (test_server.HTTPTests.test_invalid_event_parameters_and_unknown_paths_are_safe) ... ok
+test_json_media_type_and_body_budget_are_enforced (test_server.HTTPTests.test_json_media_type_and_body_budget_are_enforced) ... ok
+test_known_route_wrong_method_is_safe_and_has_no_cors_wildcard (test_server.HTTPTests.test_known_route_wrong_method_is_safe_and_has_no_cors_wildcard) ... ok
+test_loopback_binding_and_separate_nonempty_tokens_are_required (test_server.HTTPTests.test_loopback_binding_and_separate_nonempty_tokens_are_required) ... ok
+test_malformed_nonfinite_duplicate_and_deep_json_are_refused (test_server.HTTPTests.test_malformed_nonfinite_duplicate_and_deep_json_are_refused) ... ok
+test_openapi_discovery_resolves_to_the_exact_command_contract (test_server.HTTPTests.test_openapi_discovery_resolves_to_the_exact_command_contract) ... ok
+test_operator_and_read_token_can_read_but_read_token_cannot_mutate (test_server.HTTPTests.test_operator_and_read_token_can_read_but_read_token_cannot_mutate) ... ok
+test_produce_verify_accept_checkpoint_and_integrity_are_real (test_server.HTTPTests.test_produce_verify_accept_checkpoint_and_integrity_are_real) ... ok
+test_public_https_origin_is_explicit_and_matches_host (test_server.HTTPTests.test_public_https_origin_is_explicit_and_matches_host) ... ok
+test_public_surface_is_live_but_contains_no_token_or_private_state (test_server.HTTPTests.test_public_surface_is_live_but_contains_no_token_or_private_state) ... ok
+test_real_command_retry_conflict_receipt_and_resumable_events (test_server.HTTPTests.test_real_command_retry_conflict_receipt_and_resumable_events) ... ok
+test_science_runs_record_actual_result_and_respect_guidance_pause (test_server.HTTPTests.test_science_runs_record_actual_result_and_respect_guidance_pause) ... ok
+test_two_real_http_writers_cannot_apply_one_revision (test_server.HTTPTests.test_two_real_http_writers_cannot_apply_one_revision) ... ok
+test_unavailable_command_and_missing_read_have_explicit_safe_errors (test_server.HTTPTests.test_unavailable_command_and_missing_read_have_explicit_safe_errors) ... ok
+test_unexpected_runtime_exception_is_not_exposed_to_clients (test_server.HTTPTests.test_unexpected_runtime_exception_is_not_exposed_to_clients) ... ok
+test_accept_requires_current_verification_and_reproduction_invalidates_it (test_store.StoreTests.test_accept_requires_current_verification_and_reproduction_invalidates_it) ... ok
+test_altered_kernel_copy_cannot_satisfy_scientific_production (test_store.StoreTests.test_altered_kernel_copy_cannot_satisfy_scientific_production) ... ok
+test_blob_corruption_is_detected_before_acceptance_and_on_reopen (test_store.StoreTests.test_blob_corruption_is_detected_before_acceptance_and_on_reopen) ... ok
+test_cached_kernel_with_different_source_constants_is_refused_before_first_pin (test_store.StoreTests.test_cached_kernel_with_different_source_constants_is_refused_before_first_pin) ... ok
+test_cached_kernel_with_different_source_defaults_is_refused_before_first_pin (test_store.StoreTests.test_cached_kernel_with_different_source_defaults_is_refused_before_first_pin) ... ok
+test_changed_scientific_source_requires_restart_before_verification (test_store.StoreTests.test_changed_scientific_source_requires_restart_before_verification) ... ok
+test_checkpoint_is_source_linked_and_tampering_is_detected (test_store.StoreTests.test_checkpoint_is_source_linked_and_tampering_is_detected) ... ok
+test_checkpoint_refreshes_context_and_retains_historical_source_bytes (test_store.StoreTests.test_checkpoint_refreshes_context_and_retains_historical_source_bytes) ... /home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/json/encoder.py:254: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xedaa01b41b70>
+  _iterencode = c_make_encoder(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/json/encoder.py:254: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xedaa01a3b6a0>
+  _iterencode = c_make_encoder(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_checkpoint_scalar_type_corruption_is_never_equal (test_store.StoreTests.test_checkpoint_scalar_type_corruption_is_never_equal) ... ok
+test_command_ids_are_scoped_by_actor (test_store.StoreTests.test_command_ids_are_scoped_by_actor) ... ok
+test_current_state_corruption_is_detected (test_store.StoreTests.test_current_state_corruption_is_detected) ... ok
+test_custom_genesis_without_registries_is_explicitly_unsourced (test_store.StoreTests.test_custom_genesis_without_registries_is_explicitly_unsourced) ... ok
+test_default_genesis_captures_actual_package_control_manifests (test_store.StoreTests.test_default_genesis_captures_actual_package_control_manifests) ... /home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/json/decoder.py:361: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xedaa01b41b70>
+  obj, end = self.scan_once(s, idx)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/json/decoder.py:361: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xedaa01b42c50>
+  obj, end = self.scan_once(s, idx)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/json/decoder.py:361: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xedaa01a3b6a0>
+  obj, end = self.scan_once(s, idx)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_definition_metadata_scalar_types_cannot_silently_change (test_store.StoreTests.test_definition_metadata_scalar_types_cannot_silently_change) ... ok
+test_empty_artifacts_and_empty_files_are_rejected (test_store.StoreTests.test_empty_artifacts_and_empty_files_are_rejected) ... ok
+test_event_corruption_is_detected_without_repair (test_store.StoreTests.test_event_corruption_is_detected_without_repair) ... ok
+test_event_pagination_and_refusal_receipts_are_distinct (test_store.StoreTests.test_event_pagination_and_refusal_receipts_are_distinct) ... ok
+test_exact_retry_is_idempotent_but_changed_request_conflicts (test_store.StoreTests.test_exact_retry_is_idempotent_but_changed_request_conflicts) ... ok
+test_experiment_replay_consumes_recorded_result_without_reexecution (test_store.StoreTests.test_experiment_replay_consumes_recorded_result_without_reexecution) ... ok
+test_experiment_runtime_failure_is_retained_without_success_result (test_store.StoreTests.test_experiment_runtime_failure_is_retained_without_success_result) ... ok
+test_free_text_guidance_cannot_be_marked_applied (test_store.StoreTests.test_free_text_guidance_cannot_be_marked_applied) ... ok
+test_genesis_corruption_is_detected (test_store.StoreTests.test_genesis_corruption_is_detected) ... ok
+test_genesis_has_no_blanket_commission_acceptance (test_store.StoreTests.test_genesis_has_no_blanket_commission_acceptance) ... ok
+test_genesis_scalar_type_corruption_is_rejected (test_store.StoreTests.test_genesis_scalar_type_corruption_is_rejected) ... ok
+test_guidance_acknowledgment_then_apply_changes_actual_priority (test_store.StoreTests.test_guidance_acknowledgment_then_apply_changes_actual_priority) ... ok
+test_historical_blobs_remain_checked_after_reproduction (test_store.StoreTests.test_historical_blobs_remain_checked_after_reproduction) ... ok
+test_invalid_initial_requirements_leave_no_partial_ledger (test_store.StoreTests.test_invalid_initial_requirements_leave_no_partial_ledger) ... ok
+test_invalid_revision_and_nonobject_payload_are_retained_as_refusals (test_store.StoreTests.test_invalid_revision_and_nonobject_payload_are_retained_as_refusals) ... ok
+test_materialization_scalar_type_corruption_is_never_equal (test_store.StoreTests.test_materialization_scalar_type_corruption_is_never_equal) ... /home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:127: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xedaa01b42c50>
+  return {"bytecode": code.co_code.hex(), "constants": [constant(value) for value in code.co_consts],
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:127: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xedaa01b41b70>
+  return {"bytecode": code.co_code.hex(), "constants": [constant(value) for value in code.co_consts],
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:127: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xedaa01b43f10>
+  return {"bytecode": code.co_code.hex(), "constants": [constant(value) for value in code.co_consts],
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:127: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xedaa01b42110>
+  return {"bytecode": code.co_code.hex(), "constants": [constant(value) for value in code.co_consts],
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_mismatched_or_type_altered_run_receipt_is_not_scientific_evidence (test_store.StoreTests.test_mismatched_or_type_altered_run_receipt_is_not_scientific_evidence) ... ok
+test_missing_command_scope_cannot_mutate (test_store.StoreTests.test_missing_command_scope_cannot_mutate) ... ok
+test_missing_safe_open_primitive_refuses_capture (test_store.StoreTests.test_missing_safe_open_primitive_refuses_capture) ... ok
+test_nonstring_action_kind_is_refused_and_audited (test_store.StoreTests.test_nonstring_action_kind_is_refused_and_audited) ... ok
+test_nonstring_disposition_is_refused_and_audited (test_store.StoreTests.test_nonstring_disposition_is_refused_and_audited) ... ok
+test_old_context_blob_corruption_and_removal_are_detected (test_store.StoreTests.test_old_context_blob_corruption_and_removal_are_detected) ... /home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:123: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xedaa01b43f10>
+  return {"type": "tuple", "value": [constant(item) for item in value]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:123: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xedaa01b42110>
+  return {"type": "tuple", "value": [constant(item) for item in value]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_open_does_not_silently_recreate_a_deleted_table (test_store.StoreTests.test_open_does_not_silently_recreate_a_deleted_table) ... ok
+test_open_reports_malformed_genesis_as_integrity_error (test_store.StoreTests.test_open_reports_malformed_genesis_as_integrity_error) ... ok
+test_partial_capture_failure_rolls_back_blobs_and_state (test_store.StoreTests.test_partial_capture_failure_rolls_back_blobs_and_state) ... ok
+test_produce_verify_accept_uses_immutable_captured_bytes (test_store.StoreTests.test_produce_verify_accept_uses_immutable_captured_bytes) ... ok
+test_receipt_and_recorded_request_scalar_types_are_strict (test_store.StoreTests.test_receipt_and_recorded_request_scalar_types_are_strict) ... /home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/json/encoder.py:254: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xedaa01b42e30>
+  _iterencode = c_make_encoder(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/json/encoder.py:254: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xedaa01b43f10>
+  _iterencode = c_make_encoder(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/json/encoder.py:254: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xedaa01b42110>
+  _iterencode = c_make_encoder(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/json/encoder.py:254: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xedaa01a3bf10>
+  _iterencode = c_make_encoder(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/json/encoder.py:254: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xedaa018dd4e0>
+  _iterencode = c_make_encoder(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/json/encoder.py:254: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xedaa018dd300>
+  _iterencode = c_make_encoder(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_receipt_corruption_cannot_forge_an_idempotent_success (test_store.StoreTests.test_receipt_corruption_cannot_forge_an_idempotent_success) ... ok
+test_refused_scientific_inputs_are_retained_with_no_pass_claim (test_store.StoreTests.test_refused_scientific_inputs_are_retained_with_no_pass_claim) ... ok
+test_requirement_scope_authority_and_acceptance_metadata_survive_restart (test_store.StoreTests.test_requirement_scope_authority_and_acceptance_metadata_survive_restart) ... ok
+test_scientific_contracts_run_real_registered_acceptance (test_store.StoreTests.test_scientific_contracts_run_real_registered_acceptance) ... ok
+test_scientific_inputs_have_exact_kernel_and_linked_run_roles (test_store.StoreTests.test_scientific_inputs_have_exact_kernel_and_linked_run_roles) ... /home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:127: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xedaa01a3b790>
+  return {"bytecode": code.co_code.hex(), "constants": [constant(value) for value in code.co_consts],
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:127: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xedaa01a3b6a0>
+  return {"bytecode": code.co_code.hex(), "constants": [constant(value) for value in code.co_consts],
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_strict_request_schema_refuses_forged_verifier_result (test_store.StoreTests.test_strict_request_schema_refuses_forged_verifier_result) ... ok
+test_submitted_guidance_survives_new_instance_with_exact_receipt (test_store.StoreTests.test_submitted_guidance_survives_new_instance_with_exact_receipt) ... ok
+test_token_named_artifact_is_rejected (test_store.StoreTests.test_token_named_artifact_is_rejected) ... ok
+test_two_connections_cannot_apply_the_same_revision (test_store.StoreTests.test_two_connections_cannot_apply_the_same_revision) ... ok
+test_unacknowledged_and_rejected_guidance_cannot_apply (test_store.StoreTests.test_unacknowledged_and_rejected_guidance_cannot_apply) ... ok
+test_unrelated_text_cannot_satisfy_scientific_production (test_store.StoreTests.test_unrelated_text_cannot_satisfy_scientific_production) ... ok
+test_unsafe_secret_runtime_and_escaping_symlink_artifacts_are_rejected (test_store.StoreTests.test_unsafe_secret_runtime_and_escaping_symlink_artifacts_are_rejected) ... ok
+test_unsupported_verifier_retains_failure_without_acceptance (test_store.StoreTests.test_unsupported_verifier_retains_failure_without_acceptance) ... ok
+test_verifier_runtime_failure_is_retained_and_cannot_accept (test_store.StoreTests.test_verifier_runtime_failure_is_retained_and_cannot_accept) ... ok
+test_workspace_drift_is_reported_without_rewriting_captured_history (test_store.StoreTests.test_workspace_drift_is_reported_without_rewriting_captured_history) ... ok
+
+----------------------------------------------------------------------
+Ran 119 tests in 13.183s
+
+OK

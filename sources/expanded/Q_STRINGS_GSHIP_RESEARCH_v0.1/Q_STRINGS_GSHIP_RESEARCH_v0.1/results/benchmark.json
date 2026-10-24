@@ -1,0 +1,83 @@
+{
+  "environment": {
+    "python": "3.13.5",
+    "implementation": "CPython",
+    "machine": "x86_64",
+    "os": "Linux"
+  },
+  "warning": "Peak tracemalloc build allocations per independent structure; Python-specific, includes unequal payload and index semantics; hash-table performance expected O(1) average, not guaranteed. No evidence of general QIA speedup.",
+  "rows": [
+    {
+      "nodes": 128,
+      "relations": 2048,
+      "queries": 3600,
+      "correct_hits": 1800,
+      "adjacency_scan": {
+        "peak_allocated_bytes": 145376,
+        "ns_per_query_median": 345.5,
+        "hits": 1800,
+        "runs": 5
+      },
+      "ordinary_triple_hash": {
+        "peak_allocated_bytes": 110744,
+        "ns_per_query_median": 87.4,
+        "hits": 1800,
+        "runs": 5
+      },
+      "qstring_index_and_payload": {
+        "peak_allocated_bytes": 1766521,
+        "ns_per_query_median": 134.1,
+        "hits": 1800,
+        "runs": 5
+      }
+    },
+    {
+      "nodes": 256,
+      "relations": 8192,
+      "queries": 3600,
+      "correct_hits": 1800,
+      "adjacency_scan": {
+        "peak_allocated_bytes": 553264,
+        "ns_per_query_median": 623.1,
+        "hits": 1800,
+        "runs": 5
+      },
+      "ordinary_triple_hash": {
+        "peak_allocated_bytes": 442520,
+        "ns_per_query_median": 95.7,
+        "hits": 1800,
+        "runs": 5
+      },
+      "qstring_index_and_payload": {
+        "peak_allocated_bytes": 6109554,
+        "ns_per_query_median": 146.7,
+        "hits": 1800,
+        "runs": 5
+      }
+    },
+    {
+      "nodes": 512,
+      "relations": 24576,
+      "queries": 3600,
+      "correct_hits": 1800,
+      "adjacency_scan": {
+        "peak_allocated_bytes": 1636256,
+        "ns_per_query_median": 1267.4,
+        "hits": 1800,
+        "runs": 5
+      },
+      "ordinary_triple_hash": {
+        "peak_allocated_bytes": 1900696,
+        "ns_per_query_median": 121.2,
+        "hits": 1800,
+        "runs": 5
+      },
+      "qstring_index_and_payload": {
+        "peak_allocated_bytes": 18690502,
+        "ns_per_query_median": 210.6,
+        "hits": 1800,
+        "runs": 5
+      }
+    }
+  ]
+}

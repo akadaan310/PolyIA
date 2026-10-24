@@ -1,0 +1,20 @@
+{
+  "before": {
+    "head": "8aa09a94ab301ca812423306fefa88adca5dd740e543bb21ae8d6cbdc0cb6877",
+    "latest_checkpoint": {
+      "id": "cp-00000032",
+      "note": "Owner Book construction and delegated identity/hosting authority recorded. DEC-004/005 source artifacts captured; OpenClaw reference priority actually applied. All mission gates remain evidence-dependent.",
+      "previous_id": "cp-00000020",
+      "revision": 32
+    },
+    "revision": 32
+  },
+  "completed_at_utc": "2026-10-24T07:58:22.320607+00:00",
+  "error_type": "URLError",
+  "previous_origin": "https://mayor-replacing-wildlife-medications.trycloudflare.com",
+  "public_origin": "https://developed-carmen-recruitment-worm.trycloudflare.com",
+  "schema_version": 1,
+  "stage": "public_probe",
+  "started_at_utc": "2026-10-24T07:57:32.311773+00:00",
+  "status": "FAIL"
+}

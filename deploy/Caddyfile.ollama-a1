@@ -1,0 +1,32 @@
+{
+	admin off
+	default_bind 10.0.1.194
+	log {
+		exclude http.log.error http.log.access
+	}
+	servers {
+		protocols h1 h2
+		max_header_size 16KB
+		timeouts {
+			read_header 5s
+			read_body 10s
+			write 30s
+			idle 30s
+		}
+	}
+}
+
+polyia.129.213.149.47.sslip.io {
+	tls {
+		issuer acme {
+			dir https://acme-v02.api.letsencrypt.org/directory
+			disable_tlsalpn_challenge
+		}
+	}
+	request_body {
+		max_size 64KB
+	}
+	# Temporary transport-only probe; remove after the application's origin switch.
+	respond /ingress-check "Poly IA HTTPS ingress transport ready\n" 200
+	reverse_proxy 127.0.0.1:8765
+}

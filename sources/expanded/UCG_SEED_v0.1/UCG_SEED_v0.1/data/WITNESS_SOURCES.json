@@ -1,0 +1,16 @@
+{
+ "g4mp2_full": {
+  "url": "https://raw.githubusercontent.com/globus-labs/g4mp2-atomization-energy/master/data/output/g4mp2_data.json.gz",
+  "sha256_gz": "c3ec59a28cff51763117dba23d5fe93e7602e4a0185b8fbbc094fbfd0a301e63",
+  "rows": 130258
+ },
+ "qm9_le4_subset": {
+  "rows": 48,
+  "derived_from": "g4mp2_full, n_heavy_atoms <= 4",
+  "sha256": "0dcf547d9da4edd06819fee7cdd143a3b828c922f02358226d8239eb7d32c659"
+ },
+ "periodic": {
+  "url": "https://raw.githubusercontent.com/Bowserinator/Periodic-Table-JSON/master/PeriodicTableJSON.json",
+  "sha256": "361bc5b62b646dd9c4ec870e9b5b81fc2f46ebb7d06eb4324c788db5ab768c97"
+ }
+}

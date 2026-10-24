@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "snad.publication.v1",
+  "github": {
+    "requestedRepository": "akadaan310/snad",
+    "status": "published",
+    "url": "https://github.com/akadaan310/snad",
+    "visibility": "public",
+    "verifiedAt": "2026-10-18T20:54:54Z",
+    "authenticatedAccount": "akadaan310",
+    "transport": "Approved GitHub plugin hybrid connector and CLI workflow; Git transport used gh credential helper for the same verified integration identity without exporting credentials.",
+    "publication": {
+      "repositoryCreatedBy": "owner",
+      "emptyRemoteConfirmedThroughConnector": true,
+      "atomicPush": true,
+      "forcePush": false,
+      "preservedCommitIdentities": true,
+      "branchesReadBackThroughConnector": {
+        "main": "f3ae5d8d71a33b62d30a4d14b46a021095fc79a5",
+        "hosting-preview": "4b299c07f457bc0359e56e47e84a3c6cec0559be"
+      },
+      "sourceCommitReadBackThroughConnector": "81e7e5db04d0fa48e94e958b92b1b5d14ab02a27",
+      "readbackScope": "These refs record the first successful publication. Subsequent publication-evidence and preference commits may advance main without changing the frozen source or hosting-preview."
+    },
+    "initialCreationAttempt": {
+      "status": "rejected-before-owner-created-repository",
+      "graphqlError": "Resource not accessible by integration (createRepository)",
+      "restEndpoint": "POST https://api.github.com/user/repos",
+      "restStatus": 403,
+      "restError": "Resource not accessible by integration",
+      "resolution": "Owner created public akadaan310/snad and authorized publishing on 2026-10-18."
+    },
+    "standingPreferences": {
+      "allUserRepositoriesPublic": true,
+      "githubPluginApproved": true,
+      "additionalPluginsRequireApprovalOnceEach": true
+    },
+    "originalISNAADWrites": 0
+  },
+  "site": {
+    "projectId": "appgprj_6ad52551d89481919ef3f7f0caf2e003",
+    "expectedUrl": "https://snad-discourse-lab.daintyaspen11.chatgpt.site",
+    "status": "succeeded",
+    "audience": "public",
+    "sourceTransportLimit": {
+      "error": "artifacts_git_receive_pack_object_too_large",
+      "rejectedObject": "data/quran.morphology.json",
+      "bytes": 40606213,
+      "resolution": "Separate hosting mirror omits only this derived object from Git; complete frozen package preserves it and is included as a download."
+    },
+    "archiveConfigCorrection": {
+      "rejectedDirectory": "web-dist",
+      "supportedDirectory": "dist",
+      "result": "Corrected source configuration and Vite output before deployment; no invalid version saved."
+    },
+    "url": "https://snad-discourse-lab.daintyaspen11.chatgpt.site",
+    "sourceCommit": "4b299c07f457bc0359e56e47e84a3c6cec0559be",
+    "deploymentId": "appgdep_6ad529d2800481918ad752dfdabaeb24",
+    "versionId": "appgprj_6ad52551d89481919ef3f7f0caf2e003~appgver_da987f0b46b88191baeda738f0f657dc",
+    "versionNumber": 1,
+    "sourcePushReadBack": true,
+    "browserVerification": "evidence/public-browser.json",
+    "publicArtifactReadback": "evidence/public-http.json",
+    "genericHttpLimit": "Cloudflare 403/error1010 rejected urllib; anonymous Chromium and page-native fetch returned 200 and matching archive bytes."
+  },
+  "sourceSnapshot": {
+    "commit": "81e7e5db04d0fa48e94e958b92b1b5d14ab02a27",
+    "manifestContentHash": "0c777632d62e1b0ee6b111f09f62ea316bfe644964718440fed36ed154e043b5",
+    "artifactCount": 136
+  }
+}

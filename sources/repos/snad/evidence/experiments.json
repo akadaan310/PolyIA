@@ -1,0 +1,2653 @@
+{
+  "schemaVersion": "snad.experiments.v1",
+  "seed": 6236,
+  "inputSummary": {
+    "ayahs": 6236,
+    "surahs": 114,
+    "shortAyahsUnder3Tokens": 204,
+    "canonicalJsonSha256": "ee41b826eccb29d613f67e55a2205e7391e07f6a577ad0035550befb5472b700",
+    "morphologyCanonicalJsonSha256": "25a51e7863b1d64b5890ccd7ad6da21e5d4132d2757cd3aaff47aff4a085141d",
+    "morphologyProvenance": "data/quran.morphology.provenance.json",
+    "originalFixtureCanonicalJsonSha256": "78cee3145ff5b0a03fd253ea9bb64e5686ac012f0253547f7b1730a714d280a5"
+  },
+  "independentSampling": {
+    "method": "Twelve smallest SHA256(seed + canonical locus) digests; excludes the five prescribed loci; independent of legacy ranking and outcome.",
+    "seed": "snad-independent-v1:",
+    "samples": [
+      {
+        "id": "quran:105:5",
+        "digest": "000635f61817505087c085ce738b89471f4f0459e5adc15e5ca16acbdf450b95"
+      },
+      {
+        "id": "quran:10:49",
+        "digest": "000f5249c115a97e6d28091f0a1820a370d141bbe5824f75db7dedbf3f68093c"
+      },
+      {
+        "id": "quran:13:33",
+        "digest": "001524e4763a2a606d28d958ff6a9dfadcfa40a9cf2e3924ba04d68e9203d39c"
+      },
+      {
+        "id": "quran:18:2",
+        "digest": "001bfdbcb6e6d8ffc800ec09570a82bbe7f889f5b9c3380fabf6f905debb92af"
+      },
+      {
+        "id": "quran:2:197",
+        "digest": "001c7530b1d4f404808aa7da0f1efc5d8dd16bb7ad6ab65fab9238b80d378157"
+      },
+      {
+        "id": "quran:66:5",
+        "digest": "001d658b4274f8b1b67097380ae05d00e25bc5902d51f82c79da519271d1e78b"
+      },
+      {
+        "id": "quran:83:35",
+        "digest": "0029b2d51f0de23e3f89d6738f46d318c96df898808f1d179f9f97a85bd133a2"
+      },
+      {
+        "id": "quran:11:2",
+        "digest": "0045b31ac210a8be740b22b8067c939794264921702eac01ad1010fb521fab03"
+      },
+      {
+        "id": "quran:21:27",
+        "digest": "004990aca15da7a79b845be61d71df402c5c80130e5e3768f063f428a99b2511"
+      },
+      {
+        "id": "quran:11:17",
+        "digest": "00500c7cae021fde6bbdd1d57f23397e9d0fc889a83d3d82eed69b4a935308b9"
+      },
+      {
+        "id": "quran:7:48",
+        "digest": "00556434657cea0a5995f3d338d37c695df7d28346ea82865d4874ea4c68a792"
+      },
+      {
+        "id": "quran:22:19",
+        "digest": "005b245104e388c6b4a60dd3c4f3a1dbc23a7757b690978ebbb3174f44d7f4c1"
+      }
+    ],
+    "analyses": [
+      {
+        "id": "quran:105:5",
+        "status": "analyzed",
+        "originalText": "فَجَعَلَهُمۡ كَعَصۡفٖ مَّأۡكُولِۭ",
+        "sourceTextSha256": "92c1b118e14025759474093ab2fbb533e789093ef81be351f57443eb2cd40b04",
+        "morphologyStatus": "aligned",
+        "featureUnits": 3,
+        "sourceTokenCount": 3,
+        "transitions": [],
+        "attributionChanges": 0,
+        "unknownSpeakers": 3,
+        "wholeCorpusStatusReference": "evidence/corpus-status.json#quran:105:5"
+      },
+      {
+        "id": "quran:10:49",
+        "status": "analyzed",
+        "originalText": "قُل لَّآ أَمۡلِكُ لِنَفۡسِي ضَرّٗا وَلَا نَفۡعًا إِلَّا مَا شَآءَ ٱللَّهُۗ لِكُلِّ أُمَّةٍ أَجَلٌۚ إِذَا جَآءَ أَجَلُهُمۡ فَلَا يَسۡتَـٔۡخِرُونَ سَاعَةٗ وَلَا يَسۡتَقۡدِمُونَ",
+        "sourceTextSha256": "02649d381f4f696fea58066520e890704cac7a316691e8edc848d4063b0e0439",
+        "morphologyStatus": "partial",
+        "featureUnits": 21,
+        "sourceTokenCount": 22,
+        "transitions": [],
+        "attributionChanges": 0,
+        "unknownSpeakers": 22,
+        "wholeCorpusStatusReference": "evidence/corpus-status.json#quran:10:49"
+      },
+      {
+        "id": "quran:13:33",
+        "status": "analyzed",
+        "originalText": "أَفَمَنۡ هُوَ قَآئِمٌ عَلَىٰ كُلِّ نَفۡسِۭ بِمَا كَسَبَتۡۗ وَجَعَلُواْ لِلَّهِ شُرَكَآءَ قُلۡ سَمُّوهُمۡۚ أَمۡ تُنَبِّـُٔونَهُۥ بِمَا لَا يَعۡلَمُ فِي ٱلۡأَرۡضِ أَم بِظَٰهِرٖ مِّنَ ٱلۡقَوۡلِۗ بَلۡ زُيِّنَ لِلَّذِينَ كَفَرُواْ مَكۡرُهُمۡ وَصُدُّواْ عَنِ ٱلسَّبِيلِۗ وَمَن يُضۡلِلِ ٱللَّهُ فَمَا لَهُۥ مِنۡ هَادٖ",
+        "sourceTextSha256": "71b28d0470c0b8942c72c031163814dc11a78122b45391be5a158168fcd24117",
+        "morphologyStatus": "partial",
+        "featureUnits": 38,
+        "sourceTokenCount": 39,
+        "transitions": [
+          {
+            "from": "quran:13:33:t7",
+            "to": "quran:13:33:t8",
+            "kinds": [
+              "number"
+            ]
+          },
+          {
+            "from": "quran:13:33:t10",
+            "to": "quran:13:33:t11",
+            "kinds": [
+              "number"
+            ]
+          },
+          {
+            "from": "quran:13:33:t11",
+            "to": "quran:13:33:t12",
+            "kinds": [
+              "number"
+            ]
+          },
+          {
+            "from": "quran:13:33:t25",
+            "to": "quran:13:33:t26",
+            "kinds": [
+              "number"
+            ]
+          }
+        ],
+        "attributionChanges": 0,
+        "unknownSpeakers": 39,
+        "wholeCorpusStatusReference": "evidence/corpus-status.json#quran:13:33"
+      },
+      {
+        "id": "quran:18:2",
+        "status": "analyzed",
+        "originalText": "قَيِّمٗا لِّيُنذِرَ بَأۡسٗا شَدِيدٗا مِّن لَّدُنۡهُ وَيُبَشِّرَ ٱلۡمُؤۡمِنِينَ ٱلَّذِينَ يَعۡمَلُونَ ٱلصَّـٰلِحَٰتِ أَنَّ لَهُمۡ أَجۡرًا حَسَنٗا",
+        "sourceTextSha256": "52a9fb3d8964c42da6befe7ed3d8f73494fc4c0b1bb33f34f06325c6fe13656a",
+        "morphologyStatus": "aligned",
+        "featureUnits": 15,
+        "sourceTokenCount": 15,
+        "transitions": [
+          {
+            "from": "quran:18:2:t6",
+            "to": "quran:18:2:t7",
+            "kinds": [
+              "number"
+            ]
+          }
+        ],
+        "attributionChanges": 0,
+        "unknownSpeakers": 15,
+        "wholeCorpusStatusReference": "evidence/corpus-status.json#quran:18:2"
+      },
+      {
+        "id": "quran:2:197",
+        "status": "analyzed",
+        "originalText": "ٱلۡحَجُّ أَشۡهُرٞ مَّعۡلُومَٰتٞۚ فَمَن فَرَضَ فِيهِنَّ ٱلۡحَجَّ فَلَا رَفَثَ وَلَا فُسُوقَ وَلَا جِدَالَ فِي ٱلۡحَجِّۗ وَمَا تَفۡعَلُواْ مِنۡ خَيۡرٖ يَعۡلَمۡهُ ٱللَّهُۗ وَتَزَوَّدُواْ فَإِنَّ خَيۡرَ ٱلزَّادِ ٱلتَّقۡوَىٰۖ وَٱتَّقُونِ يَـٰٓأُوْلِي ٱلۡأَلۡبَٰبِ",
+        "sourceTextSha256": "70d168768051196835f5ce669c96b3e1c2eb18d4ebfaf5556e35ec7566a947d9",
+        "morphologyStatus": "partial",
+        "featureUnits": 27,
+        "sourceTokenCount": 29,
+        "transitions": [],
+        "attributionChanges": 0,
+        "unknownSpeakers": 29,
+        "wholeCorpusStatusReference": "evidence/corpus-status.json#quran:2:197"
+      },
+      {
+        "id": "quran:66:5",
+        "status": "analyzed",
+        "originalText": "عَسَىٰ رَبُّهُۥٓ إِن طَلَّقَكُنَّ أَن يُبۡدِلَهُۥٓ أَزۡوَٰجًا خَيۡرٗا مِّنكُنَّ مُسۡلِمَٰتٖ مُّؤۡمِنَٰتٖ قَٰنِتَٰتٖ تَـٰٓئِبَٰتٍ عَٰبِدَٰتٖ سَـٰٓئِحَٰتٖ ثَيِّبَٰتٖ وَأَبۡكَارٗا",
+        "sourceTextSha256": "917774e381d8548d95f10a64375daf6f582cef233b477f0047b3be3425b17372",
+        "morphologyStatus": "aligned",
+        "featureUnits": 17,
+        "sourceTokenCount": 17,
+        "transitions": [
+          {
+            "from": "quran:66:5:t5",
+            "to": "quran:66:5:t6",
+            "kinds": [
+              "number"
+            ]
+          }
+        ],
+        "attributionChanges": 0,
+        "unknownSpeakers": 17,
+        "wholeCorpusStatusReference": "evidence/corpus-status.json#quran:66:5"
+      },
+      {
+        "id": "quran:83:35",
+        "status": "analyzed",
+        "originalText": "عَلَى ٱلۡأَرَآئِكِ يَنظُرُونَ",
+        "sourceTextSha256": "96212789a11ba4e3af300810684b3a3cbdc12e7ae6c666efdf489eba913f2666",
+        "morphologyStatus": "aligned",
+        "featureUnits": 3,
+        "sourceTokenCount": 3,
+        "transitions": [],
+        "attributionChanges": 0,
+        "unknownSpeakers": 3,
+        "wholeCorpusStatusReference": "evidence/corpus-status.json#quran:83:35"
+      },
+      {
+        "id": "quran:11:2",
+        "status": "analyzed",
+        "originalText": "أَلَّا تَعۡبُدُوٓاْ إِلَّا ٱللَّهَۚ إِنَّنِي لَكُم مِّنۡهُ نَذِيرٞ وَبَشِيرٞ",
+        "sourceTextSha256": "47c9971ac47330ba3a54bff855076acf8f565f6d9b8377a24552c5ccb39eac7a",
+        "morphologyStatus": "partial",
+        "featureUnits": 7,
+        "sourceTokenCount": 9,
+        "transitions": [],
+        "attributionChanges": 0,
+        "unknownSpeakers": 9,
+        "wholeCorpusStatusReference": "evidence/corpus-status.json#quran:11:2"
+      },
+      {
+        "id": "quran:21:27",
+        "status": "analyzed",
+        "originalText": "لَا يَسۡبِقُونَهُۥ بِٱلۡقَوۡلِ وَهُم بِأَمۡرِهِۦ يَعۡمَلُونَ",
+        "sourceTextSha256": "db0cf0a065530b0c2ab925a8009cd9f33f50ddb019d6f2d32f4c9807db594b8c",
+        "morphologyStatus": "aligned",
+        "featureUnits": 6,
+        "sourceTokenCount": 6,
+        "transitions": [],
+        "attributionChanges": 0,
+        "unknownSpeakers": 6,
+        "wholeCorpusStatusReference": "evidence/corpus-status.json#quran:21:27"
+      },
+      {
+        "id": "quran:11:17",
+        "status": "analyzed",
+        "originalText": "أَفَمَن كَانَ عَلَىٰ بَيِّنَةٖ مِّن رَّبِّهِۦ وَيَتۡلُوهُ شَاهِدٞ مِّنۡهُ وَمِن قَبۡلِهِۦ كِتَٰبُ مُوسَىٰٓ إِمَامٗا وَرَحۡمَةًۚ أُوْلَـٰٓئِكَ يُؤۡمِنُونَ بِهِۦۚ وَمَن يَكۡفُرۡ بِهِۦ مِنَ ٱلۡأَحۡزَابِ فَٱلنَّارُ مَوۡعِدُهُۥۚ فَلَا تَكُ فِي مِرۡيَةٖ مِّنۡهُۚ إِنَّهُ ٱلۡحَقُّ مِن رَّبِّكَ وَلَٰكِنَّ أَكۡثَرَ ٱلنَّاسِ لَا يُؤۡمِنُونَ",
+        "sourceTextSha256": "c2d11bdfe4d81d974716e63ff21222f95cda0c5247281892be61aa7b12cb80ef",
+        "morphologyStatus": "partial",
+        "featureUnits": 38,
+        "sourceTokenCount": 39,
+        "transitions": [
+          {
+            "from": "quran:11:17:t16",
+            "to": "quran:11:17:t17",
+            "kinds": [
+              "number"
+            ]
+          },
+          {
+            "from": "quran:11:17:t35",
+            "to": "quran:11:17:t36",
+            "kinds": [
+              "number"
+            ]
+          }
+        ],
+        "attributionChanges": 0,
+        "unknownSpeakers": 39,
+        "wholeCorpusStatusReference": "evidence/corpus-status.json#quran:11:17"
+      },
+      {
+        "id": "quran:7:48",
+        "status": "analyzed",
+        "originalText": "وَنَادَىٰٓ أَصۡحَٰبُ ٱلۡأَعۡرَافِ رِجَالٗا يَعۡرِفُونَهُم بِسِيمَىٰهُمۡ قَالُواْ مَآ أَغۡنَىٰ عَنكُمۡ جَمۡعُكُمۡ وَمَا كُنتُمۡ تَسۡتَكۡبِرُونَ",
+        "sourceTextSha256": "f7c721228e04c60bddbf628a564c7a76fe02c96a18b8ed8d03fa00896b48a316",
+        "morphologyStatus": "aligned",
+        "featureUnits": 14,
+        "sourceTokenCount": 14,
+        "transitions": [
+          {
+            "from": "quran:7:48:t0",
+            "to": "quran:7:48:t1",
+            "kinds": [
+              "number"
+            ]
+          },
+          {
+            "from": "quran:7:48:t12",
+            "to": "quran:7:48:t13",
+            "kinds": [
+              "aspect"
+            ]
+          }
+        ],
+        "attributionChanges": 0,
+        "unknownSpeakers": 14,
+        "wholeCorpusStatusReference": "evidence/corpus-status.json#quran:7:48"
+      },
+      {
+        "id": "quran:22:19",
+        "status": "analyzed",
+        "originalText": "۞هَٰذَانِ خَصۡمَانِ ٱخۡتَصَمُواْ فِي رَبِّهِمۡۖ فَٱلَّذِينَ كَفَرُواْ قُطِّعَتۡ لَهُمۡ ثِيَابٞ مِّن نَّارٖ يُصَبُّ مِن فَوۡقِ رُءُوسِهِمُ ٱلۡحَمِيمُ",
+        "sourceTextSha256": "ccbbb231f4506be2bced4c1d03936a5523bc5747208cc6f74a1a0b1cded4fbdb",
+        "morphologyStatus": "partial",
+        "featureUnits": 15,
+        "sourceTokenCount": 17,
+        "transitions": [
+          {
+            "from": "quran:22:19:t1",
+            "to": "quran:22:19:t2",
+            "kinds": [
+              "number"
+            ]
+          },
+          {
+            "from": "quran:22:19:t6",
+            "to": "quran:22:19:t7",
+            "kinds": [
+              "number"
+            ]
+          },
+          {
+            "from": "quran:22:19:t7",
+            "to": "quran:22:19:t8",
+            "kinds": [
+              "number"
+            ]
+          },
+          {
+            "from": "quran:22:19:t15",
+            "to": "quran:22:19:t16",
+            "kinds": [
+              "number"
+            ]
+          }
+        ],
+        "attributionChanges": 0,
+        "unknownSpeakers": 17,
+        "wholeCorpusStatusReference": "evidence/corpus-status.json#quran:22:19"
+      }
+    ]
+  },
+  "requiredPassages": [
+    {
+      "id": "quran:11:29",
+      "status": "analyzed",
+      "originalText": "وَيَٰقَوۡمِ لَآ أَسۡـَٔلُكُمۡ عَلَيۡهِ مَالًاۖ إِنۡ أَجۡرِيَ إِلَّا عَلَى ٱللَّهِۚ وَمَآ أَنَا۠ بِطَارِدِ ٱلَّذِينَ ءَامَنُوٓاْۚ إِنَّهُم مُّلَٰقُواْ رَبِّهِمۡ وَلَٰكِنِّيٓ أَرَىٰكُمۡ قَوۡمٗا تَجۡهَلُونَ",
+      "sourceTextSha256": "33467f4720a6af605243dc9927b5c3fcb81dde44cebe28205159690e2658e067",
+      "morphologyStatus": "partial",
+      "featureUnits": 20,
+      "sourceTokenCount": 22,
+      "transitions": [],
+      "attributionChanges": 0,
+      "unknownSpeakers": 22,
+      "wholeCorpusStatusReference": "evidence/corpus-status.json#quran:11:29"
+    },
+    {
+      "id": "quran:11:36",
+      "status": "analyzed",
+      "originalText": "وَأُوحِيَ إِلَىٰ نُوحٍ أَنَّهُۥ لَن يُؤۡمِنَ مِن قَوۡمِكَ إِلَّا مَن قَدۡ ءَامَنَ فَلَا تَبۡتَئِسۡ بِمَا كَانُواْ يَفۡعَلُونَ",
+      "sourceTextSha256": "468688f05d0a8708b00f793531fe137b1fe8a13f908ef653a5ae2a88d1b63a70",
+      "morphologyStatus": "partial",
+      "featureUnits": 16,
+      "sourceTokenCount": 17,
+      "transitions": [
+        {
+          "from": "quran:11:36:t15",
+          "to": "quran:11:36:t16",
+          "kinds": [
+            "aspect"
+          ]
+        }
+      ],
+      "attributionChanges": 0,
+      "unknownSpeakers": 17,
+      "wholeCorpusStatusReference": "evidence/corpus-status.json#quran:11:36"
+    },
+    {
+      "id": "quran:50:2",
+      "status": "analyzed",
+      "originalText": "بَلۡ عَجِبُوٓاْ أَن جَآءَهُم مُّنذِرٞ مِّنۡهُمۡ فَقَالَ ٱلۡكَٰفِرُونَ هَٰذَا شَيۡءٌ عَجِيبٌ",
+      "sourceTextSha256": "d6a44cdbb447fb999addefbfe18706c2d4cab56d704b5c8fcb7300004097de47",
+      "morphologyStatus": "partial",
+      "featureUnits": 10,
+      "sourceTokenCount": 11,
+      "transitions": [
+        {
+          "from": "quran:50:2:t6",
+          "to": "quran:50:2:t7",
+          "kinds": [
+            "number"
+          ]
+        },
+        {
+          "from": "quran:50:2:t7",
+          "to": "quran:50:2:t8",
+          "kinds": [
+            "number"
+          ]
+        }
+      ],
+      "attributionChanges": 0,
+      "unknownSpeakers": 11,
+      "wholeCorpusStatusReference": "evidence/corpus-status.json#quran:50:2"
+    },
+    {
+      "id": "quran:28:4",
+      "status": "analyzed",
+      "originalText": "إِنَّ فِرۡعَوۡنَ عَلَا فِي ٱلۡأَرۡضِ وَجَعَلَ أَهۡلَهَا شِيَعٗا يَسۡتَضۡعِفُ طَآئِفَةٗ مِّنۡهُمۡ يُذَبِّحُ أَبۡنَآءَهُمۡ وَيَسۡتَحۡيِۦ نِسَآءَهُمۡۚ إِنَّهُۥ كَانَ مِنَ ٱلۡمُفۡسِدِينَ",
+      "sourceTextSha256": "8d221562da4470c49c8b9a7796a8267c1f8cb249496f6fe3e16d81c8df79781e",
+      "morphologyStatus": "partial",
+      "featureUnits": 17,
+      "sourceTokenCount": 19,
+      "transitions": [
+        {
+          "from": "quran:28:4:t7",
+          "to": "quran:28:4:t8",
+          "kinds": [
+            "number"
+          ]
+        },
+        {
+          "from": "quran:28:4:t11",
+          "to": "quran:28:4:t12",
+          "kinds": [
+            "number"
+          ]
+        }
+      ],
+      "attributionChanges": 0,
+      "unknownSpeakers": 19,
+      "wholeCorpusStatusReference": "evidence/corpus-status.json#quran:28:4"
+    },
+    {
+      "id": "quran:28:5",
+      "status": "analyzed",
+      "originalText": "وَنُرِيدُ أَن نَّمُنَّ عَلَى ٱلَّذِينَ ٱسۡتُضۡعِفُواْ فِي ٱلۡأَرۡضِ وَنَجۡعَلَهُمۡ أَئِمَّةٗ وَنَجۡعَلَهُمُ ٱلۡوَٰرِثِينَ",
+      "sourceTextSha256": "cd3bd593ff1adc908830417abf002321f7625cfe596b9e38f9b23c2c54673a38",
+      "morphologyStatus": "partial",
+      "featureUnits": 11,
+      "sourceTokenCount": 12,
+      "transitions": [],
+      "attributionChanges": 0,
+      "unknownSpeakers": 12,
+      "wholeCorpusStatusReference": "evidence/corpus-status.json#quran:28:5"
+    }
+  ],
+  "baselines": {
+    "goldKind": "authored explicit synthetic feature/attribution transitions; not Quran ground truth",
+    "cases": 8,
+    "task": "Detect any supplied typed grammatical or attribution boundary between two units.",
+    "metrics": {
+      "noChange": {
+        "truePositive": 0,
+        "falsePositive": 0,
+        "trueNegative": 2,
+        "falseNegative": 6,
+        "precision": 0,
+        "recall": 0,
+        "f1": 0
+      },
+      "personOnly": {
+        "truePositive": 2,
+        "falsePositive": 0,
+        "trueNegative": 2,
+        "falseNegative": 4,
+        "precision": 1,
+        "recall": 0.3333333333333333,
+        "f1": 0.5
+      },
+      "speakerOnly": {
+        "truePositive": 2,
+        "falsePositive": 0,
+        "trueNegative": 2,
+        "falseNegative": 4,
+        "precision": 1,
+        "recall": 0.3333333333333333,
+        "f1": 0.5
+      },
+      "snad": {
+        "truePositive": 6,
+        "falsePositive": 0,
+        "trueNegative": 2,
+        "falseNegative": 0,
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      }
+    },
+    "examples": [
+      {
+        "id": "unchanged",
+        "left": {
+          "text": "tea",
+          "speaker": "A",
+          "features": {
+            "person": "1"
+          }
+        },
+        "right": {
+          "text": "tea",
+          "speaker": "A",
+          "features": {
+            "person": "1"
+          }
+        },
+        "gold": false,
+        "annotation": "No typed grammatical or attribution boundary.",
+        "predictions": {
+          "noChange": false,
+          "personOnly": false,
+          "speakerOnly": false,
+          "snad": false
+        },
+        "kinds": []
+      },
+      {
+        "id": "lexical-only",
+        "left": {
+          "text": "tea",
+          "speaker": "A",
+          "features": {
+            "person": "1"
+          }
+        },
+        "right": {
+          "text": "stone",
+          "speaker": "A",
+          "features": {
+            "person": "1"
+          }
+        },
+        "gold": false,
+        "annotation": "Surface vocabulary changes while explicit state stays constant.",
+        "predictions": {
+          "noChange": false,
+          "personOnly": false,
+          "speakerOnly": false,
+          "snad": false
+        },
+        "kinds": []
+      },
+      {
+        "id": "person-only",
+        "left": {
+          "text": "I wait",
+          "speaker": "A",
+          "features": {
+            "person": "1"
+          }
+        },
+        "right": {
+          "text": "you wait",
+          "speaker": "A",
+          "features": {
+            "person": "2"
+          }
+        },
+        "gold": true,
+        "annotation": "Grammatical person boundary; speaker remains A.",
+        "predictions": {
+          "noChange": false,
+          "personOnly": true,
+          "speakerOnly": false,
+          "snad": true
+        },
+        "kinds": [
+          "person"
+        ]
+      },
+      {
+        "id": "speaker-only",
+        "left": {
+          "text": "Ready",
+          "speaker": "A",
+          "features": {
+            "person": "1"
+          }
+        },
+        "right": {
+          "text": "Ready",
+          "speaker": "B",
+          "features": {
+            "person": "1"
+          }
+        },
+        "gold": true,
+        "annotation": "Explicit authored speaker boundary; grammar constant.",
+        "predictions": {
+          "noChange": false,
+          "personOnly": false,
+          "speakerOnly": true,
+          "snad": true
+        },
+        "kinds": [
+          "speaker"
+        ]
+      },
+      {
+        "id": "number-only",
+        "left": {
+          "text": "one",
+          "features": {
+            "number": "singular"
+          }
+        },
+        "right": {
+          "text": "several",
+          "features": {
+            "number": "plural"
+          }
+        },
+        "gold": true,
+        "annotation": "Supplied grammatical number boundary.",
+        "predictions": {
+          "noChange": false,
+          "personOnly": false,
+          "speakerOnly": false,
+          "snad": true
+        },
+        "kinds": [
+          "number"
+        ]
+      },
+      {
+        "id": "tense-only",
+        "left": {
+          "text": "waited",
+          "features": {
+            "tense": "past"
+          }
+        },
+        "right": {
+          "text": "waits",
+          "features": {
+            "tense": "present"
+          }
+        },
+        "gold": true,
+        "annotation": "Supplied tense boundary.",
+        "predictions": {
+          "noChange": false,
+          "personOnly": false,
+          "speakerOnly": false,
+          "snad": true
+        },
+        "kinds": [
+          "tense"
+        ]
+      },
+      {
+        "id": "addressee-only",
+        "left": {
+          "text": "Welcome",
+          "speaker": "A",
+          "addressee": "B"
+        },
+        "right": {
+          "text": "Welcome",
+          "speaker": "A",
+          "addressee": "C"
+        },
+        "gold": true,
+        "annotation": "Explicit authored addressee boundary.",
+        "predictions": {
+          "noChange": false,
+          "personOnly": false,
+          "speakerOnly": false,
+          "snad": true
+        },
+        "kinds": [
+          "addressee"
+        ]
+      },
+      {
+        "id": "combined",
+        "left": {
+          "text": "I speak",
+          "speaker": "A",
+          "features": {
+            "person": "1"
+          }
+        },
+        "right": {
+          "text": "you speak",
+          "speaker": "B",
+          "features": {
+            "person": "2"
+          }
+        },
+        "gold": true,
+        "annotation": "Both person and explicit speaker boundary.",
+        "predictions": {
+          "noChange": false,
+          "personOnly": true,
+          "speakerOnly": true,
+          "snad": true
+        },
+        "kinds": [
+          "person",
+          "speaker"
+        ]
+      }
+    ],
+    "limitation": "Cases deliberately span supported dimensions. Perfect fit is an API contract demonstration, not evidence of real-world detection accuracy, automatic feature extraction, or superiority on natural text."
+  },
+  "reconstructions": [
+    {
+      "id": "R1",
+      "name": "Typed path concatenation agrees with an independent list reference",
+      "checked": 81,
+      "identityChecks": 162,
+      "passed": true,
+      "failures": [],
+      "scope": "81 composable triples over 3 vertices plus 162 identity checks. Finite regression; not a new categorical theorem."
+    },
+    {
+      "id": "R2",
+      "name": "Weak graph component and cycle summaries agree with forest edge counting",
+      "checked": 257,
+      "passed": true,
+      "failures": [],
+      "scope": "All edge subsets of paths with 0–8 vertices plus one triangle. Topology summarizes the constructed graph, not the semantics of a conversation."
+    },
+    {
+      "id": "R3",
+      "name": "Restricted signatures preserve bijective identity renaming and lexical replacement",
+      "checked": 256,
+      "passed": true,
+      "failures": [],
+      "scope": "256 authored four-unit binary-person/binary-speaker paths. This is structural equivalence under the documented representation, not semantic equivalence."
+    }
+  ],
+  "crossLinguistic": [
+    {
+      "language": "English",
+      "text": [
+        "I wait.",
+        "You wait.",
+        "They wait."
+      ],
+      "manualFeatures": true,
+      "manuallySuppliedPersons": [
+        "1",
+        "2",
+        "3"
+      ],
+      "manuallySuppliedSpeakers": [
+        "A",
+        "A",
+        "B"
+      ],
+      "signature": "{\"quoteNesting\":[],\"transitions\":[{\"from\":0,\"kinds\":[\"person\"],\"to\":1},{\"from\":1,\"kinds\":[\"person\",\"speaker\"],\"to\":2}],\"units\":[{\"addressee\":\"?\",\"features\":{\"person\":\"1\"},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":0},{\"addressee\":\"?\",\"features\":{\"person\":\"2\"},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":0},{\"addressee\":\"?\",\"features\":{\"person\":\"3\"},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":1}],\"version\":\"snad-signature/2\"}",
+      "signatureMatchesEnglish": true,
+      "transitions": [
+        [
+          "person"
+        ],
+        [
+          "person",
+          "speaker"
+        ]
+      ],
+      "scope": "Authored nonreligious inputs with manual feature labels. No automatic translation, parsing, cross-language generalization, or native-speaker validation claimed."
+    },
+    {
+      "language": "Arabic",
+      "text": [
+        "أنا أنتظر.",
+        "أنت تنتظر.",
+        "هم ينتظرون."
+      ],
+      "manualFeatures": true,
+      "manuallySuppliedPersons": [
+        "1",
+        "2",
+        "3"
+      ],
+      "manuallySuppliedSpeakers": [
+        "A",
+        "A",
+        "B"
+      ],
+      "signature": "{\"quoteNesting\":[],\"transitions\":[{\"from\":0,\"kinds\":[\"person\"],\"to\":1},{\"from\":1,\"kinds\":[\"person\",\"speaker\"],\"to\":2}],\"units\":[{\"addressee\":\"?\",\"features\":{\"person\":\"1\"},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":0},{\"addressee\":\"?\",\"features\":{\"person\":\"2\"},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":0},{\"addressee\":\"?\",\"features\":{\"person\":\"3\"},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":1}],\"version\":\"snad-signature/2\"}",
+      "signatureMatchesEnglish": true,
+      "transitions": [
+        [
+          "person"
+        ],
+        [
+          "person",
+          "speaker"
+        ]
+      ],
+      "scope": "Authored nonreligious inputs with manual feature labels. No automatic translation, parsing, cross-language generalization, or native-speaker validation claimed."
+    },
+    {
+      "language": "Spanish",
+      "text": [
+        "Yo espero.",
+        "Tú esperas.",
+        "Ellos esperan."
+      ],
+      "manualFeatures": true,
+      "manuallySuppliedPersons": [
+        "1",
+        "2",
+        "3"
+      ],
+      "manuallySuppliedSpeakers": [
+        "A",
+        "A",
+        "B"
+      ],
+      "signature": "{\"quoteNesting\":[],\"transitions\":[{\"from\":0,\"kinds\":[\"person\"],\"to\":1},{\"from\":1,\"kinds\":[\"person\",\"speaker\"],\"to\":2}],\"units\":[{\"addressee\":\"?\",\"features\":{\"person\":\"1\"},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":0},{\"addressee\":\"?\",\"features\":{\"person\":\"2\"},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":0},{\"addressee\":\"?\",\"features\":{\"person\":\"3\"},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":1}],\"version\":\"snad-signature/2\"}",
+      "signatureMatchesEnglish": true,
+      "transitions": [
+        [
+          "person"
+        ],
+        [
+          "person",
+          "speaker"
+        ]
+      ],
+      "scope": "Authored nonreligious inputs with manual feature labels. No automatic translation, parsing, cross-language generalization, or native-speaker validation claimed."
+    }
+  ],
+  "lexicalGrid": [
+    {
+      "sharedVocabulary": true,
+      "changeSpeaker": false,
+      "lexicalContinuity": 1,
+      "continuityMeasuredOn": "independent set overlap for the no-transition pair",
+      "transitions": 0,
+      "attributionChange": false
+    },
+    {
+      "sharedVocabulary": true,
+      "changeSpeaker": true,
+      "lexicalContinuity": 1,
+      "continuityMeasuredOn": "typed transition lexical Jaccard",
+      "transitions": 1,
+      "attributionChange": true
+    },
+    {
+      "sharedVocabulary": false,
+      "changeSpeaker": false,
+      "lexicalContinuity": 0,
+      "continuityMeasuredOn": "independent set overlap for the no-transition pair",
+      "transitions": 0,
+      "attributionChange": false
+    },
+    {
+      "sharedVocabulary": false,
+      "changeSpeaker": true,
+      "lexicalContinuity": 0,
+      "continuityMeasuredOn": "typed transition lexical Jaccard",
+      "transitions": 1,
+      "attributionChange": true
+    }
+  ],
+  "negativeControls": [
+    {
+      "id": "NC1",
+      "claimRejected": "A grammatical-person change proves a speaker change.",
+      "passed": true,
+      "witness": [
+        [
+          "person"
+        ]
+      ]
+    },
+    {
+      "id": "NC2",
+      "claimRejected": "Missing or empty features justify a detected grammar boundary.",
+      "passed": true,
+      "witness": {
+        "transitions": 0,
+        "unknownSpeakers": true
+      }
+    },
+    {
+      "id": "NC3",
+      "claimRejected": "Identical words guarantee attribution continuity.",
+      "passed": true,
+      "witness": {
+        "id": "tr:%22unit%3A0%22>%22unit%3A1%22",
+        "from": "unit:0",
+        "to": "unit:1",
+        "kinds": [
+          "speaker"
+        ],
+        "confidence": 0.5,
+        "confidenceMeaning": "uncalibrated-evidence-quality",
+        "lexicalContinuity": 1,
+        "attributionChange": true,
+        "evidence": [
+          {
+            "id": "tr:%22unit%3A0%22>%22unit%3A1%22:evidence",
+            "status": "derived",
+            "method": "adjacent-explicit-feature-comparison",
+            "sourceId": "snad:authored-experiments:v1",
+            "note": "Only compares supplied features and resolved identity declarations; confidence is evidence quality, not probability.",
+            "confidence": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "id": "NC4",
+      "claimRejected": "Changed words require a typed grammatical or attribution transition.",
+      "passed": true,
+      "witness": {
+        "left": "tea",
+        "right": "stone",
+        "transitions": 0
+      }
+    },
+    {
+      "id": "NC5",
+      "claimRejected": "A restricted structural signature recovers surface order or speaker names.",
+      "passed": true,
+      "witness": {
+        "forward": [
+          {
+            "text": "first content",
+            "speaker": "A",
+            "features": {
+              "person": "1"
+            }
+          },
+          {
+            "text": "second content",
+            "speaker": "B",
+            "features": {
+              "person": "1"
+            }
+          }
+        ],
+        "reverse": [
+          {
+            "text": "second content",
+            "speaker": "B",
+            "features": {
+              "person": "1"
+            }
+          },
+          {
+            "text": "first content",
+            "speaker": "A",
+            "features": {
+              "person": "1"
+            }
+          }
+        ],
+        "sharedSignature": "{\"quoteNesting\":[],\"transitions\":[{\"from\":0,\"kinds\":[\"speaker\"],\"to\":1}],\"units\":[{\"addressee\":\"?\",\"features\":{\"person\":\"1\"},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":0},{\"addressee\":\"?\",\"features\":{\"person\":\"1\"},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":1}],\"version\":\"snad-signature/2\"}"
+      }
+    },
+    {
+      "id": "NC6",
+      "claimRejected": "Any identity renaming, including many-to-one collapse, preserves structural equivalence.",
+      "passed": true,
+      "witness": {
+        "original": "{\"quoteNesting\":[],\"transitions\":[{\"from\":0,\"kinds\":[\"speaker\"],\"to\":1},{\"from\":1,\"kinds\":[\"speaker\"],\"to\":2}],\"units\":[{\"addressee\":\"?\",\"features\":{},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":0},{\"addressee\":\"?\",\"features\":{},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":1},{\"addressee\":\"?\",\"features\":{},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":0}],\"version\":\"snad-signature/2\"}",
+        "collapsed": "{\"quoteNesting\":[],\"transitions\":[],\"units\":[{\"addressee\":\"?\",\"features\":{},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":0},{\"addressee\":\"?\",\"features\":{},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":0},{\"addressee\":\"?\",\"features\":{},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":0}],\"version\":\"snad-signature/2\"}"
+      }
+    },
+    {
+      "id": "NC7",
+      "claimRejected": "Graph topology alone identifies the kind of discourse boundary.",
+      "passed": true,
+      "witness": {
+        "sharedTopology": {
+          "vertices": 2,
+          "edges": 1,
+          "components": 1,
+          "cycleRank": 0,
+          "density": 0.5,
+          "meanOutDegree": 0.5
+        },
+        "firstKinds": [
+          "person"
+        ],
+        "secondKinds": [
+          "speaker"
+        ]
+      }
+    }
+  ],
+  "perturbationForge": {
+    "referenceTransitions": 3,
+    "referenceKinds": [
+      [
+        "person"
+      ],
+      [
+        "speaker"
+      ],
+      [
+        "person",
+        "number"
+      ]
+    ],
+    "trials": [
+      {
+        "kind": "drop-features",
+        "seed": 6236,
+        "replayDeterministic": true,
+        "transitions": 1,
+        "kinds": [
+          [
+            "speaker"
+          ]
+        ],
+        "signature": "{\"quoteNesting\":[],\"transitions\":[{\"from\":1,\"kinds\":[\"speaker\"],\"to\":2}],\"units\":[{\"addressee\":\"?\",\"features\":{},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":0},{\"addressee\":\"?\",\"features\":{},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":0},{\"addressee\":\"?\",\"features\":{},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":1},{\"addressee\":\"?\",\"features\":{},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":1}],\"version\":\"snad-signature/2\"}",
+        "unknownSpeakers": 0
+      },
+      {
+        "kind": "mask-speakers",
+        "seed": 6236,
+        "replayDeterministic": true,
+        "transitions": 2,
+        "kinds": [
+          [
+            "person"
+          ],
+          [
+            "person",
+            "number"
+          ]
+        ],
+        "signature": "{\"quoteNesting\":[],\"transitions\":[{\"from\":0,\"kinds\":[\"person\"],\"to\":1},{\"from\":2,\"kinds\":[\"person\",\"number\"],\"to\":3}],\"units\":[{\"addressee\":\"?\",\"features\":{\"number\":\"singular\",\"person\":\"1\"},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":\"?\"},{\"addressee\":\"?\",\"features\":{\"number\":\"singular\",\"person\":\"2\"},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":\"?\"},{\"addressee\":\"?\",\"features\":{\"number\":\"singular\",\"person\":\"2\"},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":\"?\"},{\"addressee\":\"?\",\"features\":{\"number\":\"plural\",\"person\":\"3\"},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":\"?\"}],\"version\":\"snad-signature/2\"}",
+        "unknownSpeakers": 4
+      },
+      {
+        "kind": "reverse-units",
+        "seed": 6236,
+        "replayDeterministic": true,
+        "transitions": 3,
+        "kinds": [
+          [
+            "person",
+            "number"
+          ],
+          [
+            "speaker"
+          ],
+          [
+            "person"
+          ]
+        ],
+        "signature": "{\"quoteNesting\":[],\"transitions\":[{\"from\":0,\"kinds\":[\"person\",\"number\"],\"to\":1},{\"from\":1,\"kinds\":[\"speaker\"],\"to\":2},{\"from\":2,\"kinds\":[\"person\"],\"to\":3}],\"units\":[{\"addressee\":\"?\",\"features\":{\"number\":\"plural\",\"person\":\"3\"},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":0},{\"addressee\":\"?\",\"features\":{\"number\":\"singular\",\"person\":\"2\"},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":0},{\"addressee\":\"?\",\"features\":{\"number\":\"singular\",\"person\":\"2\"},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":1},{\"addressee\":\"?\",\"features\":{\"number\":\"singular\",\"person\":\"1\"},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":1}],\"version\":\"snad-signature/2\"}",
+        "unknownSpeakers": 0
+      }
+    ],
+    "originalUnchanged": true,
+    "minimumEvidenceConfidence": 0.2,
+    "confidenceMeaning": "uncalibrated-evidence-quality",
+    "confidenceScope": "Minimum supplied evidence grade (plus adapter annotation grade), never a probability of speaker truth. No confidence calibration data available.",
+    "motifs": [
+      {
+        "signature": "person → speaker",
+        "count": 2,
+        "occurrences": [
+          {
+            "analysisId": "snad:authored-experiments:v1",
+            "transitionIds": [
+              "tr:%22forge%3A0%22>%22forge%3A1%22",
+              "tr:%22forge%3A1%22>%22forge%3A2%22"
+            ]
+          },
+          {
+            "analysisId": "snad:authored-experiments:v1",
+            "transitionIds": [
+              "tr:%22forge%3A0%22>%22forge%3A1%22",
+              "tr:%22forge%3A1%22>%22forge%3A2%22"
+            ]
+          }
+        ]
+      },
+      {
+        "signature": "speaker → person+number",
+        "count": 2,
+        "occurrences": [
+          {
+            "analysisId": "snad:authored-experiments:v1",
+            "transitionIds": [
+              "tr:%22forge%3A1%22>%22forge%3A2%22",
+              "tr:%22forge%3A2%22>%22forge%3A3%22"
+            ]
+          },
+          {
+            "analysisId": "snad:authored-experiments:v1",
+            "transitionIds": [
+              "tr:%22forge%3A1%22>%22forge%3A2%22",
+              "tr:%22forge%3A2%22>%22forge%3A3%22"
+            ]
+          }
+        ]
+      }
+    ],
+    "motifScope": "Overlapping two-transition strings counted in two repeated authored inputs; a motif count is not a learned discourse grammar."
+  },
+  "selfCommissioned": {
+    "question": "Does the restricted signature retain the order of homogeneous-feature turns whose two speaker identities are exchangeable?",
+    "commissionedBy": "Independent experiment design during this build; not a prescribed corpus example.",
+    "signatureCollidesUnderReversal": true,
+    "orderIsRecoverableFromSignature": false,
+    "interpretation": "The signature intentionally quotients lexical content and identity names; equal signatures cannot reconstruct original turn content/order. Preserve original units alongside signatures.",
+    "witness": {
+      "forward": [
+        {
+          "text": "first content",
+          "speaker": "A",
+          "features": {
+            "person": "1"
+          }
+        },
+        {
+          "text": "second content",
+          "speaker": "B",
+          "features": {
+            "person": "1"
+          }
+        }
+      ],
+      "reversed": [
+        {
+          "text": "second content",
+          "speaker": "B",
+          "features": {
+            "person": "1"
+          }
+        },
+        {
+          "text": "first content",
+          "speaker": "A",
+          "features": {
+            "person": "1"
+          }
+        }
+      ],
+      "signature": "{\"quoteNesting\":[],\"transitions\":[{\"from\":0,\"kinds\":[\"speaker\"],\"to\":1}],\"units\":[{\"addressee\":\"?\",\"features\":{\"person\":\"1\"},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":0},{\"addressee\":\"?\",\"features\":{\"person\":\"1\"},\"frame\":0,\"narrator\":\"?\",\"referents\":[],\"speaker\":1}],\"version\":\"snad-signature/2\"}"
+    }
+  },
+  "differential": {
+    "source": {
+      "repository": "https://github.com/akadaan310/isnaad",
+      "commit": "4c059a1691920a13ea973146e42518e83f31573c",
+      "tree": "src/lib/engine",
+      "engineTreeGitObject": "21f744b56d90692fda70e41b3edd731af6727c52",
+      "runtime": "v24.19.0"
+    },
+    "scope": "Independent adjacent token comparison versus original surah-context carried-person seams; mismatch is not an accuracy judgment.",
+    "projection": "Read morphology-row person tags for verbs or standalone pronouns; prefer verbs; omit conflicting principal person tags. No inherited role assignment, weighting, or carried-person heuristic.",
+    "cases": [
+      {
+        "locus": "11:29",
+        "purpose": "required-or-boundary-case",
+        "originalPersonEndpoints": [
+          {
+            "from": "surah-context:469",
+            "to": "word:3",
+            "fromPerson": "3",
+            "toPerson": "1"
+          },
+          {
+            "from": "word:12",
+            "to": "word:15",
+            "fromPerson": "1",
+            "toPerson": "3"
+          },
+          {
+            "from": "word:16",
+            "to": "word:19",
+            "fromPerson": "3",
+            "toPerson": "1"
+          },
+          {
+            "from": "word:20",
+            "to": "word:22",
+            "fromPerson": "1",
+            "toPerson": "2"
+          }
+        ],
+        "independentPersonEndpoints": [],
+        "matches": false,
+        "originalSeams": [
+          {
+            "at": 473,
+            "fromWord": 469,
+            "from": 3,
+            "to": 1,
+            "axisDelta": -0.5,
+            "person": true,
+            "number": false,
+            "gender": false,
+            "tense": false,
+            "ayah": 29
+          },
+          {
+            "at": 485,
+            "fromWord": 482,
+            "from": 1,
+            "to": 3,
+            "axisDelta": 0.5,
+            "person": true,
+            "number": true,
+            "gender": false,
+            "tense": false,
+            "ayah": 29
+          },
+          {
+            "at": 489,
+            "fromWord": 486,
+            "from": 3,
+            "to": 1,
+            "axisDelta": -0.5,
+            "person": true,
+            "number": true,
+            "gender": false,
+            "tense": false,
+            "ayah": 29
+          },
+          {
+            "at": 492,
+            "fromWord": 490,
+            "from": 1,
+            "to": 2,
+            "axisDelta": -0.5,
+            "person": true,
+            "number": true,
+            "gender": false,
+            "tense": false,
+            "ayah": 29
+          }
+        ],
+        "context": "Expected outputs were computed over the complete surah, not this ayah in isolation."
+      },
+      {
+        "locus": "11:36",
+        "purpose": "required-or-boundary-case",
+        "originalPersonEndpoints": [
+          {
+            "from": "surah-context:585",
+            "to": "word:1",
+            "fromPerson": "2",
+            "toPerson": "3"
+          }
+        ],
+        "independentPersonEndpoints": [],
+        "matches": false,
+        "originalSeams": [
+          {
+            "at": 586,
+            "fromWord": 585,
+            "from": 2,
+            "to": 3,
+            "axisDelta": 1,
+            "person": true,
+            "number": true,
+            "gender": false,
+            "tense": true,
+            "ayah": 36
+          },
+          {
+            "at": 597,
+            "fromWord": 591,
+            "from": 3,
+            "to": 3,
+            "axisDelta": 0,
+            "person": false,
+            "number": false,
+            "gender": false,
+            "tense": true,
+            "ayah": 36
+          },
+          {
+            "at": 599,
+            "fromWord": 597,
+            "from": 3,
+            "to": 3,
+            "axisDelta": 0,
+            "person": false,
+            "number": false,
+            "gender": true,
+            "tense": true,
+            "ayah": 36
+          },
+          {
+            "at": 601,
+            "fromWord": 599,
+            "from": 3,
+            "to": 3,
+            "axisDelta": 0,
+            "person": false,
+            "number": true,
+            "gender": true,
+            "tense": true,
+            "ayah": 36
+          },
+          {
+            "at": 602,
+            "fromWord": 601,
+            "from": 3,
+            "to": 3,
+            "axisDelta": 0,
+            "person": false,
+            "number": false,
+            "gender": false,
+            "tense": true,
+            "ayah": 36
+          }
+        ],
+        "context": "Expected outputs were computed over the complete surah, not this ayah in isolation."
+      },
+      {
+        "locus": "50:2",
+        "purpose": "required-or-boundary-case",
+        "originalPersonEndpoints": [],
+        "independentPersonEndpoints": [],
+        "matches": true,
+        "originalSeams": [
+          {
+            "at": 6,
+            "fromWord": 4,
+            "from": 3,
+            "to": 3,
+            "axisDelta": 0,
+            "person": false,
+            "number": true,
+            "gender": false,
+            "tense": false,
+            "ayah": 2
+          }
+        ],
+        "context": "Expected outputs were computed over the complete surah, not this ayah in isolation."
+      },
+      {
+        "locus": "28:4",
+        "purpose": "required-or-boundary-case",
+        "originalPersonEndpoints": [],
+        "independentPersonEndpoints": [],
+        "matches": true,
+        "originalSeams": [
+          {
+            "at": 16,
+            "fromWord": 13,
+            "from": 3,
+            "to": 3,
+            "axisDelta": 0,
+            "person": false,
+            "number": true,
+            "gender": false,
+            "tense": true,
+            "ayah": 4
+          },
+          {
+            "at": 22,
+            "fromWord": 19,
+            "from": 3,
+            "to": 3,
+            "axisDelta": 0,
+            "person": false,
+            "number": false,
+            "gender": false,
+            "tense": true,
+            "ayah": 4
+          }
+        ],
+        "context": "Expected outputs were computed over the complete surah, not this ayah in isolation."
+      },
+      {
+        "locus": "28:5",
+        "purpose": "required-or-boundary-case",
+        "originalPersonEndpoints": [
+          {
+            "from": "surah-context:30",
+            "to": "word:1",
+            "fromPerson": "3",
+            "toPerson": "1"
+          },
+          {
+            "from": "word:3",
+            "to": "word:6",
+            "fromPerson": "1",
+            "toPerson": "3"
+          },
+          {
+            "from": "word:6",
+            "to": "word:9",
+            "fromPerson": "3",
+            "toPerson": "1"
+          }
+        ],
+        "independentPersonEndpoints": [],
+        "matches": false,
+        "originalSeams": [
+          {
+            "at": 33,
+            "fromWord": 30,
+            "from": 3,
+            "to": 1,
+            "axisDelta": -0.5,
+            "person": true,
+            "number": true,
+            "gender": false,
+            "tense": true,
+            "ayah": 5
+          },
+          {
+            "at": 38,
+            "fromWord": 35,
+            "from": 1,
+            "to": 3,
+            "axisDelta": 0.5,
+            "person": true,
+            "number": false,
+            "gender": false,
+            "tense": true,
+            "ayah": 5
+          },
+          {
+            "at": 41,
+            "fromWord": 38,
+            "from": 3,
+            "to": 1,
+            "axisDelta": -0.5,
+            "person": true,
+            "number": false,
+            "gender": false,
+            "tense": true,
+            "ayah": 5
+          }
+        ],
+        "context": "Expected outputs were computed over the complete surah, not this ayah in isolation."
+      },
+      {
+        "locus": "1:1",
+        "purpose": "required-or-boundary-case",
+        "originalPersonEndpoints": [],
+        "independentPersonEndpoints": [],
+        "matches": true,
+        "originalSeams": [],
+        "context": "Expected outputs were computed over the complete surah, not this ayah in isolation."
+      },
+      {
+        "locus": "20:1",
+        "purpose": "required-or-boundary-case",
+        "originalPersonEndpoints": [],
+        "independentPersonEndpoints": [],
+        "matches": true,
+        "originalSeams": [],
+        "context": "Expected outputs were computed over the complete surah, not this ayah in isolation."
+      },
+      {
+        "locus": "36:1",
+        "purpose": "required-or-boundary-case",
+        "originalPersonEndpoints": [],
+        "independentPersonEndpoints": [],
+        "matches": true,
+        "originalSeams": [],
+        "context": "Expected outputs were computed over the complete surah, not this ayah in isolation."
+      },
+      {
+        "locus": "55:64",
+        "purpose": "required-or-boundary-case",
+        "originalPersonEndpoints": [],
+        "independentPersonEndpoints": [],
+        "matches": true,
+        "originalSeams": [],
+        "context": "Expected outputs were computed over the complete surah, not this ayah in isolation."
+      },
+      {
+        "locus": "5:116",
+        "purpose": "required-or-boundary-case",
+        "originalPersonEndpoints": [
+          {
+            "from": "surah-context:2681",
+            "to": "word:2",
+            "fromPerson": "1",
+            "toPerson": "3"
+          },
+          {
+            "from": "word:2",
+            "to": "word:7",
+            "fromPerson": "3",
+            "toPerson": "2"
+          },
+          {
+            "from": "word:10",
+            "to": "word:16",
+            "fromPerson": "2",
+            "toPerson": "3"
+          },
+          {
+            "from": "word:19",
+            "to": "word:20",
+            "fromPerson": "3",
+            "toPerson": "1"
+          },
+          {
+            "from": "word:22",
+            "to": "word:24",
+            "fromPerson": "1",
+            "toPerson": "3"
+          },
+          {
+            "from": "word:24",
+            "to": "word:25",
+            "fromPerson": "3",
+            "toPerson": "1"
+          },
+          {
+            "from": "word:29",
+            "to": "word:31",
+            "fromPerson": "1",
+            "toPerson": "2"
+          },
+          {
+            "from": "word:32",
+            "to": "word:37",
+            "fromPerson": "2",
+            "toPerson": "1"
+          },
+          {
+            "from": "word:37",
+            "to": "word:41",
+            "fromPerson": "1",
+            "toPerson": "2"
+          }
+        ],
+        "independentPersonEndpoints": [
+          {
+            "from": "word:19",
+            "to": "word:20",
+            "fromPerson": "3",
+            "toPerson": "1"
+          },
+          {
+            "from": "word:24",
+            "to": "word:25",
+            "fromPerson": "3",
+            "toPerson": "1"
+          }
+        ],
+        "matches": false,
+        "originalSeams": [
+          {
+            "at": 2686,
+            "fromWord": 2681,
+            "from": 1,
+            "to": 3,
+            "axisDelta": 0.5,
+            "person": true,
+            "number": false,
+            "gender": false,
+            "tense": true,
+            "ayah": 116
+          },
+          {
+            "at": 2691,
+            "fromWord": 2686,
+            "from": 3,
+            "to": 2,
+            "axisDelta": -1,
+            "person": true,
+            "number": false,
+            "gender": false,
+            "tense": false,
+            "ayah": 116
+          },
+          {
+            "at": 2694,
+            "fromWord": 2692,
+            "from": 2,
+            "to": 2,
+            "axisDelta": 0,
+            "person": false,
+            "number": true,
+            "gender": false,
+            "tense": true,
+            "ayah": 116
+          },
+          {
+            "at": 2700,
+            "fromWord": 2694,
+            "from": 2,
+            "to": 3,
+            "axisDelta": 1,
+            "person": true,
+            "number": true,
+            "gender": false,
+            "tense": true,
+            "ayah": 116
+          },
+          {
+            "at": 2703,
+            "fromWord": 2700,
+            "from": 3,
+            "to": 3,
+            "axisDelta": 0,
+            "person": false,
+            "number": false,
+            "gender": false,
+            "tense": true,
+            "ayah": 116
+          },
+          {
+            "at": 2704,
+            "fromWord": 2703,
+            "from": 3,
+            "to": 1,
+            "axisDelta": -0.5,
+            "person": true,
+            "number": false,
+            "gender": false,
+            "tense": false,
+            "ayah": 116
+          },
+          {
+            "at": 2708,
+            "fromWord": 2706,
+            "from": 1,
+            "to": 3,
+            "axisDelta": 0.5,
+            "person": true,
+            "number": false,
+            "gender": false,
+            "tense": true,
+            "ayah": 116
+          },
+          {
+            "at": 2709,
+            "fromWord": 2708,
+            "from": 3,
+            "to": 1,
+            "axisDelta": -0.5,
+            "person": true,
+            "number": false,
+            "gender": false,
+            "tense": false,
+            "ayah": 116
+          },
+          {
+            "at": 2715,
+            "fromWord": 2713,
+            "from": 1,
+            "to": 2,
+            "axisDelta": -0.5,
+            "person": true,
+            "number": false,
+            "gender": false,
+            "tense": false,
+            "ayah": 116
+          },
+          {
+            "at": 2716,
+            "fromWord": 2715,
+            "from": 2,
+            "to": 2,
+            "axisDelta": 0,
+            "person": false,
+            "number": false,
+            "gender": false,
+            "tense": true,
+            "ayah": 116
+          },
+          {
+            "at": 2721,
+            "fromWord": 2716,
+            "from": 2,
+            "to": 1,
+            "axisDelta": 0.5,
+            "person": true,
+            "number": false,
+            "gender": false,
+            "tense": false,
+            "ayah": 116
+          },
+          {
+            "at": 2725,
+            "fromWord": 2721,
+            "from": 1,
+            "to": 2,
+            "axisDelta": -0.5,
+            "person": true,
+            "number": false,
+            "gender": false,
+            "tense": false,
+            "ayah": 116
+          }
+        ],
+        "context": "Expected outputs were computed over the complete surah, not this ayah in isolation."
+      },
+      {
+        "locus": "16:64",
+        "purpose": "independently-seeded-sample",
+        "originalPersonEndpoints": [
+          {
+            "from": "surah-context:815",
+            "to": "word:2",
+            "fromPerson": "3",
+            "toPerson": "1"
+          },
+          {
+            "from": "word:2",
+            "to": "word:6",
+            "fromPerson": "1",
+            "toPerson": "2"
+          },
+          {
+            "from": "word:6",
+            "to": "word:7",
+            "fromPerson": "2",
+            "toPerson": "3"
+          }
+        ],
+        "independentPersonEndpoints": [
+          {
+            "from": "word:6",
+            "to": "word:7",
+            "fromPerson": "2",
+            "toPerson": "3"
+          }
+        ],
+        "matches": false,
+        "originalSeams": [
+          {
+            "at": 819,
+            "fromWord": 815,
+            "from": 3,
+            "to": 1,
+            "axisDelta": -0.5,
+            "person": true,
+            "number": false,
+            "gender": false,
+            "tense": false,
+            "ayah": 64
+          },
+          {
+            "at": 823,
+            "fromWord": 819,
+            "from": 1,
+            "to": 2,
+            "axisDelta": -0.5,
+            "person": true,
+            "number": true,
+            "gender": false,
+            "tense": true,
+            "ayah": 64
+          },
+          {
+            "at": 824,
+            "fromWord": 823,
+            "from": 2,
+            "to": 3,
+            "axisDelta": 1,
+            "person": true,
+            "number": true,
+            "gender": false,
+            "tense": false,
+            "ayah": 64
+          },
+          {
+            "at": 831,
+            "fromWord": 826,
+            "from": 3,
+            "to": 3,
+            "axisDelta": 0,
+            "person": false,
+            "number": false,
+            "gender": false,
+            "tense": true,
+            "ayah": 64
+          }
+        ],
+        "context": "Expected outputs were computed over the complete surah, not this ayah in isolation."
+      },
+      {
+        "locus": "80:34",
+        "purpose": "independently-seeded-sample",
+        "originalPersonEndpoints": [],
+        "independentPersonEndpoints": [],
+        "matches": true,
+        "originalSeams": [
+          {
+            "at": 104,
+            "fromWord": 101,
+            "from": 3,
+            "to": 3,
+            "axisDelta": 0,
+            "person": false,
+            "number": false,
+            "gender": true,
+            "tense": true,
+            "ayah": 34
+          }
+        ],
+        "context": "Expected outputs were computed over the complete surah, not this ayah in isolation."
+      },
+      {
+        "locus": "20:108",
+        "purpose": "independently-seeded-sample",
+        "originalPersonEndpoints": [
+          {
+            "from": "surah-context:988",
+            "to": "word:2",
+            "fromPerson": "2",
+            "toPerson": "3"
+          },
+          {
+            "from": "word:7",
+            "to": "word:11",
+            "fromPerson": "3",
+            "toPerson": "2"
+          }
+        ],
+        "independentPersonEndpoints": [],
+        "matches": false,
+        "originalSeams": [
+          {
+            "at": 994,
+            "fromWord": 988,
+            "from": 2,
+            "to": 3,
+            "axisDelta": 1,
+            "person": true,
+            "number": true,
+            "gender": false,
+            "tense": false,
+            "ayah": 108
+          },
+          {
+            "at": 998,
+            "fromWord": 994,
+            "from": 3,
+            "to": 3,
+            "axisDelta": 0,
+            "person": false,
+            "number": true,
+            "gender": false,
+            "tense": false,
+            "ayah": 108
+          },
+          {
+            "at": 999,
+            "fromWord": 998,
+            "from": 3,
+            "to": 3,
+            "axisDelta": 0,
+            "person": false,
+            "number": false,
+            "gender": true,
+            "tense": false,
+            "ayah": 108
+          },
+          {
+            "at": 1003,
+            "fromWord": 999,
+            "from": 3,
+            "to": 2,
+            "axisDelta": -1,
+            "person": true,
+            "number": false,
+            "gender": true,
+            "tense": true,
+            "ayah": 108
+          }
+        ],
+        "context": "Expected outputs were computed over the complete surah, not this ayah in isolation."
+      },
+      {
+        "locus": "38:15",
+        "purpose": "independently-seeded-sample",
+        "originalPersonEndpoints": [],
+        "independentPersonEndpoints": [],
+        "matches": true,
+        "originalSeams": [
+          {
+            "at": 121,
+            "fromWord": 118,
+            "from": 3,
+            "to": 3,
+            "axisDelta": 0,
+            "person": false,
+            "number": false,
+            "gender": false,
+            "tense": true,
+            "ayah": 15
+          },
+          {
+            "at": 127,
+            "fromWord": 121,
+            "from": 3,
+            "to": 3,
+            "axisDelta": 0,
+            "person": false,
+            "number": false,
+            "gender": true,
+            "tense": false,
+            "ayah": 15
+          }
+        ],
+        "context": "Expected outputs were computed over the complete surah, not this ayah in isolation."
+      },
+      {
+        "locus": "20:132",
+        "purpose": "independently-seeded-sample",
+        "originalPersonEndpoints": [
+          {
+            "from": "surah-context:1274",
+            "to": "word:1",
+            "fromPerson": "1",
+            "toPerson": "2"
+          },
+          {
+            "from": "word:4",
+            "to": "word:7",
+            "fromPerson": "2",
+            "toPerson": "1"
+          }
+        ],
+        "independentPersonEndpoints": [],
+        "matches": false,
+        "originalSeams": [
+          {
+            "at": 1280,
+            "fromWord": 1274,
+            "from": 1,
+            "to": 2,
+            "axisDelta": -0.5,
+            "person": true,
+            "number": true,
+            "gender": false,
+            "tense": true,
+            "ayah": 132
+          },
+          {
+            "at": 1286,
+            "fromWord": 1283,
+            "from": 2,
+            "to": 1,
+            "axisDelta": 0.5,
+            "person": true,
+            "number": true,
+            "gender": false,
+            "tense": true,
+            "ayah": 132
+          }
+        ],
+        "context": "Expected outputs were computed over the complete surah, not this ayah in isolation."
+      },
+      {
+        "locus": "2:45",
+        "purpose": "independently-seeded-sample",
+        "originalPersonEndpoints": [
+          {
+            "from": "word:1",
+            "to": "word:4",
+            "fromPerson": "2",
+            "toPerson": "3"
+          }
+        ],
+        "independentPersonEndpoints": [],
+        "matches": false,
+        "originalSeams": [
+          {
+            "at": 643,
+            "fromWord": 642,
+            "from": 2,
+            "to": 2,
+            "axisDelta": 0,
+            "person": false,
+            "number": false,
+            "gender": false,
+            "tense": true,
+            "ayah": 45
+          },
+          {
+            "at": 646,
+            "fromWord": 643,
+            "from": 2,
+            "to": 3,
+            "axisDelta": 1,
+            "person": true,
+            "number": true,
+            "gender": true,
+            "tense": false,
+            "ayah": 45
+          }
+        ],
+        "context": "Expected outputs were computed over the complete surah, not this ayah in isolation."
+      },
+      {
+        "locus": "18:76",
+        "purpose": "independently-seeded-sample",
+        "originalPersonEndpoints": [
+          {
+            "from": "surah-context:1134",
+            "to": "word:1",
+            "fromPerson": "2",
+            "toPerson": "3"
+          },
+          {
+            "from": "word:1",
+            "to": "word:3",
+            "fromPerson": "3",
+            "toPerson": "1"
+          },
+          {
+            "from": "word:3",
+            "to": "word:8",
+            "fromPerson": "1",
+            "toPerson": "2"
+          }
+        ],
+        "independentPersonEndpoints": [],
+        "matches": false,
+        "originalSeams": [
+          {
+            "at": 1137,
+            "fromWord": 1134,
+            "from": 2,
+            "to": 3,
+            "axisDelta": 1,
+            "person": true,
+            "number": false,
+            "gender": false,
+            "tense": true,
+            "ayah": 76
+          },
+          {
+            "at": 1139,
+            "fromWord": 1137,
+            "from": 3,
+            "to": 1,
+            "axisDelta": -0.5,
+            "person": true,
+            "number": false,
+            "gender": false,
+            "tense": false,
+            "ayah": 76
+          },
+          {
+            "at": 1144,
+            "fromWord": 1139,
+            "from": 1,
+            "to": 2,
+            "axisDelta": -0.5,
+            "person": true,
+            "number": false,
+            "gender": false,
+            "tense": true,
+            "ayah": 76
+          },
+          {
+            "at": 1146,
+            "fromWord": 1144,
+            "from": 2,
+            "to": 2,
+            "axisDelta": 0,
+            "person": false,
+            "number": false,
+            "gender": false,
+            "tense": true,
+            "ayah": 76
+          }
+        ],
+        "context": "Expected outputs were computed over the complete surah, not this ayah in isolation."
+      },
+      {
+        "locus": "42:28",
+        "purpose": "independently-seeded-sample",
+        "originalPersonEndpoints": [],
+        "independentPersonEndpoints": [],
+        "matches": true,
+        "originalSeams": [
+          {
+            "at": 486,
+            "fromWord": 481,
+            "from": 3,
+            "to": 3,
+            "axisDelta": 0,
+            "person": false,
+            "number": true,
+            "gender": false,
+            "tense": true,
+            "ayah": 28
+          },
+          {
+            "at": 487,
+            "fromWord": 486,
+            "from": 3,
+            "to": 3,
+            "axisDelta": 0,
+            "person": false,
+            "number": true,
+            "gender": false,
+            "tense": true,
+            "ayah": 28
+          }
+        ],
+        "context": "Expected outputs were computed over the complete surah, not this ayah in isolation."
+      },
+      {
+        "locus": "39:56",
+        "purpose": "independently-seeded-sample",
+        "originalPersonEndpoints": [
+          {
+            "from": "surah-context:895",
+            "to": "word:2",
+            "fromPerson": "2",
+            "toPerson": "3"
+          },
+          {
+            "from": "word:2",
+            "to": "word:7",
+            "fromPerson": "3",
+            "toPerson": "1"
+          }
+        ],
+        "independentPersonEndpoints": [],
+        "matches": false,
+        "originalSeams": [
+          {
+            "at": 897,
+            "fromWord": 895,
+            "from": 2,
+            "to": 3,
+            "axisDelta": 1,
+            "person": true,
+            "number": true,
+            "gender": true,
+            "tense": false,
+            "ayah": 56
+          },
+          {
+            "at": 902,
+            "fromWord": 897,
+            "from": 3,
+            "to": 1,
+            "axisDelta": -0.5,
+            "person": true,
+            "number": false,
+            "gender": false,
+            "tense": true,
+            "ayah": 56
+          }
+        ],
+        "context": "Expected outputs were computed over the complete surah, not this ayah in isolation."
+      },
+      {
+        "locus": "40:23",
+        "purpose": "independently-seeded-sample",
+        "originalPersonEndpoints": [
+          {
+            "from": "surah-context:304",
+            "to": "word:2",
+            "fromPerson": "3",
+            "toPerson": "1"
+          }
+        ],
+        "independentPersonEndpoints": [],
+        "matches": false,
+        "originalSeams": [
+          {
+            "at": 309,
+            "fromWord": 304,
+            "from": 3,
+            "to": 1,
+            "axisDelta": -0.5,
+            "person": true,
+            "number": true,
+            "gender": false,
+            "tense": false,
+            "ayah": 23
+          }
+        ],
+        "context": "Expected outputs were computed over the complete surah, not this ayah in isolation."
+      },
+      {
+        "locus": "27:9",
+        "purpose": "independently-seeded-sample",
+        "originalPersonEndpoints": [
+          {
+            "from": "word:2",
+            "to": "word:3",
+            "fromPerson": "3",
+            "toPerson": "1"
+          }
+        ],
+        "independentPersonEndpoints": [],
+        "matches": false,
+        "originalSeams": [
+          {
+            "at": 77,
+            "fromWord": 76,
+            "from": 3,
+            "to": 1,
+            "axisDelta": -0.5,
+            "person": true,
+            "number": false,
+            "gender": false,
+            "tense": false,
+            "ayah": 9
+          }
+        ],
+        "context": "Expected outputs were computed over the complete surah, not this ayah in isolation."
+      },
+      {
+        "locus": "26:208",
+        "purpose": "independently-seeded-sample",
+        "originalPersonEndpoints": [
+          {
+            "from": "surah-context:1204",
+            "to": "word:2",
+            "fromPerson": "3",
+            "toPerson": "1"
+          },
+          {
+            "from": "word:2",
+            "to": "word:6",
+            "fromPerson": "1",
+            "toPerson": "3"
+          }
+        ],
+        "independentPersonEndpoints": [],
+        "matches": false,
+        "originalSeams": [
+          {
+            "at": 1206,
+            "fromWord": 1204,
+            "from": 3,
+            "to": 1,
+            "axisDelta": -0.5,
+            "person": true,
+            "number": false,
+            "gender": false,
+            "tense": true,
+            "ayah": 208
+          },
+          {
+            "at": 1210,
+            "fromWord": 1206,
+            "from": 1,
+            "to": 3,
+            "axisDelta": 0.5,
+            "person": true,
+            "number": true,
+            "gender": false,
+            "tense": false,
+            "ayah": 208
+          }
+        ],
+        "context": "Expected outputs were computed over the complete surah, not this ayah in isolation."
+      }
+    ],
+    "matchingCases": 9,
+    "mismatchingCases": 13,
+    "originalFailureCases": [
+      {
+        "id": "same-person-object-suffix",
+        "inputSegments": [
+          {
+            "i": 1,
+            "form": "رَأَى",
+            "cls": "V",
+            "tag": "PERF",
+            "feats": [
+              "PERF",
+              "3MS"
+            ],
+            "root": "رءي",
+            "person": 3,
+            "num": "S",
+            "gender": "M",
+            "tense": "PERF"
+          },
+          {
+            "i": 2,
+            "form": "هُ",
+            "cls": "N",
+            "tag": "PRON",
+            "feats": [
+              "PRON",
+              "3MS",
+              "SUFF"
+            ],
+            "person": 3,
+            "num": "S",
+            "gender": "M",
+            "clitic": true
+          }
+        ],
+        "actual": {
+          "spine": {
+            "person": 3,
+            "role": "verb-subject"
+          },
+          "roles": [
+            "verb-subject",
+            "subject-enclitic"
+          ],
+          "refs": [
+            {
+              "person": 3,
+              "role": "verb-subject",
+              "num": "S",
+              "gender": "M"
+            },
+            {
+              "person": 3,
+              "role": "subject-enclitic",
+              "num": "S",
+              "gender": "M"
+            }
+          ]
+        },
+        "finding": "The first person-matching suffix receives subject-enclitic. Person agreement alone cannot establish that it is the grammatical subject; a same-person object is a counterexample to that rule."
+      },
+      {
+        "id": "distance-information-loss",
+        "inputs": [
+          {
+            "p1": 0,
+            "p2": 0,
+            "p3": 0
+          },
+          {
+            "p1": 1,
+            "p2": 0,
+            "p3": 0
+          }
+        ],
+        "actual": [
+          0.5,
+          0.5
+        ],
+        "finding": "No person evidence and pure first-person evidence share distance 0.5. Retain the vector and evidence status instead of treating distance alone as attribution identity."
+      },
+      {
+        "id": "analysis-side-effect-staleness",
+        "input": {
+          "surah": 11,
+          "firstOptions": {
+            "stitchWindow": 8,
+            "echoWindow": 22,
+            "minAbsenceRun": 2,
+            "minNarrativeRun": 4,
+            "minScore": 0.28
+          },
+          "secondOptions": {
+            "stitchWindow": 8,
+            "echoWindow": 22,
+            "minAbsenceRun": 2,
+            "minNarrativeRun": 4,
+            "minScore": 1
+          }
+        },
+        "actual": {
+          "defaultKhalqWordAnnotations": 18,
+          "reusedHighThresholdKhalqWordAnnotations": 18,
+          "freshHighThresholdKhalqWordAnnotations": 0,
+          "reusedHighThresholdKhalqDiscoveries": 0,
+          "freshHighThresholdKhalqDiscoveries": 0
+        },
+        "finding": "analyze mutates input; detectKhalq writes word.khalq but does not clear old annotations before a different threshold pass. Reusing a Surah changes behavior relative to a fresh construction."
+      }
+    ]
+  },
+  "observations": [
+    {
+      "id": "O01",
+      "statement": "The input fixture contains exactly 6236 records.",
+      "supported": true,
+      "value": 6236,
+      "evidence": "inputSummary.ayahs",
+      "status": "observation",
+      "novelty": "Not claimed; fixture/computational observation only."
+    },
+    {
+      "id": "O02",
+      "statement": "All 114 surahs are represented.",
+      "supported": true,
+      "value": 114,
+      "evidence": "inputSummary.surahs",
+      "status": "observation",
+      "novelty": "Not claimed; fixture/computational observation only."
+    },
+    {
+      "id": "O03",
+      "statement": "The source fixture includes 204 ayahs below three surface tokens.",
+      "supported": true,
+      "value": 204,
+      "evidence": "inputSummary.shortAyahsUnder3Tokens",
+      "status": "observation",
+      "novelty": "Not claimed; fixture/computational observation only."
+    },
+    {
+      "id": "O04",
+      "statement": "The independent ranked sample contains twelve passages outside the five prescribed loci.",
+      "supported": true,
+      "value": [
+        "quran:105:5",
+        "quran:10:49",
+        "quran:13:33",
+        "quran:18:2",
+        "quran:2:197",
+        "quran:66:5",
+        "quran:83:35",
+        "quran:11:2",
+        "quran:21:27",
+        "quran:11:17",
+        "quran:7:48",
+        "quran:22:19"
+      ],
+      "evidence": "independentSampling",
+      "status": "observation",
+      "novelty": "Not claimed; fixture/computational observation only."
+    },
+    {
+      "id": "O05",
+      "statement": "The authored boundary gold has six positive and two negative pairs.",
+      "supported": true,
+      "value": 8,
+      "evidence": "baselines.examples",
+      "status": "observation",
+      "novelty": "Not claimed; fixture/computational observation only."
+    },
+    {
+      "id": "O06",
+      "statement": "No-change misses six authored typed boundaries.",
+      "supported": true,
+      "value": 6,
+      "evidence": "baselines.metrics.noChange",
+      "status": "observation",
+      "novelty": "Not claimed; fixture/computational observation only."
+    },
+    {
+      "id": "O07",
+      "statement": "Person-only misses four authored typed boundaries.",
+      "supported": true,
+      "value": 4,
+      "evidence": "baselines.metrics.personOnly",
+      "status": "observation",
+      "novelty": "Not claimed; fixture/computational observation only."
+    },
+    {
+      "id": "O08",
+      "statement": "Speaker-only misses four authored typed boundaries.",
+      "supported": true,
+      "value": 4,
+      "evidence": "baselines.metrics.speakerOnly",
+      "status": "observation",
+      "novelty": "Not claimed; fixture/computational observation only."
+    },
+    {
+      "id": "O09",
+      "statement": "The manually labelled three-language paths share the documented restricted signature.",
+      "supported": true,
+      "value": 3,
+      "evidence": "crossLinguistic",
+      "status": "observation",
+      "novelty": "Not claimed; fixture/computational observation only."
+    },
+    {
+      "id": "O10",
+      "statement": "The 81 finite composable triples agree with independent list concatenation.",
+      "supported": true,
+      "value": 81,
+      "evidence": "reconstructions.R1",
+      "status": "observation",
+      "novelty": "Not claimed; fixture/computational observation only."
+    },
+    {
+      "id": "O11",
+      "statement": "Forest edge-counting predictions match every enumerated path subset and the triangle control.",
+      "supported": true,
+      "value": 257,
+      "evidence": "reconstructions.R2",
+      "status": "observation",
+      "novelty": "Not claimed; fixture/computational observation only."
+    },
+    {
+      "id": "O12",
+      "statement": "All 256 generated bijective speaker renamings plus lexical replacements preserve signature.",
+      "supported": true,
+      "value": 256,
+      "evidence": "reconstructions.R3",
+      "status": "observation",
+      "novelty": "Not claimed; fixture/computational observation only."
+    },
+    {
+      "id": "O13",
+      "statement": "A person transition can leave every speaker unresolved.",
+      "supported": true,
+      "value": [
+        "unknown",
+        "unknown"
+      ],
+      "evidence": "negativeControls.NC1",
+      "status": "observation",
+      "novelty": "Not claimed; fixture/computational observation only."
+    },
+    {
+      "id": "O14",
+      "statement": "Empty and missing features can produce a valid zero-transition analysis.",
+      "supported": true,
+      "value": 0,
+      "evidence": "negativeControls.NC2",
+      "status": "observation",
+      "novelty": "Not claimed; fixture/computational observation only."
+    },
+    {
+      "id": "O15",
+      "statement": "Identical text can coincide with an explicitly supplied attribution change.",
+      "supported": true,
+      "value": 1,
+      "evidence": "negativeControls.NC3",
+      "status": "observation",
+      "novelty": "Not claimed; fixture/computational observation only."
+    },
+    {
+      "id": "O16",
+      "statement": "Disjoint text alone does not induce a typed boundary.",
+      "supported": true,
+      "value": 0,
+      "evidence": "negativeControls.NC4",
+      "status": "observation",
+      "novelty": "Not claimed; fixture/computational observation only."
+    },
+    {
+      "id": "O17",
+      "statement": "A homogeneous-feature two-speaker path can collide with its reversal under the restricted signature.",
+      "supported": true,
+      "value": true,
+      "evidence": "selfCommissioned",
+      "status": "observation",
+      "novelty": "Not claimed; fixture/computational observation only."
+    },
+    {
+      "id": "O18",
+      "statement": "Noninjective speaker collapse can destroy structural equivalence.",
+      "supported": true,
+      "value": true,
+      "evidence": "negativeControls.NC6",
+      "status": "observation",
+      "novelty": "Not claimed; fixture/computational observation only."
+    },
+    {
+      "id": "O19",
+      "statement": "Equal path topology can conceal distinct typed boundary kinds.",
+      "supported": true,
+      "value": true,
+      "evidence": "negativeControls.NC7",
+      "status": "observation",
+      "novelty": "Not claimed; fixture/computational observation only."
+    },
+    {
+      "id": "O20",
+      "statement": "The adjacent-token independent detector and carried-person source detector disagree on at least one pinned case.",
+      "supported": true,
+      "value": 13,
+      "evidence": "differential.cases",
+      "status": "observation",
+      "novelty": "Not claimed; fixture/computational observation only."
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "H1",
+      "claim": "For all composable typed finite paths, concatenation is associative.",
+      "status": "finite-support",
+      "falsifier": "A composable triple whose two parenthesizations have different endpoints or edge sequences.",
+      "evidence": "R1",
+      "epistemicStatus": "conjecture"
+    },
+    {
+      "id": "H2",
+      "claim": "For every typed path, the empty path at each endpoint acts as identity.",
+      "status": "finite-support",
+      "falsifier": "A path changed by composition with its matching empty endpoint path.",
+      "evidence": "R1",
+      "epistemicStatus": "conjecture"
+    },
+    {
+      "id": "H3",
+      "claim": "Every bijective identity renaming and text replacement preserves this restricted signature when features, identity partitions, and quotation nesting are fixed.",
+      "status": "finite-support",
+      "falsifier": "A generated partition-preserving rename or lexical replacement with a different signature.",
+      "evidence": "R3",
+      "epistemicStatus": "conjecture"
+    },
+    {
+      "id": "H4",
+      "claim": "All edge subsets of a simple n-vertex path have n−m weak components and cycle rank zero.",
+      "status": "finite-support",
+      "falsifier": "An enumerated path subset with a different weak component count or positive cycle rank.",
+      "evidence": "R2",
+      "epistemicStatus": "conjecture"
+    },
+    {
+      "id": "H5",
+      "claim": "Many-to-one speaker renaming always preserves structural equivalence.",
+      "status": "rejected",
+      "falsifier": "An A,B,A speaker pattern collapsed to X,X,X changes signature.",
+      "evidence": "NC6",
+      "epistemicStatus": "rejected"
+    },
+    {
+      "id": "H6",
+      "claim": "Reversing a nonidentical two-unit discourse always changes the restricted signature.",
+      "status": "rejected",
+      "falsifier": "Homogeneous features and a two-speaker switch produce equal forward/reverse signatures.",
+      "evidence": "NC5",
+      "epistemicStatus": "rejected"
+    },
+    {
+      "id": "H7",
+      "claim": "A person-only baseline detects all types of explicitly annotated boundary in the authored gold set.",
+      "status": "rejected",
+      "falsifier": "A gold speaker, number, tense, or addressee boundary missed by person-only.",
+      "evidence": "baselines",
+      "epistemicStatus": "rejected"
+    },
+    {
+      "id": "H8",
+      "claim": "Lexical continuity equal to one guarantees no attribution change.",
+      "status": "rejected",
+      "falsifier": "Identical text with an explicit speaker change.",
+      "evidence": "NC3",
+      "epistemicStatus": "rejected"
+    },
+    {
+      "id": "H9",
+      "claim": "Topology alone uniquely determines the typed transition sequence.",
+      "status": "rejected",
+      "falsifier": "A person-only path and a speaker-only path with identical topology.",
+      "evidence": "NC7",
+      "epistemicStatus": "rejected"
+    },
+    {
+      "id": "H10",
+      "claim": "On a preregistered held-out expert-annotated multilingual dialogue set with independently supplied input features, typed boundary detection reaches F1 ≥ 0.90.",
+      "status": "untested",
+      "falsifier": "Held-out F1 below 0.90 using the frozen input/label protocol.",
+      "evidence": "No held-out expert corpus, independent annotations, or human validation available; authored examples do not test this claim.",
+      "epistemicStatus": "conjecture"
+    }
+  ],
+  "summary": {
+    "supportedCandidateObservations": 20,
+    "candidateObservations": 20,
+    "falsifiableHypotheses": 10,
+    "negativeControls": 7,
+    "independentlyReconstructedFiniteResults": 3,
+    "novelDiscoveriesClaimed": 0
+  },
+  "limits": [
+    "All result claims are finite computations or supplied-feature demonstrations; no new theorem is established.",
+    "No expert or held-out linguistic gold, speaker-intent validation, tafsir result, or native-speaker review is supplied.",
+    "Authored cross-language feature paths demonstrate adapter neutrality only.",
+    "Source differential compares deliberately different algorithms/scopes and preserves all mismatches; neither output is semantic truth."
+  ]
+}

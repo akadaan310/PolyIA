@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reconstructed CGIT artifact commit request",
+  "$comment": "Reconstructed from service/launch/cgit.js at deployed API commit 367e8ed063065cb8bc9ebb8c9fc55235b4828723. Byte, ownership and CAS conditions require runtime checks. These are SHA-256 artifacts, not Git wire-protocol commits.",
+  "type": "object",
+  "required": ["expectedHead", "artifacts"],
+  "properties": {
+    "branch": { "type": "string", "default": "main", "maxLength": 80 },
+    "expectedHead": { "type": ["string", "null"], "description": "Exact current branch SHA-256 head, or null for an empty branch." },
+    "message": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "artifacts": {
+      "type": "array", "minItems": 1, "maxItems": 12,
+      "items": {
+        "type": "object", "required": ["path", "type", "content"],
+        "properties": {
+          "path": { "type": "string", "description": "Safe relative path; duplicate paths in a commit rejected." },
+          "type": { "enum": ["code", "conversation", "research", "proof", "program", "decision", "trace", "checkpoint"] },
+          "content": { "description": "JSON content; canonical bytes at most 204800." },
+          "provenance": {},
+          "consent": { "type": "boolean", "description": "Required true for conversation artifacts." }
+        }
+      }
+    }
+  }
+}

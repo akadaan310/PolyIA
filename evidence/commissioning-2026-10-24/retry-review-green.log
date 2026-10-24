@@ -1,0 +1,64 @@
+TAP version 13
+# Subtest: a connection reads real state and a read token cannot issue a command
+ok 1 - a connection reads real state and a read token cannot issue a command
+  ---
+  duration_ms: 274.215849
+  type: 'test'
+  ...
+# Subtest: lost command response keeps the exact command available for idempotent retry
+ok 2 - lost command response keeps the exact command available for idempotent retry
+  ---
+  duration_ms: 47.583701
+  type: 'test'
+  ...
+# Subtest: a revision conflict is visible and does not silently replay with a new revision
+ok 3 - a revision conflict is visible and does not silently replay with a new revision
+  ---
+  duration_ms: 43.639182
+  type: 'test'
+  ...
+# Subtest: guidance with malicious markup remains exact data throughout command lifecycle
+ok 4 - guidance with malicious markup remains exact data throughout command lifecycle
+  ---
+  duration_ms: 41.288064
+  type: 'test'
+  ...
+# Subtest: artifact capture verification acceptance and checkpoint use registered operations
+ok 5 - artifact capture verification acceptance and checkpoint use registered operations
+  ---
+  duration_ms: 53.963258
+  type: 'test'
+  ...
+# Subtest: disconnect during a delayed response cannot restore an old session
+ok 6 - disconnect during a delayed response cannot restore an old session
+  ---
+  duration_ms: 5.939557
+  type: 'test'
+  ...
+# Subtest: an incomplete 200 receipt is not reported as command success and can be recovered
+ok 7 - an incomplete 200 receipt is not reported as command success and can be recovered
+  ---
+  duration_ms: 36.043866
+  type: 'test'
+  ...
+# Subtest: admission refusal during recovery retains a command whose original response was lost
+ok 8 - admission refusal during recovery retains a command whose original response was lost
+  ---
+  duration_ms: 32.430467
+  type: 'test'
+  ...
+# Subtest: pre-ledger and unreadable error responses cannot erase a previously unresolved receipt
+ok 9 - pre-ledger and unreadable error responses cannot erase a previously unresolved receipt
+  ---
+  duration_ms: 141.191703
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 764.492692

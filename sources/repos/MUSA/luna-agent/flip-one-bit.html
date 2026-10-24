@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flip one bit</title>
+<style>
+  body { background:#0a0a0f; color:#d8d8e0; font-family:ui-monospace,Menlo,monospace;
+         max-width:640px; margin:0 auto; padding:20px 14px; line-height:1.6; }
+  h1 { font-size:1.2em; } .note { color:#888; font-size:.85em; }
+  input[type=text] { width:100%; font-size:1.3em; padding:10px; background:#111;
+    border:1px solid #444; color:#fff; border-radius:6px; box-sizing:border-box; }
+  .row { display:flex; gap:8px; margin:12px 0; flex-wrap:wrap; }
+  select, button { font-size:1em; padding:10px 12px; border-radius:6px;
+    border:1px solid #444; background:#1a1a22; color:#fff; font-family:inherit; }
+  button { background:#14331a; border-color:#3a3; cursor:pointer; }
+  button:active { background:#1d4d24; }
+  .big { font-size:2.6em; margin:14px 0; word-break:break-all; }
+  .before { color:#f88; } .after { color:#8f8; } .arrow { color:#888; }
+  .bytes { font-size:.85em; } .byte { display:inline-block; margin:2px; padding:4px 6px;
+    background:#14141c; border:1px solid #333; border-radius:4px; }
+  .byte b { color:#fc6; } .flipped { border-color:#7f7; background:#0d1a0d; }
+  .flipped b.bit { color:#7f7; }
+  code { color:#fc6; } .dim { color:#666; font-size:.8em; }
+  #result { border-top:1px solid #333; margin-top:16px; padding-top:8px; }
+</style></head><body>
+<h1>Flip one bit</h1>
+<p class="note">Type anything. Pick a byte and a bit. Flip it. Mark the 0&rarr;1.</p>
+<input type="text" id="txt" value="seal" maxlength="60">
+<div class="row">
+  <select id="byteSel"></select>
+  <select id="bitSel"></select>
+</div>
+<div class="row">
+  <button id="flipBtn">Flip this bit</button>
+  <button id="randBtn">Flip a random bit</button>
+</div>
+<div id="result"></div>
+<p class="dim">Runs entirely on your phone. Nothing leaves this page.</p>
+<script>
+const enc = new TextEncoder(), dec = new TextDecoder('utf-8', {fatal:false});
+const txt = document.getElementById('txt'), byteSel = document.getElementById('byteSel'),
+      bitSel = document.getElementById('bitSel'), result = document.getElementById('result');
+for (let i=0;i<8;i++){ const o=document.createElement('option'); o.value=i; o.textContent='bit '+i; bitSel.appendChild(o); }
+function bytesOf(){ return enc.encode(txt.value); }
+function refreshBytes(keep){
+  const b = bytesOf(); const prev = keep!==undefined?keep:byteSel.value;
+  byteSel.innerHTML='';
+  b.forEach((v,i)=>{ const o=document.createElement('option'); o.value=i;
+    o.textContent='byte '+i+' (0x'+v.toString(16).padStart(2,'0')+')'; byteSel.appendChild(o); });
+  byteSel.value = (prev<b.length)?prev:0;
+}
+function bin(v){ return v.toString(2).padStart(8,'0'); }
+function hamming(a,c){ let n=0; const L=Math.min(a.length,c.length);
+  for(let i=0;i<L;i++) n+=((a[i]^c[i]).toString(2).match(/1/g)||[]).length;
+  return n + 8*Math.abs(a.length-c.length); }
+function render(orig, pert, bi, ki){
+  const before = txt.value;
+  let after, valid=true;
+  try { after = new TextDecoder('utf-8',{fatal:true}).decode(pert); }
+  catch(e){ after = dec.decode(pert); valid=false; }
+  const hd = hamming(orig, pert);
+  let html = `<div class="big"><span class="before">${escapeHtml(before)}</span>
+    <span class="arrow">&rarr;</span><span class="after">${escapeHtml(after)}</span></div>`;
+  html += `<p><code>byte[${bi}] ^= (1 &lt;&lt; ${ki})</code> &nbsp;·&nbsp; Hamming distance: <b>${hd}</b></p>`;
+  html += `<div class="bytes">`;
+  pert.forEach((v,i)=>{
+    const was = orig[i]!==undefined?orig[i]:null;
+    const cls = (i===bi)?'byte flipped':'byte';
+    let bits = bin(v).split('').map((ch,j)=>{
+      const bitPos = 7-j, on = (i===bi && bitPos===ki);
+      return on?`<b class="bit">${ch}</b>`:ch; }).join('');
+    html += `<span class="${cls}">[${i}] ${bits}</span>`;
+  });
+  html += `</div>`;
+  if(!valid) html += `<p class="note">The flipped bytes are not valid UTF-8 — no character lives there. The in-between: a byte sequence with no letter at all.</p>`;
+  result.innerHTML = html;
+}
+function escapeHtml(s){ return s.replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function doFlip(bi, ki){
+  const orig = bytesOf();
+  if(!orig.length) return;
+  bi = (bi===undefined)?+byteSel.value:bi; ki = (ki===undefined)?+bitSel.value:ki;
+  const pert = new Uint8Array(orig); pert[bi] ^= (1<<ki);
+  render(orig, pert, bi, ki);
+}
+document.getElementById('flipBtn').onclick = ()=>doFlip();
+document.getElementById('randBtn').onclick = ()=>{
+  const orig = bytesOf(); if(!orig.length) return;
+  const bi = Math.floor(Math.random()*orig.length), ki = Math.floor(Math.random()*8);
+  byteSel.value=bi; bitSel.value=ki; doFlip(bi,ki);
+};
+txt.oninput = ()=>refreshBytes(0);
+refreshBytes(0);
+</script></body></html>

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "snad.benchmark.v1",
+  "method": "One sequential in-process pass; no warmup, repetition, comparison hardware, or forced GC. Corpus and optional morphology loaded before timing the analysis pass.",
+  "machine": {
+    "node": "v24.19.0",
+    "platform": "linux",
+    "arch": "x64",
+    "cpuModel": "AMD EPYC 9V74 80-Core Processor",
+    "logicalCpus": 5,
+    "totalMemoryBytes": 18882674688
+  },
+  "inputHashes": {
+    "corpusSha256": "67dbdb41e338b04ed022c04ecd9ae63f833202ed6b281dc3ca60c23955630361",
+    "morphologySha256": "679c3585237ea3dcf9a6e82d4b34d1c8fdb1bb2db9446e192f45d51d4ac2eaaa"
+  },
+  "counts": {
+    "addressable": 6236,
+    "parsed": 6236,
+    "analyzed": 6236,
+    "detected": 2738,
+    "visualized": 0,
+    "audioVerified": 0
+  },
+  "totals": {
+    "surahs": 114,
+    "sourceTokens": 77429,
+    "analyzedUnits": 77429,
+    "transitions": 4929,
+    "featureUnits": 72590,
+    "featureAyahs": 6204,
+    "shortAyahsUnder3Tokens": 204,
+    "singleTokenAyahs": 28,
+    "zeroTransitionAyahs": 3498,
+    "attributionTransitions": 0
+  },
+  "run": {
+    "loadWallMs": 318.75199399999997,
+    "analysisWallMs": 2261.763648,
+    "totalWallMs": 2580.5156420000003,
+    "ayahsPerSecond": 2757.1404313241487,
+    "passes": 1
+  },
+  "memory": {
+    "unit": "bytes",
+    "before": {
+      "rss": 256270336,
+      "heapTotal": 281059328,
+      "heapUsed": 162936384,
+      "external": 2570952,
+      "arrayBuffers": 143871
+    },
+    "after": {
+      "rss": 368730112,
+      "heapTotal": 304881664,
+      "heapUsed": 210086256,
+      "external": 2570992,
+      "arrayBuffers": 143871
+    },
+    "rssDelta": 112459776,
+    "heapUsedDelta": 47149872,
+    "sampledPeakRss": 368730112,
+    "sampledPeakHeapUsed": 232157960,
+    "samples": 66,
+    "sampleIntervalAyahs": 100,
+    "meaning": "process.memoryUsage samples include runtime, input corpus, morphology, allocation and retained status rows. Sampled peaks are lower bounds on true peaks; deltas are not per-ayah memory costs."
+  },
+  "limitations": [
+    "Single-machine single-pass observation; no statistical confidence interval or comparative speed claim.",
+    "Analysis wall time includes status hashing and memory sampling overhead.",
+    "No audio verification; browser rendering is tracked separately.",
+    "Morphology coverage and speaker interpretation are different questions. Missing morphology remains missing."
+  ]
+}

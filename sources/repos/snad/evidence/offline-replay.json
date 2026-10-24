@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "snad.offline-replay/1",
+  "observedAt": "2026-10-18T20:19:18.901270+00:00",
+  "sourceCommit": "81e7e5db04d0fa48e94e958b92b1b5d14ab02a27",
+  "archiveSha256": "170d7afcc30d853ee8f3e94d6930594870a87cab0af8159a3d3b59ebb2091624",
+  "commands": [
+    {
+      "command": [
+        "node",
+        "--experimental-strip-types",
+        "scripts/mission.ts",
+        "verify",
+        "--package",
+        ".."
+      ],
+      "exitCode": 0,
+      "logSha256": "d749d1683170ee9553a275101bc3d87a54b994628aaa5a6ffb9786806f1d9475",
+      "logFile": "evidence/offline-replay/snad-offline-command-1.log"
+    },
+    {
+      "command": [
+        "npm",
+        "ci",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "exitCode": 0,
+      "logSha256": "39cc717024dea8874d168444a57f497c23f66a48cfede3edb1530212ae787d82",
+      "logFile": "evidence/offline-replay/snad-offline-command-2.log"
+    },
+    {
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0,
+      "logSha256": "70543d82ca4d32e174a5a6da120d3b731c886d65832bbec1f46e10e8a1459bc5",
+      "logFile": "evidence/offline-replay/snad-offline-command-3.log"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "exitCode": 0,
+      "logSha256": "34155b53aaf5d16cce2ae97e3f2b2bb7e5f84d283090b0bcace4c6e9b70d7554",
+      "logFile": "evidence/offline-replay/snad-offline-command-4.log"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exitCode": 0,
+      "logSha256": "8e68989f8e9804c89dbd50198e34dc3e2c73813303d72e69df67341d6e28f501",
+      "logFile": "evidence/offline-replay/snad-offline-command-5.log"
+    }
+  ],
+  "allPassed": true
+}

@@ -1,0 +1,43 @@
+{
+  "project": "ULWS/PHONEX 0.1",
+  "date": "2026-10-23",
+  "files": [
+    {
+      "path": "CODEX_GOD_SEED.md",
+      "sha256": "9e3a285a12be4eb46d7255988df36597277c80eee57ffef3150189e008a5113f",
+      "size": 9117
+    },
+    {
+      "path": "README.md",
+      "sha256": "db8220e5e77c454f8b4469ff25df5dc99530dce8ebf3a997213eaf8c45b403f2",
+      "size": 1742
+    },
+    {
+      "path": "FOUNDATIONAL_RESEARCH.md",
+      "sha256": "82bda78d807ee7b8e80f805d5c2e99160cfe85e84f73a18e4e9a3a50c4a714f7",
+      "size": 22954
+    },
+    {
+      "path": "src/phonex.py",
+      "sha256": "4a9395f3da2d5f15efc6492d2bd953076b5e2f7183138967b4598b93052982ce",
+      "size": 8149
+    },
+    {
+      "path": "results/tests.txt",
+      "sha256": "e723e6f2deb2a94f1a1f4392d61044f63b54fd6dabc6d4603d29e6ea2c2ca295",
+      "size": 1967
+    },
+    {
+      "path": "examples/topology_toy_results.json",
+      "sha256": "42d51a17aad92cb2298ad7f6ead3dae75625a4e40671df193014401b2662ff85",
+      "size": 2486
+    },
+    {
+      "path": "tests/test_phonex.py",
+      "sha256": "4c321972d19da388cc921d93464bf6dfc785597280aec94f78388c58adf274a6",
+      "size": 3164
+    }
+  ],
+  "network_downloads": "none",
+  "vm_changes": "none"
+}

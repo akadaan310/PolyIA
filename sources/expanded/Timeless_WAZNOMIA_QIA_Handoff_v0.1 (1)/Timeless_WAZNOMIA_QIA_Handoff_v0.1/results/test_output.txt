@@ -1,0 +1,35 @@
+test_15 (test_rasm_state.TestRasmState.test_15) ... ok
+test_28 (test_rasm_state.TestRasmState.test_28) ... ok
+test_count (test_rasm_state.TestRasmState.test_count) ... ok
+test_different_root (test_rasm_state.TestRasmState.test_different_root) ... ok
+test_dotted_same (test_rasm_state.TestRasmState.test_dotted_same) ... ok
+test_entropy_nonneutral (test_rasm_state.TestRasmState.test_entropy_nonneutral) ... ok
+test_entropy_uniform (test_rasm_state.TestRasmState.test_entropy_uniform) ... ok
+test_fa_same_zone_but_not_point (test_rasm_state.TestRasmState.test_fa_same_zone_but_not_point) ... ok
+test_final_partition (test_rasm_state.TestRasmState.test_final_partition) ... ok
+test_hamza_not_qalqala (test_rasm_state.TestRasmState.test_hamza_not_qalqala) ... ok
+test_hamza_not_silently_folded (test_rasm_state.TestRasmState.test_hamza_not_silently_folded) ... ok
+test_hartley (test_rasm_state.TestRasmState.test_hartley) ... ok
+test_jahr_shiddah_six (test_rasm_state.TestRasmState.test_jahr_shiddah_six) ... ok
+test_joint_features_do_not_mean_qalqala (test_rasm_state.TestRasmState.test_joint_features_do_not_mean_qalqala) ... ok
+test_katama_is_not_same_rasm (test_rasm_state.TestRasmState.test_katama_is_not_same_rasm) ... ok
+test_katama_point (test_rasm_state.TestRasmState.test_katama_point) ... ok
+test_katama_zone (test_rasm_state.TestRasmState.test_katama_zone) ... ok
+test_lattice_conflict (test_rasm_state.TestRasmState.test_lattice_conflict) ... ok
+test_lattice_join (test_rasm_state.TestRasmState.test_lattice_join) ... ok
+test_lexical_vs_combinatorial (test_rasm_state.TestRasmState.test_lexical_vs_combinatorial) ... ok
+test_medial_partition (test_rasm_state.TestRasmState.test_medial_partition) ... ok
+test_positions (test_rasm_state.TestRasmState.test_positions) ... ok
+test_product (test_rasm_state.TestRasmState.test_product) ... ok
+test_qalqala_five (test_rasm_state.TestRasmState.test_qalqala_five) ... ok
+test_quantum_string_content_address (test_rasm_state.TestRasmState.test_quantum_string_content_address) ... ok
+test_skeleton (test_rasm_state.TestRasmState.test_skeleton) ... ok
+test_subgroup_medial (test_rasm_state.TestRasmState.test_subgroup_medial) ... ok
+test_subgroup_universal (test_rasm_state.TestRasmState.test_subgroup_universal) ... ok
+test_ta_marbuta_not_losslessly_folded (test_rasm_state.TestRasmState.test_ta_marbuta_not_losslessly_folded) ... ok
+test_verified_requires_reference (test_rasm_state.TestRasmState.test_verified_requires_reference) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.001s
+
+OK

@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+test-results/
+playwright-report/
+.superpowers/
+.env*
+*.tgz
+mission/package/
+web-dist/
+__pycache__/
+*.pyc
+web/public/mission/
+web/public/snad-mission.tar.gz

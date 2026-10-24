@@ -1,0 +1,42 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "installCommand": "npm ci",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/chapters/:path*", "destination": "/cgt/chapters/:path*", "permanent": true },
+    { "source": "/ledger/:path*", "destination": "/cgt/ledger/:path*", "permanent": true },
+    { "source": "/downloads/:path*", "destination": "/cgt/downloads/:path*", "permanent": true },
+    { "source": "/(index|contents|theorems|glossary|bibliography|search|lab|sdk|gaas|researcher|status|feedback|math-tests).html", "destination": "/cgt/$1.html", "permanent": true },
+    { "source": "/book", "destination": "/library/computational-grammar-theory", "permanent": false },
+    { "source": "/computational-grammar-theory", "destination": "/library/computational-grammar-theory", "permanent": false }
+  ],
+  "rewrites": [
+    { "source": "/cgt", "destination": "https://computationalgrammartheory-sdk.vercel.app/index.html" },
+    { "source": "/cgt/", "destination": "https://computationalgrammartheory-sdk.vercel.app/index.html" },
+    { "source": "/cgt/:path*", "destination": "https://computationalgrammartheory-sdk.vercel.app/:path*" },
+    { "source": "/assets/:path*", "destination": "https://computationalgrammartheory-sdk.vercel.app/assets/:path*" },
+    { "source": "/((?!_u/|fonts/|cgt/|favicon\\.svg).*)", "destination": "/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), interest-cohort=()" }
+      ]
+    },
+    {
+      "source": "/_u/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    },
+    {
+      "source": "/fonts/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000" }]
+    }
+  ]
+}

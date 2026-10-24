@@ -1,0 +1,41 @@
+{
+  "schema": "CEFC/0.1",
+  "name": "Entangled Form Complex",
+  "description": "A specification excerpt, not a complete JSON Schema validator",
+  "form": {
+    "id": "globally unique within a complex",
+    "sort": "typed carrier identifier",
+    "value": "exact serialized value",
+    "namespace": "contextual namespace",
+    "context": "interpretation/observer/model label",
+    "value_utf8_bits": "binary of exact value UTF-8 bytes",
+    "record_binary": "binary of sorted-key compact JSON record",
+    "epistemic": "epistemic classification"
+  },
+  "operator": {
+    "name": "typed operator identifier",
+    "input_sorts": ["sort0", "sort1", "..."],
+    "output_sorts": ["sort2"],
+    "contract": "admissibility/evidence precondition",
+    "loss": "retained and lost properties or unknown"
+  },
+  "entanglement": {
+    "id": "globally unique incidence identifier",
+    "inputs": ["form id by ordered port"],
+    "outputs": ["form id by ordered port"],
+    "strands": [
+      {
+        "operator": "registered operator",
+        "status": "established | derived | stipulated | hypothesis | rejected",
+        "evidence": "nonempty witness/source identifier",
+        "context": "optional model context"
+      }
+    ]
+  },
+  "notes": [
+    "A multiway entanglement is primitive, not implied by all pairwise projections.",
+    "Individual strands can disagree and are checked independently.",
+    "Software checks typed ports, not external truth or scientific claims.",
+    "Output serializers are versioned and never claim canonical referent identity."
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "snad.qac-projection.v1",
+  "sourceId": "qac-v0.4:a1d12923815341fa",
+  "sourceRepository": "https://github.com/taziksh/quran-frequencies",
+  "sourceCommit": "079cdc74cd494ec1b35011363288d80cae047c51",
+  "sourcePath": "data/quranic-corpus-morphology-0.4.txt",
+  "sourceUrl": "https://raw.githubusercontent.com/taziksh/quran-frequencies/079cdc74cd494ec1b35011363288d80cae047c51/data/quranic-corpus-morphology-0.4.txt",
+  "sourceSha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+  "sourceBytes": 6309503,
+  "officialOrigin": "https://corpus.quran.com/download/",
+  "retrievedAt": "2026-10-18",
+  "officialDigestVerified": false,
+  "crossMirror": {
+    "repository": "https://github.com/AhmedSaadi0/quran-words",
+    "commit": "a6d4217a9e1422978c367eadc833ff4883db77fb",
+    "path": "data/quranic-corpus-morphology-0.4.txt",
+    "sha256": "910b721a8f04f4334ac5d4c62b19e858f5d720c525bb975f2e750ea2c6bb532d",
+    "comparison": "Identical content after CRLF/LF folding; bundled snapshot unchanged CRLF."
+  },
+  "license": {
+    "annotations": "GNU General Public License (version unspecified in dataset header), plus verbatim/no-changing notice",
+    "underlyingText": "Tanzil Uthmani v1.0.2; CC BY-ND 3.0 Unported, plus verbatim/no-changing notice",
+    "noticePath": "data/upstream/QAC-NOTICES.txt",
+    "rawUnmodified": true,
+    "scope": "Separate third-party data; no relicensing of generic SDK code."
+  },
+  "alignment": {
+    "version": 1,
+    "method": "Equal per-ayah word count AND each mapped word surface matches after alignment-key folding",
+    "folds": [
+      "remove Unicode Mn and Me combining characters",
+      "remove U+0640 tatweel",
+      "replace U+0671 alef wasla with U+0627 alef"
+    ],
+    "foldAppliedToStoredText": false,
+    "failedWords": "No features assigned; source word coordinates and reason retained.",
+    "limitation": "Surface equality is an alignment check, not an independent validation of QAC annotation accuracy."
+  },
+  "projection": {
+    "person": "Exact QAC flags 1/2/3 with number, only if segment values agree",
+    "number": "QAC S/D/P flags; only if segment values agree",
+    "aspect": "Original PERF/IMPF tags retained; no past/future semantic inference",
+    "mood": "Original imperative tag IMPV retained separately from aspect",
+    "rootLemma": "Buckwalter strings decoded to Arabic, no linguistic changes",
+    "tense": "Absent: no inferred tense",
+    "conflicts": "Omit conflicting aggregate field and retain every segmentFeatures value plus ambiguousFields",
+    "unknown": "Absence remains absence"
+  },
+  "coverage": {
+    "totalAyahs": 6236,
+    "sourceMorphologyAyahs": 6236,
+    "sourceWords": 77429,
+    "sourceSegments": 128219,
+    "alignedWords": 73092,
+    "featureWords": 72590,
+    "personWords": 21774,
+    "alignedAyahs": 3638,
+    "featureAyahs": 6204,
+    "ambiguousWords": 478,
+    "unalignedWords": 4337,
+    "partialAyahs": 2586,
+    "unalignedAyahs": 12
+  },
+  "compactSchema": {
+    "version": "snad.qac-features.v1",
+    "path": "data/quran.features.json",
+    "shape": "Object keyed quran:<surah>:<ayah>; value {sourceId,status,features:[[zeroBasedWhitespaceTokenIndex,features]],unalignedWords,ambiguousWords}",
+    "evidenceReconstruction": "Each tuple is a derived QAC tag projection, method qac-tag-projection-v1, sourceId from its enclosing record. Full segment conflict/evidence details live in quran.morphology.json; raw source and all notices are unchanged in data/upstream."
+  },
+  "sourceNotices": "# PLEASE DO NOT REMOVE OR CHANGE THIS COPYRIGHT BLOCK\r\n#====================================================================\r\n#\r\n#  Quranic Arabic Corpus (morphology, version 0.4)\r\n#  Copyright (C) 2011 Kais Dukes\r\n#  License: GNU General Public License\r\n#\r\n#  The Quranic Arabic Corpus includes syntactic and morphological\r\n#  annotation of the Quran, and builds on the verified Arabic text\r\n#  distributed by the Tanzil project.\r\n#\r\n#  TERMS OF USE:\r\n#\r\n#  - Permission is granted to copy and distribute verbatim copies\r\n#    of this file, but CHANGING IT IS NOT ALLOWED.\r\n#\r\n#  - This annotation can be used in any website or application,\r\n#    provided its source (the Quranic Arabic Corpus) is clearly\r\n#    indicated, and a link is made to http://corpus.quran.com to enable\r\n#    users to keep track of changes.\r\n#\r\n#  - This copyright notice shall be included in all verbatim copies\r\n#    of the text, and shall be reproduced appropriately in all works\r\n#    derived from or containing substantial portion of this file.\r\n#\r\n#  Please check updates at: http://corpus.quran.com/download\r\n\r\n# PLEASE DO NOT REMOVE OR CHANGE THIS COPYRIGHT BLOCK\r\n#====================================================================\r\n#\r\n#  Tanzil Quran Text (Uthmani, version 1.0.2)\r\n#  Copyright (C) 2008-2009 Tanzil.info\r\n#  License: Creative Commons BY-ND 3.0 Unported\r\n#\r\n#  This copy of quran text is carefully produced, highly\r\n#  verified and continuously monitored by a group of specialists\r\n#  at Tanzil project.\r\n#\r\n#  TERMS OF USE:\r\n#\r\n#  - Permission is granted to copy and distribute verbatim copies\r\n#    of this text, but CHANGING IT IS NOT ALLOWED.\r\n#\r\n#  - This quran text can be used in any website or application,\r\n#    provided its source (Tanzil.info) is clearly indicated, and\r\n#    a link is made to http://tanzil.info to enable users to keep\r\n#    track of changes.\r\n#\r\n#  - This copyright notice shall be included in all verbatim copies\r\n#    of the text, and shall be reproduced appropriately in all files\r\n#    derived from or containing substantial portion of this text.\r\n#\r\n#  Please check updates at: http://tanzil.info/updates/\r\n#\r\n#====================================================================\r\n\r\n",
+  "artifacts": [
+    {
+      "path": "data/quran.json",
+      "sha256": "67dbdb41e338b04ed022c04ecd9ae63f833202ed6b281dc3ca60c23955630361",
+      "bytes": 2330729
+    },
+    {
+      "path": "data/quran.morphology.json",
+      "sha256": "679c3585237ea3dcf9a6e82d4b34d1c8fdb1bb2db9446e192f45d51d4ac2eaaa",
+      "bytes": 40606213
+    },
+    {
+      "path": "data/quran.features.json",
+      "sha256": "611c13996fb6b4e58e6be1ee143429549b1a5e4b99c3dd65f4a837b7a146a523",
+      "bytes": 4770312
+    }
+  ]
+}

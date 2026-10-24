@@ -1,0 +1,24 @@
+test_address_identity (test_qstrings.QStringTests.test_address_identity) ... ok
+test_bfs (test_qstrings.QStringTests.test_bfs) ... ok
+test_canonical_key_order (test_qstrings.QStringTests.test_canonical_key_order) ... ok
+test_collision_safe_pair_list (test_qstrings.QStringTests.test_collision_safe_pair_list) ... ok
+test_composition_order (test_qstrings.QStringTests.test_composition_order) ... ok
+test_hypothesis_exclusion (test_qstrings.QStringTests.test_hypothesis_exclusion) ... ok
+test_hypothesis_not_proof (test_qstrings.QStringTests.test_hypothesis_not_proof) ... ok
+test_negative_budget_refused (test_qstrings.QStringTests.test_negative_budget_refused) ... ok
+test_no_empty (test_qstrings.QStringTests.test_no_empty) ... ok
+test_opaque_digest (test_qstrings.QStringTests.test_opaque_digest) ... ok
+test_path_word (test_qstrings.QStringTests.test_path_word) ... ok
+test_refuse_sort_mismatch (test_qstrings.QStringTests.test_refuse_sort_mismatch) ... ok
+test_refuted_edges_are_not_proofs (test_qstrings.QStringTests.test_refuted_edges_are_not_proofs) ... ok
+test_reject_unregistered (test_qstrings.QStringTests.test_reject_unregistered) ... ok
+test_reverse_lookup (test_qstrings.QStringTests.test_reverse_lookup) ... ok
+test_rule_contract_cannot_mutate (test_qstrings.QStringTests.test_rule_contract_cannot_mutate) ... ok
+test_tamper_check (test_qstrings.QStringTests.test_tamper_check) ... ok
+test_unchanged_duplicate (test_qstrings.QStringTests.test_unchanged_duplicate) ... ok
+test_wire_roundtrip (test_qstrings.QStringTests.test_wire_roundtrip) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.001s
+
+OK

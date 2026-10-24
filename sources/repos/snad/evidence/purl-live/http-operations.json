@@ -1,0 +1,722 @@
+[
+  {
+    "at": "2026-10-18T20:01:12.314Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/sdk/launch.js",
+    "status": 200,
+    "responseBytes": 3259,
+    "responseSha256": "7e195c72e3db43f52bc1af07a4ec77b491dd2f30d942a3a88fdaa769254893d0"
+  },
+  {
+    "at": "2026-10-18T20:01:14.889Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/identity/config",
+    "status": 200,
+    "responseBytes": 408,
+    "responseSha256": "3d503fd5a988c6deb67c0bc3468c803344f411bf237914ff09ced2252e0db3f4"
+  },
+  {
+    "at": "2026-10-18T20:01:16.695Z",
+    "method": "POST",
+    "url": "https://purls-production.up.railway.app/api/identity/guest",
+    "status": 200,
+    "responseBytes": 389,
+    "responseSha256": "5014afba6c34b9e6d44c20154e62e10a2aa633ef5452eec504bdf05b831bafa7"
+  },
+  {
+    "at": "2026-10-18T20:01:17.300Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/identity/me",
+    "status": 200,
+    "responseBytes": 389,
+    "responseSha256": "5014afba6c34b9e6d44c20154e62e10a2aa633ef5452eec504bdf05b831bafa7"
+  },
+  {
+    "at": "2026-10-18T20:01:18.463Z",
+    "method": "POST",
+    "url": "https://purls-production.up.railway.app/api/resources",
+    "status": 201,
+    "responseBytes": 12000,
+    "responseSha256": "e11e74d6f49ff01a1b676809bb819efaabbd426363b6c7e9334a1381c2682735"
+  },
+  {
+    "at": "2026-10-18T20:01:19.035Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/manifest",
+    "status": 200,
+    "responseBytes": 10832,
+    "responseSha256": "9091fab82925b2a78e3acece94a29fedcf66256fa6f7b3a40eddd2d23e5a1d72"
+  },
+  {
+    "at": "2026-10-18T20:01:19.579Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 12000,
+    "responseSha256": "bcf7536f9061fb88f1630d22e5c1ab40f64f1cd02d9323426681285be1c1af16"
+  },
+  {
+    "at": "2026-10-18T20:01:21.156Z",
+    "method": "POST",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/compile",
+    "status": 200,
+    "responseBytes": 12658,
+    "responseSha256": "7e9926f2338b2feac057670fc176f189cdd7c89b1b8f289ef064cf84785f4eee"
+  },
+  {
+    "at": "2026-10-18T20:01:21.748Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 12658,
+    "responseSha256": "deec3fae33a93579d1aa82773e19c9fa722af18302c18e12c1d456805e069210"
+  },
+  {
+    "at": "2026-10-18T20:01:22.414Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 12658,
+    "responseSha256": "deec3fae33a93579d1aa82773e19c9fa722af18302c18e12c1d456805e069210"
+  },
+  {
+    "at": "2026-10-18T20:01:23.715Z",
+    "method": "POST",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/build",
+    "status": 200,
+    "responseBytes": 14092,
+    "responseSha256": "8a2b3f03d339b96394386d60d3313d21873c4a3b8e6759fe339fe1b07288f872"
+  },
+  {
+    "at": "2026-10-18T20:01:24.375Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 12686,
+    "responseSha256": "9f858f296a202c5a37f0e69b3d69a859c84810adcfbd18576f7da4a98c5be7dc"
+  },
+  {
+    "at": "2026-10-18T20:01:25.090Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 12686,
+    "responseSha256": "9f858f296a202c5a37f0e69b3d69a859c84810adcfbd18576f7da4a98c5be7dc"
+  },
+  {
+    "at": "2026-10-18T20:01:26.471Z",
+    "method": "POST",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/run",
+    "status": 202,
+    "responseBytes": 22189,
+    "responseSha256": "cb37ba56f490e3e9b9120bebbdd8f2a8c6ec8bf4ca0d41c8822362b81aedbef5"
+  },
+  {
+    "at": "2026-10-18T20:01:27.858Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 12686,
+    "responseSha256": "6e17504666af2d0401bf3e7610272e038565a6a50e456f96137e3f7b11452b1d"
+  },
+  {
+    "at": "2026-10-18T20:01:28.588Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/executions/execution_dfda93eb6d9675f51cdffb33",
+    "status": 200,
+    "responseBytes": 9758,
+    "responseSha256": "6ae1b59ab2c96ab3eaf3d1f2761c667bb7c5aec4382fa1197f605d823b5fced3"
+  },
+  {
+    "at": "2026-10-18T20:01:30.200Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/executions/execution_dfda93eb6d9675f51cdffb33",
+    "status": 200,
+    "responseBytes": 19594,
+    "responseSha256": "d6d9ed780b2a85bf9998f7377a201b96c3d3e749e928d484d46b745af7ec01ae"
+  },
+  {
+    "at": "2026-10-18T20:01:30.857Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/artifacts/artifact_9d6745ef1e313dd7bf8b25c1",
+    "status": 200,
+    "responseBytes": 18938,
+    "responseSha256": "38767865785ac7725a59759e2a342a34ee1d65c696439ce4c7abb822f77c3f77"
+  },
+  {
+    "at": "2026-10-18T20:01:31.381Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 12686,
+    "responseSha256": "ffe5f19e30e9a14d806a1fac7210bf7645e6fc1f3991a1eed8a9c90c6796fe8b"
+  },
+  {
+    "at": "2026-10-18T20:01:32.514Z",
+    "method": "POST",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/checkpoint",
+    "status": 200,
+    "responseBytes": 15730,
+    "responseSha256": "586698ab265652415a96b17a4337ef020bd651f79d2b7351432da2427b744905"
+  },
+  {
+    "at": "2026-10-18T20:01:33.074Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 14199,
+    "responseSha256": "f5aed55f8075ffce7ec02b0114d751fdd7ee39cabccd7be7904c89bc4cd8a93e"
+  },
+  {
+    "at": "2026-10-18T20:01:33.653Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/continuity",
+    "status": 200,
+    "responseBytes": 18385,
+    "responseSha256": "05ee27f25b932397dfe9a625edd025bd18b2f92bd77c2d2e377d3216c0a0a2a6"
+  },
+  {
+    "at": "2026-10-18T20:01:34.209Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 14199,
+    "responseSha256": "f5aed55f8075ffce7ec02b0114d751fdd7ee39cabccd7be7904c89bc4cd8a93e"
+  },
+  {
+    "at": "2026-10-18T20:01:35.522Z",
+    "method": "POST",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/publish",
+    "status": 200,
+    "responseBytes": 28848,
+    "responseSha256": "32de39e102b061ca98149e9ca2e3404b025a1b85b84050af3fa20ee49065c981"
+  },
+  {
+    "at": "2026-10-18T20:01:36.107Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 14248,
+    "responseSha256": "d8bd503d0f48c4712f4725860e1f0c1f4943e20f5d6d3199a86c891a76724932"
+  },
+  {
+    "at": "2026-10-18T20:01:36.433Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/manifest",
+    "status": 200,
+    "responseBytes": 12226,
+    "responseSha256": "627cb21c1a512a858805026075fbd1268f77784f623b5afc476ceaa27b4fc4bc"
+  },
+  {
+    "at": "2026-10-18T20:01:37.364Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/replay",
+    "status": 200,
+    "responseBytes": 533,
+    "responseSha256": "f8ff312e2a9b8031d6726e0edd680dc58055f6496c8777dbcc03dbf087a34a95"
+  },
+  {
+    "at": "2026-10-18T20:03:05.431Z",
+    "method": "GET",
+    "url": "https://cgit-hub-production.up.railway.app/api/identity/config",
+    "status": 200,
+    "responseBytes": 410,
+    "responseSha256": "f0c60247257b00871ed84fc6102768162e0a9dc5686d51666dd141c86b74c595"
+  },
+  {
+    "at": "2026-10-18T20:03:07.459Z",
+    "method": "POST",
+    "url": "https://cgit-hub-production.up.railway.app/api/identity/guest",
+    "status": 200,
+    "responseBytes": 288,
+    "responseSha256": "260384830e4dc9ee140f33b643cc49fda35021b0a8de4ff7459e42d88e3f98e4"
+  },
+  {
+    "at": "2026-10-18T20:03:07.918Z",
+    "method": "GET",
+    "url": "https://cgit-hub-production.up.railway.app/api/identity/me",
+    "status": 200,
+    "responseBytes": 288,
+    "responseSha256": "260384830e4dc9ee140f33b643cc49fda35021b0a8de4ff7459e42d88e3f98e4"
+  },
+  {
+    "at": "2026-10-18T20:03:08.720Z",
+    "method": "POST",
+    "url": "https://cgit-hub-production.up.railway.app/api/cgit/repos/create",
+    "status": 201,
+    "responseBytes": 557,
+    "responseSha256": "953e5d007804ae3fdba7fae9a83a9d271fc6978d449a7a6e83425c5114d379bb"
+  },
+  {
+    "at": "2026-10-18T20:03:09.118Z",
+    "method": "GET",
+    "url": "https://cgit-hub-production.up.railway.app/api/cgit/repos/bc38de95-d5d6-4e40-a56f-ac60a292e989",
+    "status": 200,
+    "responseBytes": 683,
+    "responseSha256": "7222df3757b8204ae60334fc11c4a515771dca220d13b5e9021f67b285d387d4"
+  },
+  {
+    "at": "2026-10-18T20:03:09.514Z",
+    "method": "GET",
+    "url": "https://cgit-hub-production.up.railway.app/api/cgit/repos/bc38de95-d5d6-4e40-a56f-ac60a292e989",
+    "status": 200,
+    "responseBytes": 683,
+    "responseSha256": "7222df3757b8204ae60334fc11c4a515771dca220d13b5e9021f67b285d387d4"
+  },
+  {
+    "at": "2026-10-18T20:03:10.673Z",
+    "method": "POST",
+    "url": "https://cgit-hub-production.up.railway.app/api/cgit/repos/bc38de95-d5d6-4e40-a56f-ac60a292e989/commit",
+    "status": 201,
+    "responseBytes": 1587,
+    "responseSha256": "94133995ecab55e0083b95a94f5be14ed9113e4ee26229fc8b43223d0bee0dd9"
+  },
+  {
+    "at": "2026-10-18T20:03:11.288Z",
+    "method": "GET",
+    "url": "https://cgit-hub-production.up.railway.app/api/cgit/repos/bc38de95-d5d6-4e40-a56f-ac60a292e989",
+    "status": 200,
+    "responseBytes": 46051,
+    "responseSha256": "09c880b730226886e83a7027506c470a522e5415c27955cd382ec9a2235e8956"
+  },
+  {
+    "at": "2026-10-18T20:03:11.843Z",
+    "method": "GET",
+    "url": "https://cgit-hub-production.up.railway.app/api/cgit/repos/bc38de95-d5d6-4e40-a56f-ac60a292e989/export",
+    "status": 200,
+    "responseBytes": 45999,
+    "responseSha256": "aa6d4e9dd53f9f35553a0c6b2c2a5b2a99bf26209b5bc974a2a7135afff19f9b"
+  },
+  {
+    "at": "2026-10-18T20:20:16.306Z",
+    "method": "GET",
+    "url": "https://cgit-hub-production.up.railway.app/api/cgit/repos/bc38de95-d5d6-4e40-a56f-ac60a292e989",
+    "status": 200,
+    "responseBytes": 46051,
+    "responseSha256": "09c880b730226886e83a7027506c470a522e5415c27955cd382ec9a2235e8956"
+  },
+  {
+    "at": "2026-10-18T20:20:17.934Z",
+    "method": "POST",
+    "url": "https://cgit-hub-production.up.railway.app/api/cgit/repos/bc38de95-d5d6-4e40-a56f-ac60a292e989/commit",
+    "status": 201,
+    "responseBytes": 3145,
+    "responseSha256": "9e2f3675f2606aa719989a5d9a91e4c50e07a3680acf99386408adbf61b1e5dd"
+  },
+  {
+    "at": "2026-10-18T20:20:19.292Z",
+    "method": "GET",
+    "url": "https://cgit-hub-production.up.railway.app/api/cgit/repos/bc38de95-d5d6-4e40-a56f-ac60a292e989",
+    "status": 200,
+    "responseBytes": 227629,
+    "responseSha256": "4a3aac3d9f42e8aff14539f475abeeb6b8462059ee86b0165322e8b912153296"
+  },
+  {
+    "at": "2026-10-18T20:20:19.873Z",
+    "method": "GET",
+    "url": "https://cgit-hub-production.up.railway.app/api/cgit/repos/bc38de95-d5d6-4e40-a56f-ac60a292e989/export",
+    "status": 200,
+    "responseBytes": 227895,
+    "responseSha256": "d96dd95f033038d704932e43adf17404b05d21e8a00244d021df73600e6c7c57"
+  },
+  {
+    "at": "2026-10-18T20:22:37.132Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 14248,
+    "responseSha256": "d8bd503d0f48c4712f4725860e1f0c1f4943e20f5d6d3199a86c891a76724932"
+  },
+  {
+    "at": "2026-10-18T20:22:38.368Z",
+    "method": "POST",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/source",
+    "status": 200,
+    "responseBytes": 28088,
+    "responseSha256": "ffee8d2b012739c64b9ff1edaf623af5338191d9404b089566e0e7fba01003f3"
+  },
+  {
+    "at": "2026-10-18T20:22:39.011Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 28088,
+    "responseSha256": "935fa8f51e810deaca01ffe83edae59e8ff5490d8669e9b4864188526741066a"
+  },
+  {
+    "at": "2026-10-18T20:22:39.583Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 28088,
+    "responseSha256": "935fa8f51e810deaca01ffe83edae59e8ff5490d8669e9b4864188526741066a"
+  },
+  {
+    "at": "2026-10-18T20:22:40.751Z",
+    "method": "POST",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/compile",
+    "status": 200,
+    "responseBytes": 28088,
+    "responseSha256": "3ac44ad7de9ea48874f379b6929551e07b7bfc4757d6b34e0908d27f67cd5a1f"
+  },
+  {
+    "at": "2026-10-18T20:22:41.313Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 28088,
+    "responseSha256": "c495ba39eba4dd7ace1c0b2339d1d5a8ba31dcab4c29cc4b3dd63f82ae92a12b"
+  },
+  {
+    "at": "2026-10-18T20:22:41.874Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 28088,
+    "responseSha256": "c495ba39eba4dd7ace1c0b2339d1d5a8ba31dcab4c29cc4b3dd63f82ae92a12b"
+  },
+  {
+    "at": "2026-10-18T20:22:43.194Z",
+    "method": "POST",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/build",
+    "status": 200,
+    "responseBytes": 29495,
+    "responseSha256": "0ee10ebb0c75243dd1255bf1ebb776b1cc38ea49bf115065a9588e58211a26b1"
+  },
+  {
+    "at": "2026-10-18T20:22:43.771Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 28089,
+    "responseSha256": "efe8e08c8beb900c579b6768962c0187d75f5fe489024b5638f003d2ea6fa192"
+  },
+  {
+    "at": "2026-10-18T20:22:44.374Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 28089,
+    "responseSha256": "efe8e08c8beb900c579b6768962c0187d75f5fe489024b5638f003d2ea6fa192"
+  },
+  {
+    "at": "2026-10-18T20:22:45.741Z",
+    "method": "POST",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/run",
+    "status": 202,
+    "responseBytes": 51432,
+    "responseSha256": "6384f5b4b06b2948a33e210e0ec77d5d0e56b2786892494aa99900458823b22c"
+  },
+  {
+    "at": "2026-10-18T20:22:46.309Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 28089,
+    "responseSha256": "6ebda2db796fa1601bdc2b16666447a09ca3afb6f5b3be39ac6c1e7589934430"
+  },
+  {
+    "at": "2026-10-18T20:22:46.916Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/executions/execution_b969ea1da38df98c62fe72d8",
+    "status": 200,
+    "responseBytes": 23344,
+    "responseSha256": "2de7e631a4958ebbb74764f066b919a750f917e35ed0e37723683d1697cd2c8d"
+  },
+  {
+    "at": "2026-10-18T20:22:48.586Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/executions/execution_b969ea1da38df98c62fe72d8",
+    "status": 200,
+    "responseBytes": 47274,
+    "responseSha256": "320972932805e17ce6f936369aa6a21600b03d5ee90f8fb07700eb03f62d9004"
+  },
+  {
+    "at": "2026-10-18T20:22:49.254Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/artifacts/artifact_621cb1935fc8729ef55ed884",
+    "status": 200,
+    "responseBytes": 46618,
+    "responseSha256": "3ec5ec6cdab7d6f192fbd2051a40250f6981bdd5906404da165b321c3a1fd34b"
+  },
+  {
+    "at": "2026-10-18T20:22:49.798Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 28089,
+    "responseSha256": "5101d0a716bab9150298936530777ddf9af340c8ca60295ed05d4af9deee5685"
+  },
+  {
+    "at": "2026-10-18T20:22:51.036Z",
+    "method": "POST",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/checkpoint",
+    "status": 200,
+    "responseBytes": 32456,
+    "responseSha256": "09b6b4a436507fa68653d0ab4911120bd9b3f32b860e54fa3bfa1542e06d99d8"
+  },
+  {
+    "at": "2026-10-18T20:22:51.685Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 29507,
+    "responseSha256": "241dc59e7b5841d5a6ee3b49c1135fb28f59c4d3173c0fc14af1962c9f69bd80"
+  },
+  {
+    "at": "2026-10-18T20:22:52.295Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/continuity",
+    "status": 200,
+    "responseBytes": 33644,
+    "responseSha256": "985fc2f1cd29751e10e2e7d91d31dfd59831fd084f525605930bf33afdb95b47"
+  },
+  {
+    "at": "2026-10-18T20:22:52.869Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 29507,
+    "responseSha256": "241dc59e7b5841d5a6ee3b49c1135fb28f59c4d3173c0fc14af1962c9f69bd80"
+  },
+  {
+    "at": "2026-10-18T20:22:54.170Z",
+    "method": "POST",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/publish",
+    "status": 200,
+    "responseBytes": 59416,
+    "responseSha256": "74aadf0b043533100fdfb190c0b95d8d219b2a8fdb6ce2dbf9e4fc8719aef057"
+  },
+  {
+    "at": "2026-10-18T20:22:54.760Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 29507,
+    "responseSha256": "c525815719431c8f20bb9a4ed0f7f4f5496cb3225b4a9aff34a5b9c500e6ae03"
+  },
+  {
+    "at": "2026-10-18T20:22:55.176Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/manifest",
+    "status": 200,
+    "responseBytes": 13646,
+    "responseSha256": "fcead7bcb64472010c7e17e318be3b3079682a093c18f2176f62143489deb818"
+  },
+  {
+    "at": "2026-10-18T20:22:56.472Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/replay",
+    "status": 200,
+    "responseBytes": 634,
+    "responseSha256": "7d3daa0ede25229741c0c992814c153b002d867c2c76b95ab11c6bd60a22497a"
+  },
+  {
+    "at": "2026-10-18T20:27:32.587Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 29507,
+    "responseSha256": "c525815719431c8f20bb9a4ed0f7f4f5496cb3225b4a9aff34a5b9c500e6ae03"
+  },
+  {
+    "at": "2026-10-18T20:27:34.163Z",
+    "method": "POST",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/source",
+    "status": 200,
+    "responseBytes": 51792,
+    "responseSha256": "982f3ad0b441db6ab5af074982f548c6175943d882c4ed93ff24424aa5045095"
+  },
+  {
+    "at": "2026-10-18T20:27:34.699Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 51792,
+    "responseSha256": "9803c89ec6f46148505930ecc2d26ab11eba21413bd922cfdb11b50990b6315f"
+  },
+  {
+    "at": "2026-10-18T20:27:35.192Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 51792,
+    "responseSha256": "9803c89ec6f46148505930ecc2d26ab11eba21413bd922cfdb11b50990b6315f"
+  },
+  {
+    "at": "2026-10-18T20:27:36.713Z",
+    "method": "POST",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/compile",
+    "status": 200,
+    "responseBytes": 51792,
+    "responseSha256": "3b96d96b2917200a0ab5407bc6dc2be51c99e291d54af7b5d590746db44599f2"
+  },
+  {
+    "at": "2026-10-18T20:27:37.225Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 51792,
+    "responseSha256": "0131df5d4d28f6abb119a658cee49cdfbd7420e18bd2d7824e449ca4f2e787ff"
+  },
+  {
+    "at": "2026-10-18T20:27:37.800Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 51792,
+    "responseSha256": "0131df5d4d28f6abb119a658cee49cdfbd7420e18bd2d7824e449ca4f2e787ff"
+  },
+  {
+    "at": "2026-10-18T20:27:39.217Z",
+    "method": "POST",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/build",
+    "status": 200,
+    "responseBytes": 53198,
+    "responseSha256": "2052ea5955d7ff9655a6dfd8d2215dafed161a15ca20fe1727384ac0f78f9452"
+  },
+  {
+    "at": "2026-10-18T20:27:39.729Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 51792,
+    "responseSha256": "70b7b91fcb662d00861283c7eea0152918f9772bfd1cd9b1a2211fdc875c4ecd"
+  },
+  {
+    "at": "2026-10-18T20:27:40.273Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 51792,
+    "responseSha256": "70b7b91fcb662d00861283c7eea0152918f9772bfd1cd9b1a2211fdc875c4ecd"
+  },
+  {
+    "at": "2026-10-18T20:27:41.871Z",
+    "method": "POST",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/run",
+    "status": 202,
+    "responseBytes": 97420,
+    "responseSha256": "63b008b4de6e82238f326a22f5fa1ef773362abeb9c4e159dac2c6d03395cc2b"
+  },
+  {
+    "at": "2026-10-18T20:27:42.399Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 51792,
+    "responseSha256": "2bd35130f6da5315f94464e5132be2cabc8c1f4add8f2a0caf5c1725fe571d3a"
+  },
+  {
+    "at": "2026-10-18T20:27:42.919Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/executions/execution_e81a8e431e765454781924eb",
+    "status": 200,
+    "responseBytes": 45629,
+    "responseSha256": "01f1c515b6fde24eefcac45e617eb9102d7d1dd12b2ce4b333ada95a30d0c824"
+  },
+  {
+    "at": "2026-10-18T20:27:44.523Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/executions/execution_e81a8e431e765454781924eb",
+    "status": 200,
+    "responseBytes": 45629,
+    "responseSha256": "01f1c515b6fde24eefcac45e617eb9102d7d1dd12b2ce4b333ada95a30d0c824"
+  },
+  {
+    "at": "2026-10-18T20:27:46.107Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/executions/execution_e81a8e431e765454781924eb",
+    "status": 200,
+    "responseBytes": 45883,
+    "responseSha256": "b9ebcef0f6bfdbe58b503c708306f81f62f65a2788cb8c92c0e0196739a45254"
+  },
+  {
+    "at": "2026-10-18T20:27:48.103Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/executions/execution_e81a8e431e765454781924eb",
+    "status": 200,
+    "responseBytes": 91844,
+    "responseSha256": "7fe0c9263a3df5603dbbd400612b0178d49b20c4beaac27fac55cc7ed76d83c4"
+  },
+  {
+    "at": "2026-10-18T20:27:48.665Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/artifacts/artifact_7bd32914c1727b40b8328337",
+    "status": 200,
+    "responseBytes": 91188,
+    "responseSha256": "792f914a59f0925b4b6cda2610d8241ac03a5a63e47c0a1aa902865ee3697a97"
+  },
+  {
+    "at": "2026-10-18T20:27:49.175Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 51792,
+    "responseSha256": "80e2347dbe20c9016c0b2af6f4719ee2dd22fe463e234d8ad2e5bdc099850017"
+  },
+  {
+    "at": "2026-10-18T20:27:50.572Z",
+    "method": "POST",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/checkpoint",
+    "status": 200,
+    "responseBytes": 56047,
+    "responseSha256": "32362be43e001c36453afe1b276d56fb24310a5ce5e6c67323d086f172598f16"
+  },
+  {
+    "at": "2026-10-18T20:27:51.093Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 52445,
+    "responseSha256": "508bb4925f5c58a4557ea7df57e77b0053edcf595564714f7278b39475598c81"
+  },
+  {
+    "at": "2026-10-18T20:27:51.594Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/continuity",
+    "status": 200,
+    "responseBytes": 56582,
+    "responseSha256": "4444487af7ba26a815a03dc0ee4ce7631fe5e8e6362e96f281f5040378696f0e"
+  },
+  {
+    "at": "2026-10-18T20:27:52.075Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 52445,
+    "responseSha256": "508bb4925f5c58a4557ea7df57e77b0053edcf595564714f7278b39475598c81"
+  },
+  {
+    "at": "2026-10-18T20:27:53.738Z",
+    "method": "POST",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/publish",
+    "status": 200,
+    "responseBytes": 105292,
+    "responseSha256": "91226a06099ad57a3961087e266f3dd1db7f6ce1576c47959815872c304368e4"
+  },
+  {
+    "at": "2026-10-18T20:27:54.242Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "status": 200,
+    "responseBytes": 52445,
+    "responseSha256": "f4e6a5b5d927bd032c2b8f334115d5a918a6315f2e0523caaf0195fd579bc515"
+  },
+  {
+    "at": "2026-10-18T20:27:54.539Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/manifest",
+    "status": 200,
+    "responseBytes": 14299,
+    "responseSha256": "3354e415a5b5674eeed01b00bc047746178a4d7585ccc3962e7e0a262bd1882e"
+  },
+  {
+    "at": "2026-10-18T20:27:56.758Z",
+    "method": "GET",
+    "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/replay",
+    "status": 200,
+    "responseBytes": 733,
+    "responseSha256": "d67993fcc636ab78d171c0ae5ef409cbd3f34e7f31bbaf771766756d41c8ed90"
+  }
+]

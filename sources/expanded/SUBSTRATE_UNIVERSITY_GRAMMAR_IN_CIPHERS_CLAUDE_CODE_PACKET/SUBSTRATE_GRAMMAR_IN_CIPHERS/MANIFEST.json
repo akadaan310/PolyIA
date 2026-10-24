@@ -1,0 +1,61 @@
+{
+  "packet": "Substrate University x Grammar in Ciphers",
+  "version": "0.1",
+  "date": "2026-10-22",
+  "generated_from": "targeted linked-GitHub source inspection plus author-provided discussion",
+  "Quran_corpus_bundled": false,
+  "metadata_verified_offline": true,
+  "canonical_Quran_verse_text_verified_in_packet": false,
+  "files": [
+    {
+      "name": "29_cipher_sites.csv",
+      "bytes": 946,
+      "sha256": "c421b6c0da17ed87c091a0156113e4ce115b36ecd4bd491ecc66020315a1ba7c"
+    },
+    {
+      "name": "29_cipher_sites.json",
+      "bytes": 17925,
+      "sha256": "728327fb147a63078d4f9506224b1d06b1115be0289cfb217b146da4109d329e"
+    },
+    {
+      "name": "AUTHOR_INTENT_DOSSIER.md",
+      "bytes": 10584,
+      "sha256": "e9403ddc2faa54668a0b24a477ecf4ccd25e2968c04985e3dbcbe99feb3820b4"
+    },
+    {
+      "name": "CLAUDE_CODE_GOD_SEED.md",
+      "bytes": 38676,
+      "sha256": "ccc660d78c0b106aaa7d2dc48d149515cda9eb61d7990a38407c6ef80478d1db"
+    },
+    {
+      "name": "FORMAL_LEDGER.md",
+      "bytes": 9521,
+      "sha256": "a1bde885bde4f40a266851e34df64b029b3352f05859b0319745b220c4e7061b"
+    },
+    {
+      "name": "README.md",
+      "bytes": 2002,
+      "sha256": "894d159ea6c42fdd948a8709c7be88269519a89e9e8273ae603098765934fd0a"
+    },
+    {
+      "name": "SOURCES_AND_BOUNDARIES.md",
+      "bytes": 4438,
+      "sha256": "ded569e6b7dac419f3c60470e5af70513d87e9404923be5e0291eca7d05de497"
+    },
+    {
+      "name": "VALIDATE_PACKET.py",
+      "bytes": 2340,
+      "sha256": "095d6b7fae4d9ad1e468285c184183ace787b96feef70ec1b21c972e45c42f17"
+    },
+    {
+      "name": "cipher_alphabets.json",
+      "bytes": 13833,
+      "sha256": "09bc69f0f08dd7e0e28ac9ae799590290bf9e3292c73555ecc139987b37ce22a"
+    },
+    {
+      "name": "research_edges.json",
+      "bytes": 14699,
+      "sha256": "fc26754fea6bb2c4be4a613e8aba48fbc1ab7c0b2076f02b8b253e4a37c51ddd"
+    }
+  ]
+}

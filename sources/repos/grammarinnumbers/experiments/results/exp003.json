@@ -1,0 +1,2507 @@
+{
+ "experiment": "GIN-EXP-003",
+ "hypotheses": [
+  "GIN-H-008",
+  "GIN-H-009",
+  "GIN-H-010"
+ ],
+ "seed": null,
+ "environment": {
+  "python": "3.13.16",
+  "implementation": "CPython",
+  "machine": "x86_64",
+  "system": "Linux 6.18.44-fc-v80",
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.80GHz"
+ },
+ "data": {
+  "zmod_census": {
+   "rows": [
+    {
+     "n": 1,
+     "no-solution": 0,
+     "unique": 1,
+     "non-unique": 0,
+     "pairs": 1,
+     "unique_share": 1.0,
+     "phi_over_n": 1.0,
+     "solvable": 1,
+     "solvable_formula_sum_n_over_gcd": 1
+    },
+    {
+     "n": 2,
+     "no-solution": 1,
+     "unique": 2,
+     "non-unique": 1,
+     "pairs": 4,
+     "unique_share": 0.5,
+     "phi_over_n": 0.5,
+     "solvable": 3,
+     "solvable_formula_sum_n_over_gcd": 3
+    },
+    {
+     "n": 3,
+     "no-solution": 2,
+     "unique": 6,
+     "non-unique": 1,
+     "pairs": 9,
+     "unique_share": 0.666667,
+     "phi_over_n": 0.666667,
+     "solvable": 7,
+     "solvable_formula_sum_n_over_gcd": 7
+    },
+    {
+     "n": 4,
+     "no-solution": 5,
+     "unique": 8,
+     "non-unique": 3,
+     "pairs": 16,
+     "unique_share": 0.5,
+     "phi_over_n": 0.5,
+     "solvable": 11,
+     "solvable_formula_sum_n_over_gcd": 11
+    },
+    {
+     "n": 5,
+     "no-solution": 4,
+     "unique": 20,
+     "non-unique": 1,
+     "pairs": 25,
+     "unique_share": 0.8,
+     "phi_over_n": 0.8,
+     "solvable": 21,
+     "solvable_formula_sum_n_over_gcd": 21
+    },
+    {
+     "n": 6,
+     "no-solution": 15,
+     "unique": 12,
+     "non-unique": 9,
+     "pairs": 36,
+     "unique_share": 0.333333,
+     "phi_over_n": 0.333333,
+     "solvable": 21,
+     "solvable_formula_sum_n_over_gcd": 21
+    },
+    {
+     "n": 7,
+     "no-solution": 6,
+     "unique": 42,
+     "non-unique": 1,
+     "pairs": 49,
+     "unique_share": 0.857143,
+     "phi_over_n": 0.857143,
+     "solvable": 43,
+     "solvable_formula_sum_n_over_gcd": 43
+    },
+    {
+     "n": 8,
+     "no-solution": 21,
+     "unique": 32,
+     "non-unique": 11,
+     "pairs": 64,
+     "unique_share": 0.5,
+     "phi_over_n": 0.5,
+     "solvable": 43,
+     "solvable_formula_sum_n_over_gcd": 43
+    },
+    {
+     "n": 9,
+     "no-solution": 20,
+     "unique": 54,
+     "non-unique": 7,
+     "pairs": 81,
+     "unique_share": 0.666667,
+     "phi_over_n": 0.666667,
+     "solvable": 61,
+     "solvable_formula_sum_n_over_gcd": 61
+    },
+    {
+     "n": 10,
+     "no-solution": 37,
+     "unique": 40,
+     "non-unique": 23,
+     "pairs": 100,
+     "unique_share": 0.4,
+     "phi_over_n": 0.4,
+     "solvable": 63,
+     "solvable_formula_sum_n_over_gcd": 63
+    },
+    {
+     "n": 11,
+     "no-solution": 10,
+     "unique": 110,
+     "non-unique": 1,
+     "pairs": 121,
+     "unique_share": 0.909091,
+     "phi_over_n": 0.909091,
+     "solvable": 111,
+     "solvable_formula_sum_n_over_gcd": 111
+    },
+    {
+     "n": 12,
+     "no-solution": 67,
+     "unique": 48,
+     "non-unique": 29,
+     "pairs": 144,
+     "unique_share": 0.333333,
+     "phi_over_n": 0.333333,
+     "solvable": 77,
+     "solvable_formula_sum_n_over_gcd": 77
+    },
+    {
+     "n": 13,
+     "no-solution": 12,
+     "unique": 156,
+     "non-unique": 1,
+     "pairs": 169,
+     "unique_share": 0.923077,
+     "phi_over_n": 0.923077,
+     "solvable": 157,
+     "solvable_formula_sum_n_over_gcd": 157
+    },
+    {
+     "n": 14,
+     "no-solution": 67,
+     "unique": 84,
+     "non-unique": 45,
+     "pairs": 196,
+     "unique_share": 0.428571,
+     "phi_over_n": 0.428571,
+     "solvable": 129,
+     "solvable_formula_sum_n_over_gcd": 129
+    },
+    {
+     "n": 15,
+     "no-solution": 78,
+     "unique": 120,
+     "non-unique": 27,
+     "pairs": 225,
+     "unique_share": 0.533333,
+     "phi_over_n": 0.533333,
+     "solvable": 147,
+     "solvable_formula_sum_n_over_gcd": 147
+    },
+    {
+     "n": 16,
+     "no-solution": 85,
+     "unique": 128,
+     "non-unique": 43,
+     "pairs": 256,
+     "unique_share": 0.5,
+     "phi_over_n": 0.5,
+     "solvable": 171,
+     "solvable_formula_sum_n_over_gcd": 171
+    },
+    {
+     "n": 17,
+     "no-solution": 16,
+     "unique": 272,
+     "non-unique": 1,
+     "pairs": 289,
+     "unique_share": 0.941176,
+     "phi_over_n": 0.941176,
+     "solvable": 273,
+     "solvable_formula_sum_n_over_gcd": 273
+    },
+    {
+     "n": 18,
+     "no-solution": 141,
+     "unique": 108,
+     "non-unique": 75,
+     "pairs": 324,
+     "unique_share": 0.333333,
+     "phi_over_n": 0.333333,
+     "solvable": 183,
+     "solvable_formula_sum_n_over_gcd": 183
+    },
+    {
+     "n": 19,
+     "no-solution": 18,
+     "unique": 342,
+     "non-unique": 1,
+     "pairs": 361,
+     "unique_share": 0.947368,
+     "phi_over_n": 0.947368,
+     "solvable": 343,
+     "solvable_formula_sum_n_over_gcd": 343
+    },
+    {
+     "n": 20,
+     "no-solution": 169,
+     "unique": 160,
+     "non-unique": 71,
+     "pairs": 400,
+     "unique_share": 0.4,
+     "phi_over_n": 0.4,
+     "solvable": 231,
+     "solvable_formula_sum_n_over_gcd": 231
+    },
+    {
+     "n": 21,
+     "no-solution": 140,
+     "unique": 252,
+     "non-unique": 49,
+     "pairs": 441,
+     "unique_share": 0.571429,
+     "phi_over_n": 0.571429,
+     "solvable": 301,
+     "solvable_formula_sum_n_over_gcd": 301
+    },
+    {
+     "n": 22,
+     "no-solution": 151,
+     "unique": 220,
+     "non-unique": 113,
+     "pairs": 484,
+     "unique_share": 0.454545,
+     "phi_over_n": 0.454545,
+     "solvable": 333,
+     "solvable_formula_sum_n_over_gcd": 333
+    },
+    {
+     "n": 23,
+     "no-solution": 22,
+     "unique": 506,
+     "non-unique": 1,
+     "pairs": 529,
+     "unique_share": 0.956522,
+     "phi_over_n": 0.956522,
+     "solvable": 507,
+     "solvable_formula_sum_n_over_gcd": 507
+    },
+    {
+     "n": 24,
+     "no-solution": 275,
+     "unique": 192,
+     "non-unique": 109,
+     "pairs": 576,
+     "unique_share": 0.333333,
+     "phi_over_n": 0.333333,
+     "solvable": 301,
+     "solvable_formula_sum_n_over_gcd": 301
+    },
+    {
+     "n": 25,
+     "no-solution": 104,
+     "unique": 500,
+     "non-unique": 21,
+     "pairs": 625,
+     "unique_share": 0.8,
+     "phi_over_n": 0.8,
+     "solvable": 521,
+     "solvable_formula_sum_n_over_gcd": 521
+    },
+    {
+     "n": 26,
+     "no-solution": 205,
+     "unique": 312,
+     "non-unique": 159,
+     "pairs": 676,
+     "unique_share": 0.461538,
+     "phi_over_n": 0.461538,
+     "solvable": 471,
+     "solvable_formula_sum_n_over_gcd": 471
+    },
+    {
+     "n": 27,
+     "no-solution": 182,
+     "unique": 486,
+     "non-unique": 61,
+     "pairs": 729,
+     "unique_share": 0.666667,
+     "phi_over_n": 0.666667,
+     "solvable": 547,
+     "solvable_formula_sum_n_over_gcd": 547
+    },
+    {
+     "n": 28,
+     "no-solution": 311,
+     "unique": 336,
+     "non-unique": 137,
+     "pairs": 784,
+     "unique_share": 0.428571,
+     "phi_over_n": 0.428571,
+     "solvable": 473,
+     "solvable_formula_sum_n_over_gcd": 473
+    },
+    {
+     "n": 29,
+     "no-solution": 28,
+     "unique": 812,
+     "non-unique": 1,
+     "pairs": 841,
+     "unique_share": 0.965517,
+     "phi_over_n": 0.965517,
+     "solvable": 813,
+     "solvable_formula_sum_n_over_gcd": 813
+    },
+    {
+     "n": 30,
+     "no-solution": 459,
+     "unique": 240,
+     "non-unique": 201,
+     "pairs": 900,
+     "unique_share": 0.266667,
+     "phi_over_n": 0.266667,
+     "solvable": 441,
+     "solvable_formula_sum_n_over_gcd": 441
+    },
+    {
+     "n": 31,
+     "no-solution": 30,
+     "unique": 930,
+     "non-unique": 1,
+     "pairs": 961,
+     "unique_share": 0.967742,
+     "phi_over_n": 0.967742,
+     "solvable": 931,
+     "solvable_formula_sum_n_over_gcd": 931
+    },
+    {
+     "n": 32,
+     "no-solution": 341,
+     "unique": 512,
+     "non-unique": 171,
+     "pairs": 1024,
+     "unique_share": 0.5,
+     "phi_over_n": 0.5,
+     "solvable": 683,
+     "solvable_formula_sum_n_over_gcd": 683
+    },
+    {
+     "n": 33,
+     "no-solution": 312,
+     "unique": 660,
+     "non-unique": 117,
+     "pairs": 1089,
+     "unique_share": 0.606061,
+     "phi_over_n": 0.606061,
+     "solvable": 777,
+     "solvable_formula_sum_n_over_gcd": 777
+    },
+    {
+     "n": 34,
+     "no-solution": 337,
+     "unique": 544,
+     "non-unique": 275,
+     "pairs": 1156,
+     "unique_share": 0.470588,
+     "phi_over_n": 0.470588,
+     "solvable": 819,
+     "solvable_formula_sum_n_over_gcd": 819
+    },
+    {
+     "n": 35,
+     "no-solution": 322,
+     "unique": 840,
+     "non-unique": 63,
+     "pairs": 1225,
+     "unique_share": 0.685714,
+     "phi_over_n": 0.685714,
+     "solvable": 903,
+     "solvable_formula_sum_n_over_gcd": 903
+    },
+    {
+     "n": 36,
+     "no-solution": 625,
+     "unique": 432,
+     "non-unique": 239,
+     "pairs": 1296,
+     "unique_share": 0.333333,
+     "phi_over_n": 0.333333,
+     "solvable": 671,
+     "solvable_formula_sum_n_over_gcd": 671
+    },
+    {
+     "n": 37,
+     "no-solution": 36,
+     "unique": 1332,
+     "non-unique": 1,
+     "pairs": 1369,
+     "unique_share": 0.972973,
+     "phi_over_n": 0.972973,
+     "solvable": 1333,
+     "solvable_formula_sum_n_over_gcd": 1333
+    },
+    {
+     "n": 38,
+     "no-solution": 415,
+     "unique": 684,
+     "non-unique": 345,
+     "pairs": 1444,
+     "unique_share": 0.473684,
+     "phi_over_n": 0.473684,
+     "solvable": 1029,
+     "solvable_formula_sum_n_over_gcd": 1029
+    },
+    {
+     "n": 39,
+     "no-solution": 422,
+     "unique": 936,
+     "non-unique": 163,
+     "pairs": 1521,
+     "unique_share": 0.615385,
+     "phi_over_n": 0.615385,
+     "solvable": 1099,
+     "solvable_formula_sum_n_over_gcd": 1099
+    },
+    {
+     "n": 40,
+     "no-solution": 697,
+     "unique": 640,
+     "non-unique": 263,
+     "pairs": 1600,
+     "unique_share": 0.4,
+     "phi_over_n": 0.4,
+     "solvable": 903,
+     "solvable_formula_sum_n_over_gcd": 903
+    },
+    {
+     "n": 41,
+     "no-solution": 40,
+     "unique": 1640,
+     "non-unique": 1,
+     "pairs": 1681,
+     "unique_share": 0.97561,
+     "phi_over_n": 0.97561,
+     "solvable": 1641,
+     "solvable_formula_sum_n_over_gcd": 1641
+    },
+    {
+     "n": 42,
+     "no-solution": 861,
+     "unique": 504,
+     "non-unique": 399,
+     "pairs": 1764,
+     "unique_share": 0.285714,
+     "phi_over_n": 0.285714,
+     "solvable": 903,
+     "solvable_formula_sum_n_over_gcd": 903
+    },
+    {
+     "n": 43,
+     "no-solution": 42,
+     "unique": 1806,
+     "non-unique": 1,
+     "pairs": 1849,
+     "unique_share": 0.976744,
+     "phi_over_n": 0.976744,
+     "solvable": 1807,
+     "solvable_formula_sum_n_over_gcd": 1807
+    },
+    {
+     "n": 44,
+     "no-solution": 715,
+     "unique": 880,
+     "non-unique": 341,
+     "pairs": 1936,
+     "unique_share": 0.454545,
+     "phi_over_n": 0.454545,
+     "solvable": 1221,
+     "solvable_formula_sum_n_over_gcd": 1221
+    },
+    {
+     "n": 45,
+     "no-solution": 744,
+     "unique": 1080,
+     "non-unique": 201,
+     "pairs": 2025,
+     "unique_share": 0.533333,
+     "phi_over_n": 0.533333,
+     "solvable": 1281,
+     "solvable_formula_sum_n_over_gcd": 1281
+    },
+    {
+     "n": 46,
+     "no-solution": 595,
+     "unique": 1012,
+     "non-unique": 509,
+     "pairs": 2116,
+     "unique_share": 0.478261,
+     "phi_over_n": 0.478261,
+     "solvable": 1521,
+     "solvable_formula_sum_n_over_gcd": 1521
+    },
+    {
+     "n": 47,
+     "no-solution": 46,
+     "unique": 2162,
+     "non-unique": 1,
+     "pairs": 2209,
+     "unique_share": 0.978723,
+     "phi_over_n": 0.978723,
+     "solvable": 2163,
+     "solvable_formula_sum_n_over_gcd": 2163
+    },
+    {
+     "n": 48,
+     "no-solution": 1107,
+     "unique": 768,
+     "non-unique": 429,
+     "pairs": 2304,
+     "unique_share": 0.333333,
+     "phi_over_n": 0.333333,
+     "solvable": 1197,
+     "solvable_formula_sum_n_over_gcd": 1197
+    },
+    {
+     "n": 49,
+     "no-solution": 300,
+     "unique": 2058,
+     "non-unique": 43,
+     "pairs": 2401,
+     "unique_share": 0.857143,
+     "phi_over_n": 0.857143,
+     "solvable": 2101,
+     "solvable_formula_sum_n_over_gcd": 2101
+    },
+    {
+     "n": 50,
+     "no-solution": 937,
+     "unique": 1000,
+     "non-unique": 563,
+     "pairs": 2500,
+     "unique_share": 0.4,
+     "phi_over_n": 0.4,
+     "solvable": 1563,
+     "solvable_formula_sum_n_over_gcd": 1563
+    },
+    {
+     "n": 51,
+     "no-solution": 690,
+     "unique": 1632,
+     "non-unique": 279,
+     "pairs": 2601,
+     "unique_share": 0.627451,
+     "phi_over_n": 0.627451,
+     "solvable": 1911,
+     "solvable_formula_sum_n_over_gcd": 1911
+    },
+    {
+     "n": 52,
+     "no-solution": 977,
+     "unique": 1248,
+     "non-unique": 479,
+     "pairs": 2704,
+     "unique_share": 0.461538,
+     "phi_over_n": 0.461538,
+     "solvable": 1727,
+     "solvable_formula_sum_n_over_gcd": 1727
+    },
+    {
+     "n": 53,
+     "no-solution": 52,
+     "unique": 2756,
+     "non-unique": 1,
+     "pairs": 2809,
+     "unique_share": 0.981132,
+     "phi_over_n": 0.981132,
+     "solvable": 2757,
+     "solvable_formula_sum_n_over_gcd": 2757
+    },
+    {
+     "n": 54,
+     "no-solution": 1275,
+     "unique": 972,
+     "non-unique": 669,
+     "pairs": 2916,
+     "unique_share": 0.333333,
+     "phi_over_n": 0.333333,
+     "solvable": 1641,
+     "solvable_formula_sum_n_over_gcd": 1641
+    },
+    {
+     "n": 55,
+     "no-solution": 694,
+     "unique": 2200,
+     "non-unique": 131,
+     "pairs": 3025,
+     "unique_share": 0.727273,
+     "phi_over_n": 0.727273,
+     "solvable": 2331,
+     "solvable_formula_sum_n_over_gcd": 2331
+    },
+    {
+     "n": 56,
+     "no-solution": 1287,
+     "unique": 1344,
+     "non-unique": 505,
+     "pairs": 3136,
+     "unique_share": 0.428571,
+     "phi_over_n": 0.428571,
+     "solvable": 1849,
+     "solvable_formula_sum_n_over_gcd": 1849
+    },
+    {
+     "n": 57,
+     "no-solution": 848,
+     "unique": 2052,
+     "non-unique": 349,
+     "pairs": 3249,
+     "unique_share": 0.631579,
+     "phi_over_n": 0.631579,
+     "solvable": 2401,
+     "solvable_formula_sum_n_over_gcd": 2401
+    },
+    {
+     "n": 58,
+     "no-solution": 925,
+     "unique": 1624,
+     "non-unique": 815,
+     "pairs": 3364,
+     "unique_share": 0.482759,
+     "phi_over_n": 0.482759,
+     "solvable": 2439,
+     "solvable_formula_sum_n_over_gcd": 2439
+    },
+    {
+     "n": 59,
+     "no-solution": 58,
+     "unique": 3422,
+     "non-unique": 1,
+     "pairs": 3481,
+     "unique_share": 0.983051,
+     "phi_over_n": 0.983051,
+     "solvable": 3423,
+     "solvable_formula_sum_n_over_gcd": 3423
+    },
+    {
+     "n": 60,
+     "no-solution": 1983,
+     "unique": 960,
+     "non-unique": 657,
+     "pairs": 3600,
+     "unique_share": 0.266667,
+     "phi_over_n": 0.266667,
+     "solvable": 1617,
+     "solvable_formula_sum_n_over_gcd": 1617
+    },
+    {
+     "n": 61,
+     "no-solution": 60,
+     "unique": 3660,
+     "non-unique": 1,
+     "pairs": 3721,
+     "unique_share": 0.983607,
+     "phi_over_n": 0.983607,
+     "solvable": 3661,
+     "solvable_formula_sum_n_over_gcd": 3661
+    },
+    {
+     "n": 62,
+     "no-solution": 1051,
+     "unique": 1860,
+     "non-unique": 933,
+     "pairs": 3844,
+     "unique_share": 0.483871,
+     "phi_over_n": 0.483871,
+     "solvable": 2793,
+     "solvable_formula_sum_n_over_gcd": 2793
+    },
+    {
+     "n": 63,
+     "no-solution": 1346,
+     "unique": 2268,
+     "non-unique": 355,
+     "pairs": 3969,
+     "unique_share": 0.571429,
+     "phi_over_n": 0.571429,
+     "solvable": 2623,
+     "solvable_formula_sum_n_over_gcd": 2623
+    },
+    {
+     "n": 64,
+     "no-solution": 1365,
+     "unique": 2048,
+     "non-unique": 683,
+     "pairs": 4096,
+     "unique_share": 0.5,
+     "phi_over_n": 0.5,
+     "solvable": 2731,
+     "solvable_formula_sum_n_over_gcd": 2731
+    }
+   ],
+   "coset_size_violations": 0,
+   "unique_share_equals_phi_over_n": true,
+   "solvable_matches_formula": true
+  },
+  "meaning_table": {
+   "domains": [
+    "N",
+    "Z",
+    "Q",
+    "C",
+    "Z/6",
+    "Z/7",
+    "binary64",
+    "Python",
+    "JS BigInt",
+    "int32 x86-64",
+    "int32 AArch64",
+    "int32 RISC-V",
+    "int32 C",
+    "int32 Java",
+    "int32 Rust (debug)"
+   ],
+   "table": {
+    "6 / 3": {
+     "N": {
+      "status": "value",
+      "layer": null,
+      "display": "2",
+      "flags": [],
+      "reason": ""
+     },
+     "Z": {
+      "status": "value",
+      "layer": null,
+      "display": "2",
+      "flags": [],
+      "reason": ""
+     },
+     "Q": {
+      "status": "value",
+      "layer": null,
+      "display": "2",
+      "flags": [],
+      "reason": ""
+     },
+     "C": {
+      "status": "value",
+      "layer": null,
+      "display": "2",
+      "flags": [],
+      "reason": ""
+     },
+     "Z/6": {
+      "status": "non-unique",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "gcd(3, 6) = 3 divides 0; the 3 solutions differ by elements annihilated by 3"
+     },
+     "Z/7": {
+      "status": "value",
+      "layer": null,
+      "display": "2",
+      "flags": [],
+      "reason": ""
+     },
+     "binary64": {
+      "status": "value",
+      "layer": null,
+      "display": "2",
+      "flags": [],
+      "reason": ""
+     },
+     "Python": {
+      "status": "value",
+      "layer": null,
+      "display": "2.0",
+      "flags": [],
+      "reason": ""
+     },
+     "JS BigInt": {
+      "status": "value",
+      "layer": null,
+      "display": "2",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 x86-64": {
+      "status": "value",
+      "layer": null,
+      "display": "2",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 AArch64": {
+      "status": "value",
+      "layer": null,
+      "display": "2",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 RISC-V": {
+      "status": "value",
+      "layer": null,
+      "display": "2",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 C": {
+      "status": "value",
+      "layer": null,
+      "display": "2",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 Java": {
+      "status": "value",
+      "layer": null,
+      "display": "2",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 Rust (debug)": {
+      "status": "value",
+      "layer": null,
+      "display": "2",
+      "flags": [],
+      "reason": ""
+     }
+    },
+    "0 / 1": {
+     "N": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     },
+     "Z": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     },
+     "Q": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     },
+     "C": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     },
+     "Z/6": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     },
+     "Z/7": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     },
+     "binary64": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     },
+     "Python": {
+      "status": "value",
+      "layer": null,
+      "display": "0.0",
+      "flags": [],
+      "reason": ""
+     },
+     "JS BigInt": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 x86-64": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 AArch64": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 RISC-V": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 C": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 Java": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 Rust (debug)": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     }
+    },
+    "1 / 0": {
+     "N": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "0 · c = 0 for every c, so 0 · c = 1 would require 0 = 1"
+     },
+     "Z": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "0 · c = 0 for every c, so 0 · c = 1 would require 0 = 1"
+     },
+     "Q": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "0 · c = 0 for every c, so 0 · c = 1 would require 0 = 1"
+     },
+     "C": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "0 · c = 0 ≠ 1 for every complex c: C is a field, so 0 has no inverse"
+     },
+     "Z/6": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "gcd(0, 6) = 6 does not divide 1"
+     },
+     "Z/7": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "gcd(0, 7) = 7 does not divide 1"
+     },
+     "binary64": {
+      "status": "special",
+      "layer": "execution",
+      "display": "Infinity",
+      "flags": [
+       "divideByZero"
+      ],
+      "reason": "±Infinity from division by zero: no real c satisfies 0 · c = a ≠ 0; IEEE 754 returns the signed infinity that the limit from the side of the zero's sign would suggest, and raises divideByZero"
+     },
+     "Python": {
+      "status": "exception",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "ZeroDivisionError: division by zero"
+     },
+     "JS BigInt": {
+      "status": "exception",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "RangeError: Division by zero  [ECMAScript BigInt::divide: RangeError if the divisor is 0n; truncates toward zero]"
+     },
+     "int32 x86-64": {
+      "status": "trap",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "#DE (divide error) — hardware exception; Linux delivers SIGFPE  [Intel SDM Vol. 2A, IDIV: #DE if the source operand is 0 or the quotient is too large]"
+     },
+     "int32 AArch64": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 RISC-V": {
+      "status": "value",
+      "layer": null,
+      "display": "-1",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 C": {
+      "status": "undefined",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "undefined behaviour — the program has no meaning; any outcome is permitted  [ISO/IEC 9899 (C17) 6.5.5p5–6: behaviour undefined if the second operand is 0 or the quotient is not representable]"
+     },
+     "int32 Java": {
+      "status": "exception",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "ArithmeticException: / by zero  [JLS §15.17.2: ArithmeticException on integer division by zero; Integer.MIN_VALUE / −1 == MIN_VALUE]"
+     },
+     "int32 Rust (debug)": {
+      "status": "exception",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "panic: attempt to divide by zero  [Rust reference, arithmetic operators: integer division by zero panics; i32::MIN / −1 panics (overflow)]"
+     }
+    },
+    "0 / 0": {
+     "N": {
+      "status": "non-unique",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "0 · c = 0 holds for every c: the equation does not determine c"
+     },
+     "Z": {
+      "status": "non-unique",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "0 · c = 0 holds for every c: the equation does not determine c"
+     },
+     "Q": {
+      "status": "non-unique",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "0 · c = 0 holds for every c: the equation does not determine c"
+     },
+     "C": {
+      "status": "non-unique",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "0 · c = 0 holds for every complex c"
+     },
+     "Z/6": {
+      "status": "non-unique",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "gcd(0, 6) = 6 divides 0; the 6 solutions differ by elements annihilated by 0"
+     },
+     "Z/7": {
+      "status": "non-unique",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "gcd(0, 7) = 7 divides 0; the 7 solutions differ by elements annihilated by 0"
+     },
+     "binary64": {
+      "status": "special",
+      "layer": "execution",
+      "display": "NaN",
+      "flags": [
+       "invalid"
+      ],
+      "reason": "NaN: the operation has no unique real result (invalid); IEEE 754 returns a datum that is not a number"
+     },
+     "Python": {
+      "status": "exception",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "ZeroDivisionError: division by zero"
+     },
+     "JS BigInt": {
+      "status": "exception",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "RangeError: Division by zero  [ECMAScript BigInt::divide: RangeError if the divisor is 0n; truncates toward zero]"
+     },
+     "int32 x86-64": {
+      "status": "trap",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "#DE (divide error) — hardware exception; Linux delivers SIGFPE  [Intel SDM Vol. 2A, IDIV: #DE if the source operand is 0 or the quotient is too large]"
+     },
+     "int32 AArch64": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 RISC-V": {
+      "status": "value",
+      "layer": null,
+      "display": "-1",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 C": {
+      "status": "undefined",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "undefined behaviour — the program has no meaning; any outcome is permitted  [ISO/IEC 9899 (C17) 6.5.5p5–6: behaviour undefined if the second operand is 0 or the quotient is not representable]"
+     },
+     "int32 Java": {
+      "status": "exception",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "ArithmeticException: / by zero  [JLS §15.17.2: ArithmeticException on integer division by zero; Integer.MIN_VALUE / −1 == MIN_VALUE]"
+     },
+     "int32 Rust (debug)": {
+      "status": "exception",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "panic: attempt to divide by zero  [Rust reference, arithmetic operators: integer division by zero panics; i32::MIN / −1 panics (overflow)]"
+     }
+    },
+    "-1 / 0": {
+     "N": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "−1: the equation 1 + c = 0 has no solution in N"
+     },
+     "Z": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "0 · c = 0 for every c, so 0 · c = -1 would require 0 = -1"
+     },
+     "Q": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "0 · c = 0 for every c, so 0 · c = -1 would require 0 = -1"
+     },
+     "C": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "0 · c = 0 ≠ -1 for every complex c: C is a field, so 0 has no inverse"
+     },
+     "Z/6": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "gcd(0, 6) = 6 does not divide 5"
+     },
+     "Z/7": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "gcd(0, 7) = 7 does not divide 6"
+     },
+     "binary64": {
+      "status": "special",
+      "layer": "execution",
+      "display": "-Infinity",
+      "flags": [
+       "divideByZero"
+      ],
+      "reason": "±Infinity from division by zero: no real c satisfies 0 · c = a ≠ 0; IEEE 754 returns the signed infinity that the limit from the side of the zero's sign would suggest, and raises divideByZero"
+     },
+     "Python": {
+      "status": "exception",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "ZeroDivisionError: division by zero"
+     },
+     "JS BigInt": {
+      "status": "exception",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "RangeError: Division by zero  [ECMAScript BigInt::divide: RangeError if the divisor is 0n; truncates toward zero]"
+     },
+     "int32 x86-64": {
+      "status": "trap",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "#DE (divide error) — hardware exception; Linux delivers SIGFPE  [Intel SDM Vol. 2A, IDIV: #DE if the source operand is 0 or the quotient is too large]"
+     },
+     "int32 AArch64": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 RISC-V": {
+      "status": "value",
+      "layer": null,
+      "display": "-1",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 C": {
+      "status": "undefined",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "undefined behaviour — the program has no meaning; any outcome is permitted  [ISO/IEC 9899 (C17) 6.5.5p5–6: behaviour undefined if the second operand is 0 or the quotient is not representable]"
+     },
+     "int32 Java": {
+      "status": "exception",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "ArithmeticException: / by zero  [JLS §15.17.2: ArithmeticException on integer division by zero; Integer.MIN_VALUE / −1 == MIN_VALUE]"
+     },
+     "int32 Rust (debug)": {
+      "status": "exception",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "panic: attempt to divide by zero  [Rust reference, arithmetic operators: integer division by zero panics; i32::MIN / −1 panics (overflow)]"
+     }
+    },
+    "1 / -0": {
+     "N": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "0 · c = 0 for every c, so 0 · c = 1 would require 0 = 1"
+     },
+     "Z": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "0 · c = 0 for every c, so 0 · c = 1 would require 0 = 1"
+     },
+     "Q": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "0 · c = 0 for every c, so 0 · c = 1 would require 0 = 1"
+     },
+     "C": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "0 · c = 0 ≠ 1 for every complex c: C is a field, so 0 has no inverse"
+     },
+     "Z/6": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "gcd(0, 6) = 6 does not divide 1"
+     },
+     "Z/7": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "gcd(0, 7) = 7 does not divide 1"
+     },
+     "binary64": {
+      "status": "special",
+      "layer": "execution",
+      "display": "-Infinity",
+      "flags": [
+       "divideByZero"
+      ],
+      "reason": "±Infinity from division by zero: no real c satisfies 0 · c = a ≠ 0; IEEE 754 returns the signed infinity that the limit from the side of the zero's sign would suggest, and raises divideByZero"
+     },
+     "Python": {
+      "status": "exception",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "ZeroDivisionError: division by zero"
+     },
+     "JS BigInt": {
+      "status": "exception",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "RangeError: Division by zero  [ECMAScript BigInt::divide: RangeError if the divisor is 0n; truncates toward zero]"
+     },
+     "int32 x86-64": {
+      "status": "trap",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "#DE (divide error) — hardware exception; Linux delivers SIGFPE  [Intel SDM Vol. 2A, IDIV: #DE if the source operand is 0 or the quotient is too large]"
+     },
+     "int32 AArch64": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 RISC-V": {
+      "status": "value",
+      "layer": null,
+      "display": "-1",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 C": {
+      "status": "undefined",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "undefined behaviour — the program has no meaning; any outcome is permitted  [ISO/IEC 9899 (C17) 6.5.5p5–6: behaviour undefined if the second operand is 0 or the quotient is not representable]"
+     },
+     "int32 Java": {
+      "status": "exception",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "ArithmeticException: / by zero  [JLS §15.17.2: ArithmeticException on integer division by zero; Integer.MIN_VALUE / −1 == MIN_VALUE]"
+     },
+     "int32 Rust (debug)": {
+      "status": "exception",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "panic: attempt to divide by zero  [Rust reference, arithmetic operators: integer division by zero panics; i32::MIN / −1 panics (overflow)]"
+     }
+    },
+    "7 / 2": {
+     "N": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "the only rational solution, 7/2, is not an integer (2 does not divide 7)"
+     },
+     "Z": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "the only rational solution, 7/2, is not an integer (2 does not divide 7)"
+     },
+     "Q": {
+      "status": "value",
+      "layer": null,
+      "display": "7/2",
+      "flags": [],
+      "reason": ""
+     },
+     "C": {
+      "status": "value",
+      "layer": null,
+      "display": "7/2",
+      "flags": [],
+      "reason": ""
+     },
+     "Z/6": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "gcd(2, 6) = 2 does not divide 1"
+     },
+     "Z/7": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     },
+     "binary64": {
+      "status": "value",
+      "layer": null,
+      "display": "3.5",
+      "flags": [],
+      "reason": ""
+     },
+     "Python": {
+      "status": "value",
+      "layer": null,
+      "display": "3.5",
+      "flags": [],
+      "reason": ""
+     },
+     "JS BigInt": {
+      "status": "value",
+      "layer": null,
+      "display": "3",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 x86-64": {
+      "status": "value",
+      "layer": null,
+      "display": "3",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 AArch64": {
+      "status": "value",
+      "layer": null,
+      "display": "3",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 RISC-V": {
+      "status": "value",
+      "layer": null,
+      "display": "3",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 C": {
+      "status": "value",
+      "layer": null,
+      "display": "3",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 Java": {
+      "status": "value",
+      "layer": null,
+      "display": "3",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 Rust (debug)": {
+      "status": "value",
+      "layer": null,
+      "display": "3",
+      "flags": [],
+      "reason": ""
+     }
+    },
+    "0 - 1": {
+     "N": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "b + c ≥ b = 1 > 0 for every natural c (the only integer solution -1 is negative)"
+     },
+     "Z": {
+      "status": "value",
+      "layer": null,
+      "display": "-1",
+      "flags": [],
+      "reason": ""
+     },
+     "Q": {
+      "status": "value",
+      "layer": null,
+      "display": "-1",
+      "flags": [],
+      "reason": ""
+     },
+     "C": {
+      "status": "value",
+      "layer": null,
+      "display": "-1",
+      "flags": [],
+      "reason": ""
+     },
+     "Z/6": {
+      "status": "value",
+      "layer": null,
+      "display": "5",
+      "flags": [],
+      "reason": ""
+     },
+     "Z/7": {
+      "status": "value",
+      "layer": null,
+      "display": "6",
+      "flags": [],
+      "reason": ""
+     },
+     "binary64": {
+      "status": "value",
+      "layer": null,
+      "display": "-1",
+      "flags": [],
+      "reason": ""
+     },
+     "Python": {
+      "status": "value",
+      "layer": null,
+      "display": "-1",
+      "flags": [],
+      "reason": ""
+     },
+     "JS BigInt": {
+      "status": "value",
+      "layer": null,
+      "display": "-1",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 x86-64": {
+      "status": "value",
+      "layer": null,
+      "display": "-1",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 AArch64": {
+      "status": "value",
+      "layer": null,
+      "display": "-1",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 RISC-V": {
+      "status": "value",
+      "layer": null,
+      "display": "-1",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 C": {
+      "status": "value",
+      "layer": null,
+      "display": "-1",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 Java": {
+      "status": "value",
+      "layer": null,
+      "display": "-1",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 Rust (debug)": {
+      "status": "value",
+      "layer": null,
+      "display": "-1",
+      "flags": [],
+      "reason": ""
+     }
+    },
+    "2 / 4": {
+     "N": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "the only rational solution, 1/2, is not an integer (4 does not divide 2)"
+     },
+     "Z": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "the only rational solution, 1/2, is not an integer (4 does not divide 2)"
+     },
+     "Q": {
+      "status": "value",
+      "layer": null,
+      "display": "1/2",
+      "flags": [],
+      "reason": ""
+     },
+     "C": {
+      "status": "value",
+      "layer": null,
+      "display": "1/2",
+      "flags": [],
+      "reason": ""
+     },
+     "Z/6": {
+      "status": "non-unique",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "gcd(4, 6) = 2 divides 2; the 2 solutions differ by elements annihilated by 4"
+     },
+     "Z/7": {
+      "status": "value",
+      "layer": null,
+      "display": "4",
+      "flags": [],
+      "reason": ""
+     },
+     "binary64": {
+      "status": "value",
+      "layer": null,
+      "display": "0.5",
+      "flags": [],
+      "reason": ""
+     },
+     "Python": {
+      "status": "value",
+      "layer": null,
+      "display": "0.5",
+      "flags": [],
+      "reason": ""
+     },
+     "JS BigInt": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 x86-64": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 AArch64": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 RISC-V": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 C": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 Java": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 Rust (debug)": {
+      "status": "value",
+      "layer": null,
+      "display": "0",
+      "flags": [],
+      "reason": ""
+     }
+    },
+    "sqrt(-1)": {
+     "N": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "−1: the equation 1 + c = 0 has no solution in N"
+     },
+     "Z": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "squares are ≥ 0 in an ordered field; -1 < 0"
+     },
+     "Q": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "squares are ≥ 0 in an ordered field; -1 < 0"
+     },
+     "C": {
+      "status": "value",
+      "layer": null,
+      "display": "i",
+      "flags": [],
+      "reason": ""
+     },
+     "Z/6": {
+      "status": "unsupported",
+      "layer": "typing",
+      "display": "",
+      "flags": [],
+      "reason": "sqrt is not an operation of Z/6"
+     },
+     "Z/7": {
+      "status": "unsupported",
+      "layer": "typing",
+      "display": "",
+      "flags": [],
+      "reason": "sqrt is not an operation of Z/7"
+     },
+     "binary64": {
+      "status": "special",
+      "layer": "execution",
+      "display": "NaN",
+      "flags": [
+       "invalid"
+      ],
+      "reason": "NaN: the operation has no unique real result (invalid); IEEE 754 returns a datum that is not a number"
+     },
+     "Python": {
+      "status": "unsupported",
+      "layer": "typing",
+      "display": "",
+      "flags": [],
+      "reason": "sqrt is not an operation of Python"
+     },
+     "JS BigInt": {
+      "status": "unsupported",
+      "layer": "typing",
+      "display": "",
+      "flags": [],
+      "reason": "sqrt is not an operation of JS BigInt"
+     },
+     "int32 x86-64": {
+      "status": "unsupported",
+      "layer": "typing",
+      "display": "",
+      "flags": [],
+      "reason": "sqrt is not an operation of int32 x86-64"
+     },
+     "int32 AArch64": {
+      "status": "unsupported",
+      "layer": "typing",
+      "display": "",
+      "flags": [],
+      "reason": "sqrt is not an operation of int32 AArch64"
+     },
+     "int32 RISC-V": {
+      "status": "unsupported",
+      "layer": "typing",
+      "display": "",
+      "flags": [],
+      "reason": "sqrt is not an operation of int32 RISC-V"
+     },
+     "int32 C": {
+      "status": "unsupported",
+      "layer": "typing",
+      "display": "",
+      "flags": [],
+      "reason": "sqrt is not an operation of int32 C"
+     },
+     "int32 Java": {
+      "status": "unsupported",
+      "layer": "typing",
+      "display": "",
+      "flags": [],
+      "reason": "sqrt is not an operation of int32 Java"
+     },
+     "int32 Rust (debug)": {
+      "status": "unsupported",
+      "layer": "typing",
+      "display": "",
+      "flags": [],
+      "reason": "sqrt is not an operation of int32 Rust (debug)"
+     }
+    },
+    "0^0": {
+     "N": {
+      "status": "value",
+      "layer": null,
+      "display": "1",
+      "flags": [],
+      "reason": ""
+     },
+     "Z": {
+      "status": "value",
+      "layer": null,
+      "display": "1",
+      "flags": [],
+      "reason": ""
+     },
+     "Q": {
+      "status": "value",
+      "layer": null,
+      "display": "1",
+      "flags": [],
+      "reason": ""
+     },
+     "C": {
+      "status": "value",
+      "layer": null,
+      "display": "1",
+      "flags": [],
+      "reason": ""
+     },
+     "Z/6": {
+      "status": "value",
+      "layer": null,
+      "display": "1",
+      "flags": [],
+      "reason": ""
+     },
+     "Z/7": {
+      "status": "value",
+      "layer": null,
+      "display": "1",
+      "flags": [],
+      "reason": ""
+     },
+     "binary64": {
+      "status": "unsupported",
+      "layer": "typing",
+      "display": "",
+      "flags": [],
+      "reason": "pow is a library function, not a correctly rounded basic operation"
+     },
+     "Python": {
+      "status": "value",
+      "layer": null,
+      "display": "1",
+      "flags": [],
+      "reason": ""
+     },
+     "JS BigInt": {
+      "status": "value",
+      "layer": null,
+      "display": "1",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 x86-64": {
+      "status": "unsupported",
+      "layer": "typing",
+      "display": "",
+      "flags": [],
+      "reason": "^ is not an integer instruction"
+     },
+     "int32 AArch64": {
+      "status": "unsupported",
+      "layer": "typing",
+      "display": "",
+      "flags": [],
+      "reason": "^ is not an integer instruction"
+     },
+     "int32 RISC-V": {
+      "status": "unsupported",
+      "layer": "typing",
+      "display": "",
+      "flags": [],
+      "reason": "^ is not an integer instruction"
+     },
+     "int32 C": {
+      "status": "unsupported",
+      "layer": "typing",
+      "display": "",
+      "flags": [],
+      "reason": "^ is not an integer instruction"
+     },
+     "int32 Java": {
+      "status": "unsupported",
+      "layer": "typing",
+      "display": "",
+      "flags": [],
+      "reason": "^ is not an integer instruction"
+     },
+     "int32 Rust (debug)": {
+      "status": "unsupported",
+      "layer": "typing",
+      "display": "",
+      "flags": [],
+      "reason": "^ is not an integer instruction"
+     }
+    },
+    "0^-1": {
+     "N": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "0^-1 = 1/0^1 is not in N"
+     },
+     "Z": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "0^-1 = 1/0^1 is not in Z"
+     },
+     "Q": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "0^-1 = 1/0^1 = 1/0: 0 · c = 1 has no solution"
+     },
+     "C": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "0^-1 = 1/0^1: 0 · c = 1 has no solution"
+     },
+     "Z/6": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "0^-1 needs the inverse of 0 mod 6: gcd(0, 6) = 6 does not divide 1"
+     },
+     "Z/7": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "0^-1 needs the inverse of 0 mod 7: gcd(0, 7) = 7 does not divide 1"
+     },
+     "binary64": {
+      "status": "unsupported",
+      "layer": "typing",
+      "display": "",
+      "flags": [],
+      "reason": "pow is a library function, not a correctly rounded basic operation"
+     },
+     "Python": {
+      "status": "exception",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "ZeroDivisionError: 0.0 cannot be raised to a negative power"
+     },
+     "JS BigInt": {
+      "status": "exception",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "RangeError: Exponent must be non-negative"
+     },
+     "int32 x86-64": {
+      "status": "unsupported",
+      "layer": "typing",
+      "display": "",
+      "flags": [],
+      "reason": "^ is not an integer instruction"
+     },
+     "int32 AArch64": {
+      "status": "unsupported",
+      "layer": "typing",
+      "display": "",
+      "flags": [],
+      "reason": "^ is not an integer instruction"
+     },
+     "int32 RISC-V": {
+      "status": "unsupported",
+      "layer": "typing",
+      "display": "",
+      "flags": [],
+      "reason": "^ is not an integer instruction"
+     },
+     "int32 C": {
+      "status": "unsupported",
+      "layer": "typing",
+      "display": "",
+      "flags": [],
+      "reason": "^ is not an integer instruction"
+     },
+     "int32 Java": {
+      "status": "unsupported",
+      "layer": "typing",
+      "display": "",
+      "flags": [],
+      "reason": "^ is not an integer instruction"
+     },
+     "int32 Rust (debug)": {
+      "status": "unsupported",
+      "layer": "typing",
+      "display": "",
+      "flags": [],
+      "reason": "^ is not an integer instruction"
+     }
+    },
+    "2147483647 + 1": {
+     "N": {
+      "status": "value",
+      "layer": null,
+      "display": "2147483648",
+      "flags": [],
+      "reason": ""
+     },
+     "Z": {
+      "status": "value",
+      "layer": null,
+      "display": "2147483648",
+      "flags": [],
+      "reason": ""
+     },
+     "Q": {
+      "status": "value",
+      "layer": null,
+      "display": "2147483648",
+      "flags": [],
+      "reason": ""
+     },
+     "C": {
+      "status": "value",
+      "layer": null,
+      "display": "2147483648",
+      "flags": [],
+      "reason": ""
+     },
+     "Z/6": {
+      "status": "value",
+      "layer": null,
+      "display": "2",
+      "flags": [],
+      "reason": ""
+     },
+     "Z/7": {
+      "status": "value",
+      "layer": null,
+      "display": "2",
+      "flags": [],
+      "reason": ""
+     },
+     "binary64": {
+      "status": "value",
+      "layer": null,
+      "display": "2147483648",
+      "flags": [],
+      "reason": ""
+     },
+     "Python": {
+      "status": "value",
+      "layer": null,
+      "display": "2147483648",
+      "flags": [],
+      "reason": ""
+     },
+     "JS BigInt": {
+      "status": "value",
+      "layer": null,
+      "display": "2147483648",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 x86-64": {
+      "status": "value",
+      "layer": null,
+      "display": "-2147483648",
+      "flags": [
+       "overflow"
+      ],
+      "reason": ""
+     },
+     "int32 AArch64": {
+      "status": "value",
+      "layer": null,
+      "display": "-2147483648",
+      "flags": [
+       "overflow"
+      ],
+      "reason": ""
+     },
+     "int32 RISC-V": {
+      "status": "value",
+      "layer": null,
+      "display": "-2147483648",
+      "flags": [
+       "overflow"
+      ],
+      "reason": ""
+     },
+     "int32 C": {
+      "status": "undefined",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "addition overflows 32 bits (exact result 2147483648); C17 6.5p5: signed overflow is undefined"
+     },
+     "int32 Java": {
+      "status": "value",
+      "layer": null,
+      "display": "-2147483648",
+      "flags": [
+       "overflow"
+      ],
+      "reason": ""
+     },
+     "int32 Rust (debug)": {
+      "status": "exception",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "addition overflows 32 bits (exact result 2147483648): checked arithmetic (e.g. Rust debug build, C# checked)"
+     }
+    },
+    "(-2147483647 - 1) / -1": {
+     "N": {
+      "status": "no-solution",
+      "layer": "semantics",
+      "display": "",
+      "flags": [],
+      "reason": "−2147483647: the equation 2147483647 + c = 0 has no solution in N"
+     },
+     "Z": {
+      "status": "value",
+      "layer": null,
+      "display": "2147483648",
+      "flags": [],
+      "reason": ""
+     },
+     "Q": {
+      "status": "value",
+      "layer": null,
+      "display": "2147483648",
+      "flags": [],
+      "reason": ""
+     },
+     "C": {
+      "status": "value",
+      "layer": null,
+      "display": "2147483648",
+      "flags": [],
+      "reason": ""
+     },
+     "Z/6": {
+      "status": "value",
+      "layer": null,
+      "display": "2",
+      "flags": [],
+      "reason": ""
+     },
+     "Z/7": {
+      "status": "value",
+      "layer": null,
+      "display": "2",
+      "flags": [],
+      "reason": ""
+     },
+     "binary64": {
+      "status": "value",
+      "layer": null,
+      "display": "2147483648",
+      "flags": [],
+      "reason": ""
+     },
+     "Python": {
+      "status": "value",
+      "layer": null,
+      "display": "2147483648.0",
+      "flags": [],
+      "reason": ""
+     },
+     "JS BigInt": {
+      "status": "value",
+      "layer": null,
+      "display": "2147483648",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 x86-64": {
+      "status": "trap",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "#DE (divide error) — quotient not representable in w bits  [Intel SDM Vol. 2A, IDIV: #DE if the source operand is 0 or the quotient is too large]"
+     },
+     "int32 AArch64": {
+      "status": "value",
+      "layer": null,
+      "display": "-2147483648",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 RISC-V": {
+      "status": "value",
+      "layer": null,
+      "display": "-2147483648",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 C": {
+      "status": "undefined",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "undefined behaviour — INT_MIN / -1 overflows  [ISO/IEC 9899 (C17) 6.5.5p5–6: behaviour undefined if the second operand is 0 or the quotient is not representable]"
+     },
+     "int32 Java": {
+      "status": "value",
+      "layer": null,
+      "display": "-2147483648",
+      "flags": [],
+      "reason": ""
+     },
+     "int32 Rust (debug)": {
+      "status": "exception",
+      "layer": "execution",
+      "display": "",
+      "flags": [],
+      "reason": "panic: attempt to divide with overflow  [Rust reference, arithmetic operators: integer division by zero panics; i32::MIN / −1 panics (overflow)]"
+     }
+    }
+   }
+  },
+  "families": {
+   "x=-2": {
+    "x / 0": "no-solution",
+    "0 / x": "value",
+    "x / x": "value"
+   },
+   "x=-1": {
+    "x / 0": "no-solution",
+    "0 / x": "value",
+    "x / x": "value"
+   },
+   "x=0": {
+    "x / 0": "non-unique",
+    "0 / x": "non-unique",
+    "x / x": "non-unique"
+   },
+   "x=1": {
+    "x / 0": "no-solution",
+    "0 / x": "value",
+    "x / x": "value"
+   },
+   "x=3": {
+    "x / 0": "no-solution",
+    "0 / x": "value",
+    "x / x": "value"
+   },
+   "symbolic x / 0": {
+    "status": "no-solution",
+    "display": "",
+    "representation": {},
+    "reason": "the divisor is identically 0: 0 · c = x has no solution at any x where x ≠ 0; where the dividend x vanishes (x ∈ {0}) the equation becomes 0 · c = 0 and every c solves it"
+   },
+   "symbolic 0 / x": {
+    "status": "value",
+    "display": "0",
+    "representation": {
+     "simplified": "0",
+     "conditions": [
+      "x ≠ 0"
+     ],
+     "excluded points": [
+      "0"
+     ],
+     "at excluded points (exact Q)": {
+      "0": "non-unique: 0 · c = 0 holds for every c: the equation does not determine c"
+     }
+    },
+    "reason": ""
+   },
+   "symbolic x / x": {
+    "status": "value",
+    "display": "1",
+    "representation": {
+     "simplified": "1",
+     "conditions": [
+      "x ≠ 0"
+     ],
+     "excluded points": [
+      "0"
+     ],
+     "at excluded points (exact Q)": {
+      "0": "non-unique: 0 · c = 0 holds for every c: the equation does not determine c"
+     }
+    },
+    "reason": ""
+   },
+   "symbolic (x^2 - 1) / (x - 1)": {
+    "status": "value",
+    "display": "x + 1",
+    "representation": {
+     "simplified": "x + 1",
+     "conditions": [
+      "x − 1 ≠ 0"
+     ],
+     "excluded points": [
+      "1"
+     ],
+     "at excluded points (exact Q)": {
+      "1": "non-unique: 0 · c = 0 holds for every c: the equation does not determine c"
+     }
+    },
+    "reason": ""
+   },
+   "symbolic 1 / (x^2 + 1)": {
+    "status": "value",
+    "display": "(1) / (x^2 + 1)",
+    "representation": {
+     "simplified": "(1) / (x^2 + 1)",
+     "conditions": [
+      "x^2 + 1 ≠ 0"
+     ],
+     "excluded points": [],
+     "conditions without rational roots": [
+      "x^2 + 1 ≠ 0"
+     ]
+    },
+    "reason": ""
+   },
+   "symbolic x / (x - x)": {
+    "status": "no-solution",
+    "display": "",
+    "representation": {},
+    "reason": "the divisor is identically 0: 0 · c = x has no solution at any x where x ≠ 0; where the dividend x vanishes (x ∈ {0}) the equation becomes 0 · c = 0 and every c solves it"
+   },
+   "binary64_one_over_x_toward_0": [
+    {
+     "x": "10^-1",
+     "1/x": "10",
+     "flags": [
+      "inexact"
+     ]
+    },
+    {
+     "x": "-10^-1",
+     "1/x": "-10",
+     "flags": [
+      "inexact"
+     ]
+    },
+    {
+     "x": "10^-10",
+     "1/x": "10000000000",
+     "flags": [
+      "inexact"
+     ]
+    },
+    {
+     "x": "-10^-10",
+     "1/x": "-10000000000",
+     "flags": [
+      "inexact"
+     ]
+    },
+    {
+     "x": "10^-100",
+     "1/x": "1e100",
+     "flags": [
+      "inexact"
+     ]
+    },
+    {
+     "x": "-10^-100",
+     "1/x": "-1e100",
+     "flags": [
+      "inexact"
+     ]
+    },
+    {
+     "x": "10^-300",
+     "1/x": "9.999999999999999e299",
+     "flags": [
+      "inexact"
+     ]
+    },
+    {
+     "x": "-10^-300",
+     "1/x": "-9.999999999999999e299",
+     "flags": [
+      "inexact"
+     ]
+    },
+    {
+     "x": "10^-320",
+     "1/x": "Infinity",
+     "flags": [
+      "inexact",
+      "overflow"
+     ]
+    },
+    {
+     "x": "-10^-320",
+     "1/x": "-Infinity",
+     "flags": [
+      "inexact",
+      "overflow"
+     ]
+    },
+    {
+     "x": "10^-330",
+     "1/x": "Infinity",
+     "flags": [
+      "divideByZero"
+     ]
+    },
+    {
+     "x": "-10^-330",
+     "1/x": "-Infinity",
+     "flags": [
+      "divideByZero"
+     ]
+    }
+   ]
+  },
+  "other_converse": {
+   "sqrt(4)": {
+    "N": "unique",
+    "Q": "non-unique",
+    "R": "non-unique",
+    "C": "non-unique"
+   },
+   "sqrt(2)": {
+    "N": "no-solution",
+    "Q": "no-solution",
+    "R": "non-unique",
+    "C": "non-unique"
+   },
+   "sqrt(0)": {
+    "N": "unique",
+    "Q": "unique",
+    "R": "unique",
+    "C": "unique"
+   },
+   "sqrt(-1)": {
+    "N": "no-solution",
+    "Q": "no-solution",
+    "R": "no-solution",
+    "C": "non-unique"
+   },
+   "sqrt(-4)": {
+    "N": "no-solution",
+    "Q": "no-solution",
+    "R": "no-solution",
+    "C": "non-unique"
+   },
+   "log(1)": {
+    "R": "unique",
+    "C": "non-unique"
+   },
+   "log(0)": {
+    "R": "no-solution",
+    "C": "no-solution"
+   },
+   "log(-1)": {
+    "R": "no-solution",
+    "C": "non-unique"
+   },
+   "inverse of 3 mod 7": "unique",
+   "inverse of 2 mod 6": "no-solution",
+   "inverse of 5 mod 12": "unique",
+   "inverse of 4 mod 12": "no-solution"
+  }
+ }
+}

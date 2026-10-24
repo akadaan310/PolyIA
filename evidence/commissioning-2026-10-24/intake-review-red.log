@@ -1,0 +1,78 @@
+test_document_hashes_and_registry_source_identities_are_not_conflated (test_intake.IntakeTests.test_document_hashes_and_registry_source_identities_are_not_conflated) ... FAIL
+test_embedded_nonfinite_numbers_and_deep_json_stay_retained_unknowns (test_intake.IntakeTests.test_embedded_nonfinite_numbers_and_deep_json_stay_retained_unknowns) ... 
+  test_embedded_nonfinite_numbers_and_deep_json_stay_retained_unknowns (test_intake.IntakeTests.test_embedded_nonfinite_numbers_and_deep_json_stay_retained_unknowns) (text='divide polynomial [NaN] by [1]') ... ERROR
+  test_embedded_nonfinite_numbers_and_deep_json_stay_retained_unknowns (test_intake.IntakeTests.test_embedded_nonfinite_numbers_and_deep_json_stay_retained_unknowns) (text='divide polynomial [Infinity] by [1]') ... ERROR
+  test_embedded_nonfinite_numbers_and_deep_json_stay_retained_unknowns (test_intake.IntakeTests.test_embedded_nonfinite_numbers_and_deep_json_stay_retained_unknowns) (text='divide polynomial [1e999] by [1]') ... ERROR
+test_explicit_coefficients_are_used_and_float_not_silently_rounded (test_intake.IntakeTests.test_explicit_coefficients_are_used_and_float_not_silently_rounded) ... ok
+test_limits_and_schemas_fail_closed (test_intake.IntakeTests.test_limits_and_schemas_fail_closed) ... ok
+test_polynomial_teaching_is_computed_with_domain_exclusions (test_intake.IntakeTests.test_polynomial_teaching_is_computed_with_domain_exclusions) ... ok
+test_private_source_policy_is_explicit (test_intake.IntakeTests.test_private_source_policy_is_explicit) ... ok
+test_source_instructions_and_unknown_suffixes_are_data (test_intake.IntakeTests.test_source_instructions_and_unknown_suffixes_are_data) ... ok
+test_style_changes_only_rendering (test_intake.IntakeTests.test_style_changes_only_rendering) ... ok
+test_unicode_original_bytes_and_all_spans_round_trip (test_intake.IntakeTests.test_unicode_original_bytes_and_all_spans_round_trip) ... ok
+test_zero_divisor_retains_failure_and_testable_opportunity (test_intake.IntakeTests.test_zero_divisor_retains_failure_and_testable_opportunity) ... ok
+
+======================================================================
+ERROR: test_embedded_nonfinite_numbers_and_deep_json_stay_retained_unknowns (test_intake.IntakeTests.test_embedded_nonfinite_numbers_and_deep_json_stay_retained_unknowns) (text='divide polynomial [NaN] by [1]')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/tests/test_intake.py", line 89, in test_embedded_nonfinite_numbers_and_deep_json_stay_retained_unknowns
+    json.dumps(report, allow_nan=False)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/polyia/runtime/lib/python3.13/json/__init__.py", line 242, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "/opt/polyia/runtime/lib/python3.13/json/encoder.py", line 202, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/opt/polyia/runtime/lib/python3.13/json/encoder.py", line 263, in iterencode
+    return _iterencode(o, 0)
+ValueError: Out of range float values are not JSON compliant: nan
+
+======================================================================
+ERROR: test_embedded_nonfinite_numbers_and_deep_json_stay_retained_unknowns (test_intake.IntakeTests.test_embedded_nonfinite_numbers_and_deep_json_stay_retained_unknowns) (text='divide polynomial [Infinity] by [1]')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/tests/test_intake.py", line 89, in test_embedded_nonfinite_numbers_and_deep_json_stay_retained_unknowns
+    json.dumps(report, allow_nan=False)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/polyia/runtime/lib/python3.13/json/__init__.py", line 242, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "/opt/polyia/runtime/lib/python3.13/json/encoder.py", line 202, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/opt/polyia/runtime/lib/python3.13/json/encoder.py", line 263, in iterencode
+    return _iterencode(o, 0)
+ValueError: Out of range float values are not JSON compliant: inf
+
+======================================================================
+ERROR: test_embedded_nonfinite_numbers_and_deep_json_stay_retained_unknowns (test_intake.IntakeTests.test_embedded_nonfinite_numbers_and_deep_json_stay_retained_unknowns) (text='divide polynomial [1e999] by [1]')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/tests/test_intake.py", line 89, in test_embedded_nonfinite_numbers_and_deep_json_stay_retained_unknowns
+    json.dumps(report, allow_nan=False)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/polyia/runtime/lib/python3.13/json/__init__.py", line 242, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "/opt/polyia/runtime/lib/python3.13/json/encoder.py", line 202, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/opt/polyia/runtime/lib/python3.13/json/encoder.py", line 263, in iterencode
+    return _iterencode(o, 0)
+ValueError: Out of range float values are not JSON compliant: inf
+
+======================================================================
+FAIL: test_document_hashes_and_registry_source_identities_are_not_conflated (test_intake.IntakeTests.test_document_hashes_and_registry_source_identities_are_not_conflated)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/tests/test_intake.py", line 99, in test_document_hashes_and_registry_source_identities_are_not_conflated
+    self.assertEqual(sources[ref['source_id']]['path'], ref['path'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'sources/current/OWNER_DIRECTIVE_2026-10-24.md' != 'GOD_SEED.md'
+- sources/current/OWNER_DIRECTIVE_2026-10-24.md
++ GOD_SEED.md
+
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.009s
+
+FAILED (failures=1, errors=3)

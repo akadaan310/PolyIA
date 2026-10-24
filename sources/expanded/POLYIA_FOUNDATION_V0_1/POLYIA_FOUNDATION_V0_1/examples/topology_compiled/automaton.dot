@@ -1,0 +1,22 @@
+digraph POLYIA {
+  rankdir=LR;
+  "START" [shape=ellipse];
+  "S1_text_surface" [shape=ellipse];
+  "S2_lang_identity" [shape=ellipse];
+  "S3_pronunciation_fixture" [shape=ellipse];
+  "S4_ipa_feature_fixture" [shape=ellipse];
+  "S5_prefix_match_fixture" [shape=ellipse];
+  "S6_morphology_fixture" [shape=ellipse];
+  "S7_evidence_graph_fixture" [shape=ellipse];
+  "S8_automaton_package" [shape=ellipse];
+  "ACCEPT" [shape=doublecircle];
+  "START" -> "S1_text_surface" [label="text.surface@0.1"];
+  "S1_text_surface" -> "S2_lang_identity" [label="lang.identity@0.1"];
+  "S2_lang_identity" -> "S3_pronunciation_fixture" [label="pronunciation.fixture@0.1"];
+  "S3_pronunciation_fixture" -> "S4_ipa_feature_fixture" [label="ipa.feature.fixture@0.1"];
+  "S4_ipa_feature_fixture" -> "S5_prefix_match_fixture" [label="prefix.match.fixture@0.1"];
+  "S5_prefix_match_fixture" -> "S6_morphology_fixture" [label="morphology.fixture@0.1"];
+  "S6_morphology_fixture" -> "S7_evidence_graph_fixture" [label="evidence.graph.fixture@0.1"];
+  "S7_evidence_graph_fixture" -> "S8_automaton_package" [label="automaton.package@0.1"];
+  "S8_automaton_package" -> "ACCEPT" [label="admission"];
+}

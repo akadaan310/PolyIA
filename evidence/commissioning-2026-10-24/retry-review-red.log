@@ -1,0 +1,81 @@
+TAP version 13
+# Subtest: a connection reads real state and a read token cannot issue a command
+ok 1 - a connection reads real state and a read token cannot issue a command
+  ---
+  duration_ms: 269.281214
+  type: 'test'
+  ...
+# Subtest: lost command response keeps the exact command available for idempotent retry
+ok 2 - lost command response keeps the exact command available for idempotent retry
+  ---
+  duration_ms: 44.983182
+  type: 'test'
+  ...
+# Subtest: a revision conflict is visible and does not silently replay with a new revision
+ok 3 - a revision conflict is visible and does not silently replay with a new revision
+  ---
+  duration_ms: 46.006982
+  type: 'test'
+  ...
+# Subtest: guidance with malicious markup remains exact data throughout command lifecycle
+ok 4 - guidance with malicious markup remains exact data throughout command lifecycle
+  ---
+  duration_ms: 40.881943
+  type: 'test'
+  ...
+# Subtest: artifact capture verification acceptance and checkpoint use registered operations
+ok 5 - artifact capture verification acceptance and checkpoint use registered operations
+  ---
+  duration_ms: 54.582859
+  type: 'test'
+  ...
+# Subtest: disconnect during a delayed response cannot restore an old session
+ok 6 - disconnect during a delayed response cannot restore an old session
+  ---
+  duration_ms: 5.874837
+  type: 'test'
+  ...
+# Subtest: an incomplete 200 receipt is not reported as command success and can be recovered
+ok 7 - an incomplete 200 receipt is not reported as command success and can be recovered
+  ---
+  duration_ms: 34.285507
+  type: 'test'
+  ...
+# Subtest: admission refusal during recovery retains a command whose original response was lost
+ok 8 - admission refusal during recovery retains a command whose original response was lost
+  ---
+  duration_ms: 34.229786
+  type: 'test'
+  ...
+# Subtest: pre-ledger and unreadable error responses cannot erase a previously unresolved receipt
+not ok 9 - pre-ledger and unreadable error responses cannot erase a previously unresolved receipt
+  ---
+  duration_ms: 23.824311
+  type: 'test'
+  location: '/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/web/client.test.mjs:197:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Pending receipt lost on 401
+    
+    false !== true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/web/client.test.mjs:214:12)
+    process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 8
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 641.122906

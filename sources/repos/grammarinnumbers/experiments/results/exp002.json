@@ -1,0 +1,171 @@
+{
+ "experiment": "GIN-EXP-002",
+ "hypotheses": [
+  "GIN-H-006",
+  "GIN-H-007"
+ ],
+ "seed": 20261008,
+ "environment": {
+  "python": "3.13.16",
+  "implementation": "CPython",
+  "machine": "x86_64",
+  "system": "Linux 6.18.44-fc-v80",
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.80GHz"
+ },
+ "data": {
+  "increment_flips": {
+   "N_max": 131072,
+   "mismatches_with_2N_minus_popcount": 0,
+   "total_flips_to_N_max": 262143,
+   "amortized_flips_per_increment": 1.9999923706054688,
+   "worst_single_increment": 18,
+   "table": [
+    {
+     "k": 1,
+     "N": 1,
+     "flips": 1
+    },
+    {
+     "k": 2,
+     "N": 3,
+     "flips": 4
+    },
+    {
+     "k": 3,
+     "N": 7,
+     "flips": 11
+    },
+    {
+     "k": 4,
+     "N": 15,
+     "flips": 26
+    },
+    {
+     "k": 5,
+     "N": 31,
+     "flips": 57
+    },
+    {
+     "k": 6,
+     "N": 63,
+     "flips": 120
+    },
+    {
+     "k": 7,
+     "N": 127,
+     "flips": 247
+    },
+    {
+     "k": 8,
+     "N": 255,
+     "flips": 502
+    },
+    {
+     "k": 9,
+     "N": 511,
+     "flips": 1013
+    },
+    {
+     "k": 10,
+     "N": 1023,
+     "flips": 2036
+    }
+   ]
+  },
+  "carry_chains": [
+   {
+    "n": 4,
+    "samples": 3000,
+    "mean_longest_chain": 1.1997,
+    "log2_n": 2.0,
+    "mean_minus_log2_n": -0.8003,
+    "max_observed": 4
+   },
+   {
+    "n": 8,
+    "samples": 3000,
+    "mean_longest_chain": 2.1593,
+    "log2_n": 3.0,
+    "mean_minus_log2_n": -0.8407,
+    "max_observed": 8
+   },
+   {
+    "n": 16,
+    "samples": 3000,
+    "mean_longest_chain": 3.191,
+    "log2_n": 4.0,
+    "mean_minus_log2_n": -0.809,
+    "max_observed": 12
+   },
+   {
+    "n": 32,
+    "samples": 3000,
+    "mean_longest_chain": 4.3013,
+    "log2_n": 5.0,
+    "mean_minus_log2_n": -0.6987,
+    "max_observed": 21
+   },
+   {
+    "n": 64,
+    "samples": 3000,
+    "mean_longest_chain": 5.3063,
+    "log2_n": 6.0,
+    "mean_minus_log2_n": -0.6937,
+    "max_observed": 15
+   },
+   {
+    "n": 128,
+    "samples": 3000,
+    "mean_longest_chain": 6.2847,
+    "log2_n": 7.0,
+    "mean_minus_log2_n": -0.7153,
+    "max_observed": 19
+   },
+   {
+    "n": 256,
+    "samples": 3000,
+    "mean_longest_chain": 7.3433,
+    "log2_n": 8.0,
+    "mean_minus_log2_n": -0.6567,
+    "max_observed": 20
+   },
+   {
+    "n": 512,
+    "samples": 3000,
+    "mean_longest_chain": 8.2923,
+    "log2_n": 9.0,
+    "mean_minus_log2_n": -0.7077,
+    "max_observed": 18
+   },
+   {
+    "n": 1024,
+    "samples": 3000,
+    "mean_longest_chain": 9.2993,
+    "log2_n": 10.0,
+    "mean_minus_log2_n": -0.7007,
+    "max_observed": 20
+   },
+   {
+    "n": 2048,
+    "samples": 1000,
+    "mean_longest_chain": 10.261,
+    "log2_n": 11.0,
+    "mean_minus_log2_n": -0.739,
+    "max_observed": 21
+   },
+   {
+    "n": 4096,
+    "samples": 1000,
+    "mean_longest_chain": 11.271,
+    "log2_n": 12.0,
+    "mean_minus_log2_n": -0.729,
+    "max_observed": 20
+   }
+  ],
+  "carry_class_frequencies": {
+   "K": 0.2503,
+   "P": 0.4999,
+   "G": 0.2498
+  }
+ }
+}

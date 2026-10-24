@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.polyia-state/
+.test-state/
+.venv/
+*.sqlite*
+.env
+node_modules/
+bootstrap-demo-*/
+# Preserved canonical bytes include upstream manifests and tracked bytecode.
+!sources/**

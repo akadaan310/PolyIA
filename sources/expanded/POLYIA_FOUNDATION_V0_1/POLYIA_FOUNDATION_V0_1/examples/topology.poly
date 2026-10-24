@@ -1,0 +1,9 @@
+; POLYIA commission source. A real small grammar, never JSON source syntax.
+(commission
+  (task "Construct universal word set for topology")
+  (require "phonetic-prefix")
+  (require "composed-automaton")
+  (deny "invent-cognates")
+  (deny "write-external-datasets")
+  (evidence fixture)
+  (budget 32))

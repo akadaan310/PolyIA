@@ -1,0 +1,2 @@
+{"name":"gin-book","private":true,"type":"module","scripts":{"pdf":"node tools/pdf.mjs"},
+ "dependencies":{"markdown-it":"14.1.0"},"devDependencies":{"playwright-core":"1.56.1"}}

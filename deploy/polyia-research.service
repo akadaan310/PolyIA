@@ -1,0 +1,17 @@
+[Unit]
+Description=Poly IA bounded seed research run
+After=polyia.service
+
+[Service]
+Type=oneshot
+User=polyia
+Group=polyia
+WorkingDirectory=/opt/polyia
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/usr/bin/python3 -m polyia worker --workspace /opt/polyia --state-dir /var/lib/polyia --iterations 1 --experiment acceptance
+TimeoutStartSec=60
+UMask=0077
+NoNewPrivileges=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/polyia

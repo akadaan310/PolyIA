@@ -1,0 +1,349 @@
+{
+  "scope": "Owner authority decisions and actual priority application; not mission acceptance",
+  "commands": [
+    {
+      "ok": true,
+      "command_id": "authority-b8c028036f0f41419ee8e9e48610f4da-0",
+      "actor": "operator",
+      "revision": 26,
+      "head": "6b9ce968e8145cfce8509eed147057b44d29f9efdd404a10ed7110f32866907d",
+      "result": {
+        "guidance_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-5",
+        "status": "ACKNOWLEDGED"
+      }
+    },
+    {
+      "ok": true,
+      "command_id": "authority-b8c028036f0f41419ee8e9e48610f4da-1",
+      "actor": "operator",
+      "revision": 27,
+      "head": "56e189aafedf49e2cac54831913c2159ca9d6988b75605d33b95a2fcd38402ab",
+      "result": {
+        "requirement_id": "PIA-015",
+        "status": "PRODUCED",
+        "artifacts": [
+          {
+            "path": "OWNER_CLARIFICATIONS_2026-10-24.md",
+            "sha256": "f0948cc75c3c57ec0714fa8a039655bce1ec7cd3c9b6867deb49bd6fd0f7eef7",
+            "size": 1789
+          },
+          {
+            "path": "AUTHORITY_RESOLUTIONS_2026-10-24.md",
+            "sha256": "e9084a1517b3f45d0f3d2e94f9e20163daf01fd66fe121ae8a517bf7ef0ab148",
+            "size": 2170
+          },
+          {
+            "path": "authority.json",
+            "sha256": "fd26d35be39ad684d31ec4e77100d1ecc791cef936428c01a10d46134ffa829a",
+            "size": 2038
+          }
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "command_id": "authority-b8c028036f0f41419ee8e9e48610f4da-2",
+      "actor": "operator",
+      "revision": 28,
+      "head": "1213d9840599300fbd447cd4ec1fa2cf8e5984e399ef54af3d61dd550cb8e665",
+      "result": {
+        "requirement_id": "PIA-095",
+        "status": "PRODUCED",
+        "artifacts": [
+          {
+            "path": "OWNER_CLARIFICATIONS_2026-10-24.md",
+            "sha256": "f0948cc75c3c57ec0714fa8a039655bce1ec7cd3c9b6867deb49bd6fd0f7eef7",
+            "size": 1789
+          },
+          {
+            "path": "AUTHORITY_RESOLUTIONS_2026-10-24.md",
+            "sha256": "e9084a1517b3f45d0f3d2e94f9e20163daf01fd66fe121ae8a517bf7ef0ab148",
+            "size": 2170
+          },
+          {
+            "path": "authority.json",
+            "sha256": "fd26d35be39ad684d31ec4e77100d1ecc791cef936428c01a10d46134ffa829a",
+            "size": 2038
+          }
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "command_id": "authority-b8c028036f0f41419ee8e9e48610f4da-3",
+      "actor": "operator",
+      "revision": 29,
+      "head": "0f46691e15841b083fe87406add0948e209cf7ede9a003d15f0578e112101f32",
+      "result": {
+        "guidance_id": "authority-b8c028036f0f41419ee8e9e48610f4da-3",
+        "status": "SUBMITTED"
+      }
+    },
+    {
+      "ok": true,
+      "command_id": "authority-b8c028036f0f41419ee8e9e48610f4da-4",
+      "actor": "operator",
+      "revision": 30,
+      "head": "acd90d9d64c8dea1e79e460175a867e28f8e9cde8be05cd0191fe233833a8907",
+      "result": {
+        "guidance_id": "authority-b8c028036f0f41419ee8e9e48610f4da-3",
+        "status": "ACKNOWLEDGED"
+      }
+    },
+    {
+      "ok": true,
+      "command_id": "authority-b8c028036f0f41419ee8e9e48610f4da-5",
+      "actor": "operator",
+      "revision": 31,
+      "head": "6d35bfa7ed59863e37cd59ffd3b1d6010d07bc653d353dd61986d7fb1f6585e4",
+      "result": {
+        "guidance_id": "authority-b8c028036f0f41419ee8e9e48610f4da-3",
+        "status": "APPLIED",
+        "applied_revision": 31,
+        "effects": [
+          {
+            "path": "requirements.PIA-095.priority",
+            "before": 5,
+            "after": 8
+          }
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "command_id": "authority-b8c028036f0f41419ee8e9e48610f4da-6",
+      "actor": "operator",
+      "revision": 32,
+      "head": "8aa09a94ab301ca812423306fefa88adca5dd740e543bb21ae8d6cbdc0cb6877",
+      "result": {
+        "checkpoint_id": "cp-00000032",
+        "previous_id": "cp-00000020",
+        "source_context": {
+          "schema_version": 1,
+          "version": 4,
+          "captured_revision": 32,
+          "captured_at": "2026-10-24T07:50:11.080366+00:00",
+          "registry_origin": "package",
+          "status": "SOURCED",
+          "objects": [
+            {
+              "role": "constitution",
+              "path": "registry/constitution.json",
+              "origin": "package",
+              "required": true,
+              "sha256": "60d2d8e09680e1ac527c58f004c0df81fee52d29fca3912147b9d8d47f1874a2",
+              "size": 215595
+            },
+            {
+              "role": "source-manifest",
+              "path": "registry/sources.json",
+              "origin": "package",
+              "required": true,
+              "sha256": "eae4899dea40d4ce816f0b6ee6db26df80a3ecafeadaa4c37fd815e3d66e457f",
+              "size": 224614
+            },
+            {
+              "role": "authority",
+              "path": "registry/authority.json",
+              "origin": "package",
+              "required": true,
+              "sha256": "13158c16c9b633d143da1dbcd091b9a3c8160d369836f63b71ed0611fa6e9689",
+              "size": 1341
+            },
+            {
+              "role": "repository-pins",
+              "path": "registry/repositories.json",
+              "origin": "package",
+              "required": false,
+              "sha256": "1a211944f676383c51445303286b70c78407d205c9c6c4f928bc076d0bd6f8f1",
+              "size": 286442
+            },
+            {
+              "role": "inherited-obligations",
+              "path": "registry/inherited_obligations.json",
+              "origin": "package",
+              "required": false,
+              "sha256": "3809c52c0678a3e3a0ad3dcbd4c729beb9f49ae915a23f088a2f8196ddabc998",
+              "size": 328173
+            },
+            {
+              "role": "runtime-source",
+              "path": "polyia/__init__.py",
+              "origin": "package",
+              "required": true,
+              "sha256": "7eb3f316d7989fb09e03205362c5ca20e9a6c27ecd376c1f8d0d7e8b843a4689",
+              "size": 109
+            },
+            {
+              "role": "runtime-source",
+              "path": "polyia/store.py",
+              "origin": "package",
+              "required": true,
+              "sha256": "dc88ea766ab2afe4f5426c00e729d228b656f6856f387f838a18d75a5749509a",
+              "size": 74768
+            },
+            {
+              "role": "runtime-source",
+              "path": "polyia/experiments.py",
+              "origin": "package",
+              "required": true,
+              "sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+              "size": 18298
+            },
+            {
+              "role": "runtime-source",
+              "path": "polyia/cli.py",
+              "origin": "package",
+              "required": true,
+              "sha256": "fbc88b11a101f0b3678c7a19266df9a844688226b13feaf5145e3fe407c8adfe",
+              "size": 10506
+            },
+            {
+              "role": "runtime-source",
+              "path": "polyia/server.py",
+              "origin": "package",
+              "required": true,
+              "sha256": "77a77f5bf41772e7811126acbd5334c960cfd8bf395e22a9eb2af27ba13d5534",
+              "size": 22368
+            },
+            {
+              "role": "runtime-source",
+              "path": "polyia/__main__.py",
+              "origin": "package",
+              "required": true,
+              "sha256": "0952a82fc4e578988ba64e72bc45884a2a365b90130e04f681c68f8425e6b60f",
+              "size": 114
+            }
+          ],
+          "missing": [],
+          "definition_binding": {
+            "status": "MATCH",
+            "genesis_definitions_sha256": "068eaa5bb10e91f67d63f782dace183d8145bbf05677304e1f7cd4f0b1f0352f",
+            "captured_constitution_requirements_sha256": "068eaa5bb10e91f67d63f782dace183d8145bbf05677304e1f7cd4f0b1f0352f"
+          },
+          "external_sources": {
+            "source_manifest_sha256": "eae4899dea40d4ce816f0b6ee6db26df80a3ecafeadaa4c37fd815e3d66e457f",
+            "storage": "IMMUTABLE_PACKAGE_FILES",
+            "corpus_bytes_copied": 0,
+            "verification_scope": "Manifest bytes captured; corpus files remain external"
+          },
+          "execution_context": {
+            "runtime_version": "1.1.0",
+            "python_version": "3.13.17",
+            "sqlite_version": "3.53.1",
+            "scientific_kernel": {
+              "module": "polyia.experiments",
+              "sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+              "loaded_code_sha256": "b5c12e42c4cb101d20c0c10d3bf56415c334633ee4a54f441734353efaceea64",
+              "package_version": "1.1.0",
+              "python_version": "3.13.17",
+              "source_binding": "PINNED_SOURCE_MATCHES_LOADED_CODE"
+            }
+          },
+          "digest": "8f5abbd5428c8ffd1609da17747ebcb2eff5461ae5fb6188621beeda1e640c32"
+        }
+      }
+    }
+  ],
+  "integrity": {
+    "ok": true,
+    "schema_version": 2,
+    "checked": {
+      "events": 32,
+      "receipts": 32,
+      "blobs": 16,
+      "checkpoints": 3,
+      "source_contexts": 4
+    },
+    "diagnostics": [],
+    "evidence_class": "INTERNAL_REPLAY_AND_CAPTURED_BYTE_INTEGRITY",
+    "limitations": [
+      "Hash chains are not signatures or externally anchored proofs.",
+      "Replay consumes recorded experiment results; it does not re-run experiments or establish scientific truth."
+    ],
+    "workspace_drift": {
+      "evaluated": true,
+      "changed": 0,
+      "artifacts": [
+        {
+          "requirement_id": "BOOT-001",
+          "path": "initial-science-run.json",
+          "captured_sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490",
+          "status": "UNCHANGED",
+          "live_sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490"
+        },
+        {
+          "requirement_id": "BOOT-002",
+          "path": "initial-kernel.py",
+          "captured_sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+          "status": "UNCHANGED",
+          "live_sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809"
+        },
+        {
+          "requirement_id": "BOOT-002",
+          "path": "initial-science-run.json",
+          "captured_sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490",
+          "status": "UNCHANGED",
+          "live_sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490"
+        },
+        {
+          "requirement_id": "PIA-008",
+          "path": "initial-live-service.json",
+          "captured_sha256": "5077e7c86b14872f017c4d8087e7db1c18403292276afa942d47a29a8842e788",
+          "status": "UNCHANGED",
+          "live_sha256": "5077e7c86b14872f017c4d8087e7db1c18403292276afa942d47a29a8842e788"
+        },
+        {
+          "requirement_id": "PIA-015",
+          "path": "OWNER_CLARIFICATIONS_2026-10-24.md",
+          "captured_sha256": "f0948cc75c3c57ec0714fa8a039655bce1ec7cd3c9b6867deb49bd6fd0f7eef7",
+          "status": "UNCHANGED",
+          "live_sha256": "f0948cc75c3c57ec0714fa8a039655bce1ec7cd3c9b6867deb49bd6fd0f7eef7"
+        },
+        {
+          "requirement_id": "PIA-015",
+          "path": "AUTHORITY_RESOLUTIONS_2026-10-24.md",
+          "captured_sha256": "e9084a1517b3f45d0f3d2e94f9e20163daf01fd66fe121ae8a517bf7ef0ab148",
+          "status": "UNCHANGED",
+          "live_sha256": "e9084a1517b3f45d0f3d2e94f9e20163daf01fd66fe121ae8a517bf7ef0ab148"
+        },
+        {
+          "requirement_id": "PIA-015",
+          "path": "authority.json",
+          "captured_sha256": "fd26d35be39ad684d31ec4e77100d1ecc791cef936428c01a10d46134ffa829a",
+          "status": "UNCHANGED",
+          "live_sha256": "fd26d35be39ad684d31ec4e77100d1ecc791cef936428c01a10d46134ffa829a"
+        },
+        {
+          "requirement_id": "PIA-095",
+          "path": "OWNER_CLARIFICATIONS_2026-10-24.md",
+          "captured_sha256": "f0948cc75c3c57ec0714fa8a039655bce1ec7cd3c9b6867deb49bd6fd0f7eef7",
+          "status": "UNCHANGED",
+          "live_sha256": "f0948cc75c3c57ec0714fa8a039655bce1ec7cd3c9b6867deb49bd6fd0f7eef7"
+        },
+        {
+          "requirement_id": "PIA-095",
+          "path": "AUTHORITY_RESOLUTIONS_2026-10-24.md",
+          "captured_sha256": "e9084a1517b3f45d0f3d2e94f9e20163daf01fd66fe121ae8a517bf7ef0ab148",
+          "status": "UNCHANGED",
+          "live_sha256": "e9084a1517b3f45d0f3d2e94f9e20163daf01fd66fe121ae8a517bf7ef0ab148"
+        },
+        {
+          "requirement_id": "PIA-095",
+          "path": "authority.json",
+          "captured_sha256": "fd26d35be39ad684d31ec4e77100d1ecc791cef936428c01a10d46134ffa829a",
+          "status": "UNCHANGED",
+          "live_sha256": "fd26d35be39ad684d31ec4e77100d1ecc791cef936428c01a10d46134ffa829a"
+        },
+        {
+          "requirement_id": "PIA-181",
+          "path": "initial-live-service.json",
+          "captured_sha256": "5077e7c86b14872f017c4d8087e7db1c18403292276afa942d47a29a8842e788",
+          "status": "UNCHANGED",
+          "live_sha256": "5077e7c86b14872f017c4d8087e7db1c18403292276afa942d47a29a8842e788"
+        }
+      ],
+      "interpretation": "Live workspace drift does not alter acceptance of a captured historical snapshot"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+[Unit]
+Description=Poly IA commissioning state service
+After=network.target
+
+[Service]
+Type=simple
+User=polyia
+Group=polyia
+WorkingDirectory=/opt/polyia
+EnvironmentFile=/etc/polyia/runtime.env
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/usr/bin/python3 -m polyia serve --workspace /opt/polyia --state-dir /var/lib/polyia --host 127.0.0.1 --port 8765
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=20
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/polyia
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+
+[Install]
+WantedBy=multi-user.target

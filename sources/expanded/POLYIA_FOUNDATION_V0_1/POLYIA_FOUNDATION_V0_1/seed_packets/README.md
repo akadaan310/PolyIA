@@ -1,0 +1,1 @@
+User-provided/source-research archive copied byte-for-byte into this packet. No implied permission for mass data ingestion, code execution, or modifying Muse-owned sources. Each archive includes its own epistemic limits. All GitHub repos are referenced by path in `../docs/REPOSITORY_ATLAS.md` rather than copied.

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reconstructed PURL launch resource creation request",
+  "$comment": "Reconstructed from service/launch/resources.js at deployed API commit 367e8ed063065cb8bc9ebb8c9fc55235b4828723; not a service-published canonical schema. Byte and compilation constraints require additional validation.",
+  "type": "object",
+  "required": ["title", "source"],
+  "properties": {
+    "title": { "type": "string", "minLength": 1, "maxLength": 180 },
+    "kind": { "enum": ["mission", "program"], "default": "program" },
+    "language": { "const": "purl", "default": "purl" },
+    "visibility": { "enum": ["public", "private"], "default": "private" },
+    "source": { "type": ["string", "object"], "description": "Closed pure native PURL source; serialized JSON size at most 65536 bytes; compile must succeed without effects or required capabilities." },
+    "state": { "description": "Finite plain JSON, serialized size at most 65536 bytes; default {}." },
+    "input_schema": { "description": "Bounded product JSON Schema subset; default {}. Unsupported $ref and pattern are rejected." },
+    "output_schema": { "description": "Bounded product JSON Schema subset; default {}." },
+    "tests": {
+      "type": "array",
+      "maxItems": 20,
+      "items": { "type": "object", "required": ["input", "expected"], "properties": { "input": {}, "expected": {} } },
+      "description": "At most 65536 serialized bytes in total. Build compares actual and expected by content identity; runtime seed is 0."
+    }
+  }
+}

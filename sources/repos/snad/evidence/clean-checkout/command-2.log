@@ -1,0 +1,57 @@
+
+> snad-research@0.1.0 test
+> tsx --test tests/*.test.ts
+
+✔ person changes are separate from identity and unknown identities remain explicit (4.456004ms)
+✔ Quran adapter validates actual canonical ayah ranges and preserves source text and offsets (1.13027ms)
+✔ tokenization retains UTF-16 source spans including Arabic and supplementary codepoints (0.17998ms)
+✔ empty text and empty features are valid analyzed inputs (0.341583ms)
+✔ canonical analysis identity survives empty annotation arrays and empty lexical entries (0.580903ms)
+✔ explicit separately sourced morphology can drive grammatical detections (0.45221ms)
+✔ nested reported speech has explicit punctuation evidence without assigning speakers (1.121807ms)
+✔ timestamps and uncertainty survive adapters, analysis and portable serialization (1.776201ms)
+✔ provenance references existing nodes and derivations point to both source units (0.579221ms)
+✔ separately attributed feature sources stay reachable in the provenance graph (0.453371ms)
+✔ morphisms enforce matching endpoints and obey identity and associativity (0.699472ms)
+✔ structural equivalence ignores lexical replacement while retaining grammatical transition types (1.873777ms)
+✔ referent comparison safely distinguishes arbitrary Unicode identity sets (1.520747ms)
+✔ reference partitions ignore referent set order, repetition and identity renaming (2.950231ms)
+✔ caller frame declarations preserve unresolved provenance without inventing containment (0.692471ms)
+✔ publishable SDK includes the complete repository MIT notice (1.455769ms)
+✔ perturbations replay deterministically preserve original identity and isolate input mutation (1.401157ms)
+✔ streaming analyzes each input without shared mutable analysis state (1.474687ms)
+✔ motifs count repeated typed transition paths and topology includes isolated vertices (0.752321ms)
+✔ malformed features, duplicate ids, invalid spans and identity claims fail clearly (1.21008ms)
+✔ portable inputs reject hidden non-JSON source and annotation values clearly (0.768785ms)
+✔ arbitrary Unicode identifiers remain collision-free and transition identity ignores changed features (0.79814ms)
+✔ generated valid paths obey associativity and preserve all transition ids (14.509905ms)
+✔ finite observed-language grammar accepts training and rejects unseen transition sequences (3.216336ms)
+✔ generated short texts preserve identity, roundtrip, provenance and no grammar-to-speaker inference (329.61268ms)
+✔ all 6236 source ayahs are canonically addressable and roundtrip without orthographic changes (27.727268ms)
+✔ canonical locus validation rejects bounds, ambiguous encodings, and duplicate corpus identity (0.935457ms)
+✔ whole-corpus text-only pass includes short verses and reports independent denominators (1554.470934ms)
+✔ short and empty-feature verses remain valid without inferred attribution (15.033373ms)
+✔ independent passages use SHA256-ranked sampling and exclude prompted loci (48.913271ms)
+✔ authored gold cases expose complementary errors in person-only and speaker-only baselines (4.573737ms)
+✔ experiments preserve independently reconstructed results and real counterexamples (187.155356ms)
+✔ differential evidence compares pinned original fixtures and retains disagreements (358.819401ms)
+✔ seeded perturbation forge separates grammatical ablation from speaker masking and retains source input (163.746923ms)
+✔ ACSP export preserves scientific objects inside a real reference TOK proposal (2.480329ms)
+✔ offline validator rejects unsupported semantics, credentials and invalid source references (0.896758ms)
+✔ builder enforces source attribution, finite JSON and service limits without silent truncation (1.377702ms)
+✔ prepared exports are deterministic snapshots and preserve explicit version guards (0.441284ms)
+✔ executable example writes only a prepared request to stdout (52.292511ms)
+✔ offline handoff verifies content and rejects changed source evidence (24.010429ms)
+✔ manifest integrity detects changed objectives and excludes traversal paths (4.428769ms)
+✔ content hash is independent of input file order and does not assert authenticity (8.264637ms)
+✔ package export refuses destination links without overwriting external files (1.694738ms)
+✔ package verifier rejects a linked files root and unlisted executable files (6.727595ms)
+✔ the packaged verifier runs with Node before dependency installation (91.378537ms)
+ℹ tests 45
+ℹ suites 0
+ℹ pass 45
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1890.02436

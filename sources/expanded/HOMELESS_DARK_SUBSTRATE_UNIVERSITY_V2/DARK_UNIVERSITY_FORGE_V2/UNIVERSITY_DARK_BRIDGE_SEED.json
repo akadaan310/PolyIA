@@ -1,0 +1,57 @@
+{
+  "schema": "dark-university-bridge/0.1",
+  "status": "proposal, not yet executed in DARK",
+  "university_repository": "https://github.com/akadaan310/abedkadaancom",
+  "university_branch_at_inspection": "claude/new-session-xd8auu",
+  "verify_actual_revision_before_execution": true,
+  "divisions": [
+    {
+      "id": "foundations",
+      "academic": "Foundations of Computation",
+      "source": "src/content/topics/foundations.ts",
+      "dark_module": "MotionAndEventGrammar",
+      "exhibit": "walk-admissibility-realizability",
+      "witness": "physical door/street/seat path with rejection reasons"
+    },
+    {
+      "id": "relational",
+      "academic": "Relational and Generative Mathematics",
+      "source": "src/content/topics/relational.ts",
+      "dark_module": "ScenePlicaRegistry",
+      "exhibit": "facade-fold-unfold",
+      "witness": "varied licensed storefronts and replayable composition"
+    },
+    {
+      "id": "languages",
+      "academic": "Programmable Computational Languages",
+      "source": "src/content/topics/languages.ts",
+      "dark_module": "WorldProgramCompiler",
+      "exhibit": "typed-sign-light-program",
+      "witness": "world-space sign changes after authorized program"
+    },
+    {
+      "id": "geometry",
+      "academic": "Geometry, Physics, and Representation",
+      "source": "src/content/topics/geometry.ts",
+      "dark_module": "ImageAndWorldGeometry",
+      "exhibit": "perceptual-lod-camera",
+      "witness": "correct ground, silhouettes, stable camera and streaming tiers"
+    },
+    {
+      "id": "acoustic",
+      "academic": "Acoustic and Generative Sciences",
+      "source": "src/content/topics/acoustic.ts",
+      "dark_module": "AcousticEventGrammar",
+      "exhibit": "rain-footstep-vehicle-audio",
+      "witness": "time-aligned spatial world sounds"
+    },
+    {
+      "id": "worlds",
+      "academic": "Computational Worlds and Emergence",
+      "source": "src/content/topics/worlds.ts",
+      "dark_module": "WorldLoomScheduler",
+      "exhibit": "causal-npc-weather-topology",
+      "witness": "reactive NPCs, cross-world mapping and witnessed transform"
+    }
+  ]
+}

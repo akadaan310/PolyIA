@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "title": "Poly IA bootstrap HTTP and interface development evidence",
+  "full_mission_status": "NOT_COMMISSIONED",
+  "evidence_class": "LOCAL_HTTP_AND_CLIENT_INTEGRATION",
+  "started_at": "2026-10-24 04:56:40 UTC",
+  "checks": [
+    {
+      "name": "python-suite",
+      "command": "python -m unittest discover -s tests -v",
+      "scope": "Full Python runtime, CLI, scientific and HTTP integration suite",
+      "chunk_id": "70ba48",
+      "wall_time_seconds": 2.194930713,
+      "exit_code": 0,
+      "original_token_count": 3245,
+      "output": "test_command_file_retry_reuses_durable_receipt_in_new_process (test_cli.CLITests.test_command_file_retry_reuses_durable_receipt_in_new_process) ... ok\ntest_commit_survives_process_exit_before_receipt_delivery (test_cli.CLITests.test_commit_survives_process_exit_before_receipt_delivery) ... ok\ntest_demo_executes_artifact_science_guidance_and_checkpoint_flow (test_cli.CLITests.test_demo_executes_artifact_science_guidance_and_checkpoint_flow) ... ok\ntest_init_status_verify_across_distinct_processes (test_cli.CLITests.test_init_status_verify_across_distinct_processes) ... ok\ntest_read_commands_do_not_silently_initialize_a_missing_ledger (test_cli.CLITests.test_read_commands_do_not_silently_initialize_a_missing_ledger) ... ok\ntest_serve_process_commits_authenticated_command_and_shuts_down_cleanly (test_cli.CLITests.test_serve_process_commits_authenticated_command_and_shuts_down_cleanly) ... ok\ntest_serve_requires_environment_operator_token (test_cli.CLITests.test_serve_requires_environment_operator_token) ... ok\ntest_stale_cli_command_is_explicit_error_and_leaves_revision (test_cli.CLITests.test_stale_cli_command_is_explicit_error_and_leaves_revision) ... ok\ntest_worker_records_the_requested_finite_number_of_real_runs (test_cli.CLITests.test_worker_records_the_requested_finite_number_of_real_runs) ... ok\ntest_worker_respects_applied_research_pause (test_cli.CLITests.test_worker_respects_applied_research_pause) ... ok\ntest_worker_zero_iterations_does_not_claim_unperformed_experiments (test_cli.CLITests.test_worker_zero_iterations_does_not_claim_unperformed_experiments) ... ok\ntest_acceptance_has_real_positive_and_negative_checks (test_experiments.ScientificContracts.test_acceptance_has_real_positive_and_negative_checks) ... ok\ntest_degree_budget (test_experiments.ScientificContracts.test_degree_budget) ... ok\ntest_divide_by_zero_refused (test_experiments.ScientificContracts.test_divide_by_zero_refused) ... ok\ntest_exact_division_fraction_coefficients (test_experiments.ScientificContracts.test_exact_division_fraction_coefficients) ... ok\ntest_exponent_denial_happens_before_fraction_construction (test_experiments.ScientificContracts.test_exponent_denial_happens_before_fraction_construction) ... ok\ntest_finite_grammar_promoted_and_expanded (test_experiments.ScientificContracts.test_finite_grammar_promoted_and_expanded) ... ok\ntest_grammar_bad_symbol_rejected (test_experiments.ScientificContracts.test_grammar_bad_symbol_rejected) ... ok\ntest_grammar_order_and_identity_do_not_depend_on_dict_order (test_experiments.ScientificContracts.test_grammar_order_and_identity_do_not_depend_on_dict_order) ... ok\ntest_input_coefficients_not_float_or_bool (test_experiments.ScientificContracts.test_input_coefficients_not_float_or_bool) ... ok\ntest_integer_budget_precedes_decimal_string_conversion (test_experiments.ScientificContracts.test_integer_budget_precedes_decimal_string_conversion) ... ok\ntest_qpath_context_mismatch_refused (test_experiments.ScientificContracts.test_qpath_context_mismatch_refused) ... ok\ntest_qpath_joint_inputs_and_exact_result (test_experiments.ScientificContracts.test_qpath_joint_inputs_and_exact_result) ... ok\ntest_qpath_missing_joint_premise_is_not_reachable (test_experiments.ScientificContracts.test_qpath_missing_joint_premise_is_not_reachable) ... ok\ntest_qpath_type_mismatch_refused (test_experiments.ScientificContracts.test_qpath_type_mismatch_refused) ... ok\ntest_qpath_zero_divisor_and_overwrite_refused (test_experiments.ScientificContracts.test_qpath_zero_divisor_and_overwrite_refused) ... ok\ntest_quotient_derivative_certificate (test_experiments.ScientificContracts.test_quotient_derivative_certificate) ... ok\ntest_short_dividend_and_constant_divisor (test_experiments.ScientificContracts.test_short_dividend_and_constant_divisor) ... ok\ntest_unknown_or_executable_parameters_refused (test_experiments.ScientificContracts.test_unknown_or_executable_parameters_refused) ... ok\ntest_zero_polynomial_no_vacuous_numerical_pass (test_experiments.ScientificContracts.test_zero_polynomial_no_vacuous_numerical_pass) ... ok\ntest_all_private_reads_require_bearer_authorization (test_server.HTTPTests.test_all_private_reads_require_bearer_authorization) ... ok\ntest_ambiguous_framing_headers_are_rejected_before_mutation (test_server.HTTPTests.test_ambiguous_framing_headers_are_rejected_before_mutation) ... ok\ntest_cross_origin_and_host_rebinding_are_refused (test_server.HTTPTests.test_cross_origin_and_host_rebinding_are_refused) ... ok\ntest_duplicate_authorization_host_and_origin_are_not_ambiguous (test_server.HTTPTests.test_duplicate_authorization_host_and_origin_are_not_ambiguous) ... ok\ntest_exact_top_level_schema_cannot_smuggle_status_or_boolean_revision (test_server.HTTPTests.test_exact_top_level_schema_cannot_smuggle_status_or_boolean_revision) ... ok\ntest_guidance_submit_acknowledge_apply_changes_real_state (test_server.HTTPTests.test_guidance_submit_acknowledge_apply_changes_real_state) ... ok\ntest_head_responses_have_no_body_and_private_head_still_requires_auth (test_server.HTTPTests.test_head_responses_have_no_body_and_private_head_still_requires_auth) ... ok\ntest_invalid_event_parameters_and_unknown_paths_are_safe (test_server.HTTPTests.test_invalid_event_parameters_and_unknown_paths_are_safe) ... ok\ntest_json_media_type_and_body_budget_are_enforced (test_server.HTTPTests.test_json_media_type_and_body_budget_are_enforced) ... ok\ntest_known_route_wrong_method_is_safe_and_has_no_cors_wildcard (test_server.HTTPTests.test_known_route_wrong_method_is_safe_and_has_no_cors_wildcard) ... ok\ntest_loopback_binding_and_separate_nonempty_tokens_are_required (test_server.HTTPTests.test_loopback_binding_and_separate_nonempty_tokens_are_required) ... ok\ntest_malformed_nonfinite_duplicate_and_deep_json_are_refused (test_server.HTTPTests.test_malformed_nonfinite_duplicate_and_deep_json_are_refused) ... ok\ntest_openapi_discovery_resolves_to_the_exact_command_contract (test_server.HTTPTests.test_openapi_discovery_resolves_to_the_exact_command_contract) ... ok\ntest_operator_and_read_token_can_read_but_read_token_cannot_mutate (test_server.HTTPTests.test_operator_and_read_token_can_read_but_read_token_cannot_mutate) ... ok\ntest_produce_verify_accept_checkpoint_and_integrity_are_real (test_server.HTTPTests.test_produce_verify_accept_checkpoint_and_integrity_are_real) ... ok\ntest_public_https_origin_is_explicit_and_matches_host (test_server.HTTPTests.test_public_https_origin_is_explicit_and_matches_host) ... ok\ntest_public_surface_is_live_but_contains_no_token_or_private_state (test_server.HTTPTests.test_public_surface_is_live_but_contains_no_token_or_private_state) ... ok\ntest_real_command_retry_conflict_receipt_and_resumable_events (test_server.HTTPTests.test_real_command_retry_conflict_receipt_and_resumable_events) ... ok\ntest_science_runs_record_actual_result_and_respect_guidance_pause (test_server.HTTPTests.test_science_runs_record_actual_result_and_respect_guidance_pause) ... ok\ntest_two_real_http_writers_cannot_apply_one_revision (test_server.HTTPTests.test_two_real_http_writers_cannot_apply_one_revision) ... ok\ntest_unavailable_command_and_missing_read_have_explicit_safe_errors (test_server.HTTPTests.test_unavailable_command_and_missing_read_have_explicit_safe_errors) ... ok\ntest_unexpected_runtime_exception_is_not_exposed_to_clients (test_server.HTTPTests.test_unexpected_runtime_exception_is_not_exposed_to_clients) ... ok\ntest_accept_requires_current_verification_and_reproduction_invalidates_it (test_store.StoreTests.test_accept_requires_current_verification_and_reproduction_invalidates_it) ... ok\ntest_blob_corruption_is_detected_before_acceptance_and_on_reopen (test_store.StoreTests.test_blob_corruption_is_detected_before_acceptance_and_on_reopen) ... ok\ntest_checkpoint_is_source_linked_and_tampering_is_detected (test_store.StoreTests.test_checkpoint_is_source_linked_and_tampering_is_detected) ... ok\ntest_command_ids_are_scoped_by_actor (test_store.StoreTests.test_command_ids_are_scoped_by_actor) ... ok\ntest_current_state_corruption_is_detected (test_store.StoreTests.test_current_state_corruption_is_detected) ... ok\ntest_empty_artifacts_and_empty_files_are_rejected (test_store.StoreTests.test_empty_artifacts_and_empty_files_are_rejected) ... ok\ntest_event_corruption_is_detected_without_repair (test_store.StoreTests.test_event_corruption_is_detected_without_repair) ... ok\ntest_event_pagination_and_refusal_receipts_are_distinct (test_store.StoreTests.test_event_pagination_and_refusal_receipts_are_distinct) ... ok\ntest_exact_retry_is_idempotent_but_changed_request_conflicts (test_store.StoreTests.test_exact_retry_is_idempotent_but_changed_request_conflicts) ... ok\ntest_experiment_replay_consumes_recorded_result_without_reexecution (test_store.StoreTests.test_experiment_replay_consumes_recorded_result_without_reexecution) ... ok\ntest_experiment_runtime_failure_is_retained_without_success_result (test_store.StoreTests.test_experiment_runtime_failure_is_retained_without_success_result) ... ok\ntest_free_text_guidance_cannot_be_marked_applied (test_store.StoreTests.test_free_text_guidance_cannot_be_marked_applied) ... ok\ntest_genesis_corruption_is_detected (test_store.StoreTests.test_genesis_corruption_is_detected) ... ok\ntest_genesis_has_no_blanket_commission_acceptance (test_store.StoreTests.test_genesis_has_no_blanket_commission_acceptance) ... ok\ntest_guidance_acknowledgment_then_apply_changes_actual_priority (test_store.StoreTests.test_guidance_acknowledgment_then_apply_changes_actual_priority) ... ok\ntest_historical_blobs_remain_checked_after_reproduction (test_store.StoreTests.test_historical_blobs_remain_checked_after_reproduction) ... ok\ntest_invalid_initial_requirements_leave_no_partial_ledger (test_store.StoreTests.test_invalid_initial_requirements_leave_no_partial_ledger) ... ok\ntest_invalid_revision_and_nonobject_payload_are_retained_as_refusals (test_store.StoreTests.test_invalid_revision_and_nonobject_payload_are_retained_as_refusals) ... ok\ntest_missing_command_scope_cannot_mutate (test_store.StoreTests.test_missing_command_scope_cannot_mutate) ... ok\ntest_missing_safe_open_primitive_refuses_capture (test_store.StoreTests.test_missing_safe_open_primitive_refuses_capture) ... ok\ntest_nonstring_action_kind_is_refused_and_audited (test_store.StoreTests.test_nonstring_action_kind_is_refused_and_audited) ... ok\ntest_nonstring_disposition_is_refused_and_audited (test_store.StoreTests.test_nonstring_disposition_is_refused_and_audited) ... ok\ntest_open_does_not_silently_recreate_a_deleted_table (test_store.StoreTests.test_open_does_not_silently_recreate_a_deleted_table) ... ok\ntest_open_reports_malformed_genesis_as_integrity_error (test_store.StoreTests.test_open_reports_malformed_genesis_as_integrity_error) ... ok\ntest_partial_capture_failure_rolls_back_blobs_and_state (test_store.StoreTests.test_partial_capture_failure_rolls_back_blobs_and_state) ... ok\ntest_produce_verify_accept_uses_immutable_captured_bytes (test_store.StoreTests.test_produce_verify_accept_uses_immutable_captured_bytes) ... ok\ntest_receipt_corruption_cannot_forge_an_idempotent_success (test_store.StoreTests.test_receipt_corruption_cannot_forge_an_idempotent_success) ... ok\ntest_refused_scientific_inputs_are_retained_with_no_pass_claim (test_store.StoreTests.test_refused_scientific_inputs_are_retained_with_no_pass_claim) ... ok\ntest_scientific_contracts_run_real_registered_acceptance (test_store.StoreTests.test_scientific_contracts_run_real_registered_acceptance) ... ok\ntest_strict_request_schema_refuses_forged_verifier_result (test_store.StoreTests.test_strict_request_schema_refuses_forged_verifier_result) ... ok\ntest_submitted_guidance_survives_new_instance_with_exact_receipt (test_store.StoreTests.test_submitted_guidance_survives_new_instance_with_exact_receipt) ... ok\ntest_token_named_artifact_is_rejected (test_store.StoreTests.test_token_named_artifact_is_rejected) ... ok\ntest_two_connections_cannot_apply_the_same_revision (test_store.StoreTests.test_two_connections_cannot_apply_the_same_revision) ... ok\ntest_unacknowledged_and_rejected_guidance_cannot_apply (test_store.StoreTests.test_unacknowledged_and_rejected_guidance_cannot_apply) ... ok\ntest_unsafe_secret_runtime_and_escaping_symlink_artifacts_are_rejected (test_store.StoreTests.test_unsafe_secret_runtime_and_escaping_symlink_artifacts_are_rejected) ... ok\ntest_unsupported_verifier_retains_failure_without_acceptance (test_store.StoreTests.test_unsupported_verifier_retains_failure_without_acceptance) ... ok\ntest_verifier_runtime_failure_is_retained_and_cannot_accept (test_store.StoreTests.test_verifier_runtime_failure_is_retained_and_cannot_accept) ... ok\ntest_workspace_drift_is_reported_without_rewriting_captured_history (test_store.StoreTests.test_workspace_drift_is_reported_without_rewriting_captured_history) ... ok\n\n----------------------------------------------------------------------\nRan 90 tests in 2.274s\n\nOK\n"
+    },
+    {
+      "name": "client-protocol",
+      "command": "node --test --test-isolation=none --test-reporter=spec web/client.test.mjs",
+      "scope": "Browser protocol client against real HTTP and SQLite",
+      "chunk_id": "19866e",
+      "wall_time_seconds": 0.090264261,
+      "exit_code": 0,
+      "original_token_count": 194,
+      "output": "✔ a connection reads real state and a read token cannot issue a command (93.952169ms)\n✔ lost command response keeps the exact command available for idempotent retry (19.860194ms)\n✔ a revision conflict is visible and does not silently replay with a new revision (12.45042ms)\n✔ guidance with malicious markup remains exact data throughout command lifecycle (16.117655ms)\n✔ artifact capture verification acceptance and checkpoint use registered operations (19.870991ms)\n✔ disconnect during a delayed response cannot restore an old session (5.715258ms)\n✔ an incomplete 200 receipt is not reported as command success and can be recovered (10.232271ms)\nℹ tests 7\nℹ suites 0\nℹ pass 7\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 201.033656\n"
+    },
+    {
+      "name": "ui-wiring",
+      "command": "node --test --test-isolation=none --test-reporter=spec web/ui.test.mjs",
+      "scope": "Actual UI handlers in test-only DOM against real HTTP",
+      "chunk_id": "b104e5",
+      "wall_time_seconds": 0.139253025,
+      "exit_code": 0,
+      "original_token_count": 195,
+      "output": "✔ actual UI connection shows state and enables only permitted controls (153.734362ms)\n✔ actual guidance form preserves markup as text and applies its explicit action (38.912996ms)\n✔ switching session during a pending response does not leave controls locked (36.128378ms)\n✔ pagehide clears the visible session before a page can return from history cache (7.42ms)\n✔ actual experiment form records science and polling reads external transitions (32.361536ms)\n✔ actual artifact controls produce verify accept and expose checkpoint integrity receipts (70.502202ms)\n✔ malformed scientific parameters show a visible refusal without a mutation (14.032486ms)\nℹ tests 7\nℹ suites 0\nℹ pass 7\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 371.449027\n"
+    }
+  ],
+  "red_green": [
+    {
+      "stage": "HTTP boundary",
+      "observed": "18 explicit test failures before polyia.server existed; then 17 pass and one expected missing-asset failure; all passed after UI assets."
+    },
+    {
+      "stage": "OpenAPI discovery",
+      "observed": "One 503-versus-200 failure before schema creation; route and contract pass after registry document was added."
+    },
+    {
+      "stage": "Browser protocol client",
+      "observed": "Six explicit tests failed before client module existed; passed after implementation."
+    },
+    {
+      "stage": "UI session switching",
+      "observed": "Actual UI handler test reproduced controls remaining disabled after reconnect during a delayed POST; reset of session command state fixed it."
+    },
+    {
+      "stage": "UI page history",
+      "observed": "Actual UI handler test reproduced Connected badge and old revision after pagehide; explicit clearing of session projection fixed it."
+    },
+    {
+      "stage": "Receipt validation",
+      "observed": "An incomplete HTTP 200 response was initially accepted; a regression test failed, then passed with strict receipt identity/revision/head validation and retained retry."
+    }
+  ],
+  "environment_notes": [
+    "Default sandbox denied socket creation (PermissionError) before HTTP assertions. Narrow local-only escalated test executions were approved and completed.",
+    "Node default test-process isolation obscured sandbox failure diagnostics; --test-isolation=none gives explicit output.",
+    "No package was installed. Runtime uses Python standard library and static JavaScript. Optional development checks use Node built-ins.",
+    "Playwright library existed, but its Chromium executable path did not exist; no browser binary was installed."
+  ],
+  "limitations": [
+    "No real-browser rendering, screenshot, screen-reader, or complete WCAG audit was performed. DOM wiring tests are explicitly a test-only DOM, not a browser.",
+    "No deployment, TLS termination, production load/rate-limiting test, SSE or WebSocket capability, or remote binding was performed or claimed.",
+    "Socket evidence uses IPv4 127.0.0.1. IPv6 implementation is not covered by this evidence.",
+    "HTTP failures rejected before Ledger.command return diagnostics but are not durably retained; separate runtime refusal journal is readable.",
+    "One operator bearer identity and optional reader bearer identity; no multi-user identity management or automatic token rotation.",
+    "All results are scoped bootstrap checks. Full mission remains NOT_COMMISSIONED."
+  ],
+  "report": "docs/INTERFACE_IMPLEMENTATION_REPORT.md",
+  "runtime_versions": {
+    "python": "3.12.14",
+    "node": "v24.19.0"
+  },
+  "files": [
+    {
+      "path": "polyia/server.py",
+      "bytes": 22368,
+      "sha256": "77a77f5bf41772e7811126acbd5334c960cfd8bf395e22a9eb2af27ba13d5534"
+    },
+    {
+      "path": "web/index.html",
+      "bytes": 18216,
+      "sha256": "ea2bcca31d3a925a815624feae90d0a23c54b62a59bfb5f6645099496a28c106"
+    },
+    {
+      "path": "web/styles.css",
+      "bytes": 18015,
+      "sha256": "80a8a4e13edcead33f93db1e576e0dc8359abe97b4adb65dbb503c26f5bfb075"
+    },
+    {
+      "path": "web/app.js",
+      "bytes": 23348,
+      "sha256": "f85d55b8369839ffd5c6e1ca4425225236fe5eab1ff211c355f3bc8a38aa308d"
+    },
+    {
+      "path": "web/client.mjs",
+      "bytes": 6552,
+      "sha256": "6f0f869051caaff7aaa8ed1ba6b5c873c27f6fe8dd7fe46ac5aba6b1733f20e4"
+    },
+    {
+      "path": "web/client.test.mjs",
+      "bytes": 8125,
+      "sha256": "22528d31f858dc89db99550c856f4141cf390de2e2032c4e4fe245628b06b70f"
+    },
+    {
+      "path": "web/ui.test.mjs",
+      "bytes": 13510,
+      "sha256": "c5756198f98eca612882c4b9d95fe93fbdee7de0cad407ffbed8515b374cdb92"
+    },
+    {
+      "path": "tests/test_server.py",
+      "bytes": 22471,
+      "sha256": "652fe0734e81ad00d4e542a50c1ef406e288edadc740f61649b976fdd10eae4f"
+    },
+    {
+      "path": "docs/HTTP_PROTOCOL.md",
+      "bytes": 13642,
+      "sha256": "e1ae9c7e8e34c44f1de6489b63535a5705ab6fdff0472ae81e4ce3654638aa71"
+    },
+    {
+      "path": "docs/INTERFACE_IMPLEMENTATION_REPORT.md",
+      "bytes": 13659,
+      "sha256": "dc20f43a4298985225add281d420ce0fca41d2659dc21cb3d9fe1b918ec1ca0b"
+    },
+    {
+      "path": "registry/openapi.json",
+      "bytes": 38211,
+      "sha256": "9d04b92727390999ba6910977b08dbee04fe273cbf161b4156f05358c9c3ab37"
+    }
+  ],
+  "counts": {
+    "full_python_suite": 90,
+    "http_tests": 22,
+    "client_protocol_tests": 7,
+    "ui_handler_tests": 7
+  },
+  "structural_checks": {
+    "unique_html_ids": 100,
+    "resolved_explicit_labels": 15,
+    "external_script_or_stylesheet_urls": 0,
+    "javascript_syntax": "PASS"
+  }
+}

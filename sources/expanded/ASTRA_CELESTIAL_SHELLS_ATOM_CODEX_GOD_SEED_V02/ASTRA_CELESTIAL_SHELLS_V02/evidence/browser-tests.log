@@ -1,0 +1,27 @@
+desktop DIAG {'sky': {'level': 0, 'neighborhood': 'INNER OBSERVATORY', 'distanceMode': 'MODELED RADII', 'starCount': 20, 'rendering': 'CPU spherical geometry + optional WebGL2 stellar points', 'catalog': 'Hipparcos ICRS directions, bright sample', 'ephemerides': 'NOT_CONNECTED', 'selected': 'Earth', 'grid': True, 'yaw': 0.18568101009878443, 'pitch': 0.010779757150216512, 'auto': True}, 'renderer': {'enabled': False, 'error': 'WebGL2 unavailable', 'points': 0, 'backend': 'CPU fallback'}, 'audio': {'enabled': False}, 'atomPhase': 'OBSERVE'}
+desktop AUDIO {'enabled': True, 'muted': False, 'voices': 7, 'volume': 0.34, 'limiter': True, 'source': 'generated oscillator pads / deterministic filtered noise', 'policy': 'user-activated; reduced starting level'}
+mobile DIAG {'sky': {'level': 0, 'neighborhood': 'INNER OBSERVATORY', 'distanceMode': 'MODELED RADII', 'starCount': 20, 'rendering': 'CPU spherical geometry + optional WebGL2 stellar points', 'catalog': 'Hipparcos ICRS directions, bright sample', 'ephemerides': 'NOT_CONNECTED', 'selected': 'Earth', 'grid': True, 'yaw': 0.23999474454838043, 'pitch': 0.01102238961155243, 'auto': True}, 'renderer': {'enabled': False, 'error': 'WebGL2 unavailable', 'points': 0, 'backend': 'CPU fallback'}, 'audio': {'enabled': False}, 'atomPhase': 'OBSERVE'}
+mobile AUDIO {'enabled': True, 'muted': False, 'voices': 7, 'volume': 0.34, 'limiter': True, 'source': 'generated oscillator pads / deterministic filtered noise', 'policy': 'user-activated; reduced starting level'}
+{
+  "mode": "set_content with exact JS/CSS and bridged real HTTP backend; normal localhost navigation blocked",
+  "checks": {
+    "desktop_sky": true,
+    "desktop_gpu_or_fallback": true,
+    "desktop_expand": true,
+    "desktop_journey": true,
+    "desktop_card": true,
+    "desktop_audio": true,
+    "desktop_mute": true,
+    "desktop_canvas": true,
+    "mobile_sky": true,
+    "mobile_gpu_or_fallback": true,
+    "mobile_expand": true,
+    "mobile_journey": true,
+    "mobile_card": true,
+    "mobile_audio": true,
+    "mobile_mute": true,
+    "mobile_canvas": true
+  },
+  "pageErrors": [],
+  "ok": true
+}

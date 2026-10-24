@@ -1,0 +1,17 @@
+{
+  "identity": {
+    "id": "guest_itzXkKsyrsCLPcSb8spT32qilwr9C9YWFWO07uN1wuc",
+    "kind": "guest",
+    "verified": false,
+    "product": "cgit",
+    "products": [
+      "cgit"
+    ],
+    "scopes": [
+      "cgit:read",
+      "cgit:write"
+    ],
+    "handle": null,
+    "expiresAt": "2026-10-18T20:33:06.441Z"
+  }
+}

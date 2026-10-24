@@ -1,0 +1,13 @@
+
+> snad-research@0.1.0 cgit:verify
+> node scripts/integrations/verify-cgit-export.mjs evidence/purl-live/cgit-export.json
+
+{
+  "valid": true,
+  "format": "cgit-export/1",
+  "repositoryId": "bc38de95-d5d6-4e40-a56f-ac60a292e989",
+  "commits": 1,
+  "blobs": 4,
+  "contentHash": "339f1517000dc996db51c9c3fc2178f629e6077a06609b58161b7555ac63b426",
+  "assurance": "Internal content integrity only; no external authenticity, scientific validity or ownership transfer."
+}

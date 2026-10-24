@@ -1,0 +1,80 @@
+{
+  "artifact": "Division Infinity CEF research construction 0.1",
+  "created": "2026-10-21",
+  "reusable_original_packet": "legacy/fnms_experiment_001/",
+  "tests_new": 23,
+  "tests_original": 19,
+  "changes_to_university_repository": false,
+  "files": [
+    {
+      "path": "INTEGRATION_MAP.md",
+      "bytes": 2735,
+      "sha256": "dd623e1a945801857b0711c8f935756ff7af4eec4f470cd0973159c495b8a2f5"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2103,
+      "sha256": "a8f33b4b1f5a392b690b09cdb2dd4e8048b5138feb64c286f0f84540f77cd975"
+    },
+    {
+      "path": "RESEARCH_MANIFESTO.md",
+      "bytes": 25357,
+      "sha256": "58d4fa9896f3dbd5b446dbce96517a31604776bddb3d9eae8c35be44a32e7cef"
+    },
+    {
+      "path": "SCHEMA_EXCERPT.json",
+      "bytes": 1560,
+      "sha256": "d4013ae6cf45e2a9c30c3f11794c4dc87399e33d852038ac379e0c590f824ddd"
+    },
+    {
+      "path": "examples/abstract_result.json",
+      "bytes": 7192,
+      "sha256": "fecf5283b3b5509b8dc58f8da682fa9ee6b5baf7b9cc09d410bd84ed8c1e85a2"
+    },
+    {
+      "path": "legacy/fnms_experiment_001/RESEARCH_NOTE.md",
+      "bytes": 12536,
+      "sha256": "f904418316fb94ff06806b2ef165dccc9aea1a6ff98e86efada70fb38d416a59"
+    },
+    {
+      "path": "legacy/fnms_experiment_001/fnms.py",
+      "bytes": 9801,
+      "sha256": "77e6b61899e53db3cb0d97da0444bc31c167d6cf032dbceccaa78beee040b7f8"
+    },
+    {
+      "path": "legacy/fnms_experiment_001/results.json",
+      "bytes": 2279,
+      "sha256": "399c5ebe82dfa9d8bef178405aac027bbc464c520fe11faaa5338b9f8ee3e4d4"
+    },
+    {
+      "path": "legacy/fnms_experiment_001/test-results.txt",
+      "bytes": 1820,
+      "sha256": "03ebdda58a3d79f27fe3696b123a3ae887142428c68d04efd31932a90bd363d3"
+    },
+    {
+      "path": "legacy/fnms_experiment_001/test_fnms.py",
+      "bytes": 3828,
+      "sha256": "b78fd03f71e1f46970603280cf5f3a47d3a8ba31625c24570e9d2e7d1d497fec"
+    },
+    {
+      "path": "legacy_test_results.txt",
+      "bytes": 1820,
+      "sha256": "03ebdda58a3d79f27fe3696b123a3ae887142428c68d04efd31932a90bd363d3"
+    },
+    {
+      "path": "src/infinity.py",
+      "bytes": 11022,
+      "sha256": "b2ae3c4017fb7451204834615588bd2ca85a5fb25da20c095fe144d206e841e7"
+    },
+    {
+      "path": "test_results.txt",
+      "bytes": 2405,
+      "sha256": "5d09217f4627c884677aabd845bf42b8dc4e026f87e9b2c39a09ebdb8f812963"
+    },
+    {
+      "path": "tests/test_infinity.py",
+      "bytes": 4592,
+      "sha256": "bcca49a8b308ad73148f6fd1121d5edd9a0a556d620f15f9afdefd416fd7f7f5"
+    }
+  ]
+}

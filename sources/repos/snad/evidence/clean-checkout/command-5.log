@@ -1,0 +1,61 @@
+
+> snad-research@0.1.0 example
+> tsx scripts/example.ts
+
+{
+  "locus": "authored-dialogue-example-v1",
+  "transitions": [
+    {
+      "kinds": [
+        "person",
+        "speaker"
+      ],
+      "lexicalContinuity": 0.6,
+      "attributionChange": true
+    }
+  ],
+  "grammarAcceptsTraining": true,
+  "serializedBytes": 10647,
+  "uncertainty": [
+    {
+      "unitId": "arrival",
+      "field": "addressee",
+      "reason": "No explicit resolved identity declaration; grammatical person cannot establish identity."
+    },
+    {
+      "unitId": "arrival",
+      "field": "narrator",
+      "reason": "No explicit resolved identity declaration; grammatical person cannot establish identity."
+    },
+    {
+      "unitId": "arrival",
+      "field": "referents",
+      "reason": "Referent identity unresolved."
+    },
+    {
+      "unitId": "arrival",
+      "field": "timestamp",
+      "reason": "Supplied temporal uncertainty: 50 ms."
+    },
+    {
+      "unitId": "reply",
+      "field": "addressee",
+      "reason": "No explicit resolved identity declaration; grammatical person cannot establish identity."
+    },
+    {
+      "unitId": "reply",
+      "field": "narrator",
+      "reason": "No explicit resolved identity declaration; grammatical person cannot establish identity."
+    },
+    {
+      "unitId": "reply",
+      "field": "referents",
+      "reason": "Referent identity unresolved."
+    },
+    {
+      "unitId": "reply",
+      "field": "timestamp",
+      "reason": "Supplied temporal uncertainty: 80 ms."
+    }
+  ]
+}

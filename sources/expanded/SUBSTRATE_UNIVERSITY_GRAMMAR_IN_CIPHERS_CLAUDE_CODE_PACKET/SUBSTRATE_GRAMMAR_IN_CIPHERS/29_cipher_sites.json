@@ -1,0 +1,674 @@
+{
+  "source_repo": "https://github.com/akadaan310/assufrciphertheory",
+  "units_contract": "42:1 and 42:2 remain separate; do not merge into one ayah",
+  "sites": [
+    {
+      "id": "STAR-01",
+      "sura": 2,
+      "sura_name_en": "Al-Baqarah",
+      "site_order": 1,
+      "opening": "الم",
+      "units": [
+        {
+          "unit_id": "STAR-01-U1",
+          "verse_ref": "2:1",
+          "verse": 1,
+          "graphemes": [
+            "ا",
+            "ل",
+            "م"
+          ],
+          "sequence": "الم",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-02",
+      "sura": 3,
+      "sura_name_en": "Ali Imran",
+      "site_order": 2,
+      "opening": "الم",
+      "units": [
+        {
+          "unit_id": "STAR-02-U1",
+          "verse_ref": "3:1",
+          "verse": 1,
+          "graphemes": [
+            "ا",
+            "ل",
+            "م"
+          ],
+          "sequence": "الم",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-03",
+      "sura": 7,
+      "sura_name_en": "Al-Araf",
+      "site_order": 3,
+      "opening": "المص",
+      "units": [
+        {
+          "unit_id": "STAR-03-U1",
+          "verse_ref": "7:1",
+          "verse": 1,
+          "graphemes": [
+            "ا",
+            "ل",
+            "م",
+            "ص"
+          ],
+          "sequence": "المص",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-04",
+      "sura": 10,
+      "sura_name_en": "Yunus",
+      "site_order": 4,
+      "opening": "الر",
+      "units": [
+        {
+          "unit_id": "STAR-04-U1",
+          "verse_ref": "10:1",
+          "verse": 1,
+          "graphemes": [
+            "ا",
+            "ل",
+            "ر"
+          ],
+          "sequence": "الر",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-05",
+      "sura": 11,
+      "sura_name_en": "Hud",
+      "site_order": 5,
+      "opening": "الر",
+      "units": [
+        {
+          "unit_id": "STAR-05-U1",
+          "verse_ref": "11:1",
+          "verse": 1,
+          "graphemes": [
+            "ا",
+            "ل",
+            "ر"
+          ],
+          "sequence": "الر",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-06",
+      "sura": 12,
+      "sura_name_en": "Yusuf",
+      "site_order": 6,
+      "opening": "الر",
+      "units": [
+        {
+          "unit_id": "STAR-06-U1",
+          "verse_ref": "12:1",
+          "verse": 1,
+          "graphemes": [
+            "ا",
+            "ل",
+            "ر"
+          ],
+          "sequence": "الر",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-07",
+      "sura": 13,
+      "sura_name_en": "Ar-Rad",
+      "site_order": 7,
+      "opening": "المر",
+      "units": [
+        {
+          "unit_id": "STAR-07-U1",
+          "verse_ref": "13:1",
+          "verse": 1,
+          "graphemes": [
+            "ا",
+            "ل",
+            "م",
+            "ر"
+          ],
+          "sequence": "المر",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-08",
+      "sura": 14,
+      "sura_name_en": "Ibrahim",
+      "site_order": 8,
+      "opening": "الر",
+      "units": [
+        {
+          "unit_id": "STAR-08-U1",
+          "verse_ref": "14:1",
+          "verse": 1,
+          "graphemes": [
+            "ا",
+            "ل",
+            "ر"
+          ],
+          "sequence": "الر",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-09",
+      "sura": 15,
+      "sura_name_en": "Al-Hijr",
+      "site_order": 9,
+      "opening": "الر",
+      "units": [
+        {
+          "unit_id": "STAR-09-U1",
+          "verse_ref": "15:1",
+          "verse": 1,
+          "graphemes": [
+            "ا",
+            "ل",
+            "ر"
+          ],
+          "sequence": "الر",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-10",
+      "sura": 19,
+      "sura_name_en": "Maryam",
+      "site_order": 10,
+      "opening": "كهيعص",
+      "units": [
+        {
+          "unit_id": "STAR-10-U1",
+          "verse_ref": "19:1",
+          "verse": 1,
+          "graphemes": [
+            "ك",
+            "ه",
+            "ي",
+            "ع",
+            "ص"
+          ],
+          "sequence": "كهيعص",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-11",
+      "sura": 20,
+      "sura_name_en": "Ta-Ha",
+      "site_order": 11,
+      "opening": "طه",
+      "units": [
+        {
+          "unit_id": "STAR-11-U1",
+          "verse_ref": "20:1",
+          "verse": 1,
+          "graphemes": [
+            "ط",
+            "ه"
+          ],
+          "sequence": "طه",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-12",
+      "sura": 26,
+      "sura_name_en": "Ash-Shuara",
+      "site_order": 12,
+      "opening": "طسم",
+      "units": [
+        {
+          "unit_id": "STAR-12-U1",
+          "verse_ref": "26:1",
+          "verse": 1,
+          "graphemes": [
+            "ط",
+            "س",
+            "م"
+          ],
+          "sequence": "طسم",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-13",
+      "sura": 27,
+      "sura_name_en": "An-Naml",
+      "site_order": 13,
+      "opening": "طس",
+      "units": [
+        {
+          "unit_id": "STAR-13-U1",
+          "verse_ref": "27:1",
+          "verse": 1,
+          "graphemes": [
+            "ط",
+            "س"
+          ],
+          "sequence": "طس",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-14",
+      "sura": 28,
+      "sura_name_en": "Al-Qasas",
+      "site_order": 14,
+      "opening": "طسم",
+      "units": [
+        {
+          "unit_id": "STAR-14-U1",
+          "verse_ref": "28:1",
+          "verse": 1,
+          "graphemes": [
+            "ط",
+            "س",
+            "م"
+          ],
+          "sequence": "طسم",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-15",
+      "sura": 29,
+      "sura_name_en": "Al-Ankabut",
+      "site_order": 15,
+      "opening": "الم",
+      "units": [
+        {
+          "unit_id": "STAR-15-U1",
+          "verse_ref": "29:1",
+          "verse": 1,
+          "graphemes": [
+            "ا",
+            "ل",
+            "م"
+          ],
+          "sequence": "الم",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-16",
+      "sura": 30,
+      "sura_name_en": "Ar-Rum",
+      "site_order": 16,
+      "opening": "الم",
+      "units": [
+        {
+          "unit_id": "STAR-16-U1",
+          "verse_ref": "30:1",
+          "verse": 1,
+          "graphemes": [
+            "ا",
+            "ل",
+            "م"
+          ],
+          "sequence": "الم",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-17",
+      "sura": 31,
+      "sura_name_en": "Luqman",
+      "site_order": 17,
+      "opening": "الم",
+      "units": [
+        {
+          "unit_id": "STAR-17-U1",
+          "verse_ref": "31:1",
+          "verse": 1,
+          "graphemes": [
+            "ا",
+            "ل",
+            "م"
+          ],
+          "sequence": "الم",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-18",
+      "sura": 32,
+      "sura_name_en": "As-Sajdah",
+      "site_order": 18,
+      "opening": "الم",
+      "units": [
+        {
+          "unit_id": "STAR-18-U1",
+          "verse_ref": "32:1",
+          "verse": 1,
+          "graphemes": [
+            "ا",
+            "ل",
+            "م"
+          ],
+          "sequence": "الم",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-19",
+      "sura": 36,
+      "sura_name_en": "Ya-Sin",
+      "site_order": 19,
+      "opening": "يس",
+      "units": [
+        {
+          "unit_id": "STAR-19-U1",
+          "verse_ref": "36:1",
+          "verse": 1,
+          "graphemes": [
+            "ي",
+            "س"
+          ],
+          "sequence": "يس",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-20",
+      "sura": 38,
+      "sura_name_en": "Sad",
+      "site_order": 20,
+      "opening": "ص",
+      "units": [
+        {
+          "unit_id": "STAR-20-U1",
+          "verse_ref": "38:1",
+          "verse": 1,
+          "graphemes": [
+            "ص"
+          ],
+          "sequence": "ص",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-21",
+      "sura": 40,
+      "sura_name_en": "Ghafir",
+      "site_order": 21,
+      "opening": "حم",
+      "units": [
+        {
+          "unit_id": "STAR-21-U1",
+          "verse_ref": "40:1",
+          "verse": 1,
+          "graphemes": [
+            "ح",
+            "م"
+          ],
+          "sequence": "حم",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-22",
+      "sura": 41,
+      "sura_name_en": "Fussilat",
+      "site_order": 22,
+      "opening": "حم",
+      "units": [
+        {
+          "unit_id": "STAR-22-U1",
+          "verse_ref": "41:1",
+          "verse": 1,
+          "graphemes": [
+            "ح",
+            "م"
+          ],
+          "sequence": "حم",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-23",
+      "sura": 42,
+      "sura_name_en": "Ash-Shura",
+      "site_order": 23,
+      "opening": "حم عسق",
+      "units": [
+        {
+          "unit_id": "STAR-23-U1",
+          "verse_ref": "42:1",
+          "verse": 1,
+          "graphemes": [
+            "ح",
+            "م"
+          ],
+          "sequence": "حم",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        },
+        {
+          "unit_id": "STAR-23-U2",
+          "verse_ref": "42:2",
+          "verse": 2,
+          "graphemes": [
+            "ع",
+            "س",
+            "ق"
+          ],
+          "sequence": "عسق",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-24",
+      "sura": 43,
+      "sura_name_en": "Az-Zukhruf",
+      "site_order": 24,
+      "opening": "حم",
+      "units": [
+        {
+          "unit_id": "STAR-24-U1",
+          "verse_ref": "43:1",
+          "verse": 1,
+          "graphemes": [
+            "ح",
+            "م"
+          ],
+          "sequence": "حم",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-25",
+      "sura": 44,
+      "sura_name_en": "Ad-Dukhan",
+      "site_order": 25,
+      "opening": "حم",
+      "units": [
+        {
+          "unit_id": "STAR-25-U1",
+          "verse_ref": "44:1",
+          "verse": 1,
+          "graphemes": [
+            "ح",
+            "م"
+          ],
+          "sequence": "حم",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-26",
+      "sura": 45,
+      "sura_name_en": "Al-Jathiyah",
+      "site_order": 26,
+      "opening": "حم",
+      "units": [
+        {
+          "unit_id": "STAR-26-U1",
+          "verse_ref": "45:1",
+          "verse": 1,
+          "graphemes": [
+            "ح",
+            "م"
+          ],
+          "sequence": "حم",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-27",
+      "sura": 46,
+      "sura_name_en": "Al-Ahqaf",
+      "site_order": 27,
+      "opening": "حم",
+      "units": [
+        {
+          "unit_id": "STAR-27-U1",
+          "verse_ref": "46:1",
+          "verse": 1,
+          "graphemes": [
+            "ح",
+            "م"
+          ],
+          "sequence": "حم",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-28",
+      "sura": 50,
+      "sura_name_en": "Qaf",
+      "site_order": 28,
+      "opening": "ق",
+      "units": [
+        {
+          "unit_id": "STAR-28-U1",
+          "verse_ref": "50:1",
+          "verse": 1,
+          "graphemes": [
+            "ق"
+          ],
+          "sequence": "ق",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    },
+    {
+      "id": "STAR-29",
+      "sura": 68,
+      "sura_name_en": "Al-Qalam",
+      "site_order": 29,
+      "opening": "ن",
+      "units": [
+        {
+          "unit_id": "STAR-29-U1",
+          "verse_ref": "68:1",
+          "verse": 1,
+          "graphemes": [
+            "ن"
+          ],
+          "sequence": "ن",
+          "verse_standalone": null,
+          "text_verification": "REQUIRES_CANONICAL_CORPUS_CHECK"
+        }
+      ],
+      "source": "https://github.com/akadaan310/assufrciphertheory/blob/ccr-6bf87543-8lv1az/data/sites_input.json"
+    }
+  ]
+}

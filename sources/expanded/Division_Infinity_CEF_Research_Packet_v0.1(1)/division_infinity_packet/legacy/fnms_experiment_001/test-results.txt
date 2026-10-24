@@ -1,0 +1,24 @@
+test_antonym_polarity_requires_same_dimension (__main__.FNMS.test_antonym_polarity_requires_same_dimension) ... ok
+test_asserted_identity_removed_by_ablation (__main__.FNMS.test_asserted_identity_removed_by_ablation) ... ok
+test_benzene_ring (__main__.FNMS.test_benzene_ring) ... ok
+test_formula (__main__.FNMS.test_formula) ... ok
+test_formula_collides_under_ring_position (__main__.FNMS.test_formula_collides_under_ring_position) ... ok
+test_functional_groups (__main__.FNMS.test_functional_groups) ... ok
+test_functional_groups_do_not_specify_regiochemistry (__main__.FNMS.test_functional_groups_do_not_specify_regiochemistry) ... ok
+test_group_decomposition (__main__.FNMS.test_group_decomposition) ... ok
+test_identity_assignment_carries_stipulation (__main__.FNMS.test_identity_assignment_carries_stipulation) ... ok
+test_illegal_type_bridge_refused (__main__.FNMS.test_illegal_type_bridge_refused) ... ok
+test_latin_phrase_expresses_intent (__main__.FNMS.test_latin_phrase_expresses_intent) ... ok
+test_latins_are_not_chemicals (__main__.FNMS.test_latins_are_not_chemicals) ... ok
+test_para (__main__.FNMS.test_para) ... ok
+test_phrase_has_morphological_components (__main__.FNMS.test_phrase_has_morphological_components) ... ok
+test_semantic_inverse_not_unique (__main__.FNMS.test_semantic_inverse_not_unique) ... ok
+test_semantic_path_requires_evidence (__main__.FNMS.test_semantic_path_requires_evidence) ... ok
+test_syntactic_brand_has_no_automatic_identity (__main__.FNMS.test_syntactic_brand_has_no_automatic_identity) ... ok
+test_typed_nodes (__main__.FNMS.test_typed_nodes) ... ok
+test_unsupported_path_removed_by_evidence_ablation (__main__.FNMS.test_unsupported_path_removed_by_evidence_ablation) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK

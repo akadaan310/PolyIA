@@ -1,0 +1,57 @@
+{
+  "result": "PASS",
+  "head": "14cec676766dd7bec9048b0958aea272020ab120920e827ea9c2e58ad0eda102",
+  "revision": 15,
+  "checkpoint": {
+    "id": "cp-00000015",
+    "note": "Actual Oracle service HTTPS commissioning checkpoint; source-linked bootstrap evidence only. GOD_SEED PIA-008/020/181.",
+    "previous_id": null,
+    "revision": 15
+  },
+  "verification": {
+    "ok": true,
+    "schema_version": 2,
+    "checked": {
+      "events": 15,
+      "receipts": 15,
+      "blobs": 12,
+      "checkpoints": 1,
+      "source_contexts": 2
+    },
+    "diagnostics": [],
+    "evidence_class": "INTERNAL_REPLAY_AND_CAPTURED_BYTE_INTEGRITY",
+    "limitations": [
+      "Hash chains are not signatures or externally anchored proofs.",
+      "Replay consumes recorded experiment results; it does not re-run experiments or establish scientific truth."
+    ],
+    "workspace_drift": {
+      "evaluated": true,
+      "changed": 0,
+      "artifacts": [
+        {
+          "requirement_id": "BOOT-001",
+          "path": "initial-science-run.json",
+          "captured_sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490",
+          "status": "UNCHANGED",
+          "live_sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490"
+        },
+        {
+          "requirement_id": "BOOT-002",
+          "path": "initial-kernel.py",
+          "captured_sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+          "status": "UNCHANGED",
+          "live_sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809"
+        },
+        {
+          "requirement_id": "BOOT-002",
+          "path": "initial-science-run.json",
+          "captured_sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490",
+          "status": "UNCHANGED",
+          "live_sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490"
+        }
+      ],
+      "interpretation": "Live workspace drift does not alter acceptance of a captured historical snapshot"
+    }
+  },
+  "scope": "Fresh restored copy on same host; off-host backup not performed"
+}

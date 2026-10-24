@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "keys": [
+    {
+      "id": "K-SRC",
+      "name": "Custody",
+      "invariant": "Original bytes, source lineage and citations remain resolvable."
+    },
+    {
+      "id": "K-AUTH",
+      "name": "Authority",
+      "invariant": "Effects follow actual standing grants and current owner decisions."
+    },
+    {
+      "id": "K-SEM",
+      "name": "Semantics",
+      "invariant": "Types, domains, interpretations and losses stay explicit."
+    },
+    {
+      "id": "K-STATE",
+      "name": "State",
+      "invariant": "Every admitted change has a typed guarded durable transition."
+    },
+    {
+      "id": "K-GUIDE",
+      "name": "Guidance",
+      "invariant": "Receipt, acknowledgement and actual application are distinct."
+    },
+    {
+      "id": "K-EVD",
+      "name": "Evidence",
+      "invariant": "Claims and completion bind actual evidence of the appropriate class."
+    },
+    {
+      "id": "K-REPLAY",
+      "name": "Continuity",
+      "invariant": "Historical state and captured bytes remain reconstructible."
+    },
+    {
+      "id": "K-GEN",
+      "name": "Construction",
+      "invariant": "Generated objects have declared rules, derivations and limits."
+    },
+    {
+      "id": "K-PATH",
+      "name": "Composition",
+      "invariant": "Typed joint premises and context survive every composed path."
+    },
+    {
+      "id": "K-COST",
+      "name": "Cost",
+      "invariant": "Budgets, complexity models and measured resource use are explicit."
+    },
+    {
+      "id": "K-EVOLVE",
+      "name": "Evolution",
+      "invariant": "New versions pass admission without erasing prior versions."
+    },
+    {
+      "id": "K-VIEW",
+      "name": "Projection",
+      "invariant": "Human and machine views reflect the same state; reads are pure."
+    },
+    {
+      "id": "K-COVER",
+      "name": "Coverage",
+      "invariant": "Preservation, cataloguing, formalization and verification are measured separately."
+    },
+    {
+      "id": "K-LANG",
+      "name": "Language",
+      "invariant": "Symbols, notation and linguistic relations retain their own domains."
+    },
+    {
+      "id": "K-SHIP",
+      "name": "Release",
+      "invariant": "Runnable production and real acceptance determine shipment."
+    },
+    {
+      "id": "K-FRONTIER",
+      "name": "University",
+      "invariant": "Finite commissioning supports continuing bounded scientific inquiry."
+    }
+  ]
+}

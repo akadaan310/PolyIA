@@ -1,0 +1,11 @@
+{"seq": 1, "ts": 1790543876.7957075, "kind": "boot", "from": "loom", "text": "loom live at seurl://luna/browser/loom/0 \u2014 this instance is named \u201cthe Quran\u201d", "id": "bd7f15e44e7f1e0f"}
+{"seq": 2, "ts": 1790543878.2558138, "kind": "unfurl", "from": "loom", "text": "7f3a stage 1 (atlas)", "id": "9c797cbb5857380c"}
+{"seq": 3, "ts": 1790543878.2899332, "kind": "opentab", "from": "loom", "text": "tab-032144aa \u2190 7f3a:7f3a:p04", "id": "a02dc108da5a27df"}
+{"seq": 4, "ts": 1790543878.3592577, "kind": "open", "from": "loom", "text": "page-1 \u2190 http://127.0.0.1:8471/ (1542 chars)", "id": "816421c846b42285"}
+{"seq": 5, "ts": 1790543878.373509, "kind": "string", "from": "loom", "text": "tab-032144aa ~ page-1 (ketchup-pyramids)", "id": "c2407547440f7445"}
+{"seq": 6, "ts": 1790543878.3811033, "kind": "run", "from": "loom", "text": "7f3a: echo unfurled-by-loom && date -u", "id": "83d3c5cbb72fcac0"}
+{"seq": 7, "ts": 1790543878.3876152, "kind": "ran", "from": "loom", "text": "7f3a \u2192 shell idstamp 276c9897d3ba499e", "id": "cce0e936af7f1950"}
+{"seq": 8, "ts": 1790543878.4302032, "kind": "unfurl", "from": "loom", "text": "loom stage 0 (fold)", "id": "42841f679f64a083"}
+{"seq": 1, "ts": 1790571890.9821982, "kind": "boot", "from": "loom", "text": "loom live at seurl://luna/browser/loom/0 \u2014 this instance is named \u201cthe Quran\u201d", "id": "3c0ae15890da16b3"}
+{"seq": 2, "ts": 1790571915.4596114, "kind": "run", "from": "loom", "text": "loom: echo loom-runs-itself", "id": "9d9ba83ca69cebc7"}
+{"seq": 3, "ts": 1790571915.462096, "kind": "ran", "from": "loom", "text": "loom \u2192 shell idstamp 5d80ede70a02f2d5", "id": "07f01593c52feedd"}

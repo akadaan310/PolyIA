@@ -1,0 +1,1601 @@
+{
+  "schema_version": 1,
+  "archives": [
+    {
+      "archive": "sources/originals/UCG_SEED_v0.1.zip",
+      "sha256": "352c8e22d7becd8940f4505fd5a6ef901de55e38b52cccad796f5de431ab1ff7",
+      "members": [
+        {
+          "member": "UCG_SEED_v0.1/README.md",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/README.md",
+          "bytes": 1175,
+          "sha256": "962b6de6e0b5c0ad831f74d06fcb739a34fddad1f83a841ddbceac3f2f31eb39"
+        },
+        {
+          "member": "UCG_SEED_v0.1/tests/test_ucg.py",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/tests/test_ucg.py",
+          "bytes": 5496,
+          "sha256": "f21bc4a00e1e5e09c5a86907432afa498fd41e49233e4fca7500134f0cf9789e"
+        },
+        {
+          "member": "UCG_SEED_v0.1/experiments/e01_alphabet.py",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/experiments/e01_alphabet.py",
+          "bytes": 2600,
+          "sha256": "c558f7d3a2e037ed2459b565714c450748864f06dfc4ca77fae11fe883f7fe67"
+        },
+        {
+          "member": "UCG_SEED_v0.1/experiments/e05_math.py",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/experiments/e05_math.py",
+          "bytes": 10951,
+          "sha256": "59461feff84c08922c7a18f158a7c5327a9c85847b34da18bc776f114fe576fa"
+        },
+        {
+          "member": "UCG_SEED_v0.1/experiments/e04_nomen.py",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/experiments/e04_nomen.py",
+          "bytes": 3962,
+          "sha256": "4d9cb0ecd1f226e3be32a1979caa5dd0f9d4e7666b4775c1d93bb937163755a6"
+        },
+        {
+          "member": "UCG_SEED_v0.1/experiments/e02_words.py",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/experiments/e02_words.py",
+          "bytes": 4231,
+          "sha256": "12e6f1f9c7b2c39ed340e6941dc4e1d2ad6f4ce51acdc638908d4bb25d6bf7bc"
+        },
+        {
+          "member": "UCG_SEED_v0.1/experiments/e03_forms.py",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/experiments/e03_forms.py",
+          "bytes": 3665,
+          "sha256": "6382b467c65bbacd38518bc6039695c7527e000d49e213d7ee39c9b12b88a54a"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/E03_huckel.sealed.json",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/E03_huckel.sealed.json",
+          "bytes": 151866,
+          "sha256": "b76663c4b2f3495bd10cd293d607bb11051b946f707c07c6dbae5394268ed5c5"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/e05.json",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/e05.json",
+          "bytes": 5462,
+          "sha256": "81e7e017137f4eb9c78e1f3eade8bcba40d090d6dbb2abd65c1db364e314ee0f"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/proleptic_ledger.jsonl",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/proleptic_ledger.jsonl",
+          "bytes": 21243,
+          "sha256": "ad6ca8364f72d9263848980144cc836183681360faea557161c24af55cabe870"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/e02_words.log",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/e02_words.log",
+          "bytes": 2309,
+          "sha256": "c74c6774bde2a6164a147d1f0ce855c5485f64f01767c6a4aa79a9a0d3363872"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/E05_diff.sealed.json",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/E05_diff.sealed.json",
+          "bytes": 36159,
+          "sha256": "4d01f10f212703fabd87b4723f3bac4a02f9994b708054c43fbedb76d3a3e361"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/E05_integration.sealed.json",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/E05_integration.sealed.json",
+          "bytes": 21581,
+          "sha256": "c5f8a0fc6abdfde7166e30d59dc150db870f7871016c0ddc10b45e8baddbe49b"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/e03_forms.log",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/e03_forms.log",
+          "bytes": 1498,
+          "sha256": "d9d998d1e3b7c1ef29dd0c10fd0c8916631611968dfe738d39f0dec4dd23a3ed"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/e01_alphabet.log",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/e01_alphabet.log",
+          "bytes": 386,
+          "sha256": "db83d17a01218bc31221833ed8c2054dbe9793da42b8522b7e8528e20dff2ba7"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/E05_orbits.sealed.json",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/E05_orbits.sealed.json",
+          "bytes": 1490,
+          "sha256": "c3dbbbedbbb50580c5da1473bb00a893f80b5929551ded06e903424acffda68b"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/e03.json",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/e03.json",
+          "bytes": 2172,
+          "sha256": "1d72bae3ce63da7a6ff814da4802bcb76bc0a4da07c993852a8cf0e172891599"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/E05_butcher.sealed.json",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/E05_butcher.sealed.json",
+          "bytes": 151,
+          "sha256": "409f73cb9ec5008d971d18eb5096d1fb1a87b0432006d33a98c0920ad34f4df9"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/E04_elements.sealed.json",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/E04_elements.sealed.json",
+          "bytes": 468,
+          "sha256": "ff3540ea6f67e2bcb556339a19ef05dfe8ec8e2b852d1ec8cc81e55cac8f7b83"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/E05_groups_G1.sealed.json",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/E05_groups_G1.sealed.json",
+          "bytes": 31,
+          "sha256": "754ac7d8e2ab0605aef477c8d78988633d2a6b94e89e0a3492a533d828ea4047"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/e05_math.log",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/e05_math.log",
+          "bytes": 3856,
+          "sha256": "a39a2ee7241f230aa5def754ecfdc1a57ffa3a7ab931bd0f67ca9d6e1e6df1d7"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/E01_alphabet.sealed.json",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/E01_alphabet.sealed.json",
+          "bytes": 19503,
+          "sha256": "bd5503e3676bf812c98eae9344571d4135888951d91b7d500ada87f9b10dfdb8"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/e01.json",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/e01.json",
+          "bytes": 3348,
+          "sha256": "d2d1e7666c714c4ae0c35795d8783c781dcc767125b4b49a39aec41d04eda4af"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/e02.json",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/e02.json",
+          "bytes": 2665,
+          "sha256": "a6e12ab4384f58d648f7c09cbc5615f657681586f4911e82631ddd3a7c77a225"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/E05_homology.sealed.json",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/E05_homology.sealed.json",
+          "bytes": 297,
+          "sha256": "0da8c1cef9b641f13675bf6cf8879fa2849f8619b66e2f4239287e41f734efd6"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/e04.json",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/e04.json",
+          "bytes": 1379,
+          "sha256": "99b9ffd1495afe2ca45bafdb93b6048a3a95808d0a0d25615705389c866ff9b0"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/E04_alkanes.sealed.json",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/E04_alkanes.sealed.json",
+          "bytes": 751,
+          "sha256": "ae3f0e693eccd51d054fc120757799da08c226bd02d98980c9153532a8cfa4ea"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/E03_trees.sealed.json",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/E03_trees.sealed.json",
+          "bytes": 32,
+          "sha256": "5d87f2ad50299125b020fd881d4cb57afdde9023728a26fa8148ed9ca5a2c5c8"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/E05_groups_G0.sealed.json",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/E05_groups_G0.sealed.json",
+          "bytes": 31,
+          "sha256": "d34e1b994c55c780c73dc9d0dee2a07919cb9d912a825112a1c382209987c1c7"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/E05_groups_G2.sealed.json",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/E05_groups_G2.sealed.json",
+          "bytes": 31,
+          "sha256": "9400ab4b1b2b1b92587d6ba9f8d5fc1952c650d7541f720ce2f4ac6ee1d18ce3"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/E02_words.sealed.json",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/E02_words.sealed.json",
+          "bytes": 6581,
+          "sha256": "46214f2cc665f78a8970e59f80f1790a3a112bbac57631c737188e674f50b7e5"
+        },
+        {
+          "member": "UCG_SEED_v0.1/results/e04_nomen.log",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/results/e04_nomen.log",
+          "bytes": 635,
+          "sha256": "2973f299fdc8ddd9bdc76efdb73f9da8dfbf6d0e135ec7a06f10a85266237b94"
+        },
+        {
+          "member": "UCG_SEED_v0.1/data/WITNESS_SOURCES.json",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/data/WITNESS_SOURCES.json",
+          "bytes": 621,
+          "sha256": "c83d45b85d61a8b5fd0b1de8a5dfdd9a83cc2fa558e8af2b63b59c765f17345c"
+        },
+        {
+          "member": "UCG_SEED_v0.1/data/qm9_le4_subset.json",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/data/qm9_le4_subset.json",
+          "bytes": 2661,
+          "sha256": "0dcf547d9da4edd06819fee7cdd143a3b828c922f02358226d8239eb7d32c659"
+        },
+        {
+          "member": "UCG_SEED_v0.1/data/periodic.json",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/data/periodic.json",
+          "bytes": 340342,
+          "sha256": "361bc5b62b646dd9c4ec870e9b5b81fc2f46ebb7d06eb4324c788db5ab768c97"
+        },
+        {
+          "member": "UCG_SEED_v0.1/ucg/nomen.py",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/ucg/nomen.py",
+          "bytes": 8105,
+          "sha256": "e2ef0834bfa7ff706faa34d9ad131be0e4df88f83fe2015014ecbd405682cda3"
+        },
+        {
+          "member": "UCG_SEED_v0.1/ucg/calc.py",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/ucg/calc.py",
+          "bytes": 9770,
+          "sha256": "7d72e5c9d07c49e1bbc8c5fd89ab006698bc22a04aa38233a1cf049524e08ce2"
+        },
+        {
+          "member": "UCG_SEED_v0.1/ucg/integrate.py",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/ucg/integrate.py",
+          "bytes": 11923,
+          "sha256": "52000cfa1759720610ed517fb47f7f1d27513433c8806479fb72edaeb5c26134"
+        },
+        {
+          "member": "UCG_SEED_v0.1/ucg/molgrammar.py",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/ucg/molgrammar.py",
+          "bytes": 3290,
+          "sha256": "886761127ccc8307399afd9009594908da5649293786660d336ce51fb9f35b1b"
+        },
+        {
+          "member": "UCG_SEED_v0.1/ucg/__init__.py",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/ucg/__init__.py",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "member": "UCG_SEED_v0.1/ucg/structures.py",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/ucg/structures.py",
+          "bytes": 13113,
+          "sha256": "780f0133b585c63461e77fdb32d5ed4d5b21163e60add13fe897952c7484e72a"
+        },
+        {
+          "member": "UCG_SEED_v0.1/ucg/elements.py",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/ucg/elements.py",
+          "bytes": 4362,
+          "sha256": "f4b369b3e666d01493f3058cd839229954fc069f694f76951e7ca0ecdfb57267"
+        },
+        {
+          "member": "UCG_SEED_v0.1/ucg/forms.py",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/ucg/forms.py",
+          "bytes": 6418,
+          "sha256": "93e1232c8d2bbc26844d32b837dc57fff387c5472488cb2b323feeda39ac8c8a"
+        },
+        {
+          "member": "UCG_SEED_v0.1/ucg/proleptic.py",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/ucg/proleptic.py",
+          "bytes": 3777,
+          "sha256": "761bb2373c95bbb2811c1c680b5ba30fce52965ac6f2628c0c1722f56005338b"
+        },
+        {
+          "member": "UCG_SEED_v0.1/docs/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/docs/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+          "bytes": 59854,
+          "sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e"
+        },
+        {
+          "member": "UCG_SEED_v0.1/docs/UCG_FOUNDATIONS.md",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/docs/UCG_FOUNDATIONS.md",
+          "bytes": 12193,
+          "sha256": "699d8e6bbb286b41512f746bd27fb353d506d7a7f7128e80dd41a27479043d1d"
+        },
+        {
+          "member": "UCG_SEED_v0.1/run_all.sh",
+          "path": "sources/expanded/UCG_SEED_v0.1/UCG_SEED_v0.1/run_all.sh",
+          "bytes": 375,
+          "sha256": "19e8d92bf81ca9a1b1b2e86774cfe44104705dadde15ff046d65cfe2ba1febfd"
+        }
+      ]
+    },
+    {
+      "archive": "sources/originals/Division_Infinity_CEF_Research_Packet_v0.1(1).zip",
+      "sha256": "1066db0107b64e1cbc45257ac58a471a1674826a8d9a72548192c3577a43f591",
+      "members": [
+        {
+          "member": "division_infinity_packet/legacy_test_results.txt",
+          "path": "sources/expanded/Division_Infinity_CEF_Research_Packet_v0.1(1)/division_infinity_packet/legacy_test_results.txt",
+          "bytes": 1820,
+          "sha256": "03ebdda58a3d79f27fe3696b123a3ae887142428c68d04efd31932a90bd363d3"
+        },
+        {
+          "member": "division_infinity_packet/INTEGRATION_MAP.md",
+          "path": "sources/expanded/Division_Infinity_CEF_Research_Packet_v0.1(1)/division_infinity_packet/INTEGRATION_MAP.md",
+          "bytes": 2735,
+          "sha256": "dd623e1a945801857b0711c8f935756ff7af4eec4f470cd0973159c495b8a2f5"
+        },
+        {
+          "member": "division_infinity_packet/test_results.txt",
+          "path": "sources/expanded/Division_Infinity_CEF_Research_Packet_v0.1(1)/division_infinity_packet/test_results.txt",
+          "bytes": 2405,
+          "sha256": "5d09217f4627c884677aabd845bf42b8dc4e026f87e9b2c39a09ebdb8f812963"
+        },
+        {
+          "member": "division_infinity_packet/SCHEMA_EXCERPT.json",
+          "path": "sources/expanded/Division_Infinity_CEF_Research_Packet_v0.1(1)/division_infinity_packet/SCHEMA_EXCERPT.json",
+          "bytes": 1560,
+          "sha256": "d4013ae6cf45e2a9c30c3f11794c4dc87399e33d852038ac379e0c590f824ddd"
+        },
+        {
+          "member": "division_infinity_packet/RESEARCH_MANIFESTO.md",
+          "path": "sources/expanded/Division_Infinity_CEF_Research_Packet_v0.1(1)/division_infinity_packet/RESEARCH_MANIFESTO.md",
+          "bytes": 25357,
+          "sha256": "58d4fa9896f3dbd5b446dbce96517a31604776bddb3d9eae8c35be44a32e7cef"
+        },
+        {
+          "member": "division_infinity_packet/README.md",
+          "path": "sources/expanded/Division_Infinity_CEF_Research_Packet_v0.1(1)/division_infinity_packet/README.md",
+          "bytes": 2103,
+          "sha256": "a8f33b4b1f5a392b690b09cdb2dd4e8048b5138feb64c286f0f84540f77cd975"
+        },
+        {
+          "member": "division_infinity_packet/ARTIFACT_MANIFEST.json",
+          "path": "sources/expanded/Division_Infinity_CEF_Research_Packet_v0.1(1)/division_infinity_packet/ARTIFACT_MANIFEST.json",
+          "bytes": 2524,
+          "sha256": "9527ba98b4bf89b0dd2c059b0d5b668eddc1b7d53070dadd6e7592ff4a3ef142"
+        },
+        {
+          "member": "division_infinity_packet/src/infinity.py",
+          "path": "sources/expanded/Division_Infinity_CEF_Research_Packet_v0.1(1)/division_infinity_packet/src/infinity.py",
+          "bytes": 11022,
+          "sha256": "b2ae3c4017fb7451204834615588bd2ca85a5fb25da20c095fe144d206e841e7"
+        },
+        {
+          "member": "division_infinity_packet/tests/test_infinity.py",
+          "path": "sources/expanded/Division_Infinity_CEF_Research_Packet_v0.1(1)/division_infinity_packet/tests/test_infinity.py",
+          "bytes": 4592,
+          "sha256": "bcca49a8b308ad73148f6fd1121d5edd9a0a556d620f15f9afdefd416fd7f7f5"
+        },
+        {
+          "member": "division_infinity_packet/examples/abstract_result.json",
+          "path": "sources/expanded/Division_Infinity_CEF_Research_Packet_v0.1(1)/division_infinity_packet/examples/abstract_result.json",
+          "bytes": 7192,
+          "sha256": "fecf5283b3b5509b8dc58f8da682fa9ee6b5baf7b9cc09d410bd84ed8c1e85a2"
+        },
+        {
+          "member": "division_infinity_packet/legacy/fnms_experiment_001/RESEARCH_NOTE.md",
+          "path": "sources/expanded/Division_Infinity_CEF_Research_Packet_v0.1(1)/division_infinity_packet/legacy/fnms_experiment_001/RESEARCH_NOTE.md",
+          "bytes": 12536,
+          "sha256": "f904418316fb94ff06806b2ef165dccc9aea1a6ff98e86efada70fb38d416a59"
+        },
+        {
+          "member": "division_infinity_packet/legacy/fnms_experiment_001/results.json",
+          "path": "sources/expanded/Division_Infinity_CEF_Research_Packet_v0.1(1)/division_infinity_packet/legacy/fnms_experiment_001/results.json",
+          "bytes": 2279,
+          "sha256": "399c5ebe82dfa9d8bef178405aac027bbc464c520fe11faaa5338b9f8ee3e4d4"
+        },
+        {
+          "member": "division_infinity_packet/legacy/fnms_experiment_001/test_fnms.py",
+          "path": "sources/expanded/Division_Infinity_CEF_Research_Packet_v0.1(1)/division_infinity_packet/legacy/fnms_experiment_001/test_fnms.py",
+          "bytes": 3828,
+          "sha256": "b78fd03f71e1f46970603280cf5f3a47d3a8ba31625c24570e9d2e7d1d497fec"
+        },
+        {
+          "member": "division_infinity_packet/legacy/fnms_experiment_001/fnms.py",
+          "path": "sources/expanded/Division_Infinity_CEF_Research_Packet_v0.1(1)/division_infinity_packet/legacy/fnms_experiment_001/fnms.py",
+          "bytes": 9801,
+          "sha256": "77e6b61899e53db3cb0d97da0444bc31c167d6cf032dbceccaa78beee040b7f8"
+        },
+        {
+          "member": "division_infinity_packet/legacy/fnms_experiment_001/test-results.txt",
+          "path": "sources/expanded/Division_Infinity_CEF_Research_Packet_v0.1(1)/division_infinity_packet/legacy/fnms_experiment_001/test-results.txt",
+          "bytes": 1820,
+          "sha256": "03ebdda58a3d79f27fe3696b123a3ae887142428c68d04efd31932a90bd363d3"
+        }
+      ]
+    },
+    {
+      "archive": "sources/originals/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01.zip",
+      "sha256": "a9bc6b79008832317928eb2e1c722082bb1964550a3d287269614c46c27fd085",
+      "members": [
+        {
+          "member": "TRE_TREE_FOUNDATIONS_V01/FILE_MANIFEST.json",
+          "path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/FILE_MANIFEST.json",
+          "bytes": 3117,
+          "sha256": "47bb358f6f81f69b45d2a1944eef094d06dd288a1274e678ab139d6484f8ce4b"
+        },
+        {
+          "member": "TRE_TREE_FOUNDATIONS_V01/README.md",
+          "path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/README.md",
+          "bytes": 3277,
+          "sha256": "f7254a58ca97597a9a3149d984387675d48eceed1dea652631ddaeb6d146b24a"
+        },
+        {
+          "member": "TRE_TREE_FOUNDATIONS_V01/docs/00_CONSTITUTION.md",
+          "path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/00_CONSTITUTION.md",
+          "bytes": 6103,
+          "sha256": "8d3a11c9a7d4b0b266dde3087a85c6643741a209096f71bba6d58edf0b36992d"
+        },
+        {
+          "member": "TRE_TREE_FOUNDATIONS_V01/docs/01_MACHINE_COMPILER.md",
+          "path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/01_MACHINE_COMPILER.md",
+          "bytes": 5329,
+          "sha256": "8955e70c7d48bb47588f863382df6c3a046a2301d4701ef84d4fe4bc29d5a14b"
+        },
+        {
+          "member": "TRE_TREE_FOUNDATIONS_V01/docs/02_RENDER_PHYSICS_SOURCES.md",
+          "path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/02_RENDER_PHYSICS_SOURCES.md",
+          "bytes": 6213,
+          "sha256": "ac4947594980246b4b03de1f16915bb9d7361f5c12059e6ed85abde77cf264cf"
+        },
+        {
+          "member": "TRE_TREE_FOUNDATIONS_V01/docs/03_BIOLOGICAL_EVOLUTION.md",
+          "path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/03_BIOLOGICAL_EVOLUTION.md",
+          "bytes": 4918,
+          "sha256": "ad1a1cae115d53046da7d1ad131602d5b8d3cefd6b1aae55d2ec5c7c6f18afbf"
+        },
+        {
+          "member": "TRE_TREE_FOUNDATIONS_V01/docs/04_CGIT_CORPORA_BRIDGES.md",
+          "path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/04_CGIT_CORPORA_BRIDGES.md",
+          "bytes": 4583,
+          "sha256": "f9c3bd3811937660fb6d63da72a5cc92e92a2038fa88638e261300058f3ae860"
+        },
+        {
+          "member": "TRE_TREE_FOUNDATIONS_V01/docs/05_EXECUTION_ORDER.md",
+          "path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/05_EXECUTION_ORDER.md",
+          "bytes": 3645,
+          "sha256": "bee90b3779ce4c04669633960e24acead9d33909881cd0702f3b88e7420207ab"
+        },
+        {
+          "member": "TRE_TREE_FOUNDATIONS_V01/docs/CLAUDE_CODE_MASTER_DIRECTIVE.md",
+          "path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/CLAUDE_CODE_MASTER_DIRECTIVE.md",
+          "bytes": 6415,
+          "sha256": "331d1c9486fbd57740f4bc81956f7fe257b274c316056914f04a4044b32e9cc5"
+        },
+        {
+          "member": "TRE_TREE_FOUNDATIONS_V01/docs/SOURCES.md",
+          "path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/SOURCES.md",
+          "bytes": 4589,
+          "sha256": "c3df0ad3cbf2c54d73588217f581a7c7482181413646a1f9a9c502b472010e08"
+        },
+        {
+          "member": "TRE_TREE_FOUNDATIONS_V01/examples/run.py",
+          "path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/examples/run.py",
+          "bytes": 351,
+          "sha256": "dedb974ef947ffdaca38ac230fc5890c7e7ea25fa6e6f4339afa017b241ccef9"
+        },
+        {
+          "member": "TRE_TREE_FOUNDATIONS_V01/results/TEST_REPORT.md",
+          "path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/results/TEST_REPORT.md",
+          "bytes": 1114,
+          "sha256": "20b563014354886f9be43f4326e10d15a04d6d7492150c36d253b3a7e134c262"
+        },
+        {
+          "member": "TRE_TREE_FOUNDATIONS_V01/results/tree_fixture.json",
+          "path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/results/tree_fixture.json",
+          "bytes": 5443,
+          "sha256": "15ef9e78134f1c4a54b2bfba15dc567a5528c2a53d6c8fa4acb6f77328f663c5"
+        },
+        {
+          "member": "TRE_TREE_FOUNDATIONS_V01/schemas/TRE_CORE.contract.schema.json",
+          "path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/schemas/TRE_CORE.contract.schema.json",
+          "bytes": 1506,
+          "sha256": "1d3d2fad4fca9d6424c3408874727f9804b04888f3e1c126ef51c47e6c480450"
+        },
+        {
+          "member": "TRE_TREE_FOUNDATIONS_V01/test/test_corpus_cgit.py",
+          "path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/test/test_corpus_cgit.py",
+          "bytes": 3065,
+          "sha256": "19525657bd62cdb30a3d7c556c42f459a7332817224d2888b017002b70abc79b"
+        },
+        {
+          "member": "TRE_TREE_FOUNDATIONS_V01/test/test_tree.py",
+          "path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/test/test_tree.py",
+          "bytes": 3842,
+          "sha256": "0229fb2756a8e42f125dc4c10b2fc7d9afc5abe93a99085ac76dfff0dff6a28f"
+        },
+        {
+          "member": "TRE_TREE_FOUNDATIONS_V01/tre/__init__.py",
+          "path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/tre/__init__.py",
+          "bytes": 104,
+          "sha256": "9d24eed15b4d088757274b100b6dbf27245b49847e4d29f66f7689c81a60c7e5"
+        },
+        {
+          "member": "TRE_TREE_FOUNDATIONS_V01/tre/cgit.py",
+          "path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/tre/cgit.py",
+          "bytes": 1615,
+          "sha256": "3719924a57e0f804226a4b2772ce3ab083d16a0694ae07f459883752cd5eb45f"
+        },
+        {
+          "member": "TRE_TREE_FOUNDATIONS_V01/tre/core.py",
+          "path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/tre/core.py",
+          "bytes": 9587,
+          "sha256": "86d882db00413733b7913e19719a5057fd0b801a12aab8ec3a7501d317ebfeff"
+        },
+        {
+          "member": "TRE_TREE_FOUNDATIONS_V01/tre/corpus.py",
+          "path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/tre/corpus.py",
+          "bytes": 3445,
+          "sha256": "2b1ead61b328619ce886d512eb44fc34b285a8f7134ce7a9d1b5147ee3b44cb7"
+        }
+      ]
+    },
+    {
+      "archive": "sources/originals/Timeless_WAZNOMIA_QIA_Handoff_v0.1 (1).zip",
+      "sha256": "d78020c3e0d04ca4e178ee6eda7a6a02b772a72090d5add4ab23ab2d7ac9a4f2",
+      "members": [
+        {
+          "member": "Timeless_WAZNOMIA_QIA_Handoff_v0.1/FOUNDATIONAL_STUDY.md",
+          "path": "sources/expanded/Timeless_WAZNOMIA_QIA_Handoff_v0.1 (1)/Timeless_WAZNOMIA_QIA_Handoff_v0.1/FOUNDATIONAL_STUDY.md",
+          "bytes": 25824,
+          "sha256": "1bcd88c5ecfe3c9bf549ff114896551cc1f7adb44a9a64c2b2bb23c9e45f2e6c"
+        },
+        {
+          "member": "Timeless_WAZNOMIA_QIA_Handoff_v0.1/MUSE_RELAY_COMMISSION.md",
+          "path": "sources/expanded/Timeless_WAZNOMIA_QIA_Handoff_v0.1 (1)/Timeless_WAZNOMIA_QIA_Handoff_v0.1/MUSE_RELAY_COMMISSION.md",
+          "bytes": 4468,
+          "sha256": "d8b2745814a96ce1e585eeb1d125b90c33b4274f74d0a90915d3f33424c0c5d2"
+        },
+        {
+          "member": "Timeless_WAZNOMIA_QIA_Handoff_v0.1/README.md",
+          "path": "sources/expanded/Timeless_WAZNOMIA_QIA_Handoff_v0.1 (1)/Timeless_WAZNOMIA_QIA_Handoff_v0.1/README.md",
+          "bytes": 1258,
+          "sha256": "1d6139be7f7a3275af8516f96e9841bf333911dde862fceac105bf7f132ab31b"
+        },
+        {
+          "member": "Timeless_WAZNOMIA_QIA_Handoff_v0.1/results/demo.json",
+          "path": "sources/expanded/Timeless_WAZNOMIA_QIA_Handoff_v0.1 (1)/Timeless_WAZNOMIA_QIA_Handoff_v0.1/results/demo.json",
+          "bytes": 2169,
+          "sha256": "2846991f7cd82bfd34b9e28d1a90bd59dd44656c450f09568f4c0d43cf361d9d"
+        },
+        {
+          "member": "Timeless_WAZNOMIA_QIA_Handoff_v0.1/results/run_output.txt",
+          "path": "sources/expanded/Timeless_WAZNOMIA_QIA_Handoff_v0.1 (1)/Timeless_WAZNOMIA_QIA_Handoff_v0.1/results/run_output.txt",
+          "bytes": 1097,
+          "sha256": "f35d6025eaba5e87234239d91b70e3e0de22d4e8e780cc8221233e6d63348a88"
+        },
+        {
+          "member": "Timeless_WAZNOMIA_QIA_Handoff_v0.1/results/test_output.txt",
+          "path": "sources/expanded/Timeless_WAZNOMIA_QIA_Handoff_v0.1 (1)/Timeless_WAZNOMIA_QIA_Handoff_v0.1/results/test_output.txt",
+          "bytes": 2587,
+          "sha256": "7bdc31dc0b905c8d2753c80ff5cad7b21e66026eb81a31aa65dd179ca1158653"
+        },
+        {
+          "member": "Timeless_WAZNOMIA_QIA_Handoff_v0.1/run_demo.py",
+          "path": "sources/expanded/Timeless_WAZNOMIA_QIA_Handoff_v0.1 (1)/Timeless_WAZNOMIA_QIA_Handoff_v0.1/run_demo.py",
+          "bytes": 1200,
+          "sha256": "2c8f47acb1d8e81c745b8218052d67889fd8706d75cfa07cb93361f6c7d48e98"
+        },
+        {
+          "member": "Timeless_WAZNOMIA_QIA_Handoff_v0.1/src/rasm_state.py",
+          "path": "sources/expanded/Timeless_WAZNOMIA_QIA_Handoff_v0.1 (1)/Timeless_WAZNOMIA_QIA_Handoff_v0.1/src/rasm_state.py",
+          "bytes": 6520,
+          "sha256": "8630918a3a9c33d3b7a0a899260ed274afd13cd4c2961de5e51547f382c66fbf"
+        },
+        {
+          "member": "Timeless_WAZNOMIA_QIA_Handoff_v0.1/tests/test_rasm_state.py",
+          "path": "sources/expanded/Timeless_WAZNOMIA_QIA_Handoff_v0.1 (1)/Timeless_WAZNOMIA_QIA_Handoff_v0.1/tests/test_rasm_state.py",
+          "bytes": 3279,
+          "sha256": "740436fab81989104878bb1b4cf42d831a0445c941d427680cafc289ed597e4a"
+        }
+      ]
+    },
+    {
+      "archive": "sources/recovered/POLYIA_FOUNDATION_V0_1.zip",
+      "sha256": "369d00354c4c62fb410e98df9761449315cab601d1282fa3f0c78eab0f37c24b",
+      "members": [
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/MANIFEST_SHA256.json",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/MANIFEST_SHA256.json",
+          "bytes": 6563,
+          "sha256": "8683dc3d81b8c12b3f1014cca497a07d82f05a666fb4e2077d49e4a3aa752cc6"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/README.md",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/README.md",
+          "bytes": 4197,
+          "sha256": "66704d12b6a9bafb1538cb0a2f101a45682138bb2b33b47959b70ebf0d45ab91"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/docs/ACCEPTANCE_AND_SECURITY.md",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/ACCEPTANCE_AND_SECURITY.md",
+          "bytes": 3229,
+          "sha256": "c0116b0731d0bdfc92e5ba2fd09c1feaa0ba852154af93c8310c657dd2a10306"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/docs/CODEX_CONSTITUTION.md",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/CODEX_CONSTITUTION.md",
+          "bytes": 18438,
+          "sha256": "cfe0b88f9c701e139372d783db1d9568da272f6433f9e513d6475fe7985a2630"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/docs/CONCIERGE_CONTRACT.md",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/CONCIERGE_CONTRACT.md",
+          "bytes": 4027,
+          "sha256": "0400c89054a4fa88cbb40f8312d38f9548f6373f666746874d7005e30b31692b"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/docs/PHONEX_SPECIALIST_ARCHITECTURE.md",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/PHONEX_SPECIALIST_ARCHITECTURE.md",
+          "bytes": 3736,
+          "sha256": "b53938efb641f0617fda6bf0d35b7db304c33a2e24599f74beeb67b60165b7d3"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/docs/QIA_62_CAPABILITY_ATLAS.md",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/QIA_62_CAPABILITY_ATLAS.md",
+          "bytes": 7240,
+          "sha256": "4a631466cc90833d0000e704395a11ff462a9fbc9d68721bee775f4176120f83"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/docs/REPOSITORY_ATLAS.md",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/REPOSITORY_ATLAS.md",
+          "bytes": 4911,
+          "sha256": "e4d0961b4a4371913b124dc18323843319ac43b6534c46018f90226fcd09767e"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/docs/STATE_MACHINE.md",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/STATE_MACHINE.md",
+          "bytes": 4921,
+          "sha256": "48c38a2a24128513fc45c091ba1c26c61feb4cd48a3062f876bb560c6d05fa5e"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+          "bytes": 9002,
+          "sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/examples/topology.poly",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/examples/topology.poly",
+          "bytes": 302,
+          "sha256": "f32b9053edbe6e4e66a3c7d80462a1aaa0cf2d7bf3e6b21132ec14148ed0e45d"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/examples/topology_compiled/automaton.dot",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/examples/topology_compiled/automaton.dot",
+          "bytes": 1168,
+          "sha256": "993c360b037f6e5d8fbccd9b790fb76e13dd4f06dbe892d3f636b0dc0739f039"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/examples/topology_compiled/automaton.html",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/examples/topology_compiled/automaton.html",
+          "bytes": 1141,
+          "sha256": "e9a831aea2b6e132436ef327384e7014350a1bb27d7c8214d3624ae5042cbf8a"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/examples/topology_compiled/automaton.json",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/examples/topology_compiled/automaton.json",
+          "bytes": 3509,
+          "sha256": "42cfebe7f4842df0d01e168cd178b26f1045f3e82e933bdde28fba8c70ef1cfc"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/examples/topology_compiled/plan.pir",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/examples/topology_compiled/plan.pir",
+          "bytes": 619,
+          "sha256": "1df4e98868e1ad85e4b6098b746ff6708edffaeb6d3f2fab3671db04cf502d69"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/polyia/__init__.py",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/polyia/__init__.py",
+          "bytes": 94,
+          "sha256": "d33b5052e2e6f6daff162330e56069a9abff3698beca0ea6336fb4c0fe24abc1"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/polyia/__main__.py",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/polyia/__main__.py",
+          "bytes": 1903,
+          "sha256": "3b5e493a774534b162c8ab6ef283f78a4387726d1c8f55370c695d6dfe88c363"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/polyia/automaton.py",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/polyia/automaton.py",
+          "bytes": 2247,
+          "sha256": "7d67c22763f7f0a6970df2ca070cf4d67d309de0893aae21de0010848b14c9bd"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/polyia/compiler.py",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/polyia/compiler.py",
+          "bytes": 2209,
+          "sha256": "d9bcb0801e765492234a3e069b460de087f887728c3bcb5274d22129236fed32"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/polyia/harness.py",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/polyia/harness.py",
+          "bytes": 2649,
+          "sha256": "13ee33c80d3a54eb6c3c168302172673f8654076d02d1f37bcce74fa14cb7376"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/polyia/lang.py",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/polyia/lang.py",
+          "bytes": 4284,
+          "sha256": "390fa41a79f5c60d7058d0af1a862aff7c4b3348cf8308b7bbfa5037628cb535"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/polyia/registry.py",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/polyia/registry.py",
+          "bytes": 1568,
+          "sha256": "155bdbdb80640b40aec2dc1a74c715fd3bab2b1231532cd580543ab257beae0f"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/pyproject.toml",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/pyproject.toml",
+          "bytes": 331,
+          "sha256": "0b59a83a291d5a862fe8ef6e920fc8ac99fcb632b95f4b2eb64e0e4aa654c5da"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/reports/LIMITATIONS.md",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/reports/LIMITATIONS.md",
+          "bytes": 2178,
+          "sha256": "015064feaa521f98bccce74d6db89d0cd8592cce62dfb90b84bdd43fc82adea1"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/reports/compile_output.txt",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/reports/compile_output.txt",
+          "bytes": 143,
+          "sha256": "0679397f35123e630a2319050d10aed33d5b9d71254477c2f78075e5f0701872"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/reports/test_results.txt",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/reports/test_results.txt",
+          "bytes": 1862,
+          "sha256": "a5fc25ef45c72b62786141f0f908c8b02a2a0160041061b045eb90839e6f49bf"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/schemas/POLYIA_PIR_EBNF.md",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/schemas/POLYIA_PIR_EBNF.md",
+          "bytes": 1132,
+          "sha256": "17bdae1335b945f2afe8086272fe3aa636b13bdc1c8fba944497463208ad66a9"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/schemas/Q_THEORIES_62.json",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/schemas/Q_THEORIES_62.json",
+          "bytes": 45545,
+          "sha256": "915698447a3d700dc62ddecb6aa589260aaa30bb2aef157987d18672fbcb94d3"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/schemas/polyia.wit",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/schemas/polyia.wit",
+          "bytes": 459,
+          "sha256": "7c3affede7d7596c5e390faee246720ab2ff44b50ac08005702a6eaf0d2efd34"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/seed_packets/CIA_BROWSER_CODEX_MASTER_132.md",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/seed_packets/CIA_BROWSER_CODEX_MASTER_132.md",
+          "bytes": 59029,
+          "sha256": "40f7a5c74de38c12daa5fd96843c1ae01f9289a5c1355ca7fb00538f75dc7edc"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/seed_packets/CLAUDE_CODE_MASTER_SEED.md",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/seed_packets/CLAUDE_CODE_MASTER_SEED.md",
+          "bytes": 7917,
+          "sha256": "52e58d51378023778dffc4f492050e919fc93f916164728fcd283b1bc376b82d"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/seed_packets/CONSTITUTION.md",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/seed_packets/CONSTITUTION.md",
+          "bytes": 5634,
+          "sha256": "1d9825bdd23f2986149f158f34fadcd5313205a29bbbc88fa03a4c2cc26fb89b"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/seed_packets/DIVISION_INFINITY.zip",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/seed_packets/DIVISION_INFINITY.zip",
+          "bytes": 37477,
+          "sha256": "1066db0107b64e1cbc45257ac58a471a1674826a8d9a72548192c3577a43f591"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/seed_packets/DIVISION_IX.md",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/seed_packets/DIVISION_IX.md",
+          "bytes": 15095,
+          "sha256": "a6151a0ff180633eb0f53af41ae1a8fb04587935354fcbf4d9ef0a1128068638"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/seed_packets/FNMS_001.zip",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/seed_packets/FNMS_001.zip",
+          "bytes": 13042,
+          "sha256": "88da8753a6533d61464ace57e4fc1f831710e809cec0b4b0f99a9291f3758d0d"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/seed_packets/LANGUAGE_AND_SPECIALISTS.md",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/seed_packets/LANGUAGE_AND_SPECIALISTS.md",
+          "bytes": 4933,
+          "sha256": "58a838af528e8d08171baa26d9890b263768c4e3e0b164e08fcf96397e299209"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/seed_packets/MUSE_CORPUS_DESIGN.md",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/seed_packets/MUSE_CORPUS_DESIGN.md",
+          "bytes": 7527,
+          "sha256": "954c18425dd507f617d607ceb18093478e044397088917db52ae5d4730fe8e1f"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/seed_packets/PHONEX_ULWS.zip",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/seed_packets/PHONEX_ULWS.zip",
+          "bytes": 22578,
+          "sha256": "54cf64a37de190ec856e2b3628404d7c564883aa6407666218b3ac066e80c627"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/seed_packets/QIA_62.zip",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/seed_packets/QIA_62.zip",
+          "bytes": 50440,
+          "sha256": "caacebf671a0cbacf15174f86665f46e9442c6a10283f46ebc1c105f62502131"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/seed_packets/Q_STRINGS.zip",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/seed_packets/Q_STRINGS.zip",
+          "bytes": 30546,
+          "sha256": "53f6f6bbddcf87b830fbaff598d6ea98149b6f181144dd781331efd5f5a8f5f7"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/seed_packets/README.md",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/seed_packets/README.md",
+          "bytes": 314,
+          "sha256": "4c2072f1c3552df23c1b8dda4d8de0a1f1d89c9a97ebd12f9863ed7130695265"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/seed_packets/TIMELESS_QIA.zip",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/seed_packets/TIMELESS_QIA.zip",
+          "bytes": 22376,
+          "sha256": "d78020c3e0d04ca4e178ee6eda7a6a02b772a72090d5add4ab23ab2d7ac9a4f2"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/seed_packets/WAZNOMIA.md",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/seed_packets/WAZNOMIA.md",
+          "bytes": 16459,
+          "sha256": "76646e2b7f57d09abaa0639b854690d9c27779ebe9224ab5e249504987b909ec"
+        },
+        {
+          "member": "POLYIA_FOUNDATION_V0_1/tests/test_polyia.py",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/tests/test_polyia.py",
+          "bytes": 5326,
+          "sha256": "dcc1aa983c61bb24afdc8fe92b4c9e25fc2d34222fce64f27f2d9c2a6204d0da"
+        }
+      ]
+    },
+    {
+      "archive": "sources/recovered/Q_STRINGS_GSHIP_RESEARCH_v0.1.zip",
+      "sha256": "53f6f6bbddcf87b830fbaff598d6ea98149b6f181144dd781331efd5f5a8f5f7",
+      "members": [
+        {
+          "member": "Q_STRINGS_GSHIP_RESEARCH_v0.1/CODEX_IMPLEMENTATION_SEED.md",
+          "path": "sources/expanded/Q_STRINGS_GSHIP_RESEARCH_v0.1/Q_STRINGS_GSHIP_RESEARCH_v0.1/CODEX_IMPLEMENTATION_SEED.md",
+          "bytes": 4479,
+          "sha256": "21226ed88a82f574528b857a90e0ddd25fd4dd224f956aaa9af48c793e0d9d23"
+        },
+        {
+          "member": "Q_STRINGS_GSHIP_RESEARCH_v0.1/MANIFEST.json",
+          "path": "sources/expanded/Q_STRINGS_GSHIP_RESEARCH_v0.1/Q_STRINGS_GSHIP_RESEARCH_v0.1/MANIFEST.json",
+          "bytes": 1934,
+          "sha256": "1e5069a8e70ad1746149aaee93df7dba3875029fe1f8dfc7fe00881c04393559"
+        },
+        {
+          "member": "Q_STRINGS_GSHIP_RESEARCH_v0.1/QIA_EXISTING_62_THEORY_ATLAS_REFERENCE.md",
+          "path": "sources/expanded/Q_STRINGS_GSHIP_RESEARCH_v0.1/Q_STRINGS_GSHIP_RESEARCH_v0.1/QIA_EXISTING_62_THEORY_ATLAS_REFERENCE.md",
+          "bytes": 43397,
+          "sha256": "c836cdb108165347b17fce71907833c534e976ba0e132fe50577722bafd51fd1"
+        },
+        {
+          "member": "Q_STRINGS_GSHIP_RESEARCH_v0.1/Q_STRINGS_FORMAL_RESEARCH.md",
+          "path": "sources/expanded/Q_STRINGS_GSHIP_RESEARCH_v0.1/Q_STRINGS_GSHIP_RESEARCH_v0.1/Q_STRINGS_FORMAL_RESEARCH.md",
+          "bytes": 28372,
+          "sha256": "1f146b4081bc2e129897d91b16c58f4bc5b9aa7dbe8cbb97a02245a61ee74b3e"
+        },
+        {
+          "member": "Q_STRINGS_GSHIP_RESEARCH_v0.1/README.md",
+          "path": "sources/expanded/Q_STRINGS_GSHIP_RESEARCH_v0.1/Q_STRINGS_GSHIP_RESEARCH_v0.1/README.md",
+          "bytes": 879,
+          "sha256": "70f8362c91165ef7e52827e55cd68c7067ff7da0cc515c4530c75ef61f2aa529"
+        },
+        {
+          "member": "Q_STRINGS_GSHIP_RESEARCH_v0.1/bench.py",
+          "path": "sources/expanded/Q_STRINGS_GSHIP_RESEARCH_v0.1/Q_STRINGS_GSHIP_RESEARCH_v0.1/bench.py",
+          "bytes": 3240,
+          "sha256": "001802e677fce629616476a71dc12b05b66ed892e3fdcd90af5cd86f6f4cd048"
+        },
+        {
+          "member": "Q_STRINGS_GSHIP_RESEARCH_v0.1/demo.py",
+          "path": "sources/expanded/Q_STRINGS_GSHIP_RESEARCH_v0.1/Q_STRINGS_GSHIP_RESEARCH_v0.1/demo.py",
+          "bytes": 880,
+          "sha256": "a294d54af46a9d6971132ddbe1f838cfdefb5e6b3ddd4e2af2302ad001e999a0"
+        },
+        {
+          "member": "Q_STRINGS_GSHIP_RESEARCH_v0.1/results/INTERPRETATION.md",
+          "path": "sources/expanded/Q_STRINGS_GSHIP_RESEARCH_v0.1/Q_STRINGS_GSHIP_RESEARCH_v0.1/results/INTERPRETATION.md",
+          "bytes": 1438,
+          "sha256": "7f0735f5524a371b663eb91d56b63bc69ce2215bed64f6b9a853a7043898fd51"
+        },
+        {
+          "member": "Q_STRINGS_GSHIP_RESEARCH_v0.1/results/benchmark.json",
+          "path": "sources/expanded/Q_STRINGS_GSHIP_RESEARCH_v0.1/Q_STRINGS_GSHIP_RESEARCH_v0.1/results/benchmark.json",
+          "bytes": 2140,
+          "sha256": "27f8baae6e1b9f22d27d29293d52072fb70425f554997b52f656074d8d8a01f7"
+        },
+        {
+          "member": "Q_STRINGS_GSHIP_RESEARCH_v0.1/results/demo.json",
+          "path": "sources/expanded/Q_STRINGS_GSHIP_RESEARCH_v0.1/Q_STRINGS_GSHIP_RESEARCH_v0.1/results/demo.json",
+          "bytes": 471,
+          "sha256": "bb905e3bd48aff845fd19c87b5d36020682112510a270ac827e79b8a2fffea11"
+        },
+        {
+          "member": "Q_STRINGS_GSHIP_RESEARCH_v0.1/results/test_results.txt",
+          "path": "sources/expanded/Q_STRINGS_GSHIP_RESEARCH_v0.1/Q_STRINGS_GSHIP_RESEARCH_v0.1/results/test_results.txt",
+          "bytes": 1661,
+          "sha256": "e0608e654bb250fabd6bee0964656976e8309a3b2305d3db59c776dab9e094dd"
+        },
+        {
+          "member": "Q_STRINGS_GSHIP_RESEARCH_v0.1/src/qstrings.py",
+          "path": "sources/expanded/Q_STRINGS_GSHIP_RESEARCH_v0.1/Q_STRINGS_GSHIP_RESEARCH_v0.1/src/qstrings.py",
+          "bytes": 7657,
+          "sha256": "661ac4e509944bb788f9fd98aa149e5598e2755a6809d171176edd7e623f56b3"
+        },
+        {
+          "member": "Q_STRINGS_GSHIP_RESEARCH_v0.1/tests/test_qstrings.py",
+          "path": "sources/expanded/Q_STRINGS_GSHIP_RESEARCH_v0.1/Q_STRINGS_GSHIP_RESEARCH_v0.1/tests/test_qstrings.py",
+          "bytes": 4097,
+          "sha256": "3383e42293217bc5316011f2dde8638e0f94bc36ddbac27ebcbd34f9a32d904d"
+        }
+      ]
+    },
+    {
+      "archive": "sources/recovered/POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1.zip",
+      "sha256": "9c623909ee5bb38f94ed2107f81f4e3e7315bd4ba2955c994cc0239533d77087",
+      "members": [
+        {
+          "member": "POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/ACCEPTANCE_MATRIX.md",
+          "path": "sources/expanded/POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/ACCEPTANCE_MATRIX.md",
+          "bytes": 836,
+          "sha256": "6967c1dd08ae9bb59786536d333472d1255b1e54c15a1d61461922c8fd810f49"
+        },
+        {
+          "member": "POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/AUDIT.md",
+          "path": "sources/expanded/POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/AUDIT.md",
+          "bytes": 5025,
+          "sha256": "b29214c8fa995caa8081ff2b1a8528c24076273fdbc3a7015d98cb10a0172239"
+        },
+        {
+          "member": "POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/CANONICAL_CONTRACT.md",
+          "path": "sources/expanded/POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/CANONICAL_CONTRACT.md",
+          "bytes": 5962,
+          "sha256": "f2c8eb336cfa771dac3ef349dec80f7576fe211da045d2d9311f2d74b1e1bab8"
+        },
+        {
+          "member": "POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/CODEX_ADMISSION_ADDENDUM.md",
+          "path": "sources/expanded/POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/CODEX_ADMISSION_ADDENDUM.md",
+          "bytes": 5483,
+          "sha256": "d84ddc50db1b3edab643d9ade571b583b851c7902dee4bbfeae2e529f4fe7ad3"
+        },
+        {
+          "member": "POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/MUSE_CLAUDE_RELAY.md",
+          "path": "sources/expanded/POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/MUSE_CLAUDE_RELAY.md",
+          "bytes": 1809,
+          "sha256": "2d467064151e291034d302f976f3ebb75d1a7f131e3c9b9247692286dced4bad"
+        },
+        {
+          "member": "POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/README.md",
+          "path": "sources/expanded/POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/README.md",
+          "bytes": 2755,
+          "sha256": "ac60f11fe9fe5417dfbc1c1b5a220a36b2328584393e9f9a8ff636285a8ae9e4"
+        },
+        {
+          "member": "POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/RECONCILIATION.md",
+          "path": "sources/expanded/POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/RECONCILIATION.md",
+          "bytes": 7456,
+          "sha256": "cb584a20a64d3ce074964b19f450cde79809eb42e67ad306a3fb630010c04a7f"
+        },
+        {
+          "member": "POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/SOURCE_MANIFEST.json",
+          "path": "sources/expanded/POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/SOURCE_MANIFEST.json",
+          "bytes": 1947,
+          "sha256": "f863e44aedcb6912aace0c218b0cab051f1d215032c315517ae58fc6f07c6924"
+        },
+        {
+          "member": "POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/STATE_GATES.json",
+          "path": "sources/expanded/POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/POLYIA_UCG_GRAMMATONOMIA_RECONCILIATION_v0.1/STATE_GATES.json",
+          "bytes": 1418,
+          "sha256": "56a695f23df2d9c1e2a950320d999a95b8a66a6e4c067ac2a15f6cf4b0309172"
+        }
+      ]
+    },
+    {
+      "archive": "sources/recovered/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02.zip",
+      "sha256": "09f631d03503dd7b7b0f44010f6d9f4a9af5c37fab28d79e57c3bba5cb3380ed",
+      "members": [
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/README.md",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/README.md",
+          "bytes": 3460,
+          "sha256": "697e785cb0599effa13e74bcf4684aeadd7632ced1d24b390b06117780ee29ff"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/atom/__init__.py",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/atom/__init__.py",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/atom/cli.py",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/atom/cli.py",
+          "bytes": 2849,
+          "sha256": "c5927c2a1f5aa1ae9ebb03dfd90bf5df4bac43c998f0e5640343dccecb01dab1"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/atom/core.py",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/atom/core.py",
+          "bytes": 13873,
+          "sha256": "243e27d8c6a7448dfe626d764b140b0b756db265fe0dcaf8428a91487c808ad7"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/atom/driver.py",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/atom/driver.py",
+          "bytes": 2610,
+          "sha256": "ab40686994824b6af940e87f5f7bfaa280b46e429ec6451f5887e97130e50ebd"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/atom/server.py",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/atom/server.py",
+          "bytes": 4814,
+          "sha256": "3fe57d8d474a5acdacc736836b42d8f659778cbaca87a1fb1b6f96f3a334bfd8"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/audio_assets/celestial-drift.wav",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/audio_assets/celestial-drift.wav",
+          "bytes": 1056044,
+          "sha256": "9ca93bf4a0babbf9b6940c74ea6465e3ab5013358be6181d2739fce81e7c06b5"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/audio_assets/portal-chime.wav",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/audio_assets/portal-chime.wav",
+          "bytes": 192044,
+          "sha256": "e0ec4d62b647d1bab8805d3cf99f885e7e39bf969d1231a28f47479276a2ec05"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/docs/FORMAL_CONSTITUTION.md",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/docs/FORMAL_CONSTITUTION.md",
+          "bytes": 4931,
+          "sha256": "f9a5aaa75812d0c887b8e4aa75adb677903885f293e329127afecabaf78e670e"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/docs/HARNESSES_AND_ECONOMY.md",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/docs/HARNESSES_AND_ECONOMY.md",
+          "bytes": 3131,
+          "sha256": "85e28e73eb2a8b5017c00ec4b4349c7f56d4f6e08dde097f642f4d29c676cdb3"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/docs/IMPLEMENTATION_AND_GATES.md",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/docs/IMPLEMENTATION_AND_GATES.md",
+          "bytes": 1968,
+          "sha256": "68df49d99240aed6880189656b565249c691429583a1630107fd480f6e255a8a"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/docs/SCIENTIFIC_AND_AUDIO_CONTRACT.md",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/docs/SCIENTIFIC_AND_AUDIO_CONTRACT.md",
+          "bytes": 3822,
+          "sha256": "c539c84b53acb24122f882ac58678ba3f10654d2100893f64b7a870204f7c5bc"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/docs/SOURCE_REFERENCES.md",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/docs/SOURCE_REFERENCES.md",
+          "bytes": 2012,
+          "sha256": "759a9c8c89ef0f65f83120b17bd2d594f0777f3d074f417722ef46c04635ab58"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/docs/SOURCE_STATUS.md",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/docs/SOURCE_STATUS.md",
+          "bytes": 1237,
+          "sha256": "bc7f3a7b1f55c9638228d09642167e5ae04460765b3b5a7712f2360be593bb4c"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/docs/TEST_REPORT.md",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/docs/TEST_REPORT.md",
+          "bytes": 2722,
+          "sha256": "e0ac5fc10b24327e20a9871b754b10f4132885db32fa90adaf0c904cf424d96a"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/docs/VERIFY_COMMANDS.md",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/docs/VERIFY_COMMANDS.md",
+          "bytes": 834,
+          "sha256": "a2212bfb6eaecc05e00cb8ec67465ae3318de6177327c83f8dc95a033bccdad3"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/docs/VISUAL_PLATES.md",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/docs/VISUAL_PLATES.md",
+          "bytes": 2531,
+          "sha256": "88d59141807c0fdf379f7d40350e50b3f3a092bb5ea51e811ce940db6fb9ec23"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/evidence/atom-tests.log",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/evidence/atom-tests.log",
+          "bytes": 1714,
+          "sha256": "1cb47480eb9f41649a7ede452e242e036be7a782ec03e389f63059b5d001ca4d"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/evidence/audio-audit.json",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/evidence/audio-audit.json",
+          "bytes": 404,
+          "sha256": "e8b727b6820657305a2de6b1666422513e4d4edf6eaa957f09cc7fb36746bdee"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/evidence/browser-checks.json",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/evidence/browser-checks.json",
+          "bytes": 609,
+          "sha256": "6efb1ae6a20a649c08b7a73d80fd87c7c3e2620d687f3f381a0abfbea96cb790"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/evidence/browser-tests.log",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/evidence/browser-tests.log",
+          "bytes": 2128,
+          "sha256": "b7bcabc421cb535a852cf2056c61d16e45f9ceaa97fb978e33fe5ac46f897bfd"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/evidence/celestial-desktop.png",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/evidence/celestial-desktop.png",
+          "bytes": 1701331,
+          "sha256": "42bd740a46b49b0c53b966d772ec10dd9d196b5dcc3b2197e8f7064258c29e0f"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/evidence/celestial-mobile.png",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/evidence/celestial-mobile.png",
+          "bytes": 579504,
+          "sha256": "110fe391a7a6f45352f70ddbf6be009baf0355b1bf515dccfe6bd8fd88c25e3c"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/evidence/driver-state/checkpoints/0966d44b7d3deb69b4ee170111bf2f9b98e3ced154b6e0008a491afec3ace496.json",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/evidence/driver-state/checkpoints/0966d44b7d3deb69b4ee170111bf2f9b98e3ced154b6e0008a491afec3ace496.json",
+          "bytes": 2384,
+          "sha256": "a8bb2d312c26061d9bd04c0c2ca6a38d933317bbdb718e017d950423a24ca28f"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/evidence/driver-state/checkpoints/66214ae61cbd29555a542eb08bb7db80e617f5616155745076f5937db7f21fb2.json",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/evidence/driver-state/checkpoints/66214ae61cbd29555a542eb08bb7db80e617f5616155745076f5937db7f21fb2.json",
+          "bytes": 3294,
+          "sha256": "51172021a964e1dbf46a31a891d83fbf9b6409f3f788ef3d3bf569e8be99dfed"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/evidence/driver-state/checkpoints/aa8e311d27181a181f14967ddfec96b4d98cf1962ac41dd0238685ade656ed3a.json",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/evidence/driver-state/checkpoints/aa8e311d27181a181f14967ddfec96b4d98cf1962ac41dd0238685ade656ed3a.json",
+          "bytes": 1156,
+          "sha256": "6b9db4ef6bffba66fef44c63e43920133b0fb4558755c99d849b5f71ab63f58a"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/evidence/driver-state/checkpoints/c401fa3d9f1700466c6cd3f79b34411fd5eb68651c0450336558de4182aaa905.json",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/evidence/driver-state/checkpoints/c401fa3d9f1700466c6cd3f79b34411fd5eb68651c0450336558de4182aaa905.json",
+          "bytes": 2757,
+          "sha256": "d3ddd38ab2d009cc980f85d1eee90e12abcee8d729ef979b92ef72c5fbf6ebc8"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/evidence/driver-state/checkpoints/c992a167536026e502d1e3adf71c1b016eee95907bb3e750e00a22cb519ed741.json",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/evidence/driver-state/checkpoints/c992a167536026e502d1e3adf71c1b016eee95907bb3e750e00a22cb519ed741.json",
+          "bytes": 1738,
+          "sha256": "7a52f319229e5ca081712276185e07b5847a86ea2f3195517584e99a635fda3f"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/evidence/driver-state/events.jsonl",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/evidence/driver-state/events.jsonl",
+          "bytes": 10205,
+          "sha256": "e6051432035c42fc2740e18bcd04e45828c2bf3668a798ef46a283ff67d5743c"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/evidence/driver-state/state.json",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/evidence/driver-state/state.json",
+          "bytes": 3232,
+          "sha256": "5a2813bc8406ed6866e38ad7b191dd7335faa4998b8e8fba739f4ab13c6400a5"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/evidence/headless-demo.json",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/evidence/headless-demo.json",
+          "bytes": 4799,
+          "sha256": "977f31b39f51bc97506547eacb7f60dd11636cf6d1e57a7ca81130a106494efb"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/evidence/headless-verification.json",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/evidence/headless-verification.json",
+          "bytes": 156,
+          "sha256": "442b5ce478c34f3b1d644c74e5bec62d4ec8aa59faf5b7e93f9514b43772ed77"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/evidence/intent-tests.log",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/evidence/intent-tests.log",
+          "bytes": 28,
+          "sha256": "75d883d542632d415e9e184ceaa8911a661182ba8569d180ed41ca2c9bf0506c"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/evidence/node-tests.log",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/evidence/node-tests.log",
+          "bytes": 54,
+          "sha256": "55a1ab21a0bdb2384a118f889f484fc0a702ee0cbece2cae76930356f3011473"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/examples/hipparcos_sample.json",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/examples/hipparcos_sample.json",
+          "bytes": 1015,
+          "sha256": "836901bce88652ea0e8b58b66a192a25c1be9bf0cc02d297f6668b554fdd2d64"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/examples/mission-plan.json",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/examples/mission-plan.json",
+          "bytes": 593,
+          "sha256": "61e2609c09f9779ed8c76303a5475bab11277435aab7f70392810ccfc90d0d2e"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/handoff/ATOM_AGENT_PROTOCOL.json",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/handoff/ATOM_AGENT_PROTOCOL.json",
+          "bytes": 1203,
+          "sha256": "2d266d815c268dcd5d12a15b2866b80b88fa5500559111ba62a6e3aaaf0a5794"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/handoff/CODEX_GOD_SEED.md",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/handoff/CODEX_GOD_SEED.md",
+          "bytes": 13332,
+          "sha256": "07a640429168bfcfc0893b36a3890457da8b184b5cca392c22dd7028b5f92f8a"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/handoff/CODEX_GOD_SEED_V02.md",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/handoff/CODEX_GOD_SEED_V02.md",
+          "bytes": 22518,
+          "sha256": "382deba870e5910c268d6d1c5b46f249eabf41f9ff3637778d12bdd02f790ad7"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/tests/browser_verify.py",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/tests/browser_verify.py",
+          "bytes": 4750,
+          "sha256": "ac3914cf86c6373efb122fdd4a23c4dfb70d38e21d3d3fae74771e17a46443ab"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/tests/capture_motion.py",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/tests/capture_motion.py",
+          "bytes": 2312,
+          "sha256": "8cb4267982f323f3032fa6e228e90e08a1d6678a5570ed05e222348809cdeb9c"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/tests/test_atom.py",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/tests/test_atom.py",
+          "bytes": 5918,
+          "sha256": "62eb919ff05088e4c1713d1e85066d0c0c35886bd2789841b1679052a11804bd"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/tests/test_intent_bus.cjs",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/tests/test_intent_bus.cjs",
+          "bytes": 634,
+          "sha256": "0aabc1ba6c0f92162dfc78b20a4dc3616895400206b33f10d30fb33e09c701bc"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/tests/test_sky_node.cjs",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/tests/test_sky_node.cjs",
+          "bytes": 1201,
+          "sha256": "d12fc3299c48ba4884065501e6c010d59b4c019a0f1c2b05cf8a929576bf86e0"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/tools/audit_sound.py",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/tools/audit_sound.py",
+          "bytes": 850,
+          "sha256": "12403a7151cffbd74f9b47924d83b2933c07a1bff5887a08d0766a71f0735baf"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/tools/generate_audio.py",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/tools/generate_audio.py",
+          "bytes": 1617,
+          "sha256": "088bda21cc11566a7d55f313779893fa3dc877fa1cdca7e2ec6dfee3ee5331b6"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/web/app.js",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/web/app.js",
+          "bytes": 13088,
+          "sha256": "fae9801efc90e1024a7cc5e9c1922c110593cedcaf9027d913d25eeb73375566"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/web/atom-bus.js",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/web/atom-bus.js",
+          "bytes": 2141,
+          "sha256": "35aa80b147bb39fea1de90b3eb77467a3d56a12304750971b916e67cec86e3cf"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/web/audio.js",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/web/audio.js",
+          "bytes": 4951,
+          "sha256": "bbf3db16987210d1cdcde4a303bceaeacc98676d9c55e5de25a73b3b17ee6e96"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/web/index.html",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/web/index.html",
+          "bytes": 9875,
+          "sha256": "0879578760a6fddf420c3c4758a1766387077c23b581f9121aa5639d95936a05"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/web/sky.js",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/web/sky.js",
+          "bytes": 10789,
+          "sha256": "fb363a05365eaaabb3e1efabe6054c0a1c579422fff1df9b44927b572f46db57"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/web/star-gpu.js",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/web/star-gpu.js",
+          "bytes": 3861,
+          "sha256": "7ffc99a4ef9105309d472d78381304bfd48b398bbe757048f648fe5afd5d6cda"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/web/style.css",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/web/style.css",
+          "bytes": 11823,
+          "sha256": "5e23fde0ab44a822385678534ca6f3ae4ec4640d5bceb4f8a9c00265826d19c9"
+        },
+        {
+          "member": "ASTRA_CELESTIAL_SHELLS_V02/MANIFEST.json",
+          "path": "sources/expanded/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02/ASTRA_CELESTIAL_SHELLS_V02/MANIFEST.json",
+          "bytes": 9313,
+          "sha256": "13f945944f09a79552aa64ff38fdb071444cd8d9d3e6404917559f35f2b0f46e"
+        }
+      ]
+    },
+    {
+      "archive": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/seed_packets/FNMS_001.zip",
+      "sha256": "88da8753a6533d61464ace57e4fc1f831710e809cec0b4b0f99a9291f3758d0d",
+      "members": [
+        {
+          "member": "fnms_experiment_001/test_fnms.py",
+          "path": "sources/expanded/FNMS_001/fnms_experiment_001/test_fnms.py",
+          "bytes": 3828,
+          "sha256": "b78fd03f71e1f46970603280cf5f3a47d3a8ba31625c24570e9d2e7d1d497fec"
+        },
+        {
+          "member": "fnms_experiment_001/test-results.txt",
+          "path": "sources/expanded/FNMS_001/fnms_experiment_001/test-results.txt",
+          "bytes": 1820,
+          "sha256": "03ebdda58a3d79f27fe3696b123a3ae887142428c68d04efd31932a90bd363d3"
+        },
+        {
+          "member": "fnms_experiment_001/fnms.py",
+          "path": "sources/expanded/FNMS_001/fnms_experiment_001/fnms.py",
+          "bytes": 9801,
+          "sha256": "77e6b61899e53db3cb0d97da0444bc31c167d6cf032dbceccaa78beee040b7f8"
+        },
+        {
+          "member": "fnms_experiment_001/RESEARCH_NOTE.md",
+          "path": "sources/expanded/FNMS_001/fnms_experiment_001/RESEARCH_NOTE.md",
+          "bytes": 12536,
+          "sha256": "f904418316fb94ff06806b2ef165dccc9aea1a6ff98e86efada70fb38d416a59"
+        },
+        {
+          "member": "fnms_experiment_001/results.json",
+          "path": "sources/expanded/FNMS_001/fnms_experiment_001/results.json",
+          "bytes": 2279,
+          "sha256": "399c5ebe82dfa9d8bef178405aac027bbc464c520fe11faaa5338b9f8ee3e4d4"
+        }
+      ]
+    },
+    {
+      "archive": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/seed_packets/PHONEX_ULWS.zip",
+      "sha256": "54cf64a37de190ec856e2b3628404d7c564883aa6407666218b3ac066e80c627",
+      "members": [
+        {
+          "member": "ULWS_PHONEX_QIA_v0.1/CODEX_GOD_SEED.md",
+          "path": "sources/expanded/PHONEX_ULWS/ULWS_PHONEX_QIA_v0.1/CODEX_GOD_SEED.md",
+          "bytes": 9117,
+          "sha256": "9e3a285a12be4eb46d7255988df36597277c80eee57ffef3150189e008a5113f"
+        },
+        {
+          "member": "ULWS_PHONEX_QIA_v0.1/README.md",
+          "path": "sources/expanded/PHONEX_ULWS/ULWS_PHONEX_QIA_v0.1/README.md",
+          "bytes": 1742,
+          "sha256": "db8220e5e77c454f8b4469ff25df5dc99530dce8ebf3a997213eaf8c45b403f2"
+        },
+        {
+          "member": "ULWS_PHONEX_QIA_v0.1/FOUNDATIONAL_RESEARCH.md",
+          "path": "sources/expanded/PHONEX_ULWS/ULWS_PHONEX_QIA_v0.1/FOUNDATIONAL_RESEARCH.md",
+          "bytes": 22954,
+          "sha256": "82bda78d807ee7b8e80f805d5c2e99160cfe85e84f73a18e4e9a3a50c4a714f7"
+        },
+        {
+          "member": "ULWS_PHONEX_QIA_v0.1/MANIFEST.json",
+          "path": "sources/expanded/PHONEX_ULWS/ULWS_PHONEX_QIA_v0.1/MANIFEST.json",
+          "bytes": 1203,
+          "sha256": "6825bba63d550e5da922b7963ab40b4efa858dc93ef264282792c06989607ba9"
+        },
+        {
+          "member": "ULWS_PHONEX_QIA_v0.1/src/phonex.py",
+          "path": "sources/expanded/PHONEX_ULWS/ULWS_PHONEX_QIA_v0.1/src/phonex.py",
+          "bytes": 8149,
+          "sha256": "4a9395f3da2d5f15efc6492d2bd953076b5e2f7183138967b4598b93052982ce"
+        },
+        {
+          "member": "ULWS_PHONEX_QIA_v0.1/results/tests.txt",
+          "path": "sources/expanded/PHONEX_ULWS/ULWS_PHONEX_QIA_v0.1/results/tests.txt",
+          "bytes": 1967,
+          "sha256": "e723e6f2deb2a94f1a1f4392d61044f63b54fd6dabc6d4603d29e6ea2c2ca295"
+        },
+        {
+          "member": "ULWS_PHONEX_QIA_v0.1/examples/topology_toy_results.json",
+          "path": "sources/expanded/PHONEX_ULWS/ULWS_PHONEX_QIA_v0.1/examples/topology_toy_results.json",
+          "bytes": 2486,
+          "sha256": "42d51a17aad92cb2298ad7f6ead3dae75625a4e40671df193014401b2662ff85"
+        },
+        {
+          "member": "ULWS_PHONEX_QIA_v0.1/tests/test_phonex.py",
+          "path": "sources/expanded/PHONEX_ULWS/ULWS_PHONEX_QIA_v0.1/tests/test_phonex.py",
+          "bytes": 3164,
+          "sha256": "4c321972d19da388cc921d93464bf6dfc785597280aec94f78388c58adf274a6"
+        }
+      ]
+    },
+    {
+      "archive": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/seed_packets/QIA_62.zip",
+      "sha256": "caacebf671a0cbacf15174f86665f46e9442c6a10283f46ebc1c105f62502131",
+      "members": [
+        {
+          "member": "QIA_Quantum_Intelligence_Agency_v0.1/ARTIFACT_MANIFEST.json",
+          "path": "sources/expanded/QIA_62/QIA_Quantum_Intelligence_Agency_v0.1/ARTIFACT_MANIFEST.json",
+          "bytes": 2462,
+          "sha256": "3b6fb6aaeabbb0abe51f559a3ac01961712b91b18b1fc5004fef8c3f20275833"
+        },
+        {
+          "member": "QIA_Quantum_Intelligence_Agency_v0.1/QIA_FOUNDATIONAL_TREATISE.md",
+          "path": "sources/expanded/QIA_62/QIA_Quantum_Intelligence_Agency_v0.1/QIA_FOUNDATIONAL_TREATISE.md",
+          "bytes": 45309,
+          "sha256": "7a6e1604b84f211ab7fe6a0e015d3c696d119e89391e220dde008606acb9f24b"
+        },
+        {
+          "member": "QIA_Quantum_Intelligence_Agency_v0.1/Q_THEORY_ATLAS_62.md",
+          "path": "sources/expanded/QIA_62/QIA_Quantum_Intelligence_Agency_v0.1/Q_THEORY_ATLAS_62.md",
+          "bytes": 43397,
+          "sha256": "c836cdb108165347b17fce71907833c534e976ba0e132fe50577722bafd51fd1"
+        },
+        {
+          "member": "QIA_Quantum_Intelligence_Agency_v0.1/README.md",
+          "path": "sources/expanded/QIA_62/QIA_Quantum_Intelligence_Agency_v0.1/README.md",
+          "bytes": 3185,
+          "sha256": "8bc344b21a9fb45216409d35f12fc4a79d91c6d69bc6c20cef53654ac32443d0"
+        },
+        {
+          "member": "QIA_Quantum_Intelligence_Agency_v0.1/REPOSITORY_ALIGNMENT.md",
+          "path": "sources/expanded/QIA_62/QIA_Quantum_Intelligence_Agency_v0.1/REPOSITORY_ALIGNMENT.md",
+          "bytes": 2620,
+          "sha256": "7b363b98dd384667ed6454e58fb56a32ba4e39da0475c35ac214d97108b24095"
+        },
+        {
+          "member": "QIA_Quantum_Intelligence_Agency_v0.1/build_registry.py",
+          "path": "sources/expanded/QIA_62/QIA_Quantum_Intelligence_Agency_v0.1/build_registry.py",
+          "bytes": 9773,
+          "sha256": "a570714a092a52907b347a577b6e23f939bf9cef83e9041ffcd0040d02ba5a0f"
+        },
+        {
+          "member": "QIA_Quantum_Intelligence_Agency_v0.1/examples/FNMS_RETEST.txt",
+          "path": "sources/expanded/QIA_62/QIA_Quantum_Intelligence_Agency_v0.1/examples/FNMS_RETEST.txt",
+          "bytes": 1839,
+          "sha256": "20adb65ab44fa55de3c735e49b14a031fe390677db915daf315774cb4e7bb324"
+        },
+        {
+          "member": "QIA_Quantum_Intelligence_Agency_v0.1/examples/INFINITY_RETEST.txt",
+          "path": "sources/expanded/QIA_62/QIA_Quantum_Intelligence_Agency_v0.1/examples/INFINITY_RETEST.txt",
+          "bytes": 2405,
+          "sha256": "97d618bda13bd6e4933170e6cb3052674b6ba291cfccf48f90717af5e3adc714"
+        },
+        {
+          "member": "QIA_Quantum_Intelligence_Agency_v0.1/examples/TEST_REPORT.txt",
+          "path": "sources/expanded/QIA_62/QIA_Quantum_Intelligence_Agency_v0.1/examples/TEST_REPORT.txt",
+          "bytes": 2759,
+          "sha256": "e27e58b59c06ad28468730f8305872591da30ee80478ca09bba235e3577b55a4"
+        },
+        {
+          "member": "QIA_Quantum_Intelligence_Agency_v0.1/examples/TOY_RESULTS.json",
+          "path": "sources/expanded/QIA_62/QIA_Quantum_Intelligence_Agency_v0.1/examples/TOY_RESULTS.json",
+          "bytes": 5186,
+          "sha256": "44f77d386e4f6c8e796ad139da9695cfc99bf656033d4a952778dee3dcb1136d"
+        },
+        {
+          "member": "QIA_Quantum_Intelligence_Agency_v0.1/schemas/Q_THEORIES_62.json",
+          "path": "sources/expanded/QIA_62/QIA_Quantum_Intelligence_Agency_v0.1/schemas/Q_THEORIES_62.json",
+          "bytes": 45546,
+          "sha256": "50b5d12eb30659d794e4396d8685602f23a89833e650f710bc0aa3f25eca44f9"
+        },
+        {
+          "member": "QIA_Quantum_Intelligence_Agency_v0.1/src/qia.py",
+          "path": "sources/expanded/QIA_62/QIA_Quantum_Intelligence_Agency_v0.1/src/qia.py",
+          "bytes": 15773,
+          "sha256": "0fa99e94e01e684d66550dd70dca88b25f155b6bcfa3bfcf56f4a2f04a5562a3"
+        },
+        {
+          "member": "QIA_Quantum_Intelligence_Agency_v0.1/tests/test_qia.py",
+          "path": "sources/expanded/QIA_62/QIA_Quantum_Intelligence_Agency_v0.1/tests/test_qia.py",
+          "bytes": 7081,
+          "sha256": "a6ea195a86c38aef20e42d755fa325986f66245f73ebd22349977ea0e3ce7453"
+        }
+      ]
+    },
+    {
+      "archive": "sources/recovered/SUBSTRATE_UNIVERSITY_GRAMMAR_IN_CIPHERS_CLAUDE_CODE_PACKET.zip",
+      "sha256": "efafcc3de041cb122ce751fe590d0e6194372e1e1109508e2d25146c4c2fb82c",
+      "members": [
+        {
+          "member": "SUBSTRATE_GRAMMAR_IN_CIPHERS/29_cipher_sites.csv",
+          "path": "sources/expanded/SUBSTRATE_UNIVERSITY_GRAMMAR_IN_CIPHERS_CLAUDE_CODE_PACKET/SUBSTRATE_GRAMMAR_IN_CIPHERS/29_cipher_sites.csv",
+          "bytes": 946,
+          "sha256": "c421b6c0da17ed87c091a0156113e4ce115b36ecd4bd491ecc66020315a1ba7c"
+        },
+        {
+          "member": "SUBSTRATE_GRAMMAR_IN_CIPHERS/29_cipher_sites.json",
+          "path": "sources/expanded/SUBSTRATE_UNIVERSITY_GRAMMAR_IN_CIPHERS_CLAUDE_CODE_PACKET/SUBSTRATE_GRAMMAR_IN_CIPHERS/29_cipher_sites.json",
+          "bytes": 17925,
+          "sha256": "728327fb147a63078d4f9506224b1d06b1115be0289cfb217b146da4109d329e"
+        },
+        {
+          "member": "SUBSTRATE_GRAMMAR_IN_CIPHERS/AUTHOR_INTENT_DOSSIER.md",
+          "path": "sources/expanded/SUBSTRATE_UNIVERSITY_GRAMMAR_IN_CIPHERS_CLAUDE_CODE_PACKET/SUBSTRATE_GRAMMAR_IN_CIPHERS/AUTHOR_INTENT_DOSSIER.md",
+          "bytes": 10584,
+          "sha256": "e9403ddc2faa54668a0b24a477ecf4ccd25e2968c04985e3dbcbe99feb3820b4"
+        },
+        {
+          "member": "SUBSTRATE_GRAMMAR_IN_CIPHERS/CLAUDE_CODE_GOD_SEED.md",
+          "path": "sources/expanded/SUBSTRATE_UNIVERSITY_GRAMMAR_IN_CIPHERS_CLAUDE_CODE_PACKET/SUBSTRATE_GRAMMAR_IN_CIPHERS/CLAUDE_CODE_GOD_SEED.md",
+          "bytes": 38676,
+          "sha256": "ccc660d78c0b106aaa7d2dc48d149515cda9eb61d7990a38407c6ef80478d1db"
+        },
+        {
+          "member": "SUBSTRATE_GRAMMAR_IN_CIPHERS/FORMAL_LEDGER.md",
+          "path": "sources/expanded/SUBSTRATE_UNIVERSITY_GRAMMAR_IN_CIPHERS_CLAUDE_CODE_PACKET/SUBSTRATE_GRAMMAR_IN_CIPHERS/FORMAL_LEDGER.md",
+          "bytes": 9521,
+          "sha256": "a1bde885bde4f40a266851e34df64b029b3352f05859b0319745b220c4e7061b"
+        },
+        {
+          "member": "SUBSTRATE_GRAMMAR_IN_CIPHERS/MANIFEST.json",
+          "path": "sources/expanded/SUBSTRATE_UNIVERSITY_GRAMMAR_IN_CIPHERS_CLAUDE_CODE_PACKET/SUBSTRATE_GRAMMAR_IN_CIPHERS/MANIFEST.json",
+          "bytes": 1893,
+          "sha256": "a3a30321863e37383553929fd8d0710b3d7e9d6e72c14af90fec893350bac6f4"
+        },
+        {
+          "member": "SUBSTRATE_GRAMMAR_IN_CIPHERS/README.md",
+          "path": "sources/expanded/SUBSTRATE_UNIVERSITY_GRAMMAR_IN_CIPHERS_CLAUDE_CODE_PACKET/SUBSTRATE_GRAMMAR_IN_CIPHERS/README.md",
+          "bytes": 2002,
+          "sha256": "894d159ea6c42fdd948a8709c7be88269519a89e9e8273ae603098765934fd0a"
+        },
+        {
+          "member": "SUBSTRATE_GRAMMAR_IN_CIPHERS/SOURCES_AND_BOUNDARIES.md",
+          "path": "sources/expanded/SUBSTRATE_UNIVERSITY_GRAMMAR_IN_CIPHERS_CLAUDE_CODE_PACKET/SUBSTRATE_GRAMMAR_IN_CIPHERS/SOURCES_AND_BOUNDARIES.md",
+          "bytes": 4438,
+          "sha256": "ded569e6b7dac419f3c60470e5af70513d87e9404923be5e0291eca7d05de497"
+        },
+        {
+          "member": "SUBSTRATE_GRAMMAR_IN_CIPHERS/VALIDATE_PACKET.py",
+          "path": "sources/expanded/SUBSTRATE_UNIVERSITY_GRAMMAR_IN_CIPHERS_CLAUDE_CODE_PACKET/SUBSTRATE_GRAMMAR_IN_CIPHERS/VALIDATE_PACKET.py",
+          "bytes": 2340,
+          "sha256": "095d6b7fae4d9ad1e468285c184183ace787b96feef70ec1b21c972e45c42f17"
+        },
+        {
+          "member": "SUBSTRATE_GRAMMAR_IN_CIPHERS/cipher_alphabets.json",
+          "path": "sources/expanded/SUBSTRATE_UNIVERSITY_GRAMMAR_IN_CIPHERS_CLAUDE_CODE_PACKET/SUBSTRATE_GRAMMAR_IN_CIPHERS/cipher_alphabets.json",
+          "bytes": 13833,
+          "sha256": "09bc69f0f08dd7e0e28ac9ae799590290bf9e3292c73555ecc139987b37ce22a"
+        },
+        {
+          "member": "SUBSTRATE_GRAMMAR_IN_CIPHERS/research_edges.json",
+          "path": "sources/expanded/SUBSTRATE_UNIVERSITY_GRAMMAR_IN_CIPHERS_CLAUDE_CODE_PACKET/SUBSTRATE_GRAMMAR_IN_CIPHERS/research_edges.json",
+          "bytes": 14699,
+          "sha256": "fc26754fea6bb2c4be4a613e8aba48fbc1ab7c0b2076f02b8b253e4a37c51ddd"
+        }
+      ]
+    },
+    {
+      "archive": "sources/recovered/HOMELESS_DARK_SUBSTRATE_UNIVERSITY_V2.zip",
+      "sha256": "6ef83c2ca591d7a371b37be4d2d8771741758d61fcab28cd26e5283dc467a47f",
+      "members": [
+        {
+          "member": "DARK_UNIVERSITY_FORGE_V2/README.md",
+          "path": "sources/expanded/HOMELESS_DARK_SUBSTRATE_UNIVERSITY_V2/DARK_UNIVERSITY_FORGE_V2/README.md",
+          "bytes": 1135,
+          "sha256": "77b28e79fa4efb84053cfd074954f8fa0f2184cf6e4d3d8b48f2a4d92a92cbb7"
+        },
+        {
+          "member": "DARK_UNIVERSITY_FORGE_V2/SHA256SUMS.txt",
+          "path": "sources/expanded/HOMELESS_DARK_SUBSTRATE_UNIVERSITY_V2/DARK_UNIVERSITY_FORGE_V2/SHA256SUMS.txt",
+          "bytes": 375,
+          "sha256": "1fbc10f2d2a92d65e96a39c051f13e4844609084eb43ecc9f5a97ee659c11fb1"
+        },
+        {
+          "member": "DARK_UNIVERSITY_FORGE_V2/HOMELESS_DARK_WEB_CONSTITUTIONAL_PROMPT_V2.md",
+          "path": "sources/expanded/HOMELESS_DARK_SUBSTRATE_UNIVERSITY_V2/DARK_UNIVERSITY_FORGE_V2/HOMELESS_DARK_WEB_CONSTITUTIONAL_PROMPT_V2.md",
+          "bytes": 54035,
+          "sha256": "8f26d5c4bef6263a95bed7a61083c2331bd8d602778800c678a79855827c0c6e"
+        },
+        {
+          "member": "DARK_UNIVERSITY_FORGE_V2/UNIVERSITY_DARK_BRIDGE_SEED.json",
+          "path": "sources/expanded/HOMELESS_DARK_SUBSTRATE_UNIVERSITY_V2/DARK_UNIVERSITY_FORGE_V2/UNIVERSITY_DARK_BRIDGE_SEED.json",
+          "bytes": 2143,
+          "sha256": "ba917b861daaea7ca0d58931615ddb98bd19b583674eb58368c1ad2eeafd4085"
+        },
+        {
+          "member": "DARK_UNIVERSITY_FORGE_V2/VERIFY_BRIDGE_SEED.py",
+          "path": "sources/expanded/HOMELESS_DARK_SUBSTRATE_UNIVERSITY_V2/DARK_UNIVERSITY_FORGE_V2/VERIFY_BRIDGE_SEED.py",
+          "bytes": 498,
+          "sha256": "8b8f115b941cf63bdbb52a35d7cf4ce8a574ab542479ea7ae05c6204bbaba797"
+        }
+      ]
+    }
+  ]
+}

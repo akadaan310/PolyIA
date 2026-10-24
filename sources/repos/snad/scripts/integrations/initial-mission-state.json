@@ -1,0 +1,314 @@
+{
+  "schema": "snad.mission-state/1",
+  "mission": {
+    "id": "snad-2026-10-18",
+    "title": "Computational Attribution & Transition Grammar",
+    "status": "INCOMPLETE",
+    "objective": "Build an independent, domain-neutral attribution SDK and reproducible discourse laboratory; Arabic/Quranic morphology is an evidence corpus, not generic semantics.",
+    "requirements": [
+      "Entire 6236-ayah, 114-surah addressable corpus including short and single-word verses; never label a 1000 highlight subset as coverage.",
+      "Preserve original corpus orthography, source provenance and explicit uncertainty.",
+      "Treat recorded status and hash integrity separately from scientific validity.",
+      "No ISNAAD mutations; no FALAK changes or dependency; no astronomy visuals.",
+      "20 candidates, 10 hypotheses, 5 counterexamples, 3 reconstructions and a simpler baseline are stretch research targets, never invented milestones."
+    ],
+    "authorization": "Distinct SNAD mission and scoped optional CGIT artifacts authorized by user mission; prior published mission is read only.",
+    "nativeExecution": "input json identity program validates typed mission state transport/replay only. SNAD algorithms execute locally in the standalone SDK."
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "service-discovery",
+        "kind": "objective",
+        "title": "Inspect live PURL and CGIT contracts",
+        "dependencies": [],
+        "status": "PASS",
+        "verification": "HTTP outcomes, exact deployed commits, supported scopes, limits and SDK captured; prior mission read only",
+        "evidence": []
+      },
+      {
+        "id": "source-reconstruction",
+        "kind": "objective",
+        "title": "Reconstruct original ISNAAD and candidate foundations",
+        "dependencies": [],
+        "status": "NOT_RUN",
+        "verification": "Exact branch/source/data/license audit; no upstream mutation",
+        "evidence": []
+      },
+      {
+        "id": "typed-core",
+        "kind": "objective",
+        "title": "Standalone domain-neutral SDK",
+        "dependencies": [
+          "source-reconstruction"
+        ],
+        "status": "NOT_RUN",
+        "verification": "Typed spans, attribution axes, provenance graph, serializing and streaming APIs",
+        "evidence": []
+      },
+      {
+        "id": "complete-corpus",
+        "kind": "objective",
+        "title": "Address all 6236 ayahs across 114 surahs",
+        "dependencies": [
+          "source-reconstruction"
+        ],
+        "status": "NOT_RUN",
+        "verification": "Stable identity, original orthography, explicit analysis status, exhaustive locus and roundtrip tests; denominator separation",
+        "evidence": []
+      },
+      {
+        "id": "discourse-graphs",
+        "kind": "objective",
+        "title": "Nested reported speech and unresolved identities",
+        "dependencies": [
+          "typed-core"
+        ],
+        "status": "NOT_RUN",
+        "verification": "Counterexample-aware graph transitions preserving speaker/addressee/referent/narrator/quotation/person/number/tense/evidence distinctions",
+        "evidence": []
+      },
+      {
+        "id": "research",
+        "kind": "objective",
+        "title": "Falsifiable experiments and baselines",
+        "dependencies": [
+          "typed-core",
+          "complete-corpus"
+        ],
+        "status": "NOT_RUN",
+        "verification": "Reproducible results, seeds, perturbations, negative controls, mismatches and literature limitations; no invented discoveries",
+        "evidence": []
+      },
+      {
+        "id": "web-lab",
+        "kind": "objective",
+        "title": "Accessible interactive graph laboratory",
+        "dependencies": [
+          "typed-core",
+          "discourse-graphs"
+        ],
+        "status": "NOT_RUN",
+        "verification": "Source/transition/provenance/perturbation/export user journeys; no astronomy imagery",
+        "evidence": []
+      },
+      {
+        "id": "portable-mission",
+        "kind": "objective",
+        "title": "PURL lifecycle and content-hashed offline package",
+        "dependencies": [
+          "service-discovery"
+        ],
+        "status": "NOT_RUN",
+        "verification": "Private owned create, compile, declared test, durable run, checkpoint and public readback; standalone remains usable",
+        "evidence": []
+      },
+      {
+        "id": "validation",
+        "kind": "objective",
+        "title": "Independent validation and clean build",
+        "dependencies": [
+          "typed-core",
+          "complete-corpus",
+          "web-lab",
+          "research"
+        ],
+        "status": "NOT_RUN",
+        "verification": "Identity/provenance/roundtrip/replay/mutation tests, differential evidence, corpus runtime/memory, browser/accessibility checks",
+        "evidence": []
+      },
+      {
+        "id": "public-delivery",
+        "kind": "objective",
+        "title": "Repository, artifact package and preview",
+        "dependencies": [
+          "validation",
+          "portable-mission"
+        ],
+        "status": "NOT_RUN",
+        "verification": "Authorized remote repository/push/deployment or exact observed blockers; public code/artifact locations",
+        "evidence": []
+      },
+      {
+        "id": "fresh-context",
+        "kind": "objective",
+        "title": "Fresh participant reconstruction",
+        "dependencies": [
+          "public-delivery"
+        ],
+        "status": "NOT_RUN",
+        "verification": "Participant gets only own mission PURL or explicit offline fallback; finds actual code/evidence and next permitted operation, records failures",
+        "evidence": []
+      }
+    ],
+    "edges": [
+      {
+        "from": "source-reconstruction",
+        "to": "typed-core",
+        "relation": "requires"
+      },
+      {
+        "from": "source-reconstruction",
+        "to": "complete-corpus",
+        "relation": "requires"
+      },
+      {
+        "from": "typed-core",
+        "to": "discourse-graphs",
+        "relation": "requires"
+      },
+      {
+        "from": "typed-core",
+        "to": "research",
+        "relation": "requires"
+      },
+      {
+        "from": "complete-corpus",
+        "to": "research",
+        "relation": "requires"
+      },
+      {
+        "from": "typed-core",
+        "to": "web-lab",
+        "relation": "requires"
+      },
+      {
+        "from": "discourse-graphs",
+        "to": "web-lab",
+        "relation": "requires"
+      },
+      {
+        "from": "service-discovery",
+        "to": "portable-mission",
+        "relation": "requires"
+      },
+      {
+        "from": "typed-core",
+        "to": "validation",
+        "relation": "requires"
+      },
+      {
+        "from": "complete-corpus",
+        "to": "validation",
+        "relation": "requires"
+      },
+      {
+        "from": "web-lab",
+        "to": "validation",
+        "relation": "requires"
+      },
+      {
+        "from": "research",
+        "to": "validation",
+        "relation": "requires"
+      },
+      {
+        "from": "validation",
+        "to": "public-delivery",
+        "relation": "requires"
+      },
+      {
+        "from": "portable-mission",
+        "to": "public-delivery",
+        "relation": "requires"
+      },
+      {
+        "from": "public-delivery",
+        "to": "fresh-context",
+        "relation": "requires"
+      }
+    ]
+  },
+  "events": [
+    {
+      "at": "2026-10-18T20:01:11.680555+00:00",
+      "kind": "contract-discovery",
+      "status": "PASS",
+      "evidence": "evidence/service-discovery.json",
+      "claim": "Both products reachable, source API commit verified through runtime; no inherited mission mutation."
+    },
+    {
+      "at": "2026-10-18T20:01:11.680555+00:00",
+      "kind": "repository-creation",
+      "status": "BLOCKED",
+      "claim": "GitHub GraphQL createRepository denied Resource not accessible by integration; REST POST /user/repos returned 403. No remote origin/push."
+    }
+  ],
+  "artifacts": [
+    {
+      "kind": "source-brief",
+      "name": "1-SNAD_CODEX_GODSEED.md",
+      "sha256": "0c1c5adae760454e6035166ceced7f65422fd353966e85f4a14a049f41560276",
+      "location": "Original user-supplied mission attachment; content represented by these typed objectives."
+    },
+    {
+      "kind": "service-discovery",
+      "path": "evidence/service-discovery.json",
+      "sha256": "42232fcbb26c1b4fb041022e2f358402a2d8d0c442aaaa0ae21db47a6ae79700"
+    },
+    {
+      "kind": "code-checkpoint",
+      "commit": "450db7f8ede27fa7be715a84045895fbed2ec76c",
+      "location": "Local /workspace/snad at bootstrap; remote publication pending",
+      "status": "INITIAL_CHECKPOINT_ONLY"
+    }
+  ],
+  "source_references": [
+    {
+      "role": "read-only-original",
+      "url": "https://github.com/akadaan310/isnaad",
+      "commit": null,
+      "status": "exact commits being independently reconstructed"
+    },
+    {
+      "role": "PURL-contract-source",
+      "url": "https://github.com/akadaan310/purl/tree/codex/purls-cgit-consumer",
+      "commit": "375529019fbbe467303645d5ccde5f783946a78a"
+    },
+    {
+      "role": "deployed-PURL-CGIT-API",
+      "url": "https://github.com/akadaan310/purl/tree/367e8ed063065cb8bc9ebb8c9fc55235b4828723",
+      "commit": "367e8ed063065cb8bc9ebb8c9fc55235b4828723"
+    },
+    {
+      "role": "read-only-prior-mission",
+      "url": "https://purls-production.up.railway.app/p/resource_95a5662789076892fe698316",
+      "version": 15,
+      "inheritance": "Context only; no continuity claimed or mutation authorized"
+    }
+  ],
+  "blockers": [
+    {
+      "id": "github-create",
+      "status": "OBSERVED",
+      "detail": "GitHub integration denies createRepository and POST /user/repos; independent local repository continues."
+    },
+    {
+      "id": "verified-purl-identity",
+      "status": "OBSERVED",
+      "detail": "Live OIDC issuer/client ID/client secret not configured; current supported lifecycle uses explicitly unverified 1800-second guest preview."
+    },
+    {
+      "id": "durable-owner-continuation",
+      "status": "LIMIT",
+      "detail": "Guest expiry ends mutation authority; no guest recovery, refresh or human delegation route observed. Public reconstruction and creating a newly owned fork remain supported."
+    },
+    {
+      "id": "public-package",
+      "status": "PENDING",
+      "detail": "Actual code/evidence artifact URL will be added only after deployment/export verification."
+    }
+  ],
+  "checkpoint": {
+    "at": "2026-10-18T20:01:11.680555+00:00",
+    "stage": "initial-contracts",
+    "evidenceStatus": "INCOMPLETE",
+    "claimPolicy": "Author assertions; hashes certify content consistency, not requirement truth."
+  },
+  "next": [
+    "Inspect this mission manifest and continuity anonymously. Verify listed artifact hashes when artifact URLs exist.",
+    "Run the standalone clean-checkout build and tests after the actual artifact location is published. Preserve failed checks and scientific uncertainty.",
+    "For a permitted native continuation, use disclosed preview authentication, inspect scopes, fork this public SNAD resource with its current expected_version, and execute only owned-resource operations.",
+    "Do not modify the original ISNAAD repository or the prior mission. If network/auth fails, use the content-hashed offline mission package and record the exact blocker."
+  ]
+}

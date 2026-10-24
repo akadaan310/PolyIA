@@ -1,0 +1,530 @@
+{
+  "schemaVersion": "snad.source-audit.v1",
+  "auditedAt": "2026-10-18T20:02:13.655550+00:00",
+  "repository": "https://github.com/akadaan310/isnaad",
+  "readOnly": {
+    "remoteMutations": false,
+    "sourceFileMutations": false,
+    "referenceCloneClean": true,
+    "execution": "Source and data copied into /tmp/isnaad-audit; ingestion writes only disposable copy; no original server/database/deployment touched."
+  },
+  "remoteInventory": {
+    "command": "git ls-remote --heads --tags origin",
+    "heads": 3,
+    "tags": 0,
+    "scope": "all advertised reachable branch tips; unadvertised/private refs cannot be inferred"
+  },
+  "branches": [
+    {
+      "name": "claude/quran-isnad-explorer-prototype-0ml0tp",
+      "commit": "4c059a1691920a13ea973146e42518e83f31573c",
+      "committedAt": "2026-09-14T10:51:22Z",
+      "sharedGitObjects": {
+        "src/lib/engine": "21f744b56d90692fda70e41b3edd731af6727c52",
+        "src/lib/corpus.ts": "338856233350837f1271047c1c4d5a8eef9ef8c7",
+        "src/lib/morphology.ts": "a9375334d0d50793353b7bf39d23b7e5728a99e5",
+        "src/lib/isnad.ts": "864f44714b5c49c6ac649879fd5ef9564b011c57",
+        "scripts/ingest-cosmos.ts": "98616b1c53190a480e0c405ec24767b335fe96fd",
+        "data/corpus": "af5f8af0cd32f96a86c5f39be06e2d36bf479a70"
+      }
+    },
+    {
+      "name": "claude/computational-universe-api-aksppy",
+      "commit": "f7b2937f6472218ed942c66fb507947e3866e2ec",
+      "committedAt": "2026-09-14T02:43:15Z",
+      "sharedGitObjects": {
+        "src/lib/engine": "21f744b56d90692fda70e41b3edd731af6727c52",
+        "src/lib/corpus.ts": "338856233350837f1271047c1c4d5a8eef9ef8c7",
+        "src/lib/morphology.ts": "a9375334d0d50793353b7bf39d23b7e5728a99e5",
+        "src/lib/isnad.ts": "864f44714b5c49c6ac649879fd5ef9564b011c57",
+        "scripts/ingest-cosmos.ts": "98616b1c53190a480e0c405ec24767b335fe96fd",
+        "data/corpus": "af5f8af0cd32f96a86c5f39be06e2d36bf479a70"
+      }
+    },
+    {
+      "name": "claude/nav-computed-relationships-af4xla",
+      "commit": "db345c34bfa4db1b51734f665d970056306b34c6",
+      "committedAt": "2026-09-19T01:49:16Z",
+      "sharedGitObjects": {
+        "src/lib/engine": "21f744b56d90692fda70e41b3edd731af6727c52",
+        "src/lib/corpus.ts": "338856233350837f1271047c1c4d5a8eef9ef8c7",
+        "src/lib/morphology.ts": "a9375334d0d50793353b7bf39d23b7e5728a99e5",
+        "src/lib/isnad.ts": "864f44714b5c49c6ac649879fd5ef9564b011c57",
+        "scripts/ingest-cosmos.ts": "98616b1c53190a480e0c405ec24767b335fe96fd",
+        "data/corpus": "af5f8af0cd32f96a86c5f39be06e2d36bf479a70"
+      }
+    }
+  ],
+  "primaryCommit": "4c059a1691920a13ea973146e42518e83f31573c",
+  "codeLicense": {
+    "githubApiLicense": null,
+    "licenseFilesFound": [],
+    "status": "no explicit grant found; no relicensing inferred",
+    "apiCheck": {
+      "visibility": "public",
+      "defaultBranch": "claude/quran-isnad-explorer-prototype-0ml0tp",
+      "archived": false
+    }
+  },
+  "inputs": {
+    "morphology": {
+      "sourceUrl": "https://raw.githubusercontent.com/mustafa0x/quran-morphology/master/quran-morphology.txt",
+      "sourceRefPinnedByOriginal": false,
+      "committedTree": "af5f8af0cd32f96a86c5f39be06e2d36bf479a70",
+      "sourceLicense": "unresolved for modified fork; original QAC GPL with verbatim/no-changing notice",
+      "transformation": "remove surah component from locator; preserve rows thereafter",
+      "corpusFileHashes": {
+        "1": "f822c35f01e5a434d1ce0983eb15f92ef7818eef59bdb73cdf6a7dc0699081e8",
+        "2": "c99353bba8306b90e79588f3261333cd8f461b88aa8268b9e0a4f3efdeee62e6",
+        "3": "4691e1138a853e5a2b7a1143152053266a58942b93d4bc3f99a5a13f7ab18026",
+        "4": "acb3ac32571bee056d0272ae84cbd1f6056791ab8eca923d8883804bfbda2b5a",
+        "5": "953264fde0ea5b70e3802ea24f46659adf4bacb1f39e0bebaaa265cd07a85b26",
+        "6": "f8279fd52069da745e084af7ae4ea5163ff8b4b7d81319faca34e30721004279",
+        "7": "cc435baf77943f069e7cd048fcd2c89ae5bb501c6341e5d99a1252a002ece100",
+        "8": "c9a5e7277ea389a817fda4eb40f24cefec15cb8e1ed7dea94b15596a6361b4a8",
+        "9": "e32a350407cad3abac52fb32a6fe3ddb365718509ac332521d2b4481ea9e5b2d",
+        "10": "66af3dd9b325d6845a82c9b378d27307e1fb424d7f87d906bc129264d5fba56a",
+        "11": "5f0a1c091242902854ca7be196722d2daf5cf66ff62abd5d6cd024236c58325c",
+        "12": "baa0d5c1a48253ed54532f27b87a25bb13a9e0269b08fc191ad9c9d202be41df",
+        "13": "32d0cc6193a4d0f1b3c2fa29dc7fdb47c903f14c91a0bae36faddbb1f4b35573",
+        "14": "1dcd9600b48aafb992c389bc27a4b3a2bd857a48c0c6aea6002a7c9632efd3e8",
+        "15": "8d2f7578972fa8663d5b770f9c16b4d50a99b4f225e1e03f97d10eb42515083c",
+        "16": "4b4ad2e3d2306d7d8dc471b8c1ba157448727ced4286a16b8366daa395bd32fe",
+        "17": "57f28fab65dc13df631f724477ce1f23fd9df39efbfed47bdacafc93bb56ceb6",
+        "18": "209cf35c31bc1ba6c461e554e47c257dde91651d6023589e7f4d7187eb6f0fc7",
+        "19": "75c939a8841873850b6a23852cd0ea3365ba88b5347c8529639245d01d1e79db",
+        "20": "5858eec9ea0543f2c04a33cbd177ae5823e50c869279d3f855963ce4388ec541",
+        "21": "2e99625a41c69abf098b47e0e6bf02ca962ed54dd7fa02aed26bd7287aa15a0d",
+        "22": "38ac7d0ab6946c448b66d080399c9831df5a27da1d2ccb28e17b2f396e3d5d4b",
+        "23": "d5c6fe5b2ea42efa37dede8a921072c7b94f9a4caceaa0ffaa40bebd7b8f8836",
+        "24": "eefeb568e83156e9a8ea1ceca5b82cefab02b8bf2d22dc58396e65941d02bd4f",
+        "25": "fc84fe60c1ddecb0ab89595a5b92c07ffeabcd11d2a720e73ddaada4680c99c9",
+        "26": "ac793d5882b653bdd05bb0b8a5591b2815479235201a21b5f0a5811e7982718a",
+        "27": "268e38c02d6d3fed6da7ce42f98dd5738b282353f6293156d722810109fb0ec6",
+        "28": "2d19b4a695cbd54d084081669ec5f3bd372550f763c2ae46f26a36f9f46c9c3c",
+        "29": "8e77ffc21e8d3375469e78d22f75251d223632f9c70ddcf39e90197819d84d55",
+        "30": "7fbd346b45f7137822065fa961cb6bd711a1a44d97d828c2edccc6cb1655c1a7",
+        "31": "600905f1dc2fcf248e0615af1da827a49894bb95d065f0a624944b215131503e",
+        "32": "6c9cc41e846be4973d04e7ec6f95c36e9de70896c43c8a422288fcced45a6931",
+        "33": "81731bb99bdf9e9b1d2ea75af7dfe090a83a9c94ab8c2e774f50c708052f3144",
+        "34": "d4b3fd9fe1a4c451048fba56a9ff0cd2a02699b9817e13e639d2cc6052379015",
+        "35": "bac0d94544e0a82f8756c86f6377d9a9905a0c9b8217908d2c521137a795d045",
+        "36": "bd1672fff7c3706b75b09c1eff11be65a01186e71515c9185da08a74b2ddd770",
+        "37": "e44eceb401f75ab5642ade19a118c22bd866e5971b78d2cf9974f856c61db624",
+        "38": "7ba216cc16bbca82d0d965adae58b515faf67bb4294ea91e3a2adbb5516b6c10",
+        "39": "d6dcf935af32500bed82bd98d666565007ee5d289b865381fe09e363cdb09395",
+        "40": "bcf605f9d7d93c5dd9e34a8742fa15c3b27ea1b712d5801fcb0c9b3dda28bce2",
+        "41": "e503b7f84e26e5b46ffc84a7c25656ddbe90fae8cc543c54b91b6d8ff45d778c",
+        "42": "100c7e7bdefc02cea44ee30bcdabe486447a03373ed8bfd3fdf1be3c01e54709",
+        "43": "79ac994ab50a9ff2b0a710ff107cda7a6681e4e106a49e975dff4a97956f6b2e",
+        "44": "c21b050af52e11d1c32ca8d5d152a8620cb5109cc041882619ec8bc412c5b008",
+        "45": "b733386435a3641f8b83d2460bf3d705b05e353ce24c78baf2219cca6528ce73",
+        "46": "091df49847541a33d8eaa4b94dd5c05d6f70d212f362b85165e02996606352a0",
+        "47": "57f282a3b4188bda09ad3318ad8ff54996d0a2b62c4ccc153231491f5944106b",
+        "48": "6125798f9197f83cf0f071c86cd13d21a51b30b933f6363c1588ba35d898d24c",
+        "49": "bcf4a618d808e6244e37116f9abfb893d100dd9a7859d323c88130751a70d1b2",
+        "50": "de415a9b5c02b8d30dc6d8b560a44ebac4de43096fc81b27b1d045c0cd7c23df",
+        "51": "dcabbcfea03ea388d215ce0941b590a606f15c007421a55c812e15eab9b68fba",
+        "52": "cf6a8eed6e0cd80137c83499b405ea6e1e800f546441bb4eb370202b1c40805c",
+        "53": "b81512357f9d3bbc0368a8d237460b4ffc2d2898d1c4c457d2e620b35db28a4c",
+        "54": "c7cfdcb93db62455906c55e3156dd445c424f724fc8288cc8794495e6c7281ea",
+        "55": "07a302f1717a0ef172373ad04ebe20aed125ee51d948061a0eecb0cb6109ccf0",
+        "56": "647d03bbc1a4b489c23aa6103a69ee64107bf954d80dbfe94e0145fe13ce6dda",
+        "57": "62daf1fee2d419e9bcd3f4d8aa2cc2efaf39f7b51c4625a9be9113cb050a0c2f",
+        "58": "f507fb1dfa6bbcf84df6dcc1c2f737060c49611c49ab36b0b41d32730178e4c9",
+        "59": "410f9f0e89424e3491df116c5dee258d80735e05cf588d7183a1240f009b36f8",
+        "60": "2c56264015bea2c19361d082d0afe242a268271069b1a375018980ad85930c4c",
+        "61": "b608f5db4d8376d516204440538c75cb388fb9747e028248699b81f6ce2d2105",
+        "62": "fb33053685cdd962eb45bf48be9c886a65ec8d148bfcd96f26126edb17564a12",
+        "63": "436369b86a93beea7e23baef04cfc801ebd10ef09d42309744cfd900971516f0",
+        "64": "faa5c05ebe81408e228ee56f3997e1e60bb3ced928852f0fe6b9720ff9184f68",
+        "65": "7bd0c86e644133b9719d07ed24ad295aa5352a4286e6ac5b2ab58349f90ce15a",
+        "66": "48b9afaf8e408409bbeb13da1eee781e5d57a12b5786e096d851cb84fc0709d3",
+        "67": "f68cf46b17b7358e2229c874ff285acad0b998ee723dddeb29610acd2a9b40d0",
+        "68": "b11a983a2ea4516b441362e71235a11d542cec19f316f7a22f6d33d1e1357902",
+        "69": "832ec70d2b2de787db98e26ccd7c923c594a20450b5df9e61d153a5a00571290",
+        "70": "b3939e00703b89f5d8c1b5b943aa291772bfb8ab86a148a13fbe7300c60523be",
+        "71": "7f2a32d8896e095481aedebdc7cd8abee74759d43b5374bfc5bceb2ba976c541",
+        "72": "376625ff1f79bfe6c859b23e9d5f28f398772db15a0534f7d4ea397630093ca6",
+        "73": "e2c0829fbfaf789d9f9f3b9c8b8281867b40f79028145780cf9baf5d24af9875",
+        "74": "152f4f9b38acee91238a172ab7c2312b46357dcf92b8900691ee6956fd060016",
+        "75": "da67c9592c36d86f8b393f5b4b4bf897064387d2056dc1b34bc5f8c05c96c5e7",
+        "76": "774d141f5c024dad8df2dd9c134560264635397185e77608655f6ee638eecb08",
+        "77": "375dfec037768283099302f1a40014ef337c3eb2230dad0398227236394d425b",
+        "78": "959a00067399601b03700dc287547a5b9dfcefb16b6f29d8d6ce7ed2833c45f2",
+        "79": "ea18869afb04bd3b5ee0aab372c97fd782000bec9ba33413fbe6ecb06c60b17d",
+        "80": "a1dbea6f6a4b9c53532e20636e41bf59a645b7474c03befc3c2c3dcbc54c5d48",
+        "81": "7c25b11c23dfcce475c4e03336cf8af2ecfe4909bee1e9a9f83b93157385ee38",
+        "82": "98bb0d17478bf45fe1528d8b3bdf437485eb767281e712bc8fcdd09db2abb06d",
+        "83": "d97e65da9ceb0ffe1f0ccc9bd5c3f84c26b62007aa6cbecd64a9fc59348db10e",
+        "84": "507fa7333b80fda51f747a87211bbe55e642255d13490e681e1f65a9a6b8693f",
+        "85": "cd7bab53abeb8a56759e25bfe4ed241e240524212ba5b68738cfc3fcb0f9ad39",
+        "86": "3a84ccc6fe5c9121373b0ac0efe45631bd11124db21501b199207d843c9f898e",
+        "87": "447783300cfc3343fb9438d9904a6e03b2097a76d607309d112184a8ba5abaa1",
+        "88": "ee3cfb72b58c92629d7de2cd750f09a524be3270d96f1ddfda424a01e0ba7c7f",
+        "89": "5a39a9b518daeec2fe05fdc11c04c567a0a925131645c085f2b8dd857330708b",
+        "90": "9b9bbe1020f3210e738591c45e4379be0616f9517a7fb6554b92141c576afa6a",
+        "91": "63701b070b3ec25bd34d28a78be72618554faef60668a343e780980521db4079",
+        "92": "1c0611be9761f5b48a50a9b61f6b1704778a9e2332a80ec614e1bd655a74b22d",
+        "93": "d85e73964a4d5a658e601bbf3fca6050a56080493efa845fce966ca063134876",
+        "94": "33cf67e07e148809ee29529f54d4578d323e6b501c98bfad6e0d668a808e0a53",
+        "95": "92cad401d577ef379c198edfa1d621bc4e8de9cd831c114da1f55e2e24583f60",
+        "96": "ee87143900c2c32cc7a6456210900903b1b8e08f8f5d8072d0136215bbd1fbbe",
+        "97": "6ce15badfad2ce399afabd8623aace8697000f4c9f6c5b6ad2c8cb197848eeb2",
+        "98": "8292930f1277ad93b5db88ee295df4579ca8e0a0e153c9bada5158b1bf953d63",
+        "99": "9c7686550df8b737eb26d7efcc5db46aebe6058a413aa527c08369702b3b445e",
+        "100": "97253b368b776a3962c95a2626d16ddbd747a77799a6e8baf9082bce82d37d9d",
+        "101": "9c9d13f3a600e10a0ca02fa5d62e788a307ac5e9c0d8b88493ff29dc771d961a",
+        "102": "32ed3db33631a301f443b556d42f0bc273c55e406b47989154848b8e4cac6444",
+        "103": "22ed0609d4221e174676598ca672a7d363237315b816b583199545db7a297ba3",
+        "104": "fc42e86a72d97dae5515ace3fd932edc204da5dd20aaf7960934afe1c635c9df",
+        "105": "e721a9c5b3cd23bfeb2c60c3e479f563a49e945086135bd54cc1ca61ee88d498",
+        "106": "4841bdaf3d516f235572a9689f9d9ee3854a64a0a901025f83090a7210542614",
+        "107": "5c5308bad942acbacb3c62ec282ffe6a94307570cf2043efd471f2627d75e02b",
+        "108": "372e67911bb6138951f34743fc68716b75ddcf1fc2bff7aeab4603fdd35d75bc",
+        "109": "3a2aca8ee772c8faab3db836960436b9b726fde132af889dec8654d75741fb00",
+        "110": "c2ed19a204c58ab0a8ed7552bfad924136028777208e5af722985f7e3aa63cfe",
+        "111": "3376835196b748ec19bd5681051dba2f60514297a1c904f4104dd9ebd653640a",
+        "112": "b5a393a7d9186e457a0298d453692e46ab82c413f78c0d50faa4c7d8930ba03f",
+        "113": "fb3b6152676081f31e88837294869914880f44685a3f52ac5735f9d547350dc0",
+        "114": "5a2181642006667f14131867f8867f669f4c5fbbaa7c08bdc0c256d307216c91"
+      }
+    },
+    "orthography": {
+      "sourceUrl": "https://raw.githubusercontent.com/risan/quran-json/main/dist/quran.json",
+      "sourceRefPinnedByOriginal": false,
+      "sourceLicense": "CC-BY-SA-4.0 for independently pinned risan v3.1.2",
+      "independentPin": "64c0d713a91923c6ee1216b7c0206bad9a7846b8",
+      "exactAyatMatch": 6236,
+      "independentProvenance": "data/quran.provenance.json"
+    }
+  },
+  "inspectedSourceFiles": [
+    {
+      "path": "data/corpus/meta.json",
+      "sha256": "a35722eeb7fbcc79b8bf870bb2c06ef0d09a4c8122faf8c9c6f2345e7551bf3a",
+      "gitObject": "959e99c6d2ddbe290e096b3270707914a7988453"
+    },
+    {
+      "path": "data/cosmos/nodes.json",
+      "sha256": "4b5b5ddf7af6c7c8d13ae548a745c0d999207edd17fdb89b862aa1cdb6d397ce",
+      "gitObject": "587419661c204710dee48ef30d03e2a99b992f28"
+    },
+    {
+      "path": "data/index/aalam.json",
+      "sha256": "d8b735a97c886a10d613e4988c8e8ba4acc349a66581b69290d860597d2eda42",
+      "gitObject": "272846565f9a112b3bdc2dd7ae60f38f9f22838c"
+    },
+    {
+      "path": "data/index/ayaat.json",
+      "sha256": "4fd2044d903d5bf17acd4378308d35100064580285f2ed321b6afce72c79df1b",
+      "gitObject": "52f0c121314222ea8a8b938b6fc8cb30f96dab0c"
+    },
+    {
+      "path": "data/index/discoveries.json",
+      "sha256": "e846c7b047aefc8864a3c67e70ce083e7fd252513cbb52b8b67ee9fa650ed265",
+      "gitObject": "a729524d6941dfa60f8f9bec905463e3b9adb756"
+    },
+    {
+      "path": "data/index/manifest.json",
+      "sha256": "b175c9cb05a3515303f9075e13e48e938514efc446b88074ab92223ac82eddeb",
+      "gitObject": "4f088c3dee05c41bc6a52b777eb97d14654db142"
+    },
+    {
+      "path": "data/index/motifs.json",
+      "sha256": "2b18a87672812ba19ac789e7ceca97ddefe64558f4bfe0b06a13d250066cd932",
+      "gitObject": "45a1068ba9551a66aaf6d9f634fd3805638876cb"
+    },
+    {
+      "path": "scripts/ingest-cosmos.ts",
+      "sha256": "23bad38abd7d6d0cbac4ebd9ecad1b2918e40d4fd40ece006468489624ab59ba",
+      "gitObject": "98616b1c53190a480e0c405ec24767b335fe96fd"
+    },
+    {
+      "path": "scripts/ingest-quran.ts",
+      "sha256": "ca0271685a7431d125347d6458756fe67e05ea12dc1328e19eb7f28966f0c8d7",
+      "gitObject": "aeb5ddc56074e52891e67d3e3133c23ac5e7e8b3"
+    },
+    {
+      "path": "scripts/verify-cosmos.ts",
+      "sha256": "528b6ad5368fd44c21e3d702e5011e95bbdc25ab3d79eb48fd04d4338e92ed10",
+      "gitObject": "34b55c74b9be22d39d8926f36021692120626745"
+    },
+    {
+      "path": "scripts/verify-exemplars.ts",
+      "sha256": "fb5baa87dcc563ecf132a9d6dfa75bec2611074ce04a2c0ffb2e6f7d5ab622fc",
+      "gitObject": "fc85d0ac3b6f9dbe4f4659b93be982a7137c76ef"
+    },
+    {
+      "path": "src/lib/composition.ts",
+      "sha256": "3095a402bb26e68722cd148d40884f3a5a72ab3c99174dc5d791c9e5dc79ffb7",
+      "gitObject": "0ece3d33af8343de66756dc6aab3eb2ae0c99995"
+    },
+    {
+      "path": "src/lib/corpus.ts",
+      "sha256": "ad715f409de6a59bf2df23d756d6c7c6f6bb98d8f1e41b820cea3a6cf100f10f",
+      "gitObject": "338856233350837f1271047c1c4d5a8eef9ef8c7"
+    },
+    {
+      "path": "src/lib/data.server.ts",
+      "sha256": "9f2bc2c912a46a41b44d4ca7667bffadc09c207260acdfb50873e9827556ea33",
+      "gitObject": "6ad7977b88b3d4279be018bd102368021ae73abf"
+    },
+    {
+      "path": "src/lib/engine/aalam-miner.ts",
+      "sha256": "872b8f4325c74b8cbca324419541877b733e77c63cc6feca0bef7f49b7aa67a9",
+      "gitObject": "ce55399fb22c62827303b1652b83b2ab72f900e0"
+    },
+    {
+      "path": "src/lib/engine/assembler.ts",
+      "sha256": "8031492f80e31ef37ef52dd950788e1cdd5133b419f965c59bdef15898ef6bc1",
+      "gitObject": "a7f6734e97c8dabdfb3602d30f11ab8fac151708"
+    },
+    {
+      "path": "src/lib/engine/detectors.ts",
+      "sha256": "037035ae2b87e6d103d89e61f7253df89e5543ee7c73305f71c32d30ce6a4785",
+      "gitObject": "fb2e31b8bb4c9a5272500ff67086211020438368"
+    },
+    {
+      "path": "src/lib/engine/frames.ts",
+      "sha256": "05e2beaba73b5d45abe5a0bf5ac02b4599d72ba439a84ee450d3a3af4eef1e3f",
+      "gitObject": "37e511969cd4e60ffb4b395fd531be77a120065a"
+    },
+    {
+      "path": "src/lib/engine/graph.ts",
+      "sha256": "fa3b69d45de897614957f8d623b2d3abbabff8dc397c0e14c9600c3cbd21eaf5",
+      "gitObject": "6fbf0e0df293d9915dbb0888f6c800523c943e64"
+    },
+    {
+      "path": "src/lib/engine/labels.ts",
+      "sha256": "828f403f8814788b1b6850a223dc9263c4d1ea60c8a0627d39b50813627aab24",
+      "gitObject": "f88a1fd026f7712cf2faee8c7b250482b2db1ec8"
+    },
+    {
+      "path": "src/lib/engine/motifs.ts",
+      "sha256": "5a8bedc83c53a1993b5ea4144e8f36851dd721fc2d8102f3992b4455ef0a83d1",
+      "gitObject": "ce72c7fa55ad2347dfd300c8d90548e640d5cb77"
+    },
+    {
+      "path": "src/lib/engine/surah-composition.ts",
+      "sha256": "5893fd52bba4b714d6eeb58514522f8482e24ed3b9aadf2f846825b289f2bb05",
+      "gitObject": "17ce5655be1a947d29197d8827af6e83cd4c01b3"
+    },
+    {
+      "path": "src/lib/isnad.ts",
+      "sha256": "9db6a5a89e615cbf3b073f6c4ca2879bf110d5c7e13812b61fb85b0e3091cfc3",
+      "gitObject": "864f44714b5c49c6ac649879fd5ef9564b011c57"
+    },
+    {
+      "path": "src/lib/lexicon.ts",
+      "sha256": "c446d2098df6f9500e1ef8256d117d83449f0a9ea5aca89ac8bebe15932ad79f",
+      "gitObject": "45d0d99865b3f83c58aa321217e7663c4ede2b61"
+    },
+    {
+      "path": "src/lib/morphology.ts",
+      "sha256": "19cfdd5b97f16d743d6ca74d40e0dd89d5e5b34ac2cbb26bc8ab70ae029ba579",
+      "gitObject": "a9375334d0d50793353b7bf39d23b7e5728a99e5"
+    },
+    {
+      "path": "src/lib/time-module.ts",
+      "sha256": "443cae9f2a58eba5197cc696816e68098b0beed5e16c88b89b4b753ad3d5b719",
+      "gitObject": "8291147008e32221b42773979e35b540b023a2e3"
+    },
+    {
+      "path": "src/lib/types.ts",
+      "sha256": "d31c9743774bd91f3eebdb4453a9c73a0cea827a3e2be53f3ecb5215f37e166d",
+      "gitObject": "ffad1028eeb237d90b95b1277c596ca9a5e97648"
+    }
+  ],
+  "sourceAlgorithmSummary": {
+    "spinePriority": [
+      "verb-subject",
+      "nasikh-subject",
+      "detached",
+      "subject-enclitic"
+    ],
+    "referenceWeights": {
+      "subject": 1,
+      "other": 0.6
+    },
+    "authoredPersonProjection": {
+      "1": 0.5,
+      "2": 0,
+      "3": 1,
+      "noEvidence": 0.5
+    },
+    "frameRoot": [
+      "قول"
+    ],
+    "frameCarryAyat": 6,
+    "maximumFrameLevels": 4,
+    "options": {
+      "stitchWindow": 8,
+      "echoWindow": 22,
+      "minAbsenceRun": 2,
+      "minNarrativeRun": 4,
+      "minScore": 0.28
+    },
+    "motifDefaults": {
+      "minimumLength": 5,
+      "maximumLength": 24,
+      "minimumOccurrences": 2,
+      "minimumSurahSpread": 2,
+      "limit": 400,
+      "maximumStoredOccurrencesPerMotif": 60
+    },
+    "allCommittedMotifsHaveKnownSymbols": true,
+    "discoveryIndexRetainsTop": 2500
+  },
+  "wholeCorpusReconstruction": {
+    "surahs": 114,
+    "ayaat": 6236,
+    "words": 77429,
+    "segments": 130030,
+    "frames": 1607,
+    "seams": 16231,
+    "discoveries": 7057,
+    "discoveryKinds": {
+      "istihdar": 1852,
+      "raj-al-jidhr": 1644,
+      "ribat": 2275,
+      "tabaqat-al-isnad": 77,
+      "jisr-al-naba": 113,
+      "alsinat-al-khalq": 715,
+      "rusul-echo": 175,
+      "nasikh-mirror": 206
+    },
+    "shortAyatUnder3Words": 204,
+    "zeroPersonEvidenceAyat": 352,
+    "maxHeuristicFrameDepth": 4
+  },
+  "legacySelection": {
+    "target": 1000,
+    "minimumWordCount": 3,
+    "candidates": 6032,
+    "corpusAyat": 6236,
+    "excludedShortAyat": 204,
+    "perSurahCap": 29,
+    "surahsRepresented": 72,
+    "sort": "descending rounded score; stable tie order from ascending surah and ayah",
+    "score": "1.5*bestDiscoveryScore + .16*min(seams,6) + .32*min(markerHits,4) + .9*timeTension + .5*clockBridge; rounded to four decimals before sorting",
+    "reproduction": {
+      "orderedLociMatchCommitted": true,
+      "payloadMatchesExceptBuiltAt": true,
+      "orderedLociSha256": "11f28b9bef873b0aa068d3f2ce280ef8df7888f0236e8a8f61245b327652ece4",
+      "rebuiltNodesSha256": "e213d17d226e13d2879f12944bad8744d41b147fdd646e8f616e59b9b96f29bc"
+    }
+  },
+  "verification": [
+    {
+      "program": "scripts/verify-exemplars.ts",
+      "sourceCommit": "4c059a1691920a13ea973146e42518e83f31573c",
+      "runtime": "Node v24.19.0 with built-in type stripping and extensionless-relative .ts resolution hook",
+      "disposableWorkingCopy": true,
+      "exitCode": 0,
+      "stdoutSha256": "8b67e4ca681ccf39f2eb8e66be5a72eccdb165ca8953f39b1cca6512acd0084f",
+      "stdout": "\n  acceptance: the three passages the engine was built from\n  ----------------------------------------------------------------\n  ok    11:29  istihdar - absence summoned into address\n        score 0.940  run=٢ gap=١ mirror=إِنّ anchor=نعم\n  ok    11:29  nasikh mirror - إِنَّ carrying 3rd, then لٰكِنَّ carrying 1st\n        score 0.660  إِنّ  الغائب -> المتكلم\n  ok    50:2   root return - عجب predicated, then uttered\n        score 0.808  root=عجب distance=٩ enteredSpeech=نعم sayer=ٱلْكَٰفِرُونَ\n  ok    28:5   naba bridge - past account into the living imperfect\n        score 1.000  narrative=٨ perfects=٣ sustain=٦ crossing=[أرض جعل ضعف]\n  ok    28:5   ribat - lexis held while the attribution swings\n        score 0.535  الغائب -> المتكلم roots=[أرض]\n\n  ----------------------------------------------------------------\n  deepest attribution nesting found:\n        2:البقرة  depth 4  آدم -> آدم -> قُلْنَا -> آدم\n        5:المائدة  depth 4  مريم -> أَقُولَ -> قُلْتُهُۥ -> قُلْتُ\n        6:الأنعام  depth 4  قُلْ -> قُلْتُمْ -> تَقُولُوٓا۟ -> تَقُولُوا۟\n        11:هود  depth 4  يَٰقَوْمِ -> أَقُولُ -> أَقُولُ -> أَقُولُ\n        2:البقرة  depth 3  موسى -> قُلْتُمْ -> قُلْنَا\n        2:البقرة  depth 3  قِيلَ -> موسى -> قُلْتُمْ\n        (77 nested frames in total)\n\n  all checks passed\n\n"
+    },
+    {
+      "program": "scripts/verify-cosmos.ts",
+      "sourceCommit": "4c059a1691920a13ea973146e42518e83f31573c",
+      "runtime": "Node v24.19.0 with built-in type stripping and extensionless-relative .ts resolution hook",
+      "disposableWorkingCopy": true,
+      "exitCode": 0,
+      "stdoutSha256": "56a2cd57510bc575f094580b0c4c54f158ef91f6f95543bb6d786f1715405aeb",
+      "stdout": "\n  الموقع — the locus join\n\n  ok    every node is joinable  1000/1000\n  ok    locus ↔ node round-trips for all 1,000\n  ok    an unplaced āyah resolves to nothing, not to zero\n  ok    chain order is muṣḥaf order, not arrival order\n  ok    chain is strictly ascending\n  ok    motif coverage is substantial in both senses  508/2147 distinct loci (23.7%), 30.1% of all occurrences\n\n  الخيوط — the strand layer\n\n  ok    سنابل  7000 strands\n  ok    المثاني  2015 strands over 368 contours\n  ok    الجذور  1054 strands over 390 roots\n  ok    الاستنباطات  257 strands\n  ok    every motif strand lands on an āyah that motif actually occurs in  0 mismatches\n  ok    every root strand lands on an āyah that root actually occurs in  0 mismatches\n  ok    every discovery strand spans exactly the two banks it names  0 mismatches\n  ok    no strand is a self-loop\n  ok    no strand points outside the field\n  ok    every weight is a real number in 0…1\n  ok    a motif emits a path, not a clique  m10 has 60 occurrences → 27 strands\n\n  التغطية — what a drawn relation stands for\n\n  ok    no motif claims more placed occurrences than it has\n  ok    no root claims more placed loci than it has\n  ok    a chain of n placed āyāt emits exactly n−1 strands\n  ok    field coverage is a strict subset of the muṣḥaf  1000/6236 āyāt · 2474/8209 motif occurrences\n  ok    the discovery floor is measured, and is above the mined threshold  index floor 0.680 vs engine minScore 0.28\n  ok    the index is truncated, and the figures to say so are present  2500 of 7057 retained; root gate 2–24, 897 passed\n  ok    the cut at 0.7 is exact  242 strands survive\n  ok    the cut at 0.85 is exact  152 strands survive\n  ok    the cut at 0.95 is exact  36 strands survive\n\n  الاختيار — what a frame is allowed to show\n\n  ok    the unfocused field shows its skeleton, within budget  320 of 10326\n  ok    the skeleton is ordered strongest first\n  ok    every family is represented in the skeleton  balanced {\"root\":80,\"discovery\":80,\"motif\":80,\"sunbula\":80} vs unbalanced {\"root\":40,\"discovery\":257,\"motif\":23}\n  ok    a focused field draws only its own neighbourhood  200 strands around node 0\n  ok    the focused node is on the strongest strands drawn\n  ok    hop decay orders the neighbourhood\n  ok    a strand straddling the route survives, dimmed  463 inside, 2925 straddling\n  ok    a strand with neither end admitted is dropped\n  ok    admitted strands outrank straddling ones at equal weight\n  ok    the 7,000 سنابل do not become 7,000 lines  80 of 7000 drawn in the skeleton\n\n  رِباط — حركة المحور as displacement\n\n  ok    رِباط vectors  282 displacements on placed āyāt\n  ok    every displacement is signed and non-zero\n  ok    landing āyāt are resolved where they are placed  65 land on another placed node\n  ok    اقترابًا moves inward and ابتعادًا moves outward  0 inverted\n  ok    displacement extent is exactly حركة المحور  217 free displacements, 0 off\n  ok    both ends sit on a person shell of the proximity axis\n  ok    the unfocused field draws only the strongest displacements  48 of 282\n  ok    a focused field draws only displacements touching it  1 at node 705\n\n  all checks passed\n\n"
+    },
+    {
+      "program": "scripts/verify-convergence.ts",
+      "sourceCommit": "db345c34bfa4db1b51734f665d970056306b34c6",
+      "runtime": "Node v24.19.0 with built-in type stripping and extensionless-relative .ts resolution hook",
+      "disposableWorkingCopy": true,
+      "exitCode": 0,
+      "stdoutSha256": "9fb5622359bc374a6a3a707b49c3da4f53db46884ee065d9190d4e80dc91d905",
+      "stdout": "\n  1000 nodes · 3326 evidence strands · 7000 سنابل mixed in · 1015 relation groups\n\n  ok    an origin is computed at all\n  ok    computed origin  النساء 102 — 7 converging destinations\n  ok    no سنبلة is reported as evidence  families seen: motif, root, discovery\n  ok    no سنبلة reaches the anchor tally  tally: motif 15, root 5, discovery 0, resonance 0\n  ok    neighbours = single + converging  112 = 105 + 7\n  ok    the anchor tally counts every group the anchor belongs to\n  ok    no group of one survives the index\n  ok    nothing is reported above the limit without saying so\n  ok    every claimed family holds both āyāt  0 unbacked\n  ok    a witness's weight is its family's strongest  0 wrong\n  ok    a witness's count is its family's size  0 wrong\n  ok    evidence is carried, never rebuilt  0 not verbatim\n  ok    a convergence clears minSupport\n  ok    support counts classes, not families\n  ok    no convergence rests on المثاني and الرنين alone\n  ok    convergences are ranked by support then strength\n  ok    no route ends where a direct relation already goes\n  ok    a route never doubles one class\n  ok    both legs of a route are real\n  ok    a route is worth its weakest leg\n  ok    the same anchor gives the same report twice\n  ok    the answer does not depend on strand order\n  ok    motif groups  368 · median 5 · widest 28\n  ok    root groups  390 · median 3 · widest 14\n  ok    discovery groups  257 · median 2 · widest 2\n  ok    āyāt with at least one convergence  117 of 883 carrying any relation, of 1000 placed\n  ok    convergent pairs  86\n  ok      agreeing classes  contour + lexical — 70 pairs\n  ok      agreeing classes  detector + lexical — 11 pairs\n  ok      agreeing classes  contour + detector — 5 pairs\n\n  a walk, each step on what the engine computed:\n\n    النساء 102\n      ↓  التقاء · 2 classes [contour, lexical]:  motif×4@0.61  root×1@0.26\n    المدثر 31\n      ↓  طريق عبر محمد 4 · motif ثم discovery @0.64\n    محمد 7\n      ↓  طريق عبر محمد 4 · discovery ثم motif @0.64\n    التوبة 70\n      ↓  طريق عبر الأنفال 36 · motif ثم discovery @0.61\n    الأنفال 38\n      ↓  طريق عبر الأنفال 36 · discovery ثم motif @0.64\n    غافر 28\n      ↓  طريق عبر العنكبوت 61 · motif ثم discovery @0.64\n    العنكبوت 63\n\n  all checks passed\n\n"
+    },
+    {
+      "program": "scripts/ingest-cosmos.ts",
+      "sourceCommit": "4c059a1691920a13ea973146e42518e83f31573c",
+      "runtime": "Node v24.19.0 with built-in type stripping and extensionless-relative .ts resolution hook",
+      "disposableWorkingCopy": true,
+      "exitCode": 0,
+      "stdoutSha256": "73d8e34adab5ddb1dda13e169e5476fbbcbfc90e160637938918e3eb9da3e7a3",
+      "stdout": "\n  cosmos ingestion\n  --------------------------------------------------------\n   scored through sūrah 25 — 2,921 candidates\n   scored through sūrah 50 — 4,634 candidates\n   scored through sūrah 75 — 5,484 candidates\n   scored through sūrah 100 — 5,966 candidates\n   scored 6,032 āyāt\n   chose 1000 across 72 sūrahs (cap 29 per sūrah)\n  --------------------------------------------------------\n   nodes          1000\n   with a finding 1000\n   branches       7000 (7 per node)\n   radius range   27 … 102\n   written        852 KB\n\n   āyāt carrying each modality:\n     PST:981  IDH:160  NOW:958  IMP:439  IDA:167  FUT:65  CND:251  CTF:119  NVR:39  ITR:7  ETR:19  HUR:45\n\n  done\n\n"
+    }
+  ],
+  "failuresAndLimits": [
+    {
+      "id": "same-person-object-suffix",
+      "status": "executed-counterexample",
+      "finding": "The first person-matching suffix receives subject-enclitic. Person agreement alone cannot establish that it is the grammatical subject; a same-person object is a counterexample to that rule.",
+      "fixture": "data/original-detectors.json#syntheticFailureCases"
+    },
+    {
+      "id": "distance-information-loss",
+      "status": "executed-counterexample",
+      "finding": "No person evidence and pure first-person evidence share distance 0.5. Retain the vector and evidence status instead of treating distance alone as attribution identity.",
+      "fixture": "data/original-detectors.json#syntheticFailureCases"
+    },
+    {
+      "id": "analysis-side-effect-staleness",
+      "status": "executed-counterexample",
+      "finding": "analyze mutates input; detectKhalq writes word.khalq but does not clear old annotations before a different threshold pass. Reusing a Surah changes behavior relative to a fresh construction.",
+      "fixture": "data/original-detectors.json#syntheticFailureCases"
+    },
+    {
+      "id": "weak-coreference",
+      "status": "source-inspection-limitation",
+      "source": "src/lib/engine/detectors.ts:253",
+      "finding": "Number equality and speaker grammatical person3 do not establish identity; gender is not tested and null===null is possible."
+    },
+    {
+      "id": "frame-inflection-heuristic",
+      "status": "source-inspection-limitation",
+      "source": "src/lib/engine/frames.ts:138",
+      "finding": "Third-person and imperative reporting replace the frame stack; first/second non-imperative may nest. Six-ayah carry and four-level nesting caps are authored assumptions."
+    },
+    {
+      "id": "manifest-segment-count",
+      "status": "executed-count-plus-source-explanation",
+      "source": "scripts/ingest-quran.ts:265",
+      "committedManifestValue": 130031,
+      "actualParsedValue": 130030,
+      "finding": "Manifest stores raw split-line loop counter including terminal blank entry, not parsed segments."
+    },
+    {
+      "id": "curated-design-set",
+      "status": "declared-in-source",
+      "source": "scripts/verify-exemplars.ts:5",
+      "finding": "11:29,50:2,28:4-5 were used to design detectors; passing these is reconstruction rather than independent validation."
+    }
+  ],
+  "historicallyFixedSourceBugs": [
+    "aggregates-computed-before-spines",
+    "noun-number-gender-not-parsed",
+    "all-imperatives-nested-to-depth22",
+    "unicode-diacritic-order-caused-zero-lemma-matches"
+  ],
+  "notValidated": [
+    "speaker-intentions",
+    "semantic-coreference",
+    "independent-human-annotation-accuracy",
+    "tafsir",
+    "audio-verification",
+    "source-production-deployment"
+  ],
+  "artifacts": [
+    {
+      "path": "docs/reconstruction.md",
+      "sha256": "527021d17b7cdfd2dd57303803b9bfdbc0c9d82dc2840862b9da9244672f8b6a"
+    },
+    {
+      "path": "data/legacy-selection.json",
+      "sha256": "da1fcf1cf8d01679b2d9503159af3de0d482ef32179261d405bc37a6c5f2d863"
+    },
+    {
+      "path": "data/original-detectors.json",
+      "sha256": "8e5d7c2e12d9239546d3e1ae356ba2b41611bf60647c55050df9241b5a2b0551"
+    }
+  ]
+}

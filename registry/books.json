@@ -1,0 +1,399 @@
+{
+  "schema_version": 1,
+  "books": [
+    {
+      "id": "BOOK-GIN",
+      "path": "sources/repos/grammarinnumbers/Grammar-in-Numbers.pdf",
+      "sha256": "d51b3f285135b839eb70148ae3fb47df3b7f8c0d2a7475eab2800ce0eb0de20f",
+      "bytes": 503027,
+      "kind": "published-pdf-preserved",
+      "runtime_validation": "custody only; original publication evidence retained separately"
+    },
+    {
+      "id": "BOOK-CGT",
+      "path": "sources/repos/computationalgrammartheory/book/site/downloads/computational-grammar-theory.pdf",
+      "sha256": "846c0973d79315a67b6496f48576804460a693b29019e70e8723470768dfb4d3",
+      "bytes": 1936321,
+      "kind": "published-pdf-preserved",
+      "runtime_validation": "custody only; original publication evidence retained separately"
+    },
+    {
+      "id": "BOOK-SCRIPTORIUM",
+      "kind": "deterministic-book-composition-source",
+      "paths": [
+        "sources/repos/abedkadaancom/src/books/compose.ts",
+        "sources/repos/abedkadaancom/src/books/pdf.ts",
+        "sources/repos/abedkadaancom/src/books/plates.ts"
+      ],
+      "status": "all-source-preserved",
+      "notes": "Six personalized volumes depend on participant state; no specific owner-private session volume or ungenerated PDF is fabricated."
+    },
+    {
+      "id": "BOOK-FORMS",
+      "kind": "constructed-source-linked-teaching-edition",
+      "edition": "0.1.0",
+      "path": "books/book-of-forms/BOOK.md",
+      "construction_authority": "DEC-004",
+      "verification": "tools/build_book_of_forms.py --check",
+      "runtime_validation": "12 executed exercises and62 source-linked topic entries; scoped teaching checks, not whole-topic or mission acceptance",
+      "artifacts": [
+        {
+          "path": "books/book-of-forms/BOOK.md",
+          "bytes": 44578,
+          "sha256": "8a449f2b504adf9d522591eb9dfe2fcd030fb50c32031abcfaa99aec06e2ad06"
+        },
+        {
+          "path": "books/book-of-forms/exercises.json",
+          "bytes": 7257,
+          "sha256": "8842cff578d4fd6c3f7474882adf968043e541e6dc4b3cd56a8a55709bd6952f"
+        },
+        {
+          "path": "books/book-of-forms/evidence.json",
+          "bytes": 51749,
+          "sha256": "a6446a3776b4acfd05f6be35ee0bcd62d49a3a44584f4b68f2f59151915b011b"
+        }
+      ],
+      "bytes": 44578,
+      "sha256": "8a449f2b504adf9d522591eb9dfe2fcd030fb50c32031abcfaa99aec06e2ad06"
+    }
+  ],
+  "book_source_files": [
+    {
+      "path": "sources/repos/abedkadaancom/src/books/compose.ts",
+      "bytes": 22623,
+      "sha256": "b85451c6f32796d896daf57fcb3e0b57102ce391279f4a85457d863957dec767"
+    },
+    {
+      "path": "sources/repos/abedkadaancom/src/books/pdf.ts",
+      "bytes": 12604,
+      "sha256": "c732dfb20f776ac7a9440307e94a52f5113ad4a801fe7a087f94e64ea7d20792"
+    },
+    {
+      "path": "sources/repos/abedkadaancom/src/books/plates.ts",
+      "bytes": 9245,
+      "sha256": "6a6549b6c2a39983bdf5a41f7a0548af19db28247d439a69338127ebedc276c7"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/BOOK_OUTLINE.md",
+      "bytes": 5576,
+      "sha256": "4b07e6e63acde4b13d148e51ea4d041c0749ad665d5509560dd95bb89bbfd3e7"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/.gitignore",
+      "bytes": 20,
+      "sha256": "790e3169bc19b046fe55ba1da6d13b976c28363c8c00462a2195fe5faf260910"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/backend.json",
+      "bytes": 581,
+      "sha256": "1f47bfddb0d3e7680ee15105fde1d543c3516231774ff0fdd8760dfe151956b8"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/bibliography.json",
+      "bytes": 25117,
+      "sha256": "e865935dc845c42130f9719f138b703e40970902beb23bd85ead1b5d6e6c98c0"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/book.json",
+      "bytes": 2868,
+      "sha256": "728f1e4762ace84600480cc56f295179ef986aebd307ba0301fcd594e54b8358"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/chapters/01-structures.md",
+      "bytes": 16781,
+      "sha256": "97913fd4e1faa0cd5ac91722b13dd328a14ba2760aa20efa20ba4209eaade87f"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/chapters/02-arrays.md",
+      "bytes": 18887,
+      "sha256": "de9c460d9561903ab574261e22641e2832ffda749b2cb654afe602ac526af96c"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/chapters/03-sequences.md",
+      "bytes": 10980,
+      "sha256": "fd7089b91ce0d59890bb6f734da0f4df9694c422efd783a736999a79ec5e0e9e"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/chapters/04-associative.md",
+      "bytes": 12548,
+      "sha256": "5eff113dd0a56223bb1a2f5b76f86b21e7b994763246aee84bfdadbf85135478"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/chapters/05-trees.md",
+      "bytes": 19003,
+      "sha256": "e0d07926da06350f0fc667937aa44afaf106f2e62550f3074b2cbd106c5471a3"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/chapters/06-graphs.md",
+      "bytes": 10099,
+      "sha256": "d64f89ef9f6f3dcefc08433ebaa6774fca3fae99e14f0d1b7291b7602972f9c5"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/chapters/07-operational-grammars.md",
+      "bytes": 17875,
+      "sha256": "31c9ae25eb44ed6f171882d886ad7b93d7187dcaccc7e6171fe1a87fc3ea5e68"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/chapters/08-admissibility.md",
+      "bytes": 12143,
+      "sha256": "3fc6e47bfa960da8ebd620c994fc87079fb0934e7eadde594144166b14ec71d7"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/chapters/09-search-sort.md",
+      "bytes": 12364,
+      "sha256": "60de0147ada1467101611c1eb1b0590af6cac6b8d6fe4053544452ea27761e1a"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/chapters/10-graph-algorithms.md",
+      "bytes": 12822,
+      "sha256": "5063799e6f299bea57e75369553462e98d335c972a7274438d731e1e34a57100"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/chapters/11-ranges-dp-strings.md",
+      "bytes": 9604,
+      "sha256": "e1da1aa5d68166209f6df6990008fe867be88ea7c86ed1a17c62fb66317f3436"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/chapters/12-cost-information.md",
+      "bytes": 13571,
+      "sha256": "60c75fac106dc25a7c2998f31d3ba31932979889658df23e62a57048bcc0d723"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/chapters/13-compilation.md",
+      "bytes": 16763,
+      "sha256": "53d395f5355a2f08fb6c1d275f0050696861952c33cd35a74c9273ad01828e87"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/chapters/14-complexity-limits.md",
+      "bytes": 13539,
+      "sha256": "fed9a9ff3e8d3613468d535cdd616695a10912c22d5282ac30ec944ddc8edd45"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/chapters/15-pagerank.md",
+      "bytes": 17535,
+      "sha256": "c643959b7a6b01c5beb6765d3f0c6f1b3dfac2285691f2ff1d0cbf2e02890bfe"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/chapters/16-pagerank-grammar.md",
+      "bytes": 10841,
+      "sha256": "39ac1c6d8bcd5cbd7e59e494e9157ea38c78e8d703da70a5fa80bec243b16c50"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/chapters/17-ai-systems.md",
+      "bytes": 13536,
+      "sha256": "7be27f6f89b0e1771d0e2e0cf5c54882603a58407c04afe1e4213e6173a3e34b"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/chapters/18-sdk.md",
+      "bytes": 10932,
+      "sha256": "d6f908656bae6619824cfc243d2eb37f64ee2b42da1713750e919d64ccbf950c"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/chapters/19-gaas.md",
+      "bytes": 10823,
+      "sha256": "8adbd78dca5d15115d66dbf5ccf468a02449ed83e77412d5750fc0c0da60e8b5"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/chapters/20-conclusions.md",
+      "bytes": 9022,
+      "sha256": "7a92068e4479200c714a2ad5bc3332a57e0803b5668d64cb9fb0016c30b4e725"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/chapters/a-notation.md",
+      "bytes": 2789,
+      "sha256": "6e595a7dfea0fb9929ad0542899809050d57224bcc2d7691a357b4581e16b777"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/chapters/b-reproducibility.md",
+      "bytes": 1795,
+      "sha256": "5f9f132e2ea0b74f529d325b0dbc2fdcd636c259348ebe6810d344713d38a431"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/glossary.json",
+      "bytes": 10678,
+      "sha256": "d77b463acb48f1be3c57bd2e02c97119cdc492b662fdc663fafd26ca5b1a0631"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/macros.json",
+      "bytes": 700,
+      "sha256": "9eabce8783e19492f72bb051fc4229e90fdb370232e6c7f28c49e2e97229df63"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/pages/feedback.md",
+      "bytes": 6326,
+      "sha256": "5b134f17c2d54268baef90d6a55c7d1f0dbcd78776028ec461c538ec8b7444b7"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/pages/lab.md",
+      "bytes": 3525,
+      "sha256": "7e96e65abfd2fecbeb785e98b1c743cbc6798e365daf82e580ee29dded28162c"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/pages/math-tests.md",
+      "bytes": 3583,
+      "sha256": "1863d6090098a6977cc399f996835114688d9c1e13603ed2c656bba5e4958b75"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/pages/researcher.md",
+      "bytes": 3529,
+      "sha256": "5af9034872da6de2b3d88abf7f21efbea6ef04a96514d94516caf4e21304efd3"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/content/pages/status.md",
+      "bytes": 2067,
+      "sha256": "ad15c3c30b11ce047107927f2def5e80ec426f4a3173667989c62b367f26277a"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/data/experiments.json",
+      "bytes": 50201,
+      "sha256": "9a3d6e8e7de642f83a2b011539ed1092469e37c6591a5aaa3c8a01f2a00a6115"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/data/gaas_capabilities.json",
+      "bytes": 2569,
+      "sha256": "7c4744ea552ee91fd9ec27bc1438e4a369fbf04a7e23cfe11619c4ff19e7bf19"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/data/lab_fixtures.json",
+      "bytes": 14540,
+      "sha256": "b300f3ca86e4f34e6e06822c8d572ed263618cc0c7a130e611cc2c35cf73414f"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/data/ledger_ids.json",
+      "bytes": 1840,
+      "sha256": "9a337bfebe261b3727378854badbc77080080812c7cd4f8eaaf25f463bc7c280"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/data/sdk_reference.json",
+      "bytes": 33530,
+      "sha256": "a87a331793d87dcdd72b6321c85c1b0706343b9a284a7fc7767b2cb309ef5dd4"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/package-lock.json",
+      "bytes": 6151,
+      "sha256": "ddd68f451157b1437030f11fd97d98c253d04ff0b5e0cabbe422baa9d33b0296"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/package.json",
+      "bytes": 952,
+      "sha256": "44504eef783d68dfd1cae38aa1d323cd624679186d07ff40cfb33a7bdbc17620"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/site/assets/css/cgt.css",
+      "bytes": 26101,
+      "sha256": "3438a37f412806a500540d65e9c065ae494ff6c59a2c489109d98d75d11ffb9b"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/site/assets/favicon.svg",
+      "bytes": 346,
+      "sha256": "8b2c5d2ab31aefa1c0022ee514015c4d325bb6d7d531c6ff4dc129316603de51"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/site/assets/js/cgt-core.js",
+      "bytes": 16106,
+      "sha256": "6386ad502cf0c5db84df908b11efdcb1a87775ce36cc91c2622fc17d4d24ba9f"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/site/assets/js/feedback.js",
+      "bytes": 5040,
+      "sha256": "1ceb2a67751f5c53b97bdbaa8781ac232b4cda2a7d6e063f212c24815f79cd86"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/site/assets/js/lab.js",
+      "bytes": 23190,
+      "sha256": "aca7d3e2eb606b8e0b9f3d8e5aaab75c91d42cb858f55931fc742a3beaf93ad2"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/site/assets/js/site.js",
+      "bytes": 5129,
+      "sha256": "ae298c779b12fdb492ab12393130f51e3227389fe43964f3942a4905f7c2cce2"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/site/assets/js/theme-init.js",
+      "bytes": 302,
+      "sha256": "514ec459cc8daea01b193906d8a289f5259cdb9fb38b52c30b66ca45ec32be00"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/site/downloads/computational-grammar-theory.pdf",
+      "bytes": 1936321,
+      "sha256": "846c0973d79315a67b6496f48576804460a693b29019e70e8723470768dfb4d3"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/site/downloads/pdf.json",
+      "bytes": 200,
+      "sha256": "d29496a7928458f60ab738a9a4d0f05b03b2d220228f298f96b758eae610f563"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/tests/core.test.mjs",
+      "bytes": 3285,
+      "sha256": "80759f4650a0ccf7fbdf476390ea538bf05f5dd47316b24f286ad89da5e0d10c"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/tools/build.mjs",
+      "bytes": 50417,
+      "sha256": "54ece994c99ad39420a055a89cab66b32b70c51f90f067a2018f6eeeb0c12bb4"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/tools/check_examples.py",
+      "bytes": 3141,
+      "sha256": "92171f076fb1a36bfc58bf53a6f27a5c0215fb793371f3832b969f6f7f963c5e"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/tools/export_data.py",
+      "bytes": 8251,
+      "sha256": "f4bc1cced7f5726390732d2ba2d195db33bc653840d52f0b02946c08c484fe44"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/tools/linkcheck.mjs",
+      "bytes": 1346,
+      "sha256": "d8a29047ae2256be8548f8521e00c01be0895bef7ad78a029dc8496a683c9bdd"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/tools/pdf.mjs",
+      "bytes": 3048,
+      "sha256": "513141251e3acaee5af7a9246d43771dd6487b81b6fecff9a0d8b9f5188344b6"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/tools/screenshot.mjs",
+      "bytes": 2023,
+      "sha256": "570ffdeb354b51a91f6c2fb05e290aa627ee4a1703b799661edc36836a5cb900"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/tools/serve.mjs",
+      "bytes": 1391,
+      "sha256": "b9bc02cb96c4768dfef4202f4cbe49c11801b1541c5ac4d1778e7cdc6b41134f"
+    },
+    {
+      "path": "sources/repos/computationalgrammartheory/book/tools/shoot-el.mjs",
+      "bytes": 911,
+      "sha256": "3cc2100243aeb3a3615246fbbb394762bb3615d5960ad0628df968cdd6c69dc6"
+    },
+    {
+      "path": "sources/repos/grammarinnumbers/BOOK_OUTLINE.md",
+      "bytes": 5503,
+      "sha256": "384d12b99cb0036394111a8828a6659cf558f9202be9858b550212cbadbef98b"
+    },
+    {
+      "path": "sources/repos/grammarinnumbers/book/content/bibliography.json",
+      "bytes": 25353,
+      "sha256": "edd5d2a406d25d77a7085910367c819c4651ec5264bcdc27fae53ceb6643ccde"
+    },
+    {
+      "path": "sources/repos/grammarinnumbers/book/package.json",
+      "bytes": 179,
+      "sha256": "e6cb88346a43c7baddc0d449000232354c0905037d910d0550a065c6a53e61a0"
+    },
+    {
+      "path": "sources/repos/grammarinnumbers/book/tools/pdf.mjs",
+      "bytes": 4370,
+      "sha256": "b0253766fd571ab15457de5f2c89e94ac819e8ced40c62607540fd60a778e6a8"
+    }
+  ],
+  "historical_unresolved_exact_title": "MISSING-BOOK-OF-FORMS",
+  "book_of_forms_resolution": {
+    "decision": "DEC-004",
+    "source_ref": "SRC-OWNER-CLARIFICATIONS",
+    "status": "INITIAL_EDITION_PRODUCED_AND_EXERCISES_CHECKED",
+    "identity": "New Book of Forms; not a retrieved prior publication"
+  }
+}

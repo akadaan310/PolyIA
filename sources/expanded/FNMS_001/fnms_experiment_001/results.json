@@ -1,0 +1,84 @@
+{
+  "experiment": "FNMS-001",
+  "site_divisions_modified": false,
+  "nodes": 25,
+  "typed_edges": 25,
+  "normalized_intent": "reduce pain located at the head",
+  "latin_constructed": "remedium doloris capitis",
+  "greek_via_medical_latin": "cephalalgia (names headache, not the reliever)",
+  "semantic_candidate_set": [
+    "acetaminophen",
+    "ibuprofen",
+    "naproxen"
+  ],
+  "semantic_fiber_cardinality": 3,
+  "unique_from_intent_alone": false,
+  "semantic_witness": [
+    {
+      "source": "brand",
+      "op": "expresses",
+      "target": "intention",
+      "status": "constructed",
+      "evidence": "composition of head + pain + reliever"
+    },
+    {
+      "source": "intention",
+      "op": "targets_effect",
+      "target": "analgesia",
+      "status": "constructed",
+      "evidence": "headache relief is the target"
+    },
+    {
+      "source": "analgesia",
+      "op": "supported_by",
+      "target": "acetaminophen",
+      "status": "external-source",
+      "evidence": "https://www.fda.gov/drugs/safe-use-over-counter-pain-relievers-and-fever-reducers/acetaminophen"
+    }
+  ],
+  "asserted_identity_witness": [
+    {
+      "source": "brand",
+      "op": "asserted_active",
+      "target": "acetaminophen",
+      "status": "stipulated",
+      "evidence": "user-stipulated hypothetical single-active-ingredient product"
+    }
+  ],
+  "lexical_to_chemical_identity_without_evidence": false,
+  "acetaminophen_synonyms": [
+    "apan",
+    "iupac",
+    "paracetamol"
+  ],
+  "chemical_components": [
+    "amide",
+    "benzene",
+    "para",
+    "phenol"
+  ],
+  "chemical_validation": {
+    "formula": "C8H9NO2",
+    "mass_g_mol": 151.165,
+    "heavy_atoms": 11,
+    "phenol_matches": 1,
+    "amide_matches": 1,
+    "aromatic_six_rings": 1,
+    "regiochemistry": [
+      {
+        "ring_bonds_between_substituents": 3,
+        "relative_position": "para"
+      }
+    ]
+  },
+  "opposition": {
+    "reliever": "delta pain < 0",
+    "aggravator": "delta pain > 0",
+    "mutually_exclusive_under_same_baseline_observation": true
+  },
+  "non_antonyms": [
+    "para vs meta: constitutional isomer alternatives, not logical opposites",
+    "amide vs amine: different chemical classifications, not antonyms",
+    "head vs acetyl: differently typed, not lexical equivalents"
+  ]
+}

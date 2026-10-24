@@ -1,0 +1,757 @@
+{
+  "protocol": "PURL/launch-1",
+  "program": {
+    "id": "resource_bd80f9093ac5fb3b2d176291",
+    "title": "SNAD · Computational Attribution & Transition Grammar",
+    "kind": "mission",
+    "version": 21,
+    "language": "purl",
+    "url": "https://purls-production.up.railway.app/p/resource_bd80f9093ac5fb3b2d176291",
+    "input_schema": {
+      "type": "object",
+      "title": "SNAD live mission state",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "required": [
+        "schema",
+        "mission",
+        "graph",
+        "events",
+        "artifacts",
+        "blockers",
+        "checkpoint",
+        "next"
+      ],
+      "properties": {
+        "next": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "graph": {
+          "type": "object",
+          "required": [
+            "nodes",
+            "edges"
+          ],
+          "properties": {
+            "edges": {
+              "type": "array"
+            },
+            "nodes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "kind",
+                  "dependencies",
+                  "status"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "maxLength": 128,
+                    "minLength": 1
+                  },
+                  "kind": {
+                    "type": "string"
+                  },
+                  "status": {
+                    "enum": [
+                      "PASS",
+                      "FAIL",
+                      "BLOCKED",
+                      "NOT_RUN"
+                    ]
+                  },
+                  "dependencies": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "uniqueItems": true
+                  }
+                }
+              },
+              "maxItems": 128
+            }
+          }
+        },
+        "events": {
+          "type": "array"
+        },
+        "schema": {
+          "const": "snad.mission-state/1"
+        },
+        "mission": {
+          "type": "object",
+          "required": [
+            "id",
+            "status"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "INCOMPLETE",
+                "COMPLETE_WITH_EVIDENCE"
+              ]
+            }
+          }
+        },
+        "blockers": {
+          "type": "array"
+        },
+        "artifacts": {
+          "type": "array"
+        },
+        "checkpoint": {
+          "type": "object"
+        }
+      },
+      "description": "Bounded launch-compatible schema; recorded status remains an author assertion."
+    },
+    "output_schema": {
+      "type": "object",
+      "title": "SNAD live mission state",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "required": [
+        "schema",
+        "mission",
+        "graph",
+        "events",
+        "artifacts",
+        "blockers",
+        "checkpoint",
+        "next"
+      ],
+      "properties": {
+        "next": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "graph": {
+          "type": "object",
+          "required": [
+            "nodes",
+            "edges"
+          ],
+          "properties": {
+            "edges": {
+              "type": "array"
+            },
+            "nodes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "kind",
+                  "dependencies",
+                  "status"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "maxLength": 128,
+                    "minLength": 1
+                  },
+                  "kind": {
+                    "type": "string"
+                  },
+                  "status": {
+                    "enum": [
+                      "PASS",
+                      "FAIL",
+                      "BLOCKED",
+                      "NOT_RUN"
+                    ]
+                  },
+                  "dependencies": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "uniqueItems": true
+                  }
+                }
+              },
+              "maxItems": 128
+            }
+          }
+        },
+        "events": {
+          "type": "array"
+        },
+        "schema": {
+          "const": "snad.mission-state/1"
+        },
+        "mission": {
+          "type": "object",
+          "required": [
+            "id",
+            "status"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "INCOMPLETE",
+                "COMPLETE_WITH_EVIDENCE"
+              ]
+            }
+          }
+        },
+        "blockers": {
+          "type": "array"
+        },
+        "artifacts": {
+          "type": "array"
+        },
+        "checkpoint": {
+          "type": "object"
+        }
+      },
+      "description": "Bounded launch-compatible schema; recorded status remains an author assertion."
+    }
+  },
+  "source": "input json",
+  "operations": [
+    {
+      "name": "source",
+      "method": "POST",
+      "href": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/source",
+      "available": false,
+      "requires": [
+        "active-principal",
+        "resources:write",
+        "resource-owner"
+      ],
+      "effects": [
+        "persisted-state"
+      ],
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "expected_version": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "source": {
+            "type": [
+              "string",
+              "object"
+            ],
+            "description": "Closed pure native PURL source, at most 64 KiB"
+          },
+          "state": {
+            "description": "Finite persistable JSON, at most 64 KiB"
+          }
+        },
+        "required": [
+          "expected_version"
+        ],
+        "anyOf": [
+          {
+            "required": [
+              "source"
+            ]
+          },
+          {
+            "required": [
+              "state"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "compile",
+      "method": "POST",
+      "href": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/compile",
+      "available": false,
+      "requires": [
+        "active-principal",
+        "resources:write",
+        "resource-owner"
+      ],
+      "effects": [
+        "persisted-state"
+      ],
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "expected_version": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "expected_version"
+        ]
+      }
+    },
+    {
+      "name": "build",
+      "method": "POST",
+      "href": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/build",
+      "available": false,
+      "requires": [
+        "active-principal",
+        "resources:write",
+        "resource-owner"
+      ],
+      "effects": [
+        "persisted-state"
+      ],
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "expected_version": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "expected_version"
+        ]
+      }
+    },
+    {
+      "name": "run",
+      "method": "POST",
+      "href": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/run",
+      "available": false,
+      "requires": [
+        "active-principal",
+        "resources:write",
+        "resource-owner"
+      ],
+      "effects": [
+        "persisted-state",
+        "durable-job"
+      ],
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "expected_version": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "input": {
+            "type": "object",
+            "title": "SNAD live mission state",
+            "$schema": "https://json-schema.org/draft/2020-12/schema",
+            "required": [
+              "schema",
+              "mission",
+              "graph",
+              "events",
+              "artifacts",
+              "blockers",
+              "checkpoint",
+              "next"
+            ],
+            "properties": {
+              "next": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "graph": {
+                "type": "object",
+                "required": [
+                  "nodes",
+                  "edges"
+                ],
+                "properties": {
+                  "edges": {
+                    "type": "array"
+                  },
+                  "nodes": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "kind",
+                        "dependencies",
+                        "status"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "maxLength": 128,
+                          "minLength": 1
+                        },
+                        "kind": {
+                          "type": "string"
+                        },
+                        "status": {
+                          "enum": [
+                            "PASS",
+                            "FAIL",
+                            "BLOCKED",
+                            "NOT_RUN"
+                          ]
+                        },
+                        "dependencies": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          },
+                          "uniqueItems": true
+                        }
+                      }
+                    },
+                    "maxItems": 128
+                  }
+                }
+              },
+              "events": {
+                "type": "array"
+              },
+              "schema": {
+                "const": "snad.mission-state/1"
+              },
+              "mission": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "status"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "status": {
+                    "enum": [
+                      "INCOMPLETE",
+                      "COMPLETE_WITH_EVIDENCE"
+                    ]
+                  }
+                }
+              },
+              "blockers": {
+                "type": "array"
+              },
+              "artifacts": {
+                "type": "array"
+              },
+              "checkpoint": {
+                "type": "object"
+              }
+            },
+            "description": "Bounded launch-compatible schema; recorded status remains an author assertion."
+          },
+          "seed": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "expected_version"
+        ]
+      }
+    },
+    {
+      "name": "publish",
+      "method": "POST",
+      "href": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/publish",
+      "available": false,
+      "requires": [
+        "active-principal",
+        "resources:write",
+        "resource-owner"
+      ],
+      "effects": [
+        "persisted-state"
+      ],
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "expected_version": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "visibility": {
+            "type": "string",
+            "enum": [
+              "public",
+              "private"
+            ],
+            "default": "public"
+          }
+        },
+        "required": [
+          "expected_version"
+        ]
+      }
+    },
+    {
+      "name": "checkpoint",
+      "method": "POST",
+      "href": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/checkpoint",
+      "available": false,
+      "requires": [
+        "active-principal",
+        "resources:write",
+        "resource-owner"
+      ],
+      "effects": [
+        "persisted-state"
+      ],
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "expected_version": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "summary": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 6000,
+            "description": "Nonempty author assertion; evidence is not independently verified"
+          },
+          "next": {
+            "type": "array",
+            "description": "Suggested continuation steps; defaults to []"
+          },
+          "evidence": {
+            "type": "array",
+            "description": "Author-supplied evidence references; defaults to []"
+          }
+        },
+        "required": [
+          "expected_version",
+          "summary"
+        ]
+      }
+    },
+    {
+      "name": "fork",
+      "method": "POST",
+      "href": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/fork",
+      "available": false,
+      "requires": [
+        "active-principal",
+        "resources:write"
+      ],
+      "effects": [
+        "persisted-state"
+      ],
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "expected_version": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 180,
+            "description": "Defaults to the original title with a continuation suffix"
+          },
+          "visibility": {
+            "type": "string",
+            "enum": [
+              "private",
+              "public"
+            ],
+            "default": "private"
+          }
+        },
+        "required": [
+          "expected_version"
+        ]
+      }
+    },
+    {
+      "name": "propose",
+      "method": "POST",
+      "href": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/propose",
+      "available": false,
+      "requires": [
+        "active-principal",
+        "resources:write"
+      ],
+      "effects": [
+        "persisted-state"
+      ],
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "expected_version": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "source": {
+            "type": [
+              "string",
+              "object"
+            ],
+            "description": "Closed pure native PURL source, at most 64 KiB"
+          },
+          "state": {
+            "description": "Finite persistable JSON, at most 64 KiB"
+          },
+          "base_version": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "summary": {
+            "type": "string",
+            "maxLength": 4000
+          }
+        },
+        "required": [
+          "expected_version"
+        ],
+        "anyOf": [
+          {
+            "required": [
+              "source"
+            ]
+          },
+          {
+            "required": [
+              "state"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "commit",
+      "method": "POST",
+      "href": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/commit",
+      "available": false,
+      "requires": [
+        "active-principal",
+        "resources:write",
+        "resource-owner"
+      ],
+      "effects": [
+        "persisted-state"
+      ],
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "expected_version": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "proposal_id": {
+            "type": "string",
+            "pattern": "^proposal_[a-f0-9]{24}$"
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "accept",
+              "reject"
+            ]
+          }
+        },
+        "required": [
+          "expected_version",
+          "proposal_id"
+        ]
+      }
+    }
+  ],
+  "authority": {
+    "principal_id": null,
+    "owner": false,
+    "rights": [
+      "read"
+    ]
+  },
+  "links": {
+    "self": "https://purls-production.up.railway.app/p/resource_bd80f9093ac5fb3b2d176291",
+    "source": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/source",
+    "resource": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+    "manifest": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/manifest",
+    "continuity": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/continuity",
+    "history": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/history",
+    "executions": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/executions",
+    "artifacts": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/artifacts",
+    "builds": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/builds",
+    "releases": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/releases",
+    "proposals": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/proposals",
+    "replay": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/replay",
+    "compiler": "https://purls-production.up.railway.app/api/compiler",
+    "sdk": "https://purls-production.up.railway.app/sdk/launch.js"
+  },
+  "continuation": {
+    "checkpoint": {
+      "id": "checkpoint_dabc928853fe383f61bfb1e8",
+      "next": [
+        "Read the current manifest and continuity. Download https://snad-discourse-lab.daintyaspen11.chatgpt.site/snad-mission.tar.gz and verify SHA-256 170d7afcc30d853ee8f3e94d6930594870a87cab0af8159a3d3b59ebb2091624.",
+        "Read https://snad-discourse-lab.daintyaspen11.chatgpt.site/mission/manifest.json; verify its 136 artifact hashes before running source. Manifest source snapshot is 81e7e5db04d0fa48e94e958b92b1b5d14ab02a27.",
+        "If a plain HTTP client receives Cloudflare 403/error 1010, use an ordinary anonymous browser and page-native fetch; no login token required. If unavailable, use /workspace/snad/mission/package/manifest.json and sibling files/ as explicit offline fallback.",
+        "From extracted files/ run npm ci, npm test and npm run build; inspect docs/handoff.md, docs/evidence-report.md and preserved mismatches.",
+        "For native continuation, use disclosed preview authentication, inspect resources:write scope and fork this public SNAD resource at current expected_version; mutate only the owned fork. New guest cannot modify this guest-owner resource after expiry.",
+        "Inspect the embedded automated continuation report (PASS_WITH_LIMITATIONS), including shared-workspace visibility and initial filename search. Do not count this as a human usability session or external-machine isolation proof.",
+        "Next local research: compare conservative withholding of conflicting or unaligned morphology against a separately versioned less-conservative alignment baseline; preserve source corpus, counterexamples and errors.",
+        "Commission real human usability, expert linguistic adjudication and audio validation. GitHub creation and durable verified-owner access remain blocked; public reading grants no mutation authority. Never mutate ISNAAD, FALAK or the previous mission."
+      ],
+      "actor": "guest_D1dOIzi4H4un0KnPKbhqvZRAOMK4thmG0tWIjyJ29eM",
+      "summary": "Final automated continuation checkpoint: a fresh-context participant received only this PURL as narrative context, recovered anonymous browser transport after urllib403, verified the public archive hash, manifest and all136 artifact hashes, compared136 files with source snapshot81e7e5db04d0fa48e94e958b92b1b5d14ab02a27, and passed45 tests/typecheck/build from a fresh public-archive extraction. Report PASS_WITH_LIMITATIONS and complete content are embedded; reportSHA256 7989e0d35d77edd109a909204e611958085c1daabc5a3332ac32c6586ae47915. Shared workspace and initial filename search are disclosed. No human usability, linguistic adjudication or audio verification claimed. Mission remains INCOMPLETE on those boundaries, GitHub403 and verified durable ownership. Native execution verifies typed-state identity/replay only.",
+      "version": 20,
+      "evidence": [
+        {
+          "sha256": "7989e0d35d77edd109a909204e611958085c1daabc5a3332ac32c6586ae47915",
+          "status": "PASS_WITH_LIMITATIONS",
+          "continuationReport": "evidence/continuation-demo.json"
+        },
+        {
+          "sha256": "170d7afcc30d853ee8f3e94d6930594870a87cab0af8159a3d3b59ebb2091624",
+          "sourceCommit": "81e7e5db04d0fa48e94e958b92b1b5d14ab02a27",
+          "publicArchive": "https://snad-discourse-lab.daintyaspen11.chatgpt.site/snad-mission.tar.gz"
+        },
+        {
+          "scope": "Automated participant only; shared workspace, initial filename search disclosed; human usability0 and audio0"
+        },
+        {
+          "execution_id": "execution_e81a8e431e765454781924eb"
+        }
+      ],
+      "created_at": "2026-10-18T20:27:49.991Z",
+      "provenance": "Author assertions; content integrity is checked independently",
+      "state_hash": "sha256:ebbb4624518d33f3fd11c6768bdec077a3518316c64800572f20415b071db3d9",
+      "resource_id": "resource_bd80f9093ac5fb3b2d176291",
+      "evidence_verified": false
+    },
+    "expected_version": 21,
+    "steps": [
+      "GET continuity: it contains every mission document, state, evidence, progress and next steps",
+      "Read source, tests and current authority",
+      "Authenticate only through a disclosed supported flow when authorized",
+      "Fork a public resource under your own principal to continue; owner mutation requires authority",
+      "Compile, build declared tests, run, inspect execution and artifact, checkpoint evidence and publish"
+    ],
+    "disclaimer": "Public reading is not mutation authority. Checkpoint claims and hashes do not certify requirement truth."
+  },
+  "limits": {
+    "history_versions": 200,
+    "artifact_bytes": 65536,
+    "source_bytes": 65536,
+    "state_bytes": 65536,
+    "proposals_per_resource": 200,
+    "proposals_per_actor": 20,
+    "authored_code": "disabled"
+  }
+}

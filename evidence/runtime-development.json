@@ -1,0 +1,386 @@
+{
+  "schema_version": 2,
+  "scope": "Post-review durable bootstrap runtime verification checkpoint; not final package release or full Poly IA commission certification",
+  "observed_at_utc": "2026-10-24T05:12:30.969367+00:00",
+  "runtime_version": "1.1.0",
+  "ledger_schema_version": 2,
+  "implementation_owner": "bootstrap_runtime",
+  "code_status": "FROZEN_FOR_INDEPENDENT_REVIEW",
+  "independent_review_status": "Coordinator owns final scoped re-review disposition; the original findings are preserved",
+  "commission_status": "NOT_COMMISSIONED",
+  "evidence_class": "OBSERVED_LOCAL_TEST_EXECUTION",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "sqlite": "3.53.1"
+  },
+  "runtime_owned_tests": {
+    "store": 55,
+    "cli": 11,
+    "total": 66
+  },
+  "validation_runs": [
+    {
+      "command": "python -m unittest discover -s tests -q",
+      "tests": 107,
+      "permissions": "Approved narrow loopback-only test escalation",
+      "exit_code": 0,
+      "output": "----------------------------------------------------------------------\nRan 107 tests in 4.734s\n\nOK\n"
+    },
+    {
+      "command": "node --test --test-isolation=none --test-reporter=spec web/client.test.mjs",
+      "tests": 7,
+      "permissions": "Approved narrow loopback-only test escalation",
+      "exit_code": 0,
+      "output": "✔ a connection reads real state and a read token cannot issue a command (131.394913ms)\n✔ lost command response keeps the exact command available for idempotent retry (33.168102ms)\n✔ a revision conflict is visible and does not silently replay with a new revision (32.310135ms)\n✔ guidance with malicious markup remains exact data throughout command lifecycle (25.973361ms)\n✔ artifact capture verification acceptance and checkpoint use registered operations (37.992176ms)\n✔ disconnect during a delayed response cannot restore an old session (6.995477ms)\n✔ an incomplete 200 receipt is not reported as command success and can be recovered (24.69084ms)\nℹ tests 7\nℹ suites 0\nℹ pass 7\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 313.638842\n"
+    },
+    {
+      "command": "python -m compileall -q polyia",
+      "permissions": "Default sandbox",
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "remediation": {
+    "review": "docs/INDEPENDENT_RUNTIME_REVIEW.md",
+    "findings": [
+      {
+        "id": "IRR-01",
+        "owner": "bootstrap_runtime",
+        "implementation": "Canonical type-preserving comparison for definitions, stored requests/receipts, materialization and checkpoints; recompute actual stored-state hashes before accepting their equality with replay.",
+        "regressions": [
+          "materialization integer/float and boolean/integer mutation",
+          "receipt boolean/integer and revision integer/float mutation",
+          "recorded request revision integer/float and integer/boolean mutation",
+          "checkpoint integer/float and integer/boolean mutation",
+          "genesis scalar mutation",
+          "refuse next command before revision advance; reject reopening"
+        ],
+        "red": {
+          "exit_code": 1,
+          "output": "test_materialization_scalar_type_corruption_is_never_equal (test_store.StoreTests.test_materialization_scalar_type_corruption_is_never_equal) ... \n  test_materialization_scalar_type_corruption_is_never_equal (test_store.StoreTests.test_materialization_scalar_type_corruption_is_never_equal) (case='integer-to-float') ... FAIL\n  test_materialization_scalar_type_corruption_is_never_equal (test_store.StoreTests.test_materialization_scalar_type_corruption_is_never_equal) (case='boolean-to-integer') ... FAIL\ntest_receipt_and_recorded_request_scalar_types_are_strict (test_store.StoreTests.test_receipt_and_recorded_request_scalar_types_are_strict) ... \n  test_receipt_and_recorded_request_scalar_types_are_strict (test_store.StoreTests.test_receipt_and_recorded_request_scalar_types_are_strict) (column='receipt_json', field='ok', value=1) ... FAIL\n  test_receipt_and_recorded_request_scalar_types_are_strict (test_store.StoreTests.test_receipt_and_recorded_request_scalar_types_are_strict) (column='receipt_json', field='revision', value=1.0) ... FAIL\n  test_receipt_and_recorded_request_scalar_types_are_strict (test_store.StoreTests.test_receipt_and_recorded_request_scalar_types_are_strict) (column='request_json', field='expected_revision', value=0.0) ... FAIL\n  test_receipt_and_recorded_request_scalar_types_are_strict (test_store.StoreTests.test_receipt_and_recorded_request_scalar_types_are_strict) (column='request_json', field='expected_revision', value=False) ... FAIL\ntest_checkpoint_scalar_type_corruption_is_never_equal (test_store.StoreTests.test_checkpoint_scalar_type_corruption_is_never_equal) ... \n  test_checkpoint_scalar_type_corruption_is_never_equal (test_store.StoreTests.test_checkpoint_scalar_type_corruption_is_never_equal) (value=5.0) ... FAIL\n  test_checkpoint_scalar_type_corruption_is_never_equal (test_store.StoreTests.test_checkpoint_scalar_type_corruption_is_never_equal) (value=True) ... FAIL\ntest_genesis_scalar_type_corruption_is_rejected (test_store.StoreTests.test_genesis_scalar_type_corruption_is_rejected) ... ok\n\n======================================================================\nFAIL: test_materialization_scalar_type_corruption_is_never_equal (test_store.StoreTests.test_materialization_scalar_type_corruption_is_never_equal) (case='integer-to-float')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/scratch/d3d55c4f57bd/polyia_commission_v1/tests/test_store.py\", line 415, in test_materialization_scalar_type_corruption_is_never_equal\n    self.assert_corruption_blocks_commands_and_reopen(ledger, database)\n  File \"/workspace/scratch/d3d55c4f57bd/polyia_commission_v1/tests/test_store.py\", line 391, in assert_corruption_blocks_commands_and_reopen\n    self.assertFalse(ledger.verify()[\"ok\"])\nAssertionError: True is not false\n\n======================================================================\nFAIL: test_materialization_scalar_type_corruption_is_never_equal (test_store.StoreTests.test_materialization_scalar_type_corruption_is_never_equal) (case='boolean-to-integer')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/scratch/d3d55c4f57bd/polyia_commission_v1/tests/test_store.py\", line 415, in test_materialization_scalar_type_corruption_is_never_equal\n    self.assert_corruption_blocks_commands_and_reopen(ledger, database)\n  File \"/workspace/scratch/d3d55c4f57bd/polyia_commission_v1/tests/test_store.py\", line 391, in assert_corruption_blocks_commands_and_reopen\n    self.assertFalse(ledger.verify()[\"ok\"])\nAssertionError: True is not false\n\n======================================================================\nFAIL: test_receipt_and_recorded_request_scalar_types_are_strict (test_store.StoreTests.test_receipt_and_recorded_request_scalar_types_are_strict) (column='receipt_json', field='ok', value=1)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/scratch/d3d55c4f57bd/polyia_commission_v1/tests/test_store.py\", line 430, in test_receipt_and_recorded_request_scalar_types_are_strict\n    self.assert_corruption_blocks_commands_and_reopen(ledger, database)\n  File \"/workspace/scratch/d3d55c4f57bd/polyia_commission_v1/tests/test_store.py\", line 391, in assert_corruption_blocks_commands_and_reopen\n    self.assertFalse(ledger.verify()[\"ok\"])\nAssertionError: True is not false\n\n======================================================================\nFAIL: test_receipt_and_recorded_request_scalar_types_are_strict (test_store.StoreTests.test_receipt_and_recorded_request_scalar_types_are_strict) (column='receipt_json', field='revision', value=1.0)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/scratch/d3d55c4f57bd/polyia_commission_v1/tests/test_store.py\", line 430, in test_receipt_and_recorded_request_scalar_types_are_strict\n    self.assert_corruption_blocks_commands_and_reopen(ledger, database)\n  File \"/workspace/scratch/d3d55c4f57bd/polyia_commission_v1/tests/test_store.py\", line 391, in assert_corruption_blocks_commands_and_reopen\n    self.assertFalse(ledger.verify()[\"ok\"])\nAssertionError: True is not false\n\n======================================================================\nFAIL: test_receipt_and_recorded_request_scalar_types_are_strict (test_store.StoreTests.test_receipt_and_recorded_request_scalar_types_are_strict) (column='request_json', field='expected_revision', value=0.0)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/scratch/d3d55c4f57bd/polyia_commission_v1/tests/test_store.py\", line 430, in test_receipt_and_recorded_request_scalar_types_are_strict\n    self.assert_corruption_blocks_commands_and_reopen(ledger, database)\n  File \"/workspace/scratch/d3d55c4f57bd/polyia_commission_v1/tests/test_store.py\", line 391, in assert_corruption_blocks_commands_and_reopen\n    self.assertFalse(ledger.verify()[\"ok\"])\nAssertionError: True is not false\n\n======================================================================\nFAIL: test_receipt_and_recorded_request_scalar_types_are_strict (test_store.StoreTests.test_receipt_and_recorded_request_scalar_types_are_strict) (column='request_json', field='expected_revision', value=False)\n----------------------------------------------------------------------\nTraceback (most recent call",
+          "output_excerpt": true
+        },
+        "green": {
+          "exit_code": 0,
+          "output": "test_materialization_scalar_type_corruption_is_never_equal (test_store.StoreTests.test_materialization_scalar_type_corruption_is_never_equal) ... ok\ntest_receipt_and_recorded_request_scalar_types_are_strict (test_store.StoreTests.test_receipt_and_recorded_request_scalar_types_are_strict) ... ok\ntest_checkpoint_scalar_type_corruption_is_never_equal (test_store.StoreTests.test_checkpoint_scalar_type_corruption_is_never_equal) ... ok\ntest_genesis_scalar_type_corruption_is_rejected (test_store.StoreTests.test_genesis_scalar_type_corruption_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.083s\n\nOK\n",
+          "output_excerpt": false
+        }
+      },
+      {
+        "id": "IRR-02",
+        "owner": "coordinator",
+        "implementation": "Pre-Fraction integer/ratio grammar and integer bit-length admission implemented in polyia/experiments.py by coordinator.",
+        "verification": "Integrated 107-test run includes both numeric preflight regressions and all 19 scientific tests."
+      },
+      {
+        "id": "IRR-03",
+        "owner": "bootstrap_runtime",
+        "implementation": "Preserve complete requirement metadata and capture bounded control registries/runtime sources as immutable BLOBs at genesis and every checkpoint. State source_context records version, descriptors, missing flags, definition binding and executing-science identity; all historical context objects verified without live source IO.",
+        "regressions": [
+          "full scope/mandate/acceptance/authority/source/continuity metadata survives restart",
+          "default initialization binds real package registries even with a different artifact workspace",
+          "custom definitions with no workspace registries are explicitly UNSOURCED",
+          "new checkpoint refreshes changed constitution/manifest/policy and retains old bytes",
+          "old captured context corruption/removal causes failure and rejected reopen",
+          "configuration bool/int metadata differences conflict"
+        ],
+        "red": {
+          "exit_code": 1,
+          "output": "Warning: truncated output (original token count: 12675)\nTotal output lines: 70\n\ntest_requirement_scope_authority_and_acceptance_metadata_survive_restart (test_store.StoreTests.test_requirement_scope_authority_and_acceptance_metadata_survive_restart) ... FAIL\ntest_default_genesis_captures_actual_package_control_manifests (test_store.StoreTests.test_default_genesis_captures_actual_package_control_manifests) ... FAIL\ntest_custom_genesis_without_registries_is_explicitly_unsourced (test_store.StoreTests.test_custom_genesis_without_registries_is_explicitly_unsourced) ... FAIL\ntest_checkpoint_refreshes_context_and_retains_historical_source_bytes (test_store.StoreTests.test_checkpoint_refreshes_context_and_retains_historical_source_bytes) ... FAIL\ntest_old_context_blob_corruption_and_removal_are_detected (test_store.StoreTests.test_old_context_blob_corruption_and_removal_are_detected) ... \n  test_old_context_blob_corruption_and_removal_are_detected (test_store.StoreTests.test_old_context_blob_corruption_and_removal_are_detected) (remove=False) ... FAIL\n  test_old_context_blob_corruption_and_removal_are_detected (test_store.StoreTests.test_old_context_blob_corruption_and_removal_are_detected) (remove=True) ... FAIL\ntest_definition_metadata_scalar_types_cannot_silently_change (test_store.StoreTests.test_definition_metadata_scalar_types_cannot_silently_change) ... FAIL\n\n======================================================================\nFAIL: test_requirement_scope_authority_and_acceptance_metadata_survive_restart (test_store.StoreTests.test_requirement_scope_authority_and_acceptance_metadata_survive_restart)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/scratch/d3d55c4f57bd/polyia_commission_v1/tests/test_store.py\", line 487, in test_requirement_scope_authority_and_acceptance_metadata_survive_restart\n    self.assertEqual(requirement.get(field), requirements[0][field])\nAssertionError: None != 'Keep the complete obligation'\n\n======================================================================\nFAIL: test_default_genesis_captures_actual_package_control_manifests (test_store.StoreTests.test_default_genesis_captures_actual_package_control_manifests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/scratch/d3d55c4f57bd/polyia_commission_v1/tests/test_store.py\", line 495, in test_default_genesis_captures_actual_package_control_manifests\n    self.assertIn(\"source_context\", state)\nAssertionError: 'source_context' not found in {'commission_status': 'NOT_COMMISSIONED', 'guidance': {}, 'latest_checkpoint': None, 'requirements': {'BOOT-001': {'artifacts': [], 'id': 'BOOT-001', 'priority': 5, 'status': 'NOT_STARTED', 'title': 'Captured package artifact integrity', 'verification': None, 'verification_attempts': [], 'verifier': 'artifact-integrity'}, 'BOOT-002': {'artifacts': [], 'id': 'BOOT-002', 'priority': 5, 'status': 'NOT_STARTED', 'title': 'Registered exact scientific seed contracts', 'verification': None, 'verification_attempts': [], 'verifier': 'scientific-contracts'}, 'PIA-001': {'artifacts': [], 'id': 'PIA-001', 'priority': 5, 'status': 'NOT_STARTED', 'title': 'Owner and authority', 'verification': None, 'verification_attempts': [], 'verifier': 'commission-evidence'}, 'PIA-002': {'artifacts': [], 'id': 'PIA-002', 'priority': 5, 'status': 'NOT_STARTED', 'title': 'Unified Option A plus B and C', 'verification': None, 'verification_attempts': [], 'verifier': 'commission-evidence'}, 'PIA-003': {'artifacts': [], 'id': 'PIA-003', 'priority': 5, 'status': 'NOT_STARTED', 'title': 'System identity', 'verification': None, 'verification_attempts': [], 'verifier': 'commission-evidence'}, 'PIA-004': {'artifacts': [], 'id': 'PIA-004', 'priority': 5, 'status': 'NOT_STARTED', 'title': 'Division decision', 'verification': None, 'verification_attempts': [], 'verifier': 'commission-evidence'}, 'PIA-005': {'artifacts': [], 'id': 'PIA-005', 'priority': 5, 'status': 'NOT_STARTED', 'title': 'Native operation without LLM inference', 'verification': None, 'verification_attempts': [], 'verifier': 'commission-evidence'}, 'PIA-006': {'artifacts': [], 'id': 'PIA-006', 'priority': 5, 'status': 'NOT_STARTED', 'title': 'Complete scope and finite acceptance', 'verification': None, 'verification_attempts': [], 'verifier': 'commission-evidence'}, 'PIA-007': {'artifacts': [], 'id': 'PIA-007', 'priority': 5, 'status': 'NOT_STARTED', 'title': 'Source dignity and scientific evidence', 'verification': None, 'verification_attempts': [], 'verifier': 'commission-evidence'}, 'PIA-008': {'artifacts': [], 'id': 'PIA-008', 'priority': 5, 'status': 'NOT_STARTED', 'title': 'First operational deliverable', 'verification': None, 'verification_attempts': [], 'verifier': 'commission-evidence'}, 'PIA-009': {'artifacts': [], 'id': 'PIA-009', 'priority': 5, 'status': 'NOT_STARTED', 'title': 'Operational ordering and autonomy', 'verification': None, 'verification_attempts': [], 'verifier': 'commission-evidence'}, 'PIA-010': {'artifacts': [], 'id': 'PIA-010', 'priority': 5, 'status': 'NOT_STARTED', 'title': 'Truth and novelty', 'verification': None, 'verification_attempts': [], 'verifier': 'commission-evidence'}, 'PIA-011': {'artifacts': [], 'id': 'PIA-011', 'priority': 5, 'status': 'NOT_STARTED', 'title': 'Scope of inherited permissions', 'verification': None, 'verification_attempts': [], 'verifier': 'commission-evidence'}, 'PIA-012': {'artifacts': [], 'id': 'PIA-012', 'priority': 5, 'status': 'NOT_STARTED', 'title': 'Evidence-backed completion', 'verification': None, 'verification_attempts': [], 'verifier': 'commission-evidence'}, 'PIA-013': {'artifacts': [], 'id': 'PIA-013', 'priority': 5, 'status': 'NOT_STARTED', 'title': 'Immutable supplied inputs', 'verification': None, 'verification_attempts': [], 'verifier': 'commission-evidence'}, 'PIA-014': {'artifacts': [], 'id': 'PIA-014', 'priority': 5, 'status': 'NOT_STARTED', 'title': 'Complete canonical repository snapshots', 'verification': None, 'verification_attempts': [], 'verifier': 'commission-evidence'}, 'PIA-015': {'artifacts': [], 'id': 'PIA-015', 'priority': 5, 'status': 'NOT_STARTED', 'title': 'Books and curricular continuity', 'verification': None, 'verification_attempts': [], 'verifier': 'commission-evidence'}, 'PIA-016': {'artifacts': [], 'id': 'PIA-016', 'priority': 5, 'status': 'NOT_STARTED', 'title': 'Original constitutional cro",
+          "output_excerpt": true
+        },
+        "green": {
+          "exit_code": 0,
+          "output": "test_requirement_scope_authority_and_acceptance_metadata_survive_restart (test_store.StoreTests.test_requirement_scope_authority_and_acceptance_metadata_survive_restart) ... ok\ntest_default_genesis_captures_actual_package_control_manifests (test_store.StoreTests.test_default_genesis_captures_actual_package_control_manifests) ... ok\ntest_custom_genesis_without_registries_is_explicitly_unsourced (test_store.StoreTests.test_custom_genesis_without_registries_is_explicitly_unsourced) ... ok\ntest_checkpoint_refreshes_context_and_retains_historical_source_bytes (test_store.StoreTests.test_checkpoint_refreshes_context_and_retains_historical_source_bytes) ... ok\ntest_old_context_blob_corruption_and_removal_are_detected (test_store.StoreTests.test_old_context_blob_corruption_and_removal_are_detected) ... ok\ntest_definition_metadata_scalar_types_cannot_silently_change (test_store.StoreTests.test_definition_metadata_scalar_types_cannot_silently_change) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.167s\n\nOK\n",
+          "output_excerpt": false
+        }
+      },
+      {
+        "id": "IRR-04",
+        "owner": "bootstrap_runtime",
+        "implementation": "Require captured bytes matching the pinned executing scientific kernel. Actual checked kernel/run inputs receive explicit roles; ancillary attachments are separate. Run JSON must match a committed passing acceptance run with exact scalar types and must reproduce. Pin compares loaded code structures, function defaults and literal module constants to the fixed installed source; changed source/code requires restart.",
+        "regressions": [
+          "unrelated note cannot satisfy scientific production",
+          "altered kernel copy cannot satisfy scientific production",
+          "exact copied kernel plus committed run passes with explicit roles",
+          "forged or float-altered run record fails linkage",
+          "live source edit during process produces IMPLEMENTATION_CHANGED",
+          "cached-source literal constant mismatch before first pin refused",
+          "cached-source function default mismatch before first pin refused"
+        ],
+        "red": {
+          "exit_code": 1,
+          "output": "test_unrelated_text_cannot_satisfy_scientific_production (test_store.StoreTests.test_unrelated_text_cannot_satisfy_scientific_production) ... FAIL\ntest_altered_kernel_copy_cannot_satisfy_scientific_production (test_store.StoreTests.test_altered_kernel_copy_cannot_satisfy_scientific_production) ... FAIL\ntest_scientific_inputs_have_exact_kernel_and_linked_run_roles (test_store.StoreTests.test_scientific_inputs_have_exact_kernel_and_linked_run_roles) ... FAIL\ntest_mismatched_or_type_altered_run_receipt_is_not_scientific_evidence (test_store.StoreTests.test_mismatched_or_type_altered_run_receipt_is_not_scientific_evidence) ... \n  test_mismatched_or_type_altered_run_receipt_is_not_scientific_evidence (test_store.StoreTests.test_mismatched_or_type_altered_run_receipt_is_not_scientific_evidence) (change='result') ... FAIL\n  test_mismatched_or_type_altered_run_receipt_is_not_scientific_evidence (test_store.StoreTests.test_mismatched_or_type_altered_run_receipt_is_not_scientific_evidence) (change='scalar-type') ... FAIL\ntest_changed_scientific_source_requires_restart_before_verification (test_store.StoreTests.test_changed_scientific_source_requires_restart_before_verification) ... FAIL\ntest_cached_kernel_with_different_source_constants_is_refused_before_first_pin (test_store.StoreTests.test_cached_kernel_with_different_source_constants_is_refused_before_first_pin) ... FAIL\n\n======================================================================\nFAIL: test_unrelated_text_cannot_satisfy_scientific_production (test_store.StoreTests.test_unrelated_text_cannot_satisfy_scientific_production)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/scratch/d3d55c4f57bd/polyia_commission_v1/tests/test_store.py\", line 591, in test_unrelated_text_cannot_satisfy_scientific_production\n    self.assertEqual(receipt[\"result\"][\"verification\"][\"outcome\"], \"FAIL\")\nAssertionError: 'PASS' != 'FAIL'\n- PASS\n+ FAIL\n\n\n======================================================================\nFAIL: test_altered_kernel_copy_cannot_satisfy_scientific_production (test_store.StoreTests.test_altered_kernel_copy_cannot_satisfy_scientific_production)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/scratch/d3d55c4f57bd/polyia_commission_v1/tests/test_store.py\", line 600, in test_altered_kernel_copy_cannot_satisfy_scientific_production\n    self.assertEqual(receipt[\"result\"][\"verification\"][\"outcome\"], \"FAIL\")\nAssertionError: 'PASS' != 'FAIL'\n- PASS\n+ FAIL\n\n\n======================================================================\nFAIL: test_scientific_inputs_have_exact_kernel_and_linked_run_roles (test_store.StoreTests.test_scientific_inputs_have_exact_kernel_and_linked_run_roles)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/scratch/d3d55c4f57bd/polyia_commission_v1/tests/test_store.py\", line 613, in test_scientific_inputs_have_exact_kernel_and_linked_run_roles\n    self.assertEqual({item.get(\"role\") for item in verification[\"inputs\"]}, {\"executing-kernel\", \"recorded-run\"})\nAssertionError: Items in the first set but not the second:\nNone\nItems in the second set but not the first:\n'recorded-run'\n'executing-kernel'\n\n======================================================================\nFAIL: test_mismatched_or_type_altered_run_receipt_is_not_scientific_evidence (test_store.StoreTests.test_mismatched_or_type_altered_run_receipt_is_not_scientific_evidence) (change='result')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/scratch/d3d55c4f57bd/polyia_commission_v1/tests/test_store.py\", line 634, in test_mismatched_or_type_altered_run_receipt_is_not_scientific_evidence\n    self.assertEqual(result[\"result\"][\"verification\"][\"outcome\"], \"FAIL\")\nAssertionError: 'PASS' != 'FAIL'\n- PASS\n+ FAIL\n\n\n======================================================================\nFAIL: test_mismatched_or_type_altered_run_receipt_is_not_scientific_evidence (test_store.StoreTests.test_mismatched_or_type_altered_run_receipt_is_not_scientific_evidence) (change='scalar-type')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/scratch/d3d55c4f57bd/polyia_commission_v1/tests/test_store.py\", line 634, in test_mismatched_or_type_altered_run_receipt_is_not_scientific_evidence\n    self.assertEqual(result[\"result\"][\"verification\"][\"outcome\"], \"FAIL\")\nAssertionError: 'PASS' != 'FAIL'\n- PASS\n+ FAIL\n\n\n======================================================================\nFAIL: test_changed_scientific_source_requires_restart_before_verification (test_store.StoreTests.test_changed_scientific_source_requires_restart_before_verification)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/scratch/d3d55c4f57bd/polyia_commission_v1/tests/test_store.py\", line 662, in test_changed_scientific_source_requires_restart_before_verification\n    self.assertEqual(verification[\"outcome\"], \"ERROR\")\nAssertionError: 'PASS' != 'ERROR'\n- PASS\n+ ERROR\n\n\n======================================================================\nFAIL: test_cached_kernel_with_different_source_constants_is_refused_before_first_pin (test_store.StoreTests.test_cached_kernel_with_different_source_constants_is_refused_before_first_pin)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/scratch/d3d55c4f57bd/polyia_commission_v1/tests/test_store.py\", line 688, in test_cached_kernel_with_different_source_constants_is_refused_before_first_pin\n    self.assertEqual(json.loads(result.stdout)[\"code\"], \"IMPLEMENTATION_CHANGED\")\nAssertionError: 'INCORRECTLY_ADMITTED' != 'IMPLEMENTATION_CHANGED'\n- INCORRECTLY_ADMITTED\n+ IMPLEMENTATION_CHANGED\n\n\n----------------------------------------------------------------------\nRan 6 tests in 0.206s\n\nFAILED (failures=7)\n",
+          "output_excerpt": false
+        },
+        "green": {
+          "exit_code": 0,
+          "output": "test_unrelated_text_cannot_satisfy_scientific_production (test_store.StoreTests.test_unrelated_text_cannot_satisfy_scientific_production) ... ok\ntest_altered_kernel_copy_cannot_satisfy_scientific_production (test_store.StoreTests.test_altered_kernel_copy_cannot_satisfy_scientific_production) ... ok\ntest_scientific_inputs_have_exact_kernel_and_linked_run_roles (test_store.StoreTests.test_scientific_inputs_have_exact_kernel_and_linked_run_roles) ... ok\ntest_mismatched_or_type_altered_run_receipt_is_not_scientific_evidence (test_store.StoreTests.test_mismatched_or_type_altered_run_receipt_is_not_scientific_evidence) ... ok\ntest_changed_scientific_source_requires_restart_before_verification (test_store.StoreTests.test_changed_scientific_source_requires_restart_before_verification) ... ok\ntest_cached_kernel_with_different_source_constants_is_refused_before_first_pin (test_store.StoreTests.test_cached_kernel_with_different_source_constants_is_refused_before_first_pin) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.320s\n\nOK\n",
+          "output_excerpt": false
+        },
+        "function_default_red": {
+          "exit_code": 1,
+          "output": "test_cached_kernel_with_different_source_defaults_is_refused_before_first_pin (test_store.StoreTests.test_cached_kernel_with_different_source_defaults_is_refused_before_first_pin) ... FAIL\n\n======================================================================\nFAIL: test_cached_kernel_with_different_source_defaults_is_refused_before_first_pin (test_store.StoreTests.test_cached_kernel_with_different_source_defaults_is_refused_before_first_pin)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/scratch/d3d55c4f57bd/polyia_commission_v1/tests/test_store.py\", line 718, in test_cached_kernel_with_different_source_defaults_is_refused_before_first_pin\n    self.assertEqual(json.loads(result.stdout)[\"code\"], \"IMPLEMENTATION_CHANGED\")\nAssertionError: 'INCORRECTLY_ADMITTED' != 'IMPLEMENTATION_CHANGED'\n- INCORRECTLY_ADMITTED\n+ IMPLEMENTATION_CHANGED\n\n\n----------------------------------------------------------------------\nRan 1 test in 0.099s\n\nFAILED (failures=1)\n",
+          "output_excerpt": false
+        },
+        "function_default_green": {
+          "exit_code": 0,
+          "output": "test_cached_kernel_with_different_source_defaults_is_refused_before_first_pin (test_store.StoreTests.test_cached_kernel_with_different_source_defaults_is_refused_before_first_pin) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.119s\n\nOK\n",
+          "output_excerpt": false
+        },
+        "demo_red": {
+          "exit_code": 1,
+          "output": "test_demo_executes_artifact_science_guidance_and_checkpoint_flow (test_cli.CLITests.test_demo_executes_artifact_science_guidance_and_checkpoint_flow) ... FAIL\n\n======================================================================\nFAIL: test_demo_executes_artifact_science_guidance_and_checkpoint_flow (test_cli.CLITests.test_demo_executes_artifact_science_guidance_and_checkpoint_flow)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/scratch/d3d55c4f57bd/polyia_commission_v1/tests/test_cli.py\", line 132, in test_demo_executes_artifact_science_guidance_and_checkpoint_flow\n    report = json.loads(self.run_cli(\"demo\").stdout)\n                        ^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/d3d55c4f57bd/polyia_commission_v1/tests/test_cli.py\", line 38, in run_cli\n    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)\nAssertionError: 2 != 0 : {\n  \"error\": {\n    \"code\": \"INVALID_TRANSITION\",\n    \"message\": \"Acceptance requires current passing verification\"\n  },\n  \"ok\": false\n}\n\n\n----------------------------------------------------------------------\nRan 1 test in 0.178s\n\nFAILED (failures=1)\n",
+          "output_excerpt": false
+        },
+        "demo_green": {
+          "exit_code": 0,
+          "output": "test_demo_executes_artifact_science_guidance_and_checkpoint_flow (test_cli.CLITests.test_demo_executes_artifact_science_guidance_and_checkpoint_flow) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.251s\n\nOK\n",
+          "output_excerpt": false
+        },
+        "fault_injection_note": "Existing failure-retention tests now fault the imported Fraction boundary while leaving pinned registered functions unchanged, and explicitly assert RuntimeError retention."
+      }
+    ]
+  },
+  "source_context_contract": {
+    "default_registry_origin": "installed package",
+    "explicit_custom_definition_registry_origin": "selected workspace",
+    "required_registries": [
+      "registry/constitution.json",
+      "registry/sources.json",
+      "registry/authority.json"
+    ],
+    "optional_registries": [
+      "registry/repositories.json",
+      "registry/inherited_obligations.json"
+    ],
+    "code_paths": [
+      "polyia/__init__.py",
+      "polyia/store.py",
+      "polyia/experiments.py",
+      "polyia/cli.py",
+      "polyia/server.py",
+      "polyia/__main__.py"
+    ],
+    "per_file_limit_bytes": 2097152,
+    "aggregate_limit_bytes": 8388608,
+    "external_corpus_bytes_copied": 0,
+    "unavailable_context_statuses": [
+      "UNSOURCED",
+      "INCOMPLETE"
+    ],
+    "retrieval": "Ledger.get_checkpoint(id) and Ledger.get_blob(sha256)",
+    "migration": "No automatic schema-1 migration; initialize fresh schema-2 release databases."
+  },
+  "file_sha256_at_recording": {
+    "polyia/store.py": "dc88ea766ab2afe4f5426c00e729d228b656f6856f387f838a18d75a5749509a",
+    "polyia/cli.py": "fbc88b11a101f0b3678c7a19266df9a844688226b13feaf5145e3fe407c8adfe",
+    "polyia/__init__.py": "7eb3f316d7989fb09e03205362c5ca20e9a6c27ecd376c1f8d0d7e8b843a4689",
+    "polyia/__main__.py": "0952a82fc4e578988ba64e72bc45884a2a365b90130e04f681c68f8425e6b60f",
+    "tests/test_store.py": "ad725f230617a3633013a5453b68fb3051fbd0988653b192f381397199e41e30",
+    "tests/test_cli.py": "6997a85628100e4e834b1113e2c7c694219e77918e0285c179d48ad6fc24ce50",
+    "docs/BOOTSTRAP_RUNTIME.md": "2ce359391b5ba9b8357604147f0d475efa2d3f309af54e92e4db4c12bdd0a84e",
+    "polyia/experiments.py": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+    "polyia/server.py": "77a77f5bf41772e7811126acbd5334c960cfd8bf395e22a9eb2af27ba13d5534"
+  },
+  "limitations": [
+    "The full mission remains NOT_COMMISSIONED; this checkpoint validates only the implemented bootstrap.",
+    "Final source metadata was still being completed by the coordinator; release clean-unpack/default-context evidence must be captured after the package metadata freeze.",
+    "Context snapshots capture bounded controlling manifests and runtime code, not the complete external corpus or the large supplemental corpus JSON body. Complete package custody remains a separate release gate.",
+    "SOURCED means required context objects were captured; definition_binding separately states MATCH, DIFFERENT or UNAVAILABLE. Capturing changed constitution files does not silently install new obligations.",
+    "Scientific comparison compiles only the fixed installed trusted module as an inert comparison object. Captured uploaded code is never evaluated or installed. Imported standard-library dependencies remain within the recorded trusted runtime boundary.",
+    "Source/kernel changes require restart and fresh verification; this is not a general Python plugin attestation or hot-reload mechanism.",
+    "Tested on Python 3.12.14 / Linux / SQLite 3.53.1. Secure file capture requires POSIX directory descriptors and O_NOFOLLOW.",
+    "The SQLite WAL deployment version preflight is a release-runbook gate; the runtime does not add an independent version allowlist.",
+    "Hash chains provide internal consistency, not signatures or external anchoring; the separate refusal journal is not itself tamper-evident.",
+    "No production deployment, PostgreSQL deployment, load benchmark, distributed recovery or unrestricted autonomous research is claimed."
+  ],
+  "historical_initial_checkpoint": {
+    "schema_version": 1,
+    "scope": "Durable bootstrap runtime development and integration checkpoint; not full Poly IA commissioning or release certification",
+    "observed_at_utc": "2026-10-24T04:49:57.947958+00:00",
+    "implementation_owner": "bootstrap_runtime",
+    "environment": {
+      "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+      "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+      "sqlite": "3.53.1"
+    },
+    "evidence_class": "OBSERVED_LOCAL_TEST_EXECUTION",
+    "commission_status": "NOT_COMMISSIONED",
+    "red_green_history": [
+      {
+        "phase": "Initial durable store contracts",
+        "red": {
+          "command": "python -m unittest discover -s tests -p test_store.py -v",
+          "exit_code": 1,
+          "tests": 21,
+          "failures": 21,
+          "errors": 0,
+          "observation": "Behavioral test setup explicitly asserted absent polyia.store; all 21 failed before implementation."
+        },
+        "green": {
+          "same_command": true,
+          "exit_code": 0,
+          "tests": 21,
+          "failures": 0,
+          "errors": 0
+        }
+      },
+      {
+        "phase": "Process-level CLI and bounded pause behavior",
+        "red": {
+          "command": "python -m unittest discover -s tests -p test_cli.py -v",
+          "exit_code": 1,
+          "tests": 7,
+          "failures": 7,
+          "errors": 0,
+          "observation": "Real CLI subprocesses failed because polyia.__main__ did not exist."
+        },
+        "green": {
+          "same_command": true,
+          "exit_code": 0,
+          "tests": 7,
+          "failures": 0,
+          "errors": 0
+        }
+      },
+      {
+        "phase": "Malformed guidance and live workspace drift",
+        "red": {
+          "command": "python -m unittest discover -s tests -p test_store.py -v",
+          "exit_code": 1,
+          "tests": 28,
+          "failures": 1,
+          "errors": 2,
+          "observation": "Missing drift report; non-string action/disposition caused unhashable-list TypeError before audited refusal."
+        },
+        "green": {
+          "store_tests": 28,
+          "cli_tests": 7,
+          "failures": 0,
+          "errors": 0
+        },
+        "concurrent_suite_limitation": "One in-progress test_experiments import failure was separately reported while the science module was not yet written."
+      },
+      {
+        "phase": "Scientific integration, fault retention, token filenames and demo",
+        "red": {
+          "command": "python -m unittest discover -s tests -v",
+          "exit_code": 1,
+          "tests": 79,
+          "failures": 2,
+          "errors": 20,
+          "owned_failures": [
+            "Demo explicitly unavailable before implementation",
+            "access_token.json was not refused",
+            "Verifier RuntimeError was not retained",
+            "Experiment RuntimeError was not retained"
+          ],
+          "environment_errors": "18 HTTP setups denied socket creation in the default sandbox, separately communicated to coordinator/interface owner."
+        },
+        "green": {
+          "store_tests": 34,
+          "cli_tests": 10,
+          "failures": 0,
+          "errors": 0
+        }
+      },
+      {
+        "phase": "Corrupted schema and malformed genesis opening",
+        "red": {
+          "tests": 2,
+          "failures": 1,
+          "errors": 1,
+          "observation": "Opening silently recreated a deleted checkpoint table; malformed genesis raised raw JSONDecodeError."
+        },
+        "green": {
+          "store_tests": 36,
+          "failures": 0,
+          "errors": 0
+        }
+      },
+      {
+        "phase": "Atomic initialization and safe platform refusal",
+        "red": {
+          "tests": 2,
+          "failures": 1,
+          "errors": 1,
+          "observation": "Invalid initial requirements left partial schema, preventing corrected initialization; disabled O_NOFOLLOW was not refused."
+        },
+        "green": {
+          "store_tests": 38,
+          "failures": 0,
+          "errors": 0
+        }
+      }
+    ],
+    "runtime_owned_tests": {
+      "store": 38,
+      "cli": 11,
+      "total": 49
+    },
+    "additional_process_evidence": [
+      "A child calls Ledger.command and immediately os._exit(23) without returning a receipt or closing SQLite; a distinct CLI process retries the same request and recovers revision 1 with exactly one event.",
+      "A real CLI serve process binds an ephemeral loopback port, commits a bearer-authenticated HTTP checkpoint, exits cleanly on SIGTERM, and another CLI process reads and verifies revision 1.",
+      "Experiment creation uses the real exact core; reopen/replay succeeds while the registered execution boundary is replaced by a fault sentinel that raises if called."
+    ],
+    "validation_runs": [
+      {
+        "command": "python -m unittest discover -s tests -v",
+        "permissions": "Approved narrow local-loopback test escalation",
+        "tests": 84,
+        "exit_code": 0,
+        "output": "test_command_file_retry_reuses_durable_receipt_in_new_process (test_cli.CLITests.test_command_file_retry_reuses_durable_receipt_in_new_process) ... ok\ntest_commit_survives_process_exit_before_receipt_delivery (test_cli.CLITests.test_commit_survives_process_exit_before_receipt_delivery) ... ok\ntest_demo_executes_artifact_science_guidance_and_checkpoint_flow (test_cli.CLITests.test_demo_executes_artifact_science_guidance_and_checkpoint_flow) ... ok\ntest_init_status_verify_across_distinct_processes (test_cli.CLITests.test_init_status_verify_across_distinct_processes) ... ok\ntest_read_commands_do_not_silently_initialize_a_missing_ledger (test_cli.CLITests.test_read_commands_do_not_silently_initialize_a_missing_ledger) ... ok\ntest_serve_process_commits_authenticated_command_and_shuts_down_cleanly (test_cli.CLITests.test_serve_process_commits_authenticated_command_and_shuts_down_cleanly) ... ok\ntest_serve_requires_environment_operator_token (test_cli.CLITests.test_serve_requires_environment_operator_token) ... ok\ntest_stale_cli_command_is_explicit_error_and_leaves_revision (test_cli.CLITests.test_stale_cli_command_is_explicit_error_and_leaves_revision) ... ok\ntest_worker_records_the_requested_finite_number_of_real_runs (test_cli.CLITests.test_worker_records_the_requested_finite_number_of_real_runs) ... ok\ntest_worker_respects_applied_research_pause (test_cli.CLITests.test_worker_respects_applied_research_pause) ... ok\ntest_worker_zero_iterations_does_not_claim_unperformed_experiments (test_cli.CLITests.test_worker_zero_iterations_does_not_claim_unperformed_experiments) ... ok\ntest_acceptance_has_real_positive_and_negative_checks (test_experiments.ScientificContracts.test_acceptance_has_real_positive_and_negative_checks) ... ok\ntest_degree_budget (test_experiments.ScientificContracts.test_degree_budget) ... ok\ntest_divide_by_zero_refused (test_experiments.ScientificContracts.test_divide_by_zero_refused) ... ok\ntest_exact_division_fraction_coefficients (test_experiments.ScientificContracts.test_exact_division_fraction_coefficients) ... ok\ntest_finite_grammar_promoted_and_expanded (test_experiments.ScientificContracts.test_finite_grammar_promoted_and_expanded) ... ok\ntest_grammar_bad_symbol_rejected (test_experiments.ScientificContracts.test_grammar_bad_symbol_rejected) ... ok\ntest_grammar_order_and_identity_do_not_depend_on_dict_order (test_experiments.ScientificContracts.test_grammar_order_and_identity_do_not_depend_on_dict_order) ... ok\ntest_input_coefficients_not_float_or_bool (test_experiments.ScientificContracts.test_input_coefficients_not_float_or_bool) ... ok\ntest_qpath_context_mismatch_refused (test_experiments.ScientificContracts.test_qpath_context_mismatch_refused) ... ok\ntest_qpath_joint_inputs_and_exact_result (test_experiments.ScientificContracts.test_qpath_joint_inputs_and_exact_result) ... ok\ntest_qpath_missing_joint_premise_is_not_reachable (test_experiments.ScientificContracts.test_qpath_missing_joint_premise_is_not_reachable) ... ok\ntest_qpath_type_mismatch_refused (test_experiments.ScientificContracts.test_qpath_type_mismatch_refused) ... ok\ntest_qpath_zero_divisor_and_overwrite_refused (test_experiments.ScientificContracts.test_qpath_zero_divisor_and_overwrite_refused) ... ok\ntest_quotient_derivative_certificate (test_experiments.ScientificContracts.test_quotient_derivative_certificate) ... ok\ntest_short_dividend_and_constant_divisor (test_experiments.ScientificContracts.test_short_dividend_and_constant_divisor) ... ok\ntest_unknown_or_executable_parameters_refused (test_experiments.ScientificContracts.test_unknown_or_executable_parameters_refused) ... ok\ntest_zero_polynomial_no_vacuous_numerical_pass (test_experiments.ScientificContracts.test_zero_polynomial_no_vacuous_numerical_pass) ... ok\ntest_all_private_reads_require_bearer_authorization (test_server.HTTPTests.test_all_private_reads_require_bearer_authorization) ... ok\ntest_ambiguous_framing_headers_are_rejected_before_mutation (test_server.HTTPTests.test_ambiguous_framing_headers_are_rejected_before_mutation) ... ok\ntest_cross_origin_and_host_rebinding_are_refused (test_server.HTTPTests.test_cross_origin_and_host_rebinding_are_refused) ... ok\ntest_duplicate_authorization_host_and_origin_are_not_ambiguous (test_server.HTTPTests.test_duplicate_authorization_host_and_origin_are_not_ambiguous) ... ok\ntest_exact_top_level_schema_cannot_smuggle_status_or_boolean_revision (test_server.HTTPTests.test_exact_top_level_schema_cannot_smuggle_status_or_boolean_revision) ... ok\ntest_guidance_submit_acknowledge_apply_changes_real_state (test_server.HTTPTests.test_guidance_submit_acknowledge_apply_changes_real_state) ... ok\ntest_invalid_event_parameters_and_unknown_paths_are_safe (test_server.HTTPTests.test_invalid_event_parameters_and_unknown_paths_are_safe) ... ok\ntest_json_media_type_and_body_budget_are_enforced (test_server.HTTPTests.test_json_media_type_and_body_budget_are_enforced) ... ok\ntest_known_route_wrong_method_is_safe_and_has_no_cors_wildcard (test_server.HTTPTests.test_known_route_wrong_method_is_safe_and_has_no_cors_wildcard) ... ok\ntest_loopback_binding_and_separate_nonempty_tokens_are_required (test_server.HTTPTests.test_loopback_binding_and_separate_nonempty_tokens_are_required) ... ok\ntest_malformed_nonfinite_duplicate_and_deep_json_are_refused (test_server.HTTPTests.test_malformed_nonfinite_duplicate_and_deep_json_are_refused) ... ok\ntest_operator_and_read_token_can_read_but_read_token_cannot_mutate (test_server.HTTPTests.test_operator_and_read_token_can_read_but_read_token_cannot_mutate) ... ok\ntest_produce_verify_accept_checkpoint_and_integrity_are_real (test_server.HTTPTests.test_produce_verify_accept_checkpoint_and_integrity_are_real) ... ok\ntest_public_https_origin_is_explicit_and_matches_host (test_server.HTTPTests.test_public_https_origin_is_explicit_and_matches_host) ... ok\ntest_public_surface_is_live_but_contains_no_token_or_private_state (test_server.HTTPTests.test_public_surface_is_live_but_contains_no_token_or_private_state) ... ok\ntest_real_command_retry_conflict_receipt_and_resumable_events (test_server.HTTPTests.test_real_command_retry_conflict_receipt_and_resumable_events) ... ok\ntest_two_real_http_writers_cannot_apply_one_revision (test_server.HTTPTests.test_two_real_http_writers_cannot_apply_one_revision) ... ok\ntest_unavailable_command_and_missing_read_have_explicit_safe_errors (test_server.HTTPTests.test_unavailable_command_and_missing_read_have_explicit_safe_errors) ... ok\ntest_accept_requires_current_verification_and_reproduction_invalidates_it (test_store.StoreTests.test_accept_requires_current_verification_and_reproduction_invalidates_it) ... ok\ntest_blob_corruption_is_detected_before_acceptance_and_on_reopen (test_store.StoreTests.test_blob_corruption_is_detected_before_acceptance_and_on_reopen) ... ok\ntest_checkpoint_is_source_linked_and_tampering_is_detected (test_store.StoreTests.test_checkpoint_is_source_linked_and_tampering_is_detected) ... ok\ntest_command_ids_are_scoped_by_actor (test_store.StoreTests.test_command_ids_are_scoped_by_actor) ... ok\ntest_current_state_corruption_is_detected (test_store.StoreTests.test_current_state_corruption_is_detected) ... ok\ntest_empty_artifacts_and_empty_files_are_rejected (test_store.StoreTests.test_empty_artifacts_and_empty_files_are_rejected) ... ok\ntest_event_corruption_is_detected_without_repair (test_store.StoreTests.test_event_corruption_is_detected_without_repair) ... ok\ntest_event_pagination_and_refusal_receipts_are_distinct (test_store.StoreTests.test_event_pagination_and_refusal_receipts_are_distinct) ... ok\ntest_exact_retry_is_idempotent_but_changed_request_conflicts (test_store.StoreTests.test_exact_retry_is_idempotent_but_changed_request_conflicts) ... ok\ntest_experiment_replay_consumes_recorded_result_without_reexecution (test_store.StoreTests.test_experiment_replay_consumes_recorded_result_without_reexecution) ... ok\ntest_experiment_runtime_failure_is_retained_without_success_result (test_store.StoreTests.test_experiment_runtime_failure_is_retained_without_success_result) ... ok\ntest_free_text_guidance_cannot_be_marked_applied (test_store.StoreTests.test_free_text_guidance_cannot_be_marked_applied) ... ok\ntest_genesis_corruption_is_detected (test_store.StoreTests.test_genesis_corruption_is_detected) ... ok\ntest_genesis_has_no_blanket_commission_acceptance (test_store.StoreTests.test_genesis_has_no_blanket_commission_acceptance) ... ok\ntest_guidance_acknowledgment_then_apply_changes_actual_priority (test_store.StoreTests.test_guidance_acknowledgment_then_apply_changes_actual_priority) ... ok\ntest_historical_blobs_remain_checked_after_reproduction (test_store.StoreTests.test_historical_blobs_remain_checked_after_reproduction) ... ok\ntest_invalid_initial_requirements_leave_no_partial_ledger (test_store.StoreTests.test_invalid_initial_requirements_leave_no_partial_ledger) ... ok\ntest_invalid_revision_and_nonobject_payload_are_retained_as_refusals (test_store.StoreTests.test_invalid_revision_and_nonobject_payload_are_retained_as_refusals) ... ok\ntest_missing_command_scope_cannot_mutate (test_store.StoreTests.test_missing_command_scope_cannot_mutate) ... ok\ntest_missing_safe_open_primitive_refuses_capture (test_store.StoreTests.test_missing_safe_open_primitive_refuses_capture) ... ok\ntest_nonstring_action_kind_is_refused_and_audited (test_store.StoreTests.test_nonstring_action_kind_is_refused_and_audited) ... ok\ntest_nonstring_disposition_is_refused_and_audited (test_store.StoreTests.test_nonstring_disposition_is_refused_and_audited) ... ok\ntest_open_does_not_silently_recreate_a_deleted_table (test_store.StoreTests.test_open_does_not_silently_recreate_a_deleted_table) ... ok\ntest_open_reports_malformed_genesis_as_integrity_error (test_store.StoreTests.test_open_reports_malformed_genesis_as_integrity_error) ... ok\ntest_partial_capture_failure_rolls_back_blobs_and_state (test_store.StoreTests.test_partial_capture_failure_rolls_back_blobs_and_state) ... ok\ntest_produce_verify_accept_uses_immutable_captured_bytes (test_store.StoreTests.test_produce_verify_accept_uses_immutable_captured_bytes) ... ok\ntest_receipt_corruption_cannot_forge_an_idempotent_success (test_store.StoreTests.test_receipt_corruption_cannot_forge_an_idempotent_success) ... ok\ntest_refused_scientific_inputs_are_retained_with_no_pass_claim (test_store.StoreTests.test_refused_scientific_inputs_are_retained_with_no_pass_claim) ... ok\ntest_scientific_contracts_run_real_registered_acceptance (test_store.StoreTests.test_scientific_contracts_run_real_registered_acceptance) ... ok\ntest_strict_request_schema_refuses_forged_verifier_result (test_store.StoreTests.test_strict_request_schema_refuses_forged_verifier_result) ... ok\ntest_submitted_guidance_survives_new_instance_with_exact_receipt (test_store.StoreTests.test_submitted_guidance_survives_new_instance_with_exact_receipt) ... ok\ntest_token_named_artifact_is_rejected (test_store.StoreTests.test_token_named_artifact_is_rejected) ... ok\ntest_two_connections_cannot_apply_the_same_revision (test_store.StoreTests.test_two_connections_cannot_apply_the_same_revision) ... ok\ntest_unacknowledged_and_rejected_guidance_cannot_apply (test_store.StoreTests.test_unacknowledged_and_rejected_guidance_cannot_apply) ... ok\ntest_unsafe_secret_runtime_and_escaping_symlink_artifacts_are_rejected (test_store.StoreTests.test_unsafe_secret_runtime_and_escaping_symlink_artifacts_are_rejected) ... ok\ntest_unsupported_verifier_retains_failure_without_acceptance (test_store.StoreTests.test_unsupported_verifier_retains_failure_without_acceptance) ... ok\ntest_verifier_runtime_failure_is_retained_and_cannot_accept (test_store.StoreTests.test_verifier_runtime_failure_is_retained_and_cannot_accept) ... ok\ntest_workspace_drift_is_reported_without_rewriting_captured_history (test_store.StoreTests.test_workspace_drift_is_reported_without_rewriting_captured_history) ... ok\n\n----------------------------------------------------------------------\nRan 84 tests in 2.401s\n\nOK\n"
+      },
+      {
+        "command": "node --test web/client.test.mjs",
+        "permissions": "Approved narrow local-loopback test escalation",
+        "tests": 6,
+        "exit_code": 0,
+        "output": "✔ a connection reads real state and a read token cannot issue a command (89.779657ms)\n✔ lost command response keeps the exact command available for idempotent retry (19.395429ms)\n✔ a revision conflict is visible and does not silently replay with a new revision (18.901986ms)\n✔ guidance with malicious markup remains exact data throughout command lifecycle (24.881993ms)\n✔ artifact capture verification acceptance and checkpoint use registered operations (21.473975ms)\n✔ disconnect during a delayed response cannot restore an old session (6.134545ms)\nℹ tests 6\nℹ suites 0\nℹ pass 6\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 250.094341\n"
+      },
+      {
+        "command": "python -m compileall -q polyia",
+        "permissions": "Default sandbox",
+        "exit_code": 0,
+        "output": ""
+      }
+    ],
+    "environment_failures_resolved": [
+      {
+        "command": "node --test web/client.test.mjs",
+        "exit_code": 1,
+        "reason": "Default sandbox denied the test Python server's socket creation; direct execution exposed PermissionError before client assertions.",
+        "resolution": "The same suite passed all six tests under approved local-loopback escalation."
+      },
+      {
+        "command": "python -m unittest discover -s tests -v",
+        "reason": "Default sandbox denied HTTP test socket creation.",
+        "resolution": "Complete 84-test Python suite passed under approved local-loopback escalation."
+      }
+    ],
+    "file_sha256_at_recording": {
+      "polyia/store.py": "0135303a4d5a2af88df5fb9f34e081471bffb6dfb0667df506eccb2b5b67143e",
+      "polyia/cli.py": "1a32baf53bec74a295c55f6b1874bf5617b8ef07e36550b10d1e55fe59f15211",
+      "polyia/__init__.py": "380052929aa248be253401790c539f4cc2f1c9585c90c649bb08e5fc2418f161",
+      "polyia/__main__.py": "0952a82fc4e578988ba64e72bc45884a2a365b90130e04f681c68f8425e6b60f",
+      "tests/test_store.py": "359cf30785db1eed3185ad1326a4b309e4fce6e865683394d0b8ce378770eb64",
+      "tests/test_cli.py": "6997a85628100e4e834b1113e2c7c694219e77918e0285c179d48ad6fc24ce50",
+      "docs/BOOTSTRAP_RUNTIME.md": "c885c77cadc3bd74dfbf7c2914d3a89b48b960d251ca0a4ee47a289de005f84d",
+      "polyia/experiments.py": "b0e93f726c79f1c2e7c303a4d336f4a00e8f7a4bff7eb9673a493e97e714e355",
+      "polyia/server.py": "77a77f5bf41772e7811126acbd5334c960cfd8bf395e22a9eb2af27ba13d5534"
+    },
+    "limitations": [
+      "The 192 constitutional commission obligations are not accepted by these runtime tests.",
+      "Default constitution registry generation and final source/obligation package coverage are coordinator-owned and were outside this implementation checkpoint.",
+      "Tested with Python 3.12.14 on Linux; secure artifact capture explicitly refuses platforms lacking POSIX directory descriptors/O_NOFOLLOW.",
+      "SQLite and hash-chain tests establish scoped internal consistency, not signatures, external anchoring or malicious-administrator resistance.",
+      "Artifact acceptance refers to immutable captured bytes; live source drift is separately reported.",
+      "The refusal journal is separate from the accepted-state hash chain and is not itself tamper-evident.",
+      "No production deployment, PostgreSQL deployment, distributed recovery, load benchmark or unrestricted autonomous research was claimed.",
+      "The complete chain is replay-verified before each new command; this bootstrap favors inspectability over production-scale throughput.",
+      "Research pause takes effect between serialized bounded commands; the runtime does not preempt a currently executing trusted kernel."
+    ]
+  }
+}

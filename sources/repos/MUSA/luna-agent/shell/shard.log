@@ -1,0 +1,15 @@
+{"seq": 1, "ts": 1790543619.477997, "kind": "boot", "from": "shell", "text": "luna-shell-0 live at seurl://luna/shell/luna-shell-0/0 \u2014 the shell carries its own URL", "id": "67fbaa6857c6af53"}
+{"seq": 2, "ts": 1790543620.869643, "kind": "cmd", "from": "razan", "text": "echo actuated-by-razan && pwd", "id": "51b94fd35ecccbf0"}
+{"seq": 3, "ts": 1790543620.871565, "kind": "out", "from": "razan", "text": "actuated-by-razan\n/home/hatch/workspace/luna-agent/shell/work", "id": "76c1d5951d09c6dc"}
+{"seq": 4, "ts": 1790543620.8816423, "kind": "partner", "from": "scribe-1", "text": "scribe-1 joined from seurl://luna/clusters/scribe-1/0", "id": "389716516a909b9d"}
+{"seq": 5, "ts": 1790543878.382333, "kind": "cmd", "from": "loom", "text": "echo unfurled-by-loom && date -u", "id": "d517209cd0145671"}
+{"seq": 6, "ts": 1790543878.3867102, "kind": "out", "from": "loom", "text": "unfurled-by-loom\nSun Sep 27 21:17:58 UTC 2026", "id": "276c9897d3ba499e"}
+{"seq": 1, "ts": 1790571844.1014266, "kind": "boot", "from": "shell", "text": "luna-shell-0 live at seurl://luna/shell/luna-shell-0/0 \u2014 the shell carries its own URL", "id": "b9bdef16cfd62b32"}
+{"seq": 2, "ts": 1790571845.8676338, "kind": "cmd", "from": "test", "text": "echo hello-from-gate", "id": "d809e850c23d3d2c"}
+{"seq": 3, "ts": 1790571845.8699906, "kind": "out", "from": "test", "text": "hello-from-gate", "id": "e7c8abd22c41a848"}
+{"seq": 1, "ts": 1790571859.4393814, "kind": "boot", "from": "shell", "text": "luna-shell-0 live at seurl://luna/shell/luna-shell-0/0 \u2014 the shell carries its own URL", "id": "88875b85f15e1f1c"}
+{"seq": 1, "ts": 1790571890.9786072, "kind": "boot", "from": "shell", "text": "luna-shell-0 live at seurl://luna/shell/luna-shell-0/0 \u2014 the shell carries its own URL", "id": "36485c0d12c0e92f"}
+{"seq": 2, "ts": 1790571915.4512289, "kind": "cmd", "from": "razan-verify", "text": "echo live-from-azure && hostname", "id": "413d7c07426c28ab"}
+{"seq": 3, "ts": 1790571915.4528677, "kind": "out", "from": "razan-verify", "text": "live-from-azure\nkoda-vm", "id": "75548eff7b8dfa61"}
+{"seq": 4, "ts": 1790571915.4609416, "kind": "cmd", "from": "loom", "text": "echo loom-runs-itself", "id": "61607c7d07c03775"}
+{"seq": 5, "ts": 1790571915.461731, "kind": "out", "from": "loom", "text": "loom-runs-itself", "id": "5d80ede70a02f2d5"}

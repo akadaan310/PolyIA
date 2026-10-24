@@ -1,0 +1,85 @@
+{
+  "warning": "Sample data are illustrative, not linguistic attestations",
+  "result": {
+    "query_segments": [
+      "t",
+      "ə",
+      "p",
+      "ɒ",
+      "l"
+    ],
+    "matches": [
+      {
+        "id": "eng-topology",
+        "surface": "topology",
+        "language": "eng",
+        "matched_prefix": "t ə p ɒ l",
+        "distance": 0.0,
+        "gloss": "topology",
+        "evidence": "illustrative_only",
+        "status": "PHONETIC_CANDIDATE_ONLY",
+        "source": "TEST_FIXTURE_NOT_ATTESTED"
+      },
+      {
+        "id": "eng-topography",
+        "surface": "topography",
+        "language": "eng",
+        "matched_prefix": "t ə p ɒ ɡ",
+        "distance": 0.124,
+        "gloss": "topography",
+        "evidence": "illustrative_only",
+        "status": "PHONETIC_CANDIDATE_ONLY",
+        "source": "TEST_FIXTURE_NOT_ATTESTED"
+      },
+      {
+        "id": "fra-topologie",
+        "surface": "topologie",
+        "language": "fra",
+        "matched_prefix": "t ɔ p ɔ l",
+        "distance": 0.152,
+        "gloss": "topology",
+        "evidence": "illustrative_only",
+        "status": "PHONETIC_CANDIDATE_ONLY",
+        "source": "TEST_FIXTURE_NOT_ATTESTED"
+      },
+      {
+        "id": "arb-topologia-t",
+        "surface": "توبولوجيا",
+        "language": "arb",
+        "matched_prefix": "t u b u l",
+        "distance": 0.182,
+        "gloss": "topology",
+        "evidence": "illustrative_only",
+        "status": "PHONETIC_CANDIDATE_ONLY",
+        "source": "TEST_FIXTURE_NOT_ATTESTED"
+      },
+      {
+        "id": "toy-homophone",
+        "surface": "tapa",
+        "language": "zzz",
+        "matched_prefix": "t ə p ɒ",
+        "distance": 0.2,
+        "gloss": "unrelated hypothetical meaning",
+        "evidence": "illustrative_only",
+        "status": "PHONETIC_CANDIDATE_ONLY",
+        "source": "TEST_FIXTURE_NOT_ATTESTED"
+      },
+      {
+        "id": "arb-topologia-ta",
+        "surface": "طوبولوجيا",
+        "language": "arb",
+        "matched_prefix": "tˤ u b u l",
+        "distance": 0.218,
+        "gloss": "topology",
+        "evidence": "illustrative_only",
+        "status": "PHONETIC_CANDIDATE_ONLY",
+        "source": "TEST_FIXTURE_NOT_ATTESTED"
+      }
+    ],
+    "candidate_pool_size": 6,
+    "algorithm": "bounded_first_segment_plus_weighted_prefix_DP",
+    "completeness": "INCOMPLETE_APPROXIMATE_CANDIDATE_GENERATOR",
+    "historical_inference": false,
+    "semantic_inference": false
+  }
+}

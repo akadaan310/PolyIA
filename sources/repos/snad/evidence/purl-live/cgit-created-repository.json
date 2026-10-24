@@ -1,0 +1,31 @@
+{
+  "repository": {
+    "id": "bc38de95-d5d6-4e40-a56f-ac60a292e989",
+    "name": "SNAD mission artifacts",
+    "owner": "guest_itzXkKsyrsCLPcSb8spT32qilwr9C9YWFWO07uN1wuc",
+    "format": "cgit-artifacts/1",
+    "limits": {
+      "objects": 180,
+      "treePaths": 128,
+      "artifactBytes": 204800,
+      "artifactsPerCommit": 12
+    },
+    "origin": null,
+    "branches": {
+      "main": null
+    },
+    "releases": {},
+    "createdAt": "2026-10-18T20:03:08.583Z",
+    "retention": "Retained until explicit deletion within account fair-use quotas; export for independent backup",
+    "updatedAt": "2026-10-18T20:03:08.583Z",
+    "hashAlgorithm": "sha256",
+    "gitWireProtocol": false
+  },
+  "head": null,
+  "artifacts": [],
+  "resumeCursor": {
+    "repositoryId": "bc38de95-d5d6-4e40-a56f-ac60a292e989",
+    "branch": "main",
+    "head": null
+  }
+}

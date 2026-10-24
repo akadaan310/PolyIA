@@ -1,0 +1,30 @@
+{
+  "resourceId": "resource_bd80f9093ac5fb3b2d176291",
+  "url": "https://purls-production.up.railway.app/p/resource_bd80f9093ac5fb3b2d176291",
+  "version": 21,
+  "principal": {
+    "id": "guest_D1dOIzi4H4un0KnPKbhqvZRAOMK4thmG0tWIjyJ29eM",
+    "kind": "guest",
+    "verified": false,
+    "product": "purls",
+    "products": [
+      "purls"
+    ],
+    "scopes": [
+      "catalog:run",
+      "memory:read",
+      "memory:write",
+      "memory:share",
+      "memory:publish",
+      "resources:read",
+      "resources:write",
+      "models:read"
+    ],
+    "handle": null,
+    "expiresAt": "2026-10-18T20:31:15.741Z"
+  },
+  "nativeProgram": "Typed JSON identity/replay only; SNAD algorithms run in the standalone SDK",
+  "replayValid": true,
+  "credentialPersistence": "process memory only",
+  "continuation": "Read anonymously. A newly authenticated principal must fork. Guest ownership expires after 1800 seconds."
+}

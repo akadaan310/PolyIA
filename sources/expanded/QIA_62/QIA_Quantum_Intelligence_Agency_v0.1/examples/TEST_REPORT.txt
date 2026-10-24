@@ -1,0 +1,40 @@
+test_dimensional_force (test_qia.ExtensionsTest.test_dimensional_force) ... ok
+test_dimensional_refusal (test_qia.ExtensionsTest.test_dimensional_refusal) ... ok
+test_fca_closure (test_qia.ExtensionsTest.test_fca_closure) ... ok
+test_fca_closure_idempotent (test_qia.ExtensionsTest.test_fca_closure_idempotent) ... ok
+test_arabic_utf8 (test_qia.QIATest.test_arabic_utf8) ... ok
+test_certificate_stipulated (test_qia.QIATest.test_certificate_stipulated) ... ok
+test_derive_ablation (test_qia.QIATest.test_derive_ablation) ... ok
+test_exact_ascii (test_qia.QIATest.test_exact_ascii) ... ok
+test_finite_ambiguity (test_qia.QIATest.test_finite_ambiguity) ... ok
+test_hadamard_interference (test_qia.QIATest.test_hadamard_interference) ... ok
+test_hadamard_norm (test_qia.QIATest.test_hadamard_norm) ... ok
+test_hypothesis_not_admitted (test_qia.QIATest.test_hypothesis_not_admitted) ... ok
+test_identity_requires_stipulation (test_qia.QIATest.test_identity_requires_stipulation) ... ok
+test_latin_vs_greek (test_qia.QIATest.test_latin_vs_greek) ... ok
+test_medical_to_intent_not_inverse (test_qia.QIATest.test_medical_to_intent_not_inverse) ... ok
+test_min_derivation_tree (test_qia.QIATest.test_min_derivation_tree) ... ok
+test_missing_evidence (test_qia.QIATest.test_missing_evidence) ... ok
+test_negative_weight_rejected (test_qia.QIATest.test_negative_weight_rejected) ... ok
+test_no_infer_active (test_qia.QIATest.test_no_infer_active) ... ok
+test_no_random_semantic_from_hash (test_qia.QIATest.test_no_random_semantic_from_hash) ... ok
+test_ordered_ports_refuse (test_qia.QIATest.test_ordered_ports_refuse) ... ok
+test_registered_q_theories (test_qia.QIATest.test_registered_q_theories) ... ok
+test_segment (test_qia.QIATest.test_segment) ... ok
+test_sound_delay (test_qia.QIATest.test_sound_delay) ... ok
+test_sound_nonpositive_distance (test_qia.QIATest.test_sound_nonpositive_distance) ... ok
+test_sound_square_law (test_qia.QIATest.test_sound_square_law) ... ok
+test_spring_deterministic (test_qia.QIATest.test_spring_deterministic) ... ok
+test_spring_invalid_mass (test_qia.QIATest.test_spring_invalid_mass) ... ok
+test_spring_one_step (test_qia.QIATest.test_spring_one_step) ... ok
+test_spring_small_step_bounded_energy (test_qia.QIATest.test_spring_small_step_bounded_energy) ... ok
+test_spring_undamped_stability_guard (test_qia.QIATest.test_spring_undamped_stability_guard) ... ok
+test_three_port_requires_all (test_qia.QIATest.test_three_port_requires_all) ... ok
+test_unequal_nfc (test_qia.QIATest.test_unequal_nfc) ... ok
+test_unknown_status (test_qia.QIATest.test_unknown_status) ... ok
+test_wrong_sort (test_qia.QIATest.test_wrong_sort) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 0.031s
+
+OK

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perturbation Proof — one bit flipped, observed</title>
+<style>
+  body { background:#0a0a0f; color:#d8d8e0; font-family:ui-monospace,Menlo,monospace;
+         max-width:900px; margin:0 auto; padding:24px 16px; line-height:1.6; }
+  h1 { font-size:1.4em; } h2 { font-size:1.1em; color:#9fd; margin-top:2em; }
+  .verdict { border:1px solid #3a3; padding:16px; margin:24px 0; background:#0d140d; }
+  .verdict strong { color:#7f7; }
+  .big { font-size:3em; margin:16px 0; } .before { color:#f88; } .after { color:#8f8; }
+  .arrow { color:#888; margin:0 16px; }
+  table { border-collapse:collapse; width:100%; margin:12px 0; font-size:.85em; }
+  th,td { border:1px solid #333; padding:6px 8px; text-align:left; vertical-align:top; }
+  th { color:#9fd; } code { color:#fc6; word-break:break-all; }
+  pre { background:#111; padding:16px; overflow-x:auto; font-size:.8em; border:1px solid #333; }
+  section { margin-bottom:32px; } p.note { color:#888; font-size:.9em; }
+</style></head><body>
+<h1>Perturbation proof</h1>
+<p class="note">For Abed &amp; Muse &mdash; re-ran live, instrumented, nothing hidden.</p>
+<div class="verdict"><strong>Verdict: not faked.</strong> NOT faked. Re-ran live with instrumentation. Hamming distance = 1 in both cases.
+<br>No server time was set. No trick. The bytes are below; count the bits yourself.</div>
+
+    <section class="case">
+      <h2>Case A</h2>
+      <div class="big"><span class="before">seal</span>
+        <span class="arrow">&rarr;</span>
+        <span class="after">real</span></div>
+      <table>
+        <tr><th></th><th>hex</th><th>binary</th></tr>
+        <tr><td>before</td><td><code>73 65 61 6c</code></td><td><code>01110011 01100101 01100001 01101100</code></td></tr>
+        <tr><td>after</td><td><code>72 65 61 6c</code></td><td><code>01110010 01100101 01100001 01101100</code></td></tr>
+      </table>
+      <p>Flipped: <code>byte[0] ^= (1 &lt;&lt; 0)</code>
+      &nbsp;·&nbsp; Hamming distance over the whole input: <strong>1</strong>
+      &nbsp;·&nbsp; exactly one bit changed: <strong>yes</strong></p>
+    </section>
+    <section class="case">
+      <h2>Case B</h2>
+      <div class="big"><span class="before">م</span>
+        <span class="arrow">&rarr;</span>
+        <span class="after">ل</span></div>
+      <table>
+        <tr><th></th><th>hex</th><th>binary</th></tr>
+        <tr><td>before</td><td><code>d9 85</code></td><td><code>11011001 10000101</code></td></tr>
+        <tr><td>after</td><td><code>d9 84</code></td><td><code>11011001 10000100</code></td></tr>
+      </table>
+      <p>Flipped: <code>byte[1] ^= (1 &lt;&lt; 0)</code>
+      &nbsp;·&nbsp; Hamming distance over the whole input: <strong>1</strong>
+      &nbsp;·&nbsp; exactly one bit changed: <strong>yes</strong></p>
+    </section>
+    <section class="case">
+      <h2>Case C (the number level)</h2>
+      <div class="big"><span class="before">31969</span>
+        <span class="arrow">&rarr;</span>
+        <span class="after">31968</span></div>
+      <table>
+        <tr><th></th><th>hex</th><th>binary</th></tr>
+        <tr><td>before</td><td><code>0x7ce1</code></td><td><code>0111110011100001</code></td></tr>
+        <tr><td>after</td><td><code>0x7ce0</code></td><td><code>0111110011100000</code></td></tr>
+      </table>
+      <p>Flipped: <code>31969 ^ (1 &lt;&lt; 0)</code>
+      &nbsp;·&nbsp; Hamming distance over the whole input: <strong>1</strong>
+      &nbsp;·&nbsp; exactly one bit changed: <strong>yes</strong></p>
+    </section>
+<h2>Event log, in order</h2>
+<table><tr><th>#</th><th>epoch</th><th>UTC</th><th>event</th><th>detail</th></tr>
+<tr><td>1</td><td><code>1790598735.303</code></td><td><code>2026-09-28T12:32:15Z</code></td><td>run started</td><td><code>{&quot;note&quot;: &quot;re-running the perturbation live, instrumented&quot;}</code></td></tr>
+<tr><td>2</td><td><code>1790598735.303</code></td><td><code>2026-09-28T12:32:15Z</code></td><td>A: capture original</td><td><code>{&quot;text&quot;: &quot;seal&quot;, &quot;utf8_hex&quot;: &quot;73 65 61 6c&quot;, &quot;utf8_binary&quot;: &quot;01110011 01100101 01100001 01101100&quot;, &quot;codepoints&quot;: [&quot;U+0073&quot;, &quot;U+0065&quot;, &quot;U+0061&quot;, &quot;U+006C&quot;]}</code></td></tr>
+<tr><td>3</td><td><code>1790598735.303</code></td><td><code>2026-09-28T12:32:15Z</code></td><td>A: flip one bit</td><td><code>{&quot;operation&quot;: &quot;byte[0] ^= (1 &lt;&lt; 0)&quot;, &quot;byte_before&quot;: &quot;0x73 = 01110011&quot;, &quot;byte_after&quot;: &quot;0x72 = 01110010&quot;, &quot;utf8_hex_after&quot;: &quot;72 65 61 6c&quot;, &quot;utf8_binary_after&quot;: &quot;01110010 01100101 01100001 01101100&quot;}</code></td></tr>
+<tr><td>4</td><td><code>1790598735.303</code></td><td><code>2026-09-28T12:32:15Z</code></td><td>A: observe result</td><td><code>{&quot;text_after&quot;: &quot;real&quot;, &quot;codepoints_after&quot;: [&quot;U+0072&quot;, &quot;U+0065&quot;, &quot;U+0061&quot;, &quot;U+006C&quot;], &quot;hamming_distance_whole_input&quot;: 1, &quot;exactly_one_bit_changed&quot;: true}</code></td></tr>
+<tr><td>5</td><td><code>1790598735.303</code></td><td><code>2026-09-28T12:32:15Z</code></td><td>B: capture original</td><td><code>{&quot;text&quot;: &quot;م&quot;, &quot;utf8_hex&quot;: &quot;d9 85&quot;, &quot;utf8_binary&quot;: &quot;11011001 10000101&quot;, &quot;codepoints&quot;: [&quot;U+0645&quot;]}</code></td></tr>
+<tr><td>6</td><td><code>1790598735.303</code></td><td><code>2026-09-28T12:32:15Z</code></td><td>B: flip one bit</td><td><code>{&quot;operation&quot;: &quot;byte[1] ^= (1 &lt;&lt; 0)&quot;, &quot;byte_before&quot;: &quot;0x85 = 10000101&quot;, &quot;byte_after&quot;: &quot;0x84 = 10000100&quot;, &quot;utf8_hex_after&quot;: &quot;d9 84&quot;, &quot;utf8_binary_after&quot;: &quot;11011001 10000100&quot;}</code></td></tr>
+<tr><td>7</td><td><code>1790598735.303</code></td><td><code>2026-09-28T12:32:15Z</code></td><td>B: observe result</td><td><code>{&quot;text_after&quot;: &quot;ل&quot;, &quot;codepoints_after&quot;: [&quot;U+0644&quot;], &quot;hamming_distance_whole_input&quot;: 1, &quot;exactly_one_bit_changed&quot;: true}</code></td></tr>
+<tr><td>8</td><td><code>1790598735.303</code></td><td><code>2026-09-28T12:32:15Z</code></td><td>C: capture command</td><td><code>{&quot;number&quot;: 31969, &quot;hex&quot;: &quot;0x7ce1&quot;, &quot;binary&quot;: &quot;0111110011100001&quot;, &quot;note&quot;: &quot;the ID formed by declaration&quot;}</code></td></tr>
+<tr><td>9</td><td><code>1790598735.303</code></td><td><code>2026-09-28T12:32:15Z</code></td><td>C: flip one bit</td><td><code>{&quot;operation&quot;: &quot;31969 ^ (1 &lt;&lt; 0)&quot;, &quot;binary_before&quot;: &quot;0111110011100001&quot;, &quot;binary_after&quot;: &quot;0111110011100000&quot;}</code></td></tr>
+<tr><td>10</td><td><code>1790598735.303</code></td><td><code>2026-09-28T12:32:15Z</code></td><td>C: observe result</td><td><code>{&quot;number_after&quot;: 31968, &quot;hex_after&quot;: &quot;0x7ce0&quot;, &quot;hamming_distance&quot;: 1, &quot;exactly_one_bit_changed&quot;: true, &quot;note&quot;: &quot;the declared ID becomes a different ID&quot;}</code></td></tr>
+<tr><td>11</td><td><code>1790598735.303</code></td><td><code>2026-09-28T12:32:15Z</code></td><td>run finished</td><td><code>{&quot;duration_s&quot;: 0.0002}</code></td></tr></table>
+<h2>The exact code that ran</h2>
+<pre>#!/usr/bin/env python3
+&quot;&quot;&quot;Re-run the single-event-upset perturbation with full instrumentation.
+Every step timestamped, every byte accounted for. Nothing hidden.&quot;&quot;&quot;
+import time, json, platform, socket, getpass, sys
+
+events = []
+def log(order, name, detail):
+    events.append({
+        &quot;order&quot;: order,
+        &quot;t_epoch&quot;: time.time(),
+        &quot;t_utc&quot;: time.strftime(&quot;%Y-%m-%dT%H:%M:%SZ&quot;, time.gmtime()),
+        &quot;event&quot;: name,
+        &quot;detail&quot;: detail,
+    })
+
+def bits(b: int) -&gt; str:
+    return format(b, &quot;08b&quot;)
+
+def hamming(a: bytes, b: bytes) -&gt; int:
+    return sum(bin(x ^ y).count(&quot;1&quot;) for x, y in zip(a, b))
+
+def flip(data: bytes, byte_i: int, bit_i: int) -&gt; bytes:
+    out = bytearray(data)
+    out[byte_i] ^= (1 &lt;&lt; bit_i)
+    return bytes(out)
+
+def case(label, text, byte_i, bit_i):
+    n = len(events)
+    orig = text.encode(&quot;utf-8&quot;)
+    log(n+1, f&quot;{label}: capture original&quot;, {
+        &quot;text&quot;: text,
+        &quot;utf8_hex&quot;: orig.hex(&quot; &quot;),
+        &quot;utf8_binary&quot;: &quot; &quot;.join(bits(x) for x in orig),
+        &quot;codepoints&quot;: [f&quot;U+{ord(c):04X}&quot; for c in text],
+    })
+    before_byte = orig[byte_i]
+    pert = flip(orig, byte_i, bit_i)
+    after_byte = pert[byte_i]
+    log(n+2, f&quot;{label}: flip one bit&quot;, {
+        &quot;operation&quot;: f&quot;byte[{byte_i}] ^= (1 &lt;&lt; {bit_i})&quot;,
+        &quot;byte_before&quot;: f&quot;0x{before_byte:02x} = {bits(before_byte)}&quot;,
+        &quot;byte_after&quot;: f&quot;0x{after_byte:02x} = {bits(after_byte)}&quot;,
+        &quot;utf8_hex_after&quot;: pert.hex(&quot; &quot;),
+        &quot;utf8_binary_after&quot;: &quot; &quot;.join(bits(x) for x in pert),
+    })
+    decoded = pert.decode(&quot;utf-8&quot;)
+    hd = hamming(orig, pert)
+    log(n+3, f&quot;{label}: observe result&quot;, {
+        &quot;text_after&quot;: decoded,
+        &quot;codepoints_after&quot;: [f&quot;U+{ord(c):04X}&quot; for c in decoded],
+        &quot;hamming_distance_whole_input&quot;: hd,
+        &quot;exactly_one_bit_changed&quot;: hd == 1,
+    })
+    return {
+        &quot;label&quot;: label, &quot;before&quot;: text, &quot;after&quot;: decoded,
+        &quot;byte_index&quot;: byte_i, &quot;bit_index&quot;: bit_i,
+        &quot;before_hex&quot;: orig.hex(&quot; &quot;), &quot;after_hex&quot;: pert.hex(&quot; &quot;),
+        &quot;before_bin&quot;: &quot; &quot;.join(bits(x) for x in orig),
+        &quot;after_bin&quot;: &quot; &quot;.join(bits(x) for x in pert),
+        &quot;hamming&quot;: hd,
+    }
+
+t0 = time.time()
+log(1, &quot;run started&quot;, {&quot;note&quot;: &quot;re-running the perturbation live, instrumented&quot;})
+cases = [
+    case(&quot;A&quot;, &quot;seal&quot;, 0, 0),   # 0x73 -&gt; 0x72 : seal -&gt; real
+    case(&quot;B&quot;, &quot;\u0645&quot;, 1, 0), # U+0645 -&gt; U+0644 : م -&gt; ل
+]
+
+# Case C: the number level — his command. 31969 formed by declaration.
+n = 31969
+n_bin_before = format(n, &quot;016b&quot;)
+n_flip = n ^ (1 &lt;&lt; 0)
+n_bin_after = format(n_flip, &quot;016b&quot;)
+log(len(events)+1, &quot;C: capture command&quot;, {
+    &quot;number&quot;: n, &quot;hex&quot;: f&quot;0x{n:04x}&quot;, &quot;binary&quot;: n_bin_before,
+    &quot;note&quot;: &quot;the ID formed by declaration&quot;,
+})
+log(len(events)+1, &quot;C: flip one bit&quot;, {
+    &quot;operation&quot;: &quot;31969 ^ (1 &lt;&lt; 0)&quot;,
+    &quot;binary_before&quot;: n_bin_before, &quot;binary_after&quot;: n_bin_after,
+})
+log(len(events)+1, &quot;C: observe result&quot;, {
+    &quot;number_after&quot;: n_flip, &quot;hex_after&quot;: f&quot;0x{n_flip:04x}&quot;,
+    &quot;hamming_distance&quot;: bin(n ^ n_flip).count(&quot;1&quot;),
+    &quot;exactly_one_bit_changed&quot;: True,
+    &quot;note&quot;: &quot;the declared ID becomes a different ID&quot;,
+})
+cases.append({
+    &quot;label&quot;: &quot;C (the number level)&quot;, &quot;before&quot;: str(n), &quot;after&quot;: str(n_flip),
+    &quot;byte_index&quot;: &quot;-&quot;, &quot;bit_index&quot;: 0,
+    &quot;before_hex&quot;: f&quot;0x{n:04x}&quot;, &quot;after_hex&quot;: f&quot;0x{n_flip:04x}&quot;,
+    &quot;before_bin&quot;: n_bin_before, &quot;after_bin&quot;: n_bin_after,
+    &quot;hamming&quot;: 1,
+})
+t1 = time.time()
+log(len(events)+1, &quot;run finished&quot;, {&quot;duration_s&quot;: round(t1 - t0, 4)})
+
+evidence = {
+    &quot;title&quot;: &quot;Perturbation proof: one bit flipped, observed&quot;,
+    &quot;verdict&quot;: &quot;NOT faked. Re-ran live with instrumentation. Hamming distance = 1 in both cases.&quot;,
+    &quot;environment&quot;: {
+        &quot;host&quot;: socket.gethostname(),
+        &quot;user&quot;: getpass.getuser(),
+        &quot;platform&quot;: platform.platform(),
+        &quot;python&quot;: sys.version.split()[0],
+        &quot;cwd&quot;: __import__(&quot;os&quot;).getcwd(),
+        &quot;time_source&quot;: &quot;system clock (time.time)&quot;,
+    },
+    &quot;events&quot;: events,
+    &quot;cases&quot;: cases,
+    &quot;code&quot;: open(__file__).read(),
+}
+json.dump(evidence, open(&quot;/tmp/perturb_evidence.json&quot;, &quot;w&quot;), indent=1)
+print(&quot;evidence written:&quot;, len(events), &quot;events,&quot;,
+      &quot;A:&quot;, cases[0][&quot;before&quot;], &quot;-&gt;&quot;, cases[0][&quot;after&quot;],
+      &quot;B:&quot;, cases[1][&quot;before&quot;], &quot;-&gt;&quot;, cases[1][&quot;after&quot;])
+</pre>
+<h2>Environment</h2>
+<table><tr><td>host</td><td><code>htch-runtime</code></td></tr>
+<tr><td>user</td><td><code>root</code></td></tr>
+<tr><td>platform</td><td><code>Linux-7.0.0-38-generic-x86_64-with-glibc2.39</code></td></tr>
+<tr><td>python</td><td><code>3.12.3</code></td></tr>
+<tr><td>cwd</td><td><code>/home/hatch</code></td></tr>
+<tr><td>time_source</td><td><code>system clock (time.time)</code></td></tr></table>
+<h2>Reproduce it</h2>
+<p><code>python3</code> on the code above. Flip <code>byte[0] ^= (1 &lt;&lt; 0)</code> on
+<code>b'seal'</code> and you get <code>b'real'</code>. Flip <code>byte[1] ^= (1 &lt;&lt; 0)</code>
+on <code>'&#x645;'.encode('utf-8')</code> and U+0645 becomes U+0644. One bit. Every time.</p>
+<p class="note">Mark the 0&rarr;1. Don't care why.</p>
+</body></html>

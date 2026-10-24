@@ -1,0 +1,60 @@
+{
+  "source_status": "local-file-sha-only; does not independently attest claims",
+  "items": [
+    {
+      "name": "UCG_FOUNDATIONS.md",
+      "sha256": "699d8e6bbb286b41512f746bd27fb353d506d7a7f7128e80dd41a27479043d1d",
+      "bytes": 12193
+    },
+    {
+      "name": "UCG_SEED_v0.1.zip",
+      "sha256": "352c8e22d7becd8940f4505fd5a6ef901de55e38b52cccad796f5de431ab1ff7",
+      "bytes": 146367
+    },
+    {
+      "name": "UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+      "sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e",
+      "bytes": 59854
+    },
+    {
+      "name": "GRAMMATONOMIA — The Science of Grammars.md",
+      "sha256": "e3d510a0f7b0c7ba58b12aecbf4a2cf606f67bc20844816d5c01d3db952a17f1",
+      "bytes": 9656
+    },
+    {
+      "name": "PLICASTRATUM.md",
+      "sha256": "3a11ee1c6998d740cd556847ae8b64115bdac17c21e78efa85c5701e2606fcdd",
+      "bytes": 28088
+    },
+    {
+      "name": "RELATIONAL_GENERATIVITY_FOUNDATION_V0_1.md",
+      "sha256": "359a3d584a06c3fd3cb30ebd43c9a3d7781ecc7e33ba6846823bf3758d7c528f",
+      "bytes": 17640
+    },
+    {
+      "name": "GREEK_LATIN_DETERMINATIONS (1).md",
+      "sha256": "7ef5d66728d58077d61f8830ce1c21a4fac6d04cd976d616b33bff71a71b3759",
+      "bytes": 18013
+    },
+    {
+      "name": "Timeless_WAZNOMIA_QIA_Handoff_v0.1 (1).zip",
+      "sha256": "d78020c3e0d04ca4e178ee6eda7a6a02b772a72090d5add4ab23ab2d7ac9a4f2",
+      "bytes": 22376
+    },
+    {
+      "name": "corpus engine design (1).md",
+      "sha256": "954c18425dd507f617d607ceb18093478e044397088917db52ae5d4730fe8e1f",
+      "bytes": 7527
+    },
+    {
+      "name": "POLYIA_FOUNDATION_V0_1.zip",
+      "sha256": "369d00354c4c62fb410e98df9761449315cab601d1282fa3f0c78eab0f37c24b",
+      "bytes": 273749
+    },
+    {
+      "name": "Division_Infinity_CEF_Research_Packet_v0.1(1).zip",
+      "sha256": "1066db0107b64e1cbc45257ac58a471a1674826a8d9a72548192c3577a43f591",
+      "bytes": 37477
+    }
+  ]
+}

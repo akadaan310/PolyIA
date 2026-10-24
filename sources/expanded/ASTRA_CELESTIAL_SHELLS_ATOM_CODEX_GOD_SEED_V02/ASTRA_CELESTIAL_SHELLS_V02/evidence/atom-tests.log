@@ -1,0 +1,28 @@
+test_bad_economy (test_atom.AtomTests.test_bad_economy) ... ok
+test_bad_plate (test_atom.AtomTests.test_bad_plate) ... ok
+test_bad_receipt (test_atom.AtomTests.test_bad_receipt) ... ok
+test_cannot_skip_checkpoint (test_atom.AtomTests.test_cannot_skip_checkpoint) ... ok
+test_economy (test_atom.AtomTests.test_economy) ... ok
+test_evidence (test_atom.AtomTests.test_evidence) ... ok
+test_focus_sim (test_atom.AtomTests.test_focus_sim) ... ok
+test_lock_is_immutable (test_atom.AtomTests.test_lock_is_immutable) ... ok
+test_model_no_executables (test_atom.AtomTests.test_model_no_executables) ... ok
+test_no_real_gaze (test_atom.AtomTests.test_no_real_gaze) ... ok
+test_old_cp_tamper (test_atom.AtomTests.test_old_cp_tamper) ... ok
+test_parent_checkpoint (test_atom.AtomTests.test_parent_checkpoint) ... ok
+test_plates (test_atom.AtomTests.test_plates) ... ok
+test_policy (test_atom.AtomTests.test_policy) ... ok
+test_prohibit_duplicate (test_atom.AtomTests.test_prohibit_duplicate) ... ok
+test_report_verifies (test_atom.AtomTests.test_report_verifies) ... ok
+test_resume_requires_hold (test_atom.AtomTests.test_resume_requires_hold) ... ok
+test_science (test_atom.AtomTests.test_science) ... ok
+test_sequence (test_atom.AtomTests.test_sequence) ... ok
+test_source_archive_locked_against_later_change (test_atom.AtomTests.test_source_archive_locked_against_later_change) ... ok
+test_unsupported_journey (test_atom.AtomTests.test_unsupported_journey) ... ok
+test_headless_safe_plan (test_atom.DriverTests.test_headless_safe_plan) ... ok
+test_reject_unknown_step (test_atom.DriverTests.test_reject_unknown_step) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.100s
+
+OK

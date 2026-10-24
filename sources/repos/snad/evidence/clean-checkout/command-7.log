@@ -1,0 +1,14 @@
+
+> snad-research@0.1.0 experiments
+> tsx scripts/experiments.ts
+
+{
+  "supportedCandidateObservations": 20,
+  "candidateObservations": 20,
+  "falsifiableHypotheses": 10,
+  "negativeControls": 7,
+  "independentlyReconstructedFiniteResults": 3,
+  "novelDiscoveriesClaimed": 0,
+  "differentialMatchingCases": 9,
+  "differentialMismatchingCases": 13
+}

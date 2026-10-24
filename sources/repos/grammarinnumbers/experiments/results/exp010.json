@@ -1,0 +1,141 @@
+{
+ "experiment": "GIN-EXP-010",
+ "hypotheses": [
+  "GIN-H-025",
+  "GIN-H-026",
+  "GIN-H-027",
+  "GIN-H-028"
+ ],
+ "seed": 10,
+ "environment": {
+  "python": "3.13.16",
+  "implementation": "CPython",
+  "machine": "x86_64",
+  "system": "Linux 6.18.44-fc-v80",
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.80GHz"
+ },
+ "data": {
+  "sieve": {
+   "limit": 1000000,
+   "primes": 78498,
+   "crossings": 2122048,
+   "n_lnln_n": 2625792,
+   "ratio": 0.8082
+  },
+  "pseudoprimes_below_1e6": {
+   "fermat_base2": 245,
+   "strong_base2": 46,
+   "carmichael": 43,
+   "first_fermat_base2": [
+    341,
+    561,
+    645,
+    1105,
+    1387,
+    1729,
+    1905,
+    2047,
+    2465,
+    2701
+   ],
+   "first_strong_base2": [
+    2047,
+    3277,
+    4033,
+    4681,
+    8321,
+    15841,
+    29341,
+    42799,
+    49141,
+    52633
+   ],
+   "first_carmichael": [
+    561,
+    1105,
+    1729,
+    2465,
+    2821,
+    6601,
+    8911,
+    10585,
+    15841,
+    29341
+   ],
+   "published": {
+    "fermat_base2": 245,
+    "strong_base2": 46,
+    "carmichael": 43
+   }
+  },
+  "miller_rabin_vs_sieve": {
+   "checked_odd_n_up_to": 1000000,
+   "disagreements": 0
+  },
+  "trial_division": [
+   {
+    "bits": 11,
+    "prime": 1031,
+    "divisions": 15,
+    "sqrt_n_over_2": 16
+   },
+   {
+    "bits": 15,
+    "prime": 16411,
+    "divisions": 63,
+    "sqrt_n_over_2": 64
+   },
+   {
+    "bits": 19,
+    "prime": 262147,
+    "divisions": 255,
+    "sqrt_n_over_2": 256
+   },
+   {
+    "bits": 23,
+    "prime": 4194319,
+    "divisions": 1023,
+    "sqrt_n_over_2": 1024
+   },
+   {
+    "bits": 27,
+    "prime": 67108879,
+    "divisions": 4095,
+    "sqrt_n_over_2": 4096
+   },
+   {
+    "bits": 31,
+    "prime": 1073741827,
+    "divisions": 16383,
+    "sqrt_n_over_2": 16384
+   }
+  ],
+  "pollard_rho": [
+   {
+    "p_bits": 10,
+    "mean_steps": 25.2,
+    "mean_steps_over_sqrt_p": 0.911
+   },
+   {
+    "p_bits": 14,
+    "mean_steps": 104.7,
+    "mean_steps_over_sqrt_p": 0.966
+   },
+   {
+    "p_bits": 18,
+    "mean_steps": 505.9,
+    "mean_steps_over_sqrt_p": 1.134
+   },
+   {
+    "p_bits": 22,
+    "mean_steps": 1850.0,
+    "mean_steps_over_sqrt_p": 1.052
+   },
+   {
+    "p_bits": 26,
+    "mean_steps": 6284.2,
+    "mean_steps_over_sqrt_p": 0.908
+   }
+  ]
+ }
+}

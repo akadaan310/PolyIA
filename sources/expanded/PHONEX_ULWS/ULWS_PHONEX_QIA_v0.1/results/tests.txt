@@ -1,0 +1,30 @@
+test_approx_not_exhaustive (test_phonex.TestPhonex.test_approx_not_exhaustive) ... ok
+test_bounded_cost (test_phonex.TestPhonex.test_bounded_cost) ... ok
+test_carried_emphatic (test_phonex.TestPhonex.test_carried_emphatic) ... ok
+test_count (test_phonex.TestPhonex.test_count) ... ok
+test_do_not_anywhere_substring (test_phonex.TestPhonex.test_do_not_anywhere_substring) ... ok
+test_dot_not_stripped (test_phonex.TestPhonex.test_dot_not_stripped) ... ok
+test_duplicate_id_refused (test_phonex.TestPhonex.test_duplicate_id_refused) ... ok
+test_emphatic (test_phonex.TestPhonex.test_emphatic) ... ok
+test_emphatic_near (test_phonex.TestPhonex.test_emphatic_near) ... ok
+test_exact_prefix_index (test_phonex.TestPhonex.test_exact_prefix_index) ... ok
+test_full_candidate_metadata (test_phonex.TestPhonex.test_full_candidate_metadata) ... ok
+test_no_etymology (test_phonex.TestPhonex.test_no_etymology) ... ok
+test_no_fake_literal_ipa_seg (test_phonex.TestPhonex.test_no_fake_literal_ipa_seg) ... ok
+test_no_semantic_proof (test_phonex.TestPhonex.test_no_semantic_proof) ... ok
+test_p_b_close (test_phonex.TestPhonex.test_p_b_close) ... ok
+test_prefix_topology (test_phonex.TestPhonex.test_prefix_topology) ... ok
+test_qstring_changes (test_phonex.TestPhonex.test_qstring_changes) ... ok
+test_qstring_deterministic (test_phonex.TestPhonex.test_qstring_deterministic) ... ok
+test_query_refused (test_phonex.TestPhonex.test_query_refused) ... ok
+test_same_phone (test_phonex.TestPhonex.test_same_phone) ... ok
+test_source_attestation (test_phonex.TestPhonex.test_source_attestation) ... ok
+test_status (test_phonex.TestPhonex.test_status) ... ok
+test_two_meanings_not_collapsed (test_phonex.TestPhonex.test_two_meanings_not_collapsed) ... ok
+test_unknown_features (test_phonex.TestPhonex.test_unknown_features) ... ok
+test_vowels (test_phonex.TestPhonex.test_vowels) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.002s
+
+OK

@@ -1,0 +1,442 @@
+{
+  "schema": "snad.service-discovery/1",
+  "observedAt": "2026-10-18T19:59:37.929270+00:00",
+  "mode": "read-only-discovery",
+  "httpOutcomes": [
+    {
+      "key": "cgit_app",
+      "url": "https://cgit-hub-production.up.railway.app/cgit/app.js",
+      "observedAt": "2026-10-18T19:57:24.143515+00:00",
+      "method": "GET",
+      "status": 200,
+      "sha256": "f1ee89d7a91b04262b7727d67980d953615c780610fd25c63ee59f91ddc86b85",
+      "bytes": 26515,
+      "contentType": "text/javascript; charset=utf-8",
+      "authSent": false
+    },
+    {
+      "key": "cgit_discovery",
+      "url": "https://cgit-hub-production.up.railway.app/.well-known/purl",
+      "observedAt": "2026-10-18T19:58:01.602471+00:00",
+      "method": "GET",
+      "status": 200,
+      "sha256": "add29fea61d8446c3f15fcd4fd19778234a178af751897997360ace9be129d31",
+      "bytes": 1204,
+      "contentType": "application/purl+json; charset=utf-8",
+      "authSent": false,
+      "snapshot": "schemas/external/cgit_discovery.json",
+      "snapshotSha256": "7892efa0b7425c9c19c2ae64cb2253749e9e3d91c491674d43fd84c9372bf46a"
+    },
+    {
+      "key": "cgit_health",
+      "url": "https://cgit-hub-production.up.railway.app/healthz",
+      "observedAt": "2026-10-18T19:58:01.607330+00:00",
+      "method": "GET",
+      "status": 200,
+      "sha256": "8d263d50bd2364c6ef2302880219adb1d4c55a825dc015e99c2d660b2adaf936",
+      "bytes": 123,
+      "contentType": "application/purl+json; charset=utf-8",
+      "authSent": false,
+      "snapshot": "schemas/external/cgit_health.json",
+      "snapshotSha256": "3e9a543b9b013a16f62837b48e8ad6b89f8cebae68bc85bdf88a6f67166279a8"
+    },
+    {
+      "key": "cgit_home",
+      "url": "https://cgit-hub-production.up.railway.app",
+      "observedAt": "2026-10-18T19:57:06.067779+00:00",
+      "method": "GET",
+      "status": 200,
+      "sha256": "3146a53ab47f5a109a243b97dac1e651ad7f295779924cb1dee5b4f6c541832e",
+      "bytes": 1238,
+      "contentType": null,
+      "authSent": false
+    },
+    {
+      "key": "cgit_identity_config",
+      "url": "https://cgit-hub-production.up.railway.app/api/identity/config",
+      "observedAt": "2026-10-18T19:57:24.130688+00:00",
+      "method": "GET",
+      "status": 200,
+      "sha256": "86f8c81370d188ffdb9d72edb27e7213151dfc1ac591fcdc078f55472b4f4e13",
+      "bytes": 410,
+      "contentType": "application/purl+json; charset=utf-8",
+      "authSent": false,
+      "snapshotRedaction": [
+        "csrf_token"
+      ],
+      "snapshot": "schemas/external/cgit_identity_config.redacted.json",
+      "snapshotSha256": "6db87e3d45c486a0eafa4db10ef86957f6a7a397d98628607f6a49ad9694ae04"
+    },
+    {
+      "key": "cgit_me",
+      "url": "https://cgit-hub-production.up.railway.app/api/identity/me",
+      "observedAt": "2026-10-18T19:58:01.873172+00:00",
+      "method": "GET",
+      "status": 401,
+      "sha256": "b4dda9f1c4fc7c3def8553c0c89fac9b6482a513c3d61bd10fd355f31504dd8a",
+      "bytes": 95,
+      "contentType": "application/purl+json; charset=utf-8",
+      "authSent": false,
+      "snapshot": "schemas/external/cgit_me.json",
+      "snapshotSha256": "11f72ef1940e7b0f95e6341d9e3d8f15531d4ba4dbb3bc196c0e25977837297b"
+    },
+    {
+      "key": "cgit_repos",
+      "url": "https://cgit-hub-production.up.railway.app/api/cgit/repos",
+      "observedAt": "2026-10-18T19:57:24.131432+00:00",
+      "method": "GET",
+      "status": 401,
+      "sha256": "18cc226af49c95e0b66037447d53138fbf37d408d25c101584295a15e1f6524b",
+      "bytes": 104,
+      "contentType": "application/purl+json; charset=utf-8",
+      "authSent": false,
+      "snapshot": "schemas/external/cgit_repos.json",
+      "snapshotSha256": "066f3f5f45b799a3f1a069086718a42116575ce4ea0e8785fb0817731b2d72d3"
+    },
+    {
+      "key": "cgit_runtime",
+      "url": "https://cgit-hub-production.up.railway.app/api/runtime",
+      "observedAt": "2026-10-18T19:58:01.603029+00:00",
+      "method": "GET",
+      "status": 200,
+      "sha256": "c15ecf5da18869c630a8eee9393812ab617a95aba266a0c966edfb3aeb0336a7",
+      "bytes": 1156,
+      "contentType": "application/purl+json; charset=utf-8",
+      "authSent": false,
+      "snapshot": "schemas/external/cgit_runtime.json",
+      "snapshotSha256": "258bc0c2ecd19efb6aca3c3414bb299e40f4efc897fa608ee1323ec84e4f691a"
+    },
+    {
+      "key": "purl_branch",
+      "url": "https://api.github.com/repos/akadaan310/purl/commits/codex/purls-cgit-consumer",
+      "observedAt": "2026-10-18T19:57:06.068635+00:00",
+      "method": "GET",
+      "status": 200,
+      "sha256": "e12d1ebf2ac5ac41218589cd786272f46330998d07a671f4863b0fcca5d7f72e",
+      "bytes": 356500,
+      "contentType": null,
+      "authSent": false
+    },
+    {
+      "key": "purl_compiler",
+      "url": "https://purls-production.up.railway.app/api/compiler",
+      "observedAt": "2026-10-18T19:57:24.129127+00:00",
+      "method": "GET",
+      "status": 200,
+      "sha256": "f15ccc25041d5679a15b63b534e849d39af76058330b8b5ad0bc96aaa2e5a8b2",
+      "bytes": 613,
+      "contentType": "application/purl+json; charset=utf-8",
+      "authSent": false,
+      "snapshot": "schemas/external/purl_compiler.json",
+      "snapshotSha256": "47d809524ebab3eb843c60ef0ccb1a16d364d1e139d32b09ffb5fc3b209949aa"
+    },
+    {
+      "key": "purl_config",
+      "url": "https://purls-production.up.railway.app/api/config",
+      "observedAt": "2026-10-18T19:58:01.600447+00:00",
+      "method": "GET",
+      "status": 200,
+      "sha256": "b61a28d92d04d86fda7309211b5197c76950af1c37bd2f2c002a7c658b6995f3",
+      "bytes": 719,
+      "contentType": "application/purl+json; charset=utf-8",
+      "authSent": false,
+      "snapshot": "schemas/external/purl_config.json",
+      "snapshotSha256": "aebf5b647e1cde736d5ad735b1a4f75a7e2403616dd294b0f4878435c044133d"
+    },
+    {
+      "key": "purl_continuity",
+      "url": "https://purls-production.up.railway.app/api/resources/resource_95a5662789076892fe698316/continuity",
+      "observedAt": "2026-10-18T19:57:24.129964+00:00",
+      "method": "GET",
+      "status": 200,
+      "sha256": "080c9be604cb0ed51a8322695610c3e52371897ee80b27f50e9794a821c5c159",
+      "bytes": 49512,
+      "contentType": "application/purl+json; charset=utf-8",
+      "authSent": false
+    },
+    {
+      "key": "purl_discovery",
+      "url": "https://purls-production.up.railway.app/.well-known/purl",
+      "observedAt": "2026-10-18T19:58:01.598925+00:00",
+      "method": "GET",
+      "status": 200,
+      "sha256": "4c7bbb4d4122c6adfb8b51ea642aa8a899368d7fdaef4443d20d0d11420f2beb",
+      "bytes": 1168,
+      "contentType": "application/purl+json; charset=utf-8",
+      "authSent": false,
+      "snapshot": "schemas/external/purl_discovery.json",
+      "snapshotSha256": "319e824756470c2cb382e1758ad31e36f6eb504ff6ecd97150f5fc954c88f76a"
+    },
+    {
+      "key": "purl_handoff",
+      "url": "https://raw.githubusercontent.com/akadaan310/purl/codex/purls-cgit-consumer/docs/consumer-launch/HANDOFF.txt",
+      "observedAt": "2026-10-18T19:57:06.068130+00:00",
+      "method": "GET",
+      "status": 200,
+      "sha256": "7ef2e063a56eac546930346aba60b7223b4141a2fc7cae9ffc9e0eb1e879a846",
+      "bytes": 7672,
+      "contentType": null,
+      "authSent": false,
+      "snapshot": "schemas/external/purl-HANDOFF.txt",
+      "snapshotSha256": "7ef2e063a56eac546930346aba60b7223b4141a2fc7cae9ffc9e0eb1e879a846"
+    },
+    {
+      "key": "purl_health",
+      "url": "https://purls-production.up.railway.app/healthz",
+      "observedAt": "2026-10-18T19:58:01.599911+00:00",
+      "method": "GET",
+      "status": 200,
+      "sha256": "4782ec19be4ba82756fcb916abb257902dd0481efcd407317216f66759b7c97a",
+      "bytes": 124,
+      "contentType": "application/purl+json; charset=utf-8",
+      "authSent": false,
+      "snapshot": "schemas/external/purl_health.json",
+      "snapshotSha256": "49711d7a8ea1e74f866bdfcebe906f057af24e3d32258e37a202a5028c4d7e1d"
+    },
+    {
+      "key": "purl_home",
+      "url": "https://purls-production.up.railway.app",
+      "observedAt": "2026-10-18T19:57:06.066961+00:00",
+      "method": "GET",
+      "status": 200,
+      "sha256": "1fcd07b1dd9102cab3d55933d4a745892966795d63356f50b63583225c961e08",
+      "bytes": 1599,
+      "contentType": null,
+      "authSent": false
+    },
+    {
+      "key": "purl_identity_config",
+      "url": "https://purls-production.up.railway.app/api/identity/config",
+      "observedAt": "2026-10-18T19:57:24.127964+00:00",
+      "method": "GET",
+      "status": 200,
+      "sha256": "37e6b5a7b95988a851e0cf3f74d4b9ff530e670877f0e4afea968453f304f97c",
+      "bytes": 408,
+      "contentType": "application/purl+json; charset=utf-8",
+      "authSent": false,
+      "snapshotRedaction": [
+        "csrf_token"
+      ],
+      "snapshot": "schemas/external/purl_identity_config.redacted.json",
+      "snapshotSha256": "fbe8fd37a43f64e7303c3b8ed53fae9b0b78553ac889d13a5de98dcd76b7d00b"
+    },
+    {
+      "key": "purl_manifest",
+      "url": "https://purls-production.up.railway.app/api/resources/resource_95a5662789076892fe698316/manifest",
+      "observedAt": "2026-10-18T19:57:06.066498+00:00",
+      "method": "GET",
+      "status": 200,
+      "sha256": "cc56d9e7847b0c68693708118663f8b23fbc7cf05fbb219fff6470c61ecab20d",
+      "bytes": 10092,
+      "contentType": null,
+      "authSent": false,
+      "snapshot": "schemas/external/purl_manifest.json",
+      "snapshotSha256": "74ee09878ebf781d1d60f053c6aa05698bf6c713039ebae91f161d82efffe77a"
+    },
+    {
+      "key": "purl_me",
+      "url": "https://purls-production.up.railway.app/api/identity/me",
+      "observedAt": "2026-10-18T19:58:01.600886+00:00",
+      "method": "GET",
+      "status": 401,
+      "sha256": "b4dda9f1c4fc7c3def8553c0c89fac9b6482a513c3d61bd10fd355f31504dd8a",
+      "bytes": 95,
+      "contentType": "application/purl+json; charset=utf-8",
+      "authSent": false,
+      "snapshot": "schemas/external/purl_me.json",
+      "snapshotSha256": "11f72ef1940e7b0f95e6341d9e3d8f15531d4ba4dbb3bc196c0e25977837297b"
+    },
+    {
+      "key": "purl_mission",
+      "url": "https://purls-production.up.railway.app/p/resource_95a5662789076892fe698316",
+      "observedAt": "2026-10-18T19:57:06.065418+00:00",
+      "method": "GET",
+      "status": 200,
+      "sha256": "1fcd07b1dd9102cab3d55933d4a745892966795d63356f50b63583225c961e08",
+      "bytes": 1599,
+      "contentType": null,
+      "authSent": false
+    },
+    {
+      "key": "purl_runtime",
+      "url": "https://purls-production.up.railway.app/api/runtime",
+      "observedAt": "2026-10-18T19:58:01.599539+00:00",
+      "method": "GET",
+      "status": 200,
+      "sha256": "80e79e959297d5fb5785c9ac569ea2311f49f56b455ec993fdec1d68206889c8",
+      "bytes": 1157,
+      "contentType": "application/purl+json; charset=utf-8",
+      "authSent": false,
+      "snapshot": "schemas/external/purl_runtime.json",
+      "snapshotSha256": "d71db25367feca239a7dec1ccaa928c20e26039dd1dc06dae54b4bc542b68833"
+    },
+    {
+      "key": "purl_sdk",
+      "url": "https://purls-production.up.railway.app/sdk/launch.js",
+      "observedAt": "2026-10-18T19:57:24.129554+00:00",
+      "method": "GET",
+      "status": 200,
+      "sha256": "7e195c72e3db43f52bc1af07a4ec77b491dd2f30d942a3a88fdaa769254893d0",
+      "bytes": 3259,
+      "contentType": "text/javascript; charset=utf-8",
+      "authSent": false
+    },
+    {
+      "key": "purl_session",
+      "url": "https://purls-production.up.railway.app/api/identity/session",
+      "observedAt": "2026-10-18T19:57:24.128726+00:00",
+      "method": "GET",
+      "status": 404,
+      "sha256": "015da53ddc545ca7ea0d33878f20bc78ccb88ea13333d06a96c4b1f78f2cf9c4",
+      "bytes": 71,
+      "contentType": "application/purl+json; charset=utf-8",
+      "authSent": false,
+      "snapshot": "schemas/external/purl_session.json",
+      "snapshotSha256": "c3328057de09e820986f2d802c993fe38d40d393cbf65e71b2ed4eccabff1a7f"
+    }
+  ],
+  "sources": {
+    "repository": "https://github.com/akadaan310/purl",
+    "branch": "codex/purls-cgit-consumer",
+    "branchCommit": "375529019fbbe467303645d5ccde5f783946a78a",
+    "deployedApiCommit": "367e8ed063065cb8bc9ebb8c9fc55235b4828723",
+    "deployedApiCommitEvidence": [
+      "purl_runtime",
+      "cgit_runtime"
+    ],
+    "workerCommitClaim": "3b2784b7f9bb217954ef75c5f8e4985c748e4627",
+    "workerCommitEvidence": "HANDOFF.txt assertion, not independently observed worker runtime",
+    "fileComparisons": [
+      {
+        "path": "service/launch/resources.js",
+        "deployedSha256": "ad4a3460f1b64304330c3e847c21696624620ef458b2b6ef5c8dab77bbe03a0f",
+        "branchBytesMatch": true
+      },
+      {
+        "path": "service/launch/cgit.js",
+        "deployedSha256": "cca9f2244acfc36d97864c8c01475035d1919aefa285a3978918cc7ce4c621ad",
+        "branchBytesMatch": true
+      },
+      {
+        "path": "service/launch/http.js",
+        "deployedSha256": "6bb05fbd081b71a2e71d82b2de39755181396207b4d9cf0817623d808b8e010b",
+        "branchBytesMatch": true
+      },
+      {
+        "path": "service/launch/identity.js",
+        "deployedSha256": "cd7e072625d171ea1b44d06d8d2af83facaa0e7d957dd5d1b450482fb8c42012",
+        "branchBytesMatch": true
+      },
+      {
+        "path": "service/compiler.js",
+        "deployedSha256": "c7c6a83c5930463ae1c3f1442e8d6defeb3d289cc812bebe5a034490801a6c81",
+        "branchBytesMatch": true
+      },
+      {
+        "path": "service/domain/schema.js",
+        "deployedSha256": "3dd2e16a7c62444fef66fcd763242e8f9ce739318cb1900b00ad8415c90bf502",
+        "branchBytesMatch": true
+      },
+      {
+        "path": "sdk/launch.js",
+        "deployedSha256": "7e195c72e3db43f52bc1af07a4ec77b491dd2f30d942a3a88fdaa769254893d0",
+        "branchBytesMatch": true
+      }
+    ],
+    "liveSdkSha256": "7e195c72e3db43f52bc1af07a4ec77b491dd2f30d942a3a88fdaa769254893d0"
+  },
+  "priorMission": {
+    "resourceId": "resource_95a5662789076892fe698316",
+    "observedVersion": 15,
+    "publicAuthority": {
+      "principal_id": null,
+      "owner": false,
+      "rights": [
+        "read"
+      ]
+    },
+    "writesPerformed": false,
+    "embeddedDocumentHashChecks": [
+      {
+        "name": "00_START.md",
+        "sha256": "8a3aa0bdc24596dfc895c757df3dd0cc99c53fcb064a73ef692f8199de8887c6",
+        "valid": true
+      },
+      {
+        "name": "01_CONSUMER.md",
+        "sha256": "3d91afbd4c651bc8413e0ada71c37d8b24aa4b889e4f7ec96f3a5cbdaef2badf",
+        "valid": true
+      },
+      {
+        "name": "02_IDENTITY.md",
+        "sha256": "d557c95c8a8eb9eea998d7b93154c4220d1cdbf5a106508e2a7aba4fd778d457",
+        "valid": true
+      },
+      {
+        "name": "03_PROTOCOLS.md",
+        "sha256": "6787ffc3c87a328949257a70b62651e74ef5cbb2a47dba683e7368c54ecf3bea",
+        "valid": true
+      },
+      {
+        "name": "04_MEMORY_CONSTELLATIONS.md",
+        "sha256": "1ff54dbe10a2c0a451ecbbda97f2df754b321866d308b7866054940b8952419a",
+        "valid": true
+      },
+      {
+        "name": "05_CGIT.md",
+        "sha256": "fac0c9c351ff85270f3bb1e09253c2b4a405576446c567bd8c2d22969ddf28c9",
+        "valid": true
+      },
+      {
+        "name": "06_MODELS_RUNTIME.md",
+        "sha256": "a4f80be5020a58629b378fcaf7537b865f37dd055cb7b90ece72894b6962cc38",
+        "valid": true
+      },
+      {
+        "name": "07_ACCEPTANCE.md",
+        "sha256": "780f117b48d6847dac4301661507293de2a2e99ff75315e4caf13353c41bd95b",
+        "valid": true
+      },
+      {
+        "name": "CODEX_MASTER.md",
+        "sha256": "5ffd2530421a7416449923c498b6524a1b97f7d67e129db3c0c2176641413c2d",
+        "valid": true
+      }
+    ],
+    "graphNodes": 38,
+    "dependencyEdges": 59,
+    "claimsPolicy": "Recorded PASS states are not independently verified requirement truth."
+  },
+  "environment": {
+    "observationsCurrent": true,
+    "networkPolicy": "unrestricted/enforced",
+    "credentialBindings": 0,
+    "runtimeVariables": 0,
+    "outboundIdentities": 0,
+    "proxyPreserved": true,
+    "tlsVerificationEnabled": true
+  },
+  "auth": {
+    "verifiedLoginAvailable": false,
+    "oidcBlockers": [
+      "PURL_OIDC_ISSUER is not configured",
+      "PURL_OIDC_CLIENT_ID is not configured",
+      "PURL_OIDC_CLIENT_SECRET is not configured"
+    ],
+    "guestPreviewAvailable": true,
+    "guestTtlSeconds": 1800,
+    "initialAuthenticatedMeStatus": 401,
+    "cgitInitialRepositoryStatus": 401,
+    "guestContinuation": "Published resources remain readable. A new principal must fork; expired guest ownership is not recoverable through an observed supported flow."
+  },
+  "capabilities": {
+    "createSeparateMission": "supported guest flow; pending actual authenticated mutation at discovery capture",
+    "prepare": "local bounded typed-state assembly; no launch prepare endpoint observed",
+    "typecheck": "POST /api/compiler (pure) or owned /compile; parse/normalize/type/effect/capability checks",
+    "execute": "owned /build then /run -> durable worker, poll execution, inspect artifact",
+    "publish": "owned /publish after passing immutable build",
+    "authoredJavaScript": false,
+    "cgit": "private scoped content-addressed artifact service, not Git wire protocol",
+    "acsp": "continuity/authority/proposal/checkpoint concepts present; no standalone ACSP launch endpoint observed"
+  }
+}

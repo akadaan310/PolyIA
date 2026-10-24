@@ -1,0 +1,28 @@
+test_arabic_round_trip (test_infinity.TestInfinity.test_arabic_round_trip) ... ok
+test_ascii_space_binary (test_infinity.TestInfinity.test_ascii_space_binary) ... ok
+test_binary_of_serializable_form (test_infinity.TestInfinity.test_binary_of_serializable_form) ... ok
+test_binary_record_per_codepoint (test_infinity.TestInfinity.test_binary_record_per_codepoint) ... ok
+test_binary_segments_exact (test_infinity.TestInfinity.test_binary_segments_exact) ... ok
+test_combining_mark_round_trip (test_infinity.TestInfinity.test_combining_mark_round_trip) ... ok
+test_duplicate_whitespace_is_preserved (test_infinity.TestInfinity.test_duplicate_whitespace_is_preserved) ... ok
+test_entanglement_requires_all_three_inputs (test_infinity.TestInfinity.test_entanglement_requires_all_three_inputs) ... ok
+test_every_form_has_binary_record (test_infinity.TestInfinity.test_every_form_has_binary_record) ... ok
+test_fiber_returns_tuple (test_infinity.TestInfinity.test_fiber_returns_tuple) ... ok
+test_hyperedge_port_order_matters (test_infinity.TestInfinity.test_hyperedge_port_order_matters) ... ok
+test_hypothesis_not_certified_as_fact (test_infinity.TestInfinity.test_hypothesis_not_certified_as_fact) ... ok
+test_multiple_entanglement_strands (test_infinity.TestInfinity.test_multiple_entanglement_strands) ... ok
+test_no_empty_entanglement (test_infinity.TestInfinity.test_no_empty_entanglement) ... ok
+test_projection_fibers_expose_collisions (test_infinity.TestInfinity.test_projection_fibers_expose_collisions) ... ok
+test_reified_edge_is_form_and_has_binary (test_infinity.TestInfinity.test_reified_edge_is_form_and_has_binary) ... ok
+test_snapshot_is_json_serializable (test_infinity.TestInfinity.test_snapshot_is_json_serializable) ... ok
+test_stipulation_not_automatically_fact (test_infinity.TestInfinity.test_stipulation_not_automatically_fact) ... ok
+test_unicode_normalization_is_explicit (test_infinity.TestInfinity.test_unicode_normalization_is_explicit) ... ok
+test_unknown_seed (test_infinity.TestInfinity.test_unknown_seed) ... ok
+test_untyped_operator_rejected (test_infinity.TestInfinity.test_untyped_operator_rejected) ... ok
+test_utf8_ill_formed (test_infinity.TestInfinity.test_utf8_ill_formed) ... ok
+test_wrong_types_rejected (test_infinity.TestInfinity.test_wrong_types_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.003s
+
+OK

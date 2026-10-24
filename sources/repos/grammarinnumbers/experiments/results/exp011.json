@@ -1,0 +1,121 @@
+{
+ "experiment": "GIN-EXP-011",
+ "hypotheses": [
+  "GIN-H-029",
+  "GIN-H-030"
+ ],
+ "seed": 11,
+ "environment": {
+  "python": "3.13.16",
+  "implementation": "CPython",
+  "machine": "x86_64",
+  "system": "Linux 6.18.44-fc-v80",
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.80GHz"
+ },
+ "data": {
+  "cpython_default_int_max_str_digits": 4300,
+  "rows": [
+   {
+    "digits": 64,
+    "horner": 705,
+    "balanced_schoolbook": 408,
+    "balanced_karatsuba": 408,
+    "compositions_balanced": 63,
+    "depth_balanced": 6,
+    "depth_horner": 64
+   },
+   {
+    "digits": 128,
+    "horner": 2598,
+    "balanced_schoolbook": 1023,
+    "balanced_karatsuba": 1023,
+    "compositions_balanced": 127,
+    "depth_balanced": 7,
+    "depth_horner": 128
+   },
+   {
+    "digits": 256,
+    "horner": 10207,
+    "balanced_schoolbook": 2856,
+    "balanced_karatsuba": 2856,
+    "compositions_balanced": 255,
+    "depth_balanced": 8,
+    "depth_horner": 256
+   },
+   {
+    "digits": 512,
+    "horner": 40339,
+    "balanced_schoolbook": 8704,
+    "balanced_karatsuba": 8388,
+    "compositions_balanced": 511,
+    "depth_balanced": 9,
+    "depth_horner": 512
+   },
+   {
+    "digits": 1024,
+    "horner": 159519,
+    "balanced_schoolbook": 29177,
+    "balanced_karatsuba": 24659,
+    "compositions_balanced": 1023,
+    "depth_balanced": 10,
+    "depth_horner": 1024
+   },
+   {
+    "digits": 2048,
+    "horner": 633291,
+    "balanced_schoolbook": 104333,
+    "balanced_karatsuba": 73694,
+    "compositions_balanced": 2047,
+    "depth_balanced": 11,
+    "depth_horner": 2048
+   },
+   {
+    "digits": 4096,
+    "horner": 2529644,
+    "balanced_schoolbook": 390586,
+    "balanced_karatsuba": 221901,
+    "compositions_balanced": 4095,
+    "depth_balanced": 12,
+    "depth_horner": 4096
+   },
+   {
+    "digits": 8192,
+    "horner": 10105494,
+    "balanced_schoolbook": 1507887,
+    "balanced_karatsuba": 669698,
+    "compositions_balanced": 8191,
+    "depth_balanced": 13,
+    "depth_horner": 8192
+   }
+  ],
+  "loglog_slopes": {
+   "horner": [
+    1.882,
+    1.974,
+    1.983,
+    1.983,
+    1.989,
+    1.998,
+    1.998
+   ],
+   "balanced_schoolbook": [
+    1.326,
+    1.481,
+    1.608,
+    1.745,
+    1.838,
+    1.904,
+    1.949
+   ],
+   "balanced_karatsuba": [
+    1.326,
+    1.481,
+    1.554,
+    1.556,
+    1.579,
+    1.59,
+    1.594
+   ]
+  }
+ }
+}

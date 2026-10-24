@@ -1,0 +1,135 @@
+{
+  "ok": true,
+  "command_id": "initial-evidence-checkpoint",
+  "actor": "operator",
+  "revision": 20,
+  "head": "b5b8e277d79f7e8f095b78fe2fe6519e7c15b55f71828e1c8f9e58778b8e9df9",
+  "result": {
+    "checkpoint_id": "cp-00000020",
+    "previous_id": "cp-00000015",
+    "source_context": {
+      "schema_version": 1,
+      "version": 3,
+      "captured_revision": 20,
+      "captured_at": "2026-10-24T07:36:34.311712+00:00",
+      "registry_origin": "package",
+      "status": "SOURCED",
+      "objects": [
+        {
+          "role": "constitution",
+          "path": "registry/constitution.json",
+          "origin": "package",
+          "required": true,
+          "sha256": "60d2d8e09680e1ac527c58f004c0df81fee52d29fca3912147b9d8d47f1874a2",
+          "size": 215595
+        },
+        {
+          "role": "source-manifest",
+          "path": "registry/sources.json",
+          "origin": "package",
+          "required": true,
+          "sha256": "eae4899dea40d4ce816f0b6ee6db26df80a3ecafeadaa4c37fd815e3d66e457f",
+          "size": 224614
+        },
+        {
+          "role": "authority",
+          "path": "registry/authority.json",
+          "origin": "package",
+          "required": true,
+          "sha256": "13158c16c9b633d143da1dbcd091b9a3c8160d369836f63b71ed0611fa6e9689",
+          "size": 1341
+        },
+        {
+          "role": "repository-pins",
+          "path": "registry/repositories.json",
+          "origin": "package",
+          "required": false,
+          "sha256": "1a211944f676383c51445303286b70c78407d205c9c6c4f928bc076d0bd6f8f1",
+          "size": 286442
+        },
+        {
+          "role": "inherited-obligations",
+          "path": "registry/inherited_obligations.json",
+          "origin": "package",
+          "required": false,
+          "sha256": "3809c52c0678a3e3a0ad3dcbd4c729beb9f49ae915a23f088a2f8196ddabc998",
+          "size": 328173
+        },
+        {
+          "role": "runtime-source",
+          "path": "polyia/__init__.py",
+          "origin": "package",
+          "required": true,
+          "sha256": "7eb3f316d7989fb09e03205362c5ca20e9a6c27ecd376c1f8d0d7e8b843a4689",
+          "size": 109
+        },
+        {
+          "role": "runtime-source",
+          "path": "polyia/store.py",
+          "origin": "package",
+          "required": true,
+          "sha256": "dc88ea766ab2afe4f5426c00e729d228b656f6856f387f838a18d75a5749509a",
+          "size": 74768
+        },
+        {
+          "role": "runtime-source",
+          "path": "polyia/experiments.py",
+          "origin": "package",
+          "required": true,
+          "sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+          "size": 18298
+        },
+        {
+          "role": "runtime-source",
+          "path": "polyia/cli.py",
+          "origin": "package",
+          "required": true,
+          "sha256": "fbc88b11a101f0b3678c7a19266df9a844688226b13feaf5145e3fe407c8adfe",
+          "size": 10506
+        },
+        {
+          "role": "runtime-source",
+          "path": "polyia/server.py",
+          "origin": "package",
+          "required": true,
+          "sha256": "77a77f5bf41772e7811126acbd5334c960cfd8bf395e22a9eb2af27ba13d5534",
+          "size": 22368
+        },
+        {
+          "role": "runtime-source",
+          "path": "polyia/__main__.py",
+          "origin": "package",
+          "required": true,
+          "sha256": "0952a82fc4e578988ba64e72bc45884a2a365b90130e04f681c68f8425e6b60f",
+          "size": 114
+        }
+      ],
+      "missing": [],
+      "definition_binding": {
+        "status": "MATCH",
+        "genesis_definitions_sha256": "068eaa5bb10e91f67d63f782dace183d8145bbf05677304e1f7cd4f0b1f0352f",
+        "captured_constitution_requirements_sha256": "068eaa5bb10e91f67d63f782dace183d8145bbf05677304e1f7cd4f0b1f0352f"
+      },
+      "external_sources": {
+        "source_manifest_sha256": "eae4899dea40d4ce816f0b6ee6db26df80a3ecafeadaa4c37fd815e3d66e457f",
+        "storage": "IMMUTABLE_PACKAGE_FILES",
+        "corpus_bytes_copied": 0,
+        "verification_scope": "Manifest bytes captured; corpus files remain external"
+      },
+      "execution_context": {
+        "runtime_version": "1.1.0",
+        "python_version": "3.13.17",
+        "sqlite_version": "3.53.1",
+        "scientific_kernel": {
+          "module": "polyia.experiments",
+          "sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+          "loaded_code_sha256": "b5c12e42c4cb101d20c0c10d3bf56415c334633ee4a54f441734353efaceea64",
+          "package_version": "1.1.0",
+          "python_version": "3.13.17",
+          "source_binding": "PINNED_SOURCE_MATCHES_LOADED_CODE"
+        }
+      },
+      "digest": "041c804a3c2eea5922d34035a5252104151079285fcab23ab4cbb5b96a5d3c96"
+    }
+  }
+}

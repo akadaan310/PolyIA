@@ -1,0 +1,45 @@
+{
+"period": 1.0,
+"block": 1.0,
+"group_spd": 1.0,
+"config_exact": 0.8305084745762712,
+"config_exceptions": [
+"Cr",
+"Cu",
+"Nb",
+"Mo",
+"Ru",
+"Rh",
+"Pd",
+"Ag",
+"La",
+"Ce",
+"Gd",
+"Pt",
+"Au",
+"Ac",
+"Th",
+"Pa",
+"U",
+"Np",
+"Cm",
+"Lr"
+]
+}
+{
+"n": 34,
+"primary_valence_agrees": 0.9705882352941176,
+"rdkit_set_within_predicted": 0.9705882352941176,
+"disagreements": [
+[
+"Sn",
+[
+4
+],
+[
+2,
+4
+]
+]
+]
+}

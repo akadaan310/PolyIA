@@ -1,0 +1,73 @@
+{
+  "binary_provenance": {
+    "artifact_sha256": "d8fc6d179a5d283028a472a5618564f6ad8a86fed513e64f032b3b0b7cc45e42",
+    "artifact_url": "https://github.com/caddyserver/caddy/releases/download/v2.11.7/caddy_2.11.7_linux_arm64.tar.gz",
+    "binary_sha256": "0019d864a2cdee41c3675cb2a26185833c5d9540a48f5a6729142c0413461b60",
+    "publisher_artifact_sha512": "3db36ba90c7a6e8dda40ee3dd71fa08844c76b5fb08f61b31e5e78d2ed38e71c51dc7baed875e50d1ca1279196e84302967237386ae87c91ae9f2aaceada682e",
+    "release_url": "https://github.com/caddyserver/caddy/releases/tag/v2.11.7"
+  },
+  "captured_at_utc": "2026-10-24T07:56:14.558020+00:00",
+  "dns_resolves_to_public_ip": true,
+  "evidence_files": {
+    "ingress-counters.txt": "b3dd2b5217ab34fe4397bffeabeef317bf899f16b803839067f10a27cd359093",
+    "oci-access.json": "5ac47ef6881125e9c8207ab5addba43c2d42121b0934fc2732fac3794253e310",
+    "provenance.json": "6dbc3b3c1693bbb4cc7ddd3f718d69ebbf17393e2aebda8fbae256b74215e9d8",
+    "proxy-attempt.log": "fca311efbcf96ca3ec086948ee6eadc590ea2e8ba67aad6a38fa32fe58d77c65"
+  },
+  "host": "ollama-a1",
+  "observations": {
+    "acme_result": "HTTP-01 connection timeout fetching public IPv4 port80",
+    "host_ingress_allowed_tcp_ports": [
+      80,
+      443
+    ],
+    "local_http_status": 308,
+    "local_listener_ports": [
+      80,
+      443
+    ],
+    "new_rule_incoming_packets_during_challenge": 0,
+    "oci_access": {
+      "authentication": {
+        "region": "us-ashburn-1",
+        "status": "AVAILABLE"
+      },
+      "operations": [
+        {
+          "code": "NotAuthorizedOrNotFound",
+          "error_type": "ServiceError",
+          "http_status": 404,
+          "operation": "get_vnic",
+          "status": "UNAVAILABLE",
+          "vnic_id": "ocid1.vnic.oc1.iad.abuwcljrhrsfdtssp2u5xlzmrzq2enzhiw776rg5vmy5tfjfha7znmuc27pq"
+        }
+      ],
+      "sdk_version": "2.189.0"
+    },
+    "public_https_probe": "connection timeout after15 seconds"
+  },
+  "operator_evidence_directory": "/tmp/polyia-hosting-wdqw6nim",
+  "private_ipv4": "10.0.1.194",
+  "proposed_origin": "https://polyia.129.213.149.47.sslip.io",
+  "public_ip_sources": [
+    "https://api.ipify.org?format=json",
+    "https://ipinfo.io/json"
+  ],
+  "public_ipv4": "129.213.149.47",
+  "required_resolution": "An OCI identity authorized to inspect and update the attached subnet security lists/network security groups, or an authorized stable named tunnel/domain connection. Authentication alone did not grant get_vnic access.",
+  "retained_staging": "Caddy binary and disabled dedicated units/config remain staged; private ACME account storage remains private under /var/lib/polyia-proxy. No private key or token is included in this receipt.",
+  "rollback": {
+    "dedicated_firewall_chain": "removed",
+    "existing_quick_tunnel": "unchanged during ingress experiment",
+    "ingress_service": "inactive and not enabled",
+    "original_firewall_semantics_restored": true,
+    "proxy_service": "inactive and not enabled"
+  },
+  "schema_version": 1,
+  "source_references": [
+    "https://nip.io/",
+    "https://caddyserver.com/docs/automatic-https",
+    "https://docs.oracle.com/en-us/iaas/tools/python/latest/api/signing.html"
+  ],
+  "status": "BLOCKED_UPSTREAM_INGRESS"
+}

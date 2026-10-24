@@ -1,0 +1,10 @@
+{
+  "protocol": "ATOM-PLAN/0.1",
+  "steps": [
+    {"atom":"scientific-spectrum","kind":"science","params":{"model":"H_balmer_3_to_2","wavelength_nm":656.28,"kind":"modeled"}},
+    {"atom":"first-journey","kind":"journey","params":{"destination":"Mars","from":"Earth"}},
+    {"atom":"layered-render","kind":"render","params":{"plates":["stars","plasma","focus"],"depth":[0.12,0.48,0.91]}},
+    {"atom":"rehearsal-focus","kind":"focus","params":{"mode":"pointer-proxy","x":0.49,"y":0.53}},
+    {"atom":"research-credit","kind":"economy","params":{"grant":5,"reason":"verified-tour-demo"}}
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "resource_id": "resource_bd80f9093ac5fb3b2d176291",
+  "version": 21,
+  "valid": true,
+  "history_valid": true,
+  "events": 21,
+  "head": "sha256:9bf9f5c23879a53e427b90e69db7b749e7e624375eb6675e999e39e1aa04d179",
+  "problems": [],
+  "executions": [
+    {
+      "execution_id": "execution_dfda93eb6d9675f51cdffb33",
+      "valid": true,
+      "replayable": true,
+      "reason": null
+    },
+    {
+      "execution_id": "execution_b969ea1da38df98c62fe72d8",
+      "valid": true,
+      "replayable": true,
+      "reason": null
+    },
+    {
+      "execution_id": "execution_e81a8e431e765454781924eb",
+      "valid": true,
+      "replayable": true,
+      "reason": null
+    }
+  ],
+  "executions_complete": true,
+  "execution_status_counts": {
+    "total": 3,
+    "succeeded": 3,
+    "failed": 0,
+    "cancelled": 0,
+    "pending": 0
+  },
+  "assurance": "Hashes establish internal consistency, not external authenticity or requirement truth"
+}

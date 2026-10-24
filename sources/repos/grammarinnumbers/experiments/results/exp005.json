@@ -1,0 +1,128 @@
+{
+ "experiment": "GIN-EXP-005",
+ "hypotheses": [
+  "GIN-H-014",
+  "GIN-H-015"
+ ],
+ "seed": 754,
+ "environment": {
+  "python": "3.13.16",
+  "implementation": "CPython",
+  "machine": "x86_64",
+  "system": "Linux 6.18.44-fc-v80",
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.80GHz",
+  "gcc": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+ },
+ "data": {
+  "oracle": "gcc -O0 -frounding-math, SSE scalar arithmetic, fenv.h flags",
+  "per_format": {
+   "binary32": {
+    "random_and_special_cases": 40000,
+    "tininess_family_cases": 300,
+    "hardware_underflow_flag_in_tininess_family": 142,
+    "tininess_after": {
+     "result_mismatches": 0,
+     "flag_mismatches": 0,
+     "flag_mismatches_in_tininess_family": 0,
+     "examples": []
+    },
+    "tininess_before": {
+     "result_mismatches": 0,
+     "flag_mismatches": 158,
+     "flag_mismatches_in_tininess_family": 158,
+     "examples": [
+      {
+       "op": "mul",
+       "a": "0x3fc77419",
+       "b": "0x5224fb",
+       "hw_flags": "00001",
+       "sim_flags": "00011"
+      },
+      {
+       "op": "mul",
+       "a": "0x3f9d618e",
+       "b": "0x681aa0",
+       "hw_flags": "00001",
+       "sim_flags": "00011"
+      },
+      {
+       "op": "mul",
+       "a": "0x3ff77a67",
+       "b": "0x42342e",
+       "hw_flags": "00001",
+       "sim_flags": "00011"
+      },
+      {
+       "op": "mul",
+       "a": "0x3fc7d768",
+       "b": "0x51fc29",
+       "hw_flags": "00001",
+       "sim_flags": "00011"
+      },
+      {
+       "op": "mul",
+       "a": "0x3f841cd4",
+       "b": "0x7c03f2",
+       "hw_flags": "00001",
+       "sim_flags": "00011"
+      }
+     ]
+    }
+   },
+   "binary64": {
+    "random_and_special_cases": 40000,
+    "tininess_family_cases": 300,
+    "hardware_underflow_flag_in_tininess_family": 141,
+    "tininess_after": {
+     "result_mismatches": 0,
+     "flag_mismatches": 0,
+     "flag_mismatches_in_tininess_family": 0,
+     "examples": []
+    },
+    "tininess_before": {
+     "result_mismatches": 0,
+     "flag_mismatches": 159,
+     "flag_mismatches_in_tininess_family": 159,
+     "examples": [
+      {
+       "op": "mul",
+       "a": "0x3ff2d19b05e52c77",
+       "b": "0xd9a7aeecd0159",
+       "hw_flags": "00001",
+       "sim_flags": "00011"
+      },
+      {
+       "op": "mul",
+       "a": "0x3ff5f8105aa6c53a",
+       "b": "0xba71cd54be3a8",
+       "hw_flags": "00001",
+       "sim_flags": "00011"
+      },
+      {
+       "op": "mul",
+       "a": "0x3ff059ead27da7e4",
+       "b": "0xfa803a48f37f5",
+       "hw_flags": "00001",
+       "sim_flags": "00011"
+      },
+      {
+       "op": "mul",
+       "a": "0x3fff2a6b0beb7d8d",
+       "b": "0x836d329c5fcee",
+       "hw_flags": "00001",
+       "sim_flags": "00011"
+      },
+      {
+       "op": "mul",
+       "a": "0x3ffaff5b23139c15",
+       "b": "0x97b7c45210f5b",
+       "hw_flags": "00001",
+       "sim_flags": "00011"
+      }
+     ]
+    }
+   }
+  },
+  "conclusion_host_tininess": "after rounding"
+ }
+}

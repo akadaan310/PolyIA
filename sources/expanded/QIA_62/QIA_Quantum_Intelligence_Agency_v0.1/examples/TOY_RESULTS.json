@@ -1,0 +1,201 @@
+{
+  "schema": "QIA/0.1",
+  "phrase_encoding": {
+    "surface": "Head Pain Reliever",
+    "codec": "UTF-8",
+    "codepoint_count": 18,
+    "raw_byte_count": 18,
+    "utf8_hex": "48656164205061696e2052656c6965766572",
+    "utf8_bits": "010010000110010101100001011001000010000001010000011000010110100101101110001000000101001001100101011011000110100101100101011101100110010101110010",
+    "sha256": "ed6bd90754e2a573162b3077efb29f69a8e9e5a929344932416649387e369a74",
+    "nfc_surface": "Head Pain Reliever",
+    "nfc_changed": false
+  },
+  "lexical_candidates": {
+    "head": [
+      {
+        "form": "caput / capitis",
+        "kind": "translation-lemma",
+        "language": "Latin",
+        "note": "classical Latin"
+      },
+      {
+        "form": "cephal-",
+        "kind": "learned-combining-form",
+        "language": "Greek",
+        "note": "NOT classical Latin"
+      },
+      {
+        "form": "cranial",
+        "kind": "anatomic-related",
+        "language": "English",
+        "note": "not identical to head"
+      }
+    ],
+    "pain": [
+      {
+        "form": "dolor / doloris",
+        "kind": "translation-lemma",
+        "language": "Latin",
+        "note": "classical Latin"
+      },
+      {
+        "form": "alg-",
+        "kind": "learned-combining-form",
+        "language": "Greek",
+        "note": "pain root; not Latin"
+      },
+      {
+        "form": "discomfort",
+        "kind": "broader-or-weaker",
+        "language": "English",
+        "note": "not strict synonym"
+      }
+    ],
+    "reliever": [
+      {
+        "form": "levare",
+        "kind": "function-gloss",
+        "language": "Latin",
+        "note": "ease; not a lexical identity"
+      },
+      {
+        "form": "remedium",
+        "kind": "functional-noun",
+        "language": "Latin",
+        "note": "remedy, not drug ID"
+      },
+      {
+        "form": "aggravator",
+        "kind": "directionally-opposed-function",
+        "language": "English",
+        "note": "only under fixed outcome and time"
+      }
+    ]
+  },
+  "generic_intent_path": {
+    "target": "headache",
+    "verdict": "derivable-under-registered-claims",
+    "tree_cost": 2.0,
+    "claim_witness": [
+      {
+        "id": "interpret",
+        "relation": "INTERPRET_3",
+        "inputs": [
+          "head",
+          "pain",
+          "reliever"
+        ],
+        "output": "intention",
+        "status": "formal_derivation",
+        "evidence": "typed compositional rule",
+        "context": "example; not individual medical advice",
+        "cost": 1.0
+      },
+      {
+        "id": "effect",
+        "relation": "TARGET_EFFECT",
+        "inputs": [
+          "intention"
+        ],
+        "output": "headache",
+        "status": "formal_derivation",
+        "evidence": "intent targets a use, not a molecule",
+        "context": "example; not individual medical advice",
+        "cost": 1.0
+      }
+    ],
+    "note": "derivability does not prove external scientific truth; cost not a probability"
+  },
+  "cannot_infer_specific_drug_from_name": {
+    "target": "acetaminophen",
+    "verdict": "not-derivable",
+    "available_seeds": [
+      "head",
+      "pain",
+      "phrase",
+      "reliever"
+    ]
+  },
+  "stipulated_product_identity": {
+    "target": "acetaminophen",
+    "verdict": "derivable-under-registered-claims",
+    "tree_cost": 1.0,
+    "claim_witness": [
+      {
+        "id": "stipulated",
+        "relation": "PRODUCT_IDENTITY",
+        "inputs": [
+          "named-product"
+        ],
+        "output": "acetaminophen",
+        "status": "user_stipulation",
+        "evidence": "user stipulates invented product active",
+        "context": "example; not individual medical advice",
+        "cost": 1.0
+      }
+    ],
+    "note": "derivability does not prove external scientific truth; cost not a probability"
+  },
+  "known_indication_sources_in_finite_demo": [
+    [
+      "acetaminophen"
+    ],
+    [
+      "ibuprofen"
+    ],
+    [
+      "naproxen"
+    ]
+  ],
+  "two_basis_interference": {
+    "initial_probabilities": [
+      1.0,
+      0.0
+    ],
+    "after_one_H": [
+      0.4999999999999999,
+      0.4999999999999999
+    ],
+    "after_two_H": [
+      0.9999999999999998,
+      0.0
+    ],
+    "norms": [
+      1.0,
+      0.9999999999999998,
+      0.9999999999999998
+    ],
+    "interpretation": "classically simulated unitary interference; no quantum speedup"
+  },
+  "physics_ir_initial": {
+    "mass_kg": 1.0,
+    "stiffness_newton_per_m": 100.0,
+    "damping_newton_second_per_m": 0.1,
+    "position_m": 0.1,
+    "velocity_m_per_s": 0,
+    "dt_s": 0.005
+  },
+  "physics_ir_next": {
+    "mass_kg": 1.0,
+    "stiffness_newton_per_m": 100.0,
+    "damping_newton_second_per_m": 0.1,
+    "position_m": 0.09975,
+    "velocity_m_per_s": -0.05,
+    "dt_s": 0.005
+  },
+  "physics_kinetic_plus_elastic_energy_j": 0.5000000000000001,
+  "acoustic_toy": {
+    "source_distance_m": 10.0,
+    "sound_delay_s": 0.029154518950437316,
+    "ideal_free_field_pressure_ratio_to_1m": 0.1,
+    "ideal_isotropic_intensity_ratio_to_1m": 0.01,
+    "assumptions": [
+      "point emitter",
+      "far field",
+      "no reflections",
+      "homogeneous medium",
+      "distance >= 1 meter idealization"
+    ]
+  }
+}

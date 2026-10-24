@@ -1,0 +1,11 @@
+[Unit]
+Description=Schedule bounded Poly IA seed checks (template, not enabled)
+
+[Timer]
+OnBootSec=2min
+OnUnitInactiveSec=5min
+Persistent=true
+Unit=polyia-research.service
+
+[Install]
+WantedBy=timers.target

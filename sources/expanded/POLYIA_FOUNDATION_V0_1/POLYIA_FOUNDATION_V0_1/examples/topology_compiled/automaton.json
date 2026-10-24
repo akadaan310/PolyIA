@@ -1,0 +1,151 @@
+{
+  "accept": [
+    "ACCEPT"
+  ],
+  "artifact_hash": "98861932672cdc06e3bbd37bb7df2c3c73065693887dce6285ab9f967218a554",
+  "capabilities": [
+    "phonetic-prefix",
+    "composed-automaton"
+  ],
+  "denials": [
+    "invent-cognates",
+    "write-external-datasets"
+  ],
+  "format": "POLYIA-AUTOMATON/0.1",
+  "guards": [
+    "no unattested claims",
+    "no effects",
+    "bounded plan",
+    "typed ports"
+  ],
+  "observed_results": null,
+  "plan_hash": "8e81a9f8eeb57b4df9357edc0a1644d765f206e814210a3122e679cbdfec0281",
+  "profile": "fixture-research",
+  "source": "(commission (task \"Construct universal word set for topology\") (require \"phonetic-prefix\") (require \"composed-automaton\") (deny \"invent-cognates\") (deny \"write-external-datasets\") (evidence fixture) (budget 32))",
+  "start": "START",
+  "states": [
+    "START",
+    "S1_text_surface",
+    "S2_lang_identity",
+    "S3_pronunciation_fixture",
+    "S4_ipa_feature_fixture",
+    "S5_prefix_match_fixture",
+    "S6_morphology_fixture",
+    "S7_evidence_graph_fixture",
+    "S8_automaton_package",
+    "ACCEPT"
+  ],
+  "task": "Construct universal word set for topology",
+  "transitions": [
+    {
+      "ensures": [
+        "Surface"
+      ],
+      "evidence": "fixture",
+      "from": "START",
+      "requires": [
+        "TaskText"
+      ],
+      "to": "S1_text_surface",
+      "via": "text.surface@0.1"
+    },
+    {
+      "ensures": [
+        "LanguageScope"
+      ],
+      "evidence": "fixture",
+      "from": "S1_text_surface",
+      "requires": [
+        "Surface"
+      ],
+      "to": "S2_lang_identity",
+      "via": "lang.identity@0.1"
+    },
+    {
+      "ensures": [
+        "Pronunciations"
+      ],
+      "evidence": "fixture",
+      "from": "S2_lang_identity",
+      "requires": [
+        "LanguageScope"
+      ],
+      "to": "S3_pronunciation_fixture",
+      "via": "pronunciation.fixture@0.1"
+    },
+    {
+      "ensures": [
+        "PhoneFeatures"
+      ],
+      "evidence": "fixture",
+      "from": "S3_pronunciation_fixture",
+      "requires": [
+        "Pronunciations"
+      ],
+      "to": "S4_ipa_feature_fixture",
+      "via": "ipa.feature.fixture@0.1"
+    },
+    {
+      "ensures": [
+        "PhoneticMatches"
+      ],
+      "evidence": "fixture",
+      "from": "S4_ipa_feature_fixture",
+      "requires": [
+        "PhoneFeatures"
+      ],
+      "to": "S5_prefix_match_fixture",
+      "via": "prefix.match.fixture@0.1"
+    },
+    {
+      "ensures": [
+        "MorphCandidates"
+      ],
+      "evidence": "fixture",
+      "from": "S5_prefix_match_fixture",
+      "requires": [
+        "LanguageScope"
+      ],
+      "to": "S6_morphology_fixture",
+      "via": "morphology.fixture@0.1"
+    },
+    {
+      "ensures": [
+        "Wordset"
+      ],
+      "evidence": "fixture",
+      "from": "S6_morphology_fixture",
+      "requires": [
+        "PhoneticMatches",
+        "MorphCandidates"
+      ],
+      "to": "S7_evidence_graph_fixture",
+      "via": "evidence.graph.fixture@0.1"
+    },
+    {
+      "ensures": [
+        "StateArtifact"
+      ],
+      "evidence": "fixture",
+      "from": "S7_evidence_graph_fixture",
+      "requires": [
+        "Wordset"
+      ],
+      "to": "S8_automaton_package",
+      "via": "automaton.package@0.1"
+    },
+    {
+      "ensures": [
+        "machine-artifact"
+      ],
+      "evidence": "structural-only",
+      "from": "S8_automaton_package",
+      "requires": [
+        "phonetic-prefix",
+        "composed-automaton"
+      ],
+      "to": "ACCEPT",
+      "via": "admission"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "package": "Q-STRINGS/0.1",
+  "files": {
+    "CODEX_IMPLEMENTATION_SEED.md": {
+      "size_bytes": 4479,
+      "sha256": "21226ed88a82f574528b857a90e0ddd25fd4dd224f956aaa9af48c793e0d9d23"
+    },
+    "QIA_EXISTING_62_THEORY_ATLAS_REFERENCE.md": {
+      "size_bytes": 43397,
+      "sha256": "c836cdb108165347b17fce71907833c534e976ba0e132fe50577722bafd51fd1"
+    },
+    "Q_STRINGS_FORMAL_RESEARCH.md": {
+      "size_bytes": 28372,
+      "sha256": "1f146b4081bc2e129897d91b16c58f4bc5b9aa7dbe8cbb97a02245a61ee74b3e"
+    },
+    "README.md": {
+      "size_bytes": 879,
+      "sha256": "70f8362c91165ef7e52827e55cd68c7067ff7da0cc515c4530c75ef61f2aa529"
+    },
+    "bench.py": {
+      "size_bytes": 3240,
+      "sha256": "001802e677fce629616476a71dc12b05b66ed892e3fdcd90af5cd86f6f4cd048"
+    },
+    "demo.py": {
+      "size_bytes": 880,
+      "sha256": "a294d54af46a9d6971132ddbe1f838cfdefb5e6b3ddd4e2af2302ad001e999a0"
+    },
+    "results/INTERPRETATION.md": {
+      "size_bytes": 1438,
+      "sha256": "7f0735f5524a371b663eb91d56b63bc69ce2215bed64f6b9a853a7043898fd51"
+    },
+    "results/benchmark.json": {
+      "size_bytes": 2140,
+      "sha256": "27f8baae6e1b9f22d27d29293d52072fb70425f554997b52f656074d8d8a01f7"
+    },
+    "results/demo.json": {
+      "size_bytes": 471,
+      "sha256": "bb905e3bd48aff845fd19c87b5d36020682112510a270ac827e79b8a2fffea11"
+    },
+    "results/test_results.txt": {
+      "size_bytes": 1661,
+      "sha256": "e0608e654bb250fabd6bee0964656976e8309a3b2305d3db59c776dab9e094dd"
+    },
+    "src/qstrings.py": {
+      "size_bytes": 7657,
+      "sha256": "661ac4e509944bb788f9fd98aa149e5598e2755a6809d171176edd7e623f56b3"
+    },
+    "tests/test_qstrings.py": {
+      "size_bytes": 4097,
+      "sha256": "3383e42293217bc5316011f2dde8638e0f94bc36ddbac27ebcbd34f9a32d904d"
+    }
+  },
+  "benchmark_qualification": "CPython microbenchmark; no optimized/production or quantum speedup claims",
+  "tests_passed": 19
+}

@@ -1,0 +1,18 @@
+{
+  "qaddresses": [
+    "qstr:v1:d59aeda88dee628c359ebdc7d6231309692be3d5206dc30f0c7ecd8b985e4ad9",
+    "qstr:v1:6c6f6e0e099f80ecf1f09caa638048fccbf20dd1179d61a4f8509e1aa87a0938"
+  ],
+  "roundtrip_exact": true,
+  "pair_exists": true,
+  "path_word": [
+    "next",
+    "next"
+  ],
+  "path_witnesses": [
+    "defined-list-A-B",
+    "defined-list-B-C"
+  ],
+  "bogus_shortcut": true,
+  "note": "SHA-256 is not inverted: canonical payload was retained in an external store."
+}

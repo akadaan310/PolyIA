@@ -1,0 +1,5135 @@
+{
+  "schema_version": 1,
+  "full_mission_status": "NOT_COMMISSIONED",
+  "families": [
+    {
+      "id": "ACC-SOURCE",
+      "title": "Complete source and book custody",
+      "requirements": [
+        "PIA-013",
+        "PIA-014",
+        "PIA-015",
+        "PIA-016",
+        "PIA-017",
+        "PIA-018",
+        "PIA-019",
+        "PIA-020",
+        "PIA-021",
+        "PIA-022",
+        "PIA-023",
+        "PIA-024",
+        "PIA-174"
+      ],
+      "artifacts": [
+        "tools/verify_package.py",
+        "registry/sources.json",
+        "registry/repositories.json",
+        "registry/archives.json",
+        "registry/books.json"
+      ],
+      "positive_acceptance": "All supplied hashes and pinned Git blobs match; every inherited section resolves; missing named sources remain explicit.",
+      "negative_controls": "Corrupt a retained byte in a disposable copy; omit a book/member; assert verification fails.",
+      "delivery_scope_status": "BOOTSTRAP_IMPLEMENTED",
+      "full_commission_result": "NOT_RUN",
+      "evidence_contract": {
+        "required": [
+          "run_id",
+          "requirement_versions",
+          "source_context",
+          "command",
+          "environment",
+          "actual_result",
+          "evidence_class",
+          "artifact_digests",
+          "verifier_identity",
+          "limitations"
+        ],
+        "forbidden_shortcuts": [
+          "caller supplied PASS",
+          "hash-shaped text without bytes",
+          "planned tests",
+          "source authority cast as proof"
+        ]
+      }
+    },
+    {
+      "id": "ACC-STATE",
+      "title": "Atomic durable state and replay",
+      "requirements": [
+        "PIA-025",
+        "PIA-026",
+        "PIA-027",
+        "PIA-028",
+        "PIA-029",
+        "PIA-030",
+        "PIA-031",
+        "PIA-032",
+        "PIA-033",
+        "PIA-034",
+        "PIA-035",
+        "PIA-036"
+      ],
+      "artifacts": [
+        "tests/test_store.py",
+        "tests/test_cli.py"
+      ],
+      "positive_acceptance": "Real transactional commits, restart recovery, idempotency, type-strict integrity and captured source context.",
+      "negative_controls": "Crash after commit before response; corrupt each storage layer; race two writers.",
+      "delivery_scope_status": "BOOTSTRAP_IMPLEMENTED",
+      "full_commission_result": "NOT_RUN",
+      "evidence_contract": {
+        "required": [
+          "run_id",
+          "requirement_versions",
+          "source_context",
+          "command",
+          "environment",
+          "actual_result",
+          "evidence_class",
+          "artifact_digests",
+          "verifier_identity",
+          "limitations"
+        ],
+        "forbidden_shortcuts": [
+          "caller supplied PASS",
+          "hash-shaped text without bytes",
+          "planned tests",
+          "source authority cast as proof"
+        ]
+      }
+    },
+    {
+      "id": "ACC-GUIDE",
+      "title": "Acknowledged guidance and actual effects",
+      "requirements": [
+        "PIA-038",
+        "PIA-039",
+        "PIA-040",
+        "PIA-041",
+        "PIA-175"
+      ],
+      "artifacts": [
+        "tests/test_store.py",
+        "tests/test_server.py",
+        "web/client.test.mjs",
+        "web/ui.test.mjs"
+      ],
+      "positive_acceptance": "Submission, acknowledgement and registered application have distinct receipts and effects.",
+      "negative_controls": "Apply text-only/unacknowledged guidance; stale revision; lost response; reader attempts mutation.",
+      "delivery_scope_status": "BOOTSTRAP_IMPLEMENTED",
+      "full_commission_result": "NOT_RUN",
+      "evidence_contract": {
+        "required": [
+          "run_id",
+          "requirement_versions",
+          "source_context",
+          "command",
+          "environment",
+          "actual_result",
+          "evidence_class",
+          "artifact_digests",
+          "verifier_identity",
+          "limitations"
+        ],
+        "forbidden_shortcuts": [
+          "caller supplied PASS",
+          "hash-shaped text without bytes",
+          "planned tests",
+          "source authority cast as proof"
+        ]
+      }
+    },
+    {
+      "id": "ACC-EVIDENCE",
+      "title": "Produce, verify, accept and checkpoint",
+      "requirements": [
+        "PIA-042",
+        "PIA-043",
+        "PIA-044",
+        "PIA-045",
+        "PIA-046",
+        "PIA-047",
+        "PIA-048"
+      ],
+      "artifacts": [
+        "tests/test_store.py",
+        "tests/test_cli.py",
+        "tests/test_server.py"
+      ],
+      "positive_acceptance": "Captured bytes, trusted verifier, matching tested code, current accepted version and source-linked checkpoint.",
+      "negative_controls": "Arbitrary unrelated science artifact; caller-supplied PASS; changed bytes/code; unknown verifier.",
+      "delivery_scope_status": "BOOTSTRAP_IMPLEMENTED",
+      "full_commission_result": "NOT_RUN",
+      "evidence_contract": {
+        "required": [
+          "run_id",
+          "requirement_versions",
+          "source_context",
+          "command",
+          "environment",
+          "actual_result",
+          "evidence_class",
+          "artifact_digests",
+          "verifier_identity",
+          "limitations"
+        ],
+        "forbidden_shortcuts": [
+          "caller supplied PASS",
+          "hash-shaped text without bytes",
+          "planned tests",
+          "source authority cast as proof"
+        ]
+      }
+    },
+    {
+      "id": "ACC-HTTP",
+      "title": "Human/machine bootstrap interface",
+      "requirements": [
+        "PIA-037",
+        "PIA-047",
+        "PIA-169",
+        "PIA-175",
+        "PIA-176",
+        "PIA-177",
+        "PIA-178",
+        "PIA-179"
+      ],
+      "artifacts": [
+        "tests/test_server.py",
+        "web/client.test.mjs",
+        "web/ui.test.mjs",
+        "registry/openapi.json"
+      ],
+      "positive_acceptance": "Actual HTTP data, all registered commands, strict auth/origin/framing, conflict-aware client and UI handlers.",
+      "negative_controls": "Hostile origins, malformed/deep/duplicate JSON, read-token mutation, stale/disconnected state, interrupted request retry.",
+      "delivery_scope_status": "BOOTSTRAP_IMPLEMENTED_BROWSER_RENDER_NOT_VERIFIED",
+      "full_commission_result": "NOT_RUN",
+      "evidence_contract": {
+        "required": [
+          "run_id",
+          "requirement_versions",
+          "source_context",
+          "command",
+          "environment",
+          "actual_result",
+          "evidence_class",
+          "artifact_digests",
+          "verifier_identity",
+          "limitations"
+        ],
+        "forbidden_shortcuts": [
+          "caller supplied PASS",
+          "hash-shaped text without bytes",
+          "planned tests",
+          "source authority cast as proof"
+        ]
+      }
+    },
+    {
+      "id": "ACC-POLYNOMIAL",
+      "title": "Exact division and derivative bridge",
+      "requirements": [
+        "PIA-054",
+        "PIA-055",
+        "PIA-056",
+        "PIA-057",
+        "PIA-111"
+      ],
+      "artifacts": [
+        "tests/test_experiments.py",
+        "polyia/experiments.py"
+      ],
+      "positive_acceptance": "Q[x] reconstruction, degree bound, product-rule identity and equivalent quotient derivative numerator with b(x) != 0.",
+      "negative_controls": "Zero divisor, inexact input, coefficient/degree/bit budgets, exponent-denial before allocation.",
+      "delivery_scope_status": "BOOTSTRAP_IMPLEMENTED",
+      "full_commission_result": "NOT_RUN",
+      "evidence_contract": {
+        "required": [
+          "run_id",
+          "requirement_versions",
+          "source_context",
+          "command",
+          "environment",
+          "actual_result",
+          "evidence_class",
+          "artifact_digests",
+          "verifier_identity",
+          "limitations"
+        ],
+        "forbidden_shortcuts": [
+          "caller supplied PASS",
+          "hash-shaped text without bytes",
+          "planned tests",
+          "source authority cast as proof"
+        ]
+      }
+    },
+    {
+      "id": "ACC-PROMOTION",
+      "title": "Grammar-as-letter contracts",
+      "requirements": [
+        "PIA-061",
+        "PIA-062",
+        "PIA-063",
+        "PIA-064",
+        "PIA-065",
+        "PIA-066",
+        "PIA-067",
+        "PIA-068",
+        "PIA-069",
+        "PIA-070",
+        "PIA-071",
+        "PIA-072"
+      ],
+      "artifacts": [
+        "tests/test_experiments.py",
+        "docs/SCIENTIFIC_FOUNDATIONS.md"
+      ],
+      "positive_acceptance": "Finite grammar token promotion, exact canonical expansion, separate exhaustive finite semantic check. Full compiler/tower families remain commissioned.",
+      "negative_controls": "Unknown symbols, namespace/type collision, lossy quotient and circular expansion controls for broader adapters.",
+      "delivery_scope_status": "FINITE_BOOTSTRAP_PLUS_FULL_EXTENSION",
+      "full_commission_result": "NOT_RUN",
+      "evidence_contract": {
+        "required": [
+          "run_id",
+          "requirement_versions",
+          "source_context",
+          "command",
+          "environment",
+          "actual_result",
+          "evidence_class",
+          "artifact_digests",
+          "verifier_identity",
+          "limitations"
+        ],
+        "forbidden_shortcuts": [
+          "caller supplied PASS",
+          "hash-shaped text without bytes",
+          "planned tests",
+          "source authority cast as proof"
+        ]
+      }
+    },
+    {
+      "id": "ACC-QPATH",
+      "title": "Typed joint-input composition",
+      "requirements": [
+        "PIA-073",
+        "PIA-074",
+        "PIA-075",
+        "PIA-076",
+        "PIA-077",
+        "PIA-078",
+        "PIA-079",
+        "PIA-080",
+        "PIA-081",
+        "PIA-082",
+        "PIA-083",
+        "PIA-084"
+      ],
+      "artifacts": [
+        "tests/test_experiments.py",
+        "docs/SCIENTIFIC_FOUNDATIONS.md"
+      ],
+      "positive_acceptance": "Actual finite hyperpath records every named premise, context, type, exact witness and output. General path planner remains commissioned.",
+      "negative_controls": "Missing one joint premise, wrong field/type, port error, identity reuse, zero divisor and search-limit distinctions.",
+      "delivery_scope_status": "FINITE_BOOTSTRAP_PLUS_FULL_EXTENSION",
+      "full_commission_result": "NOT_RUN",
+      "evidence_contract": {
+        "required": [
+          "run_id",
+          "requirement_versions",
+          "source_context",
+          "command",
+          "environment",
+          "actual_result",
+          "evidence_class",
+          "artifact_digests",
+          "verifier_identity",
+          "limitations"
+        ],
+        "forbidden_shortcuts": [
+          "caller supplied PASS",
+          "hash-shaped text without bytes",
+          "planned tests",
+          "source authority cast as proof"
+        ]
+      }
+    },
+    {
+      "id": "ACC-NATIVE",
+      "title": "Native language, IR and agency factory",
+      "requirements": [
+        "PIA-085",
+        "PIA-086",
+        "PIA-087",
+        "PIA-088",
+        "PIA-089",
+        "PIA-094",
+        "PIA-154"
+      ],
+      "artifacts": [
+        "docs/SCIENTIFIC_FOUNDATIONS.md",
+        "sources/expanded/POLYIA_FOUNDATION_V0_1"
+      ],
+      "positive_acceptance": "Compiler/interpreter observational equivalence; actual language and nonlanguage agency packages; inherited native-language requirements.",
+      "negative_controls": "Syntax/type/provider/ABI/effect failures; negative grammar; reproducible compilation.",
+      "delivery_scope_status": "FULL_COMMISSION_NOT_RUN",
+      "full_commission_result": "NOT_RUN",
+      "evidence_contract": {
+        "required": [
+          "run_id",
+          "requirement_versions",
+          "source_context",
+          "command",
+          "environment",
+          "actual_result",
+          "evidence_class",
+          "artifact_digests",
+          "verifier_identity",
+          "limitations"
+        ],
+        "forbidden_shortcuts": [
+          "caller supplied PASS",
+          "hash-shaped text without bytes",
+          "planned tests",
+          "source authority cast as proof"
+        ]
+      }
+    },
+    {
+      "id": "ACC-TOOLS",
+      "title": "Tool roles and isolation",
+      "requirements": [
+        "PIA-090",
+        "PIA-091",
+        "PIA-092",
+        "PIA-093",
+        "PIA-094",
+        "PIA-095",
+        "PIA-096"
+      ],
+      "artifacts": [
+        "docs/TOOL_AND_MODEL_CONTRACTS.md"
+      ],
+      "positive_acceptance": "Registered broker, capabilities, effects, sandboxed reads, deadlines, result custody and external-effect reconciliation.",
+      "negative_controls": "Witness leakage, ungranted network/files/process effects, timeout and uncertain external completion.",
+      "delivery_scope_status": "FULL_COMMISSION_NOT_RUN",
+      "full_commission_result": "NOT_RUN",
+      "evidence_contract": {
+        "required": [
+          "run_id",
+          "requirement_versions",
+          "source_context",
+          "command",
+          "environment",
+          "actual_result",
+          "evidence_class",
+          "artifact_digests",
+          "verifier_identity",
+          "limitations"
+        ],
+        "forbidden_shortcuts": [
+          "caller supplied PASS",
+          "hash-shaped text without bytes",
+          "planned tests",
+          "source authority cast as proof"
+        ]
+      }
+    },
+    {
+      "id": "ACC-MODELS",
+      "title": "Constructive and state-map generation",
+      "requirements": [
+        "PIA-097",
+        "PIA-098",
+        "PIA-099",
+        "PIA-100",
+        "PIA-101",
+        "PIA-102",
+        "PIA-103",
+        "PIA-104",
+        "PIA-105",
+        "PIA-106",
+        "PIA-107",
+        "PIA-108"
+      ],
+      "artifacts": [
+        "docs/SCIENTIFIC_FOUNDATIONS.md",
+        "docs/FORMAL_VOCABULARY.md"
+      ],
+      "positive_acceptance": "Native generative models, state-map traces, source-safe surface realization and independently runnable specialized packages.",
+      "negative_controls": "Invalid generated object, unsupported intent, optional model unavailable, failed inverse and stochastic overclaim.",
+      "delivery_scope_status": "FULL_COMMISSION_NOT_RUN",
+      "full_commission_result": "NOT_RUN",
+      "evidence_contract": {
+        "required": [
+          "run_id",
+          "requirement_versions",
+          "source_context",
+          "command",
+          "environment",
+          "actual_result",
+          "evidence_class",
+          "artifact_digests",
+          "verifier_identity",
+          "limitations"
+        ],
+        "forbidden_shortcuts": [
+          "caller supplied PASS",
+          "hash-shaped text without bytes",
+          "planned tests",
+          "source authority cast as proof"
+        ]
+      }
+    },
+    {
+      "id": "ACC-MATH",
+      "title": "Full inherited mathematical families",
+      "requirements": [
+        "PIA-109",
+        "PIA-110",
+        "PIA-111",
+        "PIA-112",
+        "PIA-113",
+        "PIA-114",
+        "PIA-115",
+        "PIA-119",
+        "PIA-120"
+      ],
+      "artifacts": [
+        "registry/inherited_obligations.json",
+        "docs/SCIENTIFIC_FOUNDATIONS.md"
+      ],
+      "positive_acceptance": "Every inherited subject-specific acceptance condition, actual conventional/University coverage and domain-aware exact/numerical witnesses.",
+      "negative_controls": "Vacuous equality, invalid cancellation, wrong coefficient field, incomplete group/topology classification, nontermination/budget.",
+      "delivery_scope_status": "FULL_COMMISSION_NOT_RUN",
+      "full_commission_result": "NOT_RUN",
+      "evidence_contract": {
+        "required": [
+          "run_id",
+          "requirement_versions",
+          "source_context",
+          "command",
+          "environment",
+          "actual_result",
+          "evidence_class",
+          "artifact_digests",
+          "verifier_identity",
+          "limitations"
+        ],
+        "forbidden_shortcuts": [
+          "caller supplied PASS",
+          "hash-shaped text without bytes",
+          "planned tests",
+          "source authority cast as proof"
+        ]
+      }
+    },
+    {
+      "id": "ACC-CHEMISTRY",
+      "title": "Inherited chemistry and form families",
+      "requirements": [
+        "PIA-116",
+        "PIA-117",
+        "PIA-118"
+      ],
+      "artifacts": [
+        "registry/inherited_obligations.json",
+        "sources/originals/UCG_SEED_v0.1.zip"
+      ],
+      "positive_acceptance": "Seal/read-role separation, exact finite form construction and independent empirical models under declared chemistry scope.",
+      "negative_controls": "Wrong witness, unsupported physical realization, dataset absence treated as impossibility, missing licensed dataset.",
+      "delivery_scope_status": "FULL_COMMISSION_NOT_RUN",
+      "full_commission_result": "NOT_RUN",
+      "evidence_contract": {
+        "required": [
+          "run_id",
+          "requirement_versions",
+          "source_context",
+          "command",
+          "environment",
+          "actual_result",
+          "evidence_class",
+          "artifact_digests",
+          "verifier_identity",
+          "limitations"
+        ],
+        "forbidden_shortcuts": [
+          "caller supplied PASS",
+          "hash-shaped text without bytes",
+          "planned tests",
+          "source authority cast as proof"
+        ]
+      }
+    },
+    {
+      "id": "ACC-CORPUS",
+      "title": "Strata, languages and PHONEX",
+      "requirements": [
+        "PIA-121",
+        "PIA-122",
+        "PIA-123",
+        "PIA-124",
+        "PIA-125",
+        "PIA-126",
+        "PIA-127",
+        "PIA-128",
+        "PIA-129",
+        "PIA-130",
+        "PIA-131",
+        "PIA-132"
+      ],
+      "artifacts": [
+        "docs/SCIENTIFIC_FOUNDATIONS.md",
+        "registry/sources.json"
+      ],
+      "positive_acceptance": "Immutable S0 and derived span/card/edge/operation trace, actual variety packs and independently attested linguistic relations.",
+      "negative_controls": "Invented etymology, phonetic-to-semantic leap, unknown variety, irreversible normalization and public-export policy violation.",
+      "delivery_scope_status": "FULL_COMMISSION_NOT_RUN",
+      "full_commission_result": "NOT_RUN",
+      "evidence_contract": {
+        "required": [
+          "run_id",
+          "requirement_versions",
+          "source_context",
+          "command",
+          "environment",
+          "actual_result",
+          "evidence_class",
+          "artifact_digests",
+          "verifier_identity",
+          "limitations"
+        ],
+        "forbidden_shortcuts": [
+          "caller supplied PASS",
+          "hash-shaped text without bytes",
+          "planned tests",
+          "source authority cast as proof"
+        ]
+      }
+    },
+    {
+      "id": "ACC-EXPERIMENT",
+      "title": "Continuous scientific method",
+      "requirements": [
+        "PIA-133",
+        "PIA-134",
+        "PIA-135",
+        "PIA-136",
+        "PIA-137",
+        "PIA-138",
+        "PIA-139",
+        "PIA-140",
+        "PIA-141",
+        "PIA-142",
+        "PIA-143",
+        "PIA-144"
+      ],
+      "artifacts": [
+        "docs/ACCEPTANCE_SYSTEM.md"
+      ],
+      "positive_acceptance": "Sealed experiments, enforced read boundaries, independent witnesses, retained failures and supervised bounded workers.",
+      "negative_controls": "Witness access before seal, fake receipt, stale version, crash/lease conflict, quota/pause refusal.",
+      "delivery_scope_status": "FULL_COMMISSION_NOT_RUN_WITH_BOUNDED_WORKER_SEED",
+      "full_commission_result": "NOT_RUN",
+      "evidence_contract": {
+        "required": [
+          "run_id",
+          "requirement_versions",
+          "source_context",
+          "command",
+          "environment",
+          "actual_result",
+          "evidence_class",
+          "artifact_digests",
+          "verifier_identity",
+          "limitations"
+        ],
+        "forbidden_shortcuts": [
+          "caller supplied PASS",
+          "hash-shaped text without bytes",
+          "planned tests",
+          "source authority cast as proof"
+        ]
+      }
+    },
+    {
+      "id": "ACC-EVOLUTION",
+      "title": "Versioned improvement and activation",
+      "requirements": [
+        "PIA-145",
+        "PIA-146",
+        "PIA-147",
+        "PIA-148",
+        "PIA-149",
+        "PIA-150",
+        "PIA-151",
+        "PIA-152",
+        "PIA-153",
+        "PIA-154",
+        "PIA-155",
+        "PIA-156"
+      ],
+      "artifacts": [
+        "docs/SCIENTIFIC_FOUNDATIONS.md",
+        "docs/DIVISION_CHARTERS.md"
+      ],
+      "positive_acceptance": "Declared baseline/threshold, dependency impact, tested candidate admission, compatible activation and retained rollback epoch.",
+      "negative_controls": "Faster-but-wrong candidate, dependency drift, lost historical package, unreviewed activation.",
+      "delivery_scope_status": "FULL_COMMISSION_NOT_RUN",
+      "full_commission_result": "NOT_RUN",
+      "evidence_contract": {
+        "required": [
+          "run_id",
+          "requirement_versions",
+          "source_context",
+          "command",
+          "environment",
+          "actual_result",
+          "evidence_class",
+          "artifact_digests",
+          "verifier_identity",
+          "limitations"
+        ],
+        "forbidden_shortcuts": [
+          "caller supplied PASS",
+          "hash-shaped text without bytes",
+          "planned tests",
+          "source authority cast as proof"
+        ]
+      }
+    },
+    {
+      "id": "ACC-ASTRA",
+      "title": "Existing ATOM and geometry integration",
+      "requirements": [
+        "PIA-157",
+        "PIA-158",
+        "PIA-159",
+        "PIA-160",
+        "PIA-161",
+        "PIA-162"
+      ],
+      "artifacts": [
+        "docs/ASTRA_INTEGRATION.md",
+        "sources/recovered/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02.zip"
+      ],
+      "positive_acceptance": "Actual ATOM phase/report mapping and RA/dec/camera/near-plane geometry tests, with semantic/render state separation.",
+      "negative_controls": "Unauthorized phase skip, same-handler evidence called independent, visual proximity used as semantics, synthetic stars called measured catalog.",
+      "delivery_scope_status": "FULL_COMMISSION_NOT_RUN",
+      "full_commission_result": "NOT_RUN",
+      "evidence_contract": {
+        "required": [
+          "run_id",
+          "requirement_versions",
+          "source_context",
+          "command",
+          "environment",
+          "actual_result",
+          "evidence_class",
+          "artifact_digests",
+          "verifier_identity",
+          "limitations"
+        ],
+        "forbidden_shortcuts": [
+          "caller supplied PASS",
+          "hash-shaped text without bytes",
+          "planned tests",
+          "source authority cast as proof"
+        ]
+      }
+    },
+    {
+      "id": "ACC-ADAPTERS",
+      "title": "Canonical project bridges",
+      "requirements": [
+        "PIA-163",
+        "PIA-164",
+        "PIA-165",
+        "PIA-166",
+        "PIA-167",
+        "PIA-168"
+      ],
+      "artifacts": [
+        "registry/repositories.json",
+        "docs/SOURCE_RECONCILIATION.md"
+      ],
+      "positive_acceptance": "Typed tested adapters to available TRE/SubstrateIO/PURL/SEURL/CGT/GIN/SNAD/Musa sources; missing runtimes explicitly bounded.",
+      "negative_controls": "Source name mistaken for capability; pseudo-browser; unauthorized upstream mutation; event replay without full payload.",
+      "delivery_scope_status": "FULL_COMMISSION_NOT_RUN",
+      "full_commission_result": "NOT_RUN",
+      "evidence_contract": {
+        "required": [
+          "run_id",
+          "requirement_versions",
+          "source_context",
+          "command",
+          "environment",
+          "actual_result",
+          "evidence_class",
+          "artifact_digests",
+          "verifier_identity",
+          "limitations"
+        ],
+        "forbidden_shortcuts": [
+          "caller supplied PASS",
+          "hash-shaped text without bytes",
+          "planned tests",
+          "source authority cast as proof"
+        ]
+      }
+    },
+    {
+      "id": "ACC-INTAKE",
+      "title": "Native article/prompt end-to-end application",
+      "requirements": [
+        "PIA-170",
+        "PIA-171",
+        "PIA-172",
+        "PIA-173",
+        "PIA-174",
+        "PIA-180"
+      ],
+      "artifacts": [
+        "docs/ACCEPTANCE_SYSTEM.md",
+        "docs/AUTOMATON_SCIENCE_UNIVERSITY.md"
+      ],
+      "positive_acceptance": "Retained source, supported interpretations, typed relationships, verified improvements and separately proposed discovery experiments without LLM inference.",
+      "negative_controls": "Unsupported text, malicious embedded instructions, ambiguity, contradiction, missing source and unproved inference.",
+      "delivery_scope_status": "FULL_COMMISSION_NOT_RUN",
+      "full_commission_result": "NOT_RUN",
+      "evidence_contract": {
+        "required": [
+          "run_id",
+          "requirement_versions",
+          "source_context",
+          "command",
+          "environment",
+          "actual_result",
+          "evidence_class",
+          "artifact_digests",
+          "verifier_identity",
+          "limitations"
+        ],
+        "forbidden_shortcuts": [
+          "caller supplied PASS",
+          "hash-shaped text without bytes",
+          "planned tests",
+          "source authority cast as proof"
+        ]
+      }
+    },
+    {
+      "id": "ACC-NOLLM",
+      "title": "No-inference core dependency gate",
+      "requirements": [
+        "PIA-005",
+        "PIA-184"
+      ],
+      "artifacts": [
+        "tools/audit_no_llm.py",
+        "polyia/experiments.py",
+        "tests/test_experiments.py"
+      ],
+      "positive_acceptance": "Minimal standard-library bootstrap import/call audit and offline kernel execution; full product adds process/tool/model-artifact audit.",
+      "negative_controls": "Inject forbidden model/network/eval dependency in disposable copy and require audit failure; optional adapters disabled.",
+      "delivery_scope_status": "BOOTSTRAP_IMPLEMENTED_FULL_WORKFLOW_GATE_REMAINS",
+      "full_commission_result": "NOT_RUN",
+      "evidence_contract": {
+        "required": [
+          "run_id",
+          "requirement_versions",
+          "source_context",
+          "command",
+          "environment",
+          "actual_result",
+          "evidence_class",
+          "artifact_digests",
+          "verifier_identity",
+          "limitations"
+        ],
+        "forbidden_shortcuts": [
+          "caller supplied PASS",
+          "hash-shaped text without bytes",
+          "planned tests",
+          "source authority cast as proof"
+        ]
+      }
+    },
+    {
+      "id": "ACC-OPERATIONS",
+      "title": "Actual VM deployment and recovery",
+      "requirements": [
+        "PIA-181",
+        "PIA-182"
+      ],
+      "artifacts": [
+        "docs/OPERATOR_RUNBOOK.md",
+        "deploy/polyia.service",
+        "deploy/Caddyfile.example"
+      ],
+      "positive_acceptance": "Actual supervised host service, persistent storage, authenticated TLS URL, second-client access and verified backup/restore.",
+      "negative_controls": "DNS/access unavailable, unpatched WAL SQLite, restart without persistence, public secret leakage, invalid backup.",
+      "delivery_scope_status": "TARGET_VM_NOT_RUN",
+      "full_commission_result": "NOT_RUN",
+      "evidence_contract": {
+        "required": [
+          "run_id",
+          "requirement_versions",
+          "source_context",
+          "command",
+          "environment",
+          "actual_result",
+          "evidence_class",
+          "artifact_digests",
+          "verifier_identity",
+          "limitations"
+        ],
+        "forbidden_shortcuts": [
+          "caller supplied PASS",
+          "hash-shaped text without bytes",
+          "planned tests",
+          "source authority cast as proof"
+        ]
+      }
+    },
+    {
+      "id": "ACC-RELEASE",
+      "title": "Finite complete commissioning",
+      "requirements": [
+        "PIA-001",
+        "PIA-002",
+        "PIA-003",
+        "PIA-004",
+        "PIA-005",
+        "PIA-006",
+        "PIA-007",
+        "PIA-008",
+        "PIA-009",
+        "PIA-010",
+        "PIA-011",
+        "PIA-012",
+        "PIA-183",
+        "PIA-184",
+        "PIA-185",
+        "PIA-186"
+      ],
+      "artifacts": [
+        "GOD_SEED.md",
+        "registry/acceptance.json",
+        "registry/work_contracts.json"
+      ],
+      "positive_acceptance": "All required gate receipts and inherited obligations addressed, actual release and live URL, no silent exceptions.",
+      "negative_controls": "Unimplemented verifier, omitted obligation, planned test, unsupported capability or unresolved mandatory source presented as complete.",
+      "delivery_scope_status": "FULL_COMMISSION_NOT_RUN",
+      "full_commission_result": "NOT_RUN",
+      "evidence_contract": {
+        "required": [
+          "run_id",
+          "requirement_versions",
+          "source_context",
+          "command",
+          "environment",
+          "actual_result",
+          "evidence_class",
+          "artifact_digests",
+          "verifier_identity",
+          "limitations"
+        ],
+        "forbidden_shortcuts": [
+          "caller supplied PASS",
+          "hash-shaped text without bytes",
+          "planned tests",
+          "source authority cast as proof"
+        ]
+      }
+    },
+    {
+      "id": "ACC-UNIVERSITY",
+      "title": "Standing Automaton Science University mandate",
+      "requirements": [
+        "PIA-187",
+        "PIA-188",
+        "PIA-189",
+        "PIA-190",
+        "PIA-191",
+        "PIA-192"
+      ],
+      "artifacts": [
+        "docs/AUTOMATON_SCIENCE_UNIVERSITY.md",
+        "docs/DIVISION_CHARTERS.md"
+      ],
+      "positive_acceptance": "Active charters, real source-linked course/lab publication, bounded ongoing research governance, guide/pause/resume and retained frontier.",
+      "negative_controls": "Charter text mistaken for executed curriculum, invented discovery, unbounded costs and erased negative results.",
+      "delivery_scope_status": "SPECIFICATION_DELIVERED_OPERATION_NOT_RUN",
+      "full_commission_result": "NOT_RUN",
+      "evidence_contract": {
+        "required": [
+          "run_id",
+          "requirement_versions",
+          "source_context",
+          "command",
+          "environment",
+          "actual_result",
+          "evidence_class",
+          "artifact_digests",
+          "verifier_identity",
+          "limitations"
+        ],
+        "forbidden_shortcuts": [
+          "caller supplied PASS",
+          "hash-shaped text without bytes",
+          "planned tests",
+          "source authority cast as proof"
+        ]
+      }
+    }
+  ],
+  "requirements": [
+    {
+      "requirement_id": "PIA-001",
+      "definition_of_done": "A machine-readable authority register links the Option A approval, the B/C inclusion, the repository destination and every supersession; permission checks evaluate actual granted scope.",
+      "families": [
+        "ACC-RELEASE"
+      ],
+      "inherited_origins": [
+        "POLY-C-088",
+        "UCG-002"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-002",
+      "definition_of_done": "The delivery index resolves every requested production to an owner, obligation set, runnable or readable artifact, acceptance receipt and known limitation.",
+      "families": [
+        "ACC-RELEASE"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-003",
+      "definition_of_done": "Identity registry and UI agree; aliases do not produce duplicate project identities or imply material transmutation.",
+      "families": [
+        "ACC-RELEASE"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-004",
+      "definition_of_done": "A registry migration and historical crosswalk resolve both old and new references; no old topic is deleted or reassigned silently, and VII/VIII are visibly provisional.",
+      "families": [
+        "ACC-RELEASE"
+      ],
+      "inherited_origins": [
+        "POLY-C-004",
+        "POLY-C-005",
+        "UCG-009"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-005",
+      "definition_of_done": "Dependency and model-artifact audits, declared capability records and end-to-end tests prove the required workflows complete with no LLM libraries, weights, service calls or inference invocations.",
+      "families": [
+        "ACC-NOLLM",
+        "ACC-RELEASE"
+      ],
+      "inherited_origins": [
+        "UCG-006"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-006",
+      "definition_of_done": "Coverage distinguishes catalogued, formalized, executable and verified entries, and the release certificate enumerates exact capabilities and residual frontier.",
+      "families": [
+        "ACC-RELEASE"
+      ],
+      "inherited_origins": [
+        "UCG-001"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-007",
+      "definition_of_done": "Source census has zero unexplained omissions; every corrected claim resolves to original text, amendment, reason and evidence grade.",
+      "families": [
+        "ACC-RELEASE"
+      ],
+      "inherited_origins": [
+        "POLY-C-003"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-008",
+      "definition_of_done": "From a second client, read state, submit guidance, observe acknowledgement/application and verify a restart; publish an actual service receipt, not a proposed URL.",
+      "families": [
+        "ACC-RELEASE"
+      ],
+      "inherited_origins": [
+        "POLY-C-060"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-009",
+      "definition_of_done": "The state service exposes dependency-ready work and blocked work; a simulated blocked source does not falsely complete dependent obligations or stop unrelated production.",
+      "families": [
+        "ACC-RELEASE"
+      ],
+      "inherited_origins": [
+        "UCG-012"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-010",
+      "definition_of_done": "Every substantive claim resolves to its category, assumptions, nearest prior art and evidence; counterexamples and negative benchmarks are published alongside benefits.",
+      "families": [
+        "ACC-RELEASE"
+      ],
+      "inherited_origins": [
+        "POLY-C-066",
+        "POLY-C-080",
+        "UCG-005"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-011",
+      "definition_of_done": "Access grants and target inventory precede effects; the service never executes an external mutation solely because corpus text or a generated proposal requested it.",
+      "families": [
+        "ACC-RELEASE"
+      ],
+      "inherited_origins": [
+        "POLY-C-001",
+        "POLY-C-087",
+        "POLY-C-088",
+        "UCG-002",
+        "UCG-072"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-012",
+      "definition_of_done": "Attempts to accept a missing, stale, forged or merely planned result are refused; final release links every required obligation to its actual verified evidence.",
+      "families": [
+        "ACC-RELEASE"
+      ],
+      "inherited_origins": [
+        "POLY-C-072",
+        "POLY-C-096",
+        "UCG-012"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-013",
+      "definition_of_done": "Rehash all attachments and every extracted member; demonstrate a changed byte is detected and duplicate bytes retain distinct origin records.",
+      "families": [
+        "ACC-SOURCE"
+      ],
+      "inherited_origins": [
+        "POLY-C-065",
+        "UCG-003"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-014",
+      "definition_of_done": "An inventory compares all pinned tree entries to package blobs, verifies Git blob and SHA-256 identities, and reports missing/unresolved counts without sampling.",
+      "families": [
+        "ACC-SOURCE"
+      ],
+      "inherited_origins": [
+        "POLY-C-001",
+        "POLY-C-002",
+        "POLY-C-087",
+        "UCG-003",
+        "UCG-151"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-015",
+      "definition_of_done": "Book registry resolves existing publication bytes and build sources; any requested title not found stays a named unresolved source, never silently substituted by a similarly titled book.",
+      "families": [
+        "ACC-SOURCE"
+      ],
+      "inherited_origins": [
+        "UCG-138"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-016",
+      "definition_of_done": "Crosswalk checker finds every original clause exactly once as an origin, resolves every target obligation, and reports zero unmapped mandatory clauses; additional source constitutions have section-level custody.",
+      "families": [
+        "ACC-SOURCE"
+      ],
+      "inherited_origins": [
+        "POLY-C-004"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-017",
+      "definition_of_done": "Each conflict has both source anchors, adopted rule, authority, rationale, implementation consequence and a verification condition; no correction edits archived originals.",
+      "families": [
+        "ACC-SOURCE"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-018",
+      "definition_of_done": "Round-trip a reference through API, UI, Markdown and exported package; legacy aliases resolve to the same canonical identity with version history.",
+      "families": [
+        "ACC-SOURCE"
+      ],
+      "inherited_origins": [
+        "UCG-025"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-019",
+      "definition_of_done": "Schema tests prevent a trusted-source label, a hash, a confidence score or successful syntax validation from being cast into a theorem or executable admission.",
+      "families": [
+        "ACC-SOURCE"
+      ],
+      "inherited_origins": [
+        "POLY-C-003",
+        "POLY-C-055",
+        "POLY-C-065",
+        "POLY-C-066",
+        "UCG-004"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-020",
+      "definition_of_done": "A fresh reader reconstructs the checkpoint's source and obligation context from its identifier and retained bytes; current source changes do not rewrite old checkpoints.",
+      "families": [
+        "ACC-SOURCE"
+      ],
+      "inherited_origins": [
+        "POLY-C-085"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-021",
+      "definition_of_done": "Tests cover Unicode, Arabic marks, whitespace normalization and duplicate text; each displayed citation resolves to retained source bytes and the correct span.",
+      "families": [
+        "ACC-SOURCE"
+      ],
+      "inherited_origins": [
+        "POLY-C-039",
+        "POLY-C-065"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-022",
+      "definition_of_done": "Export tests enforce destination policy without deleting restricted-domain research from PolyIA's authorized internal corpus; attribution and source licenses accompany packages.",
+      "families": [
+        "ACC-SOURCE"
+      ],
+      "inherited_origins": [
+        "POLY-C-002",
+        "POLY-C-006",
+        "POLY-C-061",
+        "POLY-C-062",
+        "POLY-C-086",
+        "UCG-008",
+        "UCG-136"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-023",
+      "definition_of_done": "Refresh one repository and demonstrate old/new citations remain resolvable; missing-source dependencies place only affected acceptance gates on HOLD.",
+      "families": [
+        "ACC-SOURCE"
+      ],
+      "inherited_origins": [
+        "POLY-C-008"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-024",
+      "definition_of_done": "Release report includes denominators and complete inventories for each coverage dimension; a preserved file alone cannot increase verified-capability coverage.",
+      "families": [
+        "ACC-SOURCE"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-025",
+      "definition_of_done": "State schemas and transition tests demonstrate both machines, explicit blocked states and independent completion criteria.",
+      "families": [
+        "ACC-STATE"
+      ],
+      "inherited_origins": [
+        "POLY-C-013",
+        "POLY-C-072",
+        "UCG-035",
+        "UCG-041"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-TRE",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-026",
+      "definition_of_done": "Positive and negative transition tests cover every registered command, illegal ordering and wrong types; no dynamic eval or arbitrary handler loading is available.",
+      "families": [
+        "ACC-STATE"
+      ],
+      "inherited_origins": [
+        "POLY-C-013",
+        "UCG-035"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-TRE",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-027",
+      "definition_of_done": "Crash/restart and concurrent-writer tests prove no partially applied transition or duplicate accepted command; migrations preserve state and event identity.",
+      "families": [
+        "ACC-STATE"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-TRE",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-028",
+      "definition_of_done": "Replay checks every link and materialization; tampering is detected; archival/export verification documents the trusted root and any independent signature/checkpoint anchoring.",
+      "families": [
+        "ACC-STATE"
+      ],
+      "inherited_origins": [
+        "POLY-C-092",
+        "UCG-025"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-TRE",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-029",
+      "definition_of_done": "Restore from event export without invoking tool handlers, compare final digest, and separately reproduce a scientific run with a new receipt.",
+      "families": [
+        "ACC-STATE"
+      ],
+      "inherited_origins": [
+        "POLY-C-092",
+        "UCG-034",
+        "UCG-152"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-TRE",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-030",
+      "definition_of_done": "Tests cover exact retry, changed payload, changed actor, two simultaneous writers and a client reconnect after an uncertain response.",
+      "families": [
+        "ACC-STATE"
+      ],
+      "inherited_origins": [
+        "POLY-C-063"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-TRE",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-031",
+      "definition_of_done": "Navigate an old checkpoint after new work; verify its original bytes and source references. An unsupported branch/restore operation advertises unsupported rather than a fake success.",
+      "families": [
+        "ACC-STATE"
+      ],
+      "inherited_origins": [
+        "POLY-C-013"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-TRE",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-032",
+      "definition_of_done": "Simulate a crash after dispatch but before acknowledgement; replay does not silently repeat an irreversible effect, and the uncertain receipt is visible.",
+      "families": [
+        "ACC-STATE"
+      ],
+      "inherited_origins": [
+        "POLY-C-063"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-TRE",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-033",
+      "definition_of_done": "Tests corrupt distinct storage layers and assert specific detection. Backup restoration is demonstrated from an independently retained copy.",
+      "families": [
+        "ACC-STATE"
+      ],
+      "inherited_origins": [
+        "POLY-C-068"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-TRE",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-034",
+      "definition_of_done": "Adversarial inputs hit typed budget outcomes; worker isolation and host resource controls are measured where external or native execution is admitted.",
+      "families": [
+        "ACC-STATE"
+      ],
+      "inherited_origins": [
+        "POLY-C-022",
+        "POLY-C-059",
+        "UCG-037",
+        "UCG-132",
+        "UCG-153"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-TRE",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-035",
+      "definition_of_done": "Repeated GET calls leave the revision unchanged; readiness fails for unresolved integrity failure; disconnected clients see stale/unknown rather than fabricated live values.",
+      "families": [
+        "ACC-STATE"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-TRE",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-036",
+      "definition_of_done": "A storage migration exports/imports a fixture and historical event chain with equal semantic state, retained blobs and recoverable source links.",
+      "families": [
+        "ACC-STATE"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-TRE",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-037",
+      "definition_of_done": "A clean API client discovers the service, reads state, follows a checkpoint and submits one authorized command using the published protocol alone.",
+      "families": [
+        "ACC-HTTP"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-RECON",
+        "SRC-POLYIA96"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-038",
+      "definition_of_done": "The submit receipt returns guidance ID and revision; malformed or unauthorized submissions cannot appear as accepted guidance.",
+      "families": [
+        "ACC-GUIDE"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-RECON",
+        "SRC-POLYIA96"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-039",
+      "definition_of_done": "A submit/ack lifecycle is visible from a second client; duplicate ack and invalid dispositions have deterministic documented behavior.",
+      "families": [
+        "ACC-GUIDE"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-RECON",
+        "SRC-POLYIA96"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-040",
+      "definition_of_done": "Priority, pause and resume actions alter actual state; unsupported free-text execution is refused; receipts distinguish ACKNOWLEDGED from APPLIED.",
+      "families": [
+        "ACC-GUIDE"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-RECON",
+        "SRC-POLYIA96"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-041",
+      "definition_of_done": "Two-client test demonstrates submission, detection, acknowledgement, application and conflict recovery without lost updates or covert state rewriting.",
+      "families": [
+        "ACC-GUIDE"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-RECON",
+        "SRC-POLYIA96"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-042",
+      "definition_of_done": "Produce/reopen tests resolve the original bytes; editing the workspace does not alter captured evidence and cannot silently certify the changed file.",
+      "families": [
+        "ACC-EVIDENCE"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-RECON",
+        "SRC-POLYIA96"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-043",
+      "definition_of_done": "Forged evidence, unknown verifiers, tampered artifacts and explicit failing checks all refuse acceptance; successful receipts bind actual verifier code and inputs.",
+      "families": [
+        "ACC-EVIDENCE"
+      ],
+      "inherited_origins": [
+        "POLY-C-071",
+        "UCG-036",
+        "UCG-041"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-RECON",
+        "SRC-POLYIA96"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-044",
+      "definition_of_done": "A re-produced artifact cannot inherit acceptance automatically; accepting the bootstrap cannot change the full mission to commissioned.",
+      "families": [
+        "ACC-EVIDENCE"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-RECON",
+        "SRC-POLYIA96"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-045",
+      "definition_of_done": "Machine registry validates all five fields, dependency references and evidence requirements; UI displays dependency-ready and blocked work intelligibly.",
+      "families": [
+        "ACC-EVIDENCE"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-RECON",
+        "SRC-POLYIA96"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-046",
+      "definition_of_done": "Negative controls are queryable; authentication failures reveal no state or tokens; unsupported command paths have stable error codes.",
+      "families": [
+        "ACC-EVIDENCE"
+      ],
+      "inherited_origins": [
+        "POLY-C-072",
+        "UCG-042"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-RECON",
+        "SRC-POLYIA96"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-047",
+      "definition_of_done": "A human can complete submit/ack/apply and produce/verify/accept workflows through the UI and see the same receipts as an API client.",
+      "families": [
+        "ACC-EVIDENCE",
+        "ACC-HTTP"
+      ],
+      "inherited_origins": [
+        "UCG-043"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-RECON",
+        "SRC-POLYIA96"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-048",
+      "definition_of_done": "A new Codex or observer reconstructs completed, active and blocked work from the URL or repository export, with no need for the prior chat transcript.",
+      "families": [
+        "ACC-EVIDENCE"
+      ],
+      "inherited_origins": [
+        "POLY-C-096",
+        "UCG-041",
+        "UCG-155"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-RECON",
+        "SRC-POLYIA96"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-049",
+      "definition_of_done": "Vocabulary schema records established/house status, source anchors, examples and non-examples; ambiguous terms resolve to alternatives rather than silent conflation.",
+      "families": [
+        "ACC-RELEASE"
+      ],
+      "inherited_origins": [
+        "POLY-C-036",
+        "UCG-001",
+        "UCG-011",
+        "UCG-017",
+        "UCG-079",
+        "UCG-081"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCGFOUNDATIONS",
+        "SRC-UCG156",
+        "SRC-PLICA",
+        "SRC-GRAMMATONOMIA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-050",
+      "definition_of_done": "Construct one validated alphabet of each inherited kind, demonstrate a product alphabet and distinguish a periodic-table layout from a chemical generative law.",
+      "families": [
+        "ACC-RELEASE"
+      ],
+      "inherited_origins": [
+        "UCG-013",
+        "UCG-066"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCGFOUNDATIONS",
+        "SRC-UCG156",
+        "SRC-PLICA",
+        "SRC-GRAMMATONOMIA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-051",
+      "definition_of_done": "Round trips preserve labeled structure; tests distinguish ordered tuples from multisets and graph incidence from a renderer's layout.",
+      "families": [
+        "ACC-RELEASE"
+      ],
+      "inherited_origins": [
+        "UCG-014",
+        "UCG-055",
+        "UCG-062",
+        "UCG-102"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCGFOUNDATIONS",
+        "SRC-UCG156",
+        "SRC-PLICA",
+        "SRC-GRAMMATONOMIA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-052",
+      "definition_of_done": "Positive/negative fixtures cover each supported formalism, and unsupported or resource-limited membership returns an explicit non-proof result.",
+      "families": [
+        "ACC-RELEASE"
+      ],
+      "inherited_origins": [
+        "POLY-C-020",
+        "POLY-C-022",
+        "UCG-015",
+        "UCG-074",
+        "UCG-134"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCGFOUNDATIONS",
+        "SRC-UCG156",
+        "SRC-PLICA",
+        "SRC-GRAMMATONOMIA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-053",
+      "definition_of_done": "Distinct fixtures produce no-edge-found, forbidden-by-rule, contradicted-by-witness, unresolved and budget-exhausted results without collapsing them.",
+      "families": [
+        "ACC-RELEASE"
+      ],
+      "inherited_origins": [
+        "POLY-C-023",
+        "POLY-C-031",
+        "POLY-C-032",
+        "POLY-C-056",
+        "UCG-016",
+        "UCG-030",
+        "UCG-031",
+        "UCG-063"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCGFOUNDATIONS",
+        "SRC-UCG156",
+        "SRC-PLICA",
+        "SRC-GRAMMATONOMIA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-054",
+      "definition_of_done": "Tests validate function-composition order, matrix dimensions and a chemical formula's descriptive role; ambiguous or unbound symbols are refused with context.",
+      "families": [
+        "ACC-POLYNOMIAL"
+      ],
+      "inherited_origins": [
+        "UCG-073",
+        "UCG-079",
+        "UCG-080",
+        "UCG-084"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCGFOUNDATIONS",
+        "SRC-UCG156",
+        "SRC-PLICA",
+        "SRC-GRAMMATONOMIA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-055",
+      "definition_of_done": "Produce examples of valid syntax with undefined denotation, an interpreted object with no admitted executor and a valid but budget-exceeding computation.",
+      "families": [
+        "ACC-POLYNOMIAL"
+      ],
+      "inherited_origins": [
+        "UCG-018",
+        "UCG-051"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCGFOUNDATIONS",
+        "SRC-UCG156",
+        "SRC-PLICA",
+        "SRC-GRAMMATONOMIA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-056",
+      "definition_of_done": "Tests retain domain exclusions, detect a counterexample outside sampled points and prevent numerical support from being promoted to universal equality.",
+      "families": [
+        "ACC-POLYNOMIAL"
+      ],
+      "inherited_origins": [
+        "POLY-C-024",
+        "POLY-C-030",
+        "POLY-C-070",
+        "UCG-022",
+        "UCG-023",
+        "UCG-090"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCGFOUNDATIONS",
+        "SRC-UCG156",
+        "SRC-PLICA",
+        "SRC-GRAMMATONOMIA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-057",
+      "definition_of_done": "Context-sensitive examples record both dependencies even when outputs coincide, and reject incompatible fields, dimensions or authorization contexts.",
+      "families": [
+        "ACC-POLYNOMIAL"
+      ],
+      "inherited_origins": [
+        "POLY-C-026"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCGFOUNDATIONS",
+        "SRC-UCG156",
+        "SRC-PLICA",
+        "SRC-GRAMMATONOMIA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-058",
+      "definition_of_done": "A machine's trace validates against its declared grammar; illegal shifts and semantic mutations disguised as view changes are detected.",
+      "families": [
+        "ACC-RELEASE"
+      ],
+      "inherited_origins": [
+        "UCG-021",
+        "UCG-035",
+        "UCG-038",
+        "UCG-092",
+        "UCG-130"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCGFOUNDATIONS",
+        "SRC-UCG156",
+        "SRC-PLICA",
+        "SRC-GRAMMATONOMIA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-059",
+      "definition_of_done": "Chart round trips preserve stated observables or return explicit ambiguity/loss, with one linguistic and one mathematical/software example.",
+      "families": [
+        "ACC-RELEASE"
+      ],
+      "inherited_origins": [
+        "POLY-C-025",
+        "UCG-024",
+        "UCG-065",
+        "UCG-080"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCGFOUNDATIONS",
+        "SRC-UCG156",
+        "SRC-PLICA",
+        "SRC-GRAMMATONOMIA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-060",
+      "definition_of_done": "Benchmarks state input size, model and overhead; a vocabulary test distinguishes O(1), O(log n), O(n), O(n log n) and O(2^n) with correct examples.",
+      "families": [
+        "ACC-RELEASE"
+      ],
+      "inherited_origins": [
+        "POLY-C-073",
+        "POLY-C-080",
+        "UCG-019",
+        "UCG-110"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCGFOUNDATIONS",
+        "SRC-UCG156",
+        "SRC-PLICA",
+        "SRC-GRAMMATONOMIA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-061",
+      "definition_of_done": "A promoted grammar can be addressed, inspected, expanded and used in another validated grammar while retaining its original source and contracts.",
+      "families": [
+        "ACC-PROMOTION"
+      ],
+      "inherited_origins": [
+        "POLY-C-054",
+        "UCG-020",
+        "UCG-060",
+        "UCG-081"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-PLICA",
+        "SRC-UCG156",
+        "SRC-RELATIONAL",
+        "SRC-GRAMMATONOMIA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-062",
+      "definition_of_done": "Delete a working copy and recover the captured source from the package/store; compare the promised bytes or canonical representation exactly.",
+      "families": [
+        "ACC-PROMOTION"
+      ],
+      "inherited_origins": [
+        "POLY-C-024",
+        "UCG-020"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-PLICA",
+        "SRC-UCG156",
+        "SRC-RELATIONAL",
+        "SRC-GRAMMATONOMIA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-063",
+      "definition_of_done": "A finite promotion checks every member of its declared finite language; a broader promotion records its proof or remains proposed with an explicit unproved obligation.",
+      "families": [
+        "ACC-PROMOTION"
+      ],
+      "inherited_origins": [
+        "POLY-C-026",
+        "POLY-C-055"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-PLICA",
+        "SRC-UCG156",
+        "SRC-RELATIONAL",
+        "SRC-GRAMMATONOMIA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-064",
+      "definition_of_done": "A noninjective counterexample demonstrates ambiguity, and a side-data round trip recovers the original where the contract promises it.",
+      "families": [
+        "ACC-PROMOTION"
+      ],
+      "inherited_origins": [
+        "POLY-C-024",
+        "POLY-C-070",
+        "UCG-057"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-PLICA",
+        "SRC-UCG156",
+        "SRC-RELATIONAL",
+        "SRC-GRAMMATONOMIA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-065",
+      "definition_of_done": "At least one source-grounded operator per named operation has fixtures, a negative case and a relation to the original definition.",
+      "families": [
+        "ACC-PROMOTION"
+      ],
+      "inherited_origins": [
+        "UCG-020"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-PLICA",
+        "SRC-UCG156",
+        "SRC-RELATIONAL",
+        "SRC-GRAMMATONOMIA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-066",
+      "definition_of_done": "A multi-level tower expands to its base representation, reports each preserved/lost property and resolves overloaded terminology without numerical conflation.",
+      "families": [
+        "ACC-PROMOTION"
+      ],
+      "inherited_origins": [
+        "POLY-C-025",
+        "UCG-014",
+        "UCG-122"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-PLICA",
+        "SRC-UCG156",
+        "SRC-RELATIONAL",
+        "SRC-GRAMMATONOMIA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-067",
+      "definition_of_done": "Mine a repeated trace, propose a macro, verify it against its expansion on declared cases and retain a counterexample for an invalid macro.",
+      "families": [
+        "ACC-PROMOTION"
+      ],
+      "inherited_origins": [
+        "UCG-038",
+        "UCG-129"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-PLICA",
+        "SRC-UCG156",
+        "SRC-RELATIONAL",
+        "SRC-GRAMMATONOMIA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-068",
+      "definition_of_done": "Isomorphic representations canonicalize under the promised action, nonisomorphic controls remain distinct, and normalization claims are scoped to tested/proved domains.",
+      "families": [
+        "ACC-PROMOTION"
+      ],
+      "inherited_origins": [
+        "UCG-025",
+        "UCG-056",
+        "UCG-061",
+        "UCG-074",
+        "UCG-090",
+        "UCG-114"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-PLICA",
+        "SRC-UCG156",
+        "SRC-RELATIONAL",
+        "SRC-GRAMMATONOMIA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-069",
+      "definition_of_done": "Construct a valid algorithm/data-structure composition and reject an incompatible one, with resulting cost model and witness obligations.",
+      "families": [
+        "ACC-PROMOTION"
+      ],
+      "inherited_origins": [
+        "UCG-105"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-PLICA",
+        "SRC-UCG156",
+        "SRC-RELATIONAL",
+        "SRC-GRAMMATONOMIA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-070",
+      "definition_of_done": "Compose two independently versioned grammars into a higher language; inspect both expansions, reject a namespace/type collision and explain the resulting interpretation.",
+      "families": [
+        "ACC-PROMOTION"
+      ],
+      "inherited_origins": [
+        "POLY-C-054",
+        "UCG-081",
+        "UCG-123"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-PLICA",
+        "SRC-UCG156",
+        "SRC-RELATIONAL",
+        "SRC-GRAMMATONOMIA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-071",
+      "definition_of_done": "Replace one dependency and show impacted promotions lose current eligibility while historical certified versions still resolve.",
+      "families": [
+        "ACC-PROMOTION"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-PLICA",
+        "SRC-UCG156",
+        "SRC-RELATIONAL",
+        "SRC-GRAMMATONOMIA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-072",
+      "definition_of_done": "A reproducible experiment compares promoted and unpromoted representations, including overhead, losses, failure cases and an explicit continuation frontier.",
+      "families": [
+        "ACC-PROMOTION"
+      ],
+      "inherited_origins": [
+        "UCG-021"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-PLICA",
+        "SRC-UCG156",
+        "SRC-RELATIONAL",
+        "SRC-GRAMMATONOMIA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-073",
+      "definition_of_done": "Schema/admission tests reject relations missing type/context/evidence and distinguish descriptive records from executable admitted operators.",
+      "families": [
+        "ACC-QPATH"
+      ],
+      "inherited_origins": [
+        "POLY-C-005",
+        "POLY-C-080",
+        "UCG-011",
+        "UCG-026",
+        "UCG-144"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-QSTRINGS",
+        "SRC-INFINITY",
+        "SRC-RELATIONAL",
+        "SRC-DK0"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-074",
+      "definition_of_done": "Reverse lookup returns a candidate set with sources, and an attempted unjustified functional coercion is refused.",
+      "families": [
+        "ACC-QPATH"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-QSTRINGS",
+        "SRC-INFINITY",
+        "SRC-RELATIONAL",
+        "SRC-DK0"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-075",
+      "definition_of_done": "A two-input rule cannot fire when only one premise is reachable; swapped noncommutative ports and incorrect multiplicity are detected.",
+      "families": [
+        "ACC-QPATH"
+      ],
+      "inherited_origins": [
+        "POLY-C-027",
+        "POLY-C-029",
+        "UCG-059"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-QSTRINGS",
+        "SRC-INFINITY",
+        "SRC-RELATIONAL",
+        "SRC-DK0"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-076",
+      "definition_of_done": "Execute a multi-step, multi-input path and reconstruct each port binding; reject missing, wrong-type or wrong-context prerequisites.",
+      "families": [
+        "ACC-QPATH"
+      ],
+      "inherited_origins": [
+        "POLY-C-029",
+        "POLY-C-040",
+        "UCG-026",
+        "UCG-039",
+        "UCG-068",
+        "UCG-131"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-QSTRINGS",
+        "SRC-INFINITY",
+        "SRC-RELATIONAL",
+        "SRC-DK0"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-077",
+      "definition_of_done": "Search returns found, disproved-under-complete-finite-search, unknown, blocked and resource-limit with reasons and the exact explored boundary.",
+      "families": [
+        "ACC-QPATH"
+      ],
+      "inherited_origins": [
+        "POLY-C-031",
+        "POLY-C-032"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-QSTRINGS",
+        "SRC-INFINITY",
+        "SRC-RELATIONAL",
+        "SRC-DK0"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-078",
+      "definition_of_done": "A context change triggers revalidation; a compatible transport has a preservation receipt, while missing transports remain unsupported.",
+      "families": [
+        "ACC-QPATH"
+      ],
+      "inherited_origins": [
+        "POLY-C-025"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-QSTRINGS",
+        "SRC-INFINITY",
+        "SRC-RELATIONAL",
+        "SRC-DK0"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-079",
+      "definition_of_done": "Compare two legal bracketings under stated assumptions, and demonstrate a counterexample to swapping effectful or ordered inputs.",
+      "families": [
+        "ACC-QPATH"
+      ],
+      "inherited_origins": [
+        "POLY-C-026",
+        "POLY-C-029",
+        "UCG-039"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-QSTRINGS",
+        "SRC-INFINITY",
+        "SRC-RELATIONAL",
+        "SRC-DK0"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-080",
+      "definition_of_done": "Competing admissible paths produce a justified Pareto/selected result under a versioned policy, and an invalid low-cost path is rejected.",
+      "families": [
+        "ACC-QPATH"
+      ],
+      "inherited_origins": [
+        "POLY-C-051"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-QSTRINGS",
+        "SRC-INFINITY",
+        "SRC-RELATIONAL",
+        "SRC-DK0"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-081",
+      "definition_of_done": "Cross-domain examples show which edge kinds compose and which do not; unsupported causal or semantic conclusions are blocked.",
+      "families": [
+        "ACC-QPATH"
+      ],
+      "inherited_origins": [
+        "POLY-C-027",
+        "POLY-C-031",
+        "POLY-C-056",
+        "UCG-026"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-QSTRINGS",
+        "SRC-INFINITY",
+        "SRC-RELATIONAL",
+        "SRC-DK0"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-082",
+      "definition_of_done": "Nerve/sheaf examples provide intersections or restriction maps and compatibility checks; insufficient input yields a specific missing-hypothesis result.",
+      "families": [
+        "ACC-QPATH"
+      ],
+      "inherited_origins": [
+        "POLY-C-027",
+        "UCG-011",
+        "UCG-117"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-QSTRINGS",
+        "SRC-INFINITY",
+        "SRC-RELATIONAL",
+        "SRC-DK0"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-083",
+      "definition_of_done": "Export/import a path, replay its recorded result and execute a new reproduction; historical and current runs have distinct identities.",
+      "families": [
+        "ACC-QPATH"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-QSTRINGS",
+        "SRC-INFINITY",
+        "SRC-RELATIONAL",
+        "SRC-DK0"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-084",
+      "definition_of_done": "The system emits an opportunity from a bounded graph gap with linked evidence and a runnable experiment proposal, without presenting the proposed relation as established.",
+      "families": [
+        "ACC-QPATH"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-QSTRINGS",
+        "SRC-INFINITY",
+        "SRC-RELATIONAL",
+        "SRC-DK0"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-085",
+      "definition_of_done": "Parse and compile meaningful source programs, show type errors at source spans, and compare generated execution with an independently checked expected result.",
+      "families": [
+        "ACC-NATIVE"
+      ],
+      "inherited_origins": [
+        "POLY-C-017",
+        "POLY-C-018",
+        "POLY-C-019",
+        "POLY-C-023",
+        "POLY-C-049",
+        "UCG-084",
+        "UCG-124"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-ASTRA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-086",
+      "definition_of_done": "Round-trip IR serialization and verify at least one linguistic and one nonlinguistic lowering through the same core contract.",
+      "families": [
+        "ACC-NATIVE"
+      ],
+      "inherited_origins": [
+        "POLY-C-017",
+        "POLY-C-019",
+        "POLY-C-021",
+        "POLY-C-050",
+        "POLY-C-094",
+        "UCG-084",
+        "UCG-124"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-ASTRA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-087",
+      "definition_of_done": "Install an atom in isolation and substitute a compatible implementation without importing its private internals or silently changing behavior.",
+      "families": [
+        "ACC-NATIVE"
+      ],
+      "inherited_origins": [
+        "POLY-C-009",
+        "POLY-C-010",
+        "POLY-C-011",
+        "POLY-C-012",
+        "POLY-C-014",
+        "POLY-C-016",
+        "POLY-C-054",
+        "POLY-C-082",
+        "UCG-039",
+        "UCG-044"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-ASTRA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-088",
+      "definition_of_done": "Positive and negative provider-resolution fixtures cover multiple providers, wrong versions, unavailable tools and incompatible ABI.",
+      "families": [
+        "ACC-NATIVE"
+      ],
+      "inherited_origins": [
+        "POLY-C-010",
+        "POLY-C-015",
+        "POLY-C-023",
+        "POLY-C-051",
+        "POLY-C-052",
+        "POLY-C-056"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-ASTRA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-089",
+      "definition_of_done": "A generated package executes from a clean environment with only declared dependencies and includes its source/evidence manifest.",
+      "families": [
+        "ACC-NATIVE"
+      ],
+      "inherited_origins": [
+        "POLY-C-050",
+        "POLY-C-053",
+        "POLY-C-079",
+        "POLY-C-081"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-ASTRA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-090",
+      "definition_of_done": "A contract validator and broker reject invalid input, ungranted effects and oversized outputs; successful calls retain actual tool version and receipts.",
+      "families": [
+        "ACC-TOOLS"
+      ],
+      "inherited_origins": [
+        "POLY-C-009",
+        "POLY-C-028",
+        "POLY-C-047",
+        "POLY-C-057",
+        "UCG-002",
+        "UCG-019",
+        "UCG-068",
+        "UCG-072",
+        "UCG-154"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-ASTRA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-091",
+      "definition_of_done": "Denied filesystem/network/process operations fail in an isolation test; the broker records dispatch, timeout/cancellation and output custody.",
+      "families": [
+        "ACC-TOOLS"
+      ],
+      "inherited_origins": [
+        "POLY-C-014",
+        "POLY-C-047",
+        "POLY-C-057",
+        "POLY-C-059",
+        "UCG-132",
+        "UCG-154"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-ASTRA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-092",
+      "definition_of_done": "Role/import/read audits detect witness leakage and the inherited RDKit-role mismatch; revised experiments identify dependencies and independent checks honestly.",
+      "families": [
+        "ACC-TOOLS"
+      ],
+      "inherited_origins": [
+        "UCG-007",
+        "UCG-028"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-ASTRA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-093",
+      "definition_of_done": "Attempts to run unregistered handlers, eval strings or source-embedded commands are rejected; admitted code resolves to a specific verified package version.",
+      "families": [
+        "ACC-TOOLS"
+      ],
+      "inherited_origins": [
+        "POLY-C-022",
+        "POLY-C-057",
+        "POLY-C-058",
+        "POLY-C-064",
+        "UCG-006",
+        "UCG-132"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-ASTRA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-094",
+      "definition_of_done": "Cross-language contract tests exercise the same state command and scientific operation, including refusal behavior and version mismatch.",
+      "families": [
+        "ACC-NATIVE",
+        "ACC-TOOLS"
+      ],
+      "inherited_origins": [
+        "POLY-C-015",
+        "POLY-C-083",
+        "POLY-C-084",
+        "UCG-124"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-ASTRA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-095",
+      "definition_of_done": "An architecture comparison cites exact versions and maps transferable mechanisms to PolyIA contracts; the required no-LLM path passes with every optional model adapter disabled.",
+      "families": [
+        "ACC-TOOLS"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-ASTRA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-096",
+      "definition_of_done": "Tests cover resource cleanup, incompatible protocol versions, cancellation and external-effect uncertainty without losing the associated evidence.",
+      "families": [
+        "ACC-TOOLS"
+      ],
+      "inherited_origins": [
+        "POLY-C-063"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-ASTRA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-097",
+      "definition_of_done": "Generate a previously unlisted admissible object under a finite contract and retain a replayable derivation plus an independent checker result.",
+      "families": [
+        "ACC-MODELS"
+      ],
+      "inherited_origins": [
+        "POLY-C-020",
+        "UCG-050",
+        "UCG-126"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-POLYIA96",
+        "SRC-TRE",
+        "SRC-RELATIONAL"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-098",
+      "definition_of_done": "Model schema validates grammar-based, probabilistic and optional neural instances with distinct capabilities and no hidden inference dependency.",
+      "families": [
+        "ACC-MODELS"
+      ],
+      "inherited_origins": [
+        "UCG-126",
+        "UCG-135"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-POLYIA96",
+        "SRC-TRE",
+        "SRC-RELATIONAL"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-099",
+      "definition_of_done": "Produce different valid tones/representations from one verified content plan, preserve every factual relation and reject unsupported requested claims.",
+      "families": [
+        "ACC-MODELS"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-POLYIA96",
+        "SRC-TRE",
+        "SRC-RELATIONAL"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-100",
+      "definition_of_done": "Inspect and replay a model's state trace, change an admitted style choice and observe output variation without changing certified content.",
+      "families": [
+        "ACC-MODELS"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-POLYIA96",
+        "SRC-TRE",
+        "SRC-RELATIONAL"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-101",
+      "definition_of_done": "Compare a narrow model with the deterministic baseline, including errors and latency; disabling it preserves every core acceptance workflow.",
+      "families": [
+        "ACC-MODELS"
+      ],
+      "inherited_origins": [
+        "UCG-064",
+        "UCG-071"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-POLYIA96",
+        "SRC-TRE",
+        "SRC-RELATIONAL"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-102",
+      "definition_of_done": "Given a supported commission, emit an independently executable model/package with source lock, constraints and tests, then run it in a clean environment.",
+      "families": [
+        "ACC-MODELS"
+      ],
+      "inherited_origins": [
+        "POLY-C-051",
+        "POLY-C-053",
+        "UCG-123",
+        "UCG-135"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-POLYIA96",
+        "SRC-TRE",
+        "SRC-RELATIONAL"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-103",
+      "definition_of_done": "Reproduce fixed-seed outputs and run a separate distributional evaluation with denominators and uncertainty; no random result is labeled proof merely because it repeats.",
+      "families": [
+        "ACC-MODELS"
+      ],
+      "inherited_origins": [
+        "POLY-C-021",
+        "POLY-C-069",
+        "POLY-C-076",
+        "UCG-040",
+        "UCG-152"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-POLYIA96",
+        "SRC-TRE",
+        "SRC-RELATIONAL"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-104",
+      "definition_of_done": "Inverse fixtures include unique, multiple, impossible-in-declared-domain and unresolved cases with source and counterexample records.",
+      "families": [
+        "ACC-MODELS"
+      ],
+      "inherited_origins": [
+        "POLY-C-030",
+        "POLY-C-070",
+        "UCG-022",
+        "UCG-087",
+        "UCG-128"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-POLYIA96",
+        "SRC-TRE",
+        "SRC-RELATIONAL"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-105",
+      "definition_of_done": "A curriculum path identifies prerequisites and derives the polynomial/product/quotient connection using actual calculations and inspectable source-linked steps.",
+      "families": [
+        "ACC-MODELS"
+      ],
+      "inherited_origins": [
+        "UCG-127"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-POLYIA96",
+        "SRC-TRE",
+        "SRC-RELATIONAL"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-106",
+      "definition_of_done": "Synthesize two distinct runnable packages under bounded grammar families, check their contracts and retain a failed synthesis with a precise unsupported/budget result.",
+      "families": [
+        "ACC-MODELS"
+      ],
+      "inherited_origins": [
+        "POLY-C-020",
+        "POLY-C-064",
+        "UCG-123",
+        "UCG-125"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-POLYIA96",
+        "SRC-TRE",
+        "SRC-RELATIONAL"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-107",
+      "definition_of_done": "An optimization experiment includes semantic regression, adverse cases, total production cost and a measured improvement threshold before admission.",
+      "families": [
+        "ACC-MODELS"
+      ],
+      "inherited_origins": [
+        "UCG-130"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-POLYIA96",
+        "SRC-TRE",
+        "SRC-RELATIONAL"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-108",
+      "definition_of_done": "The worker records generated, duplicate, refused, tested and admitted counts, plus resource use and meaningful stop/pause conditions.",
+      "families": [
+        "ACC-MODELS"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-POLYIA96",
+        "SRC-TRE",
+        "SRC-RELATIONAL"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-109",
+      "definition_of_done": "A complete topic inventory preserves existing IDs and maps every inherited mathematics obligation to its capability/evidence state and further dependencies.",
+      "families": [
+        "ACC-MATH"
+      ],
+      "inherited_origins": [
+        "UCG-009",
+        "UCG-079",
+        "UCG-083"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-UCGFOUNDATIONS",
+        "REPO-GRAMMARINNUMBERS",
+        "REPO-COMPUTATIONALGRAMMARTHEORY"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-110",
+      "definition_of_done": "Each inherited CS topic has source-linked operators or an explicit research gap; compare at least one algorithm/data-structure/cost combination through a typed path.",
+      "families": [
+        "ACC-MATH"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-UCGFOUNDATIONS",
+        "REPO-GRAMMARINNUMBERS",
+        "REPO-COMPUTATIONALGRAMMARTHEORY"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-111",
+      "definition_of_done": "For supplied a,b in K[x], certify a=bq+r and the remainder bound; compare product-rule and quotient-rule derivatives on b(x) nonzero and retain cancellation exclusions.",
+      "families": [
+        "ACC-POLYNOMIAL",
+        "ACC-MATH"
+      ],
+      "inherited_origins": [
+        "UCG-085",
+        "UCG-087",
+        "UCG-091",
+        "UCG-116"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-UCGFOUNDATIONS",
+        "REPO-GRAMMARINNUMBERS",
+        "REPO-COMPUTATIONALGRAMMARTHEORY"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-112",
+      "definition_of_done": "Each supported method has domain-aware positive/negative cases and a derivative witness; unsupported elementary/non-elementary classification remains explicit.",
+      "families": [
+        "ACC-MATH"
+      ],
+      "inherited_origins": [
+        "UCG-086",
+        "UCG-087",
+        "UCG-088",
+        "UCG-090",
+        "UCG-091",
+        "UCG-092",
+        "UCG-093",
+        "UCG-094",
+        "UCG-095",
+        "UCG-096",
+        "UCG-097",
+        "UCG-098",
+        "UCG-099",
+        "UCG-100",
+        "UCG-101",
+        "UCG-106"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-UCGFOUNDATIONS",
+        "REPO-GRAMMARINNUMBERS",
+        "REPO-COMPUTATIONALGRAMMARTHEORY"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-113",
+      "definition_of_done": "Dimension/type checks, exact residuals and structure laws validate examples; the inherited A4/non-split claim is corrected with the original preserved.",
+      "families": [
+        "ACC-MATH"
+      ],
+      "inherited_origins": [
+        "POLY-C-030",
+        "UCG-022",
+        "UCG-056",
+        "UCG-070",
+        "UCG-103",
+        "UCG-104",
+        "UCG-105",
+        "UCG-111",
+        "UCG-112",
+        "UCG-113",
+        "UCG-114",
+        "UCG-115",
+        "UCG-116"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-UCGFOUNDATIONS",
+        "REPO-GRAMMARINNUMBERS",
+        "REPO-COMPUTATIONALGRAMMARTHEORY"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-114",
+      "definition_of_done": "Boundary-squared tests and independently checked examples identify coefficient choices, limitations and relevant source amendments.",
+      "families": [
+        "ACC-MATH"
+      ],
+      "inherited_origins": [
+        "UCG-117",
+        "UCG-118",
+        "UCG-119",
+        "UCG-120",
+        "UCG-121",
+        "UCG-122"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-UCGFOUNDATIONS",
+        "REPO-GRAMMARINNUMBERS",
+        "REPO-COMPUTATIONALGRAMMARTHEORY"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-115",
+      "definition_of_done": "A reproducible solver comparison includes convergence/error checks, stability limits, step policy, failures and actual cost measurements.",
+      "families": [
+        "ACC-MATH"
+      ],
+      "inherited_origins": [
+        "UCG-088",
+        "UCG-099",
+        "UCG-100",
+        "UCG-102",
+        "UCG-104",
+        "UCG-106",
+        "UCG-107",
+        "UCG-108",
+        "UCG-109",
+        "UCG-110"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-UCGFOUNDATIONS",
+        "REPO-GRAMMARINNUMBERS",
+        "REPO-COMPUTATIONALGRAMMARTHEORY"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-116",
+      "definition_of_done": "Reproduce scoped element/molecule experiments with declared generator/witness roles, symmetry counts, negative controls and source-linked exceptions.",
+      "families": [
+        "ACC-CHEMISTRY"
+      ],
+      "inherited_origins": [
+        "UCG-045",
+        "UCG-046",
+        "UCG-047",
+        "UCG-048",
+        "UCG-049",
+        "UCG-050",
+        "UCG-051",
+        "UCG-052",
+        "UCG-053",
+        "UCG-054",
+        "UCG-058",
+        "UCG-064",
+        "UCG-065",
+        "UCG-067",
+        "UCG-070",
+        "UCG-072"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-UCGFOUNDATIONS",
+        "REPO-GRAMMARINNUMBERS",
+        "REPO-COMPUTATIONALGRAMMARTHEORY"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-117",
+      "definition_of_done": "Each supported form grammar declares domain, invariants and witness set; wrong-witness audits and model-specific exclusions remain inspectable.",
+      "families": [
+        "ACC-CHEMISTRY"
+      ],
+      "inherited_origins": [
+        "UCG-055",
+        "UCG-056",
+        "UCG-057",
+        "UCG-058",
+        "UCG-059",
+        "UCG-060",
+        "UCG-061",
+        "UCG-062",
+        "UCG-063",
+        "UCG-066",
+        "UCG-067",
+        "UCG-068",
+        "UCG-069",
+        "UCG-071",
+        "UCG-114",
+        "UCG-121"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-UCGFOUNDATIONS",
+        "REPO-GRAMMARINNUMBERS",
+        "REPO-COMPUTATIONALGRAMMARTHEORY"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-118",
+      "definition_of_done": "Cross-domain tests reject dimensionally invalid operations, distinguish measured/simulated data and retain calibration/source metadata.",
+      "families": [
+        "ACC-CHEMISTRY"
+      ],
+      "inherited_origins": [
+        "UCG-048",
+        "UCG-049",
+        "UCG-051",
+        "UCG-069",
+        "UCG-071",
+        "UCG-101"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-UCGFOUNDATIONS",
+        "REPO-GRAMMARINNUMBERS",
+        "REPO-COMPUTATIONALGRAMMARTHEORY"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-119",
+      "definition_of_done": "The registry covers all inherited subject obligations, executes representative machines and marks unsupported operations without fabricated placeholders.",
+      "families": [
+        "ACC-MATH"
+      ],
+      "inherited_origins": [
+        "UCG-001",
+        "UCG-017",
+        "UCG-044",
+        "UCG-086",
+        "UCG-125",
+        "UCG-126"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-UCGFOUNDATIONS",
+        "REPO-GRAMMARINNUMBERS",
+        "REPO-COMPUTATIONALGRAMMARTHEORY"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-120",
+      "definition_of_done": "The atlas can emit and run a bounded research proposal from a real gap; exhausting its budget never changes an open theorem into false or proved.",
+      "families": [
+        "ACC-MATH"
+      ],
+      "inherited_origins": [
+        "POLY-C-032",
+        "UCG-021",
+        "UCG-097",
+        "UCG-116"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-UCGFOUNDATIONS",
+        "REPO-GRAMMARINNUMBERS",
+        "REPO-COMPUTATIONALGRAMMARTHEORY"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-121",
+      "definition_of_done": "Follow a derived operation back through cards and spans to exact source bytes; changing a projection cannot mutate S0.",
+      "families": [
+        "ACC-CORPUS"
+      ],
+      "inherited_origins": [
+        "POLY-C-006",
+        "POLY-C-043"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-CORPUS",
+        "SRC-TIMELESS",
+        "SRC-GREEKLATIN",
+        "SRC-POLYIA96",
+        "REPO-MUSA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-122",
+      "definition_of_done": "An article/prompt ingestion fixture produces source-linked recognized structures plus an explicit unsupported-span report; source-embedded tool instructions have no execution authority.",
+      "families": [
+        "ACC-CORPUS"
+      ],
+      "inherited_origins": [
+        "POLY-C-058",
+        "UCG-133"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-CORPUS",
+        "SRC-TIMELESS",
+        "SRC-GREEKLATIN",
+        "SRC-POLYIA96",
+        "REPO-MUSA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-123",
+      "definition_of_done": "A submitted mixed mathematical/technical passage yields an inspectable interpretation graph, supported transformations and separate hypotheses with falsification plans.",
+      "families": [
+        "ACC-CORPUS"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-CORPUS",
+        "SRC-TIMELESS",
+        "SRC-GREEKLATIN",
+        "SRC-POLYIA96",
+        "REPO-MUSA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-124",
+      "definition_of_done": "Evaluate documented intent/grammar coverage, ambiguity, precision/recall and refusal behavior on held-out inputs with no LLM invocation.",
+      "families": [
+        "ACC-CORPUS"
+      ],
+      "inherited_origins": [
+        "POLY-C-034",
+        "POLY-C-049",
+        "UCG-134"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-CORPUS",
+        "SRC-TIMELESS",
+        "SRC-GREEKLATIN",
+        "SRC-POLYIA96",
+        "REPO-MUSA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-125",
+      "definition_of_done": "At least the inherited licensed English and Arabic specialist cases have independently scoped fixtures, actual executable search and source-attested outputs.",
+      "families": [
+        "ACC-CORPUS"
+      ],
+      "inherited_origins": [
+        "POLY-C-028",
+        "POLY-C-033",
+        "POLY-C-034",
+        "POLY-C-035",
+        "POLY-C-036",
+        "POLY-C-039",
+        "POLY-C-040",
+        "POLY-C-093",
+        "UCG-053",
+        "UCG-075",
+        "UCG-076",
+        "UCG-082"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-CORPUS",
+        "SRC-TIMELESS",
+        "SRC-GREEKLATIN",
+        "SRC-POLYIA96",
+        "REPO-MUSA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-126",
+      "definition_of_done": "Cross-language composition and noninitial negative controls execute on attested corpora; comparisons include dictionary/trie/FST/scan baselines and evidence errors.",
+      "families": [
+        "ACC-CORPUS"
+      ],
+      "inherited_origins": [
+        "POLY-C-028",
+        "POLY-C-037",
+        "POLY-C-040",
+        "POLY-C-075",
+        "POLY-C-093",
+        "UCG-076"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-CORPUS",
+        "SRC-TIMELESS",
+        "SRC-GREEKLATIN",
+        "SRC-POLYIA96",
+        "REPO-MUSA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-127",
+      "definition_of_done": "A phonetic match cannot automatically become a cognate/borrowing claim; fixtures include unknown and contradictory source cases.",
+      "families": [
+        "ACC-CORPUS"
+      ],
+      "inherited_origins": [
+        "POLY-C-035",
+        "POLY-C-036",
+        "POLY-C-038"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-CORPUS",
+        "SRC-TIMELESS",
+        "SRC-GREEKLATIN",
+        "SRC-POLYIA96",
+        "REPO-MUSA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-128",
+      "definition_of_done": "Reproduce the packet's scoped rasm example and candidate count, verify original-text recovery where side data exists, and test contextual distinctions.",
+      "families": [
+        "ACC-CORPUS"
+      ],
+      "inherited_origins": [
+        "POLY-C-006",
+        "POLY-C-041",
+        "UCG-008"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-CORPUS",
+        "SRC-TIMELESS",
+        "SRC-GREEKLATIN",
+        "SRC-POLYIA96",
+        "REPO-MUSA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-129",
+      "definition_of_done": "Both directions produce supported candidates, ambiguity and no-supported-result outcomes; unsupported etymologies are not synthesized as facts.",
+      "families": [
+        "ACC-CORPUS"
+      ],
+      "inherited_origins": [
+        "POLY-C-042",
+        "UCG-054",
+        "UCG-065",
+        "UCG-073",
+        "UCG-074",
+        "UCG-078"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-CORPUS",
+        "SRC-TIMELESS",
+        "SRC-GREEKLATIN",
+        "SRC-POLYIA96",
+        "REPO-MUSA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-130",
+      "definition_of_done": "Implemented parser scope is documented and tested on positive, negative and ambiguous examples; gaps remain explicit scientific obligations.",
+      "families": [
+        "ACC-CORPUS"
+      ],
+      "inherited_origins": [
+        "UCG-053",
+        "UCG-075",
+        "UCG-077"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-CORPUS",
+        "SRC-TIMELESS",
+        "SRC-GREEKLATIN",
+        "SRC-POLYIA96",
+        "REPO-MUSA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-131",
+      "definition_of_done": "At least one language transport and one mathematical notation transport preserve stated invariants and expose ambiguity/loss to human and API clients.",
+      "families": [
+        "ACC-CORPUS"
+      ],
+      "inherited_origins": [
+        "POLY-C-035",
+        "POLY-C-039",
+        "UCG-024",
+        "UCG-082"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-CORPUS",
+        "SRC-TIMELESS",
+        "SRC-GREEKLATIN",
+        "SRC-POLYIA96",
+        "REPO-MUSA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-132",
+      "definition_of_done": "A corpus update creates new versions and opportunities, respects export policy and cannot silently promote a proposed relation to established knowledge.",
+      "families": [
+        "ACC-CORPUS"
+      ],
+      "inherited_origins": [
+        "POLY-C-043",
+        "POLY-C-062"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-CORPUS",
+        "SRC-TIMELESS",
+        "SRC-GREEKLATIN",
+        "SRC-POLYIA96",
+        "REPO-MUSA"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-133",
+      "definition_of_done": "Event history shows generator output sealed before the independent witness is accessed; illegal sequencing is refused.",
+      "families": [
+        "ACC-EXPERIMENT"
+      ],
+      "inherited_origins": [
+        "UCG-027"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-INFINITY",
+        "SRC-RECON",
+        "SRC-TRE"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-134",
+      "definition_of_done": "A deliberately witness-reading generator is blocked, and the receipt names the denied resource without exposing protected content.",
+      "families": [
+        "ACC-EXPERIMENT"
+      ],
+      "inherited_origins": [
+        "UCG-007",
+        "UCG-028",
+        "UCG-045"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-INFINITY",
+        "SRC-RECON",
+        "SRC-TRE"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-135",
+      "definition_of_done": "Evidence registry distinguishes self-check, differential check, exact finite check and proof; a claimed independent witness sharing the same oracle is flagged.",
+      "families": [
+        "ACC-EXPERIMENT"
+      ],
+      "inherited_origins": [
+        "POLY-C-055",
+        "POLY-C-068",
+        "UCG-007",
+        "UCG-031",
+        "UCG-036",
+        "UCG-147",
+        "UCG-148"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-INFINITY",
+        "SRC-RECON",
+        "SRC-TRE"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-136",
+      "definition_of_done": "Known domain/cancellation and vacuous-sampling counterexamples fail the wrong verifier and pass only the appropriate scoped check.",
+      "families": [
+        "ACC-EXPERIMENT"
+      ],
+      "inherited_origins": [
+        "POLY-C-066",
+        "UCG-023",
+        "UCG-148",
+        "UCG-149"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-INFINITY",
+        "SRC-RECON",
+        "SRC-TRE"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-137",
+      "definition_of_done": "An experiment's metrics can be recalculated from retained outputs and witnesses, including its misses and contradictions.",
+      "families": [
+        "ACC-EXPERIMENT"
+      ],
+      "inherited_origins": [
+        "POLY-C-076",
+        "POLY-C-077",
+        "UCG-029",
+        "UCG-031",
+        "UCG-033",
+        "UCG-046",
+        "UCG-098"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-INFINITY",
+        "SRC-RECON",
+        "SRC-TRE"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-138",
+      "definition_of_done": "Reproduce a documented wrong-witness case, publish the correction and re-evaluate affected claims without rewriting history.",
+      "families": [
+        "ACC-EXPERIMENT"
+      ],
+      "inherited_origins": [
+        "UCG-032",
+        "UCG-047",
+        "UCG-058"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-INFINITY",
+        "SRC-RECON",
+        "SRC-TRE"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-139",
+      "definition_of_done": "A deployed worker survives restart, obeys pause and quotas, avoids duplicate admission and records measured activity over a declared observation period.",
+      "families": [
+        "ACC-EXPERIMENT"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-INFINITY",
+        "SRC-RECON",
+        "SRC-TRE"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-140",
+      "definition_of_done": "Generate a proposal from an actual recorded gap and execute its bounded design, preserving both promising and failed outcomes.",
+      "families": [
+        "ACC-EXPERIMENT"
+      ],
+      "inherited_origins": [
+        "UCG-030",
+        "UCG-112",
+        "UCG-129"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-INFINITY",
+        "SRC-RECON",
+        "SRC-TRE"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-141",
+      "definition_of_done": "A clean checkout reproduces selected results and executes scoped negative controls; a changed dependency produces a new run/version comparison.",
+      "families": [
+        "ACC-EXPERIMENT"
+      ],
+      "inherited_origins": [
+        "POLY-C-021",
+        "POLY-C-068",
+        "POLY-C-069",
+        "UCG-034",
+        "UCG-040",
+        "UCG-147",
+        "UCG-152"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-INFINITY",
+        "SRC-RECON",
+        "SRC-TRE"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-142",
+      "definition_of_done": "Benchmark reports compare fair baselines with fixed fixtures and explicitly state overhead, uncertainty and unsupported performance claims.",
+      "families": [
+        "ACC-EXPERIMENT"
+      ],
+      "inherited_origins": [
+        "POLY-C-037",
+        "POLY-C-073",
+        "POLY-C-074",
+        "POLY-C-075",
+        "POLY-C-076",
+        "POLY-C-077",
+        "POLY-C-078",
+        "POLY-C-079",
+        "UCG-098",
+        "UCG-150",
+        "UCG-153"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-INFINITY",
+        "SRC-RECON",
+        "SRC-TRE"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-143",
+      "definition_of_done": "A prior counterexample remains queryable after a corrected release and prevents re-admitting the same invalid transformation.",
+      "families": [
+        "ACC-EXPERIMENT"
+      ],
+      "inherited_origins": [
+        "POLY-C-067",
+        "UCG-030",
+        "UCG-042"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-INFINITY",
+        "SRC-RECON",
+        "SRC-TRE"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-144",
+      "definition_of_done": "Tampered, missing, stale and caller-fabricated receipts fail admission; accepted experiments resolve to actual bytes and scoped scientific claims.",
+      "families": [
+        "ACC-EXPERIMENT"
+      ],
+      "inherited_origins": [
+        "POLY-C-071"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-UCG156",
+        "SRC-INFINITY",
+        "SRC-RECON",
+        "SRC-TRE"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-145",
+      "definition_of_done": "A candidate progresses only with required evidence, and a rejected candidate cannot become active through a status-field edit.",
+      "families": [
+        "ACC-EVOLUTION"
+      ],
+      "inherited_origins": [
+        "POLY-C-067",
+        "POLY-C-089",
+        "POLY-C-090",
+        "UCG-029",
+        "UCG-112"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-146",
+      "definition_of_done": "Historical clients resolve the original implementation after a newer version is active; ambiguous unpinned resolution is rejected or explicitly policy-selected.",
+      "families": [
+        "ACC-EVOLUTION"
+      ],
+      "inherited_origins": [
+        "POLY-C-091",
+        "UCG-010"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-147",
+      "definition_of_done": "A candidate that improves latency but breaks semantics fails admission; a documented tradeoff requires the authorized selection policy.",
+      "families": [
+        "ACC-EVOLUTION"
+      ],
+      "inherited_origins": [
+        "POLY-C-078",
+        "POLY-C-089"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-148",
+      "definition_of_done": "Modify a low-level atom and show the exact affected dependency closure, required rechecks and still-valid independent packages.",
+      "families": [
+        "ACC-EVOLUTION"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-149",
+      "definition_of_done": "Rehearse activation and rollback with a fixture, verify version selection and document any state/effect that cannot be undone.",
+      "families": [
+        "ACC-EVOLUTION"
+      ],
+      "inherited_origins": [
+        "POLY-C-091"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-150",
+      "definition_of_done": "Dependency graph and isolated installation tests demonstrate replacement, source custody and absence of undeclared private imports.",
+      "families": [
+        "ACC-EVOLUTION"
+      ],
+      "inherited_origins": [
+        "POLY-C-010",
+        "POLY-C-011",
+        "POLY-C-012",
+        "POLY-C-016",
+        "POLY-C-081",
+        "POLY-C-082",
+        "POLY-C-087"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-151",
+      "definition_of_done": "Manifest verification checks actual bytes and dependencies; redistribution/export applies declared rights and policy.",
+      "families": [
+        "ACC-EVOLUTION"
+      ],
+      "inherited_origins": [
+        "POLY-C-001",
+        "POLY-C-002",
+        "POLY-C-011",
+        "POLY-C-062",
+        "POLY-C-085",
+        "POLY-C-086",
+        "UCG-151",
+        "UCG-155"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-152",
+      "definition_of_done": "Upgrade a stored fixture, verify old event decoding and semantic state, and reject an incompatible client with actionable diagnostics.",
+      "families": [
+        "ACC-EVOLUTION"
+      ],
+      "inherited_origins": [
+        "POLY-C-092"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-153",
+      "definition_of_done": "An experiment crash or invalid code candidate cannot mutate the active package or original source snapshot.",
+      "families": [
+        "ACC-EVOLUTION"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-154",
+      "definition_of_done": "Recompose the same kernel into one language specialist and one non-language computational service, each independently installable and verifiable.",
+      "families": [
+        "ACC-NATIVE",
+        "ACC-EVOLUTION"
+      ],
+      "inherited_origins": [
+        "POLY-C-050",
+        "POLY-C-081",
+        "POLY-C-094",
+        "UCG-131",
+        "UCG-145"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-155",
+      "definition_of_done": "Release checker resolves every claimed fresh test to a real log/receipt and rejects claims based solely on inherited reports or planned commands.",
+      "families": [
+        "ACC-EVOLUTION"
+      ],
+      "inherited_origins": [
+        "POLY-C-003",
+        "POLY-C-095",
+        "UCG-156"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-156",
+      "definition_of_done": "Each charter has research objects, methods, open questions, measurable milestones, relation to I–VI/IX and publication criteria beyond merely shipping a service.",
+      "families": [
+        "ACC-EVOLUTION"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-UCG156",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-157",
+      "definition_of_done": "Adapter manifest pins the packet and maps every claimed capability to real files, existing API/report fields and independently assessed limitations.",
+      "families": [
+        "ACC-ASTRA"
+      ],
+      "inherited_origins": [
+        "POLY-C-045",
+        "POLY-C-046"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-TRE",
+        "SRC-DK0",
+        "REPO-SUBSTRATEIO",
+        "REPO-PURL",
+        "REPO-SNAD"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-158",
+      "definition_of_done": "An actual ATOM-compatible operation maps to a PolyIA command/event and back to a state report without bypassing admission or verification.",
+      "families": [
+        "ACC-ASTRA"
+      ],
+      "inherited_origins": [
+        "POLY-C-046"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-TRE",
+        "SRC-DK0",
+        "REPO-SUBSTRATEIO",
+        "REPO-PURL",
+        "REPO-SNAD"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-159",
+      "definition_of_done": "Camera movement leaves scientific/commission state unchanged; an admitted semantic command changes it and produces a durable receipt.",
+      "families": [
+        "ACC-ASTRA"
+      ],
+      "inherited_origins": [
+        "POLY-C-044",
+        "UCG-137"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-TRE",
+        "SRC-DK0",
+        "REPO-SUBSTRATEIO",
+        "REPO-PURL",
+        "REPO-SNAD"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-160",
+      "definition_of_done": "Tests check vector norms, coordinate conventions, clipping and representative projections; synthetic/canonical catalog points and illustrative shells are labeled.",
+      "families": [
+        "ACC-ASTRA"
+      ],
+      "inherited_origins": [
+        "POLY-C-045"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-TRE",
+        "SRC-DK0",
+        "REPO-SUBSTRATEIO",
+        "REPO-PURL",
+        "REPO-SNAD"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-161",
+      "definition_of_done": "A function/composition example has a documented embedding/projection, explicit preserved information and visible ambiguity/loss when applicable.",
+      "families": [
+        "ACC-ASTRA"
+      ],
+      "inherited_origins": [
+        "UCG-089",
+        "UCG-102",
+        "UCG-109"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-TRE",
+        "SRC-DK0",
+        "REPO-SUBSTRATEIO",
+        "REPO-PURL",
+        "REPO-SNAD"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-162",
+      "definition_of_done": "Fresh adapter tests separate reused behavior, newly verified behavior and unsupported features; remote exposure uses the PolyIA access boundary, not Astra's unauthenticated loopback server unchanged.",
+      "families": [
+        "ACC-ASTRA"
+      ],
+      "inherited_origins": [
+        "POLY-C-046"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-TRE",
+        "SRC-DK0",
+        "REPO-SUBSTRATEIO",
+        "REPO-PURL",
+        "REPO-SNAD"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-163",
+      "definition_of_done": "Adapter fixtures identify each structure, test source-copy isolation and replay from retained events with all state-changing values.",
+      "families": [
+        "ACC-ADAPTERS"
+      ],
+      "inherited_origins": [
+        "UCG-107",
+        "UCG-144"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-TRE",
+        "SRC-DK0",
+        "REPO-SUBSTRATEIO",
+        "REPO-PURL",
+        "REPO-SNAD"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-164",
+      "definition_of_done": "Read a real retained history through the adapter and verify that observations have no semantic effect or unauthorized continuity claim.",
+      "families": [
+        "ACC-ADAPTERS"
+      ],
+      "inherited_origins": [
+        "POLY-C-007",
+        "POLY-C-048",
+        "UCG-141"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-TRE",
+        "SRC-DK0",
+        "REPO-SUBSTRATEIO",
+        "REPO-PURL",
+        "REPO-SNAD"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-165",
+      "definition_of_done": "Adapter tests distinguish inspection, admitted operation and continuation, with idempotent receipts and an unmodified upstream source snapshot.",
+      "families": [
+        "ACC-ADAPTERS"
+      ],
+      "inherited_origins": [
+        "POLY-C-007",
+        "POLY-C-048",
+        "UCG-142"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-TRE",
+        "SRC-DK0",
+        "REPO-SUBSTRATEIO",
+        "REPO-PURL",
+        "REPO-SNAD"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-166",
+      "definition_of_done": "A source theorem/example is traceable into a PolyIA form, executed or cited under its real scope, and exported back with its original identity.",
+      "families": [
+        "ACC-ADAPTERS"
+      ],
+      "inherited_origins": [
+        "UCG-105",
+        "UCG-139",
+        "UCG-140"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-TRE",
+        "SRC-DK0",
+        "REPO-SUBSTRATEIO",
+        "REPO-PURL",
+        "REPO-SNAD"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-167",
+      "definition_of_done": "Each adapter lists exact source files, inputs/outputs, tested behavior and unsupported areas; project-specific content restrictions remain enforceable.",
+      "families": [
+        "ACC-ADAPTERS"
+      ],
+      "inherited_origins": [
+        "POLY-C-007",
+        "UCG-143"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-TRE",
+        "SRC-DK0",
+        "REPO-SUBSTRATEIO",
+        "REPO-PURL",
+        "REPO-SNAD"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-168",
+      "definition_of_done": "Capability registry marks available specification, available implementation, tested adapter and unresolved source separately; no pseudo-browser or invented engine fills a missing component.",
+      "families": [
+        "ACC-ADAPTERS"
+      ],
+      "inherited_origins": [
+        "POLY-C-008",
+        "POLY-C-044",
+        "POLY-C-045",
+        "POLY-C-047",
+        "UCG-122",
+        "UCG-144",
+        "UCG-146"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-ASTRA",
+        "SRC-TRE",
+        "SRC-DK0",
+        "REPO-SUBSTRATEIO",
+        "REPO-PURL",
+        "REPO-SNAD"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-169",
+      "definition_of_done": "A browser and API client observe the same state revision and execute supported equivalent workflows with matching receipts.",
+      "families": [
+        "ACC-HTTP"
+      ],
+      "inherited_origins": [
+        "UCG-137"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-CORPUS",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-170",
+      "definition_of_done": "Intake tests show retained source bytes, staged processing, failure/ambiguity outcomes and resumable access to the submitted item's history.",
+      "families": [
+        "ACC-INTAKE"
+      ],
+      "inherited_origins": [
+        "UCG-133"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-CORPUS",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-171",
+      "definition_of_done": "Selecting a construct resolves its source span, formal record, available operations, alternatives and evidence without requiring an LLM explanation.",
+      "families": [
+        "ACC-INTAKE"
+      ],
+      "inherited_origins": [
+        "UCG-004",
+        "UCG-043"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-CORPUS",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-172",
+      "definition_of_done": "A mixed-source example shows a valid multi-input path and an invalid alternative with precise missing premises or context constraints.",
+      "families": [
+        "ACC-INTAKE"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-CORPUS",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-173",
+      "definition_of_done": "The polynomial teaching request and one non-mathematical request produce real plans and verified results without LLM inference, with unsupported requests explicitly bounded.",
+      "families": [
+        "ACC-INTAKE"
+      ],
+      "inherited_origins": [
+        "POLY-C-049",
+        "POLY-C-095",
+        "UCG-096",
+        "UCG-133"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-CORPUS",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-174",
+      "definition_of_done": "Corpus census and reader links include all canonical books and publication sources; selected source spans are readable and linked to derived claims.",
+      "families": [
+        "ACC-SOURCE",
+        "ACC-INTAKE"
+      ],
+      "inherited_origins": [
+        "UCG-136",
+        "UCG-138"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-CORPUS",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-175",
+      "definition_of_done": "Pause/resume, priority guidance and checkpoint inspection work through the UI; a disconnected browser does not display a false live indicator.",
+      "families": [
+        "ACC-GUIDE",
+        "ACC-HTTP"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-CORPUS",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-176",
+      "definition_of_done": "A clean client executes the documented flow, handles lost responses with idempotency and surfaces revision conflicts without silent rebasing.",
+      "families": [
+        "ACC-HTTP"
+      ],
+      "inherited_origins": [
+        "POLY-C-084"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-CORPUS",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-177",
+      "definition_of_done": "Tests cover unauthenticated reads, read-only mutation, hostile origins/hosts, malformed/oversized JSON, XSS text and token redaction.",
+      "families": [
+        "ACC-HTTP"
+      ],
+      "inherited_origins": [
+        "POLY-C-060",
+        "POLY-C-061",
+        "UCG-154"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-CORPUS",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-178",
+      "definition_of_done": "Human review covers keyboard navigation, small screens, readable equations, source access and understandable failure/connection feedback.",
+      "families": [
+        "ACC-HTTP"
+      ],
+      "inherited_origins": [
+        "UCG-137"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-CORPUS",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-179",
+      "definition_of_done": "Parity tests compare UI-client and direct API actions, and the same result can be exported as structured JSON plus source-linked prose.",
+      "families": [
+        "ACC-HTTP"
+      ],
+      "inherited_origins": [
+        "UCG-043"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-CORPUS",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-180",
+      "definition_of_done": "Held-out end-to-end fixtures include success, ambiguity, unsupported text, malicious instructions, contradictions and a bounded discovery proposal, with full source/evidence trace.",
+      "families": [
+        "ACC-INTAKE"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-POLYIA96",
+        "SRC-CORPUS",
+        "SRC-RECON"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-181",
+      "definition_of_done": "Record real host/runtime inventory, service unit, persistence path, readiness, restart behavior and reachable URL; absent credentials/DNS remain explicit blockers rather than invented configuration.",
+      "families": [
+        "ACC-OPERATIONS"
+      ],
+      "inherited_origins": [
+        "POLY-C-060"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-OWNER-CURRENT",
+        "SRC-RECON",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-182",
+      "definition_of_done": "A fresh operator follows the runbook to start, inspect, back up, restore and verify the service using supplied commands and actual evidence.",
+      "families": [
+        "ACC-OPERATIONS"
+      ],
+      "inherited_origins": [
+        "POLY-C-061",
+        "UCG-155"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-OWNER-CURRENT",
+        "SRC-RECON",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-183",
+      "definition_of_done": "Matrix linter covers all PIA and inherited obligations, verifies receipts and identifies every unresolved mandatory gate before shipment.",
+      "families": [
+        "ACC-RELEASE"
+      ],
+      "inherited_origins": [
+        "UCG-147"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-OWNER-CURRENT",
+        "SRC-RECON",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-184",
+      "definition_of_done": "Publish dependency/model audit, offline workflow logs and invocation records; local or remote inference cannot be concealed behind a renamed tool.",
+      "families": [
+        "ACC-NOLLM",
+        "ACC-RELEASE"
+      ],
+      "inherited_origins": [
+        "UCG-006"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-OWNER-CURRENT",
+        "SRC-RECON",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-185",
+      "definition_of_done": "Clean unpack verification passes; all relative links resolve; repository/deployment receipts state exact revisions and actual publication status.",
+      "families": [
+        "ACC-RELEASE"
+      ],
+      "inherited_origins": [
+        "POLY-C-088",
+        "POLY-C-095",
+        "UCG-156"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-OWNER-CURRENT",
+        "SRC-RECON",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-186",
+      "definition_of_done": "Final certificate enumerates accepted requirement versions, source manifest, test runs, live service checkpoint and remaining open scientific frontier; no blanket all-green prose substitutes for it.",
+      "families": [
+        "ACC-RELEASE"
+      ],
+      "inherited_origins": [
+        "POLY-C-096",
+        "UCG-012",
+        "UCG-156"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-OWNER-CURRENT",
+        "SRC-RECON",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-187",
+      "definition_of_done": "Founding charter defines research objects, pedagogy, infrastructure, publications, review and the relationship to Substrate University, with source and epistemic continuity.",
+      "families": [
+        "ACC-UNIVERSITY"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-OWNER-CURRENT",
+        "SRC-RECON",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-188",
+      "definition_of_done": "Published charters include methods, falsifiable questions, milestones, negative results and boundaries; charter changes are versioned owner-visible decisions.",
+      "families": [
+        "ACC-UNIVERSITY"
+      ],
+      "inherited_origins": [
+        "POLY-C-004",
+        "POLY-C-005",
+        "UCG-009"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-OWNER-CURRENT",
+        "SRC-RECON",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-189",
+      "definition_of_done": "At least one course/lab path spans elementary operations, formal grammar, typed composition and verified experimentation with citations and reproducible exercises.",
+      "families": [
+        "ACC-UNIVERSITY"
+      ],
+      "inherited_origins": [
+        "UCG-083",
+        "UCG-127",
+        "UCG-136",
+        "UCG-138"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-OWNER-CURRENT",
+        "SRC-RECON",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-190",
+      "definition_of_done": "A research publication template and completed example expose the evidence needed for another investigator to reproduce or refute the claim.",
+      "families": [
+        "ACC-UNIVERSITY"
+      ],
+      "inherited_origins": [
+        "UCG-005"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-OWNER-CURRENT",
+        "SRC-RECON",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-191",
+      "definition_of_done": "A supervised research cycle demonstrates pause/resume, budget exhaustion, restart continuity and a versioned admitted improvement or honestly reported null result.",
+      "families": [
+        "ACC-UNIVERSITY"
+      ],
+      "inherited_origins": [],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-OWNER-CURRENT",
+        "SRC-RECON",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    },
+    {
+      "requirement_id": "PIA-192",
+      "definition_of_done": "A new reader/agent resumes from the final URL/checkpoint plus package alone, locates the controlling rules and continues without reconstructing hidden chat history.",
+      "families": [
+        "ACC-UNIVERSITY"
+      ],
+      "inherited_origins": [
+        "UCG-010"
+      ],
+      "scientific_sources": [
+        "SRC-OWNER-CURRENT",
+        "SRC-OWNER-CURRENT",
+        "SRC-RECON",
+        "SRC-POLYIA96",
+        "SRC-UCG156"
+      ],
+      "status": "NOT_RUN",
+      "verifier": "commission-evidence",
+      "exception": null
+    }
+  ],
+  "bootstrap_evidence_index": "evidence/RELEASE_VERIFICATION.json",
+  "rule": "A specification is not a test receipt. Family delivery scope and actual full commission results are separate."
+}

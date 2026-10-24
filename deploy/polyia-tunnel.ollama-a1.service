@@ -1,0 +1,18 @@
+[Unit]
+Description=Poly IA temporary commissioning HTTPS tunnel
+After=network-online.target polyia.service
+Wants=network-online.target
+[Service]
+User=polyia-tunnel
+Group=polyia-tunnel
+ExecStart=/usr/local/bin/cloudflared tunnel --no-autoupdate --metrics 127.0.0.1:20243 --protocol http2 --url http://127.0.0.1:8765
+Restart=on-failure
+RestartSec=10
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+MemoryMax=256M
+TasksMax=32
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,1188 @@
+{
+  "schema": "QIA/QTHEORY/0.1",
+  "source_repository": "https://github.com/akadaan310/abedkadaancom",
+  "source_ref": "claude/new-session-xd8auu",
+  "generated_from": "source-verified topics registry (2026-10-21)",
+  "status": "proposed QIA research overlay, not university mutation",
+  "total": 62,
+  "theories": [
+    {
+      "q_theory_id": "QIA-I-transition-systems",
+      "source_topic_id": "transition-systems",
+      "source_division": "I",
+      "source_division_name": "Foundations of Computation",
+      "source_subject": "Transition systems",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "State×Label->StateRelation",
+      "invariant_or_refusal": "typed transitions compose",
+      "compiled_target": "transition-engine",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "transition and proof field"
+    },
+    {
+      "q_theory_id": "QIA-I-finite-automata",
+      "source_topic_id": "finite-automata",
+      "source_division": "I",
+      "source_division_name": "Foundations of Computation",
+      "source_subject": "Finite-state machines",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "FiniteState×Symbol->FiniteState",
+      "invariant_or_refusal": "acceptance agrees with DFA run",
+      "compiled_target": "dfa",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "transition and proof field"
+    },
+    {
+      "q_theory_id": "QIA-I-operational-grammar",
+      "source_topic_id": "operational-grammar",
+      "source_division": "I",
+      "source_division_name": "Foundations of Computation",
+      "source_subject": "Computational Grammar Theory",
+      "source_status": "house",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "OperationWord×Context->Admissibility×Realizability×Cost",
+      "invariant_or_refusal": "syntax and execution are separated",
+      "compiled_target": "typed-grammar",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "transition and proof field"
+    },
+    {
+      "q_theory_id": "QIA-I-admissibility",
+      "source_topic_id": "admissibility",
+      "source_division": "I",
+      "source_division_name": "Foundations of Computation",
+      "source_subject": "Admissibility",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Graph×Automaton->ProductGraph",
+      "invariant_or_refusal": "valid walks correspond to product paths",
+      "compiled_target": "product-automaton",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "transition and proof field"
+    },
+    {
+      "q_theory_id": "QIA-I-substrate-theory",
+      "source_topic_id": "substrate-theory",
+      "source_division": "I",
+      "source_division_name": "Foundations of Computation",
+      "source_subject": "Substrate Theory",
+      "source_status": "house",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "State×Perturbation->Observation",
+      "invariant_or_refusal": "declared observables preserved if claimed",
+      "compiled_target": "state-projection",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "transition and proof field"
+    },
+    {
+      "q_theory_id": "QIA-I-perturbation",
+      "source_topic_id": "perturbation",
+      "source_division": "I",
+      "source_division_name": "Foundations of Computation",
+      "source_subject": "Perturbation mathematics",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "State×Delta->ChangedState",
+      "invariant_or_refusal": "bounded perturbation and sensitivity law stated",
+      "compiled_target": "sensitivity",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "transition and proof field"
+    },
+    {
+      "q_theory_id": "QIA-I-equivalence-classes",
+      "source_topic_id": "equivalence-classes",
+      "source_division": "I",
+      "source_division_name": "Foundations of Computation",
+      "source_subject": "Equivalence classes",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Carrier×Equivalence->Quotient",
+      "invariant_or_refusal": "reflexive symmetric transitive",
+      "compiled_target": "quotient-index",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "transition and proof field"
+    },
+    {
+      "q_theory_id": "QIA-I-numerical-grammars",
+      "source_topic_id": "numerical-grammars",
+      "source_division": "I",
+      "source_division_name": "Foundations of Computation",
+      "source_subject": "Numerical grammars",
+      "source_status": "house",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Numeral×Operator->PartialResult",
+      "invariant_or_refusal": "undefined operands have refusal witnesses",
+      "compiled_target": "arithmetic-ir",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "transition and proof field"
+    },
+    {
+      "q_theory_id": "QIA-I-graph-theory",
+      "source_topic_id": "graph-theory",
+      "source_division": "I",
+      "source_division_name": "Foundations of Computation",
+      "source_subject": "Graph theory",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Vertices×Edges->Walks",
+      "invariant_or_refusal": "incidence and reachability preserved",
+      "compiled_target": "graph-query",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "transition and proof field"
+    },
+    {
+      "q_theory_id": "QIA-I-complexity",
+      "source_topic_id": "complexity",
+      "source_division": "I",
+      "source_division_name": "Foundations of Computation",
+      "source_subject": "Complexity",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Algorithm×InputFamily->CostBound",
+      "invariant_or_refusal": "asymptotic model explicitly stated",
+      "compiled_target": "cost-model",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "transition and proof field"
+    },
+    {
+      "q_theory_id": "QIA-II-alphabets-words",
+      "source_topic_id": "alphabets-words",
+      "source_division": "II",
+      "source_division_name": "Relational and Generative Mathematics",
+      "source_subject": "Alphabets and words",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Alphabet->FreeMonoid",
+      "invariant_or_refusal": "concatenation associative with empty word",
+      "compiled_target": "string-ir",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "generativity and composition field"
+    },
+    {
+      "q_theory_id": "QIA-II-generative-grammars",
+      "source_topic_id": "generative-grammars",
+      "source_division": "II",
+      "source_division_name": "Relational and Generative Mathematics",
+      "source_subject": "Grammatical generation",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Grammar×Seed->Derivation",
+      "invariant_or_refusal": "every output has derivation tree",
+      "compiled_target": "rewrite-engine",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "generativity and composition field"
+    },
+    {
+      "q_theory_id": "QIA-II-plicastratum",
+      "source_topic_id": "plicastratum",
+      "source_division": "II",
+      "source_division_name": "Relational and Generative Mathematics",
+      "source_subject": "Plicastratum",
+      "source_status": "house",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Word×FoldRules->CompressedWord",
+      "invariant_or_refusal": "decode(encode(w))=w",
+      "compiled_target": "reversible-fold",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "generativity and composition field"
+    },
+    {
+      "q_theory_id": "QIA-II-alphabet-towers",
+      "source_topic_id": "alphabet-towers",
+      "source_division": "II",
+      "source_division_name": "Relational and Generative Mathematics",
+      "source_subject": "Structured alphabets",
+      "source_status": "house",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "AlphabetLevel×Morphisms->RepresentationTower",
+      "invariant_or_refusal": "explicit translation diagram",
+      "compiled_target": "tower-ir",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "generativity and composition field"
+    },
+    {
+      "q_theory_id": "QIA-II-ingrammatica",
+      "source_topic_id": "ingrammatica",
+      "source_division": "II",
+      "source_division_name": "Relational and Generative Mathematics",
+      "source_subject": "Ingrammatica",
+      "source_status": "house",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Grammar×RejectedWord->RefusalWitness",
+      "invariant_or_refusal": "minimal violation justified",
+      "compiled_target": "negative-parser",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "generativity and composition field"
+    },
+    {
+      "q_theory_id": "QIA-II-constructive-admission",
+      "source_topic_id": "constructive-admission",
+      "source_division": "II",
+      "source_division_name": "Relational and Generative Mathematics",
+      "source_subject": "Constructive admission",
+      "source_status": "house",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Candidate×ConstraintSet->Admission",
+      "invariant_or_refusal": "accepted objects satisfy constraints",
+      "compiled_target": "constraint-solver",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "generativity and composition field"
+    },
+    {
+      "q_theory_id": "QIA-II-relational-generativity",
+      "source_topic_id": "relational-generativity",
+      "source_division": "II",
+      "source_division_name": "Relational and Generative Mathematics",
+      "source_subject": "Relational Generativity",
+      "source_status": "house",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Seed×Relations->ReachabilityClosure",
+      "invariant_or_refusal": "closure is rule-derived only",
+      "compiled_target": "fixed-point-engine",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "generativity and composition field"
+    },
+    {
+      "q_theory_id": "QIA-II-modal-cyclic",
+      "source_topic_id": "modal-cyclic",
+      "source_division": "II",
+      "source_division_name": "Relational and Generative Mathematics",
+      "source_subject": "Cyclic mathematics",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Modulus×Generator->Orbit",
+      "invariant_or_refusal": "orbit length n/gcd(n,k)",
+      "compiled_target": "modular-orbit",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "generativity and composition field"
+    },
+    {
+      "q_theory_id": "QIA-II-recursive-folds",
+      "source_topic_id": "recursive-folds",
+      "source_division": "II",
+      "source_division_name": "Relational and Generative Mathematics",
+      "source_subject": "Recursive folds and unfolding",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Algebra×RecursiveStructure->Fold",
+      "invariant_or_refusal": "catamorphism law under stated algebra",
+      "compiled_target": "recursive-compiler",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "generativity and composition field"
+    },
+    {
+      "q_theory_id": "QIA-II-compositional-forms",
+      "source_topic_id": "compositional-forms",
+      "source_division": "II",
+      "source_division_name": "Relational and Generative Mathematics",
+      "source_subject": "Compositional forms",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "TypedPorts×RewriteRule->Composite",
+      "invariant_or_refusal": "boundary ports remain well-typed",
+      "compiled_target": "operad-ir",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "generativity and composition field"
+    },
+    {
+      "q_theory_id": "QIA-III-uri-grammar",
+      "source_topic_id": "uri-grammar",
+      "source_division": "III",
+      "source_division_name": "Programmable Computational Languages",
+      "source_subject": "Addresses",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "URIText->ParsedAddress",
+      "invariant_or_refusal": "roundtrip subject to normalized/non-normalized codec",
+      "compiled_target": "uri-parser",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "address and compilation field"
+    },
+    {
+      "q_theory_id": "QIA-III-purl",
+      "source_topic_id": "purl",
+      "source_division": "III",
+      "source_division_name": "Programmable Computational Languages",
+      "source_subject": "PURL",
+      "source_status": "house",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Address×TypedOperation->ProgramAddress",
+      "invariant_or_refusal": "addressed operation dispatch typed",
+      "compiled_target": "purl-compiler",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "address and compilation field"
+    },
+    {
+      "q_theory_id": "QIA-III-seurl",
+      "source_topic_id": "seurl",
+      "source_division": "III",
+      "source_division_name": "Programmable Computational Languages",
+      "source_subject": "SEURL",
+      "source_status": "house",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Channel×Transition->ExecutableCommunication",
+      "invariant_or_refusal": "channel contract preserved",
+      "compiled_target": "seurl-runtime",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "address and compilation field"
+    },
+    {
+      "q_theory_id": "QIA-III-typed-machines",
+      "source_topic_id": "typed-machines",
+      "source_division": "III",
+      "source_division_name": "Programmable Computational Languages",
+      "source_subject": "Typed machines",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "State×Event×Guard->Transition",
+      "invariant_or_refusal": "only guarded transitions fire",
+      "compiled_target": "statechart",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "address and compilation field"
+    },
+    {
+      "q_theory_id": "QIA-III-types-as-admissibility",
+      "source_topic_id": "types-as-admissibility",
+      "source_division": "III",
+      "source_division_name": "Programmable Computational Languages",
+      "source_subject": "Type systems",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Expression×TypeEnv->Judgement",
+      "invariant_or_refusal": "preservation or explicit rejection",
+      "compiled_target": "typechecker",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "address and compilation field"
+    },
+    {
+      "q_theory_id": "QIA-III-compilation",
+      "source_topic_id": "compilation",
+      "source_division": "III",
+      "source_division_name": "Programmable Computational Languages",
+      "source_subject": "Compilation",
+      "source_status": "house",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "TypedAST->ExecutableOperator",
+      "invariant_or_refusal": "semantics-preservation test required",
+      "compiled_target": "backend-generator",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "address and compilation field"
+    },
+    {
+      "q_theory_id": "QIA-III-matrix-loom",
+      "source_topic_id": "matrix-loom",
+      "source_division": "III",
+      "source_division_name": "Programmable Computational Languages",
+      "source_subject": "Matrix Loom",
+      "source_status": "house",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "TypedMatrixWord->MatrixProduct",
+      "invariant_or_refusal": "composition ordering checked",
+      "compiled_target": "linear-compiler",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "address and compilation field"
+    },
+    {
+      "q_theory_id": "QIA-III-addressable-forms",
+      "source_topic_id": "addressable-forms",
+      "source_division": "III",
+      "source_division_name": "Programmable Computational Languages",
+      "source_subject": "Addressable computational forms",
+      "source_status": "house",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Root×OperationalWord->Address",
+      "invariant_or_refusal": "resolve(address) witnesses target",
+      "compiled_target": "address-index",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "address and compilation field"
+    },
+    {
+      "q_theory_id": "QIA-III-grammars-as-programs",
+      "source_topic_id": "grammars-as-programs",
+      "source_division": "III",
+      "source_division_name": "Programmable Computational Languages",
+      "source_subject": "Grammars as programs",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "TokenStream×Grammar->ParseForest",
+      "invariant_or_refusal": "every parse has grammar derivation",
+      "compiled_target": "parser",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "address and compilation field"
+    },
+    {
+      "q_theory_id": "QIA-III-symbolic-composition",
+      "source_topic_id": "symbolic-composition",
+      "source_division": "III",
+      "source_division_name": "Programmable Computational Languages",
+      "source_subject": "Symbolic composition",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "TransformationWord->CompositeTransformation",
+      "invariant_or_refusal": "associativity where defined",
+      "compiled_target": "transition-monoid",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "address and compilation field"
+    },
+    {
+      "q_theory_id": "QIA-IV-image-kernel",
+      "source_topic_id": "image-kernel",
+      "source_division": "IV",
+      "source_division_name": "Geometry, Physics, and Representation",
+      "source_subject": "Images and kernels",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Map×Element->ImageFiber",
+      "invariant_or_refusal": "preimages computed over declared domain",
+      "compiled_target": "fiber-solver",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "geometry and physical representation field"
+    },
+    {
+      "q_theory_id": "QIA-IV-imagistratum",
+      "source_topic_id": "imagistratum",
+      "source_division": "IV",
+      "source_division_name": "Geometry, Physics, and Representation",
+      "source_subject": "Imagistratum",
+      "source_status": "house",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "ProjectionChain->InformationLossTower",
+      "invariant_or_refusal": "all projections carry loss disclosures",
+      "compiled_target": "projection-ledger",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "geometry and physical representation field"
+    },
+    {
+      "q_theory_id": "QIA-IV-rank-nullity",
+      "source_topic_id": "rank-nullity",
+      "source_division": "IV",
+      "source_division_name": "Geometry, Physics, and Representation",
+      "source_subject": "Projection loss",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "LinearMap->Rank×Nullity",
+      "invariant_or_refusal": "rank+nullity=dim(domain)",
+      "compiled_target": "linear-algebra",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "geometry and physical representation field"
+    },
+    {
+      "q_theory_id": "QIA-IV-projective-camera",
+      "source_topic_id": "projective-camera",
+      "source_division": "IV",
+      "source_division_name": "Geometry, Physics, and Representation",
+      "source_subject": "Projective geometry",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Point3×Camera->PixelOrUndefined",
+      "invariant_or_refusal": "projective normalization with visible-domain guard",
+      "compiled_target": "camera-projection",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "geometry and physical representation field"
+    },
+    {
+      "q_theory_id": "QIA-IV-topology",
+      "source_topic_id": "topology",
+      "source_division": "IV",
+      "source_division_name": "Geometry, Physics, and Representation",
+      "source_subject": "Topology",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Space×Topology->OpenSets",
+      "invariant_or_refusal": "open-set axioms verified",
+      "compiled_target": "topology-checker",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "geometry and physical representation field"
+    },
+    {
+      "q_theory_id": "QIA-IV-curvature",
+      "source_topic_id": "curvature",
+      "source_division": "IV",
+      "source_division_name": "Geometry, Physics, and Representation",
+      "source_subject": "Differential geometry",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "ParametricCurve->Curvature",
+      "invariant_or_refusal": "coordinate invariance where claimed",
+      "compiled_target": "geometry-kernel",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "geometry and physical representation field"
+    },
+    {
+      "q_theory_id": "QIA-IV-spatial-tensors",
+      "source_topic_id": "spatial-tensors",
+      "source_division": "IV",
+      "source_division_name": "Geometry, Physics, and Representation",
+      "source_subject": "Spatial tensors",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Tensor×FrameChange->TensorComponents",
+      "invariant_or_refusal": "transformation law respects variance",
+      "compiled_target": "tensor-backend",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "geometry and physical representation field"
+    },
+    {
+      "q_theory_id": "QIA-IV-computational-photography",
+      "source_topic_id": "computational-photography",
+      "source_division": "IV",
+      "source_division_name": "Geometry, Physics, and Representation",
+      "source_subject": "Computational photography",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "RadianceField×CameraSensor->SampledImage",
+      "invariant_or_refusal": "exposure/sampling error disclosed",
+      "compiled_target": "renderer-ir",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "geometry and physical representation field"
+    },
+    {
+      "q_theory_id": "QIA-IV-celestial-geometry",
+      "source_topic_id": "celestial-geometry",
+      "source_division": "IV",
+      "source_division_name": "Geometry, Physics, and Representation",
+      "source_subject": "Celestial geometry",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Ephemeris×Frame×Time->Coordinates",
+      "invariant_or_refusal": "frame/time specification explicit",
+      "compiled_target": "celestial-transform",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "geometry and physical representation field"
+    },
+    {
+      "q_theory_id": "QIA-IV-chart-correspondences",
+      "source_topic_id": "chart-correspondences",
+      "source_division": "IV",
+      "source_division_name": "Geometry, Physics, and Representation",
+      "source_subject": "Charts",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "CoordinateCharts×Overlap->TransitionMap",
+      "invariant_or_refusal": "overlap chart maps compose",
+      "compiled_target": "atlas-solver",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "geometry and physical representation field"
+    },
+    {
+      "q_theory_id": "QIA-IV-rendering-mathematics",
+      "source_topic_id": "rendering-mathematics",
+      "source_division": "IV",
+      "source_division_name": "Geometry, Physics, and Representation",
+      "source_subject": "Rendering mathematics",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Geometry×BRDF×Lighting->RadianceEstimate",
+      "invariant_or_refusal": "energy constraints and error budget stated",
+      "compiled_target": "render-graph",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "geometry and physical representation field"
+    },
+    {
+      "q_theory_id": "QIA-IV-invisible-sensing",
+      "source_topic_id": "invisible-sensing",
+      "source_division": "IV",
+      "source_division_name": "Geometry, Physics, and Representation",
+      "source_subject": "AWRM / invisible sensing",
+      "source_status": "application",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Measurements×ForwardModel->LatentStateSet",
+      "invariant_or_refusal": "ambiguity and uncertainty retained",
+      "compiled_target": "inverse-sensing",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "geometry and physical representation field"
+    },
+    {
+      "q_theory_id": "QIA-V-sound-signals",
+      "source_topic_id": "sound-signals",
+      "source_division": "V",
+      "source_division_name": "Acoustic and Generative Sciences",
+      "source_subject": "Sound and sampling",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Waveform×SampleRate->Samples",
+      "invariant_or_refusal": "Nyquist assumptions and aliasing recorded",
+      "compiled_target": "audio-sampler",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "signal and harmonic field"
+    },
+    {
+      "q_theory_id": "QIA-V-pitch-frequency",
+      "source_topic_id": "pitch-frequency",
+      "source_division": "V",
+      "source_division_name": "Acoustic and Generative Sciences",
+      "source_subject": "Pitch",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Frequency->LogPitch",
+      "invariant_or_refusal": "positive frequency domain enforced",
+      "compiled_target": "pitch-map",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "signal and harmonic field"
+    },
+    {
+      "q_theory_id": "QIA-V-interval-geometry",
+      "source_topic_id": "interval-geometry",
+      "source_division": "V",
+      "source_division_name": "Acoustic and Generative Sciences",
+      "source_subject": "Interval geometry",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "PitchClass×Step->Orbit",
+      "invariant_or_refusal": "cyclic modular invariant",
+      "compiled_target": "pitch-orbit",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "signal and harmonic field"
+    },
+    {
+      "q_theory_id": "QIA-V-tuning",
+      "source_topic_id": "tuning",
+      "source_division": "V",
+      "source_division_name": "Acoustic and Generative Sciences",
+      "source_subject": "Tuning",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Ratio×TuningSystem->Frequency",
+      "invariant_or_refusal": "frequency ratios traceable",
+      "compiled_target": "tuning-map",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "signal and harmonic field"
+    },
+    {
+      "q_theory_id": "QIA-V-fourier",
+      "source_topic_id": "fourier",
+      "source_division": "V",
+      "source_division_name": "Acoustic and Generative Sciences",
+      "source_subject": "Spectral processing",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "FiniteSignal->Spectrum",
+      "invariant_or_refusal": "inverse DFT roundtrip under convention",
+      "compiled_target": "fft",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "signal and harmonic field"
+    },
+    {
+      "q_theory_id": "QIA-V-time-frequency",
+      "source_topic_id": "time-frequency",
+      "source_division": "V",
+      "source_division_name": "Acoustic and Generative Sciences",
+      "source_subject": "Time–frequency representations",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Waveform×Window×Hop->STFT",
+      "invariant_or_refusal": "window/hop reconstruction assumptions explicit",
+      "compiled_target": "stft",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "signal and harmonic field"
+    },
+    {
+      "q_theory_id": "QIA-V-synthesis",
+      "source_topic_id": "synthesis",
+      "source_division": "V",
+      "source_division_name": "Acoustic and Generative Sciences",
+      "source_subject": "Sound synthesis",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Oscillators×Parameters->Waveform",
+      "invariant_or_refusal": "sample-rate and amplitude bounds",
+      "compiled_target": "audio-synth",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "signal and harmonic field"
+    },
+    {
+      "q_theory_id": "QIA-V-phase",
+      "source_topic_id": "phase",
+      "source_division": "V",
+      "source_division_name": "Acoustic and Generative Sciences",
+      "source_subject": "Phase processing",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "ComplexAmplitude×Time->Phase",
+      "invariant_or_refusal": "phase modulo 2pi",
+      "compiled_target": "phase-operator",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "signal and harmonic field"
+    },
+    {
+      "q_theory_id": "QIA-V-phonogrammatica",
+      "source_topic_id": "phonogrammatica",
+      "source_division": "V",
+      "source_division_name": "Acoustic and Generative Sciences",
+      "source_subject": "Phonogrammatica",
+      "source_status": "house",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "AcousticEvents×Grammar->AdmissibleSoundForms",
+      "invariant_or_refusal": "time-frequency admissibility checked",
+      "compiled_target": "acoustic-grammar",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "signal and harmonic field"
+    },
+    {
+      "q_theory_id": "QIA-V-generative-composition",
+      "source_topic_id": "generative-composition",
+      "source_division": "V",
+      "source_division_name": "Acoustic and Generative Sciences",
+      "source_subject": "Generative composition",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "MusicalGrammar×Seed->EventSequence",
+      "invariant_or_refusal": "timing and scale constraints checked",
+      "compiled_target": "music-scheduler",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "signal and harmonic field"
+    },
+    {
+      "q_theory_id": "QIA-VI-cellular-automata",
+      "source_topic_id": "cellular-automata",
+      "source_division": "VI",
+      "source_division_name": "Computational Worlds and Emergence",
+      "source_subject": "Cellular automata",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "LocalRule×Neighborhood->NextCell",
+      "invariant_or_refusal": "locality and rule determinism if asserted",
+      "compiled_target": "ca-kernel",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "world and causal dynamics field"
+    },
+    {
+      "q_theory_id": "QIA-VI-world-loom",
+      "source_topic_id": "world-loom",
+      "source_division": "VI",
+      "source_division_name": "Computational Worlds and Emergence",
+      "source_subject": "World Loom",
+      "source_status": "house",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Seed×LocalRules->WorldRows",
+      "invariant_or_refusal": "every emitted row derives from previous",
+      "compiled_target": "world-generator",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "world and causal dynamics field"
+    },
+    {
+      "q_theory_id": "QIA-VI-agent-grammars",
+      "source_topic_id": "agent-grammars",
+      "source_division": "VI",
+      "source_division_name": "Computational Worlds and Emergence",
+      "source_subject": "Agent grammars",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "AgentState×Perception×Policy->Action",
+      "invariant_or_refusal": "action guards and traceability",
+      "compiled_target": "agent-runtime",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "world and causal dynamics field"
+    },
+    {
+      "q_theory_id": "QIA-VI-procedural-environments",
+      "source_topic_id": "procedural-environments",
+      "source_division": "VI",
+      "source_division_name": "Computational Worlds and Emergence",
+      "source_subject": "Procedural environments",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "WorldGrammar×Seed->SceneGraph",
+      "invariant_or_refusal": "scene satisfies authored generation constraints",
+      "compiled_target": "scene-generator",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "world and causal dynamics field"
+    },
+    {
+      "q_theory_id": "QIA-VI-world-models",
+      "source_topic_id": "world-models",
+      "source_division": "VI",
+      "source_division_name": "Computational Worlds and Emergence",
+      "source_subject": "Generative world models",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "State×Action×Model->PredictedStateDistribution",
+      "invariant_or_refusal": "uncertainty calibrated on benchmark",
+      "compiled_target": "predictive-model",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "world and causal dynamics field"
+    },
+    {
+      "q_theory_id": "QIA-VI-glm-lgm",
+      "source_topic_id": "glm-lgm",
+      "source_division": "VI",
+      "source_division_name": "Computational Worlds and Emergence",
+      "source_subject": "Gaming Language Models and Language Gaming Models",
+      "source_status": "house",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "GameGrammar×LanguageState->GameAction",
+      "invariant_or_refusal": "typed surface/game distinction",
+      "compiled_target": "game-language-runtime",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "world and causal dynamics field"
+    },
+    {
+      "q_theory_id": "QIA-VI-borne",
+      "source_topic_id": "borne",
+      "source_division": "VI",
+      "source_division_name": "Computational Worlds and Emergence",
+      "source_subject": "BORNE causal dependencies",
+      "source_status": "house",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "DependencyDAG×FactSet->EnabledEvents",
+      "invariant_or_refusal": "causal/dependency prerequisites non-cyclic when asserted",
+      "compiled_target": "dependency-scheduler",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "world and causal dynamics field"
+    },
+    {
+      "q_theory_id": "QIA-VI-maps-navigation",
+      "source_topic_id": "maps-navigation",
+      "source_division": "VI",
+      "source_division_name": "Computational Worlds and Emergence",
+      "source_subject": "World maps and navigation",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "Map×CostMetric->Route",
+      "invariant_or_refusal": "routing cost nonnegative for Dijkstra",
+      "compiled_target": "routing",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "world and causal dynamics field"
+    },
+    {
+      "q_theory_id": "QIA-VI-simulated-populations",
+      "source_topic_id": "simulated-populations",
+      "source_division": "VI",
+      "source_division_name": "Computational Worlds and Emergence",
+      "source_subject": "Simulated populations",
+      "source_status": "established",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "AgentPopulation×Rules->PopulationTrajectory",
+      "invariant_or_refusal": "statistical conclusions separated from individual simulation",
+      "compiled_target": "population-simulator",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "world and causal dynamics field"
+    },
+    {
+      "q_theory_id": "QIA-VI-homeless-dark",
+      "source_topic_id": "homeless-dark",
+      "source_division": "VI",
+      "source_division_name": "Computational Worlds and Emergence",
+      "source_subject": "HOMELESS / Dark",
+      "source_status": "application",
+      "qia_status": "proposed typed overlay, not source theorem",
+      "signature": "GameScenario×ValidatedRules->SimulationPlan",
+      "invariant_or_refusal": "application claims require validation",
+      "compiled_target": "scene-ir",
+      "representation_layers": [
+        "exact-serialization",
+        "source-form",
+        "typed-semantics",
+        "proof-or-counterexample"
+      ],
+      "field_family": "world and causal dynamics field"
+    }
+  ]
+}

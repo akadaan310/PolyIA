@@ -1,0 +1,12 @@
+test_atlas_resolves_every_original_topic_and_declares_no_topic_admission (test_book_of_forms.BookOfFormsTests.test_atlas_resolves_every_original_topic_and_declares_no_topic_admission) ... ok
+test_deterministic_render_and_scoped_evidence (test_book_of_forms.BookOfFormsTests.test_deterministic_render_and_scoped_evidence) ... ok
+test_kernel_pass_without_actual_checks_cannot_publish (test_book_of_forms.BookOfFormsTests.test_kernel_pass_without_actual_checks_cannot_publish) ... ok
+test_missing_duplicate_or_tampered_topic_source_refuses (test_book_of_forms.BookOfFormsTests.test_missing_duplicate_or_tampered_topic_source_refuses) ... ok
+test_no_vacuous_success_or_unknown_executor (test_book_of_forms.BookOfFormsTests.test_no_vacuous_success_or_unknown_executor) ... ok
+test_real_exercises_include_exact_results_and_expected_refusals (test_book_of_forms.BookOfFormsTests.test_real_exercises_include_exact_results_and_expected_refusals) ... ok
+test_wrong_expected_answer_cannot_publish_a_green_book (test_book_of_forms.BookOfFormsTests.test_wrong_expected_answer_cannot_publish_a_green_book) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.245s
+
+OK

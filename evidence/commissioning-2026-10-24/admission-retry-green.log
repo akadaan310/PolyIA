@@ -1,0 +1,58 @@
+TAP version 13
+# Subtest: a connection reads real state and a read token cannot issue a command
+ok 1 - a connection reads real state and a read token cannot issue a command
+  ---
+  duration_ms: 271.308972
+  type: 'test'
+  ...
+# Subtest: lost command response keeps the exact command available for idempotent retry
+ok 2 - lost command response keeps the exact command available for idempotent retry
+  ---
+  duration_ms: 47.007748
+  type: 'test'
+  ...
+# Subtest: a revision conflict is visible and does not silently replay with a new revision
+ok 3 - a revision conflict is visible and does not silently replay with a new revision
+  ---
+  duration_ms: 45.414468
+  type: 'test'
+  ...
+# Subtest: guidance with malicious markup remains exact data throughout command lifecycle
+ok 4 - guidance with malicious markup remains exact data throughout command lifecycle
+  ---
+  duration_ms: 43.051749
+  type: 'test'
+  ...
+# Subtest: artifact capture verification acceptance and checkpoint use registered operations
+ok 5 - artifact capture verification acceptance and checkpoint use registered operations
+  ---
+  duration_ms: 52.181987
+  type: 'test'
+  ...
+# Subtest: disconnect during a delayed response cannot restore an old session
+ok 6 - disconnect during a delayed response cannot restore an old session
+  ---
+  duration_ms: 6.142958
+  type: 'test'
+  ...
+# Subtest: an incomplete 200 receipt is not reported as command success and can be recovered
+ok 7 - an incomplete 200 receipt is not reported as command success and can be recovered
+  ---
+  duration_ms: 34.994512
+  type: 'test'
+  ...
+# Subtest: admission refusal during recovery retains a command whose original response was lost
+ok 8 - admission refusal during recovery retains a command whose original response was lost
+  ---
+  duration_ms: 33.404952
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 617.182564

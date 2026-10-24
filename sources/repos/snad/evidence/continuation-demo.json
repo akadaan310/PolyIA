@@ -1,0 +1,443 @@
+{
+  "schema": "snad.fresh-context-reconstruction/1",
+  "observed_at": "2026-10-18T20:26:20.619682+00:00",
+  "status": "PASS_WITH_LIMITATIONS",
+  "task_scope": {
+    "initial_pointer": "https://purls-production.up.railway.app/p/resource_bd80f9093ac5fb3b2d176291",
+    "initial_narrative_context": "Only the mission PURL was supplied; no prior implementation narrative was inherited.",
+    "workspace_visibility": "Shared workspace was available. An initial read-only filename search located possible local code before the pointer links were fully reconstructed. Verification then used an anonymously downloaded public archive, rather than relying on those source files. This was a fresh-context participant, not an externally isolated machine.",
+    "remote_writes_performed": false,
+    "authentication_performed": false,
+    "additional_agents_spawned": 0
+  },
+  "mission": {
+    "resource_id": "resource_bd80f9093ac5fb3b2d176291",
+    "observed_version": 14,
+    "title": "Computational Attribution & Transition Grammar",
+    "objective": "Build an independent, domain-neutral attribution SDK and reproducible discourse laboratory; Arabic/Quranic morphology is an evidence corpus, not generic semantics.",
+    "recorded_status": "INCOMPLETE",
+    "graph_node_count": 12,
+    "graph_edge_count": 16,
+    "recorded_graph_statuses": {
+      "service-discovery": "PASS",
+      "source-reconstruction": "PASS",
+      "typed-core": "PASS",
+      "complete-corpus": "PASS",
+      "discourse-graphs": "PASS",
+      "research": "PASS",
+      "web-lab": "PASS",
+      "portable-mission": "PASS",
+      "validation": "PASS",
+      "public-delivery": "PASS",
+      "fresh-context": "NOT_RUN",
+      "human-validation": "BLOCKED"
+    },
+    "fresh_context_state_was_not_mutated": true,
+    "native_source": "input json",
+    "native_execution_meaning": "Typed JSON identity carrier and replay; the PURL does not run the standalone SNAD attribution algorithms."
+  },
+  "observed_urls": [
+    {
+      "url": "https://purls-production.up.railway.app/p/resource_bd80f9093ac5fb3b2d176291",
+      "transport": "curl GET with default Accept",
+      "http_status": 200,
+      "result": "HTML SPA shell. Link header discloses /.well-known/purl."
+    },
+    {
+      "url": "https://purls-production.up.railway.app/.well-known/purl",
+      "transport": "anonymous urllib GET",
+      "http_status": 200,
+      "result": "PURL/launch-1 discovery; public reads confer no mutation authority."
+    },
+    {
+      "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291",
+      "transport": "anonymous urllib GET, Accept application/json",
+      "http_status": 200,
+      "result": "Resource and finite mission state located."
+    },
+    {
+      "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/manifest",
+      "transport": "anonymous urllib GET, Accept application/json",
+      "http_status": 200,
+      "result": "Program manifest, version and unavailable mutation operations located."
+    },
+    {
+      "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/continuity",
+      "transport": "anonymous urllib GET, Accept application/json",
+      "http_status": 200,
+      "result": "Mission graph, artifacts, blockers, source reference and continuation located."
+    },
+    {
+      "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/history",
+      "transport": "anonymous urllib GET, Accept application/json",
+      "http_status": 200,
+      "result": "Public recorded history located."
+    },
+    {
+      "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/source",
+      "transport": "anonymous urllib GET, Accept application/json",
+      "http_status": 200,
+      "result": "Native input json identity source and declared test located."
+    },
+    {
+      "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/artifacts",
+      "transport": "anonymous urllib GET, Accept application/json",
+      "http_status": 200,
+      "result": "Public native artifacts located."
+    },
+    {
+      "url": "https://snad-discourse-lab.daintyaspen11.chatgpt.site/mission/manifest.json",
+      "transport": "anonymous urllib GET through inherited proxy with TLS verification",
+      "http_status": 403,
+      "result": "HTTP Error 403: Forbidden. Failed transport retained; it does not establish artifact absence."
+    },
+    {
+      "url": "https://snad-discourse-lab.daintyaspen11.chatgpt.site/snad-mission.tar.gz",
+      "transport": "anonymous urllib GET through inherited proxy with TLS verification",
+      "http_status": 403,
+      "result": "HTTP Error 403: Forbidden. Failed transport retained."
+    },
+    {
+      "url": "https://snad-discourse-lab.daintyaspen11.chatgpt.site",
+      "transport": "anonymous system Chromium through inherited HTTPS proxy",
+      "http_status": 200,
+      "result": "Title: SNAD — Attribution & transition laboratory."
+    },
+    {
+      "url": "https://snad-discourse-lab.daintyaspen11.chatgpt.site/mission/manifest.json",
+      "transport": "anonymous Chromium page-native fetch",
+      "http_status": 200,
+      "bytes": 26889,
+      "sha256": "c8fb54fdc8d10c0ba2208327f4956f9edac343e2802c31a4235307c0220f35b1"
+    },
+    {
+      "url": "https://snad-discourse-lab.daintyaspen11.chatgpt.site/snad-mission.tar.gz",
+      "transport": "anonymous Chromium page-native fetch",
+      "http_status": 200,
+      "bytes": 5676444,
+      "sha256": "170d7afcc30d853ee8f3e94d6930594870a87cab0af8159a3d3b59ebb2091624"
+    },
+    {
+      "url": "https://purls-production.up.railway.app/api/identity/config",
+      "http_status": 200,
+      "result": {
+        "available": false,
+        "blockers": [
+          "PURL_OIDC_ISSUER is not configured",
+          "PURL_OIDC_CLIENT_ID is not configured",
+          "PURL_OIDC_CLIENT_SECRET is not configured"
+        ],
+        "product": "purls",
+        "callbackUrl": "https://purls-production.up.railway.app/auth/callback",
+        "guest_available": true,
+        "recovery_available": false
+      }
+    },
+    {
+      "url": "https://purls-production.up.railway.app/api/identity/me",
+      "http_status": 401,
+      "result": "{\"error\":{\"code\":\"authentication_required\",\"message\":\"An active identity session is required\"}}"
+    },
+    {
+      "url": "https://purls-production.up.railway.app/api/runtime",
+      "http_status": 200,
+      "result": {
+        "protocol": "purl-runtime-capabilities/1",
+        "product": "purls",
+        "node": "22.14.0",
+        "architecture": "x64",
+        "source_revision": "367e8ed063065cb8bc9ebb8c9fc55235b4828723",
+        "persistence": "supabase",
+        "authority": "Supabase scoped CAS records; containers hold no essential state",
+        "languages": {
+          "purl": "bounded pure interpreter",
+          "catalog": "closed registered operators",
+          "javascript": "AST indexing only",
+          "typescript": "AST indexing only"
+        },
+        "untrusted_authored_execution": false,
+        "network": {
+          "model_provider": "fixed OpenRouter HTTPS origin, explicit credential and budget required",
+          "github": "fixed GitHub HTTPS origins, read-only, bounded"
+        },
+        "limits": {
+          "source_bytes": 65536,
+          "artifact_bytes": 65536,
+          "row_bytes": 262144,
+          "tenant_bytes": 10485760,
+          "history_versions": 200
+        },
+        "worker": {
+          "leases": "persisted CAS fencing",
+          "interrupted_native_jobs": "retryable deterministic pure execution",
+          "interrupted_model_calls": "ambiguous calls never automatically repeated"
+        },
+        "portability": {
+          "api_start": "node service/launch/main.js",
+          "worker_start": "node service/launch/worker-main.js",
+          "healthcheck": "node deploy/healthcheck.js",
+          "adapter": "Docker/Railway now; Oracle worker on same image and authoritative backend"
+        }
+      }
+    },
+    {
+      "url": "https://purls-production.up.railway.app/api/resources/resource_bd80f9093ac5fb3b2d176291/replay",
+      "http_status": 200,
+      "result": {
+        "resource_id": "resource_bd80f9093ac5fb3b2d176291",
+        "version": 14,
+        "valid": true,
+        "history_valid": true,
+        "events": 14,
+        "head": "sha256:31d9f271f65063a64297d22f460e5cfd316c64d410e418b62ea7a304d7a7fd37",
+        "problems": [],
+        "executions": [
+          {
+            "execution_id": "execution_dfda93eb6d9675f51cdffb33",
+            "valid": true,
+            "replayable": true,
+            "reason": null
+          },
+          {
+            "execution_id": "execution_b969ea1da38df98c62fe72d8",
+            "valid": true,
+            "replayable": true,
+            "reason": null
+          }
+        ],
+        "executions_complete": true,
+        "execution_status_counts": {
+          "total": 2,
+          "succeeded": 2,
+          "failed": 0,
+          "cancelled": 0,
+          "pending": 0
+        },
+        "assurance": "Hashes establish internal consistency, not external authenticity or requirement truth"
+      }
+    }
+  ],
+  "source": {
+    "snapshot_commit": "81e7e5db04d0fa48e94e958b92b1b5d14ab02a27",
+    "local_git_object_observed": true,
+    "local_git_repository": "/workspace/snad",
+    "files_compared_to_git_object": 136,
+    "git_object_comparison_mismatches": [],
+    "requested_github_repository": "https://github.com/akadaan310/snad",
+    "requested_repository_existence_not_established": true,
+    "archive_contains_git_history": false,
+    "hosting_mirror_and_release_metadata_are_distinct_from_source_snapshot": true,
+    "deployed_purl_api_commit_observed": "367e8ed063065cb8bc9ebb8c9fc55235b4828723"
+  },
+  "portable_artifact": {
+    "root": "/tmp/snad-fresh-context-timie8oy",
+    "archiveBytes": 5676444,
+    "archiveSha256": "170d7afcc30d853ee8f3e94d6930594870a87cab0af8159a3d3b59ebb2091624",
+    "manifestBytes": 26889,
+    "manifestSha256": "c8fb54fdc8d10c0ba2208327f4956f9edac343e2802c31a4235307c0220f35b1",
+    "publicManifestSameBytes": true,
+    "sourceCommit": "81e7e5db04d0fa48e94e958b92b1b5d14ab02a27",
+    "verifiedFiles": 136,
+    "hashFailures": [],
+    "missing": [],
+    "unlisted": [],
+    "manifestContentHash": "0c777632d62e1b0ee6b111f09f62ea316bfe644964718440fed36ed154e043b5",
+    "archive_source": "public browser download",
+    "archive_local_path": "/tmp/fresh-public-archive.tar.gz",
+    "expected_archive_sha256": "170d7afcc30d853ee8f3e94d6930594870a87cab0af8159a3d3b59ebb2091624",
+    "archive_sha256_matches": true,
+    "safe_extraction": "Rejected absolute paths, parent traversal, symlinks and nonregular members before extracting to new temporary directory.",
+    "builtin_verifier": {
+      "command": "node --experimental-strip-types scripts/mission.ts verify --package ..",
+      "cwd": "/tmp/snad-fresh-context-timie8oy/files",
+      "exit_code": 0,
+      "valid": true,
+      "checked": 136,
+      "errors": [],
+      "contentHash": "0c777632d62e1b0ee6b111f09f62ea316bfe644964718440fed36ed154e043b5"
+    },
+    "assurance": "SHA-256 and manifest content hash establish consistency with supplied references; no publisher signature or independent scientific truth is established.",
+    "explicit_offline_fallback": "/workspace/snad/mission/package/manifest.json and sibling files/ were found and read, but were not needed to substitute for the browser download."
+  },
+  "clean_extraction_reproduction": {
+    "cwd": "/tmp/snad-fresh-context-timie8oy/files",
+    "node_version": "v24.19.0",
+    "commands": [
+      {
+        "command": "npm ci --no-audit --no-fund",
+        "exit_code": 0,
+        "result": "27 packages installed from lockfile."
+      },
+      {
+        "command": "npm test",
+        "exit_code": 0,
+        "passed": 45,
+        "failed": 0,
+        "skipped": 0,
+        "log": "/tmp/fresh-npm-test.log",
+        "log_sha256": "19924ac2b9e706886658df300edfa613ce11c448479709273b9d1acd44636a55"
+      },
+      {
+        "command": "npm run typecheck",
+        "exit_code": 0,
+        "log": "/tmp/fresh-typecheck.log",
+        "log_sha256": "34155b53aaf5d16cce2ae97e3f2b2bb7e5f84d283090b0bcace4c6e9b70d7554"
+      },
+      {
+        "command": "npm run build",
+        "exit_code": 0,
+        "log": "/tmp/fresh-build.log",
+        "log_sha256": "83019a089c3a52904445cb3be75960fffbcd15e86239d8e9375b12020ae1e55d",
+        "warnings": [
+          "Vite emitted a greater-than-500-kB chunk warning.",
+          "Build states there is no nested frozen mission manifest in this source snapshot and builds the standalone lab. The extracted package manifest remains at ../manifest.json."
+        ]
+      }
+    ],
+    "not_rerun": [
+      "npm run test:browser",
+      "npm run benchmark",
+      "npm run experiments"
+    ],
+    "mutation_limits": "Only new temporary extraction dependencies, tests and build outputs were written. No original repository files or remote services were changed."
+  },
+  "actual_evidence_located": [
+    {
+      "path": "packages/snad-core/src/index.ts",
+      "verified_local_path": "/tmp/snad-fresh-context-timie8oy/files/packages/snad-core/src/index.ts",
+      "sha256": "d177770551192daaf07b45be04bccf9a159edfaf50495363ed94c49bf9725328",
+      "bytes": 443,
+      "meaning": "Actual standalone SDK exports, not only a mission assertion.",
+      "assurance": "Source file inspected."
+    },
+    {
+      "path": "packages/snad-core/src/analysis.ts",
+      "verified_local_path": "/tmp/snad-fresh-context-timie8oy/files/packages/snad-core/src/analysis.ts",
+      "sha256": "4d50162c6216bcdc87ef505d35ade6df9851f2e800b7347617232341a1f2bd62",
+      "bytes": 9464,
+      "meaning": "Feature comparison, unknown identities, provenance edges, quotation heuristics and streaming analysis.",
+      "assurance": "Source file inspected; missing features do not imply changes and known attribution declarations are required."
+    },
+    {
+      "path": "docs/handoff.md",
+      "verified_local_path": "/tmp/snad-fresh-context-timie8oy/files/docs/handoff.md",
+      "sha256": "417f358d9de2bd69174fe1798481e2411296d83b77c8a59982b64ee26eedadfc",
+      "bytes": 3574,
+      "meaning": "Reproduction, constraints, next local research operation and future authentication sequence.",
+      "assurance": "Document read."
+    },
+    {
+      "path": "docs/integrations.md",
+      "verified_local_path": "/tmp/snad-fresh-context-timie8oy/files/docs/integrations.md",
+      "sha256": "4b57bde2233ef1b537c16c9ace3d9434c6ede8e1b8e70c924fa3980c046b8c99",
+      "bytes": 13606,
+      "meaning": "Public-read and owner-write separation; expiring unverified guests; CAS and service limits.",
+      "assurance": "Document read and current public authority/config independently inspected."
+    },
+    {
+      "path": "evidence/benchmark.json",
+      "verified_local_path": "/tmp/snad-fresh-context-timie8oy/files/evidence/benchmark.json",
+      "sha256": "59541e052f11317402ca8c39788b28d8a1a92c40d5ba648c7f84995b4bed2dc7",
+      "bytes": 2407,
+      "meaning": "Recorded whole-corpus pass: 6236 addressable/parsed/analyzed; 2738 detected; 4929 transitions; audio 0; batch visualization 0.",
+      "assurance": "Hash verified and data read; benchmark was not rerun by this participant."
+    },
+    {
+      "path": "evidence/corpus-status.json",
+      "verified_local_path": "/tmp/snad-fresh-context-timie8oy/files/evidence/corpus-status.json",
+      "sha256": "d4b2258b08a7522da250e24bbd3f9b4d1e50c2a74f8f03e72c0d3fef1c0035b3",
+      "bytes": 3556315,
+      "meaning": "6236 explicit per-locus status rows and separated denominators.",
+      "assurance": "Hash verified; row count and summary inspected."
+    },
+    {
+      "path": "evidence/experiments.json",
+      "verified_local_path": "/tmp/snad-fresh-context-timie8oy/files/evidence/experiments.json",
+      "sha256": "76970db55d5378ec7e00a495997ce4715bc59bbcb165ab29fe81430afc90670e",
+      "bytes": 84295,
+      "meaning": "20 routine observations, 10 hypotheses, 7 negatives, 3 finite reconstructions; 0 novel discoveries. Differential preserves 9 matches and 13 mismatches.",
+      "assurance": "Hash verified and summary/differential inspected; full experiment script not rerun."
+    },
+    {
+      "path": "docs/evidence-report.md",
+      "verified_local_path": "/tmp/snad-fresh-context-timie8oy/files/docs/evidence-report.md",
+      "sha256": "cbea3835ffaf2be870fe3cd6d038a814368cf409f20832a15f71fdc945834c06",
+      "bytes": 14651,
+      "meaning": "Research interpretation, corpus and morphology limitations, negative controls, baseline and retained mismatches.",
+      "assurance": "Document read."
+    },
+    {
+      "path": "artifacts/browser-results.json",
+      "verified_local_path": "/tmp/snad-fresh-context-timie8oy/files/artifacts/browser-results.json",
+      "sha256": "acc9d7063c17b755ab9cc21ed179c072a98ca285eb3bdf6ea45a9cbd78c9e941",
+      "bytes": 9338,
+      "meaning": "Recorded 6 passing browser tests and zero recorded errors.",
+      "assurance": "Preserved prior evidence inspected; participant only performed public browser transport checks, not all 6 journeys."
+    },
+    {
+      "path": "evidence/clean-checkout.json",
+      "verified_local_path": "/tmp/snad-fresh-context-timie8oy/files/evidence/clean-checkout.json",
+      "sha256": "0c973c4e057248ce6ac242be2c58c562c420c4c61eeee972620fbc112a1e5098",
+      "bytes": 2579,
+      "meaning": "Earlier clean-checkout evidence.",
+      "assurance": "Preserved prior evidence; current participant separately ran the four reproduction commands above."
+    },
+    {
+      "path": "evidence/publication.json",
+      "verified_local_path": "/tmp/snad-fresh-context-timie8oy/files/evidence/publication.json",
+      "sha256": "083d9c067079ae562dc60c32a1a1168485209bf85bcba964b10e75a668e75e69",
+      "bytes": 1209,
+      "meaning": "Frozen prepublication metadata, GitHub 403 and hosting transport failure.",
+      "assurance": "Snapshot describes site registered-unpublished; later live PURL continuity and current anonymous Chromium establish subsequent public publication. Temporal metadata difference is retained."
+    }
+  ],
+  "limitations": [
+    "Mission remains INCOMPLETE. No human usability session, expert linguistic adjudication or audio verification was performed by this participant.",
+    "No linguistic accuracy, speaker intent, universal law, new theorem or novel discovery is established by hash integrity, tests or finite fixtures.",
+    "QAC morphology is partially aligned from pinned mirrors; official endpoint digest was not independently verified. Original orthography and source notices must be preserved.",
+    "Public Sites transport differs by client: urllib 403, anonymous ordinary Chromium 200. No token or access-control bypass was used.",
+    "Current identity GET /me returned 401. Verified OIDC credentials are unconfigured; guest preview is advertised but was not used. No currently active write authority was established.",
+    "The mission records guest-owner expiry at 2026-10-18T20:31:15.741Z; this is a retained claim, not a credential tested by this participant.",
+    "GitHub repository creation 403 is historical preserved evidence, not retried because remote writes were forbidden. Separate Sites hosting is not proof that the requested GitHub repository exists.",
+    "Latest live CGIT 12-artifact backup is a postrelease sidecar; the immutable public package preserves the earlier 4-artifact checkpoint. Private remote CGIT access was not attempted.",
+    "The package contains standalone source and data, not its Git history; local Git object comparison used the shared workspace. External history retrieval was not established.",
+    "Public replay returned valid:true for internal history and both native executions. This is server-reported internal consistency of identity transport, not independent verification of SDK science."
+  ],
+  "next_operation": {
+    "permitted_now": "Return this local reconstruction report and continue read-only evidence inspection or reversible local analysis in a separate copy.",
+    "next_substantive_local_operation": "Compare conservative withholding of conflicting/unaligned morphology against a documented less-conservative alignment baseline; preserve the original corpus and derive a separately versioned object with counterexamples and all errors.",
+    "remote_continuation_requires": [
+      "Separate explicit authorization for a remote write; this participant was restricted to read-only service discovery.",
+      "Use only disclosed preview or verified authentication; inspect active principal and resources:write scope.",
+      "Re-read current manifest expected_version; authenticate as the continuing principal and fork this public SNAD resource, initially private.",
+      "Mutate only the owned fork, with CAS versions and readback after every persisted operation. Public GET does not grant owner rights."
+    ],
+    "remote_fork_not_performed": true,
+    "protected_targets": [
+      "akadaan310/isnaad",
+      "FALAK",
+      "prior mission resource_95a5662789076892fe698316",
+      "the original public SNAD resource without valid owner authority"
+    ],
+    "human_validation_boundary": "Real participants are required. Agents cannot be counted as humans; no outreach or messages are authorized by this read-only reconstruction task."
+  },
+  "authority_observed": {
+    "principal_id": null,
+    "owner": false,
+    "rights": [
+      "read"
+    ]
+  },
+  "all_advertised_mutations_available": false,
+  "raw_local_evidence": {
+    "pointer_html": "/tmp/fresh-mission.body",
+    "pointer_headers": "/tmp/fresh-mission.headers",
+    "program_manifest": "/tmp/fresh-manifest.json",
+    "continuity": "/tmp/fresh-continuity.json",
+    "discovery_outcomes": "/tmp/fresh-discovery-results.json",
+    "additional_readback": "/tmp/fresh-extra-discovery.json",
+    "public_manifest": "/tmp/fresh-public-manifest.json",
+    "artifact_verification": "/tmp/fresh-artifact-verification.json",
+    "git_comparison": "/tmp/fresh-git-verification.json"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "snad.public-http/1",
+  "observedAt": "2026-10-18T20:21:04.325Z",
+  "transport": "Anonymous Chromium page-native fetch",
+  "checks": [
+    {
+      "url": "https://snad-discourse-lab.daintyaspen11.chatgpt.site/mission/manifest.json",
+      "status": 200,
+      "bytes": 26889,
+      "sha256": "c8fb54fdc8d10c0ba2208327f4956f9edac343e2802c31a4235307c0220f35b1",
+      "contentHash": "0c777632d62e1b0ee6b111f09f62ea316bfe644964718440fed36ed154e043b5",
+      "sourceCommit": "81e7e5db04d0fa48e94e958b92b1b5d14ab02a27"
+    },
+    {
+      "url": "https://snad-discourse-lab.daintyaspen11.chatgpt.site/snad-mission.tar.gz",
+      "status": 200,
+      "bytes": 5676444,
+      "sha256": "170d7afcc30d853ee8f3e94d6930594870a87cab0af8159a3d3b59ebb2091624"
+    }
+  ],
+  "plainHttpFailure": {
+    "status": 403,
+    "body": "error code: 1010",
+    "meaning": "Cloudflare rejected urllib client; normal anonymous browser and browser-native fetch succeeded."
+  },
+  "allPassed": true
+}

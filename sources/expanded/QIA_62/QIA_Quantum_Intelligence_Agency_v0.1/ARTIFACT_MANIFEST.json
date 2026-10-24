@@ -1,0 +1,87 @@
+{
+  "artifact": "QIA — Quantum Intelligence Agency, Foundational Research Commission 0.1",
+  "date": "2026-10-21",
+  "source_hierarchy": {
+    "active_divisions": 6,
+    "registered_topics": 62,
+    "reserved": [
+      "VII",
+      "VIII"
+    ],
+    "proposed": [
+      "IX"
+    ],
+    "unnumbered": [
+      "Infinity"
+    ],
+    "overlay": "QIA"
+  },
+  "tests": {
+    "QIA": 35,
+    "Division Infinity rerun separately": 23,
+    "FNMS rerun separately": 19
+  },
+  "status": "standalone tested prototype; not deployed, not a universal or quantum-accelerated engine",
+  "files": [
+    {
+      "path": "QIA_FOUNDATIONAL_TREATISE.md",
+      "bytes": 45309,
+      "sha256": "7a6e1604b84f211ab7fe6a0e015d3c696d119e89391e220dde008606acb9f24b"
+    },
+    {
+      "path": "Q_THEORY_ATLAS_62.md",
+      "bytes": 43397,
+      "sha256": "c836cdb108165347b17fce71907833c534e976ba0e132fe50577722bafd51fd1"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3185,
+      "sha256": "8bc344b21a9fb45216409d35f12fc4a79d91c6d69bc6c20cef53654ac32443d0"
+    },
+    {
+      "path": "REPOSITORY_ALIGNMENT.md",
+      "bytes": 2620,
+      "sha256": "7b363b98dd384667ed6454e58fb56a32ba4e39da0475c35ac214d97108b24095"
+    },
+    {
+      "path": "build_registry.py",
+      "bytes": 9773,
+      "sha256": "a570714a092a52907b347a577b6e23f939bf9cef83e9041ffcd0040d02ba5a0f"
+    },
+    {
+      "path": "examples/FNMS_RETEST.txt",
+      "bytes": 1839,
+      "sha256": "20adb65ab44fa55de3c735e49b14a031fe390677db915daf315774cb4e7bb324"
+    },
+    {
+      "path": "examples/INFINITY_RETEST.txt",
+      "bytes": 2405,
+      "sha256": "97d618bda13bd6e4933170e6cb3052674b6ba291cfccf48f90717af5e3adc714"
+    },
+    {
+      "path": "examples/TEST_REPORT.txt",
+      "bytes": 2759,
+      "sha256": "e27e58b59c06ad28468730f8305872591da30ee80478ca09bba235e3577b55a4"
+    },
+    {
+      "path": "examples/TOY_RESULTS.json",
+      "bytes": 5186,
+      "sha256": "44f77d386e4f6c8e796ad139da9695cfc99bf656033d4a952778dee3dcb1136d"
+    },
+    {
+      "path": "schemas/Q_THEORIES_62.json",
+      "bytes": 45546,
+      "sha256": "50b5d12eb30659d794e4396d8685602f23a89833e650f710bc0aa3f25eca44f9"
+    },
+    {
+      "path": "src/qia.py",
+      "bytes": 15773,
+      "sha256": "0fa99e94e01e684d66550dd70dca88b25f155b6bcfa3bfcf56f4a2f04a5562a3"
+    },
+    {
+      "path": "tests/test_qia.py",
+      "bytes": 7081,
+      "sha256": "a6ea195a86c38aef20e42d755fa325986f66245f73ebd22349977ea0e3ce7453"
+    }
+  ]
+}

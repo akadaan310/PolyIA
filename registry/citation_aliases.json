@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "source_aliases": {
+    "PACKAGE": [
+      "SRC-OWNER-CURRENT"
+    ],
+    "S-RG": [
+      "SRC-RELATIONAL"
+    ],
+    "S-UCG": [
+      "SRC-UCGFOUNDATIONS",
+      "SRC-UCGSEED",
+      "SRC-UCG156"
+    ],
+    "S-PL": [
+      "SRC-PLICA"
+    ],
+    "S-INF": [
+      "SRC-INFINITY"
+    ],
+    "S-DK0": [
+      "SRC-DK0"
+    ],
+    "S-Q": [
+      "SRC-QSTRINGS",
+      "SRC-QSTRINGSPACKET"
+    ],
+    "S-GRAM": [
+      "SRC-GRAMMATONOMIA"
+    ],
+    "S-PIC": [
+      "SRC-RECON"
+    ],
+    "S-POLY": [
+      "SRC-POLYIAFOUNDATION"
+    ],
+    "S-TIMELESS": [
+      "SRC-TIMELESS"
+    ],
+    "S-CORPUS": [
+      "SRC-CORPUS"
+    ],
+    "S-GL": [
+      "SRC-GREEKLATIN"
+    ],
+    "S-TRE": [
+      "SRC-TRE"
+    ],
+    "S-ASTRA": [
+      "SRC-ASTRA"
+    ]
+  },
+  "external_primary_references": {
+    "P-SCXML": "https://www.w3.org/TR/scxml/",
+    "P-UNICODE": "https://www.unicode.org/reports/tr15/",
+    "P-MSC": "https://msc2020.org/",
+    "P-ACM": "https://www.acm.org/publications/class-2012"
+  },
+  "access_date": "2026-10-24"
+}

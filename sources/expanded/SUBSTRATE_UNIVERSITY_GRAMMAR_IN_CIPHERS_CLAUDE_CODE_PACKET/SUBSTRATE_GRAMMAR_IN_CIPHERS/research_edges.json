@@ -1,0 +1,419 @@
+{
+  "schema_version": "0.1",
+  "links": [
+    {
+      "id": "SIN-01",
+      "from": {
+        "verse_ref": "36:1",
+        "quoted_fragment_for_lookup": "يس"
+      },
+      "to": {
+        "verse_ref": "27:1",
+        "quoted_fragment_for_lookup": "طس"
+      },
+      "relation": "proposed-meta-substitution",
+      "explanation": "Replace ي with ط at initial position; retain س; not an Arabic orthographic equivalence",
+      "evidence_status": "AUTHOR_READING",
+      "text_verification": "QUOTE_FRAGMENTS_REQUIRE_CANONICAL_COLLATION",
+      "epistemic_layer": "author-interpretation",
+      "can_be_book_argument": true,
+      "needs_baseline": false
+    },
+    {
+      "id": "SIN-02",
+      "from": {
+        "verse_ref": "27:1",
+        "quoted_fragment_for_lookup": "طس"
+      },
+      "to": {
+        "verse_ref": "26:1",
+        "quoted_fragment_for_lookup": "طسم"
+      },
+      "relation": "suffix-extension",
+      "explanation": "Append م to the unit; shared prefix; not a claim of revelation chronology",
+      "evidence_status": "OBSERVED_STRUCTURE",
+      "text_verification": "QUOTE_FRAGMENTS_REQUIRE_CANONICAL_COLLATION",
+      "epistemic_layer": "observed-or-testable",
+      "can_be_book_argument": true,
+      "needs_baseline": false
+    },
+    {
+      "id": "SIN-03",
+      "from": {
+        "verse_ref": "27:1",
+        "quoted_fragment_for_lookup": "طس"
+      },
+      "to": {
+        "verse_ref": "28:1",
+        "quoted_fragment_for_lookup": "طسم"
+      },
+      "relation": "suffix-extension",
+      "explanation": "Same graphemic relationship, independent surah site",
+      "evidence_status": "OBSERVED_STRUCTURE",
+      "text_verification": "QUOTE_FRAGMENTS_REQUIRE_CANONICAL_COLLATION",
+      "epistemic_layer": "observed-or-testable",
+      "can_be_book_argument": true,
+      "needs_baseline": false
+    },
+    {
+      "id": "SIN-04",
+      "from": {
+        "verse_ref": "42:2",
+        "quoted_fragment_for_lookup": "عسق"
+      },
+      "to": {
+        "verse_ref": "36:1",
+        "quoted_fragment_for_lookup": "يس"
+      },
+      "relation": "shared-letter",
+      "explanation": "س shared; ع and ق are unique anchors in 42:2 unit; unit occurs at verse 2",
+      "evidence_status": "OBSERVED_STRUCTURE",
+      "text_verification": "QUOTE_FRAGMENTS_REQUIRE_CANONICAL_COLLATION",
+      "epistemic_layer": "observed-or-testable",
+      "can_be_book_argument": true,
+      "needs_baseline": false
+    },
+    {
+      "id": "SIN-05",
+      "from": {
+        "verse_ref": "42:1",
+        "quoted_fragment_for_lookup": "حم"
+      },
+      "to": {
+        "verse_ref": "42:2",
+        "quoted_fragment_for_lookup": "عسق"
+      },
+      "relation": "second-verse-adjacency",
+      "explanation": "Two distinct opening ayahs: ordered adjacency, never merged as one ayah",
+      "evidence_status": "VERIFIED_TEXT_PENDING_LOCAL_RUN",
+      "text_verification": "QUOTE_FRAGMENTS_REQUIRE_CANONICAL_COLLATION",
+      "epistemic_layer": "observed-or-testable",
+      "can_be_book_argument": true,
+      "needs_baseline": false
+    },
+    {
+      "id": "ANT-01",
+      "from": {
+        "verse_ref": "27:18",
+        "quoted_fragment_for_lookup": "النمل"
+      },
+      "to": {
+        "verse_ref": "16:68",
+        "quoted_fragment_for_lookup": "النحل"
+      },
+      "relation": "animal-and-dwelling",
+      "explanation": "Both normalized words have cipher-only letters; ant valley homes vs bee mountain/tree/building homes are separate textual motifs",
+      "evidence_status": "LETTER_CLASSIFICATION_AND_TEXTUAL_LINK",
+      "text_verification": "QUOTE_FRAGMENTS_REQUIRE_CANONICAL_COLLATION",
+      "epistemic_layer": "observed-or-testable",
+      "can_be_book_argument": true,
+      "needs_baseline": true
+    },
+    {
+      "id": "ANT-02",
+      "from": {
+        "verse_ref": "27:18",
+        "quoted_fragment_for_lookup": "وادي النمل"
+      },
+      "to": {
+        "verse_ref": "30:3",
+        "quoted_fragment_for_lookup": "أدنى الأرض"
+      },
+      "relation": "terrain-metaphor",
+      "explanation": "Spatial low-position metaphor, not an identical named location nor Quranic claim ants at lowest land",
+      "evidence_status": "AUTHOR_READING",
+      "text_verification": "QUOTE_FRAGMENTS_REQUIRE_CANONICAL_COLLATION",
+      "epistemic_layer": "author-interpretation",
+      "can_be_book_argument": true,
+      "needs_baseline": true
+    },
+    {
+      "id": "BEE-01",
+      "from": {
+        "verse_ref": "16:68",
+        "quoted_fragment_for_lookup": "الجبال"
+      },
+      "to": {
+        "verse_ref": "18:9",
+        "quoted_fragment_for_lookup": "الكهف"
+      },
+      "relation": "dwelling-topology",
+      "explanation": "Spatial hypothesis: mountain/building cave habitats; verse 18:9 does not assert a geological location",
+      "evidence_status": "AUTHOR_READING",
+      "text_verification": "QUOTE_FRAGMENTS_REQUIRE_CANONICAL_COLLATION",
+      "epistemic_layer": "author-interpretation",
+      "can_be_book_argument": true,
+      "needs_baseline": false
+    },
+    {
+      "id": "VALLEY-01",
+      "from": {
+        "verse_ref": "27:18",
+        "quoted_fragment_for_lookup": "واد"
+      },
+      "to": {
+        "verse_ref": "26:225",
+        "quoted_fragment_for_lookup": "واد"
+      },
+      "relation": "lexical-valley",
+      "explanation": "Exact semantic family of valley, different contexts and agents",
+      "evidence_status": "OBSERVED_STRUCTURE",
+      "text_verification": "QUOTE_FRAGMENTS_REQUIRE_CANONICAL_COLLATION",
+      "epistemic_layer": "observed-or-testable",
+      "can_be_book_argument": true,
+      "needs_baseline": false
+    },
+    {
+      "id": "HILL-01",
+      "from": {
+        "verse_ref": "16:68",
+        "quoted_fragment_for_lookup": "الجبال"
+      },
+      "to": {
+        "verse_ref": "27:88",
+        "quoted_fragment_for_lookup": "الجبال"
+      },
+      "relation": "mountain-bridge",
+      "explanation": "Shared word; 27:88 emphasizes perceived rest versus motion",
+      "evidence_status": "OBSERVED_STRUCTURE",
+      "text_verification": "QUOTE_FRAGMENTS_REQUIRE_CANONICAL_COLLATION",
+      "epistemic_layer": "observed-or-testable",
+      "can_be_book_argument": true,
+      "needs_baseline": false
+    },
+    {
+      "id": "YOUTH-01",
+      "from": {
+        "verse_ref": "12:30",
+        "quoted_fragment_for_lookup": "فتاها"
+      },
+      "to": {
+        "verse_ref": "18:60",
+        "quoted_fragment_for_lookup": "لفتاه"
+      },
+      "relation": "youth-lexeme",
+      "explanation": "Shared فتى lemma, different referents; never identify persons",
+      "evidence_status": "OBSERVED_STRUCTURE",
+      "text_verification": "QUOTE_FRAGMENTS_REQUIRE_CANONICAL_COLLATION",
+      "epistemic_layer": "observed-or-testable",
+      "can_be_book_argument": true,
+      "needs_baseline": false
+    },
+    {
+      "id": "YOUTH-02",
+      "from": {
+        "verse_ref": "12:36",
+        "quoted_fragment_for_lookup": "فتيان"
+      },
+      "to": {
+        "verse_ref": "18:13",
+        "quoted_fragment_for_lookup": "فتية"
+      },
+      "relation": "youth-number",
+      "explanation": "Dual vs plural morphology, not a shared event",
+      "evidence_status": "OBSERVED_STRUCTURE",
+      "text_verification": "QUOTE_FRAGMENTS_REQUIRE_CANONICAL_COLLATION",
+      "epistemic_layer": "observed-or-testable",
+      "can_be_book_argument": true,
+      "needs_baseline": true
+    },
+    {
+      "id": "YOUTH-03",
+      "from": {
+        "verse_ref": "36:14",
+        "quoted_fragment_for_lookup": "اثنين ... بثالث"
+      },
+      "to": {
+        "verse_ref": "18:22",
+        "quoted_fragment_for_lookup": "ثلاثة رابعهم كلبهم ... خمسة سادسهم ... سبعة وثامنهم"
+      },
+      "relation": "enumeration-analogy",
+      "explanation": "Arithmetic/syntactic progression and perspectives; different narratives",
+      "evidence_status": "AUTHOR_READING",
+      "text_verification": "QUOTE_FRAGMENTS_REQUIRE_CANONICAL_COLLATION",
+      "epistemic_layer": "author-interpretation",
+      "can_be_book_argument": true,
+      "needs_baseline": false
+    },
+    {
+      "id": "YOUTH-04",
+      "from": {
+        "verse_ref": "18:19",
+        "quoted_fragment_for_lookup": "ربكم أعلم بما لبثتم"
+      },
+      "to": {
+        "verse_ref": "18:22",
+        "quoted_fragment_for_lookup": "ربي أعلم بعدتهم"
+      },
+      "relation": "knowledge-and-enumeration",
+      "explanation": "Explicit knowledge limits; duration and headcount differ",
+      "evidence_status": "OBSERVED_STRUCTURE",
+      "text_verification": "QUOTE_FRAGMENTS_REQUIRE_CANONICAL_COLLATION",
+      "epistemic_layer": "observed-or-testable",
+      "can_be_book_argument": true,
+      "needs_baseline": false
+    },
+    {
+      "id": "YOUTH-05",
+      "from": {
+        "verse_ref": "18:18",
+        "quoted_fragment_for_lookup": "وكلبهم ... بالوصيد"
+      },
+      "to": {
+        "verse_ref": "18:22",
+        "quoted_fragment_for_lookup": "رابعهم كلبهم ... وثامنهم كلبهم"
+      },
+      "relation": "threshold-observer",
+      "explanation": "Threshold and dog-as-index; 18:18 refers to observers seeing THEM, so invisibility cannot be stated as literal fact",
+      "evidence_status": "AUTHOR_READING",
+      "text_verification": "QUOTE_FRAGMENTS_REQUIRE_CANONICAL_COLLATION",
+      "epistemic_layer": "author-interpretation",
+      "can_be_book_argument": true,
+      "needs_baseline": false
+    },
+    {
+      "id": "TOWER-01",
+      "from": {
+        "verse_ref": "40:36",
+        "quoted_fragment_for_lookup": "صرحا"
+      },
+      "to": {
+        "verse_ref": "40:37",
+        "quoted_fragment_for_lookup": "أسباب السماوات"
+      },
+      "relation": "cross-ayah-continuation",
+      "explanation": "صرح is Pharaoh speech; correspondence with alphabet tower is figurative",
+      "evidence_status": "OBSERVED_TEXT_AND_AUTHOR_ANALOGY",
+      "text_verification": "QUOTE_FRAGMENTS_REQUIRE_CANONICAL_COLLATION",
+      "epistemic_layer": "observed-or-testable",
+      "can_be_book_argument": true,
+      "needs_baseline": false
+    },
+    {
+      "id": "TOWER-02",
+      "from": {
+        "verse_ref": "40:1",
+        "quoted_fragment_for_lookup": "حم"
+      },
+      "to": {
+        "verse_ref": "42:1",
+        "quoted_fragment_for_lookup": "حم"
+      },
+      "relation": "hawamim-series",
+      "explanation": "Seven contiguous surahs 40–46 begin حم; 42 has additional 42:2 عسق",
+      "evidence_status": "OBSERVED_STRUCTURE",
+      "text_verification": "QUOTE_FRAGMENTS_REQUIRE_CANONICAL_COLLATION",
+      "epistemic_layer": "observed-or-testable",
+      "can_be_book_argument": true,
+      "needs_baseline": false
+    },
+    {
+      "id": "TOWER-03",
+      "from": {
+        "verse_ref": "15:87",
+        "quoted_fragment_for_lookup": "سبعا من المثاني"
+      },
+      "to": {
+        "verse_ref": "40:1",
+        "quoted_fragment_for_lookup": "الحواميم السبع"
+      },
+      "relation": "seven-analogy",
+      "explanation": "Numerical analogy only; 15:87 not a textual identification of seven Hawamim",
+      "evidence_status": "AUTHOR_READING",
+      "text_verification": "QUOTE_FRAGMENTS_REQUIRE_CANONICAL_COLLATION",
+      "epistemic_layer": "author-interpretation",
+      "can_be_book_argument": true,
+      "needs_baseline": true
+    },
+    {
+      "id": "EIGHT-01",
+      "from": {
+        "verse_ref": "18:22",
+        "quoted_fragment_for_lookup": "وثامنهم كلبهم"
+      },
+      "to": {
+        "verse_ref": "6:143",
+        "quoted_fragment_for_lookup": "ثمانية أزواج"
+      },
+      "relation": "eight-contrast",
+      "explanation": "Eight appears in distinct referential constructions; not equivalence of the counted beings",
+      "evidence_status": "AUTHOR_READING",
+      "text_verification": "QUOTE_FRAGMENTS_REQUIRE_CANONICAL_COLLATION",
+      "epistemic_layer": "author-interpretation",
+      "can_be_book_argument": true,
+      "needs_baseline": true
+    },
+    {
+      "id": "RECUR-01",
+      "from": {
+        "verse_ref": "13:4",
+        "quoted_fragment_for_lookup": "صنوان وغير صنوان"
+      },
+      "to": {
+        "verse_ref": "27:88",
+        "quoted_fragment_for_lookup": "صنع الله"
+      },
+      "relation": "cipher-crossing",
+      "explanation": "صنوان has in-cipher و; صنع has cipher-only ص ن ع; formal comparison only",
+      "evidence_status": "LETTER_CLASSIFICATION",
+      "text_verification": "QUOTE_FRAGMENTS_REQUIRE_CANONICAL_COLLATION",
+      "epistemic_layer": "observed-or-testable",
+      "can_be_book_argument": true,
+      "needs_baseline": true
+    },
+    {
+      "id": "RECUR-02",
+      "from": {
+        "verse_ref": "19:1",
+        "quoted_fragment_for_lookup": "كهيعص"
+      },
+      "to": {
+        "verse_ref": "42:2",
+        "quoted_fragment_for_lookup": "عسق"
+      },
+      "relation": "ayn-crossing",
+      "explanation": "ع is shared between two opening units; no proof of intended cryptographic equivalence",
+      "evidence_status": "OBSERVED_STRUCTURE",
+      "text_verification": "QUOTE_FRAGMENTS_REQUIRE_CANONICAL_COLLATION",
+      "epistemic_layer": "observed-or-testable",
+      "can_be_book_argument": true,
+      "needs_baseline": false
+    },
+    {
+      "id": "NQ-01",
+      "from": {
+        "verse_ref": "50:1",
+        "quoted_fragment_for_lookup": "ق"
+      },
+      "to": {
+        "verse_ref": "68:1",
+        "quoted_fragment_for_lookup": "ن"
+      },
+      "relation": "singleton-parallel",
+      "explanation": "Two isolated single-letter units in different surahs; not necessarily paired semantically",
+      "evidence_status": "OBSERVED_STRUCTURE",
+      "text_verification": "QUOTE_FRAGMENTS_REQUIRE_CANONICAL_COLLATION",
+      "epistemic_layer": "observed-or-testable",
+      "can_be_book_argument": true,
+      "needs_baseline": false
+    },
+    {
+      "id": "COUNT-01",
+      "from": {
+        "verse_ref": "18:22",
+        "quoted_fragment_for_lookup": "ثلاثة ... خمسة ... سبعة"
+      },
+      "to": {
+        "verse_ref": "36:14",
+        "quoted_fragment_for_lookup": "اثنين ... بثالث"
+      },
+      "relation": "temporal-nonlinearity",
+      "explanation": "Build synthetic interval demo for 2+third; reject claims of actual historical dates",
+      "evidence_status": "AUTHOR_PROPOSAL",
+      "text_verification": "QUOTE_FRAGMENTS_REQUIRE_CANONICAL_COLLATION",
+      "epistemic_layer": "author-interpretation",
+      "can_be_book_argument": true,
+      "needs_baseline": false
+    }
+  ]
+}

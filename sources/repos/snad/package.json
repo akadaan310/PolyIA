@@ -1,0 +1,30 @@
+{
+  "name": "snad-research",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "test": "tsx --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "build:core": "tsc -p packages/snad-core/tsconfig.json",
+    "build": "npm run build:core && tsx scripts/prepare-public.ts && vite build",
+    "dev": "vite --host 0.0.0.0",
+    "example": "tsx scripts/example.ts",
+    "benchmark": "tsx scripts/benchmark.ts",
+    "experiments": "tsx scripts/experiments.ts",
+    "mission:pack": "tsx scripts/mission.ts pack",
+    "mission:verify": "tsx scripts/mission.ts verify",
+    "cgit:verify": "node scripts/integrations/verify-cgit-export.mjs evidence/purl-live/cgit-export.json",
+    "test:browser": "playwright test"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.0.0",
+    "fast-check": "^4.3.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0"
+  }
+}

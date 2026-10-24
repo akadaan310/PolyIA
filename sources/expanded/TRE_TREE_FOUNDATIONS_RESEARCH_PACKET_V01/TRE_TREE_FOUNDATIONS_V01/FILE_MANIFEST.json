@@ -1,0 +1,102 @@
+{
+  "format": "TRE/BUNDLE-MANIFEST/0.1",
+  "generated_date": "2026-10-22",
+  "bundle": "TRE_TREE_FOUNDATIONS_V01",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3277,
+      "sha256": "f7254a58ca97597a9a3149d984387675d48eceed1dea652631ddaeb6d146b24a"
+    },
+    {
+      "path": "docs/00_CONSTITUTION.md",
+      "bytes": 6103,
+      "sha256": "8d3a11c9a7d4b0b266dde3087a85c6643741a209096f71bba6d58edf0b36992d"
+    },
+    {
+      "path": "docs/01_MACHINE_COMPILER.md",
+      "bytes": 5329,
+      "sha256": "8955e70c7d48bb47588f863382df6c3a046a2301d4701ef84d4fe4bc29d5a14b"
+    },
+    {
+      "path": "docs/02_RENDER_PHYSICS_SOURCES.md",
+      "bytes": 6213,
+      "sha256": "ac4947594980246b4b03de1f16915bb9d7361f5c12059e6ed85abde77cf264cf"
+    },
+    {
+      "path": "docs/03_BIOLOGICAL_EVOLUTION.md",
+      "bytes": 4918,
+      "sha256": "ad1a1cae115d53046da7d1ad131602d5b8d3cefd6b1aae55d2ec5c7c6f18afbf"
+    },
+    {
+      "path": "docs/04_CGIT_CORPORA_BRIDGES.md",
+      "bytes": 4583,
+      "sha256": "f9c3bd3811937660fb6d63da72a5cc92e92a2038fa88638e261300058f3ae860"
+    },
+    {
+      "path": "docs/05_EXECUTION_ORDER.md",
+      "bytes": 3645,
+      "sha256": "bee90b3779ce4c04669633960e24acead9d33909881cd0702f3b88e7420207ab"
+    },
+    {
+      "path": "docs/CLAUDE_CODE_MASTER_DIRECTIVE.md",
+      "bytes": 6415,
+      "sha256": "331d1c9486fbd57740f4bc81956f7fe257b274c316056914f04a4044b32e9cc5"
+    },
+    {
+      "path": "docs/SOURCES.md",
+      "bytes": 4589,
+      "sha256": "c3df0ad3cbf2c54d73588217f581a7c7482181413646a1f9a9c502b472010e08"
+    },
+    {
+      "path": "examples/run.py",
+      "bytes": 351,
+      "sha256": "dedb974ef947ffdaca38ac230fc5890c7e7ea25fa6e6f4339afa017b241ccef9"
+    },
+    {
+      "path": "results/TEST_REPORT.md",
+      "bytes": 1114,
+      "sha256": "20b563014354886f9be43f4326e10d15a04d6d7492150c36d253b3a7e134c262"
+    },
+    {
+      "path": "results/tree_fixture.json",
+      "bytes": 5443,
+      "sha256": "15ef9e78134f1c4a54b2bfba15dc567a5528c2a53d6c8fa4acb6f77328f663c5"
+    },
+    {
+      "path": "schemas/TRE_CORE.contract.schema.json",
+      "bytes": 1506,
+      "sha256": "1d3d2fad4fca9d6424c3408874727f9804b04888f3e1c126ef51c47e6c480450"
+    },
+    {
+      "path": "test/test_corpus_cgit.py",
+      "bytes": 3065,
+      "sha256": "19525657bd62cdb30a3d7c556c42f459a7332817224d2888b017002b70abc79b"
+    },
+    {
+      "path": "test/test_tree.py",
+      "bytes": 3842,
+      "sha256": "0229fb2756a8e42f125dc4c10b2fc7d9afc5abe93a99085ac76dfff0dff6a28f"
+    },
+    {
+      "path": "tre/__init__.py",
+      "bytes": 104,
+      "sha256": "9d24eed15b4d088757274b100b6dbf27245b49847e4d29f66f7689c81a60c7e5"
+    },
+    {
+      "path": "tre/cgit.py",
+      "bytes": 1615,
+      "sha256": "3719924a57e0f804226a4b2772ce3ab083d16a0694ae07f459883752cd5eb45f"
+    },
+    {
+      "path": "tre/core.py",
+      "bytes": 9587,
+      "sha256": "86d882db00413733b7913e19719a5057fd0b801a12aab8ec3a7501d317ebfeff"
+    },
+    {
+      "path": "tre/corpus.py",
+      "bytes": 3445,
+      "sha256": "2b1ead61b328619ce886d512eb44fc34b285a8f7134ce7a9d1b5147ee3b44cb7"
+    }
+  ]
+}

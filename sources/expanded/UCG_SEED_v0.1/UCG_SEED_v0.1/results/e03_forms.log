@@ -1,0 +1,148 @@
+trees: {'ours': [1, 1, 1, 2, 3, 5, 9, 18, 35, 75, 159, 355], 'A000602': [1, 1, 1, 2, 3, 5, 9, 18, 35, 75, 159, 355], 'exact_match': True, 'rdkit_distinct_at_n10': 75}
+benzene Kekule words in one D6 orbit: True
+{
+"rings_enumerated_3to6": 26942,
+"admissible": 2007,
+"burnside_check": {
+"3": {
+"enumerated": 120,
+"naive_bracelet_k8 (wrong model)": 120,
+"polya_vertex4_edge2": 120,
+"match": true
+},
+"4": {
+"enumerated": 618,
+"naive_bracelet_k8 (wrong model)": 666,
+"polya_vertex4_edge2": 618,
+"match": true
+},
+"5": {
+"enumerated": 3536,
+"naive_bracelet_k8 (wrong model)": 3536,
+"polya_vertex4_edge2": 3536,
+"match": true
+},
+"6": {
+"enumerated": 22668,
+"naive_bracelet_k8 (wrong model)": 23052,
+"polya_vertex4_edge2": 22668,
+"match": true
+}
+},
+"huckel_vs_rdkit": {
+"n": 1857,
+"agree": 1.0,
+"disagreements": []
+},
+"atlas_monocycles": {
+"n": 21,
+"agree": 21,
+"rows": [
+[
+"Cyclopentane",
+false,
+false
+],
+[
+"Cyclopentene",
+false,
+false
+],
+[
+"Cyclohexane",
+false,
+false
+],
+[
+"Cyclohexene",
+false,
+false
+],
+[
+"Benzene",
+true,
+true
+],
+[
+"Pyrrolidine",
+false,
+false
+],
+[
+"Piperidine",
+false,
+false
+],
+[
+"Pyrrole",
+true,
+true
+],
+[
+"Imidazole",
+true,
+true
+],
+[
+"Pyrazole",
+true,
+true
+],
+[
+"Pyridine",
+true,
+true
+],
+[
+"Pyrimidine",
+true,
+true
+],
+[
+"Pyrazine",
+true,
+true
+],
+[
+"Oxolane (THF)",
+false,
+false
+],
+[
+"Oxane (THP)",
+false,
+false
+],
+[
+"Furan",
+true,
+true
+],
+[
+"Oxazole",
+true,
+true
+],
+[
+"Thiolane",
+false,
+false
+],
+[
+"Thiane",
+false,
+false
+],
+[
+"Thiophene",
+true,
+true
+],
+[
+"Thiazole",
+true,
+true
+]
+]
+}
+}

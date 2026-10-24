@@ -1,0 +1,29 @@
+{
+  "protocol": "ACSP/0.1",
+  "operation": "propose",
+  "actor": {
+    "session_id": "snad-local-export",
+    "kind": "agent"
+  },
+  "idempotency_key": "snad-acsp-source-audit-320c04dc18c5f77b162290ca5f34cd7ba58e385f8c2445edc7ef4a486491e618",
+  "payload": {
+    "operation": "append",
+    "payload": {
+      "type": "reference",
+      "title": "SNAD source reconstruction artifact",
+      "summary": "The pinned original ISNAAD engine was reconstructed on all 6236 ayat. This local artifact is prepared for review and has not been submitted to ACSP.",
+      "content": "{\"schemaVersion\":\"snad.acsp-artifact.v1\",\"objective\":\"Offer reproducible original-detector reconstruction and its limitations for owner review.\",\"analysis\":{\"artifact\":\"evidence/isnaad-source.json\",\"sha256\":\"320c04dc18c5f77b162290ca5f34cd7ba58e385f8c2445edc7ef4a486491e618\",\"sourceRepository\":\"https://github.com/akadaan310/isnaad\",\"sourceCommit\":\"4c059a1691920a13ea973146e42518e83f31573c\",\"counts\":{\"surahs\":114,\"ayaat\":6236,\"words\":77429,\"segments\":130030,\"frames\":1607,\"seams\":16231,\"discoveries\":7057,\"discoveryKinds\":{\"istihdar\":1852,\"raj-al-jidhr\":1644,\"ribat\":2275,\"tabaqat-al-isnad\":77,\"jisr-al-naba\":113,\"alsinat-al-khalq\":715,\"rusul-echo\":175,\"nasikh-mirror\":206},\"shortAyatUnder3Words\":204,\"zeroPersonEvidenceAyat\":352,\"maxHeuristicFrameDepth\":4},\"preparedOnly\":true,\"identityAssurance\":\"self-asserted local exporter label\",\"evidenceScope\":\"Computed source behavior; speaker identities and semantic truth are not verified.\"}}",
+      "stated_confidence": "unclassified",
+      "refs": [
+        {
+          "url": "https://github.com/akadaan310/isnaad/tree/4c059a1691920a13ea973146e42518e83f31573c",
+          "note": "Read-only original source reconstruction pin"
+        },
+        {
+          "citation": "SNAD evidence/isnaad-source.json sha256:320c04dc18c5f77b162290ca5f34cd7ba58e385f8c2445edc7ef4a486491e618"
+        }
+      ]
+    },
+    "rationale": "Prepared locally as a source-bound SNAD artifact for owner review; no request has been sent."
+  }
+}

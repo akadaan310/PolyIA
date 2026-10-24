@@ -1,0 +1,45 @@
+{
+  "after": {
+    "head": "8aa09a94ab301ca812423306fefa88adca5dd740e543bb21ae8d6cbdc0cb6877",
+    "latest_checkpoint": {
+      "id": "cp-00000032",
+      "note": "Owner Book construction and delegated identity/hosting authority recorded. DEC-004/005 source artifacts captured; OpenClaw reference priority actually applied. All mission gates remain evidence-dependent.",
+      "previous_id": "cp-00000020",
+      "revision": 32
+    },
+    "revision": 32
+  },
+  "application_pid": 506318,
+  "before": {
+    "head": "8aa09a94ab301ca812423306fefa88adca5dd740e543bb21ae8d6cbdc0cb6877",
+    "latest_checkpoint": {
+      "id": "cp-00000032",
+      "note": "Owner Book construction and delegated identity/hosting authority recorded. DEC-004/005 source artifacts captured; OpenClaw reference priority actually applied. All mission gates remain evidence-dependent.",
+      "previous_id": "cp-00000020",
+      "revision": 32
+    },
+    "revision": 32
+  },
+  "completed_at_utc": "2026-10-24T07:59:24.658389+00:00",
+  "previous_origin": "https://mayor-replacing-wildlife-medications.trycloudflare.com",
+  "protocol": "1.0.0",
+  "public_origin": "https://developed-carmen-recruitment-worm.trycloudflare.com",
+  "public_probes": {
+    "discovery": 200,
+    "operator_state": 200,
+    "reader_state": 200,
+    "unauthenticated_state": 401
+  },
+  "schema_version": 1,
+  "service_user": "polyia-tunnel",
+  "started_at_utc": "2026-10-24T07:57:32.311773+00:00",
+  "startup_observation": "Initial45-second public probe expired with URLError; retained as tunnel-isolation-first-probe.json. Subsequent fresh public clients succeeded; no second tunnel restart was needed.",
+  "status": "PASS",
+  "tunnel_account_access": {
+    "application_environment_read": false,
+    "artifact_directory_read": false,
+    "ledger_read": false,
+    "secret_file_read": false
+  },
+  "tunnel_pid": 506289
+}

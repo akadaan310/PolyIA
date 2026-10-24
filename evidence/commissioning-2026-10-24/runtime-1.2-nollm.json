@@ -1,0 +1,156 @@
+{
+  "ok": true,
+  "scope": "stdlib runtime source audit plus intercepted seed, native, intake and Astra executions",
+  "runtime_modules": [
+    {
+      "path": "polyia/__init__.py",
+      "sha256": "e7e56dd2e52928735032d9fbfb4b0ce64e776235e3a88bb7f0017b219b3271fa"
+    },
+    {
+      "path": "polyia/__main__.py",
+      "sha256": "0952a82fc4e578988ba64e72bc45884a2a365b90130e04f681c68f8425e6b60f"
+    },
+    {
+      "path": "polyia/astra.py",
+      "sha256": "8f4bb7ed852bd747eefd2218a07a0fcb9041b41fa457cc2501c81b69314e53b9"
+    },
+    {
+      "path": "polyia/capabilities.py",
+      "sha256": "d2ec07f5d0f6eef18e31412d948d03a333464950251e0d3103bff23f8cb0602c"
+    },
+    {
+      "path": "polyia/cli.py",
+      "sha256": "fbc88b11a101f0b3678c7a19266df9a844688226b13feaf5145e3fe407c8adfe"
+    },
+    {
+      "path": "polyia/experiments.py",
+      "sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809"
+    },
+    {
+      "path": "polyia/intake.py",
+      "sha256": "d4599280705ea8387821815393b561b46371c45c585e7a51aa334bd062f8c41b"
+    },
+    {
+      "path": "polyia/native.py",
+      "sha256": "c4b92f3026edd94db730a765c0b3afb72276298d2bafd0ab577d68e10dc06d21"
+    },
+    {
+      "path": "polyia/server.py",
+      "sha256": "bf74afd1edbd5b99571a6aeecc38718858a5144204ff869cbcace9d81ae066e8"
+    },
+    {
+      "path": "polyia/store.py",
+      "sha256": "4c90ad161040ec294479ee26d9463ba2b350c9d631bde975fc1cdbcc9c02c653"
+    }
+  ],
+  "imports": [
+    "__future__",
+    "argparse",
+    "ast",
+    "contextlib",
+    "copy",
+    "datetime",
+    "fractions",
+    "hashlib",
+    "hmac",
+    "http",
+    "importlib",
+    "inspect",
+    "ipaddress",
+    "json",
+    "logging",
+    "math",
+    "os",
+    "pathlib",
+    "platform",
+    "re",
+    "signal",
+    "socket",
+    "sqlite3",
+    "stat",
+    "sys",
+    "threading",
+    "time",
+    "types",
+    "typing",
+    "unicodedata",
+    "urllib",
+    "uuid"
+  ],
+  "model_artifacts": [],
+  "offline_checks": [
+    {
+      "name": "exact polynomial division and derivative identities",
+      "pass": true
+    },
+    {
+      "name": "polynomial divisor guard",
+      "pass": true
+    },
+    {
+      "name": "domain exclusion retained",
+      "pass": true
+    },
+    {
+      "name": "grammar promotion expansion",
+      "pass": true
+    },
+    {
+      "name": "finite grammar exact denotation",
+      "pass": true
+    },
+    {
+      "name": "joint-premise constructive hyperpath",
+      "pass": true
+    },
+    {
+      "name": "missing joint premise rejected",
+      "pass": true
+    },
+    {
+      "name": "context mismatch rejected",
+      "pass": true
+    },
+    {
+      "name": "type mismatch rejected",
+      "pass": true
+    },
+    {
+      "name": "inexact float input rejected",
+      "pass": true
+    },
+    {
+      "name": "unknown alphabet symbol rejected",
+      "pass": true
+    },
+    {
+      "name": "registered implementations use no model inference",
+      "pass": true
+    }
+  ],
+  "offline_extensions": [
+    {
+      "name": "native",
+      "pass": true,
+      "result_sha256": "69d12d178cf61013ee85a40f1209e4bff4fcb39d88487194d770029aa5f282a2"
+    },
+    {
+      "name": "intake",
+      "pass": true,
+      "result_sha256": "cb23be01e325fe79516575c984c2f06f9937e189165146b0d69c2cdc9bfe8132"
+    },
+    {
+      "name": "astra",
+      "pass": true,
+      "result_sha256": "7707e4affba0b157c1522b664ca899f889abb6ec1096a3a31c4f631c02ecf513"
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Static imports plus intercepted kernel execution establish this finite bootstrap scope, not every future plugin.",
+    "Archived upstream source is retained data, not imported into the running baseline.",
+    "The fixed installed scientific module is compiled only to compare its code structure with loaded functions; that comparison object is never executed.",
+    "The HTTP service necessarily uses a loopback socket; this audit disables networking for the scientific kernels.",
+    "Full commission requires the broader no-inference process/tool/model-artifact gate as capabilities are added."
+  ]
+}

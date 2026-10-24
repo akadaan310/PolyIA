@@ -1,0 +1,198 @@
+{
+ "experiment": "GIN-EXP-012",
+ "hypotheses": [
+  "GIN-H-031",
+  "GIN-H-032",
+  "GIN-H-033",
+  "GIN-H-034",
+  "GIN-H-035"
+ ],
+ "seed": null,
+ "environment": {
+  "python": "3.13.16",
+  "implementation": "CPython",
+  "machine": "x86_64",
+  "system": "Linux 6.18.44-fc-v80",
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.80GHz"
+ },
+ "data": {
+  "least_unrepresentable_integer": {
+   "binary8 (1-4-3 teaching format)": {
+    "p": 4,
+    "search": "all integers from 1",
+    "least_unrepresentable_found": 17,
+    "2^p+1": 17,
+    "match": true,
+    "rounds_to": "16"
+   },
+   "binary16": {
+    "p": 11,
+    "search": "all integers from 1",
+    "least_unrepresentable_found": 2049,
+    "2^p+1": 2049,
+    "match": true,
+    "rounds_to": "2048"
+   },
+   "binary32": {
+    "p": 24,
+    "search": "1..2^16 and 2^p-4096 upward",
+    "least_unrepresentable_found": 16777217,
+    "2^p+1": 16777217,
+    "match": true,
+    "rounds_to": "16777216"
+   },
+   "binary64": {
+    "p": 53,
+    "search": "1..2^16 and 2^p-4096 upward",
+    "least_unrepresentable_found": 9007199254740993,
+    "2^p+1": 9007199254740993,
+    "match": true,
+    "rounds_to": "9007199254740992"
+   }
+  },
+  "decimal_representability_binary64": [
+   {
+    "digits": 1,
+    "decimals": 9,
+    "exactly_representable": 1,
+    "denominator_power_of_2": 1,
+    "same_set": true,
+    "examples": [
+     "1/2"
+    ]
+   },
+   {
+    "digits": 2,
+    "decimals": 99,
+    "exactly_representable": 3,
+    "denominator_power_of_2": 3,
+    "same_set": true,
+    "examples": [
+     "1/4",
+     "1/2",
+     "3/4"
+    ]
+   },
+   {
+    "digits": 3,
+    "decimals": 999,
+    "exactly_representable": 7,
+    "denominator_power_of_2": 7,
+    "same_set": true,
+    "examples": [
+     "1/8",
+     "1/4",
+     "3/8",
+     "1/2",
+     "5/8",
+     "3/4",
+     "7/8"
+    ]
+   },
+   {
+    "digits": 4,
+    "decimals": 9999,
+    "exactly_representable": 15,
+    "denominator_power_of_2": 15,
+    "same_set": true,
+    "examples": [
+     "1/16",
+     "1/8",
+     "3/16",
+     "1/4",
+     "5/16",
+     "3/8",
+     "7/16",
+     "1/2"
+    ]
+   }
+  ],
+  "associativity": {
+   "triples": 729,
+   "counterexamples": 242,
+   "first": [
+    {
+     "a": "0.1",
+     "b": "0.1",
+     "c": "0.4",
+     "(a+b)+c": "0.6000000000000001",
+     "a+(b+c)": "0.6"
+    },
+    {
+     "a": "0.1",
+     "b": "0.1",
+     "c": "0.6",
+     "(a+b)+c": "0.8",
+     "a+(b+c)": "0.7999999999999999"
+    },
+    {
+     "a": "0.1",
+     "b": "0.2",
+     "c": "0.3",
+     "(a+b)+c": "0.6000000000000001",
+     "a+(b+c)": "0.6"
+    },
+    {
+     "a": "0.1",
+     "b": "0.2",
+     "c": "0.5",
+     "(a+b)+c": "0.8",
+     "a+(b+c)": "0.7999999999999999"
+    },
+    {
+     "a": "0.1",
+     "b": "0.2",
+     "c": "0.7",
+     "(a+b)+c": "1",
+     "a+(b+c)": "0.9999999999999999"
+    }
+   ],
+   "commutativity_failures": 0
+  },
+  "harmonic_binary32_n20000": {
+   "forward": "10.480757",
+   "backward": "10.480734",
+   "exact_rounded": "10.480728",
+   "forward_error": 2.8542414227114685e-05,
+   "backward_error": 5.6542306333646854e-06
+  },
+  "max_plus_one": [
+   {
+    "width": 8,
+    "MAX": 127,
+    "wrap": -128,
+    "MIN": -128,
+    "saturate": 127,
+    "C": "undefined",
+    "checked": "exception"
+   },
+   {
+    "width": 16,
+    "MAX": 32767,
+    "wrap": -32768,
+    "MIN": -32768,
+    "saturate": 32767,
+    "C": "undefined",
+    "checked": "exception"
+   },
+   {
+    "width": 32,
+    "MAX": 2147483647,
+    "wrap": -2147483648,
+    "MIN": -2147483648,
+    "saturate": 2147483647,
+    "C": "undefined",
+    "checked": "exception"
+   },
+   {
+    "width": 64,
+    "MAX": 9223372036854775807,
+    "wrap": -9223372036854775808,
+    "MIN": -9223372036854775808,
+    "saturate": 9223372036854775807,
+    "C": "undefined",
+    "checked": "exception"
+   }
+  ]
+ }
+}

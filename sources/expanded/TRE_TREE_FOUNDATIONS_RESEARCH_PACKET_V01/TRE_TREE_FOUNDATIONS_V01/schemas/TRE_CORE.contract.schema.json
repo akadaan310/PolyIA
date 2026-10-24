@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:tre:core-contract:0.1",
+  "title": "TRE/TREE typed machine execution contract",
+  "description": "Interchange/audit projection only. Not native executable language syntax.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["protocol", "artifact_kind", "seed", "version", "content_id", "structure", "provenance"],
+  "properties": {
+    "protocol": {"const": "TRE/TREE/0.1"},
+    "artifact_kind": {"enum": ["machine-state", "scene-ir", "physics-ir", "corpus", "compiled-fruit"]},
+    "seed": {"type": "string", "minLength": 1},
+    "version": {"type": "integer", "minimum": 0},
+    "content_id": {"type": "string", "pattern": "^sha256:[a-f0-9]{64}$"},
+    "structure": {
+      "type": "object", "additionalProperties": false,
+      "required": ["nodes", "couplings"],
+      "properties": {
+        "nodes": {"type": "array", "items": {"type":"object", "required":["id","kind","parent"], "properties":{"id":{"type":"string"},"kind":{"type":"string"},"parent":{"type":["string","null"]}}}},
+        "couplings": {"type": "array", "items": {"type":"object", "required":["provider","consumer","witness"], "properties":{"provider":{"type":"string"},"consumer":{"type":"string"},"witness":{"type":"string"}}}}
+      }
+    },
+    "provenance": {"type": "object", "required": ["source", "license", "revision"], "properties": {"source":{"type":"string"}, "license":{"type":"string"}, "revision":{"type":"string"}}}
+  }
+}

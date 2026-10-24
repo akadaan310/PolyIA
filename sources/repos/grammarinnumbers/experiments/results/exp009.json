@@ -1,0 +1,234 @@
+{
+ "experiment": "GIN-EXP-009",
+ "hypotheses": [
+  "GIN-H-022",
+  "GIN-H-023",
+  "GIN-H-024"
+ ],
+ "seed": 9,
+ "environment": {
+  "python": "3.13.16",
+  "implementation": "CPython",
+  "machine": "x86_64",
+  "system": "Linux 6.18.44-fc-v80",
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.80GHz"
+ },
+ "data": {
+  "lame": {
+   "N": 1200,
+   "max_steps": 14,
+   "bound_log_phi_N": 14.734,
+   "smallest_pairs": {
+    "1": {
+     "smallest_pair": [
+      2,
+      1
+     ],
+     "fibonacci_pair": [
+      2,
+      1
+     ],
+     "match": true
+    },
+    "2": {
+     "smallest_pair": [
+      3,
+      2
+     ],
+     "fibonacci_pair": [
+      3,
+      2
+     ],
+     "match": true
+    },
+    "3": {
+     "smallest_pair": [
+      5,
+      3
+     ],
+     "fibonacci_pair": [
+      5,
+      3
+     ],
+     "match": true
+    },
+    "4": {
+     "smallest_pair": [
+      8,
+      5
+     ],
+     "fibonacci_pair": [
+      8,
+      5
+     ],
+     "match": true
+    },
+    "5": {
+     "smallest_pair": [
+      13,
+      8
+     ],
+     "fibonacci_pair": [
+      13,
+      8
+     ],
+     "match": true
+    },
+    "6": {
+     "smallest_pair": [
+      21,
+      13
+     ],
+     "fibonacci_pair": [
+      21,
+      13
+     ],
+     "match": true
+    },
+    "7": {
+     "smallest_pair": [
+      34,
+      21
+     ],
+     "fibonacci_pair": [
+      34,
+      21
+     ],
+     "match": true
+    },
+    "8": {
+     "smallest_pair": [
+      55,
+      34
+     ],
+     "fibonacci_pair": [
+      55,
+      34
+     ],
+     "match": true
+    },
+    "9": {
+     "smallest_pair": [
+      89,
+      55
+     ],
+     "fibonacci_pair": [
+      89,
+      55
+     ],
+     "match": true
+    },
+    "10": {
+     "smallest_pair": [
+      144,
+      89
+     ],
+     "fibonacci_pair": [
+      144,
+      89
+     ],
+     "match": true
+    },
+    "11": {
+     "smallest_pair": [
+      233,
+      144
+     ],
+     "fibonacci_pair": [
+      233,
+      144
+     ],
+     "match": true
+    },
+    "12": {
+     "smallest_pair": [
+      377,
+      233
+     ],
+     "fibonacci_pair": [
+      377,
+      233
+     ],
+     "match": true
+    },
+    "13": {
+     "smallest_pair": [
+      610,
+      377
+     ],
+     "fibonacci_pair": [
+      610,
+      377
+     ],
+     "match": true
+    },
+    "14": {
+     "smallest_pair": [
+      987,
+      610
+     ],
+     "fibonacci_pair": [
+      987,
+      610
+     ],
+     "match": true
+    }
+   },
+   "all_match": true,
+   "histogram": {
+    "1": 7512,
+    "2": 27248,
+    "3": 64702,
+    "4": 111986,
+    "5": 144978,
+    "6": 144199,
+    "7": 110732,
+    "8": 65604,
+    "9": 29650,
+    "10": 9942,
+    "11": 2397,
+    "12": 420,
+    "13": 29,
+    "14": 1
+   }
+  },
+  "average_steps_prime_n": {
+   "coefficient_12ln2_over_pi2": 0.8427659133,
+   "porter_constant": 1.4670780794,
+   "rows": [
+    {
+     "n": 1009,
+     "average_steps": 6.287698,
+     "prediction": 7.29625,
+     "difference": -1.008551
+    },
+    {
+     "n": 10007,
+     "average_steps": 8.230762,
+     "prediction": 9.229829,
+     "difference": -0.999067
+    },
+    {
+     "n": 100003,
+     "average_steps": 10.170387,
+     "prediction": 11.169805,
+     "difference": -0.999418
+    },
+    {
+     "n": 1000003,
+     "average_steps": 12.109263,
+     "prediction": 13.110322,
+     "difference": -1.001059
+    }
+   ]
+  },
+  "bezout_bounds": {
+   "samples": 20000,
+   "violations": 0
+  },
+  "binary_vs_euclid_64bit": {
+   "mean_subtractions_binary": 45.2228,
+   "mean_divisions_euclid": 37.7552
+  }
+ }
+}

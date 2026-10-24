@@ -1,0 +1,98 @@
+{
+ "experiment": "GIN-CHECKS",
+ "hypotheses": [],
+ "seed": null,
+ "environment": {
+  "python": "3.13.16",
+  "implementation": "CPython",
+  "machine": "x86_64",
+  "system": "Linux 6.18.44-fc-v80",
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.80GHz"
+ },
+ "data": {
+  "GIN-PROP-001": {
+   "ok": true,
+   "detail": "6303 word pairs"
+  },
+  "GIN-PROP-002": {
+   "ok": true,
+   "detail": "bases 2..16"
+  },
+  "GIN-PROP-003": {
+   "ok": true,
+   "detail": "m, n < 12"
+  },
+  "GIN-PROP-004": {
+   "ok": true,
+   "detail": "bijective bases 1,2,3,5 exhaustive by length; residue algorithm on 3 grammars"
+  },
+  "GIN-PROP-005": {
+   "ok": true,
+   "detail": "base 7, |u| = 3, |v| = 2"
+  },
+  "GIN-PROP-006": {
+   "ok": true,
+   "detail": "n < 300000"
+  },
+  "GIN-PROP-008": {
+   "ok": true,
+   "detail": "widths 1..12, all representable n"
+  },
+  "GIN-PROP-009": {
+   "ok": true,
+   "detail": "bases 2,3,10,12, denominators < 200"
+  },
+  "GIN-PROP-010": {
+   "ok": true,
+   "detail": "N ≤ 65536"
+  },
+  "GIN-THM-001": {
+   "ok": true,
+   "detail": "30 rings, 5737 pairs"
+  },
+  "GIN-THM-002": {
+   "ok": true,
+   "detail": "n ≤ 60"
+  },
+  "GIN-THM-003": {
+   "ok": true,
+   "detail": "Z/n, n < 60"
+  },
+  "GIN-THM-006": {
+   "ok": true,
+   "detail": "pairs in [-4, 4]², 19200 operations"
+  },
+  "GIN-PROP-015": {
+   "ok": true,
+   "detail": "four formats, both signs"
+  },
+  "GIN-PROP-021": {
+   "ok": true,
+   "detail": "n < 200"
+  },
+  "GIN-PROP-023": {
+   "ok": true,
+   "detail": "n ≤ 6, all dividends"
+  },
+  "GIN-PROP-030": {
+   "ok": true,
+   "detail": "full search for p = 4, 11; boundary windows for p = 24, 53"
+  },
+  "GIN-PROP-031": {
+   "ok": true,
+   "detail": "k ≤ 5"
+  },
+  "GIN-PROP-040": {
+   "ok": true,
+   "detail": "all pairs below 700, step counts 1..13"
+  },
+  "GIN-PROP-041": {
+   "ok": true,
+   "detail": "e < 5000; the bit string of e is recovered from the move word"
+  },
+  "GIN-PROP-042": {
+   "ok": true,
+   "detail": "moduli < 16"
+  }
+ }
+}

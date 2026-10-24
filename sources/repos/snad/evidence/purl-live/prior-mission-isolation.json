@@ -1,0 +1,14 @@
+{
+  "schema": "snad.prior-mission-isolation/1",
+  "observedAt": "2026-10-18T20:05:40.326651+00:00",
+  "method": "GET",
+  "url": "https://purls-production.up.railway.app/api/resources/resource_95a5662789076892fe698316/manifest",
+  "httpStatus": 200,
+  "originalVersionObservedBefore": 15,
+  "versionAfterOwnLifecycle": 15,
+  "manifestSha256Before": "cc56d9e7847b0c68693708118663f8b23fbc7cf05fbb219fff6470c61ecab20d",
+  "manifestSha256After": "cc56d9e7847b0c68693708118663f8b23fbc7cf05fbb219fff6470c61ecab20d",
+  "sameManifestBytes": true,
+  "ourWriteTargets": "Only distinct SNAD resource_bd80f9093ac5fb3b2d176291, identity preview endpoints and distinct owned CGIT repo; see http-operations.json",
+  "claimLimit": "Equality verifies this observed public snapshot, not all possible independent service state."
+}

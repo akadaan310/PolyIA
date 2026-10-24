@@ -1,0 +1,182 @@
+{
+  "format": "POLYIA-PACKET/0.1",
+  "research_date": "2026-10-23",
+  "files": {
+    "README.md": {
+      "bytes": 4197,
+      "sha256": "66704d12b6a9bafb1538cb0a2f101a45682138bb2b33b47959b70ebf0d45ab91"
+    },
+    "docs/ACCEPTANCE_AND_SECURITY.md": {
+      "bytes": 3229,
+      "sha256": "c0116b0731d0bdfc92e5ba2fd09c1feaa0ba852154af93c8310c657dd2a10306"
+    },
+    "docs/CODEX_CONSTITUTION.md": {
+      "bytes": 18438,
+      "sha256": "cfe0b88f9c701e139372d783db1d9568da272f6433f9e513d6475fe7985a2630"
+    },
+    "docs/CONCIERGE_CONTRACT.md": {
+      "bytes": 4027,
+      "sha256": "0400c89054a4fa88cbb40f8312d38f9548f6373f666746874d7005e30b31692b"
+    },
+    "docs/PHONEX_SPECIALIST_ARCHITECTURE.md": {
+      "bytes": 3736,
+      "sha256": "b53938efb641f0617fda6bf0d35b7db304c33a2e24599f74beeb67b60165b7d3"
+    },
+    "docs/QIA_62_CAPABILITY_ATLAS.md": {
+      "bytes": 7240,
+      "sha256": "4a631466cc90833d0000e704395a11ff462a9fbc9d68721bee775f4176120f83"
+    },
+    "docs/REPOSITORY_ATLAS.md": {
+      "bytes": 4911,
+      "sha256": "e4d0961b4a4371913b124dc18323843319ac43b6534c46018f90226fcd09767e"
+    },
+    "docs/STATE_MACHINE.md": {
+      "bytes": 4921,
+      "sha256": "48c38a2a24128513fc45c091ba1c26c61feb4cd48a3062f876bb560c6d05fa5e"
+    },
+    "docs/TECHNICAL_TREATISE.md": {
+      "bytes": 9002,
+      "sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01"
+    },
+    "examples/topology.poly": {
+      "bytes": 302,
+      "sha256": "f32b9053edbe6e4e66a3c7d80462a1aaa0cf2d7bf3e6b21132ec14148ed0e45d"
+    },
+    "examples/topology_compiled/automaton.dot": {
+      "bytes": 1168,
+      "sha256": "993c360b037f6e5d8fbccd9b790fb76e13dd4f06dbe892d3f636b0dc0739f039"
+    },
+    "examples/topology_compiled/automaton.html": {
+      "bytes": 1141,
+      "sha256": "e9a831aea2b6e132436ef327384e7014350a1bb27d7c8214d3624ae5042cbf8a"
+    },
+    "examples/topology_compiled/automaton.json": {
+      "bytes": 3509,
+      "sha256": "42cfebe7f4842df0d01e168cd178b26f1045f3e82e933bdde28fba8c70ef1cfc"
+    },
+    "examples/topology_compiled/plan.pir": {
+      "bytes": 619,
+      "sha256": "1df4e98868e1ad85e4b6098b746ff6708edffaeb6d3f2fab3671db04cf502d69"
+    },
+    "polyia/__init__.py": {
+      "bytes": 94,
+      "sha256": "d33b5052e2e6f6daff162330e56069a9abff3698beca0ea6336fb4c0fe24abc1"
+    },
+    "polyia/__main__.py": {
+      "bytes": 1903,
+      "sha256": "3b5e493a774534b162c8ab6ef283f78a4387726d1c8f55370c695d6dfe88c363"
+    },
+    "polyia/automaton.py": {
+      "bytes": 2247,
+      "sha256": "7d67c22763f7f0a6970df2ca070cf4d67d309de0893aae21de0010848b14c9bd"
+    },
+    "polyia/compiler.py": {
+      "bytes": 2209,
+      "sha256": "d9bcb0801e765492234a3e069b460de087f887728c3bcb5274d22129236fed32"
+    },
+    "polyia/harness.py": {
+      "bytes": 2649,
+      "sha256": "13ee33c80d3a54eb6c3c168302172673f8654076d02d1f37bcce74fa14cb7376"
+    },
+    "polyia/lang.py": {
+      "bytes": 4284,
+      "sha256": "390fa41a79f5c60d7058d0af1a862aff7c4b3348cf8308b7bbfa5037628cb535"
+    },
+    "polyia/registry.py": {
+      "bytes": 1568,
+      "sha256": "155bdbdb80640b40aec2dc1a74c715fd3bab2b1231532cd580543ab257beae0f"
+    },
+    "pyproject.toml": {
+      "bytes": 331,
+      "sha256": "0b59a83a291d5a862fe8ef6e920fc8ac99fcb632b95f4b2eb64e0e4aa654c5da"
+    },
+    "reports/LIMITATIONS.md": {
+      "bytes": 2178,
+      "sha256": "015064feaa521f98bccce74d6db89d0cd8592cce62dfb90b84bdd43fc82adea1"
+    },
+    "reports/compile_output.txt": {
+      "bytes": 143,
+      "sha256": "0679397f35123e630a2319050d10aed33d5b9d71254477c2f78075e5f0701872"
+    },
+    "reports/test_results.txt": {
+      "bytes": 1862,
+      "sha256": "a5fc25ef45c72b62786141f0f908c8b02a2a0160041061b045eb90839e6f49bf"
+    },
+    "schemas/POLYIA_PIR_EBNF.md": {
+      "bytes": 1132,
+      "sha256": "17bdae1335b945f2afe8086272fe3aa636b13bdc1c8fba944497463208ad66a9"
+    },
+    "schemas/Q_THEORIES_62.json": {
+      "bytes": 45545,
+      "sha256": "915698447a3d700dc62ddecb6aa589260aaa30bb2aef157987d18672fbcb94d3"
+    },
+    "schemas/polyia.wit": {
+      "bytes": 459,
+      "sha256": "7c3affede7d7596c5e390faee246720ab2ff44b50ac08005702a6eaf0d2efd34"
+    },
+    "seed_packets/CIA_BROWSER_CODEX_MASTER_132.md": {
+      "bytes": 59029,
+      "sha256": "40f7a5c74de38c12daa5fd96843c1ae01f9289a5c1355ca7fb00538f75dc7edc"
+    },
+    "seed_packets/CLAUDE_CODE_MASTER_SEED.md": {
+      "bytes": 7917,
+      "sha256": "52e58d51378023778dffc4f492050e919fc93f916164728fcd283b1bc376b82d"
+    },
+    "seed_packets/CONSTITUTION.md": {
+      "bytes": 5634,
+      "sha256": "1d9825bdd23f2986149f158f34fadcd5313205a29bbbc88fa03a4c2cc26fb89b"
+    },
+    "seed_packets/DIVISION_INFINITY.zip": {
+      "bytes": 37477,
+      "sha256": "1066db0107b64e1cbc45257ac58a471a1674826a8d9a72548192c3577a43f591"
+    },
+    "seed_packets/DIVISION_IX.md": {
+      "bytes": 15095,
+      "sha256": "a6151a0ff180633eb0f53af41ae1a8fb04587935354fcbf4d9ef0a1128068638"
+    },
+    "seed_packets/FNMS_001.zip": {
+      "bytes": 13042,
+      "sha256": "88da8753a6533d61464ace57e4fc1f831710e809cec0b4b0f99a9291f3758d0d"
+    },
+    "seed_packets/LANGUAGE_AND_SPECIALISTS.md": {
+      "bytes": 4933,
+      "sha256": "58a838af528e8d08171baa26d9890b263768c4e3e0b164e08fcf96397e299209"
+    },
+    "seed_packets/MUSE_CORPUS_DESIGN.md": {
+      "bytes": 7527,
+      "sha256": "954c18425dd507f617d607ceb18093478e044397088917db52ae5d4730fe8e1f"
+    },
+    "seed_packets/PHONEX_ULWS.zip": {
+      "bytes": 22578,
+      "sha256": "54cf64a37de190ec856e2b3628404d7c564883aa6407666218b3ac066e80c627"
+    },
+    "seed_packets/QIA_62.zip": {
+      "bytes": 50440,
+      "sha256": "caacebf671a0cbacf15174f86665f46e9442c6a10283f46ebc1c105f62502131"
+    },
+    "seed_packets/Q_STRINGS.zip": {
+      "bytes": 30546,
+      "sha256": "53f6f6bbddcf87b830fbaff598d6ea98149b6f181144dd781331efd5f5a8f5f7"
+    },
+    "seed_packets/README.md": {
+      "bytes": 314,
+      "sha256": "4c2072f1c3552df23c1b8dda4d8de0a1f1d89c9a97ebd12f9863ed7130695265"
+    },
+    "seed_packets/TIMELESS_QIA.zip": {
+      "bytes": 22376,
+      "sha256": "d78020c3e0d04ca4e178ee6eda7a6a02b772a72090d5add4ab23ab2d7ac9a4f2"
+    },
+    "seed_packets/WAZNOMIA.md": {
+      "bytes": 16459,
+      "sha256": "76646e2b7f57d09abaa0639b854690d9c27779ebe9224ab5e249504987b909ec"
+    },
+    "tests/test_polyia.py": {
+      "bytes": 5326,
+      "sha256": "dcc1aa983c61bb24afdc8fe92b4c9e25fc2d34222fce64f27f2d9c2a6204d0da"
+    }
+  },
+  "count": 43,
+  "tests": 28,
+  "integration": "typed-plan-compiled-fixture-only",
+  "status": "research-reference-and-codex-constitution"
+}

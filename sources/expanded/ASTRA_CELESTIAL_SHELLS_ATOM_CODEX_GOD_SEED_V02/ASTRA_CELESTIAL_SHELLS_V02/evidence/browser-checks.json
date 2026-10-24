@@ -1,0 +1,23 @@
+{
+  "mode": "set_content with exact JS/CSS and bridged real HTTP backend; normal localhost navigation blocked",
+  "checks": {
+    "desktop_sky": true,
+    "desktop_gpu_or_fallback": true,
+    "desktop_expand": true,
+    "desktop_journey": true,
+    "desktop_card": true,
+    "desktop_audio": true,
+    "desktop_mute": true,
+    "desktop_canvas": true,
+    "mobile_sky": true,
+    "mobile_gpu_or_fallback": true,
+    "mobile_expand": true,
+    "mobile_journey": true,
+    "mobile_card": true,
+    "mobile_audio": true,
+    "mobile_mute": true,
+    "mobile_canvas": true
+  },
+  "pageErrors": [],
+  "ok": true
+}

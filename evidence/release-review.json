@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "reviewer": "release_runtime_review",
+  "reviewed_at": "2026-10-24T05:12:30.421370+00:00",
+  "verdict": "PASS_WITH_STATED_SCOPE",
+  "runtime_version": "1.1.0",
+  "ledger_schema": 2,
+  "findings": [
+    {
+      "id": "IRR-01",
+      "disposition": "CLOSED_FOR_REVIEWED_BOOTSTRAP"
+    },
+    {
+      "id": "IRR-02",
+      "disposition": "CLOSED_FOR_REVIEWED_BOOTSTRAP"
+    },
+    {
+      "id": "IRR-03",
+      "disposition": "CLOSED_FOR_REVIEWED_BOOTSTRAP"
+    },
+    {
+      "id": "IRR-04",
+      "disposition": "CLOSED_FOR_REVIEWED_BOOTSTRAP"
+    }
+  ],
+  "blockers_found": [],
+  "reviewed_files": [
+    {
+      "path": "polyia/store.py",
+      "sha256": "dc88ea766ab2afe4f5426c00e729d228b656f6856f387f838a18d75a5749509a",
+      "bytes": 74768
+    },
+    {
+      "path": "polyia/experiments.py",
+      "sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+      "bytes": 18298
+    },
+    {
+      "path": "polyia/cli.py",
+      "sha256": "fbc88b11a101f0b3678c7a19266df9a844688226b13feaf5145e3fe407c8adfe",
+      "bytes": 10506
+    },
+    {
+      "path": "polyia/server.py",
+      "sha256": "77a77f5bf41772e7811126acbd5334c960cfd8bf395e22a9eb2af27ba13d5534",
+      "bytes": 22368
+    },
+    {
+      "path": "polyia/__init__.py",
+      "sha256": "7eb3f316d7989fb09e03205362c5ca20e9a6c27ecd376c1f8d0d7e8b843a4689",
+      "bytes": 109
+    },
+    {
+      "path": "tests/test_store.py",
+      "sha256": "ad725f230617a3633013a5453b68fb3051fbd0988653b192f381397199e41e30",
+      "bytes": 44637
+    },
+    {
+      "path": "tests/test_experiments.py",
+      "sha256": "1c712184daf0daaa358cfaca3c3018fe151fd656aee1d841b3f0f1faefa63617",
+      "bytes": 6111
+    },
+    {
+      "path": "tools/backup_state.py",
+      "sha256": "180b2aaedc172bdfb1d742e7baface4da86d7a24b450f236a85f517e888b70bd",
+      "bytes": 1881
+    },
+    {
+      "path": "tools/audit_no_llm.py",
+      "sha256": "25a8b921165aae1d3ac54c84c9aec4929f8d3818c6e730368902689188835987",
+      "bytes": 3437
+    }
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "sqlite": "3.53.1",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "independent_probes": {
+    "status": "PASS",
+    "probe_count": 15,
+    "results": [
+      {
+        "name": "IRR-01:0",
+        "pass": true,
+        "detail": {
+          "table": "materialized",
+          "column": "state_json",
+          "path": [
+            "requirements",
+            "R",
+            "priority"
+          ],
+          "changed_type": "float",
+          "verify": false,
+          "command": "INTEGRITY_ERROR",
+          "reopen": "INTEGRITY_ERROR"
+        }
+      },
+      {
+        "name": "IRR-01:1",
+        "pass": true,
+        "detail": {
+          "table": "materialized",
+          "column": "state_json",
+          "path": [
+            "research",
+            "paused"
+          ],
+          "changed_type": "int",
+          "verify": false,
+          "command": "INTEGRITY_ERROR",
+          "reopen": "INTEGRITY_ERROR"
+        }
+      },
+      {
+        "name": "IRR-01:2",
+        "pass": true,
+        "detail": {
+          "table": "receipts",
+          "column": "receipt_json",
+          "path": [
+            "ok"
+          ],
+          "changed_type": "int",
+          "verify": false,
+          "command": "INTEGRITY_ERROR",
+          "reopen": "INTEGRITY_ERROR"
+        }
+      },
+      {
+        "name": "IRR-01:3",
+        "pass": true,
+        "detail": {
+          "table": "receipts",
+          "column": "receipt_json",
+          "path": [
+            "revision"
+          ],
+          "changed_type": "float",
+          "verify": false,
+          "command": "INTEGRITY_ERROR",
+          "reopen": "INTEGRITY_ERROR"
+        }
+      },
+      {
+        "name": "IRR-01:4",
+        "pass": true,
+        "detail": {
+          "table": "receipts",
+          "column": "request_json",
+          "path": [
+            "expected_revision"
+          ],
+          "changed_type": "bool",
+          "verify": false,
+          "command": "INTEGRITY_ERROR",
+          "reopen": "INTEGRITY_ERROR"
+        }
+      },
+      {
+        "name": "IRR-01:5",
+        "pass": true,
+        "detail": {
+          "table": "receipts",
+          "column": "request_json",
+          "path": [
+            "expected_revision"
+          ],
+          "changed_type": "float",
+          "verify": false,
+          "command": "INTEGRITY_ERROR",
+          "reopen": "INTEGRITY_ERROR"
+        }
+      },
+      {
+        "name": "IRR-01:6",
+        "pass": true,
+        "detail": {
+          "table": "checkpoints",
+          "column": "state_json",
+          "path": [
+            "requirements",
+            "R",
+            "priority"
+          ],
+          "changed_type": "float",
+          "verify": false,
+          "command": "INTEGRITY_ERROR",
+          "reopen": "INTEGRITY_ERROR"
+        }
+      },
+      {
+        "name": "IRR-02:1e100000",
+        "pass": true,
+        "detail": "Refused before Fraction construction"
+      },
+      {
+        "name": "IRR-02:1e999999999",
+        "pass": true,
+        "detail": "Refused before Fraction construction"
+      },
+      {
+        "name": "IRR-02:1.25",
+        "pass": true,
+        "detail": "Refused before Fraction construction"
+      },
+      {
+        "name": "IRR-02:1_000",
+        "pass": true,
+        "detail": "Refused before Fraction construction"
+      },
+      {
+        "name": "IRR-02:valid-and-budget",
+        "pass": true,
+        "detail": {
+          "huge_integer": "BUDGET before constructor",
+          "acceptance_checks": 12
+        }
+      },
+      {
+        "name": "IRR-03:history",
+        "pass": true,
+        "detail": {
+          "old_and_new_bytes": "retained",
+          "metadata": "preserved",
+          "definition_binding": "DIFFERENT",
+          "replay_reads_live_source": false,
+          "deleted_historical_authority": "INTEGRITY_ERROR"
+        }
+      },
+      {
+        "name": "IRR-03:package-context",
+        "pass": true,
+        "detail": {
+          "requirements": 194,
+          "objects": 11,
+          "status": "SOURCED",
+          "definition_binding": "MATCH"
+        }
+      },
+      {
+        "name": "IRR-04:evidence-linkage",
+        "pass": true,
+        "detail": {
+          "unrelated": "FAIL",
+          "altered_kernel": "FAIL",
+          "float_changed_run": "FAIL",
+          "exact_kernel_run": "PASS",
+          "ancillary_separate": true,
+          "replay_reexecutes_science": false
+        }
+      }
+    ],
+    "python": "3.12.14",
+    "sqlite": "3.53.1"
+  },
+  "independent_default_binding_probes": {
+    "status": "PASS",
+    "results": [
+      {
+        "name": "IRR-04:source-default",
+        "pass": true,
+        "code": "IMPLEMENTATION_CHANGED"
+      },
+      {
+        "name": "IRR-04:loaded-default",
+        "pass": true,
+        "code": "IMPLEMENTATION_CHANGED"
+      }
+    ]
+  },
+  "independent_probe_source": "from pathlib import Path\nimport hashlib, json, tempfile, sqlite3, sys, platform\nfrom unittest.mock import patch\nsys.path.insert(0, '/workspace/scratch/d3d55c4f57bd/polyia_commission_v1')\nfrom polyia.store import Ledger, CommandError\nfrom polyia import experiments\nroot=Path('/workspace/scratch/d3d55c4f57bd/polyia_commission_v1')\nresults=[]\nreqs=[{'id':'R','title':'Review evidence','verifier':'artifact-integrity','mandate':'retain bytes','acceptance':{'required':True,'level':1},'scope':'review','authority':{'owner':'test-owner'},'source_refs':['REVIEW-SOURCE'],'continuity':['K-SRC']},{'id':'SCI','title':'Scientific review','verifier':'scientific-contracts'}]\n\ndef ok(name,detail):\n    results.append({'name':name,'pass':True,'detail':detail})\n\ndef command(ledger,kind,payload):\n    revision=ledger.state()['revision']\n    return ledger.command({'command_id':'review-'+str(revision),'expected_revision':revision,'kind':kind,'payload':payload})\n\ndef blocked(ledger,db,ws):\n    assert not ledger.verify()['ok']\n    before=ledger.state()['revision']\n    try: command(ledger,'checkpoint.create',{'note':'must not advance'})\n    except CommandError as e: assert e.code=='INTEGRITY_ERROR'\n    else: raise AssertionError('Corrupt ledger accepted a command')\n    assert ledger.state()['revision']==before\n    try: Ledger(db,ws)\n    except CommandError as e: assert e.code=='INTEGRITY_ERROR'\n    else: raise AssertionError('Corrupt ledger reopened')\n\nwith tempfile.TemporaryDirectory() as tmp:\n    temp=Path(tmp)\n    cases=[('materialized','state_json',('requirements','R','priority'),5.0),('materialized','state_json',('research','paused'),0),('receipts','receipt_json',('ok',),1),('receipts','receipt_json',('revision',),1.0),('receipts','request_json',('expected_revision',),False),('receipts','request_json',('expected_revision',),0.0),('checkpoints','state_json',('requirements','R','priority'),5.0)]\n    for index,(table,column,path,value) in enumerate(cases):\n        ws=temp/f'case{index}'/'workspace';ws.mkdir(parents=True);db=ws.parent/'state'/'ledger.sqlite3'\n        with Ledger(db,ws,reqs) as ledger:\n            if table!='materialized': command(ledger,'checkpoint.create',{'note':'precorruption'})\n            with sqlite3.connect(db) as connection:\n                data=json.loads(connection.execute(f'SELECT {column} FROM {table}').fetchone()[0]);target=data\n                for key in path[:-1]:target=target[key]\n                target[path[-1]]=value\n                connection.execute(f'UPDATE {table} SET {column}=?',(json.dumps(data),))\n            blocked(ledger,db,ws)\n        ok('IRR-01:'+str(index),{'table':table,'column':column,'path':path,'changed_type':type(value).__name__,'verify':False,'command':'INTEGRITY_ERROR','reopen':'INTEGRITY_ERROR'})\n    for value in ['1e100000','1e999999999','1.25','1_000']:\n        with patch.object(experiments,'Fraction',side_effect=AssertionError('Unsafe constructor reached')) as constructor:\n            try:experiments.number(value)\n            except experiments.Refusal as e:assert e.code=='INVALID_RATIONAL'\n            else:raise AssertionError('Unsupported exact syntax admitted')\n            assert constructor.call_count==0\n        ok('IRR-02:'+value,'Refused before Fraction construction')\n    with patch.object(experiments,'Fraction',side_effect=AssertionError('Large input constructor reached')) as constructor:\n        try:experiments.number(1<<20000)\n        except experiments.Refusal as e:assert e.code=='BUDGET'\n        else:raise AssertionError('Huge integer admitted')\n        assert constructor.call_count==0\n    assert str(experiments.number('3/5'))=='3/5'\n    assert experiments.number(-3)==-3\n    report=experiments.run_registered('acceptance',{})\n    assert report['status']=='PASS' and all(x['pass'] for x in report['checks'])\n    ok('IRR-02:valid-and-budget',{'huge_integer':'BUDGET before constructor','acceptance_checks':len(report['checks'])})\n    ws=temp/'context'/'workspace';ws.mkdir(parents=True);(ws/'registry').mkdir();db=ws.parent/'state'/'ledger.sqlite3'\n    def write_context(version):\n        current=json.loads(json.dumps(reqs));current[0]['authority']['version']=version\n        values={'registry/constitution.json':{'requirements':current},'registry/sources.json':{'version':version,'files':[]},'registry/authority.json':{'owner':'test-owner','version':version}}\n        encoded={p:(json.dumps(v)+'\\n').encode() for p,v in values.items()}\n        for p,data in encoded.items():(ws/p).write_bytes(data)\n        return current,encoded\n    current,old=write_context('one')\n    with Ledger(db,ws,current) as ledger:\n        first=ledger.get_checkpoint(command(ledger,'checkpoint.create',{'note':'one'})['result']['checkpoint_id'])\n        assert first['state']['source_context']['status']=='SOURCED'\n        new_defs,new=write_context('two')\n        second=ledger.get_checkpoint(command(ledger,'checkpoint.create',{'note':'two'})['result']['checkpoint_id'])\n        assert second['state']['source_context']['definition_binding']['status']=='DIFFERENT'\n        assert second['state']['requirements']['R']['authority']['version']=='one'\n        assert second['state']['requirements']['R']['acceptance']==current[0]['acceptance']\n        for checkpoint,expected in [(first,old),(second,new)]:\n            for item in checkpoint['state']['source_context']['objects']:\n                if item['path'] in expected:assert ledger.get_blob(item['sha256'])==expected[item['path']]\n        assert ledger.verify()['ok']\n    with patch.object(Ledger,'_capture_source_context',side_effect=AssertionError('Replayed source capture')):\n        with Ledger(db,ws) as ledger:\n            assert ledger.get_checkpoint(first['id'])==first\n            assert ledger.verify()['ok']\n            old_authority=next(i for i in first['state']['source_context']['objects'] if i['role']=='authority')\n            with sqlite3.connect(db) as connection:connection.execute('DELETE FROM blobs WHERE digest=?',(old_authority['sha256'],))\n            blocked(ledger,db,ws)\n    ok('IRR-03:history',{'old_and_new_bytes':'retained','metadata':'preserved','definition_binding':'DIFFERENT','replay_reads_live_source':False,'deleted_historical_authority':'INTEGRITY_ERROR'})\n    ws=temp/'default'/'workspace';ws.mkdir(parents=True)\n    with Ledger(ws.parent/'state'/'ledger.sqlite3',ws) as ledger:\n        state=ledger.state();assert len(state['requirements'])==194\n        assert state['source_context']['status']=='SOURCED'\n        assert state['source_context']['definition_binding']['status']=='MATCH'\n        assert state['commission_status']=='NOT_COMMISSIONED'\n        ok('IRR-03:package-context',{'requirements':194,'objects':len(state['source_context']['objects']),'status':'SOURCED','definition_binding':'MATCH'})\n    ws=temp/'science'/'workspace';ws.mkdir(parents=True);db=ws.parent/'state'/'ledger.sqlite3'\n    with Ledger(db,ws,reqs) as ledger:\n        assert ledger.state()['source_context']['status']=='UNSOURCED'\n        (ws/'irrelevant.txt').write_text('This file is unrelated to the scientific implementation.\\n')\n        command(ledger,'requirement.produce',{'requirement_id':'SCI','artifacts':['irrelevant.txt']})\n        result=command(ledger,'requirement.verify',{'requirement_id':'SCI'})['result']['verification']\n        assert result['outcome']=='FAIL' and result['report']['reason']=='PRODUCED_KERNEL_MISMATCH'\n        try:command(ledger,'requirement.accept',{'requirement_id':'SCI'})\n        except CommandError as e:assert e.code=='INVALID_TRANSITION'\n        else:raise AssertionError('Unrelated evidence accepted')\n        original=(root/'polyia/experiments.py').read_bytes();(ws/'altered.py').write_bytes(original+b'\\n# altered\\n')\n        command(ledger,'requirement.produce',{'requirement_id':'SCI','artifacts':['altered.py']})\n        assert command(ledger,'requirement.verify',{'requirement_id':'SCI'})['result']['verification']['outcome']=='FAIL'\n        (ws/'kernel.py').write_bytes(original)\n        run=command(ledger,'experiment.run',{'name':'acceptance','parameters':{}})['result']['run']\n        changed=json.loads(json.dumps(run));changed['revision']=float(changed['revision']);(ws/'changed.json').write_text(json.dumps(changed))\n        command(ledger,'requirement.produce',{'requirement_id':'SCI','artifacts':['kernel.py','changed.json']})\n        verification=command(ledger,'requirement.verify',{'requirement_id':'SCI'})['result']['verification']\n        assert verification['outcome']=='FAIL' and verification['report']['reason']=='UNLINKED_RUN_RECEIPT'\n        (ws/'run.json').write_text(json.dumps(run))\n        command(ledger,'requirement.produce',{'requirement_id':'SCI','artifacts':['kernel.py','run.json','irrelevant.txt']})\n        verification=command(ledger,'requirement.verify',{'requirement_id':'SCI'})['result']['verification']\n        assert verification['outcome']=='PASS'\n        assert {x['role'] for x in verification['inputs']}=={'executing-kernel','recorded-run'}\n        assert [x['path'] for x in verification['ancillary_attachments']]==['irrelevant.txt']\n        assert verification['code_identity']['sha256']==hashlib.sha256(original).hexdigest()\n        command(ledger,'requirement.accept',{'requirement_id':'SCI'})\n        assert ledger.state()['commission_status']=='NOT_COMMISSIONED'\n        final=ledger.state()\n    with patch.object(experiments,'run_registered',side_effect=AssertionError('Science was reexecuted')):\n        with Ledger(db,ws) as ledger:\n            assert ledger.state()==final and ledger.verify()['ok']\n    ok('IRR-04:evidence-linkage',{'unrelated':'FAIL','altered_kernel':'FAIL','float_changed_run':'FAIL','exact_kernel_run':'PASS','ancillary_separate':True,'replay_reexecutes_science':False})\nresult={'status':'PASS','probe_count':len(results),'results':results,'python':platform.python_version(),'sqlite':sqlite3.sqlite_version}\nprint(json.dumps(result,indent=2))\nPath('/tmp/polyia_release_review_probe_result.json').write_text(json.dumps(result,indent=2)+'\\n')\n",
+  "repository_regressions": {
+    "command_argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-c",
+      "import sys,unittest;sys.path.insert(0,'tests');suite=unittest.defaultTestLoader.loadTestsFromNames(sys.argv[1:]);result=unittest.TextTestRunner(verbosity=2).run(suite);raise SystemExit(not result.wasSuccessful())",
+      "test_store.StoreTests.test_changed_scientific_source_requires_restart_before_verification",
+      "test_store.StoreTests.test_cached_kernel_with_different_source_constants_is_refused_before_first_pin",
+      "test_store.StoreTests.test_cached_kernel_with_different_source_defaults_is_refused_before_first_pin",
+      "test_store.StoreTests.test_exact_retry_is_idempotent_but_changed_request_conflicts"
+    ],
+    "tests": [
+      "test_store.StoreTests.test_changed_scientific_source_requires_restart_before_verification",
+      "test_store.StoreTests.test_cached_kernel_with_different_source_constants_is_refused_before_first_pin",
+      "test_store.StoreTests.test_cached_kernel_with_different_source_defaults_is_refused_before_first_pin",
+      "test_store.StoreTests.test_exact_retry_is_idempotent_but_changed_request_conflicts"
+    ],
+    "count": 4,
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_changed_scientific_source_requires_restart_before_verification (test_store.StoreTests.test_changed_scientific_source_requires_restart_before_verification) ... ok\ntest_cached_kernel_with_different_source_constants_is_refused_before_first_pin (test_store.StoreTests.test_cached_kernel_with_different_source_constants_is_refused_before_first_pin) ... ok\ntest_cached_kernel_with_different_source_defaults_is_refused_before_first_pin (test_store.StoreTests.test_cached_kernel_with_different_source_defaults_is_refused_before_first_pin) ... ok\ntest_exact_retry_is_idempotent_but_changed_request_conflicts (test_store.StoreTests.test_exact_retry_is_idempotent_but_changed_request_conflicts) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.326s\n\nOK\n"
+  },
+  "limitations": [
+    "Scoped remediation review; final integrated suite and release manifest are coordinator-owned gates.",
+    "Source context captures registry/runtime bytes and identifies external corpus files; it does not authenticate every source claim.",
+    "No production URL, remote deployment, browser rendering, full mission capability or arbitrary future plugin validation is attested.",
+    "The source-binding implementation is assessed for the fixed registered kernel; it is not a general Python sandbox."
+  ],
+  "full_mission_status": "NOT_COMMISSIONED"
+}

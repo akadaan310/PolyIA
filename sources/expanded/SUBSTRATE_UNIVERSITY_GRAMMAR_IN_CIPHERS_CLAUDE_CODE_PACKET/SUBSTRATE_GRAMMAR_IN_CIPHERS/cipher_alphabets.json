@@ -1,0 +1,692 @@
+{
+  "normalization_contract": {
+    "canonical_inventory": "28-letter modern base Arabic alphabet",
+    "normalization": "أ إ آ ٱ → ا; ى → ي; do NOT silently map ة → ه or ء → ا; other marks handled by designated rasm profile",
+    "editorial_note": "A grapheme-layer classification differs from morphological tokenization, recitation and Uthmani rasm; every view must be preserved separately"
+  },
+  "alphabet_28": [
+    "ا",
+    "ب",
+    "ت",
+    "ث",
+    "ج",
+    "ح",
+    "خ",
+    "د",
+    "ذ",
+    "ر",
+    "ز",
+    "س",
+    "ش",
+    "ص",
+    "ض",
+    "ط",
+    "ظ",
+    "ع",
+    "غ",
+    "ف",
+    "ق",
+    "ك",
+    "ل",
+    "م",
+    "ن",
+    "ه",
+    "و",
+    "ي"
+  ],
+  "cipher_alphabet_14": [
+    "ا",
+    "ح",
+    "ر",
+    "س",
+    "ص",
+    "ط",
+    "ع",
+    "ق",
+    "ك",
+    "ل",
+    "م",
+    "ن",
+    "ه",
+    "ي"
+  ],
+  "in_cipher_alphabet_14": [
+    "ب",
+    "ت",
+    "ث",
+    "ج",
+    "خ",
+    "د",
+    "ذ",
+    "ز",
+    "ش",
+    "ض",
+    "ظ",
+    "غ",
+    "ف",
+    "و"
+  ],
+  "29_indexed_sites_are_not_29_distinct_letters": true,
+  "counters": {
+    "surah_sites": 29,
+    "verse_level_units": 30,
+    "distinct_unit_sequences": 14,
+    "distinct_sura_level_sequences": 14,
+    "opening_letter_occurrences": 78,
+    "sin_occurrences_as_opening_units": 5,
+    "sin_verse1_sites": 4,
+    "sin_verse2_sites": 1,
+    "hawamim_sites": 7
+  },
+  "letter_frequencies_in_30_units": {
+    "ا": 13,
+    "ح": 7,
+    "ر": 6,
+    "س": 5,
+    "ص": 3,
+    "ط": 4,
+    "ع": 2,
+    "ق": 2,
+    "ك": 1,
+    "ل": 13,
+    "م": 17,
+    "ن": 1,
+    "ه": 2,
+    "ي": 2
+  },
+  "sin_unit_refs": [
+    "26:1",
+    "27:1",
+    "28:1",
+    "36:1",
+    "42:2"
+  ],
+  "hawamim_surahs": [
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "examples": [
+    {
+      "surface": "النمل",
+      "normalized": "النمل",
+      "verse_reference": "27:18",
+      "letters": [
+        {
+          "glyph": "ا",
+          "class": "C"
+        },
+        {
+          "glyph": "ل",
+          "class": "C"
+        },
+        {
+          "glyph": "ن",
+          "class": "C"
+        },
+        {
+          "glyph": "م",
+          "class": "C"
+        },
+        {
+          "glyph": "ل",
+          "class": "C"
+        }
+      ],
+      "cipher_only": true,
+      "status": "LETTER_MEMBERSHIP_ONLY; not a theological or statistical claim"
+    },
+    {
+      "surface": "النحل",
+      "normalized": "النحل",
+      "verse_reference": "16:68",
+      "letters": [
+        {
+          "glyph": "ا",
+          "class": "C"
+        },
+        {
+          "glyph": "ل",
+          "class": "C"
+        },
+        {
+          "glyph": "ن",
+          "class": "C"
+        },
+        {
+          "glyph": "ح",
+          "class": "C"
+        },
+        {
+          "glyph": "ل",
+          "class": "C"
+        }
+      ],
+      "cipher_only": true,
+      "status": "LETTER_MEMBERSHIP_ONLY; not a theological or statistical claim"
+    },
+    {
+      "surface": "الفتية",
+      "normalized": "الفتية",
+      "verse_reference": "18:13",
+      "letters": [
+        {
+          "glyph": "ا",
+          "class": "C"
+        },
+        {
+          "glyph": "ل",
+          "class": "C"
+        },
+        {
+          "glyph": "ف",
+          "class": "I"
+        },
+        {
+          "glyph": "ت",
+          "class": "I"
+        },
+        {
+          "glyph": "ي",
+          "class": "C"
+        },
+        {
+          "glyph": "ة",
+          "class": "ORTHOGRAPHIC_OR_OTHER"
+        }
+      ],
+      "cipher_only": false,
+      "status": "LETTER_MEMBERSHIP_ONLY; not a theological or statistical claim"
+    },
+    {
+      "surface": "نملة",
+      "normalized": "نملة",
+      "verse_reference": "27:18",
+      "letters": [
+        {
+          "glyph": "ن",
+          "class": "C"
+        },
+        {
+          "glyph": "م",
+          "class": "C"
+        },
+        {
+          "glyph": "ل",
+          "class": "C"
+        },
+        {
+          "glyph": "ة",
+          "class": "ORTHOGRAPHIC_OR_OTHER"
+        }
+      ],
+      "cipher_only": false,
+      "status": "LETTER_MEMBERSHIP_ONLY; not a theological or statistical claim"
+    },
+    {
+      "surface": "فتية",
+      "normalized": "فتية",
+      "verse_reference": "18:13",
+      "letters": [
+        {
+          "glyph": "ف",
+          "class": "I"
+        },
+        {
+          "glyph": "ت",
+          "class": "I"
+        },
+        {
+          "glyph": "ي",
+          "class": "C"
+        },
+        {
+          "glyph": "ة",
+          "class": "ORTHOGRAPHIC_OR_OTHER"
+        }
+      ],
+      "cipher_only": false,
+      "status": "LETTER_MEMBERSHIP_ONLY; not a theological or statistical claim"
+    },
+    {
+      "surface": "فتيان",
+      "normalized": "فتيان",
+      "verse_reference": "12:36",
+      "letters": [
+        {
+          "glyph": "ف",
+          "class": "I"
+        },
+        {
+          "glyph": "ت",
+          "class": "I"
+        },
+        {
+          "glyph": "ي",
+          "class": "C"
+        },
+        {
+          "glyph": "ا",
+          "class": "C"
+        },
+        {
+          "glyph": "ن",
+          "class": "C"
+        }
+      ],
+      "cipher_only": false,
+      "status": "LETTER_MEMBERSHIP_ONLY; not a theological or statistical claim"
+    },
+    {
+      "surface": "صنع",
+      "normalized": "صنع",
+      "verse_reference": "27:88",
+      "letters": [
+        {
+          "glyph": "ص",
+          "class": "C"
+        },
+        {
+          "glyph": "ن",
+          "class": "C"
+        },
+        {
+          "glyph": "ع",
+          "class": "C"
+        }
+      ],
+      "cipher_only": true,
+      "status": "LETTER_MEMBERSHIP_ONLY; not a theological or statistical claim"
+    },
+    {
+      "surface": "صنوان",
+      "normalized": "صنوان",
+      "verse_reference": "13:4",
+      "letters": [
+        {
+          "glyph": "ص",
+          "class": "C"
+        },
+        {
+          "glyph": "ن",
+          "class": "C"
+        },
+        {
+          "glyph": "و",
+          "class": "I"
+        },
+        {
+          "glyph": "ا",
+          "class": "C"
+        },
+        {
+          "glyph": "ن",
+          "class": "C"
+        }
+      ],
+      "cipher_only": false,
+      "status": "LETTER_MEMBERSHIP_ONLY; not a theological or statistical claim"
+    },
+    {
+      "surface": "الكهف",
+      "normalized": "الكهف",
+      "verse_reference": "18:9",
+      "letters": [
+        {
+          "glyph": "ا",
+          "class": "C"
+        },
+        {
+          "glyph": "ل",
+          "class": "C"
+        },
+        {
+          "glyph": "ك",
+          "class": "C"
+        },
+        {
+          "glyph": "ه",
+          "class": "C"
+        },
+        {
+          "glyph": "ف",
+          "class": "I"
+        }
+      ],
+      "cipher_only": false,
+      "status": "LETTER_MEMBERSHIP_ONLY; not a theological or statistical claim"
+    },
+    {
+      "surface": "الوادي",
+      "normalized": "الوادي",
+      "verse_reference": "26:225",
+      "letters": [
+        {
+          "glyph": "ا",
+          "class": "C"
+        },
+        {
+          "glyph": "ل",
+          "class": "C"
+        },
+        {
+          "glyph": "و",
+          "class": "I"
+        },
+        {
+          "glyph": "ا",
+          "class": "C"
+        },
+        {
+          "glyph": "د",
+          "class": "I"
+        },
+        {
+          "glyph": "ي",
+          "class": "C"
+        }
+      ],
+      "cipher_only": false,
+      "status": "LETTER_MEMBERSHIP_ONLY; not a theological or statistical claim"
+    },
+    {
+      "surface": "الجبال",
+      "normalized": "الجبال",
+      "verse_reference": "16:68",
+      "letters": [
+        {
+          "glyph": "ا",
+          "class": "C"
+        },
+        {
+          "glyph": "ل",
+          "class": "C"
+        },
+        {
+          "glyph": "ج",
+          "class": "I"
+        },
+        {
+          "glyph": "ب",
+          "class": "I"
+        },
+        {
+          "glyph": "ا",
+          "class": "C"
+        },
+        {
+          "glyph": "ل",
+          "class": "C"
+        }
+      ],
+      "cipher_only": false,
+      "status": "LETTER_MEMBERSHIP_ONLY; not a theological or statistical claim"
+    },
+    {
+      "surface": "أدنى",
+      "normalized": "ادني",
+      "verse_reference": "30:3",
+      "letters": [
+        {
+          "glyph": "ا",
+          "class": "C"
+        },
+        {
+          "glyph": "د",
+          "class": "I"
+        },
+        {
+          "glyph": "ن",
+          "class": "C"
+        },
+        {
+          "glyph": "ي",
+          "class": "C"
+        }
+      ],
+      "cipher_only": false,
+      "status": "LETTER_MEMBERSHIP_ONLY; not a theological or statistical claim"
+    },
+    {
+      "surface": "الأرض",
+      "normalized": "الارض",
+      "verse_reference": "30:3",
+      "letters": [
+        {
+          "glyph": "ا",
+          "class": "C"
+        },
+        {
+          "glyph": "ل",
+          "class": "C"
+        },
+        {
+          "glyph": "ا",
+          "class": "C"
+        },
+        {
+          "glyph": "ر",
+          "class": "C"
+        },
+        {
+          "glyph": "ض",
+          "class": "I"
+        }
+      ],
+      "cipher_only": false,
+      "status": "LETTER_MEMBERSHIP_ONLY; not a theological or statistical claim"
+    },
+    {
+      "surface": "مساكنكم",
+      "normalized": "مساكنكم",
+      "verse_reference": "27:18",
+      "letters": [
+        {
+          "glyph": "م",
+          "class": "C"
+        },
+        {
+          "glyph": "س",
+          "class": "C"
+        },
+        {
+          "glyph": "ا",
+          "class": "C"
+        },
+        {
+          "glyph": "ك",
+          "class": "C"
+        },
+        {
+          "glyph": "ن",
+          "class": "C"
+        },
+        {
+          "glyph": "ك",
+          "class": "C"
+        },
+        {
+          "glyph": "م",
+          "class": "C"
+        }
+      ],
+      "cipher_only": true,
+      "status": "LETTER_MEMBERSHIP_ONLY; not a theological or statistical claim"
+    },
+    {
+      "surface": "كلبهم",
+      "normalized": "كلبهم",
+      "verse_reference": "18:22",
+      "letters": [
+        {
+          "glyph": "ك",
+          "class": "C"
+        },
+        {
+          "glyph": "ل",
+          "class": "C"
+        },
+        {
+          "glyph": "ب",
+          "class": "I"
+        },
+        {
+          "glyph": "ه",
+          "class": "C"
+        },
+        {
+          "glyph": "م",
+          "class": "C"
+        }
+      ],
+      "cipher_only": false,
+      "status": "LETTER_MEMBERSHIP_ONLY; not a theological or statistical claim"
+    },
+    {
+      "surface": "صرحا",
+      "normalized": "صرحا",
+      "verse_reference": "40:36",
+      "letters": [
+        {
+          "glyph": "ص",
+          "class": "C"
+        },
+        {
+          "glyph": "ر",
+          "class": "C"
+        },
+        {
+          "glyph": "ح",
+          "class": "C"
+        },
+        {
+          "glyph": "ا",
+          "class": "C"
+        }
+      ],
+      "cipher_only": true,
+      "status": "LETTER_MEMBERSHIP_ONLY; not a theological or statistical claim"
+    },
+    {
+      "surface": "سبعا",
+      "normalized": "سبعا",
+      "verse_reference": "15:87",
+      "letters": [
+        {
+          "glyph": "س",
+          "class": "C"
+        },
+        {
+          "glyph": "ب",
+          "class": "I"
+        },
+        {
+          "glyph": "ع",
+          "class": "C"
+        },
+        {
+          "glyph": "ا",
+          "class": "C"
+        }
+      ],
+      "cipher_only": false,
+      "status": "LETTER_MEMBERSHIP_ONLY; not a theological or statistical claim"
+    },
+    {
+      "surface": "ثمانية",
+      "normalized": "ثمانية",
+      "verse_reference": "6:143",
+      "letters": [
+        {
+          "glyph": "ث",
+          "class": "I"
+        },
+        {
+          "glyph": "م",
+          "class": "C"
+        },
+        {
+          "glyph": "ا",
+          "class": "C"
+        },
+        {
+          "glyph": "ن",
+          "class": "C"
+        },
+        {
+          "glyph": "ي",
+          "class": "C"
+        },
+        {
+          "glyph": "ة",
+          "class": "ORTHOGRAPHIC_OR_OTHER"
+        }
+      ],
+      "cipher_only": false,
+      "status": "LETTER_MEMBERSHIP_ONLY; not a theological or statistical claim"
+    },
+    {
+      "surface": "المدينة",
+      "normalized": "المدينة",
+      "verse_reference": "12:30",
+      "letters": [
+        {
+          "glyph": "ا",
+          "class": "C"
+        },
+        {
+          "glyph": "ل",
+          "class": "C"
+        },
+        {
+          "glyph": "م",
+          "class": "C"
+        },
+        {
+          "glyph": "د",
+          "class": "I"
+        },
+        {
+          "glyph": "ي",
+          "class": "C"
+        },
+        {
+          "glyph": "ن",
+          "class": "C"
+        },
+        {
+          "glyph": "ة",
+          "class": "ORTHOGRAPHIC_OR_OTHER"
+        }
+      ],
+      "cipher_only": false,
+      "status": "LETTER_MEMBERSHIP_ONLY; not a theological or statistical claim"
+    },
+    {
+      "surface": "مصر",
+      "normalized": "مصر",
+      "verse_reference": "12:99",
+      "letters": [
+        {
+          "glyph": "م",
+          "class": "C"
+        },
+        {
+          "glyph": "ص",
+          "class": "C"
+        },
+        {
+          "glyph": "ر",
+          "class": "C"
+        }
+      ],
+      "cipher_only": true,
+      "status": "LETTER_MEMBERSHIP_ONLY; not a theological or statistical claim"
+    }
+  ],
+  "data_status": "derived from 29-site registry metadata; canonical text validation is a Claude Code build gate"
+}

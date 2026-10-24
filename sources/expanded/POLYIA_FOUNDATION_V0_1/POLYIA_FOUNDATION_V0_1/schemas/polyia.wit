@@ -1,0 +1,20 @@
+// PROPOSED interface only; NOT yet compiled by a WIT tool or used by reference Python.
+package polyia:core@0.1.0;
+
+interface atoms {
+  record operation-request {
+    source: string,
+    source-hash: string,
+    scope: string,
+  }
+  record operation-result {
+    result: string,
+    witness-hash: string,
+    evidence-grade: string,
+  }
+  execute: func(request: operation-request) -> result<operation-result, string>;
+}
+
+world agency-atom {
+  export atoms;
+}

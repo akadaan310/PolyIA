@@ -1,0 +1,75 @@
+TAP version 13
+# Subtest: a connection reads real state and a read token cannot issue a command
+ok 1 - a connection reads real state and a read token cannot issue a command
+  ---
+  duration_ms: 268.343053
+  type: 'test'
+  ...
+# Subtest: lost command response keeps the exact command available for idempotent retry
+ok 2 - lost command response keeps the exact command available for idempotent retry
+  ---
+  duration_ms: 46.670708
+  type: 'test'
+  ...
+# Subtest: a revision conflict is visible and does not silently replay with a new revision
+ok 3 - a revision conflict is visible and does not silently replay with a new revision
+  ---
+  duration_ms: 47.459588
+  type: 'test'
+  ...
+# Subtest: guidance with malicious markup remains exact data throughout command lifecycle
+ok 4 - guidance with malicious markup remains exact data throughout command lifecycle
+  ---
+  duration_ms: 46.133428
+  type: 'test'
+  ...
+# Subtest: artifact capture verification acceptance and checkpoint use registered operations
+ok 5 - artifact capture verification acceptance and checkpoint use registered operations
+  ---
+  duration_ms: 51.014468
+  type: 'test'
+  ...
+# Subtest: disconnect during a delayed response cannot restore an old session
+ok 6 - disconnect during a delayed response cannot restore an old session
+  ---
+  duration_ms: 5.472318
+  type: 'test'
+  ...
+# Subtest: an incomplete 200 receipt is not reported as command success and can be recovered
+ok 7 - an incomplete 200 receipt is not reported as command success and can be recovered
+  ---
+  duration_ms: 33.819032
+  type: 'test'
+  ...
+# Subtest: admission refusal during recovery retains a command whose original response was lost
+not ok 8 - admission refusal during recovery retains a command whose original response was lost
+  ---
+  duration_ms: 20.169595
+  type: 'test'
+  location: '/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/web/client.test.mjs:171:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    false !== true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/web/client.test.mjs:188:10)
+    process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 7
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 605.220649

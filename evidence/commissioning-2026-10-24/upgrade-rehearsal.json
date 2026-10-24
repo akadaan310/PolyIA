@@ -1,0 +1,107 @@
+{
+  "scope": "Current1.2 code reads and verifies SQLite backup of actual1.1 live ledger without live mutation",
+  "verification": {
+    "ok": true,
+    "schema_version": 2,
+    "checked": {
+      "events": 32,
+      "receipts": 32,
+      "blobs": 16,
+      "checkpoints": 3,
+      "source_contexts": 4
+    },
+    "diagnostics": [],
+    "evidence_class": "INTERNAL_REPLAY_AND_CAPTURED_BYTE_INTEGRITY",
+    "limitations": [
+      "Hash chains are not signatures or externally anchored proofs.",
+      "Replay consumes recorded experiment results; it does not re-run experiments or establish scientific truth."
+    ],
+    "workspace_drift": {
+      "evaluated": true,
+      "changed": 0,
+      "artifacts": [
+        {
+          "requirement_id": "BOOT-001",
+          "path": "initial-science-run.json",
+          "captured_sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490",
+          "status": "UNCHANGED",
+          "live_sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490"
+        },
+        {
+          "requirement_id": "BOOT-002",
+          "path": "initial-kernel.py",
+          "captured_sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+          "status": "UNCHANGED",
+          "live_sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809"
+        },
+        {
+          "requirement_id": "BOOT-002",
+          "path": "initial-science-run.json",
+          "captured_sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490",
+          "status": "UNCHANGED",
+          "live_sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490"
+        },
+        {
+          "requirement_id": "PIA-008",
+          "path": "initial-live-service.json",
+          "captured_sha256": "5077e7c86b14872f017c4d8087e7db1c18403292276afa942d47a29a8842e788",
+          "status": "UNCHANGED",
+          "live_sha256": "5077e7c86b14872f017c4d8087e7db1c18403292276afa942d47a29a8842e788"
+        },
+        {
+          "requirement_id": "PIA-015",
+          "path": "OWNER_CLARIFICATIONS_2026-10-24.md",
+          "captured_sha256": "f0948cc75c3c57ec0714fa8a039655bce1ec7cd3c9b6867deb49bd6fd0f7eef7",
+          "status": "UNCHANGED",
+          "live_sha256": "f0948cc75c3c57ec0714fa8a039655bce1ec7cd3c9b6867deb49bd6fd0f7eef7"
+        },
+        {
+          "requirement_id": "PIA-015",
+          "path": "AUTHORITY_RESOLUTIONS_2026-10-24.md",
+          "captured_sha256": "e9084a1517b3f45d0f3d2e94f9e20163daf01fd66fe121ae8a517bf7ef0ab148",
+          "status": "UNCHANGED",
+          "live_sha256": "e9084a1517b3f45d0f3d2e94f9e20163daf01fd66fe121ae8a517bf7ef0ab148"
+        },
+        {
+          "requirement_id": "PIA-015",
+          "path": "authority.json",
+          "captured_sha256": "fd26d35be39ad684d31ec4e77100d1ecc791cef936428c01a10d46134ffa829a",
+          "status": "UNCHANGED",
+          "live_sha256": "fd26d35be39ad684d31ec4e77100d1ecc791cef936428c01a10d46134ffa829a"
+        },
+        {
+          "requirement_id": "PIA-095",
+          "path": "OWNER_CLARIFICATIONS_2026-10-24.md",
+          "captured_sha256": "f0948cc75c3c57ec0714fa8a039655bce1ec7cd3c9b6867deb49bd6fd0f7eef7",
+          "status": "UNCHANGED",
+          "live_sha256": "f0948cc75c3c57ec0714fa8a039655bce1ec7cd3c9b6867deb49bd6fd0f7eef7"
+        },
+        {
+          "requirement_id": "PIA-095",
+          "path": "AUTHORITY_RESOLUTIONS_2026-10-24.md",
+          "captured_sha256": "e9084a1517b3f45d0f3d2e94f9e20163daf01fd66fe121ae8a517bf7ef0ab148",
+          "status": "UNCHANGED",
+          "live_sha256": "e9084a1517b3f45d0f3d2e94f9e20163daf01fd66fe121ae8a517bf7ef0ab148"
+        },
+        {
+          "requirement_id": "PIA-095",
+          "path": "authority.json",
+          "captured_sha256": "fd26d35be39ad684d31ec4e77100d1ecc791cef936428c01a10d46134ffa829a",
+          "status": "UNCHANGED",
+          "live_sha256": "fd26d35be39ad684d31ec4e77100d1ecc791cef936428c01a10d46134ffa829a"
+        },
+        {
+          "requirement_id": "PIA-181",
+          "path": "initial-live-service.json",
+          "captured_sha256": "5077e7c86b14872f017c4d8087e7db1c18403292276afa942d47a29a8842e788",
+          "status": "UNCHANGED",
+          "live_sha256": "5077e7c86b14872f017c4d8087e7db1c18403292276afa942d47a29a8842e788"
+        }
+      ],
+      "interpretation": "Live workspace drift does not alter acceptance of a captured historical snapshot"
+    }
+  },
+  "revision": 32,
+  "head": "8aa09a94ab301ca812423306fefa88adca5dd740e543bb21ae8d6cbdc0cb6877",
+  "mission": "NOT_COMMISSIONED"
+}

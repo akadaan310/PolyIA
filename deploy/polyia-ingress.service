@@ -1,0 +1,12 @@
+[Unit]
+Description=Poly IA dedicated IPv4 HTTPS ingress rules
+Before=polyia-proxy.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/usr/local/libexec/polyia-hosting-firewall start
+ExecStop=/usr/local/libexec/polyia-hosting-firewall stop
+
+[Install]
+WantedBy=multi-user.target

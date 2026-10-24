@@ -1,0 +1,110 @@
+{
+  "ok": true,
+  "scope": "actual default 194-obligation initialization, eleven-command demo, fresh-process reopen, live-connection backup and restored replay",
+  "revision": 11,
+  "head": "eac17f5685233b826963e8432a246fae7cc7ffae287728dc18d5e4ea07f4a53d",
+  "source_context_status": "SOURCED",
+  "source_context_version": 2,
+  "requirement_count": 194,
+  "bootstrap_requirements_accepted": [
+    "BOOT-001",
+    "BOOT-002"
+  ],
+  "mission_requirements_accepted": 0,
+  "commission_status": "NOT_COMMISSIONED",
+  "reopened_verification": {
+    "checked": {
+      "blobs": 13,
+      "checkpoints": 1,
+      "events": 11,
+      "receipts": 11,
+      "source_contexts": 2
+    },
+    "diagnostics": [],
+    "evidence_class": "INTERNAL_REPLAY_AND_CAPTURED_BYTE_INTEGRITY",
+    "limitations": [
+      "Hash chains are not signatures or externally anchored proofs.",
+      "Replay consumes recorded experiment results; it does not re-run experiments or establish scientific truth."
+    ],
+    "ok": true,
+    "schema_version": 2,
+    "workspace_drift": {
+      "artifacts": [
+        {
+          "captured_sha256": "b876d55eb39ef86045142e9b750c7185b4982209be10e3609648577387e4d014",
+          "live_sha256": "b876d55eb39ef86045142e9b750c7185b4982209be10e3609648577387e4d014",
+          "path": "bootstrap-demo-ced43b47803f441c9d0da292352c1cd8/captured-evidence.txt",
+          "requirement_id": "BOOT-001",
+          "status": "UNCHANGED"
+        },
+        {
+          "captured_sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+          "live_sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+          "path": "bootstrap-demo-ced43b47803f441c9d0da292352c1cd8/experiments.py",
+          "requirement_id": "BOOT-002",
+          "status": "UNCHANGED"
+        },
+        {
+          "captured_sha256": "a8635dcdb5415acae4cdfd8c2f678517cf1ce8e1613b7e227d4d8ed6f0cb939c",
+          "live_sha256": "a8635dcdb5415acae4cdfd8c2f678517cf1ce8e1613b7e227d4d8ed6f0cb939c",
+          "path": "bootstrap-demo-ced43b47803f441c9d0da292352c1cd8/scientific-contracts.json",
+          "requirement_id": "BOOT-002",
+          "status": "UNCHANGED"
+        }
+      ],
+      "changed": 0,
+      "evaluated": true,
+      "interpretation": "Live workspace drift does not alter acceptance of a captured historical snapshot"
+    }
+  },
+  "restored_verification": {
+    "ok": true,
+    "schema_version": 2,
+    "checked": {
+      "events": 11,
+      "receipts": 11,
+      "blobs": 13,
+      "checkpoints": 1,
+      "source_contexts": 2
+    },
+    "diagnostics": [],
+    "evidence_class": "INTERNAL_REPLAY_AND_CAPTURED_BYTE_INTEGRITY",
+    "limitations": [
+      "Hash chains are not signatures or externally anchored proofs.",
+      "Replay consumes recorded experiment results; it does not re-run experiments or establish scientific truth."
+    ],
+    "workspace_drift": {
+      "evaluated": true,
+      "changed": 0,
+      "artifacts": [
+        {
+          "requirement_id": "BOOT-001",
+          "path": "bootstrap-demo-ced43b47803f441c9d0da292352c1cd8/captured-evidence.txt",
+          "captured_sha256": "b876d55eb39ef86045142e9b750c7185b4982209be10e3609648577387e4d014",
+          "status": "UNCHANGED",
+          "live_sha256": "b876d55eb39ef86045142e9b750c7185b4982209be10e3609648577387e4d014"
+        },
+        {
+          "requirement_id": "BOOT-002",
+          "path": "bootstrap-demo-ced43b47803f441c9d0da292352c1cd8/experiments.py",
+          "captured_sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+          "status": "UNCHANGED",
+          "live_sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809"
+        },
+        {
+          "requirement_id": "BOOT-002",
+          "path": "bootstrap-demo-ced43b47803f441c9d0da292352c1cd8/scientific-contracts.json",
+          "captured_sha256": "a8635dcdb5415acae4cdfd8c2f678517cf1ce8e1613b7e227d4d8ed6f0cb939c",
+          "status": "UNCHANGED",
+          "live_sha256": "a8635dcdb5415acae4cdfd8c2f678517cf1ce8e1613b7e227d4d8ed6f0cb939c"
+        }
+      ],
+      "interpretation": "Live workspace drift does not alter acceptance of a captured historical snapshot"
+    }
+  },
+  "restored_state_exactly_equal": true,
+  "backup_overwrite_refused": true,
+  "backup_bytes": 2158592,
+  "backup_sha256": "8963555f58e7fd2a24302d8e551ef7f1888dc3668d772266694382ef15a6dbb2",
+  "note": "Temporary test databases were removed after this check; retained logs are evidence, not a deployed live service."
+}

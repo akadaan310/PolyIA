@@ -1,0 +1,701 @@
+{
+  "schema_version": 1,
+  "source_registry": "sources/repos/abedkadaancom/src/content/registry.ts",
+  "source_sha256": "e270e33107bc4962df48df9de4cec2522bdfd8a0d452a8d9e299c0a11764cf8c",
+  "decision": "Infinity=IX; VII/VIII open charters; preserve I-VI and62topic IDs",
+  "divisions": [
+    {
+      "id": "foundations",
+      "numeral": "I",
+      "title": "Foundations of Computation",
+      "topic_ids": [
+        "transition-systems",
+        "graph-theory",
+        "finite-automata",
+        "equivalence-classes",
+        "operational-grammar",
+        "admissibility",
+        "numerical-grammars",
+        "perturbation",
+        "substrate-theory",
+        "complexity"
+      ],
+      "status": "canonical-existing"
+    },
+    {
+      "id": "relational",
+      "numeral": "II",
+      "title": "Relational and Generative Mathematics",
+      "topic_ids": [
+        "alphabets-words",
+        "generative-grammars",
+        "recursive-folds",
+        "plicastratum",
+        "alphabet-towers",
+        "modal-cyclic",
+        "relational-generativity",
+        "constructive-admission",
+        "ingrammatica",
+        "compositional-forms"
+      ],
+      "status": "canonical-existing"
+    },
+    {
+      "id": "languages",
+      "numeral": "III",
+      "title": "Programmable Computational Languages",
+      "topic_ids": [
+        "uri-grammar",
+        "typed-machines",
+        "symbolic-composition",
+        "types-as-admissibility",
+        "grammars-as-programs",
+        "compilation",
+        "matrix-loom",
+        "purl",
+        "seurl",
+        "addressable-forms"
+      ],
+      "status": "canonical-existing"
+    },
+    {
+      "id": "geometry",
+      "numeral": "IV",
+      "title": "Geometry, Physics, and Representation",
+      "topic_ids": [
+        "image-kernel",
+        "rank-nullity",
+        "imagistratum",
+        "projective-camera",
+        "spatial-tensors",
+        "topology",
+        "curvature",
+        "chart-correspondences",
+        "celestial-geometry",
+        "computational-photography",
+        "rendering-mathematics",
+        "invisible-sensing"
+      ],
+      "status": "canonical-existing"
+    },
+    {
+      "id": "acoustic",
+      "numeral": "V",
+      "title": "Acoustic and Generative Sciences",
+      "topic_ids": [
+        "sound-signals",
+        "pitch-frequency",
+        "interval-geometry",
+        "tuning",
+        "fourier",
+        "phase",
+        "synthesis",
+        "time-frequency",
+        "generative-composition",
+        "phonogrammatica"
+      ],
+      "status": "canonical-existing"
+    },
+    {
+      "id": "worlds",
+      "numeral": "VI",
+      "title": "Computational Worlds and Emergence",
+      "topic_ids": [
+        "cellular-automata",
+        "world-loom",
+        "procedural-environments",
+        "agent-grammars",
+        "maps-navigation",
+        "borne",
+        "simulated-populations",
+        "world-models",
+        "glm-lgm",
+        "homeless-dark"
+      ],
+      "status": "canonical-existing"
+    },
+    {
+      "id": "open-vii",
+      "numeral": "VII",
+      "title": "Constructive Synthesis across Typed Domains",
+      "status": "open-research-charter",
+      "permanent_title": false
+    },
+    {
+      "id": "open-viii",
+      "numeral": "VIII",
+      "title": "Evidence-governed Evolution of Computational Knowledge",
+      "status": "open-research-charter",
+      "permanent_title": false
+    },
+    {
+      "id": "infinity",
+      "numeral": "IX",
+      "title": "Division Infinity",
+      "status": "adopted-by-current-owner"
+    }
+  ],
+  "topics": [
+    {
+      "id": "sound-signals",
+      "division": "acoustic",
+      "source": "sources/repos/abedkadaancom/src/content/topics/acoustic.ts",
+      "source_sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4",
+      "source_line": 11,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "pitch-frequency",
+      "division": "acoustic",
+      "source": "sources/repos/abedkadaancom/src/content/topics/acoustic.ts",
+      "source_sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4",
+      "source_line": 38,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "interval-geometry",
+      "division": "acoustic",
+      "source": "sources/repos/abedkadaancom/src/content/topics/acoustic.ts",
+      "source_sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4",
+      "source_line": 65,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "tuning",
+      "division": "acoustic",
+      "source": "sources/repos/abedkadaancom/src/content/topics/acoustic.ts",
+      "source_sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4",
+      "source_line": 92,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "fourier",
+      "division": "acoustic",
+      "source": "sources/repos/abedkadaancom/src/content/topics/acoustic.ts",
+      "source_sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4",
+      "source_line": 119,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "time-frequency",
+      "division": "acoustic",
+      "source": "sources/repos/abedkadaancom/src/content/topics/acoustic.ts",
+      "source_sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4",
+      "source_line": 145,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "synthesis",
+      "division": "acoustic",
+      "source": "sources/repos/abedkadaancom/src/content/topics/acoustic.ts",
+      "source_sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4",
+      "source_line": 171,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "phase",
+      "division": "acoustic",
+      "source": "sources/repos/abedkadaancom/src/content/topics/acoustic.ts",
+      "source_sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4",
+      "source_line": 197,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "phonogrammatica",
+      "division": "acoustic",
+      "source": "sources/repos/abedkadaancom/src/content/topics/acoustic.ts",
+      "source_sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4",
+      "source_line": 223,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "generative-composition",
+      "division": "acoustic",
+      "source": "sources/repos/abedkadaancom/src/content/topics/acoustic.ts",
+      "source_sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4",
+      "source_line": 249,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "transition-systems",
+      "division": "foundations",
+      "source": "sources/repos/abedkadaancom/src/content/topics/foundations.ts",
+      "source_sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1",
+      "source_line": 8,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "finite-automata",
+      "division": "foundations",
+      "source": "sources/repos/abedkadaancom/src/content/topics/foundations.ts",
+      "source_sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1",
+      "source_line": 36,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "operational-grammar",
+      "division": "foundations",
+      "source": "sources/repos/abedkadaancom/src/content/topics/foundations.ts",
+      "source_sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1",
+      "source_line": 64,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "admissibility",
+      "division": "foundations",
+      "source": "sources/repos/abedkadaancom/src/content/topics/foundations.ts",
+      "source_sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1",
+      "source_line": 93,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "substrate-theory",
+      "division": "foundations",
+      "source": "sources/repos/abedkadaancom/src/content/topics/foundations.ts",
+      "source_sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1",
+      "source_line": 119,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "perturbation",
+      "division": "foundations",
+      "source": "sources/repos/abedkadaancom/src/content/topics/foundations.ts",
+      "source_sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1",
+      "source_line": 146,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "equivalence-classes",
+      "division": "foundations",
+      "source": "sources/repos/abedkadaancom/src/content/topics/foundations.ts",
+      "source_sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1",
+      "source_line": 173,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "numerical-grammars",
+      "division": "foundations",
+      "source": "sources/repos/abedkadaancom/src/content/topics/foundations.ts",
+      "source_sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1",
+      "source_line": 200,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "graph-theory",
+      "division": "foundations",
+      "source": "sources/repos/abedkadaancom/src/content/topics/foundations.ts",
+      "source_sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1",
+      "source_line": 228,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "complexity",
+      "division": "foundations",
+      "source": "sources/repos/abedkadaancom/src/content/topics/foundations.ts",
+      "source_sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1",
+      "source_line": 256,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "image-kernel",
+      "division": "geometry",
+      "source": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "source_sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+      "source_line": 8,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "imagistratum",
+      "division": "geometry",
+      "source": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "source_sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+      "source_line": 36,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "rank-nullity",
+      "division": "geometry",
+      "source": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "source_sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+      "source_line": 62,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "projective-camera",
+      "division": "geometry",
+      "source": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "source_sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+      "source_line": 89,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "topology",
+      "division": "geometry",
+      "source": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "source_sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+      "source_line": 115,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "curvature",
+      "division": "geometry",
+      "source": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "source_sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+      "source_line": 142,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "spatial-tensors",
+      "division": "geometry",
+      "source": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "source_sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+      "source_line": 169,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "computational-photography",
+      "division": "geometry",
+      "source": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "source_sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+      "source_line": 195,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "celestial-geometry",
+      "division": "geometry",
+      "source": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "source_sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+      "source_line": 221,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "chart-correspondences",
+      "division": "geometry",
+      "source": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "source_sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+      "source_line": 248,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "rendering-mathematics",
+      "division": "geometry",
+      "source": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "source_sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+      "source_line": 275,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "invisible-sensing",
+      "division": "geometry",
+      "source": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "source_sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+      "source_line": 302,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "uri-grammar",
+      "division": "languages",
+      "source": "sources/repos/abedkadaancom/src/content/topics/languages.ts",
+      "source_sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96",
+      "source_line": 8,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "purl",
+      "division": "languages",
+      "source": "sources/repos/abedkadaancom/src/content/topics/languages.ts",
+      "source_sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96",
+      "source_line": 34,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "seurl",
+      "division": "languages",
+      "source": "sources/repos/abedkadaancom/src/content/topics/languages.ts",
+      "source_sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96",
+      "source_line": 60,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "typed-machines",
+      "division": "languages",
+      "source": "sources/repos/abedkadaancom/src/content/topics/languages.ts",
+      "source_sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96",
+      "source_line": 86,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "types-as-admissibility",
+      "division": "languages",
+      "source": "sources/repos/abedkadaancom/src/content/topics/languages.ts",
+      "source_sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96",
+      "source_line": 112,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "compilation",
+      "division": "languages",
+      "source": "sources/repos/abedkadaancom/src/content/topics/languages.ts",
+      "source_sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96",
+      "source_line": 138,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "matrix-loom",
+      "division": "languages",
+      "source": "sources/repos/abedkadaancom/src/content/topics/languages.ts",
+      "source_sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96",
+      "source_line": 164,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "addressable-forms",
+      "division": "languages",
+      "source": "sources/repos/abedkadaancom/src/content/topics/languages.ts",
+      "source_sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96",
+      "source_line": 190,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "grammars-as-programs",
+      "division": "languages",
+      "source": "sources/repos/abedkadaancom/src/content/topics/languages.ts",
+      "source_sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96",
+      "source_line": 217,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "symbolic-composition",
+      "division": "languages",
+      "source": "sources/repos/abedkadaancom/src/content/topics/languages.ts",
+      "source_sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96",
+      "source_line": 244,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "alphabets-words",
+      "division": "relational",
+      "source": "sources/repos/abedkadaancom/src/content/topics/relational.ts",
+      "source_sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f",
+      "source_line": 11,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "generative-grammars",
+      "division": "relational",
+      "source": "sources/repos/abedkadaancom/src/content/topics/relational.ts",
+      "source_sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f",
+      "source_line": 39,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "plicastratum",
+      "division": "relational",
+      "source": "sources/repos/abedkadaancom/src/content/topics/relational.ts",
+      "source_sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f",
+      "source_line": 65,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "alphabet-towers",
+      "division": "relational",
+      "source": "sources/repos/abedkadaancom/src/content/topics/relational.ts",
+      "source_sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f",
+      "source_line": 96,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "ingrammatica",
+      "division": "relational",
+      "source": "sources/repos/abedkadaancom/src/content/topics/relational.ts",
+      "source_sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f",
+      "source_line": 123,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "constructive-admission",
+      "division": "relational",
+      "source": "sources/repos/abedkadaancom/src/content/topics/relational.ts",
+      "source_sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f",
+      "source_line": 149,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "relational-generativity",
+      "division": "relational",
+      "source": "sources/repos/abedkadaancom/src/content/topics/relational.ts",
+      "source_sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f",
+      "source_line": 176,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "modal-cyclic",
+      "division": "relational",
+      "source": "sources/repos/abedkadaancom/src/content/topics/relational.ts",
+      "source_sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f",
+      "source_line": 203,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "recursive-folds",
+      "division": "relational",
+      "source": "sources/repos/abedkadaancom/src/content/topics/relational.ts",
+      "source_sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f",
+      "source_line": 230,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "compositional-forms",
+      "division": "relational",
+      "source": "sources/repos/abedkadaancom/src/content/topics/relational.ts",
+      "source_sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f",
+      "source_line": 256,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "cellular-automata",
+      "division": "worlds",
+      "source": "sources/repos/abedkadaancom/src/content/topics/worlds.ts",
+      "source_sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342",
+      "source_line": 11,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "world-loom",
+      "division": "worlds",
+      "source": "sources/repos/abedkadaancom/src/content/topics/worlds.ts",
+      "source_sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342",
+      "source_line": 38,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "agent-grammars",
+      "division": "worlds",
+      "source": "sources/repos/abedkadaancom/src/content/topics/worlds.ts",
+      "source_sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342",
+      "source_line": 64,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "procedural-environments",
+      "division": "worlds",
+      "source": "sources/repos/abedkadaancom/src/content/topics/worlds.ts",
+      "source_sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342",
+      "source_line": 91,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "world-models",
+      "division": "worlds",
+      "source": "sources/repos/abedkadaancom/src/content/topics/worlds.ts",
+      "source_sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342",
+      "source_line": 117,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "glm-lgm",
+      "division": "worlds",
+      "source": "sources/repos/abedkadaancom/src/content/topics/worlds.ts",
+      "source_sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342",
+      "source_line": 143,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "borne",
+      "division": "worlds",
+      "source": "sources/repos/abedkadaancom/src/content/topics/worlds.ts",
+      "source_sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342",
+      "source_line": 170,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "maps-navigation",
+      "division": "worlds",
+      "source": "sources/repos/abedkadaancom/src/content/topics/worlds.ts",
+      "source_sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342",
+      "source_line": 197,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "simulated-populations",
+      "division": "worlds",
+      "source": "sources/repos/abedkadaancom/src/content/topics/worlds.ts",
+      "source_sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342",
+      "source_line": 223,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    },
+    {
+      "id": "homeless-dark",
+      "division": "worlds",
+      "source": "sources/repos/abedkadaancom/src/content/topics/worlds.ts",
+      "source_sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342",
+      "source_line": 249,
+      "custody": "preserved",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE"
+    }
+  ],
+  "knot": "DK0 cross-cutting relational view; no numeric reassignment",
+  "legacy_division_count": 6,
+  "current_charter_slots": 9
+}

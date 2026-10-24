@@ -1,0 +1,381 @@
+test_atom_evidence_advances_one_phase_with_published_hash_vector (test_astra.AstraTests.test_atom_evidence_advances_one_phase_with_published_hash_vector) ... ok
+test_atom_guard_refuses_at_admit_and_does_not_execute_strings (test_astra.AstraTests.test_atom_guard_refuses_at_admit_and_does_not_execute_strings) ... ok
+test_atom_input_cannot_change_after_select_and_return_values_are_isolated (test_astra.AstraTests.test_atom_input_cannot_change_after_select_and_return_values_are_isolated) ... ok
+test_atom_report_does_not_advance_and_has_all_handoff_fields (test_astra.AstraTests.test_atom_report_does_not_advance_and_has_all_handoff_fields) ... ok
+test_atom_stale_guard_bad_phase_and_mutated_output_refuse_without_advancement (test_astra.AstraTests.test_atom_stale_guard_bad_phase_and_mutated_output_refuse_without_advancement) ... ok
+test_camera_and_display_radius_leave_semantic_digest_unchanged (test_astra.AstraTests.test_camera_and_display_radius_leave_semantic_digest_unchanged) ... ok
+test_cardinal_vectors_match_the_inherited_axis_convention (test_astra.AstraTests.test_cardinal_vectors_match_the_inherited_axis_convention) ... ok
+test_checkpoint_requires_real_storage_and_no_batch_resume_is_implied (test_astra.AstraTests.test_checkpoint_requires_real_storage_and_no_batch_resume_is_implied) ... ok
+test_forged_event_or_phase_cannot_skip_admission (test_astra.AstraTests.test_forged_event_or_phase_cannot_skip_admission) ... ok
+test_known_perspective_and_yaw_pitch_signs (test_astra.AstraTests.test_known_perspective_and_yaw_pitch_signs) ... ok
+test_near_plane_clips_without_division_or_false_failure (test_astra.AstraTests.test_near_plane_clips_without_division_or_false_failure) ... ok
+test_nested_json_bounds_and_selection_context_are_enforced (test_astra.AstraTests.test_nested_json_bounds_and_selection_context_are_enforced) ... ok
+test_nonfinite_extreme_and_missing_context_refuse (test_astra.AstraTests.test_nonfinite_extreme_and_missing_context_refuse) ... ok
+test_norm_and_radius_are_distinct_from_semantic_coordinates (test_astra.AstraTests.test_norm_and_radius_are_distinct_from_semantic_coordinates) ... ok
+test_provenance_stays_caller_asserted_and_no_observer_transform_is_invented (test_astra.AstraTests.test_provenance_stays_caller_asserted_and_no_observer_transform_is_invented) ... ok
+test_source_evidence_handler_agreement_is_differential_not_independent_proof (test_astra.AstraTests.test_source_evidence_handler_agreement_is_differential_not_independent_proof) ... ok
+test_source_pins_resolve_actual_bytes_and_results_are_json_finite (test_astra.AstraTests.test_source_pins_resolve_actual_bytes_and_results_are_json_finite) ... ok
+test_state_reconstruction_rejects_json_scalar_type_changes (test_astra.AstraTests.test_state_reconstruction_rejects_json_scalar_type_changes) ... ok
+test_versions_unknown_operations_and_unbounded_values_refuse (test_astra.AstraTests.test_versions_unknown_operations_and_unbounded_values_refuse) ... ok
+test_atlas_resolves_every_original_topic_and_declares_no_topic_admission (test_book_of_forms.BookOfFormsTests.test_atlas_resolves_every_original_topic_and_declares_no_topic_admission) ... ok
+test_deterministic_render_and_scoped_evidence (test_book_of_forms.BookOfFormsTests.test_deterministic_render_and_scoped_evidence) ... ok
+test_kernel_pass_without_actual_checks_cannot_publish (test_book_of_forms.BookOfFormsTests.test_kernel_pass_without_actual_checks_cannot_publish) ... ok
+test_missing_duplicate_or_tampered_topic_source_refuses (test_book_of_forms.BookOfFormsTests.test_missing_duplicate_or_tampered_topic_source_refuses) ... ok
+test_no_vacuous_success_or_unknown_executor (test_book_of_forms.BookOfFormsTests.test_no_vacuous_success_or_unknown_executor) ... ok
+test_real_exercises_include_exact_results_and_expected_refusals (test_book_of_forms.BookOfFormsTests.test_real_exercises_include_exact_results_and_expected_refusals) ... ok
+test_wrong_expected_answer_cannot_publish_a_green_book (test_book_of_forms.BookOfFormsTests.test_wrong_expected_answer_cannot_publish_a_green_book) ... ok
+test_cached_class_base_changed_before_first_extension_pin_is_refused (test_capabilities.CapabilityTests.test_cached_class_base_changed_before_first_extension_pin_is_refused) ... ok
+test_cached_source_changed_before_first_extension_pin_is_not_executed (test_capabilities.CapabilityTests.test_cached_source_changed_before_first_extension_pin_is_not_executed) ... ok
+test_captured_dependency_blob_corruption_is_detected_without_live_execution (test_capabilities.CapabilityTests.test_captured_dependency_blob_corruption_is_detected_without_live_execution) ... ok
+test_existing_seed_run_and_context_census_remain_unchanged (test_capabilities.CapabilityTests.test_existing_seed_run_and_context_census_remain_unchanged) ... ok
+test_hostile_source_and_forged_parameters_remain_refusals (test_capabilities.CapabilityTests.test_hostile_source_and_forged_parameters_remain_refusals) ... ok
+test_loaded_function_regex_and_import_alias_tampering_cannot_claim_pass (test_capabilities.CapabilityTests.test_loaded_function_regex_and_import_alias_tampering_cannot_claim_pass) ... ok
+test_long_source_exception_does_not_relax_legacy_or_nested_parameters (test_capabilities.CapabilityTests.test_long_source_exception_does_not_relax_legacy_or_nested_parameters) ... ok
+test_pause_and_revision_guards_precede_new_handler_execution (test_capabilities.CapabilityTests.test_pause_and_revision_guards_precede_new_handler_execution) ... ok
+test_reopen_retry_and_replay_never_call_handlers_or_live_pinning (test_capabilities.CapabilityTests.test_reopen_retry_and_replay_never_call_handlers_or_live_pinning) ... ok
+test_same_bytecode_with_foreign_globals_and_forged_bundle_metadata_refuse (test_capabilities.CapabilityTests.test_same_bytecode_with_foreign_globals_and_forged_bundle_metadata_refuse) ... ok
+test_source_capture_database_failure_rolls_back_the_command (test_capabilities.CapabilityTests.test_source_capture_database_failure_rolls_back_the_command) ... ok
+test_three_new_handlers_execute_with_exact_dependency_source_custody (test_capabilities.CapabilityTests.test_three_new_handlers_execute_with_exact_dependency_source_custody) ... ok
+test_undeclared_class_hook_is_not_a_pinned_implementation (test_capabilities.CapabilityTests.test_undeclared_class_hook_is_not_a_pinned_implementation) ... ok
+test_command_file_retry_reuses_durable_receipt_in_new_process (test_cli.CLITests.test_command_file_retry_reuses_durable_receipt_in_new_process) ... ok
+test_commit_survives_process_exit_before_receipt_delivery (test_cli.CLITests.test_commit_survives_process_exit_before_receipt_delivery) ... ok
+test_demo_executes_artifact_science_guidance_and_checkpoint_flow (test_cli.CLITests.test_demo_executes_artifact_science_guidance_and_checkpoint_flow) ... ok
+test_init_status_verify_across_distinct_processes (test_cli.CLITests.test_init_status_verify_across_distinct_processes) ... ok
+test_read_commands_do_not_silently_initialize_a_missing_ledger (test_cli.CLITests.test_read_commands_do_not_silently_initialize_a_missing_ledger) ... ok
+test_serve_process_commits_authenticated_command_and_shuts_down_cleanly (test_cli.CLITests.test_serve_process_commits_authenticated_command_and_shuts_down_cleanly) ... ok
+test_serve_requires_environment_operator_token (test_cli.CLITests.test_serve_requires_environment_operator_token) ... ok
+test_stale_cli_command_is_explicit_error_and_leaves_revision (test_cli.CLITests.test_stale_cli_command_is_explicit_error_and_leaves_revision) ... ok
+test_worker_records_the_requested_finite_number_of_real_runs (test_cli.CLITests.test_worker_records_the_requested_finite_number_of_real_runs) ... ok
+test_worker_respects_applied_research_pause (test_cli.CLITests.test_worker_respects_applied_research_pause) ... ok
+test_worker_zero_iterations_does_not_claim_unperformed_experiments (test_cli.CLITests.test_worker_zero_iterations_does_not_claim_unperformed_experiments) ... ok
+test_acceptance_has_real_positive_and_negative_checks (test_experiments.ScientificContracts.test_acceptance_has_real_positive_and_negative_checks) ... ok
+test_degree_budget (test_experiments.ScientificContracts.test_degree_budget) ... ok
+test_divide_by_zero_refused (test_experiments.ScientificContracts.test_divide_by_zero_refused) ... ok
+test_exact_division_fraction_coefficients (test_experiments.ScientificContracts.test_exact_division_fraction_coefficients) ... ok
+test_exponent_denial_happens_before_fraction_construction (test_experiments.ScientificContracts.test_exponent_denial_happens_before_fraction_construction) ... ok
+test_finite_grammar_promoted_and_expanded (test_experiments.ScientificContracts.test_finite_grammar_promoted_and_expanded) ... ok
+test_grammar_bad_symbol_rejected (test_experiments.ScientificContracts.test_grammar_bad_symbol_rejected) ... ok
+test_grammar_order_and_identity_do_not_depend_on_dict_order (test_experiments.ScientificContracts.test_grammar_order_and_identity_do_not_depend_on_dict_order) ... ok
+test_input_coefficients_not_float_or_bool (test_experiments.ScientificContracts.test_input_coefficients_not_float_or_bool) ... ok
+test_integer_budget_precedes_decimal_string_conversion (test_experiments.ScientificContracts.test_integer_budget_precedes_decimal_string_conversion) ... ok
+test_qpath_context_mismatch_refused (test_experiments.ScientificContracts.test_qpath_context_mismatch_refused) ... ok
+test_qpath_joint_inputs_and_exact_result (test_experiments.ScientificContracts.test_qpath_joint_inputs_and_exact_result) ... ok
+test_qpath_missing_joint_premise_is_not_reachable (test_experiments.ScientificContracts.test_qpath_missing_joint_premise_is_not_reachable) ... ok
+test_qpath_type_mismatch_refused (test_experiments.ScientificContracts.test_qpath_type_mismatch_refused) ... ok
+test_qpath_zero_divisor_and_overwrite_refused (test_experiments.ScientificContracts.test_qpath_zero_divisor_and_overwrite_refused) ... ok
+test_quotient_derivative_certificate (test_experiments.ScientificContracts.test_quotient_derivative_certificate) ... ok
+test_short_dividend_and_constant_divisor (test_experiments.ScientificContracts.test_short_dividend_and_constant_divisor) ... ok
+test_unknown_or_executable_parameters_refused (test_experiments.ScientificContracts.test_unknown_or_executable_parameters_refused) ... ok
+test_zero_polynomial_no_vacuous_numerical_pass (test_experiments.ScientificContracts.test_zero_polynomial_no_vacuous_numerical_pass) ... ok
+test_exact_staging_and_transport_deletion (test_github_import.ImportTests.test_exact_staging_and_transport_deletion) ... ok
+test_existing_conflicting_seed_refused_without_overwrite (test_github_import.ImportTests.test_existing_conflicting_seed_refused_without_overwrite) ... ok
+test_payload_duplicate_member_refused (test_github_import.ImportTests.test_payload_duplicate_member_refused) ... ok
+test_payload_exact_hash_census_and_bytes (test_github_import.ImportTests.test_payload_exact_hash_census_and_bytes) ... ok
+test_payload_symlink_refused (test_github_import.ImportTests.test_payload_symlink_refused) ... ok
+test_payload_traversal_and_git_paths_refused (test_github_import.ImportTests.test_payload_traversal_and_git_paths_refused) ... ok
+test_payload_unregistered_member_refused (test_github_import.ImportTests.test_payload_unregistered_member_refused) ... ok
+test_payload_wrong_digest_refused_before_extraction (test_github_import.ImportTests.test_payload_wrong_digest_refused_before_extraction) ... ok
+test_snapshot_archive_identity_mismatch_refused (test_github_import.ImportTests.test_snapshot_archive_identity_mismatch_refused) ... ok
+test_snapshot_git_blob_mismatch_refused (test_github_import.ImportTests.test_snapshot_git_blob_mismatch_refused) ... ok
+test_snapshot_hashes_and_executable_mode_preserved (test_github_import.ImportTests.test_snapshot_hashes_and_executable_mode_preserved) ... ok
+test_snapshot_missing_file_refused (test_github_import.ImportTests.test_snapshot_missing_file_refused) ... ok
+test_document_hashes_and_registry_source_identities_are_not_conflated (test_intake.IntakeTests.test_document_hashes_and_registry_source_identities_are_not_conflated) ... ok
+test_embedded_nonfinite_numbers_and_deep_json_stay_retained_unknowns (test_intake.IntakeTests.test_embedded_nonfinite_numbers_and_deep_json_stay_retained_unknowns) ... ok
+test_explicit_coefficients_are_used_and_float_not_silently_rounded (test_intake.IntakeTests.test_explicit_coefficients_are_used_and_float_not_silently_rounded) ... ok
+test_limits_and_schemas_fail_closed (test_intake.IntakeTests.test_limits_and_schemas_fail_closed) ... ok
+test_polynomial_teaching_is_computed_with_domain_exclusions (test_intake.IntakeTests.test_polynomial_teaching_is_computed_with_domain_exclusions) ... ok
+test_private_source_policy_is_explicit (test_intake.IntakeTests.test_private_source_policy_is_explicit) ... ok
+test_source_instructions_and_unknown_suffixes_are_data (test_intake.IntakeTests.test_source_instructions_and_unknown_suffixes_are_data) ... ok
+test_style_changes_only_rendering (test_intake.IntakeTests.test_style_changes_only_rendering) ... ok
+test_unicode_original_bytes_and_all_spans_round_trip (test_intake.IntakeTests.test_unicode_original_bytes_and_all_spans_round_trip) ... ok
+test_zero_divisor_retains_failure_and_testable_opportunity (test_intake.IntakeTests.test_zero_divisor_retains_failure_and_testable_opportunity) ... ok
+test_clean_runtime_invocation_without_repository_imports (test_native.NativeTests.test_clean_runtime_invocation_without_repository_imports) ... ok
+test_cli_compile_then_run_and_refusal_exit_status (test_native.NativeTests.test_cli_compile_then_run_and_refusal_exit_status) ... ok
+test_declared_statement_and_total_work_bounds_are_enforced (test_native.NativeTests.test_declared_statement_and_total_work_bounds_are_enforced) ... ok
+test_exact_rational_polynomial_and_text_composition (test_native.NativeTests.test_exact_rational_polynomial_and_text_composition) ... ok
+test_malformed_package_values_never_escape_structured_refusal (test_native.NativeTests.test_malformed_package_values_never_escape_structured_refusal) ... ok
+test_no_empty_or_noncanonical_polynomial_and_escaped_strings (test_native.NativeTests.test_no_empty_or_noncanonical_polynomial_and_escaped_strings) ... ok
+test_polynomial_division_keeps_exact_quotient_and_remainder (test_native.NativeTests.test_polynomial_division_keeps_exact_quotient_and_remainder) ... ok
+test_reference_comparison_on_hand_derived_family (test_native.NativeTests.test_reference_comparison_on_hand_derived_family) ... ok
+test_resource_refusals_bound_source_depth_numbers_and_growth (test_native.NativeTests.test_resource_refusals_bound_source_depth_numbers_and_growth) ... ok
+test_serialization_determinism_and_package_tampering (test_native.NativeTests.test_serialization_determinism_and_package_tampering) ... ok
+test_syntax_profile_and_malformed_numbers_refuse (test_native.NativeTests.test_syntax_profile_and_malformed_numbers_refuse) ... ok
+test_type_error_carries_utf8_source_span (test_native.NativeTests.test_type_error_carries_utf8_source_span) ... ok
+test_unknown_operations_types_effects_and_names_refuse (test_native.NativeTests.test_unknown_operations_types_effects_and_names_refuse) ... ok
+test_all_private_reads_require_bearer_authorization (test_server.HTTPTests.test_all_private_reads_require_bearer_authorization) ... {"event":"http_access","method":"GET","request_id":"37d76b7755874ef0af916a9ccb20797c","route":"state","status":401}
+{"event":"http_access","method":"GET","request_id":"46f7e073c65c4fa3aa45f152ad8f9c3b","route":"events","status":401}
+{"event":"http_access","method":"GET","request_id":"31c3d4b023604b05b483695f508cb297","route":"verification","status":401}
+{"event":"http_access","method":"GET","request_id":"94baf6bd4a974568931e912734b0bdb8","route":"command_receipt","status":401}
+{"event":"http_access","method":"GET","request_id":"cb91616647d54df1986f2959f29816d4","route":"checkpoint","status":401}
+{"event":"http_access","method":"GET","request_id":"16a4137e8269403e95039c0cb3276d6d","route":"refusals","status":401}
+{"event":"http_access","method":"GET","request_id":"d5c1f97aa7cf42cca4852c39641a5664","route":"state","status":401}
+ok
+test_ambiguous_framing_headers_are_rejected_before_mutation (test_server.HTTPTests.test_ambiguous_framing_headers_are_rejected_before_mutation) ... {"event":"http_access","method":"POST","request_id":"6f7e0ce61b704679a61b63b853c27dea","route":"unparsed","status":400}
+{"event":"http_access","method":"POST","request_id":"c31ea2eec8584d64a86e0470afcd990e","route":"unparsed","status":400}
+{"event":"http_access","method":"POST","request_id":"8eb7bcc09a574b6fa8dfb46d2975bb9c","route":"commands","status":411}
+{"event":"http_access","method":"POST","request_id":"e6829b5db35c4741a80c6f628c70d2bf","route":"unparsed","status":400}
+ok
+test_cross_origin_and_host_rebinding_are_refused (test_server.HTTPTests.test_cross_origin_and_host_rebinding_are_refused) ... {"event":"http_access","method":"POST","request_id":"e29e37a8f93f4828b011889a6a1d5431","route":"unparsed","status":403}
+{"event":"http_access","method":"POST","request_id":"0aa88d552faa4e5c90e1616da1d862b8","route":"unparsed","status":403}
+{"event":"http_access","method":"POST","request_id":"8163b24955814ffdba26b45e013719c4","route":"unparsed","status":403}
+{"event":"http_access","method":"GET","request_id":"23c27660f8bd46d38bcad2105195c7af","route":"unparsed","status":421}
+{"event":"http_access","method":"POST","request_id":"01270864b07f4ef7a2c483cefcc6eb84","route":"unparsed","status":403}
+{"event":"http_access","method":"POST","request_id":"fcc139b604e346e1b60596b53c017a35","route":"commands","status":200}
+ok
+test_duplicate_authorization_host_and_origin_are_not_ambiguous (test_server.HTTPTests.test_duplicate_authorization_host_and_origin_are_not_ambiguous) ... {"event":"http_access","method":"GET","request_id":"9ba6e93ec0ed4ad7b844f88c2984e8d9","route":"state","status":400}
+{"event":"http_access","method":"GET","request_id":"e59500b053374a5684cdf2b9ea7e3b63","route":"unparsed","status":400}
+{"event":"http_access","method":"GET","request_id":"7dce252b385f440bafbf9e34f9027ac4","route":"unparsed","status":400}
+ok
+test_exact_top_level_schema_cannot_smuggle_status_or_boolean_revision (test_server.HTTPTests.test_exact_top_level_schema_cannot_smuggle_status_or_boolean_revision) ... {"event":"http_access","method":"POST","request_id":"01c59259133e4bddb14ac34e6577683d","route":"commands","status":400}
+{"event":"http_access","method":"POST","request_id":"099b613ca37349d08bae7ac752af91bf","route":"commands","status":400}
+{"event":"http_access","method":"POST","request_id":"fc5d90c0473146e2ab102dd0d32285da","route":"commands","status":400}
+{"event":"http_access","method":"POST","request_id":"6c0010fdd4034cb780fe231d47a0feb5","route":"commands","status":400}
+{"event":"http_access","method":"POST","request_id":"63d2af3f4580442a82429314b95efd68","route":"commands","status":400}
+ok
+test_guidance_submit_acknowledge_apply_changes_real_state (test_server.HTTPTests.test_guidance_submit_acknowledge_apply_changes_real_state) ... {"event":"http_access","method":"POST","request_id":"832cb7b62e4f458181fc2ee5738d5aea","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"6c279938f8304dfc9b9d2d43b2e7d67f","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"574d6ab0681f415aa5268024bf9c1b0f","route":"commands","status":200}
+{"event":"http_access","method":"GET","request_id":"29bc5ed5082248dfa693e294e25625b2","route":"state","status":200}
+ok
+test_head_responses_have_no_body_and_private_head_still_requires_auth (test_server.HTTPTests.test_head_responses_have_no_body_and_private_head_still_requires_auth) ... {"event":"http_access","method":"HEAD","request_id":"75d5d3a7f91e4ad28fec2bf7bbcade56","route":"asset","status":200}
+{"event":"http_access","method":"HEAD","request_id":"c0d1d6fc8ee64c3b87f315d23916b03d","route":"state","status":401}
+ok
+test_invalid_event_parameters_and_unknown_paths_are_safe (test_server.HTTPTests.test_invalid_event_parameters_and_unknown_paths_are_safe) ... {"event":"http_access","method":"GET","request_id":"69a848ca74f04e1e890deee1e326fb96","route":"events","status":400}
+{"event":"http_access","method":"GET","request_id":"cf962733c68a498092dc378b578c665b","route":"events","status":400}
+{"event":"http_access","method":"GET","request_id":"c65ba07e304040c5a5b918c5869096a3","route":"events","status":400}
+{"event":"http_access","method":"GET","request_id":"e2aead0a9145496d80505baf0c25303b","route":"events","status":400}
+{"event":"http_access","method":"GET","request_id":"15b69339f36c45b7a2cc3aff8fa06dfe","route":"events","status":400}
+{"event":"http_access","method":"GET","request_id":"616dbcd21a3c45dc96f918a72139b3f5","route":"events","status":400}
+{"event":"http_access","method":"GET","request_id":"4da76a1af7de40888118fc2ac2381ebf","route":"events","status":400}
+{"event":"http_access","method":"GET","request_id":"4951aec970394712a8c26a8bfa999c46","route":"events","status":400}
+{"event":"http_access","method":"GET","request_id":"fe80603ec0724eab826b1319e200e645","route":"events","status":400}
+{"event":"http_access","method":"GET","request_id":"c2e5b98ee07843e6aca02d3bd340bf10","route":"unknown","status":404}
+{"event":"http_access","method":"GET","request_id":"0eac1fbad6f74b59b2847f00ec34cfa1","route":"unparsed","status":400}
+{"event":"http_access","method":"GET","request_id":"5faf35aa5a4d4c17bb5ff8afd50c0f62","route":"unparsed","status":400}
+{"event":"http_access","method":"GET","request_id":"84dea9f5d4404668b0b73a18fd75674b","route":"unknown","status":404}
+{"event":"http_access","method":"GET","request_id":"eb09fac896c341bd8a19800dd3ca42dc","route":"unparsed","status":400}
+{"event":"http_access","method":"GET","request_id":"06dfc474c990465787313f41dd4bd908","route":"state","status":400}
+ok
+test_json_media_type_and_body_budget_are_enforced (test_server.HTTPTests.test_json_media_type_and_body_budget_are_enforced) ... {"event":"http_access","method":"POST","request_id":"15ac29b3ad904e908aff34ff93518cb7","route":"commands","status":415}
+{"event":"http_access","method":"POST","request_id":"dd883023ed6b469286d21e53ac4dc1d8","route":"commands","status":415}
+{"event":"http_access","method":"POST","request_id":"45c1bb85a6964d738954981635f9dc51","route":"unparsed","status":413}
+ok
+test_known_route_wrong_method_is_safe_and_has_no_cors_wildcard (test_server.HTTPTests.test_known_route_wrong_method_is_safe_and_has_no_cors_wildcard) ... {"event":"http_access","method":"OPTIONS","request_id":"565617ea77c54f068c9dab824c68be68","route":"unparsed","status":403}
+{"event":"http_access","method":"GET","request_id":"a485efe9fcab4b998cfd7d8bbeb24d25","route":"commands","status":405}
+{"event":"http_access","method":"DELETE","request_id":"2c10407e43d948d2b3a0fb6e1827cebc","route":"state","status":405}
+ok
+test_loopback_binding_and_separate_nonempty_tokens_are_required (test_server.HTTPTests.test_loopback_binding_and_separate_nonempty_tokens_are_required) ... ok
+test_malformed_nonfinite_duplicate_and_deep_json_are_refused (test_server.HTTPTests.test_malformed_nonfinite_duplicate_and_deep_json_are_refused) ... {"event":"http_access","method":"POST","request_id":"04027e469c7848d8bda7cd0574d8bd6c","route":"commands","status":400}
+{"event":"http_access","method":"POST","request_id":"17e5f8f0a714451c8a9664e3d1c16bd2","route":"commands","status":400}
+{"event":"http_access","method":"POST","request_id":"05a4268c519d4b93bf9720550bbde570","route":"commands","status":400}
+{"event":"http_access","method":"POST","request_id":"c93299e8771d42a3856e5d56dd4a41fd","route":"commands","status":400}
+{"event":"http_access","method":"POST","request_id":"cc5d5db01e344e5dbf1cabbd39406a70","route":"commands","status":400}
+{"event":"http_access","method":"POST","request_id":"3e1a51af428646ed9a662877f4556449","route":"commands","status":400}
+{"event":"http_access","method":"POST","request_id":"5de1c55b02114e4885f29862b2323500","route":"commands","status":400}
+{"event":"http_access","method":"POST","request_id":"64fc5cc1889c48189abbbbeb0149559e","route":"commands","status":400}
+ok
+test_openapi_discovery_resolves_to_the_exact_command_contract (test_server.HTTPTests.test_openapi_discovery_resolves_to_the_exact_command_contract) ... {"event":"http_access","method":"GET","request_id":"1a999130e21f48609e8f7345adb84d90","route":"discovery","status":200}
+{"event":"http_access","method":"GET","request_id":"fed35cee7ec34a9e9be837b23eb12a2b","route":"schema","status":200}
+ok
+test_operator_and_read_token_can_read_but_read_token_cannot_mutate (test_server.HTTPTests.test_operator_and_read_token_can_read_but_read_token_cannot_mutate) ... {"event":"http_access","method":"GET","request_id":"de94b8a1a3aa48298235e21997325ef8","route":"state","status":200}
+{"event":"http_access","method":"GET","request_id":"0eed9dce20ad4a1f991c008f51af0804","route":"state","status":200}
+{"event":"http_access","method":"POST","request_id":"0bb8a59cd9444be884953619576d6824","route":"commands","status":403}
+ok
+test_produce_verify_accept_checkpoint_and_integrity_are_real (test_server.HTTPTests.test_produce_verify_accept_checkpoint_and_integrity_are_real) ... {"event":"http_access","method":"POST","request_id":"60669043927f411ba16d45bb7ff86dee","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"3294b66cccc543009a0c16b50de075f7","route":"commands","status":409}
+{"event":"http_access","method":"POST","request_id":"584387cbb34046dbaad8aeb1435b479c","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"08145c6305744609a8825943c758196f","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"80f21a8ea51e4a7a8b04a4169bc8c9de","route":"commands","status":200}
+{"event":"http_access","method":"GET","request_id":"4874e3f971a741f0b4f941c690cb4c29","route":"checkpoint","status":200}
+{"event":"http_access","method":"GET","request_id":"8fa1359409294873a6cd989cabf34037","route":"checkpoint","status":200}
+{"event":"http_access","method":"GET","request_id":"7d72a254f6c249878f8340947a86d785","route":"verification","status":200}
+{"event":"http_access","method":"GET","request_id":"a495483c588142fab7288b36df774651","route":"state","status":200}
+ok
+test_public_https_origin_is_explicit_and_matches_host (test_server.HTTPTests.test_public_https_origin_is_explicit_and_matches_host) ... {"event":"http_access","method":"GET","request_id":"9252b347521c4c66826c7147d88f0760","route":"state","status":200}
+{"event":"http_access","method":"GET","request_id":"80db712fd74f4f1eae30c5db0a923c66","route":"unparsed","status":403}
+{"event":"http_access","method":"GET","request_id":"c8fba36dcf9f4d37a8c0fbf40b5eb743","route":"unparsed","status":403}
+{"event":"http_access","method":"GET","request_id":"731abfb30c604c9db1276d2fc40a1d6f","route":"state","status":200}
+ok
+test_public_surface_is_live_but_contains_no_token_or_private_state (test_server.HTTPTests.test_public_surface_is_live_but_contains_no_token_or_private_state) ... {"event":"http_access","method":"GET","request_id":"fc6ca59787134c3f8782e41781e09861","route":"health","status":200}
+{"event":"http_access","method":"GET","request_id":"0e3d592be8004dd6bf3a53766a58ad97","route":"discovery","status":200}
+{"event":"http_access","method":"GET","request_id":"bff2c348ce464b57a5074b66dcf133f5","route":"asset","status":200}
+{"event":"http_access","method":"GET","request_id":"c0c0adc1eb5e430fb5bbb474414f9fd0","route":"asset","status":200}
+{"event":"http_access","method":"GET","request_id":"1b5cbb7ee510454ea99e9d881e0f07f2","route":"asset","status":200}
+{"event":"http_access","method":"GET","request_id":"a6a712e92c0148cb9b0624e2da9e3de0","route":"asset","status":200}
+ok
+test_real_command_retry_conflict_receipt_and_resumable_events (test_server.HTTPTests.test_real_command_retry_conflict_receipt_and_resumable_events) ... {"event":"http_access","method":"POST","request_id":"fe59a13378d34d399a682c401ea5251d","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"b661391e80b840828c8aa12ab55c22d0","route":"commands","status":200}
+{"event":"http_access","method":"GET","request_id":"1d791082894946229a663e79733f1447","route":"command_receipt","status":200}
+{"event":"http_access","method":"POST","request_id":"59a3b143da51491f8e49c14dbcde28e0","route":"commands","status":409}
+{"event":"http_access","method":"POST","request_id":"b743238d62eb4286ba30edc6e9e6f3d4","route":"commands","status":409}
+{"event":"http_access","method":"POST","request_id":"f0e294a3919443b985b25aef76b20579","route":"commands","status":200}
+{"event":"http_access","method":"GET","request_id":"553aef4540cd45ba8e6716f9cc413ece","route":"events","status":200}
+{"event":"http_access","method":"GET","request_id":"ccbea8a176e043509b9a9abb7ac7ada4","route":"events","status":200}
+{"event":"http_access","method":"GET","request_id":"09ffa1f9575e41189c47d101600205d9","route":"refusals","status":200}
+ok
+test_science_runs_record_actual_result_and_respect_guidance_pause (test_server.HTTPTests.test_science_runs_record_actual_result_and_respect_guidance_pause) ... {"event":"http_access","method":"POST","request_id":"db1b7589cb62406bbd81cc584743b018","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"209fa92e0a6a47088cc92e2cc0be6616","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"e8ba187e19cd4cea926f46edda51c446","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"d2c0ae2a27aa4d30a69db781a5716bb8","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"b4efbad96c9b4bfcbea926421761c2b8","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"4dc3af8ab30446fea80d6e052b4d5409","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"8b9a092be81c4610a620ce8365679e88","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"d697069472644cce9f45024f9b5e918b","route":"commands","status":409}
+{"event":"http_access","method":"GET","request_id":"c7289dfe8bdb4b71afbed16c63cc9d60","route":"state","status":200}
+ok
+test_two_real_http_writers_cannot_apply_one_revision (test_server.HTTPTests.test_two_real_http_writers_cannot_apply_one_revision) ... {"event":"http_access","method":"POST","request_id":"178138a4b4204ac8a57fbecfa2ccb572","route":"commands","status":200}
+{"event":"http_access","method":"POST","request_id":"cdf54dfa48154d0cb9983f0aba1ecf9d","route":"commands","status":409}
+ok
+test_unavailable_command_and_missing_read_have_explicit_safe_errors (test_server.HTTPTests.test_unavailable_command_and_missing_read_have_explicit_safe_errors) ... {"event":"http_access","method":"GET","request_id":"e1dd0227e6364bb1bf03af1f5e6453d0","route":"command_receipt","status":404}
+{"event":"http_access","method":"GET","request_id":"7e710a66927e4799a32a5acdb03b84a7","route":"checkpoint","status":404}
+{"event":"http_access","method":"GET","request_id":"de3c3c8d454d421eb8754945629dca7d","route":"checkpoint","status":404}
+{"event":"http_access","method":"POST","request_id":"7a7a9850117c474b8ece9a13da9d85cf","route":"commands","status":400}
+ok
+test_unexpected_runtime_exception_is_not_exposed_to_clients (test_server.HTTPTests.test_unexpected_runtime_exception_is_not_exposed_to_clients) ... ok
+test_admission_refusals_have_redacted_correlated_records (test_server_limits.BoundaryLimitTests.test_admission_refusals_have_redacted_correlated_records) ... {"event":"http_access","method":"GET","request_id":"a54874ba26fb4abe8e01632229c892ae","route":"health","status":200}
+ok
+test_auth_and_json_refusals_release_slots_without_mutation (test_server_limits.BoundaryLimitTests.test_auth_and_json_refusals_release_slots_without_mutation) ... {"event":"http_access","method":"GET","request_id":"f07a03493d934718a61d1efee9da255b","route":"state","status":401}
+{"event":"http_access","method":"GET","request_id":"c4e339d9ae464ae2b56c00fc83f567cb","route":"health","status":200}
+{"event":"http_access","method":"POST","request_id":"4e1dfed6ac6f48b8bf7ae81bf72d6020","route":"commands","status":400}
+{"event":"http_access","method":"GET","request_id":"41110d7aad594133a060b32b485f8c13","route":"health","status":200}
+ok
+test_global_rate_budget_counts_unauthenticated_requests_and_ignores_forwarded_identity (test_server_limits.BoundaryLimitTests.test_global_rate_budget_counts_unauthenticated_requests_and_ignores_forwarded_identity) ... {"event":"http_access","method":"GET","request_id":"0883cecd78ba4502bded643cda2a37c7","route":"state","status":401}
+{"event":"http_access","method":"GET","request_id":"6563771da7374663a94fef6db9c1abed","route":"state","status":401}
+{"event":"http_access","method":"OTHER","request_id":"f7be050de28c4f74b58401fdb9f9f4dc","route":"unparsed","status":429}
+{"event":"http_access","method":"GET","request_id":"cd950f46521049c0b786b008bf04694a","route":"health","status":200}
+ok
+test_header_timeout_releases_the_only_handler_slot (test_server_limits.BoundaryLimitTests.test_header_timeout_releases_the_only_handler_slot) ... {"event":"http_access","method":"GET","request_id":"e701e37839434f89935dc4a325bd8d65","route":"unparsed","status":0}
+{"event":"http_access","method":"GET","request_id":"5c7864ffeaa148609f38016f789ca1ba","route":"health","status":200}
+ok
+test_logging_covers_pre_auth_and_parse_failures_without_input_values (test_server_limits.BoundaryLimitTests.test_logging_covers_pre_auth_and_parse_failures_without_input_values) ... ok
+test_simultaneous_requests_share_one_atomic_rate_budget (test_server_limits.BoundaryLimitTests.test_simultaneous_requests_share_one_atomic_rate_budget) ... {"event":"http_access","method":"GET","request_id":"a6a07c27eb71498fb044e1e66523bd64","route":"health","status":200}
+{"event":"http_access","method":"GET","request_id":"7044174635b04356b07cee0c3e19f5b4","route":"health","status":200}
+{"event":"http_access","method":"OTHER","request_id":"99b101d3541143a19ae4be57af04921e","route":"unparsed","status":429}
+{"event":"http_access","method":"OTHER","request_id":"9c0a55b02f844b739c0901419a3969e1","route":"unparsed","status":429}
+{"event":"http_access","method":"GET","request_id":"11ceebc19af7406a90cc1524612fbf55","route":"health","status":200}
+{"event":"http_access","method":"OTHER","request_id":"f419573e03b24f74974401f9a5ad7fa6","route":"unparsed","status":429}
+{"event":"http_access","method":"OTHER","request_id":"b54bd35f956d4ea68bc6c80c0a557ea7","route":"unparsed","status":429}
+{"event":"http_access","method":"OTHER","request_id":"c01c9271351b40969ef6ca9fdf48de78","route":"unparsed","status":429}
+ok
+test_slow_headers_cannot_create_a_second_handler_and_disconnect_releases_slot (test_server_limits.BoundaryLimitTests.test_slow_headers_cannot_create_a_second_handler_and_disconnect_releases_slot) ... {"event":"http_access","method":"OTHER","request_id":"95d9d970782d4bffb03c917fbcc20db9","route":"unparsed","status":503}
+{"event":"http_access","method":"GET","request_id":"05fcddcda0144ca6829d9bc677e944bf","route":"health","status":200}
+{"event":"http_access","method":"OTHER","request_id":"de145518df7b45a7bfe47f3f9acda3ce","route":"unparsed","status":503}
+{"event":"http_access","method":"GET","request_id":"cb2304690ec746968a8f9bb151a04f83","route":"health","status":200}
+ok
+test_thread_start_failure_releases_admission_without_logging_exception_details (test_server_limits.BoundaryLimitTests.test_thread_start_failure_releases_admission_without_logging_exception_details) ... {"event":"http_access","method":"GET","request_id":"91c5ff17a1494986a1023042563462da","route":"health","status":200}
+ok
+test_unsafe_numeric_and_boolean_configuration_is_rejected (test_server_limits.BoundaryLimitTests.test_unsafe_numeric_and_boolean_configuration_is_rejected) ... ok
+test_accept_requires_current_verification_and_reproduction_invalidates_it (test_store.StoreTests.test_accept_requires_current_verification_and_reproduction_invalidates_it) ... ok
+test_altered_kernel_copy_cannot_satisfy_scientific_production (test_store.StoreTests.test_altered_kernel_copy_cannot_satisfy_scientific_production) ... ok
+test_blob_corruption_is_detected_before_acceptance_and_on_reopen (test_store.StoreTests.test_blob_corruption_is_detected_before_acceptance_and_on_reopen) ... ok
+test_cached_kernel_with_different_source_constants_is_refused_before_first_pin (test_store.StoreTests.test_cached_kernel_with_different_source_constants_is_refused_before_first_pin) ... ok
+test_cached_kernel_with_different_source_defaults_is_refused_before_first_pin (test_store.StoreTests.test_cached_kernel_with_different_source_defaults_is_refused_before_first_pin) ... ok
+test_changed_scientific_source_requires_restart_before_verification (test_store.StoreTests.test_changed_scientific_source_requires_restart_before_verification) ... ok
+test_checkpoint_is_source_linked_and_tampering_is_detected (test_store.StoreTests.test_checkpoint_is_source_linked_and_tampering_is_detected) ... /opt/polyia/runtime/lib/python3.13/json/encoder.py:254: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xe5e100ecb100>
+  _iterencode = c_make_encoder(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_checkpoint_refreshes_context_and_retains_historical_source_bytes (test_store.StoreTests.test_checkpoint_refreshes_context_and_retains_historical_source_bytes) ... ok
+test_checkpoint_scalar_type_corruption_is_never_equal (test_store.StoreTests.test_checkpoint_scalar_type_corruption_is_never_equal) ... ok
+test_command_ids_are_scoped_by_actor (test_store.StoreTests.test_command_ids_are_scoped_by_actor) ... ok
+test_current_state_corruption_is_detected (test_store.StoreTests.test_current_state_corruption_is_detected) ... ok
+test_custom_genesis_without_registries_is_explicitly_unsourced (test_store.StoreTests.test_custom_genesis_without_registries_is_explicitly_unsourced) ... /home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:141: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xe5e100f52a70>
+  return {"bytecode": code.co_code.hex(), "constants": [constant(value) for value in code.co_consts],
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:141: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xe5e100f52980>
+  return {"bytecode": code.co_code.hex(), "constants": [constant(value) for value in code.co_consts],
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:141: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xe5e100f52020>
+  return {"bytecode": code.co_code.hex(), "constants": [constant(value) for value in code.co_consts],
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_default_genesis_captures_actual_package_control_manifests (test_store.StoreTests.test_default_genesis_captures_actual_package_control_manifests) ... /opt/polyia/runtime/lib/python3.13/json/decoder.py:361: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xe5e100eca7a0>
+  obj, end = self.scan_once(s, idx)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_definition_metadata_scalar_types_cannot_silently_change (test_store.StoreTests.test_definition_metadata_scalar_types_cannot_silently_change) ... ok
+test_empty_artifacts_and_empty_files_are_rejected (test_store.StoreTests.test_empty_artifacts_and_empty_files_are_rejected) ... ok
+test_event_corruption_is_detected_without_repair (test_store.StoreTests.test_event_corruption_is_detected_without_repair) ... ok
+test_event_pagination_and_refusal_receipts_are_distinct (test_store.StoreTests.test_event_pagination_and_refusal_receipts_are_distinct) ... ok
+test_exact_retry_is_idempotent_but_changed_request_conflicts (test_store.StoreTests.test_exact_retry_is_idempotent_but_changed_request_conflicts) ... ok
+test_experiment_replay_consumes_recorded_result_without_reexecution (test_store.StoreTests.test_experiment_replay_consumes_recorded_result_without_reexecution) ... /opt/polyia/runtime/lib/python3.13/json/decoder.py:361: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xe5e100ef9d50>
+  obj, end = self.scan_once(s, idx)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_experiment_runtime_failure_is_retained_without_success_result (test_store.StoreTests.test_experiment_runtime_failure_is_retained_without_success_result) ... ok
+test_free_text_guidance_cannot_be_marked_applied (test_store.StoreTests.test_free_text_guidance_cannot_be_marked_applied) ... ok
+test_genesis_corruption_is_detected (test_store.StoreTests.test_genesis_corruption_is_detected) ... ok
+test_genesis_has_no_blanket_commission_acceptance (test_store.StoreTests.test_genesis_has_no_blanket_commission_acceptance) ... ok
+test_genesis_scalar_type_corruption_is_rejected (test_store.StoreTests.test_genesis_scalar_type_corruption_is_rejected) ... ok
+test_guidance_acknowledgment_then_apply_changes_actual_priority (test_store.StoreTests.test_guidance_acknowledgment_then_apply_changes_actual_priority) ... ok
+test_historical_blobs_remain_checked_after_reproduction (test_store.StoreTests.test_historical_blobs_remain_checked_after_reproduction) ... ok
+test_invalid_initial_requirements_leave_no_partial_ledger (test_store.StoreTests.test_invalid_initial_requirements_leave_no_partial_ledger) ... ok
+test_invalid_revision_and_nonobject_payload_are_retained_as_refusals (test_store.StoreTests.test_invalid_revision_and_nonobject_payload_are_retained_as_refusals) ... ok
+test_materialization_scalar_type_corruption_is_never_equal (test_store.StoreTests.test_materialization_scalar_type_corruption_is_never_equal) ... /home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:141: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xe5e100ef9a80>
+  return {"bytecode": code.co_code.hex(), "constants": [constant(value) for value in code.co_consts],
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:141: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xe5e10152fe20>
+  return {"bytecode": code.co_code.hex(), "constants": [constant(value) for value in code.co_consts],
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:141: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xe5e100efb5b0>
+  return {"bytecode": code.co_code.hex(), "constants": [constant(value) for value in code.co_consts],
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_mismatched_or_type_altered_run_receipt_is_not_scientific_evidence (test_store.StoreTests.test_mismatched_or_type_altered_run_receipt_is_not_scientific_evidence) ... ok
+test_missing_command_scope_cannot_mutate (test_store.StoreTests.test_missing_command_scope_cannot_mutate) ... ok
+test_missing_safe_open_primitive_refuses_capture (test_store.StoreTests.test_missing_safe_open_primitive_refuses_capture) ... ok
+test_nonstring_action_kind_is_refused_and_audited (test_store.StoreTests.test_nonstring_action_kind_is_refused_and_audited) ... ok
+test_nonstring_disposition_is_refused_and_audited (test_store.StoreTests.test_nonstring_disposition_is_refused_and_audited) ... ok
+test_old_context_blob_corruption_and_removal_are_detected (test_store.StoreTests.test_old_context_blob_corruption_and_removal_are_detected) ... /home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:137: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xe5e100efb5b0>
+  return {"type": "tuple", "value": [constant(item) for item in value]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:137: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xe5e10152fe20>
+  return {"type": "tuple", "value": [constant(item) for item in value]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_open_does_not_silently_recreate_a_deleted_table (test_store.StoreTests.test_open_does_not_silently_recreate_a_deleted_table) ... ok
+test_open_reports_malformed_genesis_as_integrity_error (test_store.StoreTests.test_open_reports_malformed_genesis_as_integrity_error) ... ok
+test_partial_capture_failure_rolls_back_blobs_and_state (test_store.StoreTests.test_partial_capture_failure_rolls_back_blobs_and_state) ... ok
+test_produce_verify_accept_uses_immutable_captured_bytes (test_store.StoreTests.test_produce_verify_accept_uses_immutable_captured_bytes) ... ok
+test_receipt_and_recorded_request_scalar_types_are_strict (test_store.StoreTests.test_receipt_and_recorded_request_scalar_types_are_strict) ... /opt/polyia/runtime/lib/python3.13/copy.py:221: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xe5e10152fe20>
+  for key, value in x.items():
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/polyia/runtime/lib/python3.13/copy.py:221: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xe5e100ef9d50>
+  for key, value in x.items():
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/polyia/runtime/lib/python3.13/copy.py:221: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xe5e100efa6b0>
+  for key, value in x.items():
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/polyia/runtime/lib/python3.13/copy.py:221: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xe5e100efb5b0>
+  for key, value in x.items():
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/polyia/runtime/lib/python3.13/copy.py:221: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xe5e100f51b70>
+  for key, value in x.items():
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/polyia/runtime/lib/python3.13/copy.py:221: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xe5e100f52a70>
+  for key, value in x.items():
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_receipt_corruption_cannot_forge_an_idempotent_success (test_store.StoreTests.test_receipt_corruption_cannot_forge_an_idempotent_success) ... ok
+test_refused_scientific_inputs_are_retained_with_no_pass_claim (test_store.StoreTests.test_refused_scientific_inputs_are_retained_with_no_pass_claim) ... ok
+test_requirement_scope_authority_and_acceptance_metadata_survive_restart (test_store.StoreTests.test_requirement_scope_authority_and_acceptance_metadata_survive_restart) ... ok
+test_scientific_contracts_run_real_registered_acceptance (test_store.StoreTests.test_scientific_contracts_run_real_registered_acceptance) ... ok
+test_scientific_inputs_have_exact_kernel_and_linked_run_roles (test_store.StoreTests.test_scientific_inputs_have_exact_kernel_and_linked_run_roles) ... /home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/polyia/store.py:141: ResourceWarning: unclosed database in <sqlite3.Connection object at 0xe5e100f51b70>
+  return {"bytecode": code.co_code.hex(), "constants": [constant(value) for value in code.co_consts],
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_strict_request_schema_refuses_forged_verifier_result (test_store.StoreTests.test_strict_request_schema_refuses_forged_verifier_result) ... ok
+test_submitted_guidance_survives_new_instance_with_exact_receipt (test_store.StoreTests.test_submitted_guidance_survives_new_instance_with_exact_receipt) ... ok
+test_token_named_artifact_is_rejected (test_store.StoreTests.test_token_named_artifact_is_rejected) ... ok
+test_two_connections_cannot_apply_the_same_revision (test_store.StoreTests.test_two_connections_cannot_apply_the_same_revision) ... ok
+test_unacknowledged_and_rejected_guidance_cannot_apply (test_store.StoreTests.test_unacknowledged_and_rejected_guidance_cannot_apply) ... ok
+test_unrelated_text_cannot_satisfy_scientific_production (test_store.StoreTests.test_unrelated_text_cannot_satisfy_scientific_production) ... ok
+test_unsafe_secret_runtime_and_escaping_symlink_artifacts_are_rejected (test_store.StoreTests.test_unsafe_secret_runtime_and_escaping_symlink_artifacts_are_rejected) ... ok
+test_unsupported_verifier_retains_failure_without_acceptance (test_store.StoreTests.test_unsupported_verifier_retains_failure_without_acceptance) ... ok
+test_verifier_runtime_failure_is_retained_and_cannot_accept (test_store.StoreTests.test_verifier_runtime_failure_is_retained_and_cannot_accept) ... ok
+test_workspace_drift_is_reported_without_rewriting_captured_history (test_store.StoreTests.test_workspace_drift_is_reported_without_rewriting_captured_history) ... ok
+
+----------------------------------------------------------------------
+Ran 190 tests in 13.747s
+
+OK

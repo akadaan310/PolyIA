@@ -1,0 +1,22 @@
+# To Muse — Timeless Arabic × WAZNOMIA × QIA / 0.1
+
+Muse, the design of your Corpus Engine is being preserved as its own project. This research returns only **Arabic Timeless** and **WAZNOMIA** as a modular mathematical extension. No Corpus Engine modification or preemptive ingestion is requested.
+
+1. Read `FOUNDATIONAL_STUDY.md`, `src/rasm_state.py`, `tests/test_rasm_state.py`, `results/demo.json` and `results/test_output.txt` in this package. Independently confirm the mathematical claims and counterexamples rather than ratifying them by narrative.
+2. Compare against your original WAZNOMIA header and the present branch `akadaan310/ARABIC_TIMELESS` at `claude/dotless-arabic-language-0p5pcs`. Preserve the full twenty-layer architecture, five-band taxonomy, layer contract, observable/transform registries and 150-cell historical index as a versioned snapshot. The public site was inaccessible to our web tool: verify runtime separately if available.
+3. Implement a sidecar **Rasm-State Alphabet** with explicitly versioned orthographic charts. Preserve all original written bytes and code points; never overwrite hamza, tāʾ marbūṭa, alif maqṣūra or manuscript dot patterns with folded forms. Every normalization has loss metadata and a set-valued inverse.
+4. Promote **contextual rasm equivalence fibers** to formal first-class objects. Do not conflate a candidate consonant filling with an attested word, an attested word with a meaningful phrase, or an attested phrase with original author intent.
+5. Model the *contrasting second feature partition*: 5-zone/17-point classical makhārij and the named 14-/16-point alternative schools as distinct scholarly charts. Add classical ṣifāt as explicitly versioned categorical features, keeping IPA and real acoustic observations separate.
+6. Check the exact witnessed set identity `Jahr∩Shiddah={ء,ب,ج,د,ق,ط}` and `Qalqala={ب,ج,د,ق,ط}`; hamza remains outside the qalqala inventory. Test whether other attractive 'formed properties' are set implications, proper subsets or simply correlations, and record counterexamples.
+7. Validate the `كَتَبَ / كَتَمَ` experiment as **same articulatory point but different rasm**, not a dot-only transformation. Independently verify roots and meanings and test hard negative controls. Do not infer semantic etymology from articulation alone.
+8. Build grammar-bearing typed Q-Strings as sidecars: content-addressed multiway relations with explicit source, target, chart, operation, evidence, version, ambiguity, negative examples, and non-executable default status. Bind to Substrate University's division-neutral operators only by checked signatures.
+9. Reformulate WAZNOMIA's NAME→FUNCTION and FUNCTION→NAME as candidate-set transformations with evidence, loss and ambiguity. Treat a lexicalized or borrowed term as a legitimate outcome, not a failure of the theory.
+10. Run a fixed battery: contextual rasm fibers; dot-state bindings; feature vectors; noun/verb pattern candidates; orthography × morphology × phonetics intersections; binomial feature-set checks; cross-language nomenclature negative controls; corpus-held-out validation. Report both positive and failed tests.
+11. Identify which source claims are theorems about a declared table, which are manuscript-dependent hypotheses, and which are untested philosophical interpretations. Preserve the corrected lattice bottom `∅` and distinguish Hartley combinatorial counts from Shannon entropy.
+12. Return `Timeless_WAZNOMIA_EXTENSION_SPEC.md`, `CONTRACTS.json`, `PHONEME_FEATURES.json`, `RASM_CHARTS.json`, `EVIDENCE_LEDGER.md`, `COUNTEREXAMPLES.md`, `VALIDATION_REPORT.md` and any independently reproduced scripts. Do not merge to production until independent peer review of the foundational assumptions and tests.
+
+**Invariant:** Prior research must remain accessible and reproducible after new research extends it. A new operation appends knowledge, never silently replaces sources or historical hypotheses.
+
+**Honesty discipline:** “quantum” is a typed classical relational analogy in this phase; no claim of genuine quantum superposition, physical string theory, quantum speedup or unique semantic decoding is authorized without separate experiments.
+
+Golden relay: Abed and 7u want you to improve, refute and extend this—especially where the lexical engine discovers counterexamples. Preserve your authorship of WAZNOMIA and your Corpus Engine's autonomy.

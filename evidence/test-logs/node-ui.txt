@@ -1,0 +1,52 @@
+TAP version 13
+# Subtest: actual UI connection shows state and enables only permitted controls
+ok 1 - actual UI connection shows state and enables only permitted controls
+  ---
+  duration_ms: 145.28288
+  type: 'test'
+  ...
+# Subtest: actual guidance form preserves markup as text and applies its explicit action
+ok 2 - actual guidance form preserves markup as text and applies its explicit action
+  ---
+  duration_ms: 39.467456
+  type: 'test'
+  ...
+# Subtest: switching session during a pending response does not leave controls locked
+ok 3 - switching session during a pending response does not leave controls locked
+  ---
+  duration_ms: 41.447978
+  type: 'test'
+  ...
+# Subtest: pagehide clears the visible session before a page can return from history cache
+ok 4 - pagehide clears the visible session before a page can return from history cache
+  ---
+  duration_ms: 6.174518
+  type: 'test'
+  ...
+# Subtest: actual experiment form records science and polling reads external transitions
+ok 5 - actual experiment form records science and polling reads external transitions
+  ---
+  duration_ms: 39.085543
+  type: 'test'
+  ...
+# Subtest: actual artifact controls produce verify accept and expose checkpoint integrity receipts
+ok 6 - actual artifact controls produce verify accept and expose checkpoint integrity receipts
+  ---
+  duration_ms: 86.908698
+  type: 'test'
+  ...
+# Subtest: malformed scientific parameters show a visible refusal without a mutation
+ok 7 - malformed scientific parameters show a visible refusal without a mutation
+  ---
+  duration_ms: 13.577393
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 435.215689

@@ -1,0 +1,17 @@
+elements: {'names_match': '17/17', 'symbols_match': '5/5', 'roundtrip_Z_1_999': True, 'injective_1_999': True, 'mismatches': []}
+alkanes: {
+"generated": 40,
+"textbook": 40,
+"exact_set_match": true,
+"only_ours": [],
+"only_textbook": [],
+"parse_roundtrip": "40/40",
+"parse_failures": [],
+"refusal_probe": {
+"2-ethylpentane": "admissible but not normal form -> 3-methylhexane",
+"1-methylbutane": "admissible but not normal form -> pentane",
+"2,2,2-trimethylpropane": "inadmissible: a carbon would carry more than 4 bonds",
+"3-methylfooane": "image failure: unknown parent stem 'foo'",
+"2,3-dimethylpentane": "admissible, normal form"
+}
+}

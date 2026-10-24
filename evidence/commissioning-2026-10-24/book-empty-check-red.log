@@ -1,0 +1,46 @@
+test_atlas_resolves_every_original_topic_and_declares_no_topic_admission (test_book_of_forms.BookOfFormsTests.test_atlas_resolves_every_original_topic_and_declares_no_topic_admission) ... ok
+test_deterministic_render_and_scoped_evidence (test_book_of_forms.BookOfFormsTests.test_deterministic_render_and_scoped_evidence) ... ERROR
+test_kernel_pass_without_actual_checks_cannot_publish (test_book_of_forms.BookOfFormsTests.test_kernel_pass_without_actual_checks_cannot_publish) ... 
+  test_kernel_pass_without_actual_checks_cannot_publish (test_book_of_forms.BookOfFormsTests.test_kernel_pass_without_actual_checks_cannot_publish) (checks=[]) ... FAIL
+  test_kernel_pass_without_actual_checks_cannot_publish (test_book_of_forms.BookOfFormsTests.test_kernel_pass_without_actual_checks_cannot_publish) (checks=[{'name': 'forged truth value', 'pass': 'false'}]) ... FAIL
+test_missing_duplicate_or_tampered_topic_source_refuses (test_book_of_forms.BookOfFormsTests.test_missing_duplicate_or_tampered_topic_source_refuses) ... ok
+test_no_vacuous_success_or_unknown_executor (test_book_of_forms.BookOfFormsTests.test_no_vacuous_success_or_unknown_executor) ... ok
+test_real_exercises_include_exact_results_and_expected_refusals (test_book_of_forms.BookOfFormsTests.test_real_exercises_include_exact_results_and_expected_refusals) ... ok
+test_wrong_expected_answer_cannot_publish_a_green_book (test_book_of_forms.BookOfFormsTests.test_wrong_expected_answer_cannot_publish_a_green_book) ... ok
+
+======================================================================
+ERROR: test_deterministic_render_and_scoped_evidence (test_book_of_forms.BookOfFormsTests.test_deterministic_render_and_scoped_evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/tests/test_book_of_forms.py", line 76, in test_deterministic_render_and_scoped_evidence
+    builder.build(ROOT, check=True)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/tools/build_book_of_forms.py", line 239, in build
+    require(source_bytes(root, EVIDENCE).decode('utf-8') == encoded, 'Exercise/source evidence is stale; run --write')
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/tools/build_book_of_forms.py", line 61, in require
+    raise BookError(message)
+book_builder.BookError: Exercise/source evidence is stale; run --write
+
+======================================================================
+FAIL: test_kernel_pass_without_actual_checks_cannot_publish (test_book_of_forms.BookOfFormsTests.test_kernel_pass_without_actual_checks_cannot_publish) (checks=[])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/tests/test_book_of_forms.py", line 87, in test_kernel_pass_without_actual_checks_cannot_publish
+    with self.assertRaises(builder.BookError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+AssertionError: BookError not raised
+
+======================================================================
+FAIL: test_kernel_pass_without_actual_checks_cannot_publish (test_book_of_forms.BookOfFormsTests.test_kernel_pass_without_actual_checks_cannot_publish) (checks=[{'name': 'forged truth value', 'pass': 'false'}])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-24-work-in-https-github-com-akadaan310/PolyIA/tests/test_book_of_forms.py", line 87, in test_kernel_pass_without_actual_checks_cannot_publish
+    with self.assertRaises(builder.BookError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+AssertionError: BookError not raised
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.316s
+
+FAILED (failures=2, errors=1)

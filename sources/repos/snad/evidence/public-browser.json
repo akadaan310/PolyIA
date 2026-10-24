@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "snad.public-browser/1",
+  "url": "https://snad-discourse-lab.daintyaspen11.chatgpt.site/",
+  "locus": "20:1",
+  "download": "snad-20-1.json",
+  "pageErrors": [],
+  "passed": true,
+  "exportJsonVerified": {
+    "analysisId": "quran:20:1",
+    "units": 1
+  }
+}

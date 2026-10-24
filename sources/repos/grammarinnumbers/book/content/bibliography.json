@@ -1,0 +1,540 @@
+{
+ "dedekind1888": {
+  "label": "Dedekind 1888",
+  "authors": "R. Dedekind",
+  "title": "Was sind und was sollen die Zahlen?",
+  "year": "1888",
+  "venue": "Vieweg, Braunschweig",
+  "verification": "unverified",
+  "verification_note": "Metadata from the collaborator's knowledge; not checked against records in session 1."
+ },
+ "peano1889": {
+  "label": "Peano 1889",
+  "authors": "G. Peano",
+  "title": "Arithmetices principia, nova methodo exposita",
+  "year": "1889",
+  "venue": "Bocca, Turin",
+  "verification": "unverified",
+  "verification_note": "Metadata from the collaborator's knowledge; not checked against records in session 1."
+ },
+ "church1941": {
+  "label": "Church 1941",
+  "authors": "A. Church",
+  "title": "The Calculi of Lambda-Conversion",
+  "year": "1941",
+  "venue": "Annals of Mathematics Studies 6, Princeton University Press",
+  "verification": "unverified",
+  "verification_note": "Metadata from the collaborator's knowledge; not checked against records in session 1."
+ },
+ "church1936": {
+  "label": "Church 1936",
+  "authors": "A. Church",
+  "title": "An unsolvable problem of elementary number theory",
+  "year": "1936",
+  "venue": "American Journal of Mathematics 58(2):345–363",
+  "verification": "unverified",
+  "verification_note": "Metadata from the collaborator's knowledge; not checked against records in session 1."
+ },
+ "godel1931": {
+  "label": "Gödel 1931",
+  "authors": "K. Gödel",
+  "title": "Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I",
+  "year": "1931",
+  "venue": "Monatshefte für Mathematik und Physik 38:173–198",
+  "verification": "unverified",
+  "verification_note": "Metadata from the collaborator's knowledge; not checked against records in session 1."
+ },
+ "knuth1997": {
+  "label": "Knuth 1997",
+  "authors": "D. E. Knuth",
+  "title": "The Art of Computer Programming, Vol. 2: Seminumerical Algorithms (3rd ed.)",
+  "year": "1997",
+  "venue": "Addison-Wesley",
+  "verification": "unverified",
+  "verification_note": "Metadata from the collaborator's knowledge; not checked against records in session 1.",
+  "note": "§4.1 positional number systems; §4.3 multiple-precision arithmetic (Algorithm D); §4.5.3 analysis of Euclid's algorithm; §4.6.3 evaluation of powers, addition chains."
+ },
+ "clrs2009": {
+  "label": "Cormen et al. 2009",
+  "authors": "T. H. Cormen, C. E. Leiserson, R. L. Rivest, C. Stein",
+  "title": "Introduction to Algorithms (3rd ed.)",
+  "year": "2009",
+  "venue": "MIT Press",
+  "verification": "unverified",
+  "verification_note": "Metadata from the collaborator's knowledge; not checked against records in session 1.",
+  "note": "§17.1: amortized analysis of the binary counter."
+ },
+ "brentzimmermann2010": {
+  "label": "Brent & Zimmermann 2010",
+  "authors": "R. P. Brent, P. Zimmermann",
+  "title": "Modern Computer Arithmetic",
+  "year": "2010",
+  "venue": "Cambridge University Press",
+  "verification": "unverified",
+  "verification_note": "Metadata from the collaborator's knowledge; not checked against records in session 1."
+ },
+ "smullyan1961": {
+  "label": "Smullyan 1961",
+  "authors": "R. M. Smullyan",
+  "title": "Theory of Formal Systems",
+  "year": "1961",
+  "venue": "Annals of Mathematics Studies 47, Princeton University Press",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read.",
+  "note": "Uses the term k-adic for bijective base-k notation (per secondary sources)."
+ },
+ "forslund1995": {
+  "label": "Forslund 1995",
+  "authors": "R. R. Forslund",
+  "title": "A logical alternative to the existing positional number system",
+  "year": "1995",
+  "venue": "Southwest Journal of Pure and Applied Mathematics 1:27–29",
+  "verification": "secondary-only",
+  "verification_note": "Standard/specification document; edition and section cited from the document's public version; not re-checked in session 1.",
+  "note": "Cited via OEIS A214679; not consulted."
+ },
+ "charikar2005": {
+  "label": "Charikar et al. 2005",
+  "authors": "M. Charikar, E. Lehman, D. Liu, R. Panigrahy, M. Prabhakaran, A. Sahai, A. Shelat",
+  "title": "The smallest grammar problem",
+  "year": "2005",
+  "venue": "IEEE Transactions on Information Theory 51(7):2554–2576",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read.",
+  "doi": "10.1109/TIT.2005.850116"
+ },
+ "buchi1960": {
+  "label": "Büchi 1960",
+  "authors": "J. R. Büchi",
+  "title": "Weak second-order arithmetic and finite automata",
+  "year": "1960",
+  "venue": "Zeitschrift für mathematische Logik und Grundlagen der Mathematik 6:66–92",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read."
+ },
+ "cobham1969": {
+  "label": "Cobham 1969",
+  "authors": "A. Cobham",
+  "title": "On the base-dependence of sets of numbers recognizable by finite automata",
+  "year": "1969",
+  "venue": "Mathematical Systems Theory 3:186–192",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read.",
+  "doi": "10.1007/BF01746527"
+ },
+ "hodgson1983": {
+  "label": "Hodgson 1983",
+  "authors": "B. R. Hodgson",
+  "title": "Décidabilité par automate fini",
+  "year": "1983",
+  "venue": "Annales des Sciences Mathématiques du Québec 7(1):39–57",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read."
+ },
+ "khoussainov1995": {
+  "label": "Khoussainov & Nerode 1995",
+  "authors": "B. Khoussainov, A. Nerode",
+  "title": "Automatic presentations of structures",
+  "year": "1995",
+  "venue": "Logic and Computational Complexity, LNCS 960, Springer, 367–392",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read.",
+  "doi": "10.1007/3-540-60178-3_93"
+ },
+ "blumensath2000": {
+  "label": "Blumensath & Grädel 2000",
+  "authors": "A. Blumensath, E. Grädel",
+  "title": "Automatic structures",
+  "year": "2000",
+  "venue": "Proceedings of the 15th IEEE Symposium on Logic in Computer Science (LICS), 51–62",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read."
+ },
+ "ladner1980": {
+  "label": "Ladner & Fischer 1980",
+  "authors": "R. E. Ladner, M. J. Fischer",
+  "title": "Parallel prefix computation",
+  "year": "1980",
+  "venue": "Journal of the ACM 27(4):831–838",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read.",
+  "doi": "10.1145/322217.322232"
+ },
+ "brentkung1982": {
+  "label": "Brent & Kung 1982",
+  "authors": "R. P. Brent, H. T. Kung",
+  "title": "A regular layout for parallel adders",
+  "year": "1982",
+  "venue": "IEEE Transactions on Computers C-31(3):260–264",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read."
+ },
+ "koggestone1973": {
+  "label": "Kogge & Stone 1973",
+  "authors": "P. M. Kogge, H. S. Stone",
+  "title": "A parallel algorithm for the efficient solution of a general class of recurrence equations",
+  "year": "1973",
+  "venue": "IEEE Transactions on Computers C-22(8):786–793",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read."
+ },
+ "sklansky1960": {
+  "label": "Sklansky 1960",
+  "authors": "J. Sklansky",
+  "title": "Conditional-sum addition logic",
+  "year": "1960",
+  "venue": "IRE Transactions on Electronic Computers EC-9:226–231",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read."
+ },
+ "blelloch1990": {
+  "label": "Blelloch 1990",
+  "authors": "G. E. Blelloch",
+  "title": "Prefix sums and their applications",
+  "year": "1990",
+  "venue": "Technical report CMU-CS-90-190, Carnegie Mellon University",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read.",
+  "url": "https://www.cs.cmu.edu/~scandal/papers/CMU-CS-90-190.html"
+ },
+ "bgvn1946": {
+  "label": "Burks, Goldstine & von Neumann 1946",
+  "authors": "A. W. Burks, H. H. Goldstine, J. von Neumann",
+  "title": "Preliminary discussion of the logical design of an electronic computing instrument",
+  "year": "1946",
+  "venue": "Report to the U.S. Army Ordnance Department, Institute for Advanced Study",
+  "verification": "secondary-only",
+  "verification_note": "Standard/specification document; edition and section cited from the document's public version; not re-checked in session 1.",
+  "note": "The log₂ n average carry-chain argument is cited via secondary sources."
+ },
+ "knuth1978": {
+  "label": "Knuth 1978",
+  "authors": "D. E. Knuth",
+  "title": "The average time for carry propagation",
+  "year": "1978",
+  "venue": "Indagationes Mathematicae (Proc. KNAW) 40:238–242",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read."
+ },
+ "karatsuba1962": {
+  "label": "Karatsuba & Ofman 1962",
+  "authors": "A. Karatsuba, Yu. Ofman",
+  "title": "Multiplication of many-digital numbers by automatic computers",
+  "year": "1962",
+  "venue": "Doklady Akademii Nauk SSSR 145:293–294",
+  "verification": "unverified",
+  "verification_note": "Metadata from the collaborator's knowledge; not checked against records in session 1."
+ },
+ "harvey2021": {
+  "label": "Harvey & van der Hoeven 2021",
+  "authors": "D. Harvey, J. van der Hoeven",
+  "title": "Integer multiplication in time O(n log n)",
+  "year": "2021",
+  "venue": "Annals of Mathematics 193(2):563–617",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read.",
+  "doi": "10.4007/annals.2021.193.2.4"
+ },
+ "ieee754": {
+  "label": "IEEE 754-2019",
+  "authors": "IEEE Computer Society",
+  "title": "IEEE Standard for Floating-Point Arithmetic (IEEE Std 754-2019)",
+  "year": "2019",
+  "venue": "IEEE",
+  "verification": "secondary-only",
+  "verification_note": "Standard/specification document; edition and section cited from the document's public version; not re-checked in session 1.",
+  "doi": "10.1109/IEEESTD.2019.8766229"
+ },
+ "goldberg1991": {
+  "label": "Goldberg 1991",
+  "authors": "D. Goldberg",
+  "title": "What every computer scientist should know about floating-point arithmetic",
+  "year": "1991",
+  "venue": "ACM Computing Surveys 23(1):5–48",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read.",
+  "doi": "10.1145/103162.103163"
+ },
+ "kahan1987": {
+  "label": "Kahan 1987",
+  "authors": "W. Kahan",
+  "title": "Branch cuts for complex elementary functions, or much ado about nothing's sign bit",
+  "year": "1987",
+  "venue": "In A. Iserles, M. J. D. Powell (eds.), The State of the Art in Numerical Analysis, Clarendon Press, 165–211",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read."
+ },
+ "carlstrom2004": {
+  "label": "Carlström 2004",
+  "authors": "J. Carlström",
+  "title": "Wheels — on division by zero",
+  "year": "2004",
+  "venue": "Mathematical Structures in Computer Science 14(1):143–184",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read.",
+  "doi": "10.1017/S0960129503004110"
+ },
+ "bergstra2007": {
+  "label": "Bergstra & Tucker 2007",
+  "authors": "J. A. Bergstra, J. V. Tucker",
+  "title": "The rational numbers as an abstract data type",
+  "year": "2007",
+  "venue": "Journal of the ACM 54(2), Article 7",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read.",
+  "doi": "10.1145/1219092.1219095"
+ },
+ "mathlib2020": {
+  "label": "mathlib Community 2020",
+  "authors": "The mathlib Community",
+  "title": "The Lean mathematical library",
+  "year": "2020",
+  "venue": "Proceedings of the 9th ACM SIGPLAN International Conference on Certified Programs and Proofs (CPP 2020), 367–381",
+  "verification": "unverified",
+  "verification_note": "Metadata from the collaborator's knowledge; not checked against records in session 1.",
+  "doi": "10.1145/3372885.3373824",
+  "note": "The convention 0⁻¹ = 0 was confirmed in mathlib's online documentation (Mathlib.Algebra.GroupWithZero), 2026-10-08."
+ },
+ "plofker2009": {
+  "label": "Plofker 2009",
+  "authors": "K. Plofker",
+  "title": "Mathematics in India",
+  "year": "2009",
+  "venue": "Princeton University Press",
+  "verification": "unverified",
+  "verification_note": "Metadata from the collaborator's knowledge; not checked against records in session 1."
+ },
+ "mactutor_brahmagupta": {
+  "label": "O'Connor & Robertson (MacTutor)",
+  "authors": "J. J. O'Connor, E. F. Robertson",
+  "title": "Brahmagupta (biography)",
+  "year": "2000",
+  "venue": "MacTutor History of Mathematics Archive, University of St Andrews",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read.",
+  "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Brahmagupta/"
+ },
+ "riscv": {
+  "label": "RISC-V ISA Manual",
+  "authors": "RISC-V International",
+  "title": "The RISC-V Instruction Set Manual, Volume I: Unprivileged ISA — M extension",
+  "year": "2019",
+  "venue": "RISC-V International (ratified 20191213; later versions keep the division semantics)",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read.",
+  "url": "https://docs.riscv.org/reference/isa/unpriv/m-st-ext.html",
+  "note": "Division-by-zero and overflow results and their rationale confirmed in the current online text."
+ },
+ "intelsdm": {
+  "label": "Intel SDM",
+  "authors": "Intel Corporation",
+  "title": "Intel 64 and IA-32 Architectures Software Developer's Manual, Vol. 2 (IDIV, DIV)",
+  "year": "2024",
+  "venue": "Intel",
+  "verification": "secondary-only",
+  "verification_note": "Standard/specification document; edition and section cited from the document's public version; not re-checked in session 1."
+ },
+ "armarm": {
+  "label": "Arm ARM",
+  "authors": "Arm Ltd.",
+  "title": "Arm Architecture Reference Manual for A-profile architecture (DDI 0487), SDIV/UDIV",
+  "year": "2024",
+  "venue": "Arm Ltd.",
+  "verification": "secondary-only",
+  "verification_note": "Standard/specification document; edition and section cited from the document's public version; not re-checked in session 1.",
+  "note": "No-trap, zero-result behaviour of AArch64 integer division confirmed via secondary sources; the pseudocode was not consulted."
+ },
+ "isoc17": {
+  "label": "ISO C17",
+  "authors": "ISO/IEC JTC1/SC22/WG14",
+  "title": "ISO/IEC 9899:2018, Programming languages — C (§6.5.5 multiplicative operators)",
+  "year": "2018",
+  "venue": "ISO",
+  "verification": "secondary-only",
+  "verification_note": "Standard/specification document; edition and section cited from the document's public version; not re-checked in session 1."
+ },
+ "jls21": {
+  "label": "JLS SE 21",
+  "authors": "J. Gosling et al.",
+  "title": "The Java Language Specification, Java SE 21 Edition (§15.17.2)",
+  "year": "2023",
+  "venue": "Oracle",
+  "verification": "secondary-only",
+  "verification_note": "Standard/specification document; edition and section cited from the document's public version; not re-checked in session 1."
+ },
+ "rustref": {
+  "label": "Rust Reference",
+  "authors": "The Rust Project",
+  "title": "The Rust Reference: arithmetic and logical binary operators; integer overflow",
+  "year": "2024",
+  "venue": "rust-lang.org",
+  "verification": "secondary-only",
+  "verification_note": "Standard/specification document; edition and section cited from the document's public version; not re-checked in session 1."
+ },
+ "gospec": {
+  "label": "Go Spec",
+  "authors": "The Go Authors",
+  "title": "The Go Programming Language Specification: arithmetic operators, integer operators",
+  "year": "2024",
+  "venue": "go.dev",
+  "verification": "secondary-only",
+  "verification_note": "Standard/specification document; edition and section cited from the document's public version; not re-checked in session 1."
+ },
+ "ecma262": {
+  "label": "ECMA-262",
+  "authors": "Ecma International",
+  "title": "ECMAScript Language Specification (Number::divide, BigInt::divide)",
+  "year": "2024",
+  "venue": "Ecma International",
+  "verification": "secondary-only",
+  "verification_note": "Standard/specification document; edition and section cited from the document's public version; not re-checked in session 1."
+ },
+ "pyref": {
+  "label": "Python Reference",
+  "authors": "Python Software Foundation",
+  "title": "The Python Language Reference, §6.7 Binary arithmetic operations",
+  "year": "2024",
+  "venue": "python.org",
+  "verification": "secondary-only",
+  "verification_note": "Standard/specification document; edition and section cited from the document's public version; not re-checked in session 1."
+ },
+ "cve2020_10735": {
+  "label": "CVE-2020-10735",
+  "authors": "Python Software Foundation",
+  "title": "Integer string conversion length limitation (CVE-2020-10735)",
+  "year": "2022",
+  "venue": "Python documentation, stdtypes: int_max_str_digits",
+  "verification": "secondary-only",
+  "verification_note": "Standard/specification document; edition and section cited from the document's public version; not re-checked in session 1."
+ },
+ "lame1844": {
+  "label": "Lamé 1844",
+  "authors": "G. Lamé",
+  "title": "Note sur la limite du nombre des divisions dans la recherche du plus grand commun diviseur entre deux nombres entiers",
+  "year": "1844",
+  "venue": "Comptes rendus de l'Académie des sciences 19:867–870",
+  "verification": "unverified",
+  "verification_note": "Metadata from the collaborator's knowledge; not checked against records in session 1."
+ },
+ "dixon1970": {
+  "label": "Dixon 1970",
+  "authors": "J. D. Dixon",
+  "title": "The number of steps in the Euclidean algorithm",
+  "year": "1970",
+  "venue": "Journal of Number Theory 2:414–422",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read."
+ },
+ "heilbronn1969": {
+  "label": "Heilbronn 1969",
+  "authors": "H. Heilbronn",
+  "title": "On the average length of a class of finite continued fractions",
+  "year": "1969",
+  "venue": "In Number Theory and Analysis (Papers in honor of Edmund Landau), Plenum, 87–96",
+  "verification": "unverified",
+  "verification_note": "Metadata from the collaborator's knowledge; not checked against records in session 1."
+ },
+ "porter1975": {
+  "label": "Porter 1975",
+  "authors": "J. W. Porter",
+  "title": "On a theorem of Heilbronn",
+  "year": "1975",
+  "venue": "Mathematika 22:20–28",
+  "verification": "unverified",
+  "verification_note": "Metadata from the collaborator's knowledge; not checked against records in session 1.",
+  "note": "Existence and year confirmed via secondary sources; title and pages not confirmed."
+ },
+ "stein1967": {
+  "label": "Stein 1967",
+  "authors": "J. Stein",
+  "title": "Computational problems associated with Racah algebra",
+  "year": "1967",
+  "venue": "Journal of Computational Physics 1(3):397–405",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read."
+ },
+ "korselt1899": {
+  "label": "Korselt 1899",
+  "authors": "A. Korselt",
+  "title": "Problème chinois",
+  "year": "1899",
+  "venue": "L'Intermédiaire des Mathématiciens 6:142–143",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read."
+ },
+ "agp1994": {
+  "label": "Alford, Granville & Pomerance 1994",
+  "authors": "W. R. Alford, A. Granville, C. Pomerance",
+  "title": "There are infinitely many Carmichael numbers",
+  "year": "1994",
+  "venue": "Annals of Mathematics 139:703–722",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read."
+ },
+ "miller1976": {
+  "label": "Miller 1976",
+  "authors": "G. L. Miller",
+  "title": "Riemann's hypothesis and tests for primality",
+  "year": "1976",
+  "venue": "Journal of Computer and System Sciences 13(3):300–317",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read."
+ },
+ "rabin1980": {
+  "label": "Rabin 1980",
+  "authors": "M. O. Rabin",
+  "title": "Probabilistic algorithm for testing primality",
+  "year": "1980",
+  "venue": "Journal of Number Theory 12:128–138",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read."
+ },
+ "psw1980": {
+  "label": "Pomerance, Selfridge & Wagstaff 1980",
+  "authors": "C. Pomerance, J. L. Selfridge, S. S. Wagstaff Jr.",
+  "title": "The pseudoprimes to 25·10⁹",
+  "year": "1980",
+  "venue": "Mathematics of Computation 35:1003–1026",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read."
+ },
+ "sorenson2017": {
+  "label": "Sorenson & Webster 2017",
+  "authors": "J. Sorenson, J. Webster",
+  "title": "Strong pseudoprimes to twelve prime bases",
+  "year": "2017",
+  "venue": "Mathematics of Computation 86:985–1003",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read.",
+  "doi": "10.1090/mcom/3134",
+  "note": "The numerical value of ψ₁₃ is taken from secondary sources."
+ },
+ "pollard1975": {
+  "label": "Pollard 1975",
+  "authors": "J. M. Pollard",
+  "title": "A Monte Carlo method for factorization",
+  "year": "1975",
+  "venue": "BIT 15:331–334",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read."
+ },
+ "euclid": {
+  "label": "Euclid, Elements",
+  "authors": "Euclid",
+  "title": "Elements, Book VII, Propositions 1–2",
+  "year": "c. 300 BCE",
+  "venue": "c. 300 BCE; e.g. T. L. Heath (trans.), Cambridge University Press 1908",
+  "verification": "unverified",
+  "verification_note": "Metadata from the collaborator's knowledge; not checked against records in session 1."
+ },
+ "cgt2026": {
+  "label": "Kadaan (CGT) 2026",
+  "authors": "A. Kadaan (research program); Claude (research assistant)",
+  "title": "Computational Grammar Theory: Structure, Operation, and the Cost of Resolution — research ledger and working edition 0.1",
+  "year": "2026",
+  "venue": "github.com/akadaan310/computationalgrammartheory (read-only reference, commit b3a29f3)",
+  "verification": "metadata-verified",
+  "verification_note": "Bibliographic metadata checked by web search against publisher, DBLP, institutional or library records (2026-10-08); full text not read.",
+  "url": "https://github.com/akadaan310/computationalgrammartheory"
+ }
+}

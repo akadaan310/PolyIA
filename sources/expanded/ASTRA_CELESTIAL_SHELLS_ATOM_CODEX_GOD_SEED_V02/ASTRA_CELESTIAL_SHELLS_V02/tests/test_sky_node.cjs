@@ -1,0 +1,15 @@
+const assert=require('node:assert/strict');
+const {SkyEngine,vec,rotate,project,DEST}=require('../web/sky.js');
+const {NOTES}=require('../web/audio.js');
+const {StarGPU}=require('../web/star-gpu.js');
+const v=vec(180,0);assert.ok(Math.abs(Math.hypot(...v)-1)<1e-12);
+const y=rotate(v,.5,.4);assert.ok(Math.abs(Math.hypot(...y)-1)<1e-12);
+const back=project([0,0,1],800,500,4);assert.ok(back && back.x===400);
+assert.equal(NOTES.length,7);for(let i=1;i<NOTES.length;i++)assert.ok(NOTES[i]>NOTES[i-1]);
+const sk=new SkyEngine([[123,0,0,0,.2],[777,8,7,1,.4]]);assert.equal(sk.stars.length,2);assert.equal(sk.level,0);
+sk.expand();assert.equal(sk.level,1);sk.contract();assert.equal(sk.level,0);
+let event=null;sk.setSelectHandler(x=>event=x);assert.equal(sk.travel('Jupiter'),true);assert.equal(sk.level,2);assert.equal(event.name,'Jupiter');
+assert.equal(sk.travel('does-not-exist'),false);assert.equal(sk.selected,'Jupiter');
+for(let i=0;i<12;i++)sk.expand();assert.equal(sk.level,3);sk.contract();assert.equal(sk.level,2);
+assert.equal(sk.diagnostic().ephemerides,'NOT_CONNECTED');assert.ok(DEST.Mars.description.includes('not'));
+console.log('ASTRA celestial math and vocabulary: 14 assertions OK');

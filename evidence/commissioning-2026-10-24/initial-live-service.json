@@ -1,0 +1,1789 @@
+{
+  "schema_version": 1,
+  "run_id": "live-742694d0c94548f7a8e4cdc08c36d4cf",
+  "result": "PASS",
+  "scope": "Actual target HTTPS commissioning service probe; not production hosting or full commission acceptance",
+  "origin": "https://mayor-replacing-wildlife-medications.trycloudflare.com",
+  "protocol_version": "1.0.0",
+  "host": "ollama-a1",
+  "python": "3.13.17",
+  "sqlite": "3.53.1",
+  "release": "/opt/polyia/current",
+  "kernel_sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+  "process_restart": {
+    "before_pid": "501976",
+    "after_pid": "502141"
+  },
+  "revision": 15,
+  "head": "14cec676766dd7bec9048b0958aea272020ab120920e827ea9c2e58ad0eda102",
+  "checkpoint": "cp-00000015",
+  "checks": [
+    {
+      "name": "actual HTTPS discovery",
+      "pass": true
+    },
+    {
+      "name": "declared no inference",
+      "pass": true
+    },
+    {
+      "name": "unauthenticated state refused",
+      "pass": true
+    },
+    {
+      "name": "observer mutation refused without semantic change",
+      "pass": true
+    },
+    {
+      "name": "polling is observational",
+      "pass": true
+    },
+    {
+      "name": "guidance actually applied",
+      "pass": true
+    },
+    {
+      "name": "registered exact seed run",
+      "pass": true
+    },
+    {
+      "name": "BOOT-001 actual verifier passed",
+      "pass": true
+    },
+    {
+      "name": "BOOT-002 actual verifier passed",
+      "pass": true
+    },
+    {
+      "name": "checkpoint sources captured",
+      "pass": true
+    },
+    {
+      "name": "actual supervised process restart",
+      "pass": true
+    },
+    {
+      "name": "restart preserves revision and event head",
+      "pass": true
+    },
+    {
+      "name": "restart preserves checkpoint bytes",
+      "pass": true
+    },
+    {
+      "name": "lost-response exact retry returns original receipt",
+      "pass": true
+    },
+    {
+      "name": "retry did not apply twice",
+      "pass": true
+    },
+    {
+      "name": "full ledger integrity",
+      "pass": true
+    },
+    {
+      "name": "bootstrap does not commission mission",
+      "pass": true
+    }
+  ],
+  "commands": [
+    {
+      "request": {
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-0",
+        "expected_revision": 0,
+        "kind": "guidance.submit",
+        "payload": {
+          "target": "PIA-008",
+          "text": "Commissioning operator applies the owner directive: prioritize the actual live service and retain full mission NOT_COMMISSIONED.",
+          "action": {
+            "kind": "set_priority",
+            "target": "PIA-008",
+            "priority": 9
+          }
+        }
+      },
+      "receipt": {
+        "ok": true,
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-0",
+        "actor": "operator",
+        "revision": 1,
+        "head": "9020d63cb727c94ecf836ba234fac2660faffd6ecc2d431dfc0e8b0212d91c3c",
+        "result": {
+          "guidance_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-0",
+          "status": "SUBMITTED"
+        }
+      }
+    },
+    {
+      "request": {
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-1",
+        "expected_revision": 1,
+        "kind": "guidance.ack",
+        "payload": {
+          "guidance_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-0",
+          "disposition": "ACKNOWLEDGED",
+          "reason": "Read current owner directive and GOD_SEED PIA-008; actual target service is running."
+        }
+      },
+      "receipt": {
+        "ok": true,
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-1",
+        "actor": "operator",
+        "revision": 2,
+        "head": "650ba4e569caa4ac0c7aabfa5e750961c09eeae6e8d354e5e1986115622277c7",
+        "result": {
+          "guidance_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-0",
+          "status": "ACKNOWLEDGED"
+        }
+      }
+    },
+    {
+      "request": {
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-2",
+        "expected_revision": 2,
+        "kind": "guidance.apply",
+        "payload": {
+          "guidance_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-0"
+        }
+      },
+      "receipt": {
+        "ok": true,
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-2",
+        "actor": "operator",
+        "revision": 3,
+        "head": "9286ee4bcee7c1b22b6bf299750f38f5ecdeda5401219e9b4b09b6da487bd83b",
+        "result": {
+          "guidance_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-0",
+          "status": "APPLIED",
+          "applied_revision": 3,
+          "effects": [
+            {
+              "path": "requirements.PIA-008.priority",
+              "before": 5,
+              "after": 9
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-3",
+        "expected_revision": 3,
+        "kind": "guidance.submit",
+        "payload": {
+          "target": "PIA-181",
+          "text": "HOLD permanent public hosting: actual inspection URL is a temporary Cloudflare tunnel. Stable authorized hostname and production boundary still required."
+        }
+      },
+      "receipt": {
+        "ok": true,
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-3",
+        "actor": "operator",
+        "revision": 4,
+        "head": "2cb8369acb3c4ccf86f2d3cb271140ffb51dccbee6cbdfd572cf9dbd8398bf92",
+        "result": {
+          "guidance_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-3",
+          "status": "SUBMITTED"
+        }
+      }
+    },
+    {
+      "request": {
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-4",
+        "expected_revision": 4,
+        "kind": "guidance.ack",
+        "payload": {
+          "guidance_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-3",
+          "disposition": "DEFERRED",
+          "reason": "Keep the affected acceptance gate open; continue independent authorized commissioning work."
+        }
+      },
+      "receipt": {
+        "ok": true,
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-4",
+        "actor": "operator",
+        "revision": 5,
+        "head": "587db5ff9a6d2121fa00bf54dbbeec7802b772418a49206d63d8fbd9809bf9cf",
+        "result": {
+          "guidance_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-3",
+          "status": "DEFERRED"
+        }
+      }
+    },
+    {
+      "request": {
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-5",
+        "expected_revision": 5,
+        "kind": "guidance.submit",
+        "payload": {
+          "target": "PIA-015",
+          "text": "HOLD exact Book of Forms identity: MISSING-BOOK-OF-FORMS remains unresolved; preserved Library of Forms is not silently substituted."
+        }
+      },
+      "receipt": {
+        "ok": true,
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-5",
+        "actor": "operator",
+        "revision": 6,
+        "head": "5fd9087c6ea293afc15f1c2e1adbc3fa7ecd472620b9ccc8c57ddd0287e0537c",
+        "result": {
+          "guidance_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-5",
+          "status": "SUBMITTED"
+        }
+      }
+    },
+    {
+      "request": {
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-6",
+        "expected_revision": 6,
+        "kind": "guidance.ack",
+        "payload": {
+          "guidance_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-5",
+          "disposition": "DEFERRED",
+          "reason": "Keep the affected acceptance gate open; continue independent authorized commissioning work."
+        }
+      },
+      "receipt": {
+        "ok": true,
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-6",
+        "actor": "operator",
+        "revision": 7,
+        "head": "20c5f97100ca571c82957cdb54ace6b20c09b9e7d37d0684956fa2c5d0a7a809",
+        "result": {
+          "guidance_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-5",
+          "status": "DEFERRED"
+        }
+      }
+    },
+    {
+      "request": {
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-7",
+        "expected_revision": 7,
+        "kind": "experiment.run",
+        "payload": {
+          "name": "acceptance",
+          "parameters": {}
+        }
+      },
+      "receipt": {
+        "ok": true,
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-7",
+        "actor": "operator",
+        "revision": 8,
+        "head": "ab02349f9545251f3c81a6f8a43257a50564c941bd8b674a9b0ccdc29c4b6942",
+        "result": {
+          "run": {
+            "id": "live-742694d0c94548f7a8e4cdc08c36d4cf-7",
+            "name": "acceptance",
+            "parameters": {},
+            "revision": 8,
+            "actor": "operator",
+            "timestamp": "2026-10-24T07:33:59.446501+00:00",
+            "code_identity": {
+              "module": "polyia.experiments",
+              "sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+              "loaded_code_sha256": "b5c12e42c4cb101d20c0c10d3bf56415c334633ee4a54f441734353efaceea64",
+              "package_version": "1.1.0",
+              "python_version": "3.13.17",
+              "source_binding": "PINNED_SOURCE_MATCHES_LOADED_CODE"
+            },
+            "versions": {
+              "python": "3.13.17",
+              "sqlite": "3.53.1",
+              "polyia": "1.1.0"
+            },
+            "report": {
+              "status": "PASS",
+              "evidence_class": "EXACTLY_CHECKED",
+              "result": {
+                "families": {
+                  "polynomial": {
+                    "status": "PASS",
+                    "evidence_class": "EXACTLY_CHECKED",
+                    "result": {
+                      "coefficient_field": "Q",
+                      "coefficient_order": "ascending powers of x",
+                      "dividend": [
+                        "4",
+                        "-2",
+                        "0",
+                        "1"
+                      ],
+                      "divisor": [
+                        "-1",
+                        "1"
+                      ],
+                      "quotient": [
+                        "-1",
+                        "1",
+                        "1"
+                      ],
+                      "remainder": [
+                        "3"
+                      ],
+                      "reconstructed": [
+                        "4",
+                        "-2",
+                        "0",
+                        "1"
+                      ],
+                      "division_law": "a = b*q + r",
+                      "domain": [
+                        "polynomial division over Q[x]",
+                        "b is not the zero polynomial",
+                        "rational-function and derivative interpretations require b(x) != 0"
+                      ],
+                      "derivation": [
+                        "a=bq+r",
+                        "a\u2032=b\u2032q+bq\u2032+r\u2032",
+                        "(a/b)\u2032=(a\u2032b-ab\u2032)/b^2",
+                        "(q+r/b)\u2032=q\u2032+(r\u2032b-rb\u2032)/b^2"
+                      ],
+                      "quotient_derivative_numerator": [
+                        "-2",
+                        "0",
+                        "-3",
+                        "2"
+                      ],
+                      "divided_form_derivative_numerator": [
+                        "-2",
+                        "0",
+                        "-3",
+                        "2"
+                      ],
+                      "common_denominator": [
+                        "1",
+                        "-2",
+                        "1"
+                      ],
+                      "factorization_example": {
+                        "polynomial": [
+                          "-1",
+                          "0",
+                          "1"
+                        ],
+                        "factors": [
+                          [
+                            "-1",
+                            "1"
+                          ],
+                          [
+                            "1",
+                            "1"
+                          ]
+                        ],
+                        "cancellation_domain": "(x^2-1)/(x-1)=x+1 only when x != 1; the original excluded point remains excluded"
+                      },
+                      "source_contracts": [
+                        "PIA polynomial/evidence acceptance family",
+                        "UCG sections 085, 090, 091",
+                        "GIN field/image/kernel distinctions"
+                      ]
+                    },
+                    "checks": [
+                      {
+                        "name": "division coefficient identity",
+                        "pass": true
+                      },
+                      {
+                        "name": "remainder degree bound",
+                        "pass": true
+                      },
+                      {
+                        "name": "product-rule coefficient identity",
+                        "pass": true
+                      },
+                      {
+                        "name": "quotient-rule coefficient identity",
+                        "pass": true
+                      },
+                      {
+                        "name": "factorization coefficient identity",
+                        "pass": true
+                      }
+                    ],
+                    "limitations": [
+                      "This certifies exact identities over Q for the supplied finite polynomials, not arbitrary symbolic functions.",
+                      "Domain exclusion is preserved symbolically; no real-root isolation is claimed.",
+                      "The fixed factorization example is not a general polynomial factorization engine."
+                    ],
+                    "kernel_version": "1.0.0",
+                    "llm_inference": false
+                  },
+                  "grammar-promotion": {
+                    "status": "PASS",
+                    "evidence_class": "EXACTLY_CHECKED",
+                    "result": {
+                      "grammar": {
+                        "alphabet": [
+                          "a",
+                          "b"
+                        ],
+                        "kind": "finite",
+                        "words": [
+                          [
+                            "a"
+                          ],
+                          [
+                            "b"
+                          ],
+                          [
+                            "a",
+                            "b"
+                          ]
+                        ]
+                      },
+                      "grammar_digest": "0a4d0b13681e1765b9a0ba426ac789b61759b3e0bfa7d0e47c166aa36873f2d9",
+                      "promoted_letter": {
+                        "kind": "GrammarLetter",
+                        "id": "G:0a4d0b13681e1765b9a0ba426ac789b61759b3e0bfa7d0e47c166aa36873f2d9",
+                        "source_grammar": "0a4d0b13681e1765b9a0ba426ac789b61759b3e0bfa7d0e47c166aa36873f2d9",
+                        "expansion": {
+                          "alphabet": [
+                            "a",
+                            "b"
+                          ],
+                          "kind": "finite",
+                          "words": [
+                            [
+                              "a"
+                            ],
+                            [
+                              "b"
+                            ],
+                            [
+                              "a",
+                              "b"
+                            ]
+                          ]
+                        },
+                        "interpretation": "finite-word-monoid",
+                        "loss": [],
+                        "version": 1
+                      },
+                      "higher_alphabet": {
+                        "alphabet": [
+                          "G:0a4d0b13681e1765b9a0ba426ac789b61759b3e0bfa7d0e47c166aa36873f2d9"
+                        ],
+                        "word": [
+                          "G:0a4d0b13681e1765b9a0ba426ac789b61759b3e0bfa7d0e47c166aa36873f2d9"
+                        ],
+                        "interpretation": "expand the referenced grammar; enumerate its finite language",
+                        "grammar_letters": {
+                          "G:0a4d0b13681e1765b9a0ba426ac789b61759b3e0bfa7d0e47c166aa36873f2d9": {
+                            "kind": "GrammarLetter",
+                            "id": "G:0a4d0b13681e1765b9a0ba426ac789b61759b3e0bfa7d0e47c166aa36873f2d9",
+                            "source_grammar": "0a4d0b13681e1765b9a0ba426ac789b61759b3e0bfa7d0e47c166aa36873f2d9",
+                            "expansion": {
+                              "alphabet": [
+                                "a",
+                                "b"
+                              ],
+                              "kind": "finite",
+                              "words": [
+                                [
+                                  "a"
+                                ],
+                                [
+                                  "b"
+                                ],
+                                [
+                                  "a",
+                                  "b"
+                                ]
+                              ]
+                            },
+                            "interpretation": "finite-word-monoid",
+                            "loss": [],
+                            "version": 1
+                          }
+                        }
+                      },
+                      "expanded_grammar": {
+                        "alphabet": [
+                          "a",
+                          "b"
+                        ],
+                        "kind": "finite",
+                        "words": [
+                          [
+                            "a"
+                          ],
+                          [
+                            "b"
+                          ],
+                          [
+                            "a",
+                            "b"
+                          ]
+                        ]
+                      },
+                      "generated": [
+                        [
+                          "a"
+                        ],
+                        [
+                          "a",
+                          "b"
+                        ],
+                        [
+                          "b"
+                        ]
+                      ],
+                      "semantic_scope": "all words of this finite declared grammar, under tuple-of-symbol-identities denotation",
+                      "source_recovery": "canonical UTF-8 JSON is recovered exactly; arbitrary original whitespace is not claimed preserved unless separately archived"
+                    },
+                    "checks": [
+                      {
+                        "name": "canonical grammar expansion is byte exact",
+                        "pass": true
+                      },
+                      {
+                        "name": "finite semantic denotation preserved",
+                        "pass": true
+                      },
+                      {
+                        "name": "language cardinality preserved",
+                        "pass": true
+                      },
+                      {
+                        "name": "source identity resolves to expansion",
+                        "pass": true
+                      },
+                      {
+                        "name": "token boundaries retained",
+                        "pass": true
+                      }
+                    ],
+                    "limitations": [
+                      "Semantic certification is relative to the declared denotation and finite grammar.",
+                      "This exact promotion is an abbreviation. It does not prove arbitrary quotient/fold reversibility or equivalence of context-free grammars."
+                    ],
+                    "kernel_version": "1.0.0",
+                    "llm_inference": false
+                  },
+                  "qpath": {
+                    "status": "PASS",
+                    "evidence_class": "EXACTLY_CHECKED",
+                    "result": {
+                      "values": {
+                        "a": {
+                          "type": "Rational",
+                          "value": "1/2",
+                          "context": "Q",
+                          "provenance": {
+                            "kind": "supplied-input",
+                            "id": "a"
+                          }
+                        },
+                        "b": {
+                          "type": "Rational",
+                          "value": "1/3",
+                          "context": "Q",
+                          "provenance": {
+                            "kind": "supplied-input",
+                            "id": "b"
+                          }
+                        },
+                        "sum": {
+                          "type": "Rational",
+                          "value": "5/6",
+                          "context": "Q",
+                          "provenance": {
+                            "kind": "derived",
+                            "step": 0,
+                            "inputs": {
+                              "left": "a",
+                              "right": "b"
+                            },
+                            "operation": "rational.add"
+                          }
+                        },
+                        "ratio": {
+                          "type": "Rational",
+                          "value": "5/2",
+                          "context": "Q",
+                          "provenance": {
+                            "kind": "derived",
+                            "step": 1,
+                            "inputs": {
+                              "left": "sum",
+                              "right": "b"
+                            },
+                            "operation": "rational.divide"
+                          }
+                        }
+                      },
+                      "trace": [
+                        {
+                          "step": 0,
+                          "operation": "rational.add",
+                          "input_ids": {
+                            "left": "a",
+                            "right": "b"
+                          },
+                          "output_id": "sum",
+                          "signature": "(left:Rational[Q],right:Rational[Q])->Rational[Q]",
+                          "effects": "pure",
+                          "witness": "exact cross-multiplied integer equality",
+                          "witness_pass": true,
+                          "cost_bound": {
+                            "arithmetic_operations": 1,
+                            "max_bits": 1024
+                          }
+                        },
+                        {
+                          "step": 1,
+                          "operation": "rational.divide",
+                          "input_ids": {
+                            "left": "sum",
+                            "right": "b"
+                          },
+                          "output_id": "ratio",
+                          "signature": "(left:Rational[Q],right:Rational[Q])->Rational[Q]",
+                          "effects": "pure",
+                          "witness": "exact cross-multiplied integer equality",
+                          "witness_pass": true,
+                          "cost_bound": {
+                            "arithmetic_operations": 1,
+                            "max_bits": 1024
+                          }
+                        }
+                      ],
+                      "reachable_outputs": [
+                        "sum",
+                        "ratio"
+                      ],
+                      "representation": "typed directed hyperpath with ordered/named joint premises",
+                      "context": "Q",
+                      "physical_quantum_claim": false
+                    },
+                    "checks": [
+                      {
+                        "name": "step 0 exact arithmetic witness",
+                        "pass": true
+                      },
+                      {
+                        "name": "step 1 exact arithmetic witness",
+                        "pass": true
+                      }
+                    ],
+                    "limitations": [
+                      "This is execution of an explicitly supplied finite hyperpath, not exhaustive search of every possible path.",
+                      "Context Q is a registered algebra identity; context transport and arbitrary type unification require further adapters.",
+                      "Exact arithmetic witnesses certify these results, not external semantic or historical claims."
+                    ],
+                    "kernel_version": "1.0.0",
+                    "llm_inference": false
+                  }
+                },
+                "negative_controls": {
+                  "zero_divisor": {
+                    "status": "REFUSED",
+                    "evidence_class": "REFUSAL",
+                    "result": {
+                      "reason": "ZERO_DIVISOR",
+                      "detail": "Polynomial division requires a nonzero divisor in Q[x]."
+                    },
+                    "checks": [],
+                    "limitations": [
+                      "No scientific result is certified for this refused request."
+                    ],
+                    "kernel_version": "1.0.0",
+                    "llm_inference": false
+                  },
+                  "missing_joint": {
+                    "status": "REFUSED",
+                    "evidence_class": "REFUSAL",
+                    "result": {
+                      "reason": "MISSING_JOINT_PREMISE",
+                      "detail": "Every input of a hyperedge must be present together; one incoming arc is insufficient."
+                    },
+                    "checks": [],
+                    "limitations": [
+                      "No scientific result is certified for this refused request."
+                    ],
+                    "kernel_version": "1.0.0",
+                    "llm_inference": false
+                  },
+                  "context": {
+                    "status": "REFUSED",
+                    "evidence_class": "REFUSAL",
+                    "result": {
+                      "reason": "CONTEXT_MISMATCH",
+                      "detail": "Both premises must belong to the declared field context Q."
+                    },
+                    "checks": [],
+                    "limitations": [
+                      "No scientific result is certified for this refused request."
+                    ],
+                    "kernel_version": "1.0.0",
+                    "llm_inference": false
+                  },
+                  "type": {
+                    "status": "REFUSED",
+                    "evidence_class": "REFUSAL",
+                    "result": {
+                      "reason": "TYPE_MISMATCH",
+                      "detail": "Rational operators require both inputs typed Rational."
+                    },
+                    "checks": [],
+                    "limitations": [
+                      "No scientific result is certified for this refused request."
+                    ],
+                    "kernel_version": "1.0.0",
+                    "llm_inference": false
+                  },
+                  "float": {
+                    "status": "REFUSED",
+                    "evidence_class": "REFUSAL",
+                    "result": {
+                      "reason": "EXACT_INPUT_REQUIRED",
+                      "detail": "Use integer or rational strings; floats and booleans are not exact coefficients."
+                    },
+                    "checks": [],
+                    "limitations": [
+                      "No scientific result is certified for this refused request."
+                    ],
+                    "kernel_version": "1.0.0",
+                    "llm_inference": false
+                  },
+                  "symbol": {
+                    "status": "REFUSED",
+                    "evidence_class": "REFUSAL",
+                    "result": {
+                      "reason": "UNKNOWN_SYMBOL",
+                      "detail": "A word contains a symbol outside its declared alphabet."
+                    },
+                    "checks": [],
+                    "limitations": [
+                      "No scientific result is certified for this refused request."
+                    ],
+                    "kernel_version": "1.0.0",
+                    "llm_inference": false
+                  }
+                }
+              },
+              "checks": [
+                {
+                  "name": "exact polynomial division and derivative identities",
+                  "pass": true
+                },
+                {
+                  "name": "polynomial divisor guard",
+                  "pass": true
+                },
+                {
+                  "name": "domain exclusion retained",
+                  "pass": true
+                },
+                {
+                  "name": "grammar promotion expansion",
+                  "pass": true
+                },
+                {
+                  "name": "finite grammar exact denotation",
+                  "pass": true
+                },
+                {
+                  "name": "joint-premise constructive hyperpath",
+                  "pass": true
+                },
+                {
+                  "name": "missing joint premise rejected",
+                  "pass": true
+                },
+                {
+                  "name": "context mismatch rejected",
+                  "pass": true
+                },
+                {
+                  "name": "type mismatch rejected",
+                  "pass": true
+                },
+                {
+                  "name": "inexact float input rejected",
+                  "pass": true
+                },
+                {
+                  "name": "unknown alphabet symbol rejected",
+                  "pass": true
+                },
+                {
+                  "name": "registered implementations use no model inference",
+                  "pass": true
+                }
+              ],
+              "limitations": [
+                "Acceptance covers these registered finite kernels only; full commission remains NOT_COMMISSIONED.",
+                "No-LLM assurance also requires the package dependency/import audit and offline acceptance evidence; a self-declared field alone is insufficient."
+              ],
+              "kernel_version": "1.0.0",
+              "llm_inference": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "request": {
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-8",
+        "expected_revision": 8,
+        "kind": "requirement.produce",
+        "payload": {
+          "requirement_id": "BOOT-001",
+          "artifacts": [
+            "initial-science-run.json"
+          ],
+          "note": "Scoped live bootstrap check only; full mission gates remain open."
+        }
+      },
+      "receipt": {
+        "ok": true,
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-8",
+        "actor": "operator",
+        "revision": 9,
+        "head": "56337c32dda8cc4de18df84c32ba150bcc9a21d1860741029ead12c397bef75c",
+        "result": {
+          "requirement_id": "BOOT-001",
+          "status": "PRODUCED",
+          "artifacts": [
+            {
+              "path": "initial-science-run.json",
+              "sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490",
+              "size": 19429
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-9",
+        "expected_revision": 9,
+        "kind": "requirement.verify",
+        "payload": {
+          "requirement_id": "BOOT-001"
+        }
+      },
+      "receipt": {
+        "ok": true,
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-9",
+        "actor": "operator",
+        "revision": 10,
+        "head": "34a25d49ca0c8c0ace662ae40289303f7be50bbcd0f053a171c82f31610b9c3c",
+        "result": {
+          "requirement_id": "BOOT-001",
+          "verification": {
+            "verifier": "artifact-integrity",
+            "captured_artifacts": [
+              {
+                "path": "initial-science-run.json",
+                "sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490",
+                "size": 19429
+              }
+            ],
+            "inputs": [
+              {
+                "path": "initial-science-run.json",
+                "sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490",
+                "size": 19429
+              }
+            ],
+            "ancillary_attachments": [],
+            "revision": 10,
+            "code_identity": {
+              "module": "polyia.store",
+              "sha256": "dc88ea766ab2afe4f5426c00e729d228b656f6856f387f838a18d75a5749509a",
+              "package_version": "1.1.0",
+              "python_version": "3.13.17"
+            },
+            "outcome": "PASS",
+            "evidence_class": "ARTIFACT_INTEGRITY",
+            "report": {
+              "checked_artifacts": 1,
+              "limitations": [
+                "Captured bytes are intact; their scientific truth and sufficiency are not established."
+              ]
+            }
+          },
+          "status": "VERIFIED"
+        }
+      }
+    },
+    {
+      "request": {
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-10",
+        "expected_revision": 10,
+        "kind": "requirement.accept",
+        "payload": {
+          "requirement_id": "BOOT-001"
+        }
+      },
+      "receipt": {
+        "ok": true,
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-10",
+        "actor": "operator",
+        "revision": 11,
+        "head": "58391a83aa423939cb3d7f1e8611c4e53271227aeb208b540024fbefbb81a449",
+        "result": {
+          "requirement_id": "BOOT-001",
+          "status": "ACCEPTED",
+          "verification_revision": 10
+        }
+      }
+    },
+    {
+      "request": {
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-11",
+        "expected_revision": 11,
+        "kind": "requirement.produce",
+        "payload": {
+          "requirement_id": "BOOT-002",
+          "artifacts": [
+            "initial-kernel.py",
+            "initial-science-run.json"
+          ],
+          "note": "Scoped live bootstrap check only; full mission gates remain open."
+        }
+      },
+      "receipt": {
+        "ok": true,
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-11",
+        "actor": "operator",
+        "revision": 12,
+        "head": "d2c3da700f279066078fd8883e4f214a954ff0e6635797e28d12f1d41aba85a6",
+        "result": {
+          "requirement_id": "BOOT-002",
+          "status": "PRODUCED",
+          "artifacts": [
+            {
+              "path": "initial-kernel.py",
+              "sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+              "size": 18298
+            },
+            {
+              "path": "initial-science-run.json",
+              "sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490",
+              "size": 19429
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-12",
+        "expected_revision": 12,
+        "kind": "requirement.verify",
+        "payload": {
+          "requirement_id": "BOOT-002"
+        }
+      },
+      "receipt": {
+        "ok": true,
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-12",
+        "actor": "operator",
+        "revision": 13,
+        "head": "18770b707506b1253eb017877632a5ce7e12d04bf635438fa44a48984c053eb9",
+        "result": {
+          "requirement_id": "BOOT-002",
+          "verification": {
+            "verifier": "scientific-contracts",
+            "captured_artifacts": [
+              {
+                "path": "initial-kernel.py",
+                "sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+                "size": 18298
+              },
+              {
+                "path": "initial-science-run.json",
+                "sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490",
+                "size": 19429
+              }
+            ],
+            "inputs": [
+              {
+                "path": "initial-kernel.py",
+                "sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+                "size": 18298,
+                "role": "executing-kernel",
+                "module": "polyia.experiments"
+              },
+              {
+                "path": "initial-science-run.json",
+                "sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490",
+                "size": 19429,
+                "role": "recorded-run",
+                "run_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-7",
+                "run_revision": 8
+              }
+            ],
+            "ancillary_attachments": [],
+            "revision": 13,
+            "code_identity": {
+              "module": "polyia.experiments",
+              "sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+              "loaded_code_sha256": "b5c12e42c4cb101d20c0c10d3bf56415c334633ee4a54f441734353efaceea64",
+              "package_version": "1.1.0",
+              "python_version": "3.13.17",
+              "source_binding": "PINNED_SOURCE_MATCHES_LOADED_CODE"
+            },
+            "outcome": "PASS",
+            "evidence_class": "EXACTLY_CHECKED",
+            "report": {
+              "status": "PASS",
+              "evidence_class": "EXACTLY_CHECKED",
+              "result": {
+                "families": {
+                  "polynomial": {
+                    "status": "PASS",
+                    "evidence_class": "EXACTLY_CHECKED",
+                    "result": {
+                      "coefficient_field": "Q",
+                      "coefficient_order": "ascending powers of x",
+                      "dividend": [
+                        "4",
+                        "-2",
+                        "0",
+                        "1"
+                      ],
+                      "divisor": [
+                        "-1",
+                        "1"
+                      ],
+                      "quotient": [
+                        "-1",
+                        "1",
+                        "1"
+                      ],
+                      "remainder": [
+                        "3"
+                      ],
+                      "reconstructed": [
+                        "4",
+                        "-2",
+                        "0",
+                        "1"
+                      ],
+                      "division_law": "a = b*q + r",
+                      "domain": [
+                        "polynomial division over Q[x]",
+                        "b is not the zero polynomial",
+                        "rational-function and derivative interpretations require b(x) != 0"
+                      ],
+                      "derivation": [
+                        "a=bq+r",
+                        "a\u2032=b\u2032q+bq\u2032+r\u2032",
+                        "(a/b)\u2032=(a\u2032b-ab\u2032)/b^2",
+                        "(q+r/b)\u2032=q\u2032+(r\u2032b-rb\u2032)/b^2"
+                      ],
+                      "quotient_derivative_numerator": [
+                        "-2",
+                        "0",
+                        "-3",
+                        "2"
+                      ],
+                      "divided_form_derivative_numerator": [
+                        "-2",
+                        "0",
+                        "-3",
+                        "2"
+                      ],
+                      "common_denominator": [
+                        "1",
+                        "-2",
+                        "1"
+                      ],
+                      "factorization_example": {
+                        "polynomial": [
+                          "-1",
+                          "0",
+                          "1"
+                        ],
+                        "factors": [
+                          [
+                            "-1",
+                            "1"
+                          ],
+                          [
+                            "1",
+                            "1"
+                          ]
+                        ],
+                        "cancellation_domain": "(x^2-1)/(x-1)=x+1 only when x != 1; the original excluded point remains excluded"
+                      },
+                      "source_contracts": [
+                        "PIA polynomial/evidence acceptance family",
+                        "UCG sections 085, 090, 091",
+                        "GIN field/image/kernel distinctions"
+                      ]
+                    },
+                    "checks": [
+                      {
+                        "name": "division coefficient identity",
+                        "pass": true
+                      },
+                      {
+                        "name": "remainder degree bound",
+                        "pass": true
+                      },
+                      {
+                        "name": "product-rule coefficient identity",
+                        "pass": true
+                      },
+                      {
+                        "name": "quotient-rule coefficient identity",
+                        "pass": true
+                      },
+                      {
+                        "name": "factorization coefficient identity",
+                        "pass": true
+                      }
+                    ],
+                    "limitations": [
+                      "This certifies exact identities over Q for the supplied finite polynomials, not arbitrary symbolic functions.",
+                      "Domain exclusion is preserved symbolically; no real-root isolation is claimed.",
+                      "The fixed factorization example is not a general polynomial factorization engine."
+                    ],
+                    "kernel_version": "1.0.0",
+                    "llm_inference": false
+                  },
+                  "grammar-promotion": {
+                    "status": "PASS",
+                    "evidence_class": "EXACTLY_CHECKED",
+                    "result": {
+                      "grammar": {
+                        "alphabet": [
+                          "a",
+                          "b"
+                        ],
+                        "kind": "finite",
+                        "words": [
+                          [
+                            "a"
+                          ],
+                          [
+                            "b"
+                          ],
+                          [
+                            "a",
+                            "b"
+                          ]
+                        ]
+                      },
+                      "grammar_digest": "0a4d0b13681e1765b9a0ba426ac789b61759b3e0bfa7d0e47c166aa36873f2d9",
+                      "promoted_letter": {
+                        "kind": "GrammarLetter",
+                        "id": "G:0a4d0b13681e1765b9a0ba426ac789b61759b3e0bfa7d0e47c166aa36873f2d9",
+                        "source_grammar": "0a4d0b13681e1765b9a0ba426ac789b61759b3e0bfa7d0e47c166aa36873f2d9",
+                        "expansion": {
+                          "alphabet": [
+                            "a",
+                            "b"
+                          ],
+                          "kind": "finite",
+                          "words": [
+                            [
+                              "a"
+                            ],
+                            [
+                              "b"
+                            ],
+                            [
+                              "a",
+                              "b"
+                            ]
+                          ]
+                        },
+                        "interpretation": "finite-word-monoid",
+                        "loss": [],
+                        "version": 1
+                      },
+                      "higher_alphabet": {
+                        "alphabet": [
+                          "G:0a4d0b13681e1765b9a0ba426ac789b61759b3e0bfa7d0e47c166aa36873f2d9"
+                        ],
+                        "word": [
+                          "G:0a4d0b13681e1765b9a0ba426ac789b61759b3e0bfa7d0e47c166aa36873f2d9"
+                        ],
+                        "interpretation": "expand the referenced grammar; enumerate its finite language",
+                        "grammar_letters": {
+                          "G:0a4d0b13681e1765b9a0ba426ac789b61759b3e0bfa7d0e47c166aa36873f2d9": {
+                            "kind": "GrammarLetter",
+                            "id": "G:0a4d0b13681e1765b9a0ba426ac789b61759b3e0bfa7d0e47c166aa36873f2d9",
+                            "source_grammar": "0a4d0b13681e1765b9a0ba426ac789b61759b3e0bfa7d0e47c166aa36873f2d9",
+                            "expansion": {
+                              "alphabet": [
+                                "a",
+                                "b"
+                              ],
+                              "kind": "finite",
+                              "words": [
+                                [
+                                  "a"
+                                ],
+                                [
+                                  "b"
+                                ],
+                                [
+                                  "a",
+                                  "b"
+                                ]
+                              ]
+                            },
+                            "interpretation": "finite-word-monoid",
+                            "loss": [],
+                            "version": 1
+                          }
+                        }
+                      },
+                      "expanded_grammar": {
+                        "alphabet": [
+                          "a",
+                          "b"
+                        ],
+                        "kind": "finite",
+                        "words": [
+                          [
+                            "a"
+                          ],
+                          [
+                            "b"
+                          ],
+                          [
+                            "a",
+                            "b"
+                          ]
+                        ]
+                      },
+                      "generated": [
+                        [
+                          "a"
+                        ],
+                        [
+                          "a",
+                          "b"
+                        ],
+                        [
+                          "b"
+                        ]
+                      ],
+                      "semantic_scope": "all words of this finite declared grammar, under tuple-of-symbol-identities denotation",
+                      "source_recovery": "canonical UTF-8 JSON is recovered exactly; arbitrary original whitespace is not claimed preserved unless separately archived"
+                    },
+                    "checks": [
+                      {
+                        "name": "canonical grammar expansion is byte exact",
+                        "pass": true
+                      },
+                      {
+                        "name": "finite semantic denotation preserved",
+                        "pass": true
+                      },
+                      {
+                        "name": "language cardinality preserved",
+                        "pass": true
+                      },
+                      {
+                        "name": "source identity resolves to expansion",
+                        "pass": true
+                      },
+                      {
+                        "name": "token boundaries retained",
+                        "pass": true
+                      }
+                    ],
+                    "limitations": [
+                      "Semantic certification is relative to the declared denotation and finite grammar.",
+                      "This exact promotion is an abbreviation. It does not prove arbitrary quotient/fold reversibility or equivalence of context-free grammars."
+                    ],
+                    "kernel_version": "1.0.0",
+                    "llm_inference": false
+                  },
+                  "qpath": {
+                    "status": "PASS",
+                    "evidence_class": "EXACTLY_CHECKED",
+                    "result": {
+                      "values": {
+                        "a": {
+                          "type": "Rational",
+                          "value": "1/2",
+                          "context": "Q",
+                          "provenance": {
+                            "kind": "supplied-input",
+                            "id": "a"
+                          }
+                        },
+                        "b": {
+                          "type": "Rational",
+                          "value": "1/3",
+                          "context": "Q",
+                          "provenance": {
+                            "kind": "supplied-input",
+                            "id": "b"
+                          }
+                        },
+                        "sum": {
+                          "type": "Rational",
+                          "value": "5/6",
+                          "context": "Q",
+                          "provenance": {
+                            "kind": "derived",
+                            "step": 0,
+                            "inputs": {
+                              "left": "a",
+                              "right": "b"
+                            },
+                            "operation": "rational.add"
+                          }
+                        },
+                        "ratio": {
+                          "type": "Rational",
+                          "value": "5/2",
+                          "context": "Q",
+                          "provenance": {
+                            "kind": "derived",
+                            "step": 1,
+                            "inputs": {
+                              "left": "sum",
+                              "right": "b"
+                            },
+                            "operation": "rational.divide"
+                          }
+                        }
+                      },
+                      "trace": [
+                        {
+                          "step": 0,
+                          "operation": "rational.add",
+                          "input_ids": {
+                            "left": "a",
+                            "right": "b"
+                          },
+                          "output_id": "sum",
+                          "signature": "(left:Rational[Q],right:Rational[Q])->Rational[Q]",
+                          "effects": "pure",
+                          "witness": "exact cross-multiplied integer equality",
+                          "witness_pass": true,
+                          "cost_bound": {
+                            "arithmetic_operations": 1,
+                            "max_bits": 1024
+                          }
+                        },
+                        {
+                          "step": 1,
+                          "operation": "rational.divide",
+                          "input_ids": {
+                            "left": "sum",
+                            "right": "b"
+                          },
+                          "output_id": "ratio",
+                          "signature": "(left:Rational[Q],right:Rational[Q])->Rational[Q]",
+                          "effects": "pure",
+                          "witness": "exact cross-multiplied integer equality",
+                          "witness_pass": true,
+                          "cost_bound": {
+                            "arithmetic_operations": 1,
+                            "max_bits": 1024
+                          }
+                        }
+                      ],
+                      "reachable_outputs": [
+                        "sum",
+                        "ratio"
+                      ],
+                      "representation": "typed directed hyperpath with ordered/named joint premises",
+                      "context": "Q",
+                      "physical_quantum_claim": false
+                    },
+                    "checks": [
+                      {
+                        "name": "step 0 exact arithmetic witness",
+                        "pass": true
+                      },
+                      {
+                        "name": "step 1 exact arithmetic witness",
+                        "pass": true
+                      }
+                    ],
+                    "limitations": [
+                      "This is execution of an explicitly supplied finite hyperpath, not exhaustive search of every possible path.",
+                      "Context Q is a registered algebra identity; context transport and arbitrary type unification require further adapters.",
+                      "Exact arithmetic witnesses certify these results, not external semantic or historical claims."
+                    ],
+                    "kernel_version": "1.0.0",
+                    "llm_inference": false
+                  }
+                },
+                "negative_controls": {
+                  "zero_divisor": {
+                    "status": "REFUSED",
+                    "evidence_class": "REFUSAL",
+                    "result": {
+                      "reason": "ZERO_DIVISOR",
+                      "detail": "Polynomial division requires a nonzero divisor in Q[x]."
+                    },
+                    "checks": [],
+                    "limitations": [
+                      "No scientific result is certified for this refused request."
+                    ],
+                    "kernel_version": "1.0.0",
+                    "llm_inference": false
+                  },
+                  "missing_joint": {
+                    "status": "REFUSED",
+                    "evidence_class": "REFUSAL",
+                    "result": {
+                      "reason": "MISSING_JOINT_PREMISE",
+                      "detail": "Every input of a hyperedge must be present together; one incoming arc is insufficient."
+                    },
+                    "checks": [],
+                    "limitations": [
+                      "No scientific result is certified for this refused request."
+                    ],
+                    "kernel_version": "1.0.0",
+                    "llm_inference": false
+                  },
+                  "context": {
+                    "status": "REFUSED",
+                    "evidence_class": "REFUSAL",
+                    "result": {
+                      "reason": "CONTEXT_MISMATCH",
+                      "detail": "Both premises must belong to the declared field context Q."
+                    },
+                    "checks": [],
+                    "limitations": [
+                      "No scientific result is certified for this refused request."
+                    ],
+                    "kernel_version": "1.0.0",
+                    "llm_inference": false
+                  },
+                  "type": {
+                    "status": "REFUSED",
+                    "evidence_class": "REFUSAL",
+                    "result": {
+                      "reason": "TYPE_MISMATCH",
+                      "detail": "Rational operators require both inputs typed Rational."
+                    },
+                    "checks": [],
+                    "limitations": [
+                      "No scientific result is certified for this refused request."
+                    ],
+                    "kernel_version": "1.0.0",
+                    "llm_inference": false
+                  },
+                  "float": {
+                    "status": "REFUSED",
+                    "evidence_class": "REFUSAL",
+                    "result": {
+                      "reason": "EXACT_INPUT_REQUIRED",
+                      "detail": "Use integer or rational strings; floats and booleans are not exact coefficients."
+                    },
+                    "checks": [],
+                    "limitations": [
+                      "No scientific result is certified for this refused request."
+                    ],
+                    "kernel_version": "1.0.0",
+                    "llm_inference": false
+                  },
+                  "symbol": {
+                    "status": "REFUSED",
+                    "evidence_class": "REFUSAL",
+                    "result": {
+                      "reason": "UNKNOWN_SYMBOL",
+                      "detail": "A word contains a symbol outside its declared alphabet."
+                    },
+                    "checks": [],
+                    "limitations": [
+                      "No scientific result is certified for this refused request."
+                    ],
+                    "kernel_version": "1.0.0",
+                    "llm_inference": false
+                  }
+                }
+              },
+              "checks": [
+                {
+                  "name": "exact polynomial division and derivative identities",
+                  "pass": true
+                },
+                {
+                  "name": "polynomial divisor guard",
+                  "pass": true
+                },
+                {
+                  "name": "domain exclusion retained",
+                  "pass": true
+                },
+                {
+                  "name": "grammar promotion expansion",
+                  "pass": true
+                },
+                {
+                  "name": "finite grammar exact denotation",
+                  "pass": true
+                },
+                {
+                  "name": "joint-premise constructive hyperpath",
+                  "pass": true
+                },
+                {
+                  "name": "missing joint premise rejected",
+                  "pass": true
+                },
+                {
+                  "name": "context mismatch rejected",
+                  "pass": true
+                },
+                {
+                  "name": "type mismatch rejected",
+                  "pass": true
+                },
+                {
+                  "name": "inexact float input rejected",
+                  "pass": true
+                },
+                {
+                  "name": "unknown alphabet symbol rejected",
+                  "pass": true
+                },
+                {
+                  "name": "registered implementations use no model inference",
+                  "pass": true
+                }
+              ],
+              "limitations": [
+                "Acceptance covers these registered finite kernels only; full commission remains NOT_COMMISSIONED.",
+                "No-LLM assurance also requires the package dependency/import audit and offline acceptance evidence; a self-declared field alone is insufficient."
+              ],
+              "kernel_version": "1.0.0",
+              "llm_inference": false
+            }
+          },
+          "status": "VERIFIED"
+        }
+      }
+    },
+    {
+      "request": {
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-13",
+        "expected_revision": 13,
+        "kind": "requirement.accept",
+        "payload": {
+          "requirement_id": "BOOT-002"
+        }
+      },
+      "receipt": {
+        "ok": true,
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-13",
+        "actor": "operator",
+        "revision": 14,
+        "head": "63f572023db47011ed58c0eafc8b23e17e40ee593ae2df5e31588fe11fb9339e",
+        "result": {
+          "requirement_id": "BOOT-002",
+          "status": "ACCEPTED",
+          "verification_revision": 13
+        }
+      }
+    },
+    {
+      "request": {
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-14",
+        "expected_revision": 14,
+        "kind": "checkpoint.create",
+        "payload": {
+          "note": "Actual Oracle service HTTPS commissioning checkpoint; source-linked bootstrap evidence only. GOD_SEED PIA-008/020/181."
+        }
+      },
+      "receipt": {
+        "ok": true,
+        "command_id": "live-742694d0c94548f7a8e4cdc08c36d4cf-14",
+        "actor": "operator",
+        "revision": 15,
+        "head": "14cec676766dd7bec9048b0958aea272020ab120920e827ea9c2e58ad0eda102",
+        "result": {
+          "checkpoint_id": "cp-00000015",
+          "previous_id": null,
+          "source_context": {
+            "schema_version": 1,
+            "version": 2,
+            "captured_revision": 15,
+            "captured_at": "2026-10-24T07:34:00.984652+00:00",
+            "registry_origin": "package",
+            "status": "SOURCED",
+            "objects": [
+              {
+                "role": "constitution",
+                "path": "registry/constitution.json",
+                "origin": "package",
+                "required": true,
+                "sha256": "60d2d8e09680e1ac527c58f004c0df81fee52d29fca3912147b9d8d47f1874a2",
+                "size": 215595
+              },
+              {
+                "role": "source-manifest",
+                "path": "registry/sources.json",
+                "origin": "package",
+                "required": true,
+                "sha256": "eae4899dea40d4ce816f0b6ee6db26df80a3ecafeadaa4c37fd815e3d66e457f",
+                "size": 224614
+              },
+              {
+                "role": "authority",
+                "path": "registry/authority.json",
+                "origin": "package",
+                "required": true,
+                "sha256": "13158c16c9b633d143da1dbcd091b9a3c8160d369836f63b71ed0611fa6e9689",
+                "size": 1341
+              },
+              {
+                "role": "repository-pins",
+                "path": "registry/repositories.json",
+                "origin": "package",
+                "required": false,
+                "sha256": "1a211944f676383c51445303286b70c78407d205c9c6c4f928bc076d0bd6f8f1",
+                "size": 286442
+              },
+              {
+                "role": "inherited-obligations",
+                "path": "registry/inherited_obligations.json",
+                "origin": "package",
+                "required": false,
+                "sha256": "3809c52c0678a3e3a0ad3dcbd4c729beb9f49ae915a23f088a2f8196ddabc998",
+                "size": 328173
+              },
+              {
+                "role": "runtime-source",
+                "path": "polyia/__init__.py",
+                "origin": "package",
+                "required": true,
+                "sha256": "7eb3f316d7989fb09e03205362c5ca20e9a6c27ecd376c1f8d0d7e8b843a4689",
+                "size": 109
+              },
+              {
+                "role": "runtime-source",
+                "path": "polyia/store.py",
+                "origin": "package",
+                "required": true,
+                "sha256": "dc88ea766ab2afe4f5426c00e729d228b656f6856f387f838a18d75a5749509a",
+                "size": 74768
+              },
+              {
+                "role": "runtime-source",
+                "path": "polyia/experiments.py",
+                "origin": "package",
+                "required": true,
+                "sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+                "size": 18298
+              },
+              {
+                "role": "runtime-source",
+                "path": "polyia/cli.py",
+                "origin": "package",
+                "required": true,
+                "sha256": "fbc88b11a101f0b3678c7a19266df9a844688226b13feaf5145e3fe407c8adfe",
+                "size": 10506
+              },
+              {
+                "role": "runtime-source",
+                "path": "polyia/server.py",
+                "origin": "package",
+                "required": true,
+                "sha256": "77a77f5bf41772e7811126acbd5334c960cfd8bf395e22a9eb2af27ba13d5534",
+                "size": 22368
+              },
+              {
+                "role": "runtime-source",
+                "path": "polyia/__main__.py",
+                "origin": "package",
+                "required": true,
+                "sha256": "0952a82fc4e578988ba64e72bc45884a2a365b90130e04f681c68f8425e6b60f",
+                "size": 114
+              }
+            ],
+            "missing": [],
+            "definition_binding": {
+              "status": "MATCH",
+              "genesis_definitions_sha256": "068eaa5bb10e91f67d63f782dace183d8145bbf05677304e1f7cd4f0b1f0352f",
+              "captured_constitution_requirements_sha256": "068eaa5bb10e91f67d63f782dace183d8145bbf05677304e1f7cd4f0b1f0352f"
+            },
+            "external_sources": {
+              "source_manifest_sha256": "eae4899dea40d4ce816f0b6ee6db26df80a3ecafeadaa4c37fd815e3d66e457f",
+              "storage": "IMMUTABLE_PACKAGE_FILES",
+              "corpus_bytes_copied": 0,
+              "verification_scope": "Manifest bytes captured; corpus files remain external"
+            },
+            "execution_context": {
+              "runtime_version": "1.1.0",
+              "python_version": "3.13.17",
+              "sqlite_version": "3.53.1",
+              "scientific_kernel": {
+                "module": "polyia.experiments",
+                "sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+                "loaded_code_sha256": "b5c12e42c4cb101d20c0c10d3bf56415c334633ee4a54f441734353efaceea64",
+                "package_version": "1.1.0",
+                "python_version": "3.13.17",
+                "source_binding": "PINNED_SOURCE_MATCHES_LOADED_CODE"
+              }
+            },
+            "digest": "5beb7d6aa4ded0f69b2f5dc152b2b849937e3a0cde1f84064dae767d5c60f0e5"
+          }
+        }
+      }
+    }
+  ],
+  "integrity": {
+    "ok": true,
+    "schema_version": 2,
+    "checked": {
+      "events": 15,
+      "receipts": 15,
+      "blobs": 12,
+      "checkpoints": 1,
+      "source_contexts": 2
+    },
+    "diagnostics": [],
+    "evidence_class": "INTERNAL_REPLAY_AND_CAPTURED_BYTE_INTEGRITY",
+    "limitations": [
+      "Hash chains are not signatures or externally anchored proofs.",
+      "Replay consumes recorded experiment results; it does not re-run experiments or establish scientific truth."
+    ],
+    "workspace_drift": {
+      "evaluated": true,
+      "changed": 0,
+      "artifacts": [
+        {
+          "requirement_id": "BOOT-001",
+          "path": "initial-science-run.json",
+          "captured_sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490",
+          "status": "UNCHANGED",
+          "live_sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490"
+        },
+        {
+          "requirement_id": "BOOT-002",
+          "path": "initial-kernel.py",
+          "captured_sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809",
+          "status": "UNCHANGED",
+          "live_sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809"
+        },
+        {
+          "requirement_id": "BOOT-002",
+          "path": "initial-science-run.json",
+          "captured_sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490",
+          "status": "UNCHANGED",
+          "live_sha256": "1da5f65709ef5e99bb7225f080a00da78a91e9aa9dac7dfd5f912fee8a6bc490"
+        }
+      ],
+      "interpretation": "Live workspace drift does not alter acceptance of a captured historical snapshot"
+    }
+  },
+  "limitations": [
+    "Temporary tunnel hostname changes if its process restarts.",
+    "Two client roles use separate HTTPS requests on the target; off-host authenticated client remains unperformed.",
+    "Permanent DNS, production load/rate controls, redacted pre-auth audit and off-host backups are not certified.",
+    "All 192 mission obligations remain unaccepted."
+  ]
+}

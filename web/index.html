@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Poly IA commissioning workspace: durable state, explicit guidance, captured evidence, and exact scientific runs.">
+  <title>Poly IA · Commission workspace</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to workspace</a>
+  <aside class="sidebar" aria-label="Workspace navigation">
+    <a class="brand" href="#overview" aria-label="Poly IA overview"><span class="brand-mark" aria-hidden="true">P</span><span>Poly IA<small>COMMISSION WORKSPACE</small></span></a>
+    <div class="sidebar-label">CONTROL PLANE</div>
+    <nav>
+      <a href="#overview"><span aria-hidden="true">01</span> Overview</a>
+      <a href="#obligations"><span aria-hidden="true">02</span> Obligations</a>
+      <a href="#guidance"><span aria-hidden="true">03</span> Owner guidance</a>
+      <a href="#intake"><span aria-hidden="true">↳</span> Text &amp; native programs</a>
+      <a href="#research"><span aria-hidden="true">04</span> Scientific runs</a>
+      <a href="#integrity"><span aria-hidden="true">05</span> Integrity &amp; snapshots</a>
+      <a href="#journal"><span aria-hidden="true">06</span> Event ledger</a>
+    </nav>
+    <div class="sidebar-bottom"><span class="small-dot" aria-hidden="true"></span> Portable bootstrap<p>Exact operations.<br>Recorded evidence.<br>Explicit authority.</p><div class="sidebar-rule"></div><span class="small-label">BASELINE</span><p class="baseline">No LLM inference<br>SQLite · local execution</p><a href="/openapi.json" target="_blank" rel="noopener">API reference <span aria-hidden="true">↗</span></a></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div class="topbar-path">Poly IA <span>/</span> Commission control <span>/</span> <strong>Live workspace</strong></div><div id="connection-status" class="connection-status" role="status"><span class="status-dot" aria-hidden="true"></span><span id="connection-label">Disconnected</span></div></header>
+    <main id="main">
+      <section id="overview" aria-labelledby="page-title">
+        <div class="page-heading"><div><p class="eyebrow">STATE · GUIDANCE · EVIDENCE</p><h1 id="page-title">Commission workspace<span class="heading-dot">.</span></h1><p class="intro">Move the commission forward, one evidenced transition at a time.</p></div><div class="mission-label"><span class="small-label">FULL MISSION</span><span id="mission-status" class="badge badge-amber">Not commissioned</span></div></div>
+        <div class="scope-note"><span class="scope-symbol" aria-hidden="true">i</span><p>This is the operational bootstrap. Its recorded checks establish scoped evidence; full Poly IA commission acceptance remains a separate obligation.</p></div>
+        <noscript><div class="alert">JavaScript is required for the live command interface. The HTTP API remains available to authenticated clients.</div></noscript>
+        <div id="error-banner" class="alert" role="alert" hidden><div><strong id="error-title">Request refused</strong><p id="error-message"></p><pre id="error-details" hidden></pre></div><button id="dismiss-error" type="button" class="icon-button" aria-label="Dismiss error">×</button></div>
+        <div id="notice" class="notice" role="status" hidden></div>
+        <div class="connection-card card">
+          <div class="connection-copy"><span class="card-kicker">YOUR SESSION</span><h2>Connect to the ledger</h2><p id="session-description">Enter an operator or read token. It stays in this tab’s memory.</p></div>
+          <form id="connect-form" class="connect-form" autocomplete="off"><label class="sr-only" for="token">Bearer token</label><input id="token" name="access-token" type="password" placeholder="Paste a bearer token" autocomplete="off" autocapitalize="none" spellcheck="false" required><button type="submit" id="connect-button" class="button-primary">Connect <span aria-hidden="true">↗</span></button><button type="button" id="disconnect-button" class="button-subtle" disabled>Forget token</button></form>
+        </div>
+        <div class="metrics" aria-label="Current ledger summary">
+          <article class="metric"><div class="metric-label">CURRENT REVISION <span class="metric-icon" aria-hidden="true">↗</span></div><div id="revision" class="metric-value">—</div><p id="head-short" class="mono muted">Connect to read state</p></article>
+          <article class="metric"><div class="metric-label">ACCEPTED OBLIGATIONS</div><div class="metric-value"><span id="accepted-count">—</span><span id="requirement-total" class="metric-denominator"></span></div><progress id="acceptance-progress" max="100" value="0" aria-label="Accepted obligations"></progress><p id="acceptance-caption" class="muted">Awaiting ledger state</p></article>
+          <article class="metric"><div class="metric-label">GUIDANCE TO REVIEW</div><div id="pending-guidance" class="metric-value">—</div><p id="guidance-caption" class="muted">Submit · acknowledge · apply</p></article>
+          <article class="metric"><div class="metric-label">RESEARCH STATE</div><div id="research-state" class="metric-value metric-word">—</div><p id="runs-count" class="muted">Registered exact functions only</p></article>
+        </div>
+        <div class="live-meta"><span id="last-refresh">No state received</span><span id="scope-display">No access scope</span><button id="refresh-button" type="button" class="text-button" data-read disabled>Refresh now <span aria-hidden="true">↻</span></button></div>
+      </section>
+
+      <section id="obligations" class="section" aria-labelledby="obligations-title">
+        <div class="section-heading"><div><p class="eyebrow">02 / OBLIGATIONS</p><h2 id="obligations-title">Evidence before acceptance</h2></div><span class="section-aside">Produce → verify → accept</span></div>
+        <div class="split obligations-split">
+          <div class="card registry-card"><div class="filter-bar"><label class="search-field"><span class="sr-only">Search obligations</span><input id="requirement-search" type="search" placeholder="Search ID, title, or verifier…"></label><label><span class="sr-only">Filter obligation status</span><select id="requirement-filter"><option value="">All states</option><option>NOT_STARTED</option><option>PRODUCED</option><option>VERIFIED</option><option>ACCEPTED</option></select></label></div><div class="table-scroll" tabindex="0" role="region" aria-label="Obligations table"><table><thead><tr><th scope="col">Obligation</th><th scope="col">State</th><th scope="col">Priority</th><th scope="col"><span class="sr-only">Inspect</span></th></tr></thead><tbody id="requirements-body"><tr><td colspan="4" class="empty-cell">Connect to view the constitution’s obligations.</td></tr></tbody></table></div><div id="requirements-caption" class="card-foot">No obligations loaded</div></div>
+          <div class="card action-card"><div class="card-heading"><span class="card-kicker">OBLIGATION WORKFLOW</span><span class="badge badge-neutral">Operator</span></div><label for="requirement-select">Selected obligation</label><select id="requirement-select" data-read disabled><option value="">Connect first</option></select><p id="selected-requirement-title" class="selection-title">Select an obligation to inspect its evidence.</p><p id="selected-requirement-meta" class="muted small"></p>
+            <form id="produce-form"><label for="artifact-paths">Artifact paths <span class="optional">one per line</span></label><textarea id="artifact-paths" rows="3" placeholder="docs/your-evidence.md&#10;evidence/your-result.json" required data-command-input disabled></textarea><p class="field-help">Paths are relative to the server workspace. Capture reads actual permitted files; this is not an upload.</p><label for="production-note">Production note</label><input id="production-note" type="text" maxlength="4000" placeholder="What does this evidence establish?" data-command-input disabled><button class="button-primary button-full" type="submit" data-command disabled><span class="step-number">1</span> Capture artifacts</button></form>
+            <div class="workflow-buttons"><button id="verify-requirement" type="button" data-command disabled><span class="step-number">2</span> Run registered verifier</button><button id="accept-requirement" type="button" data-command disabled><span class="step-number">3</span> Accept verified evidence</button></div>
+            <p class="field-help">Acceptance requires current passing evidence. Artifact integrity alone does not establish a scientific claim.</p><details><summary>Inspect obligation &amp; evidence</summary><pre id="requirement-detail">No obligation selected.</pre></details>
+          </div>
+        </div>
+      </section>
+
+      <section id="guidance" class="section" aria-labelledby="guidance-title">
+        <div class="section-heading"><div><p class="eyebrow">03 / OWNER GUIDANCE</p><h2 id="guidance-title">Intent with a visible lifecycle</h2></div><span class="section-aside">Every application names its effect</span></div>
+        <div class="split equal-split">
+          <div class="card action-card"><div class="card-heading"><h3>Submit guidance</h3><span class="badge badge-neutral">Operator</span></div><form id="guidance-form"><label for="guidance-target">Target</label><select id="guidance-target" data-command-input disabled><option value="research">Research program</option></select><label for="guidance-text">Owner instruction</label><textarea id="guidance-text" rows="4" maxlength="4000" placeholder="State the requested direction, constraint, or correction." required data-command-input disabled></textarea><div class="form-row"><div><label for="guidance-action">Registered action</label><select id="guidance-action" data-command-input disabled><option value="">Record text only</option><option value="set_priority">Set obligation priority</option><option value="pause_research">Pause research</option><option value="resume_research">Resume research</option></select></div><div id="priority-field" hidden><label for="guidance-priority">Priority · 0–9</label><input id="guidance-priority" type="number" value="5" min="0" max="9" step="1" data-command-input disabled></div></div><p class="field-help">Text is preserved exactly. Only a supported action can be applied after acknowledgment.</p><button type="submit" class="button-primary" data-command disabled>Submit guidance <span aria-hidden="true">↗</span></button></form></div>
+          <div class="card action-card"><div class="card-heading"><h3>Review &amp; apply</h3><span id="guidance-queue-count" class="badge badge-neutral">No guidance</span></div><label for="guidance-select">Recorded guidance</label><select id="guidance-select" data-read disabled><option value="">No guidance recorded</option></select><div id="guidance-preview" class="guidance-preview"><p class="muted">Submitted text and its registered action appear here.</p></div><form id="ack-form"><div class="form-row"><div><label for="guidance-disposition">Disposition</label><select id="guidance-disposition" data-command-input disabled><option value="ACKNOWLEDGED">Acknowledge</option><option value="DEFERRED">Defer</option><option value="REJECTED">Reject</option></select></div><div><label for="guidance-reason">Reason</label><input id="guidance-reason" maxlength="4000" required placeholder="Record your reasoning" data-command-input disabled></div></div><div class="button-row"><button type="submit" data-command disabled>Record disposition</button><button id="apply-guidance" type="button" class="button-primary" data-command disabled>Apply registered action</button></div></form><p id="guidance-apply-help" class="field-help">Apply becomes available for acknowledged guidance with a registered action.</p><details><summary>Complete guidance record</summary><pre id="guidance-detail">No guidance selected.</pre></details></div>
+        </div>
+      </section>
+
+      <section id="intake" class="section" aria-labelledby="intake-title">
+        <div class="section-heading"><div><p class="eyebrow">SOURCE · INTERPRETATION · EVIDENCE</p><h2 id="intake-title">Work with a supplied source</h2></div><span class="section-aside">Bounded execution · no model</span></div>
+        <div class="split equal-split">
+          <div class="card action-card">
+            <h3>Text or Poly IA program</h3>
+            <p class="muted">Text supports complete command lines: “Teach polynomial division”, “divide polynomial [1,0,1] by [1,1]”, and “normalize unicode &quot;e\u0301&quot;”. Other text is retained as unresolved.</p>
+            <form id="intake-form">
+              <div class="form-row"><div><label for="intake-format">Source format</label><select id="intake-format" data-command-input disabled><option value="text">Text commands</option><option value="polyia">Native Poly IA program</option></select></div><div><label for="intake-style">Explanation</label><select id="intake-style" data-command-input disabled><option value="concise">Concise</option><option value="tutorial">Tutorial</option></select></div></div>
+              <label for="intake-text">Source text</label><textarea id="intake-text" rows="8" spellcheck="false" required maxlength="16384" data-command-input disabled>Teach polynomial division</textarea>
+              <p class="field-help">Up to 16,384 UTF-8 bytes. The original text and results become part of the durable ledger, visible to operator and observer roles. Public export is not authorized by this submission.</p>
+              <button id="run-intake" class="button-primary" type="submit" data-command disabled>Interpret &amp; record</button>
+            </form>
+            <details><summary>Native program example</summary><pre>(commission
+  (profile "polyia.native/0.1")
+  (let p Polynomial (poly 1 0 1))
+  (emit slope (derivative p)))</pre></details>
+          </div>
+          <div class="card action-card"><h3>Latest source result</h3><div id="intake-result" class="record-list" aria-live="polite"><p class="empty-state">Connect to inspect a recorded intake.</p></div></div>
+        </div>
+      </section>
+
+      <section id="research" class="section" aria-labelledby="research-title">
+        <div class="section-heading"><div><p class="eyebrow">04 / SCIENTIFIC RUNS</p><h2 id="research-title">Small, exact, inspectable</h2></div><span class="section-aside">Registered experiments · no inference</span></div>
+        <div class="split research-split"><div class="card action-card"><div class="card-heading"><h3>Run an experiment</h3><span id="research-badge" class="badge badge-neutral">Awaiting state</span></div><form id="experiment-form"><label for="experiment-name">Experiment</label><select id="experiment-name" data-command-input disabled><option value="polynomial">Polynomial identities &amp; domains</option><option value="grammar-promotion">Grammar promotion &amp; semantics</option><option value="qpath">Typed n-ary Q-paths</option><option value="acceptance">Complete seed acceptance family</option><option value="native">Native typed program</option><option value="astra">Astra versioned adapter</option></select><label for="experiment-parameters">Parameters <span class="optional">JSON object</span></label><textarea id="experiment-parameters" class="code-input" rows="5" spellcheck="false" data-command-input disabled>{}</textarea><p class="field-help">Use {} for the four seed experiments. Native requires a source string; Astra requires its versioned operation envelope. The interpreter admits bounded typed programs with no host effects.</p><button id="run-experiment" type="submit" class="button-primary" data-command disabled>Run exact checks <span aria-hidden="true">→</span></button></form></div><div class="card action-card"><div class="card-heading"><h3>Recorded runs</h3><span id="run-total" class="badge badge-neutral">0 loaded</span></div><div id="runs-list" class="record-list"><p class="empty-state">Connect to view recorded experiments and their limitations.</p></div></div></div>
+      </section>
+
+      <section id="integrity" class="section" aria-labelledby="integrity-title"><div class="section-heading"><div><p class="eyebrow">05 / INTEGRITY &amp; SNAPSHOTS</p><h2 id="integrity-title">Keep the trail verifiable</h2></div></div><div class="split equal-split"><div class="card action-card"><div class="card-heading"><h3>Create a checkpoint</h3><span class="badge badge-neutral">Operator</span></div><p class="muted">Capture a source-linked snapshot in the same transaction as its event.</p><form id="checkpoint-form"><label for="checkpoint-note">Checkpoint note</label><input id="checkpoint-note" maxlength="4000" placeholder="Describe this recovery point" data-command-input disabled><div class="button-row"><button type="submit" class="button-primary" data-command disabled>Create checkpoint</button><button id="load-checkpoint" type="button" data-read disabled>Read latest</button></div></form><p id="latest-checkpoint" class="field-help">No snapshot loaded.</p><details id="checkpoint-details"><summary>Checkpoint record</summary><pre id="checkpoint-output">No checkpoint requested.</pre></details></div><div class="card action-card"><div class="card-heading"><h3>Verify ledger integrity</h3><span class="badge badge-neutral">Read access</span></div><p class="muted">Recompute the event chain, deterministic state, captured artifact hashes, and stored checkpoints.</p><button id="verify-ledger" type="button" data-read disabled>Run integrity verification <span aria-hidden="true">↗</span></button><p id="verification-status" class="field-help">No verification requested in this session.</p><details id="verification-details"><summary>Full verification report</summary><pre id="verification-output">Awaiting an explicit verification request.</pre></details></div></div></section>
+
+      <section id="journal" class="section" aria-labelledby="journal-title"><div class="section-heading"><div><p class="eyebrow">06 / EVENT LEDGER</p><h2 id="journal-title">Every committed transition</h2></div><span id="event-cursor" class="section-aside mono">Cursor —</span></div><div class="card"><div class="table-scroll event-scroll" tabindex="0" role="region" aria-label="Committed events"><table><thead><tr><th scope="col">Revision</th><th scope="col">Command</th><th scope="col">Actor</th><th scope="col">Recorded at</th><th scope="col"><span class="sr-only">Inspect event</span></th></tr></thead><tbody id="events-body"><tr><td colspan="5" class="empty-cell">Committed events appear after connection. Refusals are separate.</td></tr></tbody></table></div><div class="card-foot"><span>Resumable JSON polling · latest 100 loaded events</span><button id="load-events" class="text-button" type="button" data-read disabled>Load next page</button></div><details class="padded-details" id="event-details"><summary>Inspect a recorded event</summary><pre id="event-output">Choose an event to see its request, result, and hashes.</pre></details></div>
+        <div class="split equal-split journal-tools"><div class="card action-card"><h3>Command receipt</h3><form id="receipt-form"><label for="receipt-id">Command ID</label><div class="inline-form"><input id="receipt-id" placeholder="web-… or your stable command ID" required maxlength="128" data-read disabled><button type="submit" data-read disabled>Look up</button></div></form><div id="retry-panel" class="retry-panel" hidden><p id="retry-text"></p><button id="retry-command" type="button" class="button-primary">Retry same command ID</button></div><details id="receipt-details"><summary>Most recent receipt</summary><pre id="receipt-output">No command receipt received in this session.</pre></details></div><div class="card action-card"><h3>Refused commands</h3><p class="muted">Refused ledger commands keep diagnostics without advancing the applied revision. HTTP authentication and parsing refusals are returned to the caller; redacted operational logs retain their status categories separately from this ledger.</p><button id="load-refusals" type="button" data-read disabled>Read recent refusal diagnostics</button><details id="refusals-details"><summary>Latest 25 ledger refusals</summary><pre id="refusals-output">No refusal diagnostics requested.</pre></details></div></div>
+      </section>
+      <footer><span>Poly IA · Polymorphic Intelligence Agency</span><span>Machine truth and human view remain separate.</span></footer>
+    </main>
+  </div>
+</body>
+</html>

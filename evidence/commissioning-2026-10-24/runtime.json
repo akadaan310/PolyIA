@@ -1,0 +1,243 @@
+{
+  "architecture": "aarch64",
+  "captured_at_utc": "2026-10-24T07:31:36.447023+00:00",
+  "distribution": {
+    "archive_path": "/home/ubuntu/.local/share/polyia/runtime/provenance/cpython-3.13.17+20261021-aarch64-unknown-linux-gnu-install_only_stripped.tar.gz",
+    "archive_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20261021/cpython-3.13.17%2B20261021-aarch64-unknown-linux-gnu-install_only_stripped.tar.gz",
+    "distribution_choice": "GIL-enabled ARM64 glibc install-only stripped archive, installed under a new PolyIA-specific directory.",
+    "github_asset_digest": "sha256:c6857c65b996701a5da104cbb49b35249c0c026dc0664239b04f7156aa88326a",
+    "measured_archive_sha256": "c6857c65b996701a5da104cbb49b35249c0c026dc0664239b04f7156aa88326a",
+    "publisher": "Astral python-build-standalone",
+    "release_published_at": "2026-10-21T19:23:37Z",
+    "release_tag": "20261021",
+    "release_url": "https://github.com/astral-sh/python-build-standalone/releases/tag/20261021"
+  },
+  "dynamic_linkage": {
+    "argv": [
+      "/usr/bin/ldd",
+      "/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/bin/python3"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "linux-vdso.so.1 (0x0000fdf98a5a6000)\n\tlibpthread.so.0 => /lib/aarch64-linux-gnu/libpthread.so.0 (0x0000fdf985f00000)\n\tlibdl.so.2 => /lib/aarch64-linux-gnu/libdl.so.2 (0x0000fdf985ee0000)\n\tlibutil.so.1 => /lib/aarch64-linux-gnu/libutil.so.1 (0x0000fdf985ec0000)\n\tlibm.so.6 => /lib/aarch64-linux-gnu/libm.so.6 (0x0000fdf985e20000)\n\tlibrt.so.1 => /lib/aarch64-linux-gnu/librt.so.1 (0x0000fdf985e00000)\n\tlibgcc_s.so.1 => /lib/aarch64-linux-gnu/libgcc_s.so.1 (0x0000fdf985dd0000)\n\tlibc.so.6 => /lib/aarch64-linux-gnu/libc.so.6 (0x0000fdf985c20000)\n\t/lib/ld-linux-aarch64.so.1 (0x0000fdf98a560000)"
+  },
+  "host": "ollama-a1",
+  "known_limits": [
+    "Bounded WAL exercise does not establish absence of all SQLite races or production performance.",
+    "Application and deployment acceptance are separate work.",
+    "No independent rebuild of the upstream binary was performed.",
+    "The cloud environment status tool and /etc/codex/network-policy.json were unavailable on this executor. Network retrieval used configured default HTTPS access with certificate verification."
+  ],
+  "os": "Linux-6.8.0-1060-oracle-aarch64-with-glibc2.35",
+  "result": "PASS",
+  "retained_provenance_files": {
+    "cpython-3.13.17+20261021-aarch64-unknown-linux-gnu-install_only_stripped.tar.gz": "c6857c65b996701a5da104cbb49b35249c0c026dc0664239b04f7156aa88326a",
+    "downloads.json": "510d5b18ac3902627cab1c5e0c0a77b2e0e18b6f298df0610de3fcb8a2406db4",
+    "release.json": "a6151d6a918704411d6a99d9976af8b334b5ce4995731047acd650896bda0bbb",
+    "running.rst": "8ba017aea359b8760f88dd76121d5f91c64653baae7200dea503f6ffd4eb55df",
+    "verify_runtime.py": "0c9baff4f174b769a02e97e51d69efd3c9b316d8dfb065bdb290b1decef65fb3"
+  },
+  "runbook_requirements": {
+    "O_NOFOLLOW": true,
+    "posix_dir_fd": true,
+    "python_minimum": "3.11",
+    "sqlite_minimum": "3.51.3",
+    "status": "PASS"
+  },
+  "runtime": {
+    "executable": "/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/bin/python3",
+    "interpreter_sha256": "18967306882a268a51f980b66a5b5fab4300954592833e084aafe2243e1c217b",
+    "isolated_mode": true,
+    "openssl_version": "OpenSSL 3.5.9 29 Sep 2026",
+    "prefix": "/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python",
+    "python_version": "3.13.17 (main, Oct 21 2026, 17:46:06) [Clang 23.1.3 ]",
+    "sqlite_module_origin": "built-in",
+    "sqlite_version": "3.53.1",
+    "sys_path": [
+      "/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python313.zip",
+      "/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13",
+      "/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/lib-dynload",
+      "/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/site-packages"
+    ]
+  },
+  "schema_version": 1,
+  "scope": "Isolated interpreter installation and bounded runtime preflight. No PolyIA service startup, application acceptance, or independent build reproducibility certification.",
+  "source_declaration_limit": "Source archive hashes come from the retained upstream release-tag downloads.json manifest; this install used the checksum-verified prebuilt archive rather than a local source rebuild.",
+  "source_references": [
+    "https://docs.astral.sh/python-build-standalone/",
+    "https://github.com/astral-sh/python-build-standalone/blob/20261021/docs/running.rst",
+    "https://github.com/astral-sh/python-build-standalone/blob/20261021/pythonbuild/downloads.json",
+    "https://www.sqlite.org/wal.html#walreset"
+  ],
+  "system_python_after_install": {
+    "argv": [
+      "/usr/bin/python3",
+      "-I",
+      "-c",
+      "import json,sys,sqlite3; print(json.dumps({\"python\":sys.version,\"executable\":sys.executable,\"sqlite\":sqlite3.sqlite_version}))"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"python\": \"3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]\", \"executable\": \"/usr/bin/python3\", \"sqlite\": \"3.37.2\"}"
+  },
+  "upstream_source_declarations": {
+    "cpython-3.13": {
+      "license_file": "LICENSE.cpython.txt",
+      "licenses": [
+        "Python-2.0",
+        "CNRI-Python"
+      ],
+      "python_tag": "cp313",
+      "sha256": "6020bd10aff3bf4821be16f088ebb1591beb7b811dcd8fab1da8f7c22a7b27e7",
+      "size": 23233336,
+      "url": "https://www.python.org/ftp/python/3.13.17/Python-3.13.17.tar.xz",
+      "version": "3.13.17"
+    },
+    "sqlite": {
+      "_comment": "Remember to update pythonbuild/disttests/ when version changed.",
+      "actual_version": "3.53.1.0",
+      "library_names": [
+        "sqlite3"
+      ],
+      "license_file": "LICENSE.sqlite.txt",
+      "license_public_domain": true,
+      "licenses": [],
+      "sha256": "83e6b2020a034e9a7ad4a72feea59e1ad52f162e09cbd26735a3ffb98359fc4f",
+      "size": 3275272,
+      "url": "https://www.sqlite.org/2026/sqlite-autoconf-3530100.tar.gz",
+      "version": "3530100"
+    }
+  },
+  "validation": {
+    "command": [
+      "/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/bin/python3",
+      "-I",
+      "-B",
+      "/home/ubuntu/.local/share/polyia/runtime/provenance/verify_runtime.py"
+    ],
+    "compression_roundtrips": "PASS",
+    "exact_arithmetic": "PASS",
+    "imports": {
+      "_sqlite3": {
+        "origin": "built-in",
+        "status": "PASS"
+      },
+      "bz2": {
+        "origin": "/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/bz2.py",
+        "status": "PASS"
+      },
+      "ctypes": {
+        "origin": "/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/ctypes/__init__.py",
+        "status": "PASS"
+      },
+      "fractions": {
+        "origin": "/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/fractions.py",
+        "status": "PASS"
+      },
+      "hashlib": {
+        "origin": "/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/hashlib.py",
+        "status": "PASS"
+      },
+      "http.server": {
+        "origin": "/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/http/server.py",
+        "status": "PASS"
+      },
+      "json": {
+        "origin": "/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/json/__init__.py",
+        "status": "PASS"
+      },
+      "lzma": {
+        "origin": "/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/lzma.py",
+        "status": "PASS"
+      },
+      "multiprocessing": {
+        "origin": "/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/multiprocessing/__init__.py",
+        "status": "PASS"
+      },
+      "socket": {
+        "origin": "/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/socket.py",
+        "status": "PASS"
+      },
+      "ssl": {
+        "origin": "/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/ssl.py",
+        "status": "PASS"
+      },
+      "tomllib": {
+        "origin": "/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/tomllib/__init__.py",
+        "status": "PASS"
+      },
+      "venv": {
+        "origin": "/home/ubuntu/.local/share/polyia/runtime/cpython-3.13.17-20261021/python/lib/python3.13/venv/__init__.py",
+        "status": "PASS"
+      },
+      "zlib": {
+        "origin": "built-in",
+        "status": "PASS"
+      }
+    },
+    "loopback_socket_exchange": "PASS",
+    "script": "/home/ubuntu/.local/share/polyia/runtime/provenance/verify_runtime.py",
+    "script_sha256": "0c9baff4f174b769a02e97e51d69efd3c9b316d8dfb065bdb290b1decef65fb3",
+    "sqlite_wal_backup_reopen": {
+      "compile_options": [
+        "ATOMIC_INTRINSICS=1",
+        "COMPILER=clang-23.1.3",
+        "DEFAULT_AUTOVACUUM",
+        "DEFAULT_CACHE_SIZE=-2000",
+        "DEFAULT_FILE_FORMAT=4",
+        "DEFAULT_JOURNAL_SIZE_LIMIT=-1",
+        "DEFAULT_MMAP_SIZE=0",
+        "DEFAULT_PAGE_SIZE=4096",
+        "DEFAULT_PCACHE_INITSZ=20",
+        "DEFAULT_RECURSIVE_TRIGGERS",
+        "DEFAULT_SECTOR_SIZE=4096",
+        "DEFAULT_SYNCHRONOUS=2",
+        "DEFAULT_WAL_AUTOCHECKPOINT=1000",
+        "DEFAULT_WAL_SYNCHRONOUS=2",
+        "DEFAULT_WORKER_THREADS=0",
+        "DIRECT_OVERFLOW_READ",
+        "ENABLE_DBSTAT_VTAB",
+        "ENABLE_FTS3",
+        "ENABLE_FTS3_PARENTHESIS",
+        "ENABLE_FTS4",
+        "ENABLE_FTS5",
+        "ENABLE_GEOPOLY",
+        "ENABLE_MATH_FUNCTIONS",
+        "ENABLE_PERCENTILE",
+        "ENABLE_RTREE",
+        "MALLOC_SOFT_LIMIT=1024",
+        "MAX_ATTACHED=10",
+        "MAX_COLUMN=2000",
+        "MAX_COMPOUND_SELECT=500",
+        "MAX_DEFAULT_PAGE_SIZE=8192",
+        "MAX_EXPR_DEPTH=1000",
+        "MAX_FUNCTION_ARG=1000",
+        "MAX_LENGTH=1000000000",
+        "MAX_LIKE_PATTERN_LENGTH=50000",
+        "MAX_MMAP_SIZE=0x7fff0000",
+        "MAX_PAGE_COUNT=0xfffffffe",
+        "MAX_PAGE_SIZE=65536",
+        "MAX_SQL_LENGTH=1000000000",
+        "MAX_TRIGGER_DEPTH=1000",
+        "MAX_VARIABLE_NUMBER=32766",
+        "MAX_VDBE_OP=250000000",
+        "MAX_WORKER_THREADS=8",
+        "MUTEX_PTHREADS",
+        "SYSTEM_MALLOC",
+        "TEMP_STORE=1",
+        "THREADSAFE=1"
+      ],
+      "integrity_check": "ok",
+      "journal_mode": "wal",
+      "passive_checkpoint_attempts": 50,
+      "rows_after_reopen": 100,
+      "rows_in_backup": 100,
+      "sql_version": "3.53.1",
+      "status": "PASS",
+      "synchronous": "FULL",
+      "transactions_per_writer": 50,
+      "writers": 2
+    },
+    "ssl_default_context": "PASS"
+  }
+}

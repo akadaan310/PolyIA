@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "snad.clean-checkout/1",
+  "observedAt": "2026-10-18T20:15:14.564187+00:00",
+  "sourceCommit": "40f87232fa37abaff3de5f8ca5202605cb0526e6",
+  "directory": "/tmp/snad-clean-372ln55e/repo",
+  "commands": [
+    {
+      "command": [
+        "npm",
+        "ci",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "exitCode": 0,
+      "durationMs": 912.81,
+      "logFile": "evidence/clean-checkout/command-1.log",
+      "logSha256": "6686dcb59a284c14fe53b73f81edfef2517d849fbf27e1062eea77d3716b19aa"
+    },
+    {
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0,
+      "durationMs": 2080.45,
+      "logFile": "evidence/clean-checkout/command-2.log",
+      "logSha256": "2e623bebb2ea0f2f6a4f1c2144c6ba2384595aab36216072bd7cfa6bf0766172"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "exitCode": 0,
+      "durationMs": 1888.09,
+      "logFile": "evidence/clean-checkout/command-3.log",
+      "logSha256": "34155b53aaf5d16cce2ae97e3f2b2bb7e5f84d283090b0bcace4c6e9b70d7554"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exitCode": 0,
+      "durationMs": 4605.83,
+      "logFile": "evidence/clean-checkout/command-4.log",
+      "logSha256": "298d41be28fec3df8f414b45d3acf83fa8b2b54baa4356932eeb69c76e5911a1"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "example"
+      ],
+      "exitCode": 0,
+      "durationMs": 248.24,
+      "logFile": "evidence/clean-checkout/command-5.log",
+      "logSha256": "af61d4195d287a76e57c85ed77907302947a7a93a4b518c4e35f2179a6894e9c"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "cgit:verify"
+      ],
+      "exitCode": 0,
+      "durationMs": 130.17,
+      "logFile": "evidence/clean-checkout/command-6.log",
+      "logSha256": "f7494869d641687dfc2109bd683f53041a874b7305fb81ec213ccaf403ba1813"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "experiments"
+      ],
+      "exitCode": 0,
+      "durationMs": 1132.01,
+      "logFile": "evidence/clean-checkout/command-7.log",
+      "logSha256": "2484681f2d602c5dd9d105258ca467d6146ef8e7d900a470f711a7b4c3700912"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--exit-code",
+        "--",
+        "evidence/experiments.json"
+      ],
+      "exitCode": 0,
+      "durationMs": 139.72,
+      "logFile": "evidence/clean-checkout/command-8.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "allPassed": true
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "snad.final-native-lifecycle/1",
+  "observedAt": "2026-10-18T20:28:27.580156+00:00",
+  "missionUrl": "https://purls-production.up.railway.app/p/resource_bd80f9093ac5fb3b2d176291",
+  "resourceId": "resource_bd80f9093ac5fb3b2d176291",
+  "publishedVersion": 21,
+  "anonymousContinuityHttpStatus": 200,
+  "anonymousAuthority": {
+    "principal_id": null,
+    "owner": false,
+    "rights": [
+      "read"
+    ]
+  },
+  "continuationReportSha256": "7989e0d35d77edd109a909204e611958085c1daabc5a3332ac32c6586ae47915",
+  "embeddedReportValuesMatchOriginal": true,
+  "automatedContinuationStatus": "PASS_WITH_LIMITATIONS",
+  "humanUsabilitySessions": 0,
+  "missionStatus": "INCOMPLETE",
+  "replayValid": true,
+  "replayHistoryEvents": 21,
+  "executionStatusCounts": {
+    "total": 3,
+    "succeeded": 3,
+    "failed": 0,
+    "cancelled": 0,
+    "pending": 0
+  },
+  "sourceSnapshotCommit": "81e7e5db04d0fa48e94e958b92b1b5d14ab02a27",
+  "credentials": "Private process memory only; process closed after this final readback. No credentials persisted.",
+  "frozenArtifactBoundary": "136-file public source snapshot remains immutable; final lifecycle and continuation reports are postrelease sidecars."
+}

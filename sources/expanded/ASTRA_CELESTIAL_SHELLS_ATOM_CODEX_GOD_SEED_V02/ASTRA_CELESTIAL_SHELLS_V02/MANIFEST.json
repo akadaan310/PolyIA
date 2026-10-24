@@ -1,0 +1,288 @@
+{
+  "release": "ASTRA-CELESTIAL/0.2",
+  "created": "2026-10-23",
+  "contents": [
+    {
+      "path": "README.md",
+      "sha256": "697e785cb0599effa13e74bcf4684aeadd7632ced1d24b390b06117780ee29ff",
+      "bytes": 3460
+    },
+    {
+      "path": "atom/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "atom/cli.py",
+      "sha256": "c5927c2a1f5aa1ae9ebb03dfd90bf5df4bac43c998f0e5640343dccecb01dab1",
+      "bytes": 2849
+    },
+    {
+      "path": "atom/core.py",
+      "sha256": "243e27d8c6a7448dfe626d764b140b0b756db265fe0dcaf8428a91487c808ad7",
+      "bytes": 13873
+    },
+    {
+      "path": "atom/driver.py",
+      "sha256": "ab40686994824b6af940e87f5f7bfaa280b46e429ec6451f5887e97130e50ebd",
+      "bytes": 2610
+    },
+    {
+      "path": "atom/server.py",
+      "sha256": "3fe57d8d474a5acdacc736836b42d8f659778cbaca87a1fb1b6f96f3a334bfd8",
+      "bytes": 4814
+    },
+    {
+      "path": "audio_assets/celestial-drift.wav",
+      "sha256": "9ca93bf4a0babbf9b6940c74ea6465e3ab5013358be6181d2739fce81e7c06b5",
+      "bytes": 1056044
+    },
+    {
+      "path": "audio_assets/portal-chime.wav",
+      "sha256": "e0ec4d62b647d1bab8805d3cf99f885e7e39bf969d1231a28f47479276a2ec05",
+      "bytes": 192044
+    },
+    {
+      "path": "docs/FORMAL_CONSTITUTION.md",
+      "sha256": "f9a5aaa75812d0c887b8e4aa75adb677903885f293e329127afecabaf78e670e",
+      "bytes": 4931
+    },
+    {
+      "path": "docs/HARNESSES_AND_ECONOMY.md",
+      "sha256": "85e28e73eb2a8b5017c00ec4b4349c7f56d4f6e08dde097f642f4d29c676cdb3",
+      "bytes": 3131
+    },
+    {
+      "path": "docs/IMPLEMENTATION_AND_GATES.md",
+      "sha256": "68df49d99240aed6880189656b565249c691429583a1630107fd480f6e255a8a",
+      "bytes": 1968
+    },
+    {
+      "path": "docs/SCIENTIFIC_AND_AUDIO_CONTRACT.md",
+      "sha256": "c539c84b53acb24122f882ac58678ba3f10654d2100893f64b7a870204f7c5bc",
+      "bytes": 3822
+    },
+    {
+      "path": "docs/SOURCE_REFERENCES.md",
+      "sha256": "759a9c8c89ef0f65f83120b17bd2d594f0777f3d074f417722ef46c04635ab58",
+      "bytes": 2012
+    },
+    {
+      "path": "docs/SOURCE_STATUS.md",
+      "sha256": "bc7f3a7b1f55c9638228d09642167e5ae04460765b3b5a7712f2360be593bb4c",
+      "bytes": 1237
+    },
+    {
+      "path": "docs/TEST_REPORT.md",
+      "sha256": "e0ac5fc10b24327e20a9871b754b10f4132885db32fa90adaf0c904cf424d96a",
+      "bytes": 2722
+    },
+    {
+      "path": "docs/VERIFY_COMMANDS.md",
+      "sha256": "a2212bfb6eaecc05e00cb8ec67465ae3318de6177327c83f8dc95a033bccdad3",
+      "bytes": 834
+    },
+    {
+      "path": "docs/VISUAL_PLATES.md",
+      "sha256": "88d59141807c0fdf379f7d40350e50b3f3a092bb5ea51e811ce940db6fb9ec23",
+      "bytes": 2531
+    },
+    {
+      "path": "evidence/atom-tests.log",
+      "sha256": "1cb47480eb9f41649a7ede452e242e036be7a782ec03e389f63059b5d001ca4d",
+      "bytes": 1714
+    },
+    {
+      "path": "evidence/audio-audit.json",
+      "sha256": "e8b727b6820657305a2de6b1666422513e4d4edf6eaa957f09cc7fb36746bdee",
+      "bytes": 404
+    },
+    {
+      "path": "evidence/browser-checks.json",
+      "sha256": "6efb1ae6a20a649c08b7a73d80fd87c7c3e2620d687f3f381a0abfbea96cb790",
+      "bytes": 609
+    },
+    {
+      "path": "evidence/browser-tests.log",
+      "sha256": "b7bcabc421cb535a852cf2056c61d16e45f9ceaa97fb978e33fe5ac46f897bfd",
+      "bytes": 2128
+    },
+    {
+      "path": "evidence/celestial-desktop.png",
+      "sha256": "42bd740a46b49b0c53b966d772ec10dd9d196b5dcc3b2197e8f7064258c29e0f",
+      "bytes": 1701331
+    },
+    {
+      "path": "evidence/celestial-mobile.png",
+      "sha256": "110fe391a7a6f45352f70ddbf6be009baf0355b1bf515dccfe6bd8fd88c25e3c",
+      "bytes": 579504
+    },
+    {
+      "path": "evidence/driver-state/checkpoints/0966d44b7d3deb69b4ee170111bf2f9b98e3ced154b6e0008a491afec3ace496.json",
+      "sha256": "a8bb2d312c26061d9bd04c0c2ca6a38d933317bbdb718e017d950423a24ca28f",
+      "bytes": 2384
+    },
+    {
+      "path": "evidence/driver-state/checkpoints/66214ae61cbd29555a542eb08bb7db80e617f5616155745076f5937db7f21fb2.json",
+      "sha256": "51172021a964e1dbf46a31a891d83fbf9b6409f3f788ef3d3bf569e8be99dfed",
+      "bytes": 3294
+    },
+    {
+      "path": "evidence/driver-state/checkpoints/aa8e311d27181a181f14967ddfec96b4d98cf1962ac41dd0238685ade656ed3a.json",
+      "sha256": "6b9db4ef6bffba66fef44c63e43920133b0fb4558755c99d849b5f71ab63f58a",
+      "bytes": 1156
+    },
+    {
+      "path": "evidence/driver-state/checkpoints/c401fa3d9f1700466c6cd3f79b34411fd5eb68651c0450336558de4182aaa905.json",
+      "sha256": "d3ddd38ab2d009cc980f85d1eee90e12abcee8d729ef979b92ef72c5fbf6ebc8",
+      "bytes": 2757
+    },
+    {
+      "path": "evidence/driver-state/checkpoints/c992a167536026e502d1e3adf71c1b016eee95907bb3e750e00a22cb519ed741.json",
+      "sha256": "7a52f319229e5ca081712276185e07b5847a86ea2f3195517584e99a635fda3f",
+      "bytes": 1738
+    },
+    {
+      "path": "evidence/driver-state/events.jsonl",
+      "sha256": "e6051432035c42fc2740e18bcd04e45828c2bf3668a798ef46a283ff67d5743c",
+      "bytes": 10205
+    },
+    {
+      "path": "evidence/driver-state/state.json",
+      "sha256": "5a2813bc8406ed6866e38ad7b191dd7335faa4998b8e8fba739f4ab13c6400a5",
+      "bytes": 3232
+    },
+    {
+      "path": "evidence/headless-demo.json",
+      "sha256": "977f31b39f51bc97506547eacb7f60dd11636cf6d1e57a7ca81130a106494efb",
+      "bytes": 4799
+    },
+    {
+      "path": "evidence/headless-verification.json",
+      "sha256": "442b5ce478c34f3b1d644c74e5bec62d4ec8aa59faf5b7e93f9514b43772ed77",
+      "bytes": 156
+    },
+    {
+      "path": "evidence/intent-tests.log",
+      "sha256": "75d883d542632d415e9e184ceaa8911a661182ba8569d180ed41ca2c9bf0506c",
+      "bytes": 28
+    },
+    {
+      "path": "evidence/node-tests.log",
+      "sha256": "55a1ab21a0bdb2384a118f889f484fc0a702ee0cbece2cae76930356f3011473",
+      "bytes": 54
+    },
+    {
+      "path": "examples/hipparcos_sample.json",
+      "sha256": "836901bce88652ea0e8b58b66a192a25c1be9bf0cc02d297f6668b554fdd2d64",
+      "bytes": 1015
+    },
+    {
+      "path": "examples/mission-plan.json",
+      "sha256": "61e2609c09f9779ed8c76303a5475bab11277435aab7f70392810ccfc90d0d2e",
+      "bytes": 593
+    },
+    {
+      "path": "handoff/ATOM_AGENT_PROTOCOL.json",
+      "sha256": "2d266d815c268dcd5d12a15b2866b80b88fa5500559111ba62a6e3aaaf0a5794",
+      "bytes": 1203
+    },
+    {
+      "path": "handoff/CODEX_GOD_SEED.md",
+      "sha256": "07a640429168bfcfc0893b36a3890457da8b184b5cca392c22dd7028b5f92f8a",
+      "bytes": 13332
+    },
+    {
+      "path": "handoff/CODEX_GOD_SEED_V02.md",
+      "sha256": "382deba870e5910c268d6d1c5b46f249eabf41f9ff3637778d12bdd02f790ad7",
+      "bytes": 22518
+    },
+    {
+      "path": "tests/browser_verify.py",
+      "sha256": "ac3914cf86c6373efb122fdd4a23c4dfb70d38e21d3d3fae74771e17a46443ab",
+      "bytes": 4750
+    },
+    {
+      "path": "tests/capture_motion.py",
+      "sha256": "8cb4267982f323f3032fa6e228e90e08a1d6678a5570ed05e222348809cdeb9c",
+      "bytes": 2312
+    },
+    {
+      "path": "tests/test_atom.py",
+      "sha256": "62eb919ff05088e4c1713d1e85066d0c0c35886bd2789841b1679052a11804bd",
+      "bytes": 5918
+    },
+    {
+      "path": "tests/test_intent_bus.cjs",
+      "sha256": "0aabc1ba6c0f92162dfc78b20a4dc3616895400206b33f10d30fb33e09c701bc",
+      "bytes": 634
+    },
+    {
+      "path": "tests/test_sky_node.cjs",
+      "sha256": "d12fc3299c48ba4884065501e6c010d59b4c019a0f1c2b05cf8a929576bf86e0",
+      "bytes": 1201
+    },
+    {
+      "path": "tools/audit_sound.py",
+      "sha256": "12403a7151cffbd74f9b47924d83b2933c07a1bff5887a08d0766a71f0735baf",
+      "bytes": 850
+    },
+    {
+      "path": "tools/generate_audio.py",
+      "sha256": "088bda21cc11566a7d55f313779893fa3dc877fa1cdca7e2ec6dfee3ee5331b6",
+      "bytes": 1617
+    },
+    {
+      "path": "web/app.js",
+      "sha256": "fae9801efc90e1024a7cc5e9c1922c110593cedcaf9027d913d25eeb73375566",
+      "bytes": 13088
+    },
+    {
+      "path": "web/atom-bus.js",
+      "sha256": "35aa80b147bb39fea1de90b3eb77467a3d56a12304750971b916e67cec86e3cf",
+      "bytes": 2141
+    },
+    {
+      "path": "web/audio.js",
+      "sha256": "bbf3db16987210d1cdcde4a303bceaeacc98676d9c55e5de25a73b3b17ee6e96",
+      "bytes": 4951
+    },
+    {
+      "path": "web/index.html",
+      "sha256": "0879578760a6fddf420c3c4758a1766387077c23b581f9121aa5639d95936a05",
+      "bytes": 9875
+    },
+    {
+      "path": "web/sky.js",
+      "sha256": "fb363a05365eaaabb3e1efabe6054c0a1c579422fff1df9b44927b572f46db57",
+      "bytes": 10789
+    },
+    {
+      "path": "web/star-gpu.js",
+      "sha256": "7ffc99a4ef9105309d472d78381304bfd48b398bbe757048f648fe5afd5d6cda",
+      "bytes": 3861
+    },
+    {
+      "path": "web/style.css",
+      "sha256": "5e23fde0ab44a822385678534ca6f3ae4ec4640d5bceb4f8a9c00265826d19c9",
+      "bytes": 11823
+    }
+  ],
+  "checks": {
+    "python_tests": 23,
+    "node_sky_assertions": 14,
+    "node_bus_assertions": 5,
+    "browser_interaction_checks": 16,
+    "headless_driver_checkpoints": 5,
+    "headless_receipt_events": 39,
+    "sound_samples": 2,
+    "clipped_samples": 0
+  },
+  "limits": [
+    "no_real_Gaia_catalog_loaded",
+    "no_current_planetary_ephemerides",
+    "WebGL2_not_verified_in_browser_host",
+    "no_real_device_perf",
+    "audio_hearing_not_audited"
+  ]
+}

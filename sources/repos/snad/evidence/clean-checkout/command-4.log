@@ -1,0 +1,25 @@
+
+> snad-research@0.1.0 build
+> npm run build:core && tsx scripts/prepare-public.ts && vite build
+
+
+> snad-research@0.1.0 build:core
+> tsc -p packages/snad-core/tsconfig.json
+
+No frozen mission manifest in this source snapshot; building the standalone lab.
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 16 modules transformed.
+rendering chunks...
+computing gzip size...
+../web-dist/index.html                                       0.66 kB │ gzip:   0.40 kB
+../web-dist/assets/InstrumentSerif-Regular-DXer19By.ttf     70.01 kB
+../web-dist/assets/InstrumentSerif-Italic-DvH-EfPC.ttf      71.59 kB
+../web-dist/assets/index-D6MNlzOi.css                       49.12 kB │ gzip:   9.98 kB
+../web-dist/assets/index-B5cDXcp9.js                     6,704.36 kB │ gzip: 859.32 kB
+✓ built in 3.12s
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.

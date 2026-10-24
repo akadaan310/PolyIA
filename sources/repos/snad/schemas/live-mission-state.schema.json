@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SNAD live mission state",
+  "description": "Bounded launch-compatible schema; recorded status remains an author assertion.",
+  "type": "object",
+  "required": ["schema", "mission", "graph", "events", "artifacts", "blockers", "checkpoint", "next"],
+  "properties": {
+    "schema": { "const": "snad.mission-state/1" },
+    "mission": {
+      "type": "object",
+      "required": ["id", "status"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "status": { "enum": ["INCOMPLETE", "COMPLETE_WITH_EVIDENCE"] }
+      }
+    },
+    "graph": {
+      "type": "object",
+      "required": ["nodes", "edges"],
+      "properties": {
+        "nodes": {
+          "type": "array",
+          "maxItems": 128,
+          "items": {
+            "type": "object",
+            "required": ["id", "kind", "dependencies", "status"],
+            "properties": {
+              "id": { "type": "string", "minLength": 1, "maxLength": 128 },
+              "kind": { "type": "string" },
+              "dependencies": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+              "status": { "enum": ["PASS", "FAIL", "BLOCKED", "NOT_RUN"] }
+            }
+          }
+        },
+        "edges": { "type": "array" }
+      }
+    },
+    "events": { "type": "array" },
+    "artifacts": { "type": "array" },
+    "blockers": { "type": "array" },
+    "checkpoint": { "type": "object" },
+    "next": { "type": "array", "items": { "type": "string" } }
+  }
+}

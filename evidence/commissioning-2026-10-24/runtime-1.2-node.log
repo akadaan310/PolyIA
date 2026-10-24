@@ -1,0 +1,118 @@
+TAP version 13
+# Subtest: a connection reads real state and a read token cannot issue a command
+ok 1 - a connection reads real state and a read token cannot issue a command
+  ---
+  duration_ms: 490.31716
+  type: 'test'
+  ...
+# Subtest: lost command response keeps the exact command available for idempotent retry
+ok 2 - lost command response keeps the exact command available for idempotent retry
+  ---
+  duration_ms: 87.728924
+  type: 'test'
+  ...
+# Subtest: a revision conflict is visible and does not silently replay with a new revision
+ok 3 - a revision conflict is visible and does not silently replay with a new revision
+  ---
+  duration_ms: 86.256365
+  type: 'test'
+  ...
+# Subtest: guidance with malicious markup remains exact data throughout command lifecycle
+ok 4 - guidance with malicious markup remains exact data throughout command lifecycle
+  ---
+  duration_ms: 78.273448
+  type: 'test'
+  ...
+# Subtest: artifact capture verification acceptance and checkpoint use registered operations
+ok 5 - artifact capture verification acceptance and checkpoint use registered operations
+  ---
+  duration_ms: 131.361147
+  type: 'test'
+  ...
+# Subtest: disconnect during a delayed response cannot restore an old session
+ok 6 - disconnect during a delayed response cannot restore an old session
+  ---
+  duration_ms: 9.336156
+  type: 'test'
+  ...
+# Subtest: an incomplete 200 receipt is not reported as command success and can be recovered
+ok 7 - an incomplete 200 receipt is not reported as command success and can be recovered
+  ---
+  duration_ms: 80.374767
+  type: 'test'
+  ...
+# Subtest: admission refusal during recovery retains a command whose original response was lost
+ok 8 - admission refusal during recovery retains a command whose original response was lost
+  ---
+  duration_ms: 42.935182
+  type: 'test'
+  ...
+# Subtest: pre-ledger and unreadable error responses cannot erase a previously unresolved receipt
+ok 9 - pre-ledger and unreadable error responses cannot erase a previously unresolved receipt
+  ---
+  duration_ms: 173.994089
+  type: 'test'
+  ...
+# Subtest: actual UI connection shows state and enables only permitted controls
+ok 10 - actual UI connection shows state and enables only permitted controls
+  ---
+  duration_ms: 415.818111
+  type: 'test'
+  ...
+# Subtest: actual guidance form preserves markup as text and applies its explicit action
+ok 11 - actual guidance form preserves markup as text and applies its explicit action
+  ---
+  duration_ms: 129.307507
+  type: 'test'
+  ...
+# Subtest: switching session during a pending response does not leave controls locked
+ok 12 - switching session during a pending response does not leave controls locked
+  ---
+  duration_ms: 69.678731
+  type: 'test'
+  ...
+# Subtest: pagehide clears the visible session before a page can return from history cache
+ok 13 - pagehide clears the visible session before a page can return from history cache
+  ---
+  duration_ms: 15.512114
+  type: 'test'
+  ...
+# Subtest: actual experiment form records science and polling reads external transitions
+ok 14 - actual experiment form records science and polling reads external transitions
+  ---
+  duration_ms: 78.658968
+  type: 'test'
+  ...
+# Subtest: actual artifact controls produce verify accept and expose checkpoint integrity receipts
+ok 15 - actual artifact controls produce verify accept and expose checkpoint integrity receipts
+  ---
+  duration_ms: 178.817247
+  type: 'test'
+  ...
+# Subtest: malformed scientific parameters show a visible refusal without a mutation
+ok 16 - malformed scientific parameters show a visible refusal without a mutation
+  ---
+  duration_ms: 25.59387
+  type: 'test'
+  ...
+# Subtest: intake submits real text, computes supported spans and displays unknown markup as text
+ok 17 - intake submits real text, computes supported spans and displays unknown markup as text
+  ---
+  duration_ms: 126.489268
+  type: 'test'
+  ...
+# Subtest: native intake executes typed output and oversized input refuses before a command
+ok 18 - native intake executes typed output and oversized input refuses before a command
+  ---
+  duration_ms: 97.50424
+  type: 'test'
+  ...
+1..18
+# tests 18
+# suites 0
+# pass 18
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2594.345223

@@ -1,0 +1,25 @@
+[Unit]
+Description=Poly IA live commissioning ledger
+After=network.target
+[Service]
+Type=simple
+User=polyia
+Group=polyia
+WorkingDirectory=/opt/polyia/current
+EnvironmentFile=/etc/polyia/runtime.env
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/opt/polyia/runtime/bin/python3 -m polyia serve --workspace /var/lib/polyia/artifacts --state-dir /var/lib/polyia/state --host 127.0.0.1 --port 8765
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=20
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/polyia
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+MemoryMax=768M
+TasksMax=64
+[Install]
+WantedBy=multi-user.target

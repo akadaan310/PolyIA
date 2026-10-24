@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "polyia-foundation"
+version = "0.1.0"
+description = "Proof-carrying deterministic agency composition reference"
+requires-python = ">=3.10"
+[project.scripts]
+polyia = "polyia.__main__:main"
+[tool.setuptools]
+packages = ["polyia"]

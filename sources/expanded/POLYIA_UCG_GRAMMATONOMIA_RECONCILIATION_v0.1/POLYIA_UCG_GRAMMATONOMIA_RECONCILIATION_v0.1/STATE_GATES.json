@@ -1,0 +1,58 @@
+{
+  "id": "POLYIA-ADMISSION-RECON/0.1",
+  "status": "non-executable-proposed-supervisory-specification",
+  "authority": "owner-required-to-begin",
+  "failure_transition": "stay-and-record-failure",
+  "stages": [
+    {
+      "state": "PREFLIGHT",
+      "guard": "environment-audit",
+      "next": "SOURCE_LOCK"
+    },
+    {
+      "state": "SOURCE_LOCK",
+      "guard": "sha-license-ledger",
+      "next": "BASELINE_REPLAY"
+    },
+    {
+      "state": "BASELINE_REPLAY",
+      "guard": "replay-or-blocker-receipts",
+      "next": "RECONCILE_TYPES"
+    },
+    {
+      "state": "RECONCILE_TYPES",
+      "guard": "typed-mapping-roundtrips",
+      "next": "ADMIT_GRAMMARS"
+    },
+    {
+      "state": "ADMIT_GRAMMARS",
+      "guard": "source-backed-cards-and-negative-cases",
+      "next": "GENERATE_MACHINES"
+    },
+    {
+      "state": "GENERATE_MACHINES",
+      "guard": "executed-compiler-and-machine-witnesses",
+      "next": "COMPOSE"
+    },
+    {
+      "state": "COMPOSE",
+      "guard": "composed-execution-and-refusal-traces",
+      "next": "VERIFY"
+    },
+    {
+      "state": "VERIFY",
+      "guard": "independent-tests-and-ledgers",
+      "next": "BENCHMARK"
+    },
+    {
+      "state": "BENCHMARK",
+      "guard": "baselines-and-failure-table",
+      "next": "PROPOSE_RELEASE"
+    },
+    {
+      "state": "PROPOSE_RELEASE",
+      "guard": "explicit-owner-authorization-required",
+      "next": null
+    }
+  ]
+}

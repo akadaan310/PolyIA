@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ginsdk"
+version = "0.1.0"
+description = "Grammar in Numbers: executable companion (numerals, arithmetic grammars, converse admissibility, machine models, IEEE 754 simulator, circuits, bit-cost arithmetic, number theory)"
+requires-python = ">=3.10"
+authors = [{ name = "Abed Kadaan (research program)" }]
+license = { text = "MIT" }
+
+[tool.setuptools.packages.find]
+where = ["src"]

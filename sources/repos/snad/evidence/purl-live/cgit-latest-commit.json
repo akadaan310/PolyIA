@@ -1,0 +1,105 @@
+{
+  "repository": {
+    "id": "bc38de95-d5d6-4e40-a56f-ac60a292e989",
+    "name": "SNAD mission artifacts",
+    "owner": "guest_itzXkKsyrsCLPcSb8spT32qilwr9C9YWFWO07uN1wuc",
+    "format": "cgit-artifacts/1",
+    "limits": {
+      "objects": 180,
+      "treePaths": 128,
+      "artifactBytes": 204800,
+      "artifactsPerCommit": 12
+    },
+    "origin": null,
+    "branches": {
+      "main": "ef5de542df6f948d4ce3e4f3eebc86d60fdee1a6effb3ac43608e5b7d98263a2"
+    },
+    "releases": {},
+    "createdAt": "2026-10-18T20:03:08.583Z",
+    "retention": "Retained until explicit deletion within account fair-use quotas; export for independent backup",
+    "updatedAt": "2026-10-18T20:20:17.589Z",
+    "hashAlgorithm": "sha256",
+    "gitWireProtocol": false
+  },
+  "commit": {
+    "parents": [
+      "7ea2c06c9bb83aa6da050a5c36756352a3d4c39be08201bf941bdf3736152793"
+    ],
+    "tree": {
+      "docs/integrations.md": {
+        "hash": "43db24bd0081392b3a30489c4ec05cd99d9249fd8d50fe835964feb9aec52411",
+        "type": "code"
+      },
+      "evidence/service-discovery.json": {
+        "hash": "d061082905d5ce40e65bcbfe6434d1d4a71532ca80bc89626932be8f952c8968",
+        "type": "research"
+      },
+      "scripts/integrations/live-session.mjs": {
+        "hash": "8fd1fbefd5b00520e7d0c4e2fc7f01e745c3319262ca118ba0e4cae0b8480d08",
+        "type": "code"
+      },
+      "schemas/live-mission-state.schema.json": {
+        "hash": "4bb37de3268b942b5cf7e69c977288877d6bbfa83ab31aee68d1025e17e8a3a5",
+        "type": "research"
+      },
+      "packages/snad-core/src/adapters.ts": {
+        "hash": "96d7847c5ec86d249ef50f79a1616fa294052d8e0a9a6caad633cc80597622ab",
+        "type": "code"
+      },
+      "packages/snad-core/src/analysis.ts": {
+        "hash": "0eb5b8e7e2adf13a72ebce8e0edd44e3b5a121692561022b3f623af67d16ce04",
+        "type": "code"
+      },
+      "packages/snad-core/src/grammar.ts": {
+        "hash": "cb2662e9a75dca68b85b734f503127b04c63ac8e631351f6204bf7a6e5857aa9",
+        "type": "code"
+      },
+      "packages/snad-core/src/index.ts": {
+        "hash": "b1f7918d6a272c6b7d3b5629f72a4b884ebf546191d4715f0fc4ef79932c3c8d",
+        "type": "code"
+      },
+      "packages/snad-core/src/operators.ts": {
+        "hash": "ad2fce04a62a251c5297146824478470a71fce6514200a8eeffb87d4fe04327c",
+        "type": "code"
+      },
+      "packages/snad-core/src/serialization.ts": {
+        "hash": "2ee14a187b581659eaea61fae86439d7fb924cc3e3c700532234bb10f845e724",
+        "type": "code"
+      },
+      "packages/snad-core/src/types.ts": {
+        "hash": "72c2481343f6771941a330dbf2e1526ace90a5ef978bddc0e8baa2caba420ab5",
+        "type": "code"
+      },
+      "packages/snad-core/src/validation.ts": {
+        "hash": "e03b27013116b05c32144b9a5673f36dfe803dd571e9f19ba79024e103e82ff4",
+        "type": "code"
+      },
+      "evidence/benchmark.json": {
+        "hash": "f1f6c5ba851f4c4b1b458449a3aa200c7f2f7156793e711b541fbe94062b9d1f",
+        "type": "research"
+      },
+      "evidence/experiments.json": {
+        "hash": "7bd61921b20239906559859e699a83bfd166a0105deee26178ebcd18b2277bb9",
+        "type": "research"
+      },
+      "mission/manifest.json": {
+        "hash": "d5f5b014d9dc870f57e4c77f0df19ed278c65907862514188e7a8d772b4076a8",
+        "type": "research"
+      },
+      "evidence/review.md": {
+        "hash": "0ff4a71f71e01c9daf6c77a4cbb1ab50046b53304931577f01514649c4429551",
+        "type": "code"
+      }
+    },
+    "author": "guest_itzXkKsyrsCLPcSb8spT32qilwr9C9YWFWO07uN1wuc",
+    "message": "SNAD frozen SDK, whole-corpus experiment and review evidence",
+    "createdAt": "2026-10-18T20:20:17.559Z",
+    "format": "cgit-commit/1",
+    "hash": "ef5de542df6f948d4ce3e4f3eebc86d60fdee1a6effb3ac43608e5b7d98263a2"
+  },
+  "resumeCursor": {
+    "repositoryId": "bc38de95-d5d6-4e40-a56f-ac60a292e989",
+    "branch": "main",
+    "head": "ef5de542df6f948d4ce3e4f3eebc86d60fdee1a6effb3ac43608e5b7d98263a2"
+  }
+}

@@ -1,0 +1,52 @@
+predicted words: 738 Counter({4: 621, 3: 94, 2: 19, 1: 4})
+{
+"predicted": 738,
+"witnessed": 48,
+"both": 48,
+"recall": 1.0,
+"precision": 0.06504065040650407,
+"by_heavy": {
+"1": {
+"pred": 4,
+"wit": 3,
+"both": 3
+},
+"2": {
+"pred": 19,
+"wit": 5,
+"both": 5
+},
+"3": {
+"pred": 94,
+"wit": 9,
+"both": 9
+},
+"4": {
+"pred": 621,
+"wit": 31,
+"both": 31
+}
+},
+"gaps(witnessed,not predicted)": []
+}
+mined in-grammar:
+   {'motif': 'C=N', 'in_unwitnessed': 160, 'in_witnessed': 0, 'refusal_rate': 1.0}
+   {'motif': 'N-O', 'in_unwitnessed': 133, 'in_witnessed': 0, 'refusal_rate': 1.0}
+   {'motif': 'ring=', 'in_unwitnessed': 129, 'in_witnessed': 0, 'refusal_rate': 1.0}
+   {'motif': 'N-N', 'in_unwitnessed': 124, 'in_witnessed': 0, 'refusal_rate': 1.0}
+   {'motif': 'C-F', 'in_unwitnessed': 85, 'in_witnessed': 0, 'refusal_rate': 1.0}
+   {'motif': 'cumulene(=X=)', 'in_unwitnessed': 64, 'in_witnessed': 0, 'refusal_rate': 1.0}
+   {'motif': 'F-N', 'in_unwitnessed': 59, 'in_witnessed': 0, 'refusal_rate': 1.0}
+   {'motif': 'N=N', 'in_unwitnessed': 54, 'in_witnessed': 0, 'refusal_rate': 1.0}
+   {'motif': 'O-O', 'in_unwitnessed': 45, 'in_witnessed': 0, 'refusal_rate': 1.0}
+   {'motif': 'N:N', 'in_unwitnessed': 30, 'in_witnessed': 0, 'refusal_rate': 1.0}
+   {'motif': 'N=O', 'in_unwitnessed': 25, 'in_witnessed': 0, 'refusal_rate': 1.0}
+   {'motif': 'F-O', 'in_unwitnessed': 25, 'in_witnessed': 0, 'refusal_rate': 1.0}
+   {'motif': 'ring#', 'in_unwitnessed': 24, 'in_witnessed': 0, 'refusal_rate': 1.0}
+   {'motif': 'ring-triple', 'in_unwitnessed': 24, 'in_witnessed': 0, 'refusal_rate': 1.0}
+   {'motif': 'N:O', 'in_unwitnessed': 22, 'in_witnessed': 0, 'refusal_rate': 1.0}
+   {'motif': 'C:N', 'in_unwitnessed': 19, 'in_witnessed': 0, 'refusal_rate': 1.0}
+   {'motif': 'C:O', 'in_unwitnessed': 10, 'in_witnessed': 0, 'refusal_rate': 1.0}
+   {'motif': 'O:O', 'in_unwitnessed': 10, 'in_witnessed': 0, 'refusal_rate': 1.0}
+grammar x in-grammar: {'predicted': 146, 'recall': 1.0, 'precision': 0.3287671232876712}
+textbook witness: {'n': 25, 'predicted_by_grammar': 24, 'in_QM9': 11, 'kept_after_QM9_ingrammar': 16, 'real_but_refused_by_QM9_ingrammar': ['carbon dioxide', 'diazene', 'hydrazine', 'hydrogen peroxide', 'hydroxylamine', 'ketene', 'nitrogen trifluoride', 'oxygen difluoride'], 'not_predicted': ['carbon tetrafluoride']}

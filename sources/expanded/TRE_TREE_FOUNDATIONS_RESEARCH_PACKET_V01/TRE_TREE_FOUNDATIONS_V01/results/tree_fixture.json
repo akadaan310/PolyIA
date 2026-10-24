@@ -1,0 +1,220 @@
+{
+  "kind": "TRE/TREE/research-fixture",
+  "state": {
+    "seed": "TRE/TREE/2026-10-22",
+    "version": 7,
+    "nodes": [
+      {
+        "id": "f7",
+        "kind": "fruit",
+        "parent": "l3",
+        "ordinal": 0,
+        "xyz": [
+          1.65,
+          0.0,
+          3.4
+        ]
+      },
+      {
+        "id": "l3",
+        "kind": "leaf",
+        "parent": "s2",
+        "ordinal": 0,
+        "xyz": [
+          1.0,
+          0.0,
+          2.6
+        ]
+      },
+      {
+        "id": "l6",
+        "kind": "leaf",
+        "parent": "s2",
+        "ordinal": 1,
+        "xyz": [
+          -0.12929,
+          0.439069,
+          2.6
+        ]
+      },
+      {
+        "id": "r0",
+        "kind": "root",
+        "parent": "t0",
+        "ordinal": 0,
+        "xyz": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      {
+        "id": "r1",
+        "kind": "root",
+        "parent": "r0",
+        "ordinal": 0,
+        "xyz": [
+          0.35,
+          0.0,
+          -1.8
+        ]
+      },
+      {
+        "id": "s0",
+        "kind": "shoot",
+        "parent": "t0",
+        "ordinal": 1,
+        "xyz": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "s2",
+        "kind": "shoot",
+        "parent": "s0",
+        "ordinal": 0,
+        "xyz": [
+          0.35,
+          0.0,
+          1.8
+        ]
+      },
+      {
+        "id": "t0",
+        "kind": "trunk",
+        "parent": null,
+        "ordinal": 0,
+        "xyz": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "couplings": [
+      {
+        "provider": "r1",
+        "consumer": "l3",
+        "witness": "8f785fb596906bcbcb60550cc594034ee2e446646b539d42ad78e1cd46381b80",
+        "kind": "resource_support"
+      },
+      {
+        "provider": "r0",
+        "consumer": "l6",
+        "witness": "9c3f88070562ebb84127cc7a3fabe86666d07dfe0ef30520e2b5125ea737b02d",
+        "kind": "resource_support"
+      },
+      {
+        "provider": "r1",
+        "consumer": "f7",
+        "witness": "f2d63dac8fcc12c93c260a7793d9e499c4a73ecc00c9ea3b01b45f86eaad7546",
+        "kind": "resource_support"
+      }
+    ],
+    "resources": {
+      "carbon": 2,
+      "water": 1,
+      "total_carbon_in": 7,
+      "total_water_in": 5,
+      "used_carbon": 5,
+      "used_water": 4
+    }
+  },
+  "topology": {
+    "structural_nodes": 8,
+    "cross_couplings": 3,
+    "maximum_depth": 4,
+    "children": {
+      "f7": [],
+      "l3": [
+        "f7"
+      ],
+      "l6": [],
+      "r0": [
+        "r1"
+      ],
+      "r1": [],
+      "s0": [
+        "s2"
+      ],
+      "s2": [
+        "l3",
+        "l6"
+      ],
+      "t0": [
+        "r0",
+        "s0"
+      ]
+    },
+    "content_id": "sha256:b759fdd88c9d2fbc910788dd10611e832928a857da3fb4fefdb24800f8cfb9eb"
+  },
+  "events": [
+    {
+      "version": 1,
+      "action": "grow",
+      "target": "r1",
+      "source": "r0",
+      "witness": "fbd8390a7645551165c15c433d74aa71e3360d55b1b0cc12bab09962b7c6b1d8",
+      "before": "sha256:890c48eb8f6a5963f519e66c2befd74fa629cca04e59d63fa74a6475f8e0e0c1",
+      "after": "sha256:9a5fd1a6a26b9f3534003f393f43bbaa822978e337774428cb7285590df46be7"
+    },
+    {
+      "version": 2,
+      "action": "grow",
+      "target": "s2",
+      "source": "s0",
+      "witness": "4c7506b6561cc68d21207b13d3e54af546a0f95cb7edf33132f746ae4df618c4",
+      "before": "sha256:9a5fd1a6a26b9f3534003f393f43bbaa822978e337774428cb7285590df46be7",
+      "after": "sha256:9613cd039135479b5cb87835c48e017f8bcbe024bce253544a47fc183b14310b"
+    },
+    {
+      "version": 3,
+      "action": "grow",
+      "target": "l3",
+      "source": "s2",
+      "witness": "8f785fb596906bcbcb60550cc594034ee2e446646b539d42ad78e1cd46381b80",
+      "before": "sha256:9613cd039135479b5cb87835c48e017f8bcbe024bce253544a47fc183b14310b",
+      "after": "sha256:2dd02d5c7c1f378b17be72794b4b3f959feeea7df7c5e3a00208334ae0a2c881"
+    },
+    {
+      "version": 4,
+      "action": "absorb",
+      "target": "r1",
+      "source": "r1",
+      "witness": "4cd4be2d66d22adb215b48fc00d1427d51eca18d589fe15ca0fd8b5059f86ba6",
+      "before": "sha256:2dd02d5c7c1f378b17be72794b4b3f959feeea7df7c5e3a00208334ae0a2c881",
+      "after": "sha256:78462f87e23c9ab1a9f45c48b8bc9f183625cfea08b82d4b1ed76a79d04f6013"
+    },
+    {
+      "version": 5,
+      "action": "photosynthesize",
+      "target": "l3",
+      "source": "l3",
+      "witness": "3edd74a2c92eb5f81f5c3f7bb636bbe22346029571c51f541b32162e341d62b1",
+      "before": "sha256:78462f87e23c9ab1a9f45c48b8bc9f183625cfea08b82d4b1ed76a79d04f6013",
+      "after": "sha256:01becfc0ff3c14f487964d48085de9001ae561965431c257b1920f859bd9214b"
+    },
+    {
+      "version": 6,
+      "action": "grow",
+      "target": "l6",
+      "source": "s2",
+      "witness": "9c3f88070562ebb84127cc7a3fabe86666d07dfe0ef30520e2b5125ea737b02d",
+      "before": "sha256:01becfc0ff3c14f487964d48085de9001ae561965431c257b1920f859bd9214b",
+      "after": "sha256:22f04574cc4ca460a67c430d8038abc3fc4dee5065f4e724e1ebca6bdee78dfe"
+    },
+    {
+      "version": 7,
+      "action": "grow",
+      "target": "f7",
+      "source": "l3",
+      "witness": "f2d63dac8fcc12c93c260a7793d9e499c4a73ecc00c9ea3b01b45f86eaad7546",
+      "before": "sha256:22f04574cc4ca460a67c430d8038abc3fc4dee5065f4e724e1ebca6bdee78dfe",
+      "after": "sha256:b759fdd88c9d2fbc910788dd10611e832928a857da3fb4fefdb24800f8cfb9eb"
+    }
+  ],
+  "fruit": "f7",
+  "invariants_ok": true
+}

@@ -1,0 +1,119 @@
+{
+  "ok": true,
+  "scope": "new stdlib bootstrap modules and registered exact scientific kernels",
+  "runtime_modules": [
+    {
+      "path": "polyia/__init__.py",
+      "sha256": "7eb3f316d7989fb09e03205362c5ca20e9a6c27ecd376c1f8d0d7e8b843a4689"
+    },
+    {
+      "path": "polyia/__main__.py",
+      "sha256": "0952a82fc4e578988ba64e72bc45884a2a365b90130e04f681c68f8425e6b60f"
+    },
+    {
+      "path": "polyia/cli.py",
+      "sha256": "fbc88b11a101f0b3678c7a19266df9a844688226b13feaf5145e3fe407c8adfe"
+    },
+    {
+      "path": "polyia/experiments.py",
+      "sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809"
+    },
+    {
+      "path": "polyia/server.py",
+      "sha256": "77a77f5bf41772e7811126acbd5334c960cfd8bf395e22a9eb2af27ba13d5534"
+    },
+    {
+      "path": "polyia/store.py",
+      "sha256": "dc88ea766ab2afe4f5426c00e729d228b656f6856f387f838a18d75a5749509a"
+    }
+  ],
+  "imports": [
+    "__future__",
+    "argparse",
+    "ast",
+    "contextlib",
+    "copy",
+    "datetime",
+    "fractions",
+    "hashlib",
+    "hmac",
+    "http",
+    "importlib",
+    "inspect",
+    "ipaddress",
+    "json",
+    "logging",
+    "os",
+    "pathlib",
+    "platform",
+    "re",
+    "signal",
+    "socket",
+    "sqlite3",
+    "stat",
+    "sys",
+    "threading",
+    "types",
+    "urllib",
+    "uuid"
+  ],
+  "model_artifacts": [],
+  "offline_checks": [
+    {
+      "name": "exact polynomial division and derivative identities",
+      "pass": true
+    },
+    {
+      "name": "polynomial divisor guard",
+      "pass": true
+    },
+    {
+      "name": "domain exclusion retained",
+      "pass": true
+    },
+    {
+      "name": "grammar promotion expansion",
+      "pass": true
+    },
+    {
+      "name": "finite grammar exact denotation",
+      "pass": true
+    },
+    {
+      "name": "joint-premise constructive hyperpath",
+      "pass": true
+    },
+    {
+      "name": "missing joint premise rejected",
+      "pass": true
+    },
+    {
+      "name": "context mismatch rejected",
+      "pass": true
+    },
+    {
+      "name": "type mismatch rejected",
+      "pass": true
+    },
+    {
+      "name": "inexact float input rejected",
+      "pass": true
+    },
+    {
+      "name": "unknown alphabet symbol rejected",
+      "pass": true
+    },
+    {
+      "name": "registered implementations use no model inference",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Static imports plus intercepted kernel execution establish this finite bootstrap scope, not every future plugin.",
+    "Archived upstream source is retained data, not imported into the running baseline.",
+    "The fixed installed scientific module is compiled only to compare its code structure with loaded functions; that comparison object is never executed.",
+    "The HTTP service necessarily uses a loopback socket; this audit disables networking for the scientific kernels.",
+    "Full commission requires the broader no-inference process/tool/model-artifact gate as capabilities are added."
+  ]
+}

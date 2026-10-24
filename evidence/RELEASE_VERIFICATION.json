@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-24T05:14:18.063094+00:00",
+  "ok": true,
+  "scope": "Release bootstrap and retained-source package; full Poly IA mission is NOT_COMMISSIONED",
+  "environment": {
+    "python": "3.12.14",
+    "sqlite": "3.53.1",
+    "node": "v24.19.0",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "runtime": "1.1.0",
+    "ledger_schema": 2
+  },
+  "counts": {
+    "python_tests_passed": 107,
+    "node_client_tests_passed": 7,
+    "node_ui_handler_tests_passed": 7,
+    "offline_scientific_checks": 12,
+    "source_files": 1034,
+    "repository_snapshots": 8,
+    "repository_blobs": 757,
+    "unique_expanded_archives": 13,
+    "expanded_members": 253,
+    "mission_obligations": 192,
+    "core_inherited_obligations": 252,
+    "supplemental_documents": 130,
+    "supplemental_segments": 3706,
+    "supplemental_partition_bytes": 1055041,
+    "supplemental_registry_bytes": 10270078
+  },
+  "commands": [
+    {
+      "id": "python-unittest",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 4.101,
+      "log": "evidence/test-logs/python-unittest.txt",
+      "log_sha256": "a49fadb7a9dfe52e3c6b08a7b7c0381b41db1b6635402386117685fb6c969dbb"
+    },
+    {
+      "id": "node-client",
+      "command": [
+        "node",
+        "--test",
+        "--test-reporter=tap",
+        "web/client.test.mjs"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.303,
+      "log": "evidence/test-logs/node-client.txt",
+      "log_sha256": "23ed85f1c72e28467d81b7fac97b62bdcd0cbd7a4f099c8bb00adb17456e8375"
+    },
+    {
+      "id": "node-ui",
+      "command": [
+        "node",
+        "--test",
+        "--test-reporter=tap",
+        "web/ui.test.mjs"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.468,
+      "log": "evidence/test-logs/node-ui.txt",
+      "log_sha256": "e756468148695fad09dcf7870129fed413a866220a30a2285819f708080b7a07"
+    },
+    {
+      "id": "package-verification",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "tools/verify_package.py"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.663,
+      "log": "evidence/test-logs/package-verification.txt",
+      "log_sha256": "46714741b3936e917aa4963717e000e71f506fbc7b25cd075f8ff89059757887"
+    },
+    {
+      "id": "no-llm-audit",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "tools/audit_no_llm.py"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.108,
+      "log": "evidence/test-logs/no-llm-audit.txt",
+      "log_sha256": "9a99a0c6e2883c9191bbc2ff333fd5ae249bc5fade71ddc20b379a5024d36ab0"
+    },
+    {
+      "id": "default-registry-init",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "polyia",
+        "init",
+        "--state-dir",
+        "/tmp/polyia-release-7p5lu9_7/state",
+        "--workspace",
+        "/tmp/polyia-release-7p5lu9_7/workspace"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.13,
+      "log": "evidence/test-logs/default-registry-init.txt",
+      "log_sha256": "53ce3593d016d785410efd78f15ab7ab3ed73c47922985134de301ac68987865"
+    },
+    {
+      "id": "integrated-demo",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "polyia",
+        "demo",
+        "--state-dir",
+        "/tmp/polyia-release-7p5lu9_7/state",
+        "--workspace",
+        "/tmp/polyia-release-7p5lu9_7/workspace"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.658,
+      "log": "evidence/test-logs/integrated-demo.txt",
+      "log_sha256": "65912b50ae03959c2065d82f17851ca78050517a2aa6830020a7991417e999a1"
+    },
+    {
+      "id": "restart-state",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "polyia",
+        "status",
+        "--state-dir",
+        "/tmp/polyia-release-7p5lu9_7/state",
+        "--workspace",
+        "/tmp/polyia-release-7p5lu9_7/workspace"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.125,
+      "log": "evidence/test-logs/restart-state.txt",
+      "log_sha256": "8d14c5f6f297b05894ace3e2c4817901dc911ec214e00790440aa62831439ca1"
+    },
+    {
+      "id": "restart-verify",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "polyia",
+        "verify",
+        "--state-dir",
+        "/tmp/polyia-release-7p5lu9_7/state",
+        "--workspace",
+        "/tmp/polyia-release-7p5lu9_7/workspace"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.194,
+      "log": "evidence/test-logs/restart-verify.txt",
+      "log_sha256": "a364b4fd24b7d2c96f7c90f7ce04cc48ec21d8fafef08dc648e6f7b9451ff870"
+    }
+  ],
+  "verified_code_and_test_files": [
+    {
+      "path": "polyia/__init__.py",
+      "sha256": "7eb3f316d7989fb09e03205362c5ca20e9a6c27ecd376c1f8d0d7e8b843a4689"
+    },
+    {
+      "path": "polyia/__main__.py",
+      "sha256": "0952a82fc4e578988ba64e72bc45884a2a365b90130e04f681c68f8425e6b60f"
+    },
+    {
+      "path": "polyia/cli.py",
+      "sha256": "fbc88b11a101f0b3678c7a19266df9a844688226b13feaf5145e3fe407c8adfe"
+    },
+    {
+      "path": "polyia/experiments.py",
+      "sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809"
+    },
+    {
+      "path": "polyia/server.py",
+      "sha256": "77a77f5bf41772e7811126acbd5334c960cfd8bf395e22a9eb2af27ba13d5534"
+    },
+    {
+      "path": "polyia/store.py",
+      "sha256": "dc88ea766ab2afe4f5426c00e729d228b656f6856f387f838a18d75a5749509a"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "sha256": "6997a85628100e4e834b1113e2c7c694219e77918e0285c179d48ad6fc24ce50"
+    },
+    {
+      "path": "tests/test_experiments.py",
+      "sha256": "1c712184daf0daaa358cfaca3c3018fe151fd656aee1d841b3f0f1faefa63617"
+    },
+    {
+      "path": "tests/test_server.py",
+      "sha256": "652fe0734e81ad00d4e542a50c1ef406e288edadc740f61649b976fdd10eae4f"
+    },
+    {
+      "path": "tests/test_store.py",
+      "sha256": "ad725f230617a3633013a5453b68fb3051fbd0988653b192f381397199e41e30"
+    },
+    {
+      "path": "web/app.js",
+      "sha256": "f85d55b8369839ffd5c6e1ca4425225236fe5eab1ff211c355f3bc8a38aa308d"
+    },
+    {
+      "path": "web/client.mjs",
+      "sha256": "6f0f869051caaff7aaa8ed1ba6b5c873c27f6fe8dd7fe46ac5aba6b1733f20e4"
+    },
+    {
+      "path": "web/client.test.mjs",
+      "sha256": "22528d31f858dc89db99550c856f4141cf390de2e2032c4e4fe245628b06b70f"
+    },
+    {
+      "path": "web/index.html",
+      "sha256": "ea2bcca31d3a925a815624feae90d0a23c54b62a59bfb5f6645099496a28c106"
+    },
+    {
+      "path": "web/styles.css",
+      "sha256": "80a8a4e13edcead33f93db1e576e0dc8359abe97b4adb65dbb503c26f5bfb075"
+    },
+    {
+      "path": "web/ui.test.mjs",
+      "sha256": "c5756198f98eca612882c4b9d95fe93fbdee7de0cad407ffbed8515b374cdb92"
+    },
+    {
+      "path": "tools/audit_no_llm.py",
+      "sha256": "25a8b921165aae1d3ac54c84c9aec4929f8d3818c6e730368902689188835987"
+    },
+    {
+      "path": "tools/backup_state.py",
+      "sha256": "180b2aaedc172bdfb1d742e7baface4da86d7a24b450f236a85f517e888b70bd"
+    },
+    {
+      "path": "tools/verify_package.py",
+      "sha256": "bd8bd6da2bfaec8079d994193ed0876314c16f86f0d10d5fcd641d6fc9bc880f"
+    }
+  ],
+  "integration": "evidence/integrated-recovery.json",
+  "independent_review": "docs/RELEASE_RUNTIME_REVIEW.md",
+  "not_executed": [
+    "Oracle installation or public TLS deployment",
+    "Remote GitHub mutation",
+    "Full 192-obligation commission",
+    "All preserved upstream runtimes",
+    "Real-browser rendering/accessibility/device certification"
+  ],
+  "limitations": [
+    "UI-handler tests use a test-only DOM against the real service.",
+    "Source custody and exact inherited-text reconstruction do not validate every source scientific claim.",
+    "The separately named Book of Forms identity and spoken OpenCLAR name remain unresolved.",
+    "Runtime replay checks local chain consistency, not external signatures or adversarial-administrator tamper-proofing."
+  ]
+}

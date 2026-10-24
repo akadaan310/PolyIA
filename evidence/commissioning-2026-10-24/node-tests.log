@@ -1,0 +1,94 @@
+TAP version 13
+# Subtest: a connection reads real state and a read token cannot issue a command
+ok 1 - a connection reads real state and a read token cannot issue a command
+  ---
+  duration_ms: 809.107741
+  type: 'test'
+  ...
+# Subtest: lost command response keeps the exact command available for idempotent retry
+ok 2 - lost command response keeps the exact command available for idempotent retry
+  ---
+  duration_ms: 81.543994
+  type: 'test'
+  ...
+# Subtest: a revision conflict is visible and does not silently replay with a new revision
+ok 3 - a revision conflict is visible and does not silently replay with a new revision
+  ---
+  duration_ms: 79.847915
+  type: 'test'
+  ...
+# Subtest: guidance with malicious markup remains exact data throughout command lifecycle
+ok 4 - guidance with malicious markup remains exact data throughout command lifecycle
+  ---
+  duration_ms: 99.834983
+  type: 'test'
+  ...
+# Subtest: artifact capture verification acceptance and checkpoint use registered operations
+ok 5 - artifact capture verification acceptance and checkpoint use registered operations
+  ---
+  duration_ms: 115.824814
+  type: 'test'
+  ...
+# Subtest: disconnect during a delayed response cannot restore an old session
+ok 6 - disconnect during a delayed response cannot restore an old session
+  ---
+  duration_ms: 5.511397
+  type: 'test'
+  ...
+# Subtest: an incomplete 200 receipt is not reported as command success and can be recovered
+ok 7 - an incomplete 200 receipt is not reported as command success and can be recovered
+  ---
+  duration_ms: 58.649606
+  type: 'test'
+  ...
+# Subtest: actual UI connection shows state and enables only permitted controls
+ok 8 - actual UI connection shows state and enables only permitted controls
+  ---
+  duration_ms: 805.629903
+  type: 'test'
+  ...
+# Subtest: actual guidance form preserves markup as text and applies its explicit action
+ok 9 - actual guidance form preserves markup as text and applies its explicit action
+  ---
+  duration_ms: 155.831351
+  type: 'test'
+  ...
+# Subtest: switching session during a pending response does not leave controls locked
+ok 10 - switching session during a pending response does not leave controls locked
+  ---
+  duration_ms: 85.674471
+  type: 'test'
+  ...
+# Subtest: pagehide clears the visible session before a page can return from history cache
+ok 11 - pagehide clears the visible session before a page can return from history cache
+  ---
+  duration_ms: 22.051828
+  type: 'test'
+  ...
+# Subtest: actual experiment form records science and polling reads external transitions
+ok 12 - actual experiment form records science and polling reads external transitions
+  ---
+  duration_ms: 144.818118
+  type: 'test'
+  ...
+# Subtest: actual artifact controls produce verify accept and expose checkpoint integrity receipts
+ok 13 - actual artifact controls produce verify accept and expose checkpoint integrity receipts
+  ---
+  duration_ms: 283.35368
+  type: 'test'
+  ...
+# Subtest: malformed scientific parameters show a visible refusal without a mutation
+ok 14 - malformed scientific parameters show a visible refusal without a mutation
+  ---
+  duration_ms: 37.326098
+  type: 'test'
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 14
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3088.686966

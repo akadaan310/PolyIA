@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "snad.sdk-package/1",
+  "name": "snad-core",
+  "version": "0.1.0",
+  "filename": "/workspace/snad-core-0.1.0.tgz",
+  "bytes": 16173,
+  "sha256": "814a347276b96a8f38bab38e5f08d048a46801ef28f5f4b52af521e36da5d835",
+  "npmIntegrity": "sha512-uu7/MvFcpzhBMOpi2V9aQe92itcyUHtLAHa9JyPrWd0L0swAWrzyvSe4leHY4vEtP4+LOZgaxUplNJoaw9XJFA==",
+  "includesReadme": true,
+  "includesLicense": true,
+  "smoke": {
+    "installedPackage": true,
+    "runtimeDependencies": 0,
+    "analysisRoundtrip": true,
+    "observedGrammar": true
+  }
+}

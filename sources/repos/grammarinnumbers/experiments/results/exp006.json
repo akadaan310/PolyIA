@@ -1,0 +1,437 @@
+{
+ "experiment": "GIN-EXP-006",
+ "hypotheses": [
+  "GIN-H-016",
+  "GIN-H-017"
+ ],
+ "seed": 6,
+ "environment": {
+  "python": "3.13.16",
+  "implementation": "CPython",
+  "machine": "x86_64",
+  "system": "Linux 6.18.44-fc-v80",
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.80GHz"
+ },
+ "data": {
+  "exhaustive": {
+   "1": {
+    "ripple-carry": {
+     "pairs": 4,
+     "errors": 0
+    },
+    "Sklansky": {
+     "pairs": 4,
+     "errors": 0
+    },
+    "Kogge–Stone": {
+     "pairs": 4,
+     "errors": 0
+    },
+    "Brent–Kung": {
+     "pairs": 4,
+     "errors": 0
+    }
+   },
+   "2": {
+    "ripple-carry": {
+     "pairs": 16,
+     "errors": 0
+    },
+    "Sklansky": {
+     "pairs": 16,
+     "errors": 0
+    },
+    "Kogge–Stone": {
+     "pairs": 16,
+     "errors": 0
+    },
+    "Brent–Kung": {
+     "pairs": 16,
+     "errors": 0
+    }
+   },
+   "3": {
+    "ripple-carry": {
+     "pairs": 64,
+     "errors": 0
+    },
+    "Sklansky": {
+     "pairs": 64,
+     "errors": 0
+    },
+    "Kogge–Stone": {
+     "pairs": 64,
+     "errors": 0
+    },
+    "Brent–Kung": {
+     "pairs": 64,
+     "errors": 0
+    }
+   },
+   "4": {
+    "ripple-carry": {
+     "pairs": 256,
+     "errors": 0
+    },
+    "Sklansky": {
+     "pairs": 256,
+     "errors": 0
+    },
+    "Kogge–Stone": {
+     "pairs": 256,
+     "errors": 0
+    },
+    "Brent–Kung": {
+     "pairs": 256,
+     "errors": 0
+    }
+   },
+   "5": {
+    "ripple-carry": {
+     "pairs": 1024,
+     "errors": 0
+    },
+    "Sklansky": {
+     "pairs": 1024,
+     "errors": 0
+    },
+    "Kogge–Stone": {
+     "pairs": 1024,
+     "errors": 0
+    },
+    "Brent–Kung": {
+     "pairs": 1024,
+     "errors": 0
+    }
+   },
+   "6": {
+    "ripple-carry": {
+     "pairs": 4096,
+     "errors": 0
+    },
+    "Sklansky": {
+     "pairs": 4096,
+     "errors": 0
+    },
+    "Kogge–Stone": {
+     "pairs": 4096,
+     "errors": 0
+    },
+    "Brent–Kung": {
+     "pairs": 4096,
+     "errors": 0
+    }
+   },
+   "7": {
+    "ripple-carry": {
+     "pairs": 16384,
+     "errors": 0
+    },
+    "Sklansky": {
+     "pairs": 16384,
+     "errors": 0
+    },
+    "Kogge–Stone": {
+     "pairs": 16384,
+     "errors": 0
+    },
+    "Brent–Kung": {
+     "pairs": 16384,
+     "errors": 0
+    }
+   },
+   "8": {
+    "ripple-carry": {
+     "pairs": 65536,
+     "errors": 0
+    },
+    "Sklansky": {
+     "pairs": 65536,
+     "errors": 0
+    },
+    "Kogge–Stone": {
+     "pairs": 65536,
+     "errors": 0
+    },
+    "Brent–Kung": {
+     "pairs": 65536,
+     "errors": 0
+    }
+   }
+  },
+  "random": {
+   "16": {
+    "ripple-carry": {
+     "pairs": 300,
+     "errors": 0
+    },
+    "Sklansky": {
+     "pairs": 300,
+     "errors": 0
+    },
+    "Kogge–Stone": {
+     "pairs": 300,
+     "errors": 0
+    },
+    "Brent–Kung": {
+     "pairs": 300,
+     "errors": 0
+    }
+   },
+   "32": {
+    "ripple-carry": {
+     "pairs": 300,
+     "errors": 0
+    },
+    "Sklansky": {
+     "pairs": 300,
+     "errors": 0
+    },
+    "Kogge–Stone": {
+     "pairs": 300,
+     "errors": 0
+    },
+    "Brent–Kung": {
+     "pairs": 300,
+     "errors": 0
+    }
+   },
+   "64": {
+    "ripple-carry": {
+     "pairs": 300,
+     "errors": 0
+    },
+    "Sklansky": {
+     "pairs": 300,
+     "errors": 0
+    },
+    "Kogge–Stone": {
+     "pairs": 300,
+     "errors": 0
+    },
+    "Brent–Kung": {
+     "pairs": 300,
+     "errors": 0
+    }
+   }
+  },
+  "cost": [
+   {
+    "n": 1,
+    "ripple-carry": {
+     "gates": 2,
+     "depth": 1
+    },
+    "Sklansky": {
+     "gates": 2,
+     "depth": 1
+    },
+    "Kogge–Stone": {
+     "gates": 2,
+     "depth": 1
+    },
+    "Brent–Kung": {
+     "gates": 2,
+     "depth": 1
+    },
+    "ripple_formula_ok": true
+   },
+   {
+    "n": 2,
+    "ripple-carry": {
+     "gates": 7,
+     "depth": 3
+    },
+    "Sklansky": {
+     "gates": 7,
+     "depth": 3
+    },
+    "Kogge–Stone": {
+     "gates": 7,
+     "depth": 3
+    },
+    "Brent–Kung": {
+     "gates": 7,
+     "depth": 3
+    },
+    "ripple_formula_ok": true
+   },
+   {
+    "n": 4,
+    "ripple-carry": {
+     "gates": 17,
+     "depth": 7
+    },
+    "Sklansky": {
+     "gates": 20,
+     "depth": 6
+    },
+    "Kogge–Stone": {
+     "gates": 23,
+     "depth": 5
+    },
+    "Brent–Kung": {
+     "gates": 20,
+     "depth": 6
+    },
+    "ripple_formula_ok": true
+   },
+   {
+    "n": 8,
+    "ripple-carry": {
+     "gates": 37,
+     "depth": 15
+    },
+    "Sklansky": {
+     "gates": 52,
+     "depth": 8
+    },
+    "Kogge–Stone": {
+     "gates": 67,
+     "depth": 7
+    },
+    "Brent–Kung": {
+     "gates": 49,
+     "depth": 10
+    },
+    "ripple_formula_ok": true
+   },
+   {
+    "n": 16,
+    "ripple-carry": {
+     "gates": 77,
+     "depth": 31
+    },
+    "Sklansky": {
+     "gates": 128,
+     "depth": 10
+    },
+    "Kogge–Stone": {
+     "gates": 179,
+     "depth": 9
+    },
+    "Brent–Kung": {
+     "gates": 110,
+     "depth": 14
+    },
+    "ripple_formula_ok": true
+   },
+   {
+    "n": 32,
+    "ripple-carry": {
+     "gates": 157,
+     "depth": 63
+    },
+    "Sklansky": {
+     "gates": 304,
+     "depth": 12
+    },
+    "Kogge–Stone": {
+     "gates": 451,
+     "depth": 11
+    },
+    "Brent–Kung": {
+     "gates": 235,
+     "depth": 18
+    },
+    "ripple_formula_ok": true
+   },
+   {
+    "n": 64,
+    "ripple-carry": {
+     "gates": 317,
+     "depth": 127
+    },
+    "Sklansky": {
+     "gates": 704,
+     "depth": 14
+    },
+    "Kogge–Stone": {
+     "gates": 1091,
+     "depth": 13
+    },
+    "Brent–Kung": {
+     "gates": 488,
+     "depth": 22
+    },
+    "ripple_formula_ok": true
+   },
+   {
+    "n": 128,
+    "ripple-carry": {
+     "gates": 637,
+     "depth": 255
+    },
+    "Sklansky": {
+     "gates": 1600,
+     "depth": 16
+    },
+    "Kogge–Stone": {
+     "gates": 2563,
+     "depth": 15
+    },
+    "Brent–Kung": {
+     "gates": 997,
+     "depth": 26
+    },
+    "ripple_formula_ok": true
+   },
+   {
+    "n": 256,
+    "ripple-carry": {
+     "gates": 1277,
+     "depth": 511
+    },
+    "Sklansky": {
+     "gates": 3584,
+     "depth": 18
+    },
+    "Kogge–Stone": {
+     "gates": 5891,
+     "depth": 17
+    },
+    "Brent–Kung": {
+     "gates": 2018,
+     "depth": 30
+    },
+    "ripple_formula_ok": true
+   }
+  ],
+  "carry_monoid": {
+   "elements": {
+    "K": "c ↦ 0 (kill)",
+    "P": "c ↦ c (propagate)",
+    "G": "c ↦ 1 (generate)"
+   },
+   "table_lo_then_hi": {
+    "K": {
+     "K": "K",
+     "P": "K",
+     "G": "G"
+    },
+    "P": {
+     "K": "K",
+     "P": "P",
+     "G": "G"
+    },
+    "G": {
+     "K": "K",
+     "P": "G",
+     "G": "G"
+    }
+   },
+   "identity": "P",
+   "associative": true
+  },
+  "full_adder": {
+   "basis_and_or_xor": {
+    "XOR": 2,
+    "AND": 2,
+    "OR": 1
+   },
+   "nand_only": {
+    "NAND": 9
+   }
+  }
+ }
+}

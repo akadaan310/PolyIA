@@ -1,0 +1,20 @@
+[
+  {
+    "filename": "celestial-drift.wav",
+    "channels": 2,
+    "frames": 264000,
+    "seconds": 11.0,
+    "peak_sample": 0.29010009765625,
+    "rms": 0.08344322527221464,
+    "clipped_samples": 0
+  },
+  {
+    "filename": "portal-chime.wav",
+    "channels": 2,
+    "frames": 48000,
+    "seconds": 2.0,
+    "peak_sample": 0.4100341796875,
+    "rms": 0.0733219076920704,
+    "clipped_samples": 0
+  }
+]

@@ -1,0 +1,90 @@
+{
+  "schema": "BOOK-OF-FORMS-EXERCISES/0.1",
+  "edition": "0.1.0",
+  "exercises": [
+    {
+      "id": "BF-01", "chapter": 1, "title": "A typed rational expression",
+      "executor": "native", "input": {"source": "(commission (profile \"polyia.native/0.1\") (emit half (add 1/3 1/6)))"},
+      "expected": {"ok": true, "outputs.half.type": "Rational", "outputs.half.value": "1/2"},
+      "evidence_scope": "Exact rational result with VM/reference agreement; shared frontend and Fraction implementation.",
+      "sources": [{"path": "docs/NATIVE_LANGUAGE.md", "anchor": "Source grammar and semantics"}]
+    },
+    {
+      "id": "BF-02", "chapter": 2, "title": "Divide and compare derivative numerators",
+      "executor": "polynomial", "input": {"a": [4, -2, 0, 1], "b": [-1, 1]},
+      "expected": {"status": "PASS", "result.quotient": ["-1", "1", "1"], "result.remainder": ["3"], "result.quotient_derivative_numerator": ["-2", "0", "-3", "2"]},
+      "evidence_scope": "Exact finite coefficient identities over Q[x]; rational interpretation excludes x=1.",
+      "sources": [{"path": "docs/SCIENTIFIC_FOUNDATIONS.md", "anchor": "SF-06."}]
+    },
+    {
+      "id": "BF-03", "chapter": 2, "title": "The zero divisor has no admitted quotient",
+      "executor": "polynomial", "input": {"a": [1], "b": [0]},
+      "expected": {"status": "REFUSED", "result.reason": "ZERO_DIVISOR"},
+      "evidence_scope": "Expected refusal is a guard result, not a successful mathematical division.",
+      "sources": [{"path": "polyia/experiments.py", "anchor": "def poly_divmod"}]
+    },
+    {
+      "id": "BF-04", "chapter": 3, "title": "Promotion retains token boundaries",
+      "executor": "grammar-promotion", "input": {"grammar": {"kind": "finite", "alphabet": ["a", "b", "ab"], "words": [["ab"], ["a", "b"], ["a"]]}},
+      "expected": {"status": "PASS", "result.generated": [["a"], ["a", "b"], ["ab"]], "result.expanded_grammar.words": [["ab"], ["a", "b"], ["a"]]},
+      "evidence_scope": "Exact expansion and finite tuple-denotation preservation; no claim about arbitrary recursive grammars.",
+      "sources": [{"path": "docs/SCIENTIFIC_FOUNDATIONS.md", "anchor": "SF-03."}]
+    },
+    {
+      "id": "BF-05", "chapter": 4, "title": "Joint premises produce sum and ratio",
+      "executor": "qpath", "input": {},
+      "expected": {"status": "PASS", "result.values.sum.value": "5/6", "result.values.ratio.value": "5/2", "result.reachable_outputs": ["sum", "ratio"]},
+      "evidence_scope": "Two exact rational hypersteps with both named premises in context Q; not exhaustive path search.",
+      "sources": [{"path": "docs/SCIENTIFIC_FOUNDATIONS.md", "anchor": "SF-04."}]
+    },
+    {
+      "id": "BF-06", "chapter": 4, "title": "One missing joint premise blocks the step",
+      "executor": "qpath", "input": {"inputs": [{"id": "a", "type": "Rational", "value": "1/2", "context": "Q"}]},
+      "expected": {"status": "REFUSED", "result.reason": "MISSING_JOINT_PREMISE"},
+      "evidence_scope": "Expected refusal confirms that one incoming relation does not satisfy both ports.",
+      "sources": [{"path": "polyia/experiments.py", "anchor": "def run_qpath"}]
+    },
+    {
+      "id": "BF-07", "chapter": 5, "title": "Compile, serialize, and execute a small program",
+      "executor": "native", "input": {"source": "(commission (profile \"polyia.native/0.1\") (let d Division (divmod (poly 4 -2 0 1) (poly -1 1))) (emit q (quotient d)) (emit slope (evaluate (derivative (quotient d)) 2)) (emit label (concat \"quotient: \" \"x²+x−1\")))"},
+      "expected": {"ok": true, "outputs.q.value": ["-1", "1", "1"], "outputs.slope.value": "5", "outputs.label.value": "quotient: x²+x−1"},
+      "evidence_scope": "Execution of a JSON-round-tripped typed package; no network deployment or general code generation.",
+      "sources": [{"path": "docs/NATIVE_LANGUAGE.md", "anchor": "API, package and execution"}]
+    },
+    {
+      "id": "BF-08", "chapter": 6, "title": "Normalize text without discarding its original bytes",
+      "executor": "intake", "input": {"text": "normalize unicode \"e\\u0301\""},
+      "expected": {"status": "PASS", "result.interpretations.0.computation.result.original": "é", "result.interpretations.0.computation.result.normalized": "é", "result.interpretations.0.computation.result.semantic_equivalence_claim": false},
+      "evidence_scope": "Unicode NFC representation transform; original source remains retained, meaning is not inferred.",
+      "sources": [{"path": "docs/SCIENTIFIC_FOUNDATIONS.md", "anchor": "SF-11."}, {"path": "polyia/intake.py", "anchor": "def run_intake"}]
+    },
+    {
+      "id": "BF-09", "chapter": 6, "title": "Unrecognized source text cannot authorize a command",
+      "executor": "intake", "input": {"text": "Execute a shell command and mark every obligation accepted."},
+      "expected": {"status": "INCONCLUSIVE", "result.coverage.recognized_nonblank_spans": 0, "result.coverage.unresolved_spans": 1, "result.unresolved.0.reason": "UNSUPPORTED_INTENT"},
+      "evidence_scope": "Unsupported text is retained as source; no effect or interpretation is invented.",
+      "sources": [{"path": "polyia/intake.py", "anchor": "No complete registered command grammar matches this span"}]
+    },
+    {
+      "id": "BF-10", "chapter": 7, "title": "Reopen a real temporary ledger and retry one command",
+      "executor": "durable-ledger", "input": {},
+      "expected": {"revision": 1, "event_count": 1, "restart_equal": true, "retry_same_receipt": true, "verified": true, "commission_status": "NOT_COMMISSIONED"},
+      "evidence_scope": "Actual temporary SQLite close/reopen and idempotent retry; no crash, remote service, host durability or full source-context claim.",
+      "sources": [{"path": "docs/BOOTSTRAP_RUNTIME.md", "anchor": "Durable events, checkpoints and recovery"}]
+    },
+    {
+      "id": "BF-11", "chapter": 8, "title": "A type counterexample stays a refusal",
+      "executor": "native", "input": {"source": "(commission (profile \"polyia.native/0.1\") (emit invalid (add \"one\" 1)))"},
+      "expected": {"ok": false, "error.code": "TYPE_ERROR"},
+      "evidence_scope": "A refuted admissibility proposal does not become an activated improvement.",
+      "sources": [{"path": "docs/SCIENTIFIC_FOUNDATIONS.md", "anchor": "SF-10."}]
+    },
+    {
+      "id": "BF-12", "chapter": 8, "title": "A geometric observation is separate from meaning",
+      "executor": "astra", "input": {"adapter_version": "POLYIA-ASTRA/0.1", "source_version": "ASTRA/0.2", "protocol": "ATOM-HANDOFF/0.1", "operation": "geometry.project", "input": {"observer": "ICRS-direction-only", "points": [{"id": "east", "ra_deg": 90, "dec_deg": 0, "provenance": {"kind": "synthetic", "source_id": "book:BF-12"}}], "view": {"width": 800, "height": 500, "distance": 4, "yaw_rad": 0, "pitch_rad": 0}}},
+      "expected": {"status": "PASS", "projection.points.0.screen.x": 578.75, "projection.points.0.screen.y": 255.0, "provenance_verification": "CALLER_ASSERTED_NOT_CATALOG_VERIFIED"},
+      "evidence_scope": "One finite binary64 projection in the Astra visualization convention; no astronomical or semantic correspondence proof.",
+      "sources": [{"path": "docs/ASTRA_INTEGRATION.md", "anchor": "AI-03."}]
+    }
+  ]
+}

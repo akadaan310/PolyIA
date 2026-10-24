@@ -1,0 +1,649 @@
+{
+ "experiment": "GIN-EXP-004",
+ "hypotheses": [
+  "GIN-H-011",
+  "GIN-H-012",
+  "GIN-H-013"
+ ],
+ "seed": null,
+ "environment": {
+  "python": "3.13.16",
+  "implementation": "CPython",
+  "machine": "x86_64",
+  "system": "Linux 6.18.44-fc-v80",
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.80GHz",
+  "toolchains": {
+   "gcc": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+   "clang": "Ubuntu clang version 18.1.3 (1ubuntu1)",
+   "java": "openjdk version \"21.0.12.1\" 2026-08-18",
+   "rustc": "rustc 1.97.0 (2d8144b78 2026-07-07)",
+   "go": "go version go1.24.7 linux/amd64",
+   "node": "v22.22.0"
+  }
+ },
+ "data": {
+  "versions": {
+   "gcc": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+   "clang": "Ubuntu clang version 18.1.3 (1ubuntu1)",
+   "java": "openjdk version \"21.0.12.1\" 2026-08-18",
+   "rustc": "rustc 1.97.0 (2d8144b78 2026-07-07)",
+   "go": "go version go1.24.7 linux/amd64",
+   "node": "v22.22.0"
+  },
+  "c_gcc": {
+   "-O0": {
+    "int 6/3": {
+     "cmd": "machine/build/divide-O0 int 6 3",
+     "exit": 0,
+     "signal": null,
+     "stdout": "2",
+     "stderr": ""
+    },
+    "int 1/0": {
+     "cmd": "machine/build/divide-O0 int 1 0",
+     "exit": -8,
+     "signal": "SIGFPE",
+     "stdout": "",
+     "stderr": ""
+    },
+    "int 0/0": {
+     "cmd": "machine/build/divide-O0 int 0 0",
+     "exit": -8,
+     "signal": "SIGFPE",
+     "stdout": "",
+     "stderr": ""
+    },
+    "int INT_MIN/-1": {
+     "cmd": "machine/build/divide-O0 int INT_MIN -1",
+     "exit": -8,
+     "signal": "SIGFPE",
+     "stdout": "",
+     "stderr": ""
+    },
+    "int -7/2": {
+     "cmd": "machine/build/divide-O0 int -7 2",
+     "exit": 0,
+     "signal": null,
+     "stdout": "-3",
+     "stderr": ""
+    },
+    "double 1/0": {
+     "cmd": "machine/build/divide-O0 double 1 0",
+     "exit": 0,
+     "signal": null,
+     "stdout": "inf flags=[divideByZero ]",
+     "stderr": ""
+    },
+    "double -1/0": {
+     "cmd": "machine/build/divide-O0 double -1 0",
+     "exit": 0,
+     "signal": null,
+     "stdout": "-inf flags=[divideByZero ]",
+     "stderr": ""
+    },
+    "double 1/-0": {
+     "cmd": "machine/build/divide-O0 double 1 -0",
+     "exit": 0,
+     "signal": null,
+     "stdout": "-inf flags=[divideByZero ]",
+     "stderr": ""
+    },
+    "double 0/0": {
+     "cmd": "machine/build/divide-O0 double 0 0",
+     "exit": 0,
+     "signal": null,
+     "stdout": "-nan flags=[invalid ]",
+     "stderr": ""
+    },
+    "double 0/1": {
+     "cmd": "machine/build/divide-O0 double 0 1",
+     "exit": 0,
+     "signal": null,
+     "stdout": "0 flags=[]",
+     "stderr": ""
+    },
+    "double 1/3": {
+     "cmd": "machine/build/divide-O0 double 1 3",
+     "exit": 0,
+     "signal": null,
+     "stdout": "0.333333 flags=[inexact]",
+     "stderr": ""
+    },
+    "double 1e308/1e-10": {
+     "cmd": "machine/build/divide-O0 double 1e308 1e-10",
+     "exit": 0,
+     "signal": null,
+     "stdout": "inf flags=[overflow inexact]",
+     "stderr": ""
+    },
+    "double 1e-310/1e10": {
+     "cmd": "machine/build/divide-O0 double 1e-310 1e10",
+     "exit": 0,
+     "signal": null,
+     "stdout": "9.99989e-321 flags=[underflow inexact]",
+     "stderr": ""
+    },
+    "sqrt -1": {
+     "cmd": "machine/build/divide-O0 sqrt -1 x",
+     "exit": 0,
+     "signal": null,
+     "stdout": "-nan flags=[invalid ]",
+     "stderr": ""
+    }
+   },
+   "-O2": {
+    "int 6/3": {
+     "cmd": "machine/build/divide-O2 int 6 3",
+     "exit": 0,
+     "signal": null,
+     "stdout": "2",
+     "stderr": ""
+    },
+    "int 1/0": {
+     "cmd": "machine/build/divide-O2 int 1 0",
+     "exit": -8,
+     "signal": "SIGFPE",
+     "stdout": "",
+     "stderr": ""
+    },
+    "int 0/0": {
+     "cmd": "machine/build/divide-O2 int 0 0",
+     "exit": -8,
+     "signal": "SIGFPE",
+     "stdout": "",
+     "stderr": ""
+    },
+    "int INT_MIN/-1": {
+     "cmd": "machine/build/divide-O2 int INT_MIN -1",
+     "exit": -8,
+     "signal": "SIGFPE",
+     "stdout": "",
+     "stderr": ""
+    },
+    "int -7/2": {
+     "cmd": "machine/build/divide-O2 int -7 2",
+     "exit": 0,
+     "signal": null,
+     "stdout": "-3",
+     "stderr": ""
+    },
+    "double 1/0": {
+     "cmd": "machine/build/divide-O2 double 1 0",
+     "exit": 0,
+     "signal": null,
+     "stdout": "inf flags=[divideByZero ]",
+     "stderr": ""
+    },
+    "double -1/0": {
+     "cmd": "machine/build/divide-O2 double -1 0",
+     "exit": 0,
+     "signal": null,
+     "stdout": "-inf flags=[divideByZero ]",
+     "stderr": ""
+    },
+    "double 1/-0": {
+     "cmd": "machine/build/divide-O2 double 1 -0",
+     "exit": 0,
+     "signal": null,
+     "stdout": "-inf flags=[divideByZero ]",
+     "stderr": ""
+    },
+    "double 0/0": {
+     "cmd": "machine/build/divide-O2 double 0 0",
+     "exit": 0,
+     "signal": null,
+     "stdout": "-nan flags=[invalid ]",
+     "stderr": ""
+    },
+    "double 0/1": {
+     "cmd": "machine/build/divide-O2 double 0 1",
+     "exit": 0,
+     "signal": null,
+     "stdout": "0 flags=[]",
+     "stderr": ""
+    },
+    "double 1/3": {
+     "cmd": "machine/build/divide-O2 double 1 3",
+     "exit": 0,
+     "signal": null,
+     "stdout": "0.333333 flags=[inexact]",
+     "stderr": ""
+    },
+    "double 1e308/1e-10": {
+     "cmd": "machine/build/divide-O2 double 1e308 1e-10",
+     "exit": 0,
+     "signal": null,
+     "stdout": "inf flags=[overflow inexact]",
+     "stderr": ""
+    },
+    "double 1e-310/1e10": {
+     "cmd": "machine/build/divide-O2 double 1e-310 1e10",
+     "exit": 0,
+     "signal": null,
+     "stdout": "9.99989e-321 flags=[underflow inexact]",
+     "stderr": ""
+    },
+    "sqrt -1": {
+     "cmd": "machine/build/divide-O2 sqrt -1 x",
+     "exit": 0,
+     "signal": null,
+     "stdout": "-nan flags=[invalid ]",
+     "stderr": ""
+    }
+   }
+  },
+  "c_guard_after_division": {
+   "gcc -O0": {
+    "instructions": [
+     "endbr64",
+     "pushq\t%rbp",
+     "movq\t%rsp, %rbp",
+     "movl\t%edi, -20(%rbp)",
+     "movl\t%esi, -24(%rbp)",
+     "movl\t-20(%rbp), %eax",
+     "cltd",
+     "idivl\t-24(%rbp)",
+     "movl\t%eax, -4(%rbp)",
+     "cmpl\t$0, -24(%rbp)",
+     "jne\t.L2",
+     "movl\t$-1, %eax",
+     "jmp\t.L3",
+     "movl\t-4(%rbp), %eax",
+     "popq\t%rbp",
+     "ret"
+    ],
+    "has_compare_or_test": true,
+    "returns_minus_one_path": true
+   },
+   "gcc -O2": {
+    "instructions": [
+     "endbr64",
+     "movl\t%edi, %eax",
+     "cltd",
+     "idivl\t%esi",
+     "testl\t%esi, %esi",
+     "movl\t$-1, %edx",
+     "cmove\t%edx, %eax",
+     "ret"
+    ],
+    "has_compare_or_test": true,
+    "returns_minus_one_path": true
+   },
+   "clang -O2": {
+    "instructions": [
+     "movl\t%edi, %eax",
+     "cltd",
+     "idivl\t%esi",
+     "retq"
+    ],
+    "has_compare_or_test": false,
+    "returns_minus_one_path": false
+   },
+   "clang -O3": {
+    "instructions": [
+     "movl\t%edi, %eax",
+     "cltd",
+     "idivl\t%esi",
+     "retq"
+    ],
+    "has_compare_or_test": false,
+    "returns_minus_one_path": false
+   }
+  },
+  "constant_one_over_zero": {
+   "C (gcc -Wall)": {
+    "cmd": "gcc -Wall -o machine/build/constc machine/const_div.c",
+    "exit": 0,
+    "signal": null,
+    "stdout": "",
+    "stderr": "machine/const_div.c:2:35: warning: division by zero [-Wdiv-by-zero]"
+   },
+   "C (gcc) at run time": {
+    "cmd": "machine/build/constc",
+    "exit": -8,
+    "signal": "SIGFPE",
+    "stdout": "",
+    "stderr": ""
+   },
+   "Go": {
+    "cmd": "go build -o machine/build/constgo machine/const_div.go",
+    "exit": 1,
+    "signal": null,
+    "stdout": "",
+    "stderr": "machine/const_div.go:5:31: invalid operation: division by zero"
+   },
+   "Rust": {
+    "cmd": "rustc -o machine/build/constrs machine/const_div.rs",
+    "exit": 1,
+    "signal": null,
+    "stdout": "",
+    "stderr": "error: this operation will panic at runtime | |                          ^^^^^ attempt to divide `1_i32` by zero"
+   },
+   "Java (javac)": {
+    "cmd": "javac -d machine/build machine/ConstDiv.java",
+    "exit": 0,
+    "signal": null,
+    "stdout": "",
+    "stderr": ""
+   },
+   "Java at run time": {
+    "cmd": "java -cp machine/build ConstDiv",
+    "exit": 1,
+    "signal": null,
+    "stdout": "",
+    "stderr": "Exception in thread \"main\" java.lang.ArithmeticException: / by zero"
+   }
+  },
+  "java": {
+   "int 6/3": {
+    "cmd": "java -cp machine/build Divide int 6 3",
+    "exit": 0,
+    "signal": null,
+    "stdout": "2",
+    "stderr": ""
+   },
+   "int 1/0": {
+    "cmd": "java -cp machine/build Divide int 1 0",
+    "exit": 0,
+    "signal": null,
+    "stdout": "ArithmeticException: / by zero",
+    "stderr": ""
+   },
+   "int MIN/-1": {
+    "cmd": "java -cp machine/build Divide min 0 -1",
+    "exit": 0,
+    "signal": null,
+    "stdout": "-2147483648",
+    "stderr": ""
+   },
+   "int -7/2": {
+    "cmd": "java -cp machine/build Divide int -7 2",
+    "exit": 0,
+    "signal": null,
+    "stdout": "-3",
+    "stderr": ""
+   },
+   "double 1/0": {
+    "cmd": "java -cp machine/build Divide dbl 1 0",
+    "exit": 0,
+    "signal": null,
+    "stdout": "Infinity",
+    "stderr": ""
+   },
+   "double 0/0": {
+    "cmd": "java -cp machine/build Divide dbl 0 0",
+    "exit": 0,
+    "signal": null,
+    "stdout": "NaN",
+    "stderr": ""
+   },
+   "double -1/0": {
+    "cmd": "java -cp machine/build Divide dbl -1 0",
+    "exit": 0,
+    "signal": null,
+    "stdout": "-Infinity",
+    "stderr": ""
+   }
+  },
+  "rust_debug": {
+   "div 6/3": {
+    "cmd": "machine/build/divide_rs_debug div 6 3",
+    "exit": 0,
+    "signal": null,
+    "stdout": "2",
+    "stderr": ""
+   },
+   "div 1/0": {
+    "cmd": "machine/build/divide_rs_debug div 1 0",
+    "exit": 101,
+    "signal": null,
+    "stdout": "",
+    "stderr": "thread 'main' panicked at machine/divide.rs:7:33: | attempt to divide by zero"
+   },
+   "div MIN/-1": {
+    "cmd": "machine/build/divide_rs_debug div MIN -1",
+    "exit": 101,
+    "signal": null,
+    "stdout": "",
+    "stderr": "thread 'main' panicked at machine/divide.rs:7:33: | attempt to divide with overflow"
+   },
+   "checked 1/0": {
+    "cmd": "machine/build/divide_rs_debug checked 1 0",
+    "exit": 0,
+    "signal": null,
+    "stdout": "None",
+    "stderr": ""
+   },
+   "checked MIN/-1": {
+    "cmd": "machine/build/divide_rs_debug checked MIN -1",
+    "exit": 0,
+    "signal": null,
+    "stdout": "None",
+    "stderr": ""
+   },
+   "wrapping MIN/-1": {
+    "cmd": "machine/build/divide_rs_debug wrapping MIN -1",
+    "exit": 0,
+    "signal": null,
+    "stdout": "-2147483648",
+    "stderr": ""
+   },
+   "f64 1/0": {
+    "cmd": "machine/build/divide_rs_debug f64 1 0",
+    "exit": 0,
+    "signal": null,
+    "stdout": "inf",
+    "stderr": ""
+   },
+   "f64 0/0": {
+    "cmd": "machine/build/divide_rs_debug f64 0 0",
+    "exit": 0,
+    "signal": null,
+    "stdout": "NaN",
+    "stderr": ""
+   }
+  },
+  "rust_release": {
+   "div 6/3": {
+    "cmd": "machine/build/divide_rs_release div 6 3",
+    "exit": 0,
+    "signal": null,
+    "stdout": "2",
+    "stderr": ""
+   },
+   "div 1/0": {
+    "cmd": "machine/build/divide_rs_release div 1 0",
+    "exit": 101,
+    "signal": null,
+    "stdout": "",
+    "stderr": "thread 'main' panicked at machine/divide.rs:7:33: | attempt to divide by zero"
+   },
+   "div MIN/-1": {
+    "cmd": "machine/build/divide_rs_release div MIN -1",
+    "exit": 101,
+    "signal": null,
+    "stdout": "",
+    "stderr": "thread 'main' panicked at machine/divide.rs:7:33: | attempt to divide with overflow"
+   },
+   "checked 1/0": {
+    "cmd": "machine/build/divide_rs_release checked 1 0",
+    "exit": 0,
+    "signal": null,
+    "stdout": "None",
+    "stderr": ""
+   },
+   "checked MIN/-1": {
+    "cmd": "machine/build/divide_rs_release checked MIN -1",
+    "exit": 0,
+    "signal": null,
+    "stdout": "None",
+    "stderr": ""
+   },
+   "wrapping MIN/-1": {
+    "cmd": "machine/build/divide_rs_release wrapping MIN -1",
+    "exit": 0,
+    "signal": null,
+    "stdout": "-2147483648",
+    "stderr": ""
+   },
+   "f64 1/0": {
+    "cmd": "machine/build/divide_rs_release f64 1 0",
+    "exit": 0,
+    "signal": null,
+    "stdout": "inf",
+    "stderr": ""
+   },
+   "f64 0/0": {
+    "cmd": "machine/build/divide_rs_release f64 0 0",
+    "exit": 0,
+    "signal": null,
+    "stdout": "NaN",
+    "stderr": ""
+   }
+  },
+  "go": {
+   "int32 6/3": {
+    "cmd": "machine/build/divide_go int 6 3",
+    "exit": 0,
+    "signal": null,
+    "stdout": "2",
+    "stderr": ""
+   },
+   "int32 1/0": {
+    "cmd": "machine/build/divide_go int 1 0",
+    "exit": 2,
+    "signal": null,
+    "stdout": "",
+    "stderr": "panic: runtime error: integer divide by zero | machine/divide.go:15 +0x1da"
+   },
+   "int32 MIN/-1": {
+    "cmd": "machine/build/divide_go min 0 -1",
+    "exit": 0,
+    "signal": null,
+    "stdout": "-2147483648",
+    "stderr": ""
+   },
+   "float64 1/0": {
+    "cmd": "machine/build/divide_go f64 1 0",
+    "exit": 0,
+    "signal": null,
+    "stdout": "+Inf",
+    "stderr": ""
+   },
+   "float64 0/0": {
+    "cmd": "machine/build/divide_go f64 0 0",
+    "exit": 0,
+    "signal": null,
+    "stdout": "NaN",
+    "stderr": ""
+   }
+  },
+  "javascript": {
+   "1/0": "Infinity",
+   "-1/0": "-Infinity",
+   "1/-0": "-Infinity",
+   "0/0": "NaN",
+   "0/1": "0",
+   "6/3": "2",
+   "7/2": "3.5",
+   "(2**31)|0": "-2147483648",
+   "0.1+0.2": "0.30000000000000004",
+   "2**53+1": "9007199254740992",
+   "1n/0n": "RangeError: Division by zero",
+   "0n/0n": "RangeError: Division by zero",
+   "7n/2n": "3",
+   "-7n/2n": "-3",
+   "(-(2n**31n))/-1n": "2147483648"
+  },
+  "python": {
+   "6/3": "2.0",
+   "6//3": "2",
+   "7/2": "3.5",
+   "7//2": "3",
+   "-7//2": "-4",
+   "-7%2": "1",
+   "1/0": "ZeroDivisionError: division by zero",
+   "1.0/0.0": "ZeroDivisionError: float division by zero",
+   "0/0": "ZeroDivisionError: division by zero",
+   "0.0/0.0": "ZeroDivisionError: float division by zero",
+   "1//0": "ZeroDivisionError: integer division or modulo by zero",
+   "(-2**31)//-1": "2147483648",
+   "0.1+0.2": "0.30000000000000004",
+   "2**53+1.0": "9007199254740992.0",
+   "float(2**1024)": "OverflowError: int too large to convert to float",
+   "10**400/10**399": "10.0",
+   "ast of 'x / y'": "BinOp(left=Name(id='x', ctx=Load()), op=Div(), right=Name(id='y', ctx=Load()))",
+   "bytecode of 'x / y'": [
+    "RESUME",
+    "LOAD_NAME x",
+    "LOAD_NAME y",
+    "BINARY_OP /",
+    "RETURN_VALUE"
+   ]
+  },
+  "instruction_selection": {
+   "x86_64-linux-gnu": {
+    "idiv": [
+     "movl\t%edi, %eax",
+     "cltd",
+     "idivl\t%esi",
+     "retq"
+    ],
+    "udiv": [
+     "movl\t%edi, %eax",
+     "xorl\t%edx, %edx",
+     "divl\t%esi",
+     "retq"
+    ],
+    "fdiv": [
+     "divsd\t%xmm1, %xmm0",
+     "retq"
+    ]
+   },
+   "aarch64-linux-gnu": {
+    "idiv": [
+     "sdiv\tw0, w0, w1",
+     "ret"
+    ],
+    "udiv": [
+     "udiv\tw0, w0, w1",
+     "ret"
+    ],
+    "fdiv": [
+     "fdiv\td0, d0, d1",
+     "ret"
+    ]
+   },
+   "riscv64-linux-gnu": {
+    "idiv": [
+     "divw\ta0, a0, a1",
+     "ret"
+    ],
+    "udiv": [
+     "divuw\ta0, a0, a1",
+     "ret"
+    ],
+    "fdiv": [
+     "fdiv.d\tfa0, fa0, fa1",
+     "ret"
+    ]
+   }
+  },
+  "model_agreement": {
+   "x86 model: 1/0 traps": true,
+   "x86 model: MIN/-1 traps": true,
+   "x86 model: -7/2 = -3": true,
+   "Java model: MIN/-1 = MIN": true,
+   "Java model: 1/0 exception": true,
+   "Rust model: 1/0 panics": true,
+   "Rust model: MIN/-1 panics (debug)": true,
+   "Rust model: MIN/-1 panics (release)": true,
+   "Go model: 1/0 panics": true,
+   "Go model: MIN/-1 = MIN": true,
+   "Python model: -7//2 = -4": true,
+   "Python model: 1//0 raises": true,
+   "JS BigInt model: 1n/0n RangeError": true,
+   "JS BigInt model: -7n/2n = -3": true
+  }
+ }
+}

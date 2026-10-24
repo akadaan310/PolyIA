@@ -1,0 +1,35 @@
+{
+  "schema": "snad.public-artifact-transport/1",
+  "ownProbe": [
+    {
+      "at": "2026-10-18T20:22:04.677295+00:00",
+      "url": "https://snad-discourse-lab.daintyaspen11.chatgpt.site/mission/manifest.json",
+      "transport": "Python urllib using inherited proxy and TLS trust",
+      "method": "GET",
+      "status": 403,
+      "responseSha256": "2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c",
+      "bodyBytes": 17,
+      "credentialsSent": false
+    }
+  ],
+  "rootObservedRecovery": {
+    "at": "2026-10-18T20:22:04.677320+00:00",
+    "transport": "Ordinary anonymous Chromium page and page-native fetch",
+    "sitePage": "HTTP200;20:1lookup and JSONdownload passed;no pageerrors",
+    "manifest": {
+      "url": "https://snad-discourse-lab.daintyaspen11.chatgpt.site/mission/manifest.json",
+      "httpStatus": 200,
+      "bytes": 26889,
+      "sha256": "c8fb54fdc8d10c0ba2208327f4956f9edac343e2802c31a4235307c0220f35b1"
+    },
+    "archive": {
+      "url": "https://snad-discourse-lab.daintyaspen11.chatgpt.site/snad-mission.tar.gz",
+      "httpStatus": 200,
+      "bytes": 5676444,
+      "sha256": "170d7afcc30d853ee8f3e94d6930594870a87cab0af8159a3d3b59ebb2091624"
+    },
+    "credentialRequired": false,
+    "evidenceOrigin": "Root-agent observed public browser verification, reported to this integration agent"
+  },
+  "limitations": "Plain programmatic HTTP may be refused by Cloudflare(error1010), even when normalanonymousbrowser succeeds. Offline manifest+files fallback is preserved; no authentication token or access-control bypass is required."
+}

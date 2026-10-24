@@ -1,0 +1,1372 @@
+{
+  "atlas": [
+    {
+      "book_exercise_scope": "BF-10: one durable command and retry",
+      "custody": "preserved",
+      "division": "foundations",
+      "division_numeral": "I",
+      "id": "transition-systems",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/foundations.ts",
+      "source_line": 8,
+      "source_sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1",
+      "subject": "Transition systems"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "foundations",
+      "division_numeral": "I",
+      "id": "finite-automata",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/foundations.ts",
+      "source_line": 36,
+      "source_sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1",
+      "subject": "Finite-state machines"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "foundations",
+      "division_numeral": "I",
+      "id": "operational-grammar",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/foundations.ts",
+      "source_line": 64,
+      "source_sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1",
+      "subject": "Computational Grammar Theory"
+    },
+    {
+      "book_exercise_scope": "BF-03, BF-06, BF-11: explicit guard examples",
+      "custody": "preserved",
+      "division": "foundations",
+      "division_numeral": "I",
+      "id": "admissibility",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/foundations.ts",
+      "source_line": 93,
+      "source_sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1",
+      "subject": "Admissibility"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "foundations",
+      "division_numeral": "I",
+      "id": "substrate-theory",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/foundations.ts",
+      "source_line": 119,
+      "source_sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1",
+      "subject": "Substrate Theory"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "foundations",
+      "division_numeral": "I",
+      "id": "perturbation",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/foundations.ts",
+      "source_line": 146,
+      "source_sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1",
+      "subject": "Perturbation mathematics"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "foundations",
+      "division_numeral": "I",
+      "id": "equivalence-classes",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/foundations.ts",
+      "source_line": 173,
+      "source_sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1",
+      "subject": "Equivalence classes"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "foundations",
+      "division_numeral": "I",
+      "id": "numerical-grammars",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/foundations.ts",
+      "source_line": 200,
+      "source_sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1",
+      "subject": "Numerical grammars"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "foundations",
+      "division_numeral": "I",
+      "id": "graph-theory",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/foundations.ts",
+      "source_line": 228,
+      "source_sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1",
+      "subject": "Graph theory"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "foundations",
+      "division_numeral": "I",
+      "id": "complexity",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/foundations.ts",
+      "source_line": 256,
+      "source_sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1",
+      "subject": "Complexity"
+    },
+    {
+      "book_exercise_scope": "BF-04: finite words with token identities",
+      "custody": "preserved",
+      "division": "relational",
+      "division_numeral": "II",
+      "id": "alphabets-words",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/relational.ts",
+      "source_line": 11,
+      "source_sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f",
+      "subject": "Alphabets and words"
+    },
+    {
+      "book_exercise_scope": "BF-04: finite-language promotion only",
+      "custody": "preserved",
+      "division": "relational",
+      "division_numeral": "II",
+      "id": "generative-grammars",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/relational.ts",
+      "source_line": 39,
+      "source_sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f",
+      "subject": "Grammatical generation"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "relational",
+      "division_numeral": "II",
+      "id": "plicastratum",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/relational.ts",
+      "source_line": 65,
+      "source_sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f",
+      "subject": "Plicastratum"
+    },
+    {
+      "book_exercise_scope": "BF-04: one promotion level only",
+      "custody": "preserved",
+      "division": "relational",
+      "division_numeral": "II",
+      "id": "alphabet-towers",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/relational.ts",
+      "source_line": 96,
+      "source_sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f",
+      "subject": "Structured alphabets"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "relational",
+      "division_numeral": "II",
+      "id": "ingrammatica",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/relational.ts",
+      "source_line": 123,
+      "source_sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f",
+      "subject": "Ingrammatica"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "relational",
+      "division_numeral": "II",
+      "id": "constructive-admission",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/relational.ts",
+      "source_line": 149,
+      "source_sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f",
+      "subject": "Constructive admission"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "relational",
+      "division_numeral": "II",
+      "id": "relational-generativity",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/relational.ts",
+      "source_line": 176,
+      "source_sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f",
+      "subject": "Relational Generativity"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "relational",
+      "division_numeral": "II",
+      "id": "modal-cyclic",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/relational.ts",
+      "source_line": 203,
+      "source_sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f",
+      "subject": "Cyclic mathematics"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "relational",
+      "division_numeral": "II",
+      "id": "recursive-folds",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/relational.ts",
+      "source_line": 230,
+      "source_sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f",
+      "subject": "Recursive folds and unfolding"
+    },
+    {
+      "book_exercise_scope": "BF-05: two rational hypersteps",
+      "custody": "preserved",
+      "division": "relational",
+      "division_numeral": "II",
+      "id": "compositional-forms",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/relational.ts",
+      "source_line": 256,
+      "source_sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f",
+      "subject": "Compositional forms"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "languages",
+      "division_numeral": "III",
+      "id": "uri-grammar",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/languages.ts",
+      "source_line": 8,
+      "source_sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96",
+      "subject": "Addresses"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "languages",
+      "division_numeral": "III",
+      "id": "purl",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/languages.ts",
+      "source_line": 34,
+      "source_sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96",
+      "subject": "PURL"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "languages",
+      "division_numeral": "III",
+      "id": "seurl",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/languages.ts",
+      "source_line": 60,
+      "source_sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96",
+      "subject": "SEURL"
+    },
+    {
+      "book_exercise_scope": "BF-07: closed pure native program",
+      "custody": "preserved",
+      "division": "languages",
+      "division_numeral": "III",
+      "id": "typed-machines",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/languages.ts",
+      "source_line": 86,
+      "source_sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96",
+      "subject": "Typed machines"
+    },
+    {
+      "book_exercise_scope": "BF-11: one negative type case",
+      "custody": "preserved",
+      "division": "languages",
+      "division_numeral": "III",
+      "id": "types-as-admissibility",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/languages.ts",
+      "source_line": 112,
+      "source_sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96",
+      "subject": "Type systems"
+    },
+    {
+      "book_exercise_scope": "BF-07: serialization and VM execution",
+      "custody": "preserved",
+      "division": "languages",
+      "division_numeral": "III",
+      "id": "compilation",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/languages.ts",
+      "source_line": 138,
+      "source_sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96",
+      "subject": "Compilation"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "languages",
+      "division_numeral": "III",
+      "id": "matrix-loom",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/languages.ts",
+      "source_line": 164,
+      "source_sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96",
+      "subject": "Matrix Loom"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "languages",
+      "division_numeral": "III",
+      "id": "addressable-forms",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/languages.ts",
+      "source_line": 190,
+      "source_sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96",
+      "subject": "Addressable computational forms"
+    },
+    {
+      "book_exercise_scope": "BF-07: bounded native profile",
+      "custody": "preserved",
+      "division": "languages",
+      "division_numeral": "III",
+      "id": "grammars-as-programs",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/languages.ts",
+      "source_line": 217,
+      "source_sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96",
+      "subject": "Grammars as programs"
+    },
+    {
+      "book_exercise_scope": "BF-05: rational composition only",
+      "custody": "preserved",
+      "division": "languages",
+      "division_numeral": "III",
+      "id": "symbolic-composition",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/languages.ts",
+      "source_line": 244,
+      "source_sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96",
+      "subject": "Symbolic composition"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "geometry",
+      "division_numeral": "IV",
+      "id": "image-kernel",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "source_line": 8,
+      "source_sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+      "subject": "Images and kernels"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "geometry",
+      "division_numeral": "IV",
+      "id": "imagistratum",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "source_line": 36,
+      "source_sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+      "subject": "Imagistratum"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "geometry",
+      "division_numeral": "IV",
+      "id": "rank-nullity",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "source_line": 62,
+      "source_sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+      "subject": "Projection loss"
+    },
+    {
+      "book_exercise_scope": "BF-12: one camera projection",
+      "custody": "preserved",
+      "division": "geometry",
+      "division_numeral": "IV",
+      "id": "projective-camera",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "source_line": 89,
+      "source_sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+      "subject": "Projective geometry"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "geometry",
+      "division_numeral": "IV",
+      "id": "topology",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "source_line": 115,
+      "source_sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+      "subject": "Topology"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "geometry",
+      "division_numeral": "IV",
+      "id": "curvature",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "source_line": 142,
+      "source_sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+      "subject": "Differential geometry"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "geometry",
+      "division_numeral": "IV",
+      "id": "spatial-tensors",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "source_line": 169,
+      "source_sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+      "subject": "Spatial tensors"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "geometry",
+      "division_numeral": "IV",
+      "id": "computational-photography",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "source_line": 195,
+      "source_sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+      "subject": "Computational photography"
+    },
+    {
+      "book_exercise_scope": "BF-12: one authored sky direction",
+      "custody": "preserved",
+      "division": "geometry",
+      "division_numeral": "IV",
+      "id": "celestial-geometry",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "source_line": 221,
+      "source_sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+      "subject": "Celestial geometry"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "geometry",
+      "division_numeral": "IV",
+      "id": "chart-correspondences",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "source_line": 248,
+      "source_sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+      "subject": "Charts"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "geometry",
+      "division_numeral": "IV",
+      "id": "rendering-mathematics",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "source_line": 275,
+      "source_sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+      "subject": "Rendering mathematics"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "geometry",
+      "division_numeral": "IV",
+      "id": "invisible-sensing",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "source_line": 302,
+      "source_sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+      "subject": "AWRM / invisible sensing"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "acoustic",
+      "division_numeral": "V",
+      "id": "sound-signals",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/acoustic.ts",
+      "source_line": 11,
+      "source_sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4",
+      "subject": "Sound and sampling"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "acoustic",
+      "division_numeral": "V",
+      "id": "pitch-frequency",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/acoustic.ts",
+      "source_line": 38,
+      "source_sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4",
+      "subject": "Pitch"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "acoustic",
+      "division_numeral": "V",
+      "id": "interval-geometry",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/acoustic.ts",
+      "source_line": 65,
+      "source_sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4",
+      "subject": "Interval geometry"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "acoustic",
+      "division_numeral": "V",
+      "id": "tuning",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/acoustic.ts",
+      "source_line": 92,
+      "source_sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4",
+      "subject": "Tuning"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "acoustic",
+      "division_numeral": "V",
+      "id": "fourier",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/acoustic.ts",
+      "source_line": 119,
+      "source_sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4",
+      "subject": "Spectral processing"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "acoustic",
+      "division_numeral": "V",
+      "id": "time-frequency",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/acoustic.ts",
+      "source_line": 145,
+      "source_sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4",
+      "subject": "Time–frequency representations"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "acoustic",
+      "division_numeral": "V",
+      "id": "synthesis",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/acoustic.ts",
+      "source_line": 171,
+      "source_sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4",
+      "subject": "Sound synthesis"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "acoustic",
+      "division_numeral": "V",
+      "id": "phase",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/acoustic.ts",
+      "source_line": 197,
+      "source_sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4",
+      "subject": "Phase processing"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "acoustic",
+      "division_numeral": "V",
+      "id": "phonogrammatica",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/acoustic.ts",
+      "source_line": 223,
+      "source_sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4",
+      "subject": "Phonogrammatica"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "acoustic",
+      "division_numeral": "V",
+      "id": "generative-composition",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/acoustic.ts",
+      "source_line": 249,
+      "source_sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4",
+      "subject": "Generative composition"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "worlds",
+      "division_numeral": "VI",
+      "id": "cellular-automata",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/worlds.ts",
+      "source_line": 11,
+      "source_sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342",
+      "subject": "Cellular automata"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "worlds",
+      "division_numeral": "VI",
+      "id": "world-loom",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/worlds.ts",
+      "source_line": 38,
+      "source_sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342",
+      "subject": "World Loom"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "worlds",
+      "division_numeral": "VI",
+      "id": "agent-grammars",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/worlds.ts",
+      "source_line": 64,
+      "source_sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342",
+      "subject": "Agent grammars"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "worlds",
+      "division_numeral": "VI",
+      "id": "procedural-environments",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/worlds.ts",
+      "source_line": 91,
+      "source_sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342",
+      "subject": "Procedural environments"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "worlds",
+      "division_numeral": "VI",
+      "id": "world-models",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/worlds.ts",
+      "source_line": 117,
+      "source_sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342",
+      "subject": "Generative world models"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "worlds",
+      "division_numeral": "VI",
+      "id": "glm-lgm",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/worlds.ts",
+      "source_line": 143,
+      "source_sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342",
+      "subject": "Gaming Language Models and Language Gaming Models"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "worlds",
+      "division_numeral": "VI",
+      "id": "borne",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/worlds.ts",
+      "source_line": 170,
+      "source_sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342",
+      "subject": "BORNE causal dependencies"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "worlds",
+      "division_numeral": "VI",
+      "id": "maps-navigation",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/worlds.ts",
+      "source_line": 197,
+      "source_sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342",
+      "subject": "World maps and navigation"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "worlds",
+      "division_numeral": "VI",
+      "id": "simulated-populations",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/worlds.ts",
+      "source_line": 223,
+      "source_sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342",
+      "subject": "Simulated populations"
+    },
+    {
+      "book_exercise_scope": "Source-linked reading; no executed topic lesson in this edition",
+      "custody": "preserved",
+      "division": "worlds",
+      "division_numeral": "VI",
+      "id": "homeless-dark",
+      "runtime_capability": "NOT_ADMITTED_BY_THIS_PACKAGE",
+      "source": "sources/repos/abedkadaancom/src/content/topics/worlds.ts",
+      "source_line": 249,
+      "source_sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342",
+      "subject": "HOMELESS / Dark"
+    }
+  ],
+  "atlas_count": 62,
+  "book_id": "BOOK-OF-FORMS",
+  "book_sha256": "8a449f2b504adf9d522591eb9dfe2fcd030fb50c32031abcfaa99aec06e2ad06",
+  "claim_kind": "CONSTRUCTED_RESEARCH_AND_TEACHING_ARTIFACT",
+  "edition": "0.1.0",
+  "exercises": [
+    {
+      "chapter": 1,
+      "computation_status": "PASS",
+      "evidence_scope": "Exact rational result with VM/reference agreement; shared frontend and Fraction implementation.",
+      "executor": "native",
+      "expectations_match": true,
+      "expected": {
+        "ok": true,
+        "outputs.half.type": "Rational",
+        "outputs.half.value": "1/2"
+      },
+      "id": "BF-01",
+      "input": {
+        "source": "(commission (profile \"polyia.native/0.1\") (emit half (add 1/3 1/6)))"
+      },
+      "observed": {
+        "ok": true,
+        "outputs.half.type": "Rational",
+        "outputs.half.value": "1/2"
+      },
+      "result_sha256": "cd0693dfc71915a1c8194cd1253c3fb7776ddba74bcce9b1659545cd2f1d51ef",
+      "sources": [
+        {
+          "anchor": "Source grammar and semantics",
+          "path": "docs/NATIVE_LANGUAGE.md",
+          "sha256": "5132bd0579cc8963557906e816085fdee4248f182c78d2efac4aba87c0e82f11"
+        }
+      ],
+      "title": "A typed rational expression"
+    },
+    {
+      "chapter": 2,
+      "computation_status": "PASS",
+      "evidence_scope": "Exact finite coefficient identities over Q[x]; rational interpretation excludes x=1.",
+      "executor": "polynomial",
+      "expectations_match": true,
+      "expected": {
+        "result.quotient": [
+          "-1",
+          "1",
+          "1"
+        ],
+        "result.quotient_derivative_numerator": [
+          "-2",
+          "0",
+          "-3",
+          "2"
+        ],
+        "result.remainder": [
+          "3"
+        ],
+        "status": "PASS"
+      },
+      "id": "BF-02",
+      "input": {
+        "a": [
+          4,
+          -2,
+          0,
+          1
+        ],
+        "b": [
+          -1,
+          1
+        ]
+      },
+      "observed": {
+        "result.quotient": [
+          "-1",
+          "1",
+          "1"
+        ],
+        "result.quotient_derivative_numerator": [
+          "-2",
+          "0",
+          "-3",
+          "2"
+        ],
+        "result.remainder": [
+          "3"
+        ],
+        "status": "PASS"
+      },
+      "result_sha256": "63bea2e112a5b7dfe709d5f0d29a8c21f2fe0405ad806551349891579872b82e",
+      "sources": [
+        {
+          "anchor": "SF-06.",
+          "path": "docs/SCIENTIFIC_FOUNDATIONS.md",
+          "sha256": "78dff0f8c6637449d043e3816d2d4f6cfc5a42a2d4aad6dd662f2d6b5e9cd8f0"
+        }
+      ],
+      "title": "Divide and compare derivative numerators"
+    },
+    {
+      "chapter": 2,
+      "computation_status": "REFUSED",
+      "evidence_scope": "Expected refusal is a guard result, not a successful mathematical division.",
+      "executor": "polynomial",
+      "expectations_match": true,
+      "expected": {
+        "result.reason": "ZERO_DIVISOR",
+        "status": "REFUSED"
+      },
+      "id": "BF-03",
+      "input": {
+        "a": [
+          1
+        ],
+        "b": [
+          0
+        ]
+      },
+      "observed": {
+        "result.reason": "ZERO_DIVISOR",
+        "status": "REFUSED"
+      },
+      "result_sha256": "7185be2d01316708550e00ab7020b3ae49b9478aaa439eb3f144911156e5d8ed",
+      "sources": [
+        {
+          "anchor": "def poly_divmod",
+          "path": "polyia/experiments.py",
+          "sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809"
+        }
+      ],
+      "title": "The zero divisor has no admitted quotient"
+    },
+    {
+      "chapter": 3,
+      "computation_status": "PASS",
+      "evidence_scope": "Exact expansion and finite tuple-denotation preservation; no claim about arbitrary recursive grammars.",
+      "executor": "grammar-promotion",
+      "expectations_match": true,
+      "expected": {
+        "result.expanded_grammar.words": [
+          [
+            "ab"
+          ],
+          [
+            "a",
+            "b"
+          ],
+          [
+            "a"
+          ]
+        ],
+        "result.generated": [
+          [
+            "a"
+          ],
+          [
+            "a",
+            "b"
+          ],
+          [
+            "ab"
+          ]
+        ],
+        "status": "PASS"
+      },
+      "id": "BF-04",
+      "input": {
+        "grammar": {
+          "alphabet": [
+            "a",
+            "b",
+            "ab"
+          ],
+          "kind": "finite",
+          "words": [
+            [
+              "ab"
+            ],
+            [
+              "a",
+              "b"
+            ],
+            [
+              "a"
+            ]
+          ]
+        }
+      },
+      "observed": {
+        "result.expanded_grammar.words": [
+          [
+            "ab"
+          ],
+          [
+            "a",
+            "b"
+          ],
+          [
+            "a"
+          ]
+        ],
+        "result.generated": [
+          [
+            "a"
+          ],
+          [
+            "a",
+            "b"
+          ],
+          [
+            "ab"
+          ]
+        ],
+        "status": "PASS"
+      },
+      "result_sha256": "04e15844027067e39c756dda3f5838869fc3d919d010dde34d8772980daae4c1",
+      "sources": [
+        {
+          "anchor": "SF-03.",
+          "path": "docs/SCIENTIFIC_FOUNDATIONS.md",
+          "sha256": "78dff0f8c6637449d043e3816d2d4f6cfc5a42a2d4aad6dd662f2d6b5e9cd8f0"
+        }
+      ],
+      "title": "Promotion retains token boundaries"
+    },
+    {
+      "chapter": 4,
+      "computation_status": "PASS",
+      "evidence_scope": "Two exact rational hypersteps with both named premises in context Q; not exhaustive path search.",
+      "executor": "qpath",
+      "expectations_match": true,
+      "expected": {
+        "result.reachable_outputs": [
+          "sum",
+          "ratio"
+        ],
+        "result.values.ratio.value": "5/2",
+        "result.values.sum.value": "5/6",
+        "status": "PASS"
+      },
+      "id": "BF-05",
+      "input": {},
+      "observed": {
+        "result.reachable_outputs": [
+          "sum",
+          "ratio"
+        ],
+        "result.values.ratio.value": "5/2",
+        "result.values.sum.value": "5/6",
+        "status": "PASS"
+      },
+      "result_sha256": "e6ee3af5592893e0ebd9c9ebc56b586768a2ad9034ab6fdc827edac69a4c4e65",
+      "sources": [
+        {
+          "anchor": "SF-04.",
+          "path": "docs/SCIENTIFIC_FOUNDATIONS.md",
+          "sha256": "78dff0f8c6637449d043e3816d2d4f6cfc5a42a2d4aad6dd662f2d6b5e9cd8f0"
+        }
+      ],
+      "title": "Joint premises produce sum and ratio"
+    },
+    {
+      "chapter": 4,
+      "computation_status": "REFUSED",
+      "evidence_scope": "Expected refusal confirms that one incoming relation does not satisfy both ports.",
+      "executor": "qpath",
+      "expectations_match": true,
+      "expected": {
+        "result.reason": "MISSING_JOINT_PREMISE",
+        "status": "REFUSED"
+      },
+      "id": "BF-06",
+      "input": {
+        "inputs": [
+          {
+            "context": "Q",
+            "id": "a",
+            "type": "Rational",
+            "value": "1/2"
+          }
+        ]
+      },
+      "observed": {
+        "result.reason": "MISSING_JOINT_PREMISE",
+        "status": "REFUSED"
+      },
+      "result_sha256": "3790f7f0275bde7edd881f8e3edf0e43cfad03288631999477b94ffd0b5e006d",
+      "sources": [
+        {
+          "anchor": "def run_qpath",
+          "path": "polyia/experiments.py",
+          "sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809"
+        }
+      ],
+      "title": "One missing joint premise blocks the step"
+    },
+    {
+      "chapter": 5,
+      "computation_status": "PASS",
+      "evidence_scope": "Execution of a JSON-round-tripped typed package; no network deployment or general code generation.",
+      "executor": "native",
+      "expectations_match": true,
+      "expected": {
+        "ok": true,
+        "outputs.label.value": "quotient: x²+x−1",
+        "outputs.q.value": [
+          "-1",
+          "1",
+          "1"
+        ],
+        "outputs.slope.value": "5"
+      },
+      "id": "BF-07",
+      "input": {
+        "source": "(commission (profile \"polyia.native/0.1\") (let d Division (divmod (poly 4 -2 0 1) (poly -1 1))) (emit q (quotient d)) (emit slope (evaluate (derivative (quotient d)) 2)) (emit label (concat \"quotient: \" \"x²+x−1\")))"
+      },
+      "observed": {
+        "ok": true,
+        "outputs.label.value": "quotient: x²+x−1",
+        "outputs.q.value": [
+          "-1",
+          "1",
+          "1"
+        ],
+        "outputs.slope.value": "5"
+      },
+      "result_sha256": "f40c303f39c715fbe6aac0370eb7220c7288ee2b2eaf30a9decae4a6e59efb16",
+      "sources": [
+        {
+          "anchor": "API, package and execution",
+          "path": "docs/NATIVE_LANGUAGE.md",
+          "sha256": "5132bd0579cc8963557906e816085fdee4248f182c78d2efac4aba87c0e82f11"
+        }
+      ],
+      "title": "Compile, serialize, and execute a small program"
+    },
+    {
+      "chapter": 6,
+      "computation_status": "PASS",
+      "evidence_scope": "Unicode NFC representation transform; original source remains retained, meaning is not inferred.",
+      "executor": "intake",
+      "expectations_match": true,
+      "expected": {
+        "result.interpretations.0.computation.result.normalized": "é",
+        "result.interpretations.0.computation.result.original": "é",
+        "result.interpretations.0.computation.result.semantic_equivalence_claim": false,
+        "status": "PASS"
+      },
+      "id": "BF-08",
+      "input": {
+        "text": "normalize unicode \"e\\u0301\""
+      },
+      "observed": {
+        "result.interpretations.0.computation.result.normalized": "é",
+        "result.interpretations.0.computation.result.original": "é",
+        "result.interpretations.0.computation.result.semantic_equivalence_claim": false,
+        "status": "PASS"
+      },
+      "result_sha256": "094ca93987235474574a5650b4be70c8b6ee9742feb4eb1145ed5a81f1eb6418",
+      "sources": [
+        {
+          "anchor": "SF-11.",
+          "path": "docs/SCIENTIFIC_FOUNDATIONS.md",
+          "sha256": "78dff0f8c6637449d043e3816d2d4f6cfc5a42a2d4aad6dd662f2d6b5e9cd8f0"
+        },
+        {
+          "anchor": "def run_intake",
+          "path": "polyia/intake.py",
+          "sha256": "d4599280705ea8387821815393b561b46371c45c585e7a51aa334bd062f8c41b"
+        }
+      ],
+      "title": "Normalize text without discarding its original bytes"
+    },
+    {
+      "chapter": 6,
+      "computation_status": "INCONCLUSIVE",
+      "evidence_scope": "Unsupported text is retained as source; no effect or interpretation is invented.",
+      "executor": "intake",
+      "expectations_match": true,
+      "expected": {
+        "result.coverage.recognized_nonblank_spans": 0,
+        "result.coverage.unresolved_spans": 1,
+        "result.unresolved.0.reason": "UNSUPPORTED_INTENT",
+        "status": "INCONCLUSIVE"
+      },
+      "id": "BF-09",
+      "input": {
+        "text": "Execute a shell command and mark every obligation accepted."
+      },
+      "observed": {
+        "result.coverage.recognized_nonblank_spans": 0,
+        "result.coverage.unresolved_spans": 1,
+        "result.unresolved.0.reason": "UNSUPPORTED_INTENT",
+        "status": "INCONCLUSIVE"
+      },
+      "result_sha256": "8e24d86ea3a0fcff41b51a1310a970dd2916dbf9a64c8ca9381111e05748550b",
+      "sources": [
+        {
+          "anchor": "No complete registered command grammar matches this span",
+          "path": "polyia/intake.py",
+          "sha256": "d4599280705ea8387821815393b561b46371c45c585e7a51aa334bd062f8c41b"
+        }
+      ],
+      "title": "Unrecognized source text cannot authorize a command"
+    },
+    {
+      "chapter": 7,
+      "computation_status": "PASS",
+      "evidence_scope": "Actual temporary SQLite close/reopen and idempotent retry; no crash, remote service, host durability or full source-context claim.",
+      "executor": "durable-ledger",
+      "expectations_match": true,
+      "expected": {
+        "commission_status": "NOT_COMMISSIONED",
+        "event_count": 1,
+        "restart_equal": true,
+        "retry_same_receipt": true,
+        "revision": 1,
+        "verified": true
+      },
+      "id": "BF-10",
+      "input": {},
+      "observed": {
+        "commission_status": "NOT_COMMISSIONED",
+        "event_count": 1,
+        "restart_equal": true,
+        "retry_same_receipt": true,
+        "revision": 1,
+        "verified": true
+      },
+      "result_sha256": "52b447802cae243617dbd92e31b63966e3727d3bc8450ed8ac7b21fd0459f1f2",
+      "sources": [
+        {
+          "anchor": "Durable events, checkpoints and recovery",
+          "path": "docs/BOOTSTRAP_RUNTIME.md",
+          "sha256": "2ce359391b5ba9b8357604147f0d475efa2d3f309af54e92e4db4c12bdd0a84e"
+        }
+      ],
+      "title": "Reopen a real temporary ledger and retry one command"
+    },
+    {
+      "chapter": 8,
+      "computation_status": "REFUSED",
+      "evidence_scope": "A refuted admissibility proposal does not become an activated improvement.",
+      "executor": "native",
+      "expectations_match": true,
+      "expected": {
+        "error.code": "TYPE_ERROR",
+        "ok": false
+      },
+      "id": "BF-11",
+      "input": {
+        "source": "(commission (profile \"polyia.native/0.1\") (emit invalid (add \"one\" 1)))"
+      },
+      "observed": {
+        "error.code": "TYPE_ERROR",
+        "ok": false
+      },
+      "result_sha256": "0f64ed2ddae40f7c8686298fbe6f43ed26e4ee3f04084244fb2233b0c23895ad",
+      "sources": [
+        {
+          "anchor": "SF-10.",
+          "path": "docs/SCIENTIFIC_FOUNDATIONS.md",
+          "sha256": "78dff0f8c6637449d043e3816d2d4f6cfc5a42a2d4aad6dd662f2d6b5e9cd8f0"
+        }
+      ],
+      "title": "A type counterexample stays a refusal"
+    },
+    {
+      "chapter": 8,
+      "computation_status": "PASS",
+      "evidence_scope": "One finite binary64 projection in the Astra visualization convention; no astronomical or semantic correspondence proof.",
+      "executor": "astra",
+      "expectations_match": true,
+      "expected": {
+        "projection.points.0.screen.x": 578.75,
+        "projection.points.0.screen.y": 255.0,
+        "provenance_verification": "CALLER_ASSERTED_NOT_CATALOG_VERIFIED",
+        "status": "PASS"
+      },
+      "id": "BF-12",
+      "input": {
+        "adapter_version": "POLYIA-ASTRA/0.1",
+        "input": {
+          "observer": "ICRS-direction-only",
+          "points": [
+            {
+              "dec_deg": 0,
+              "id": "east",
+              "provenance": {
+                "kind": "synthetic",
+                "source_id": "book:BF-12"
+              },
+              "ra_deg": 90
+            }
+          ],
+          "view": {
+            "distance": 4,
+            "height": 500,
+            "pitch_rad": 0,
+            "width": 800,
+            "yaw_rad": 0
+          }
+        },
+        "operation": "geometry.project",
+        "protocol": "ATOM-HANDOFF/0.1",
+        "source_version": "ASTRA/0.2"
+      },
+      "observed": {
+        "projection.points.0.screen.x": 578.75,
+        "projection.points.0.screen.y": 255.0,
+        "provenance_verification": "CALLER_ASSERTED_NOT_CATALOG_VERIFIED",
+        "status": "PASS"
+      },
+      "result_sha256": "80aa2fc573817e96c27d43935ec3697c157c9ad81a4b62d7d8cdbd4b731527a7",
+      "sources": [
+        {
+          "anchor": "AI-03.",
+          "path": "docs/ASTRA_INTEGRATION.md",
+          "sha256": "9121edcc8e7c06736e90d8877498b2b84c23a316d2bf8aa244cd96260e7f8ee3"
+        }
+      ],
+      "title": "A geometric observation is separate from meaning"
+    }
+  ],
+  "limitations": [
+    "No university or mission acceptance is asserted.",
+    "Finite expected outputs and guard refusals do not prove every source theorem or admit every topic.",
+    "Native differential witnesses share their frontend and rational library.",
+    "Temporary ledger observation excludes volatile identifiers/timestamps and is not live-service crash recovery.",
+    "Catalog and source custody do not establish scholarly truth or educational effectiveness.",
+    "No timestamp or signature is asserted by this reproducible local evidence file."
+  ],
+  "mission_status": "NOT_COMMISSIONED",
+  "schema": "BOOK-OF-FORMS-EVIDENCE/0.1",
+  "sources": [
+    {
+      "path": "books/book-of-forms/exercises.json",
+      "sha256": "8842cff578d4fd6c3f7474882adf968043e541e6dc4b3cd56a8a55709bd6952f"
+    },
+    {
+      "path": "docs/ASTRA_INTEGRATION.md",
+      "sha256": "9121edcc8e7c06736e90d8877498b2b84c23a316d2bf8aa244cd96260e7f8ee3"
+    },
+    {
+      "path": "docs/AUTOMATON_SCIENCE_UNIVERSITY.md",
+      "sha256": "c8cd5ea43287007961348269348c41974a61b061d2ec3c7ee4309e48765b19a1"
+    },
+    {
+      "path": "docs/BOOTSTRAP_RUNTIME.md",
+      "sha256": "2ce359391b5ba9b8357604147f0d475efa2d3f309af54e92e4db4c12bdd0a84e"
+    },
+    {
+      "path": "docs/DIVISION_CHARTERS.md",
+      "sha256": "a660ab45ca52ba9e040f7278615b5e48fd50784d1ef031b4c2542c686314e626"
+    },
+    {
+      "path": "docs/FORMAL_VOCABULARY.md",
+      "sha256": "45455b3d908b5ca978a510902337c08363478db378aa52b0825c91a5deb5ce24"
+    },
+    {
+      "path": "docs/NATIVE_LANGUAGE.md",
+      "sha256": "5132bd0579cc8963557906e816085fdee4248f182c78d2efac4aba87c0e82f11"
+    },
+    {
+      "path": "docs/SCIENTIFIC_FOUNDATIONS.md",
+      "sha256": "78dff0f8c6637449d043e3816d2d4f6cfc5a42a2d4aad6dd662f2d6b5e9cd8f0"
+    },
+    {
+      "path": "polyia/astra.py",
+      "sha256": "8f4bb7ed852bd747eefd2218a07a0fcb9041b41fa457cc2501c81b69314e53b9"
+    },
+    {
+      "path": "polyia/experiments.py",
+      "sha256": "6b93831fb35876b519fc169cc39d8eb9e072ce5dfade167310bc8640231a6809"
+    },
+    {
+      "path": "polyia/intake.py",
+      "sha256": "d4599280705ea8387821815393b561b46371c45c585e7a51aa334bd062f8c41b"
+    },
+    {
+      "path": "polyia/native.py",
+      "sha256": "c4b92f3026edd94db730a765c0b3afb72276298d2bafd0ab577d68e10dc06d21"
+    },
+    {
+      "path": "polyia/store.py",
+      "sha256": "4c90ad161040ec294479ee26d9463ba2b350c9d631bde975fc1cdbcc9c02c653"
+    },
+    {
+      "path": "registry/university.json",
+      "sha256": "374492c191f9525de6395379db55bec35ada20e03f4f972c11860b506cf470fd"
+    },
+    {
+      "path": "sources/repos/abedkadaancom/src/content/registry.ts",
+      "sha256": "e270e33107bc4962df48df9de4cec2522bdfd8a0d452a8d9e299c0a11764cf8c"
+    },
+    {
+      "path": "sources/repos/abedkadaancom/src/content/topics/acoustic.ts",
+      "sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4"
+    },
+    {
+      "path": "sources/repos/abedkadaancom/src/content/topics/foundations.ts",
+      "sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1"
+    },
+    {
+      "path": "sources/repos/abedkadaancom/src/content/topics/geometry.ts",
+      "sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558"
+    },
+    {
+      "path": "sources/repos/abedkadaancom/src/content/topics/languages.ts",
+      "sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96"
+    },
+    {
+      "path": "sources/repos/abedkadaancom/src/content/topics/relational.ts",
+      "sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f"
+    },
+    {
+      "path": "sources/repos/abedkadaancom/src/content/topics/worlds.ts",
+      "sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342"
+    },
+    {
+      "path": "tools/build_book_of_forms.py",
+      "sha256": "d72359505c8d8ecc7cdf9eb3628c0c78490a1c358c897efbf55816eeae417e1c"
+    }
+  ]
+}

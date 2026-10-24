@@ -1,0 +1,47 @@
+{
+  "reference": "Arabic Timeless source-derived class tables; toy corpus and features separately scoped",
+  "كتب_to_كتم": {
+    "same_rasm": false,
+    "change": "final ب→م",
+    "path_type": "same-articulation-point, not ijam-only",
+    "articulation": {
+      "a": "ب",
+      "b": "م",
+      "same_zone": true,
+      "same_point": true,
+      "contrasts": {
+        "shiddah": [
+          true,
+          false
+        ],
+        "qalqala_inventory": [
+          true,
+          false
+        ]
+      }
+    }
+  },
+  "consonantal_feature_intersection": {
+    "jahr_and_shiddah": [
+      "ء",
+      "ب",
+      "ج",
+      "د",
+      "ط",
+      "ق"
+    ],
+    "qalqala_inventory": [
+      "ب",
+      "ج",
+      "د",
+      "ط",
+      "ق"
+    ],
+    "excluded_hamza": [
+      "ء"
+    ]
+  },
+  "standalone_qstr": "qstr:v1:23f8062289903f5da083749b7b2af5f09cc30fc2ca69ad5b9952d4df4e058267",
+  "distinction": "Hartley candidate count is combinatorial; actual Shannon entropy requires a probability model."
+}
+written: /mnt/data/Timeless_WAZNOMIA_QIA_Handoff_v0.1/results/demo.json

@@ -1,0 +1,159 @@
+{
+  "schemaVersion": "snad.foundation-audit.v1",
+  "date": "2026-10-18",
+  "sources": [
+    {
+      "repository": "https://github.com/akadaan310/computationalgrammartheory",
+      "commit": "bfe32fc37f7fa61d50da50ecd2aa7fa97c0dd5a1",
+      "filesInspected": [
+        {
+          "path": "sdk/src/cgtsdk/grammar.py",
+          "sha256": "c91ae962bdfb45223a9844086eac060afbb61b1fa0bfe006e038f5c7a66a9ebf",
+          "url": "https://github.com/akadaan310/computationalgrammartheory/blob/bfe32fc37f7fa61d50da50ecd2aa7fa97c0dd5a1/sdk/src/cgtsdk/grammar.py"
+        },
+        {
+          "path": "sdk/src/cgtsdk/automata.py",
+          "sha256": "7cb4620aeb973d0129973ed109194197a289ae370b56589fec1bb16d7ffca4fa",
+          "url": "https://github.com/akadaan310/computationalgrammartheory/blob/bfe32fc37f7fa61d50da50ecd2aa7fa97c0dd5a1/sdk/src/cgtsdk/automata.py"
+        },
+        {
+          "path": "sdk/src/cgtsdk/algorithms/automata.py",
+          "sha256": "e6aff13b4f9f8fc6fce2aa781ed3dc03aa5c7d564b5d023dbca3c5f3a010b84e",
+          "url": "https://github.com/akadaan310/computationalgrammartheory/blob/bfe32fc37f7fa61d50da50ecd2aa7fa97c0dd5a1/sdk/src/cgtsdk/algorithms/automata.py"
+        },
+        {
+          "path": "sdk/src/cgtsdk/structures/graphs.py",
+          "sha256": "1fb302ca9e7bbb746e3e52d803ceb4bb7d7996c5c32a1b4ee797aebd2be2ba48",
+          "url": "https://github.com/akadaan310/computationalgrammartheory/blob/bfe32fc37f7fa61d50da50ecd2aa7fa97c0dd5a1/sdk/src/cgtsdk/structures/graphs.py"
+        },
+        {
+          "path": "LITERATURE_REVIEW.md",
+          "sha256": "2e0ba32e2dd60352f7306f8a1d67155d9bfcf01f397d387b49029b10338c9df1",
+          "url": "https://github.com/akadaan310/computationalgrammartheory/blob/bfe32fc37f7fa61d50da50ecd2aa7fa97c0dd5a1/LITERATURE_REVIEW.md"
+        }
+      ],
+      "license": "No LICENSE file found at inspected commit; ideas inspected, implementation not copied."
+    },
+    {
+      "repository": "https://github.com/akadaan310/grammarinnumbers",
+      "commit": "2a94f8a6be686078a9dad88863be9aafc5e6379b",
+      "filesInspected": [
+        {
+          "path": "sdk/src/ginsdk/numerals.py",
+          "sha256": "231809711880d118d5c47053725e43be06ef8bbf201a499e76bdbbf2e52432ed",
+          "url": "https://github.com/akadaan310/grammarinnumbers/blob/2a94f8a6be686078a9dad88863be9aafc5e6379b/sdk/src/ginsdk/numerals.py"
+        },
+        {
+          "path": "sdk/src/ginsdk/converse.py",
+          "sha256": "d1c8fe02b3515cafb7fdffcd10d25aec612b7b05057974601d7dea3477061595",
+          "url": "https://github.com/akadaan310/grammarinnumbers/blob/2a94f8a6be686078a9dad88863be9aafc5e6379b/sdk/src/ginsdk/converse.py"
+        },
+        {
+          "path": "sdk/src/ginsdk/expr.py",
+          "sha256": "cc377fa5e8d25b9168c0bc2a883045e97cfb2e2e071cf9e70c2632a0834f2b8e",
+          "url": "https://github.com/akadaan310/grammarinnumbers/blob/2a94f8a6be686078a9dad88863be9aafc5e6379b/sdk/src/ginsdk/expr.py"
+        },
+        {
+          "path": "LITERATURE_REVIEW.md",
+          "sha256": "b157c84aad78cc7fda74729ff517b1341361e1a60b29045f06629e073b8a5e01",
+          "url": "https://github.com/akadaan310/grammarinnumbers/blob/2a94f8a6be686078a9dad88863be9aafc5e6379b/LITERATURE_REVIEW.md"
+        }
+      ],
+      "license": "No LICENSE file found at inspected commit; ideas inspected, implementation not copied."
+    },
+    {
+      "repository": "https://github.com/akadaan310/substrateIO",
+      "commit": "7ace119a544fc736f0d4ec1d72cded9dad0a83e3",
+      "filesInspected": [
+        {
+          "path": "substrate/core.py",
+          "sha256": "caf10ed80027733cf32d80cd1d707218766566daf38c8cd80aede6467a66f67a",
+          "url": "https://github.com/akadaan310/substrateIO/blob/7ace119a544fc736f0d4ec1d72cded9dad0a83e3/substrate/core.py"
+        },
+        {
+          "path": "substrate/graph.py",
+          "sha256": "4981f71e79c7f3986c6b342d8e645e1180ae1de233009b08c59a94069fbe79d0",
+          "url": "https://github.com/akadaan310/substrateIO/blob/7ace119a544fc736f0d4ec1d72cded9dad0a83e3/substrate/graph.py"
+        },
+        {
+          "path": "substrate/trace.py",
+          "sha256": "c3aa6a2e282f0438639ddd7ce2ebc3bc636f4eda344b7afd3973d2e9cfd3600b",
+          "url": "https://github.com/akadaan310/substrateIO/blob/7ace119a544fc736f0d4ec1d72cded9dad0a83e3/substrate/trace.py"
+        },
+        {
+          "path": "substrate/projection.py",
+          "sha256": "789d116df3f7c8d79080403381a6be9c6aa3264e73fd80427d9c32b1c9b6514a",
+          "url": "https://github.com/akadaan310/substrateIO/blob/7ace119a544fc736f0d4ec1d72cded9dad0a83e3/substrate/projection.py"
+        },
+        {
+          "path": "substrate/epistemic.py",
+          "sha256": "9dc28b861b136d199cc8635d70f3ed49db5ab27be4ff35ef2d264e28e289f5c5",
+          "url": "https://github.com/akadaan310/substrateIO/blob/7ace119a544fc736f0d4ec1d72cded9dad0a83e3/substrate/epistemic.py"
+        },
+        {
+          "path": "research/literature/LITERATURE_MAP.md",
+          "sha256": "dffbc1e240e8c73dc82bf1db27b4f535fa21ac884b2357925aa6ec46ecda9e67",
+          "url": "https://github.com/akadaan310/substrateIO/blob/7ace119a544fc736f0d4ec1d72cded9dad0a83e3/research/literature/LITERATURE_MAP.md"
+        }
+      ],
+      "license": "No LICENSE file found at inspected commit; ideas inspected, implementation not copied."
+    }
+  ],
+  "independentReconstructions": [
+    {
+      "id": "foundation-regular-path",
+      "source": "CGT product_reach",
+      "status": "reproduced-computationally",
+      "acceptedEndpoints": [
+        2
+      ],
+      "exhaustiveBaselineEndpoints": [
+        2
+      ],
+      "exploredProductStates": 3,
+      "finiteBound": 12
+    },
+    {
+      "id": "foundation-affine-composition",
+      "source": "GiN DigitGrammar / Affine.then",
+      "status": "reproduced-computationally",
+      "checks": 675,
+      "inverseClassification": {
+        "1/0": "no-solution",
+        "0/0": "non-unique",
+        "6/3": "unique"
+      }
+    },
+    {
+      "id": "foundation-projection",
+      "source": "SubstrateIO compatibility / coarsest_congruence",
+      "status": "reproduced-computationally",
+      "table": [
+        0,
+        1,
+        1,
+        3
+      ],
+      "projection": "x mod 2",
+      "counterexample": {
+        "equalProjectedStates": [
+          0,
+          2
+        ],
+        "differentNextObservations": [
+          0,
+          1
+        ]
+      },
+      "refinedBlocks": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "xorRoundtrip": true
+    }
+  ],
+  "scope": "Small independent executable comparisons of inspected implementations, not new theorems, empirical linguistic validation, or physical discoveries.",
+  "command": "python scripts/check-foundations.py --references ../references"
+}

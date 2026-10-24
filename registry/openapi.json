@@ -1,0 +1,1365 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Poly IA commissioning bootstrap",
+    "version": "1.0.0",
+    "description": "Authenticated command service bound to loopback behind an exact public HTTPS origin. Native programs use a bounded typed interpreter; intake retains source spans; Astra uses explicit versions. No model inference or full-mission acceptance is claimed. Global connection admission returns 429/503; logs use fixed categories without user content."
+  },
+  "servers": [
+    {
+      "url": "/",
+      "description": "Same-origin service or explicitly configured HTTPS reverse proxy"
+    }
+  ],
+  "security": [
+    {
+      "operatorBearer": []
+    },
+    {
+      "readBearer": []
+    }
+  ],
+  "paths": {
+    "/healthz": {
+      "get": {
+        "summary": "Non-sensitive process liveness",
+        "responses": {
+          "200": {
+            "description": "Successful read",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Health"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Explicit refusal or service error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/.well-known/polyia.json": {
+      "get": {
+        "summary": "Public protocol and capability discovery",
+        "responses": {
+          "200": {
+            "description": "Successful read",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Discovery"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Explicit refusal or service error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/openapi.json": {
+      "get": {
+        "summary": "This OpenAPI document",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "OpenAPI 3.1 JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "summary": "Memory-token browser command plane",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "Static interface; contains no authentication token or ledger state",
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/state": {
+      "get": {
+        "summary": "Read the current durable state envelope",
+        "responses": {
+          "200": {
+            "description": "Successful read",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/State"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Explicit refusal or service error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/events": {
+      "get": {
+        "summary": "Resume ordered committed events",
+        "responses": {
+          "200": {
+            "description": "Successful read",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EventPage"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Explicit refusal or service error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "after",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 0,
+              "minimum": 0,
+              "maximum": 9223372036854775807
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 100,
+              "minimum": 1,
+              "maximum": 1000
+            }
+          }
+        ],
+        "description": "after is exclusive. Resume using next_after; an empty page preserves the supplied cursor. Feed is JSON polling, not SSE or WebSocket."
+      }
+    },
+    "/v1/commands": {
+      "post": {
+        "summary": "Apply or recover one authenticated command",
+        "security": [
+          {
+            "operatorBearer": []
+          }
+        ],
+        "description": "Requires Content-Length, application/json (optional charset=utf-8), at most 65536 body bytes, unique object keys, finite numbers and depth at most 32. Fixed HTTP actor is operator. A 200 receipt means the operation was recorded; inspect result for scientific/verifier status.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Command"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Committed receipt, including exact idempotent retries",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Receipt"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Malformed or refused command",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Missing or invalid token",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Read token or disallowed Origin",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Revision, idempotency, integrity, or state transition conflict",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "413": {
+            "description": "Body budget exceeded",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Unsupported JSON media type",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Other safe service error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/commands/{command_id}": {
+      "get": {
+        "summary": "Read a committed command receipt",
+        "responses": {
+          "200": {
+            "description": "Successful read",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Receipt"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Explicit refusal or service error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "command_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$",
+              "minLength": 1,
+              "maxLength": 128
+            }
+          }
+        ],
+        "description": "Looks up IDs across actors; AMBIGUOUS_COMMAND (409) is returned if the same ID belongs to multiple actors. Unknown IDs return 404."
+      }
+    },
+    "/v1/checkpoints/latest": {
+      "get": {
+        "summary": "Read the latest source-linked snapshot",
+        "responses": {
+          "200": {
+            "description": "Successful read",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Checkpoint"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Explicit refusal or service error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "description": "Returns NOT_FOUND (404) until a checkpoint exists."
+      }
+    },
+    "/v1/checkpoints/{checkpoint_id}": {
+      "get": {
+        "summary": "Read an immutable checkpoint",
+        "responses": {
+          "200": {
+            "description": "Successful read",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Checkpoint"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Explicit refusal or service error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "checkpoint_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$",
+              "minLength": 1,
+              "maxLength": 128
+            }
+          }
+        ]
+      }
+    },
+    "/v1/verify": {
+      "get": {
+        "summary": "Recompute ledger, artifact and checkpoint integrity",
+        "responses": {
+          "200": {
+            "description": "Successful read",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Verification"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Explicit refusal or service error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "description": "Read operation; 200 can contain ok:false with diagnostics. It never repairs corruption."
+      }
+    },
+    "/v1/refusals": {
+      "get": {
+        "summary": "Read separate ledger command refusal diagnostics",
+        "responses": {
+          "200": {
+            "description": "Successful read",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Refusals"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Explicit refusal or service error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 100,
+              "minimum": 1,
+              "maximum": 1000
+            }
+          }
+        ],
+        "description": "HTTP prevalidation and authentication failures are not retained in this ledger refusal journal. Refusals do not advance revision."
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "operatorBearer": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "POLYIA_OPERATOR_TOKEN: read and command authority. Never place it in a URL."
+      },
+      "readBearer": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Optional distinct POLYIA_READ_TOKEN: authenticated reads only."
+      }
+    },
+    "schemas": {
+      "Error": {
+        "type": "object",
+        "properties": {
+          "ok": {
+            "const": false
+          },
+          "error": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              },
+              "details": {}
+            },
+            "required": [
+              "code",
+              "message"
+            ],
+            "additionalProperties": false
+          },
+          "request_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "ok",
+          "error",
+          "request_id"
+        ],
+        "additionalProperties": false
+      },
+      "Command": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "command_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "expected_revision": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9223372036854775807
+              },
+              "kind": {
+                "const": "guidance.submit"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "target": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$",
+                    "minLength": 1,
+                    "maxLength": 128
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 16000,
+                    "pattern": "\\S"
+                  },
+                  "action": {
+                    "oneOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "kind": {
+                            "const": "set_priority"
+                          },
+                          "target": {
+                            "type": "string",
+                            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$",
+                            "minLength": 1,
+                            "maxLength": 128
+                          },
+                          "priority": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 9
+                          }
+                        },
+                        "required": [
+                          "kind",
+                          "target",
+                          "priority"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "kind": {
+                            "const": "pause_research"
+                          }
+                        },
+                        "required": [
+                          "kind"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "kind": {
+                            "const": "resume_research"
+                          }
+                        },
+                        "required": [
+                          "kind"
+                        ],
+                        "additionalProperties": false
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "target",
+                  "text"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "command_id",
+              "expected_revision",
+              "kind",
+              "payload"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "command_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "expected_revision": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9223372036854775807
+              },
+              "kind": {
+                "const": "guidance.ack"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "guidance_id": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$",
+                    "minLength": 1,
+                    "maxLength": 128
+                  },
+                  "disposition": {
+                    "enum": [
+                      "ACKNOWLEDGED",
+                      "DEFERRED",
+                      "REJECTED"
+                    ]
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 4000,
+                    "pattern": "\\S"
+                  }
+                },
+                "required": [
+                  "guidance_id",
+                  "disposition",
+                  "reason"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "command_id",
+              "expected_revision",
+              "kind",
+              "payload"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "command_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "expected_revision": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9223372036854775807
+              },
+              "kind": {
+                "const": "guidance.apply"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "guidance_id": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$",
+                    "minLength": 1,
+                    "maxLength": 128
+                  }
+                },
+                "required": [
+                  "guidance_id"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "command_id",
+              "expected_revision",
+              "kind",
+              "payload"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "command_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "expected_revision": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9223372036854775807
+              },
+              "kind": {
+                "const": "requirement.produce"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "requirement_id": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$",
+                    "minLength": 1,
+                    "maxLength": 128
+                  },
+                  "artifacts": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "minItems": 1,
+                    "maxItems": 32,
+                    "uniqueItems": true
+                  },
+                  "note": {
+                    "type": "string",
+                    "maxLength": 4000
+                  }
+                },
+                "required": [
+                  "requirement_id",
+                  "artifacts"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "command_id",
+              "expected_revision",
+              "kind",
+              "payload"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "command_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "expected_revision": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9223372036854775807
+              },
+              "kind": {
+                "const": "requirement.verify"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "requirement_id": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$",
+                    "minLength": 1,
+                    "maxLength": 128
+                  }
+                },
+                "required": [
+                  "requirement_id"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "command_id",
+              "expected_revision",
+              "kind",
+              "payload"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "command_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "expected_revision": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9223372036854775807
+              },
+              "kind": {
+                "const": "requirement.accept"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "requirement_id": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$",
+                    "minLength": 1,
+                    "maxLength": 128
+                  }
+                },
+                "required": [
+                  "requirement_id"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "command_id",
+              "expected_revision",
+              "kind",
+              "payload"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "command_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "expected_revision": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9223372036854775807
+              },
+              "kind": {
+                "const": "checkpoint.create"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "note": {
+                    "type": "string",
+                    "maxLength": 4000
+                  }
+                },
+                "required": [],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "command_id",
+              "expected_revision",
+              "kind",
+              "payload"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "command_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "expected_revision": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9223372036854775807
+              },
+              "kind": {
+                "const": "experiment.run"
+              },
+              "payload": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "enum": [
+                      "polynomial",
+                      "grammar-promotion",
+                      "qpath",
+                      "acceptance",
+                      "native",
+                      "intake",
+                      "astra"
+                    ]
+                  },
+                  "parameters": {
+                    "type": "object",
+                    "additionalProperties": true,
+                    "description": "Bounded registered input. Native requires {source}; intake requires {text}, optional format text/polyia and style concise/tutorial; astra requires its versioned operation envelope. Only original four experiments support {} defaults. No ambient host execution."
+                  }
+                },
+                "required": [
+                  "name",
+                  "parameters"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "command_id",
+              "expected_revision",
+              "kind",
+              "payload"
+            ],
+            "additionalProperties": false
+          }
+        ],
+        "description": "Exactly four top-level fields. Unknown payload fields are refused. The expected revision guards new commands; exact retries recover the original receipt. IDs are actor-scoped."
+      },
+      "Receipt": {
+        "type": "object",
+        "properties": {
+          "ok": {
+            "const": true
+          },
+          "command_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "actor": {
+            "type": "string"
+          },
+          "revision": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9223372036854775807
+          },
+          "head": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "result": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "required": [
+          "ok",
+          "command_id",
+          "actor",
+          "revision",
+          "head",
+          "result"
+        ],
+        "additionalProperties": false
+      },
+      "Requirement": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "title": {
+            "type": "string"
+          },
+          "verifier": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "NOT_STARTED",
+              "PRODUCED",
+              "VERIFIED",
+              "ACCEPTED"
+            ]
+          },
+          "priority": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9
+          },
+          "artifacts": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "verification": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "verification_attempts": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "verifier",
+          "status",
+          "priority",
+          "artifacts",
+          "verification",
+          "verification_attempts"
+        ],
+        "additionalProperties": true
+      },
+      "State": {
+        "type": "object",
+        "properties": {
+          "schema_version": {
+            "const": 1
+          },
+          "revision": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9223372036854775807
+          },
+          "head": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "commission_status": {
+            "const": "NOT_COMMISSIONED",
+            "description": "The bootstrap never grants blanket full-mission acceptance."
+          },
+          "requirements": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/Requirement"
+            }
+          },
+          "guidance": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object"
+            }
+          },
+          "research": {
+            "type": "object",
+            "properties": {
+              "paused": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "paused"
+            ],
+            "additionalProperties": false
+          },
+          "runs": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "latest_checkpoint": {
+            "type": [
+              "object",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "schema_version",
+          "revision",
+          "head",
+          "commission_status",
+          "requirements",
+          "guidance",
+          "research",
+          "runs",
+          "latest_checkpoint"
+        ],
+        "additionalProperties": true
+      },
+      "Event": {
+        "type": "object",
+        "properties": {
+          "sequence": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9223372036854775807
+          },
+          "event_id": {
+            "type": "string"
+          },
+          "event_hash": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "previous_hash": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "kind": {
+            "enum": [
+              "guidance.submit",
+              "guidance.ack",
+              "guidance.apply",
+              "requirement.produce",
+              "requirement.verify",
+              "requirement.accept",
+              "checkpoint.create",
+              "experiment.run"
+            ]
+          },
+          "payload": {
+            "type": "object",
+            "properties": {
+              "request": {
+                "$ref": "#/components/schemas/Command"
+              },
+              "result": {
+                "type": "object"
+              }
+            },
+            "required": [
+              "request",
+              "result"
+            ],
+            "additionalProperties": false
+          },
+          "actor": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": "string"
+          },
+          "before_hash": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "after_hash": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "required": [
+          "sequence",
+          "event_id",
+          "event_hash",
+          "previous_hash",
+          "kind",
+          "payload",
+          "actor",
+          "timestamp",
+          "before_hash",
+          "after_hash"
+        ],
+        "additionalProperties": false
+      },
+      "EventPage": {
+        "type": "object",
+        "properties": {
+          "events": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Event"
+            }
+          },
+          "next_after": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9223372036854775807
+          }
+        },
+        "required": [
+          "events",
+          "next_after"
+        ],
+        "additionalProperties": false
+      },
+      "Checkpoint": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "revision": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9223372036854775807
+          },
+          "head": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "state": {
+            "type": "object",
+            "description": "Reducer state snapshot; revision/head are supplied by the checkpoint envelope."
+          },
+          "state_hash": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "previous_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "revision",
+          "head",
+          "state",
+          "state_hash",
+          "previous_id"
+        ],
+        "additionalProperties": false
+      },
+      "Verification": {
+        "type": "object",
+        "properties": {
+          "ok": {
+            "type": "boolean"
+          },
+          "diagnostics": {
+            "type": "array"
+          }
+        },
+        "required": [
+          "ok",
+          "diagnostics"
+        ],
+        "additionalProperties": true
+      },
+      "Refusals": {
+        "type": "object",
+        "properties": {
+          "refusals": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        },
+        "required": [
+          "refusals"
+        ],
+        "additionalProperties": false
+      },
+      "Health": {
+        "type": "object",
+        "properties": {
+          "ok": {
+            "const": true
+          },
+          "service": {
+            "const": "polyia-bootstrap"
+          }
+        },
+        "required": [
+          "ok",
+          "service"
+        ],
+        "additionalProperties": false
+      },
+      "Discovery": {
+        "type": "object",
+        "required": [
+          "protocol",
+          "protocol_version",
+          "openapi",
+          "capabilities",
+          "authentication",
+          "limits",
+          "transport",
+          "assurance"
+        ],
+        "properties": {
+          "protocol": {
+            "const": "polyia.command-plane"
+          },
+          "protocol_version": {
+            "const": "1.0.0"
+          },
+          "openapi": {
+            "const": "/openapi.json"
+          },
+          "capabilities": {
+            "type": "object"
+          },
+          "authentication": {
+            "type": "object"
+          },
+          "limits": {
+            "type": "object"
+          },
+          "transport": {
+            "type": "object"
+          },
+          "assurance": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  },
+  "x-transport-constraints": {
+    "binding": "literal loopback address only",
+    "origin": "absent or exactly matching an allowed request authority; no wildcard CORS",
+    "host": "bound loopback authority, localhost on bound port, or explicitly configured public_origin",
+    "tokens": "browser JavaScript memory only; no URL, cookie, localStorage or sessionStorage",
+    "request-framing": "single Content-Length; no Transfer-Encoding; connection closes after response",
+    "response-header": "X-PolyIA-Scope: operator or read for authenticated responses",
+    "http-refusal-audit": "safe response diagnostics; no durable HTTP prevalidation journal"
+  },
+  "x-evidence": {
+    "tests": [
+      "tests/test_server.py",
+      "web/client.test.mjs"
+    ],
+    "scope": "tested finite bootstrap behaviors; deployment and full commission remain separate"
+  }
+}

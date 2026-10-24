@@ -1,0 +1,558 @@
+{
+  "schema_version": 1,
+  "DODGE": "Deliverable, Obligations, Dependencies, Guards, Evidence",
+  "phase_policy": "Codex chooses phases. The initial service precedes deeper implementation; minimum preflight and reading its controlling docs are required before launch.",
+  "contracts": [
+    {
+      "id": "D-SERVICE",
+      "deliverable": "Live state and guidance service first",
+      "obligations": [
+        "PIA-025",
+        "PIA-026",
+        "PIA-027",
+        "PIA-028",
+        "PIA-029",
+        "PIA-030",
+        "PIA-031",
+        "PIA-032",
+        "PIA-033",
+        "PIA-034",
+        "PIA-035",
+        "PIA-036",
+        "PIA-037",
+        "PIA-038",
+        "PIA-039",
+        "PIA-040",
+        "PIA-041",
+        "PIA-042",
+        "PIA-043",
+        "PIA-044",
+        "PIA-045",
+        "PIA-046",
+        "PIA-047",
+        "PIA-048",
+        "PIA-008",
+        "PIA-177",
+        "PIA-181"
+      ],
+      "dependencies": [],
+      "production_paths": [
+        "polyia/",
+        "web/",
+        "registry/openapi.json",
+        "docs/HTTP_PROTOCOL.md",
+        "docs/OPERATOR_RUNBOOK.md"
+      ],
+      "guards": [
+        "actual target preflight",
+        "registered/authenticated commands",
+        "source-linked durable checkpoints"
+      ],
+      "evidence_families": [
+        "ACC-STATE",
+        "ACC-GUIDE",
+        "ACC-EVIDENCE",
+        "ACC-HTTP",
+        "ACC-OPERATIONS"
+      ],
+      "status": "SPECIFIED",
+      "initial_package_contains": "Bootstrap code and specifications where listed; existence does not establish full-mission acceptance."
+    },
+    {
+      "id": "D-CUSTODY",
+      "deliverable": "Complete source custody and reconciliation",
+      "obligations": [
+        "PIA-013",
+        "PIA-014",
+        "PIA-015",
+        "PIA-016",
+        "PIA-017",
+        "PIA-018",
+        "PIA-019",
+        "PIA-020",
+        "PIA-021",
+        "PIA-022",
+        "PIA-023",
+        "PIA-024"
+      ],
+      "dependencies": [
+        "D-SERVICE"
+      ],
+      "production_paths": [
+        "sources/",
+        "registry/sources.json",
+        "registry/inherited_obligations.json",
+        "registry/inherited_supplemental.json",
+        "registry/books.json"
+      ],
+      "guards": [
+        "all supplied and pinned source bytes",
+        "no silent omitted obligation"
+      ],
+      "evidence_families": [
+        "ACC-SOURCE"
+      ],
+      "status": "SPECIFIED",
+      "initial_package_contains": "Bootstrap code and specifications where listed; existence does not establish full-mission acceptance."
+    },
+    {
+      "id": "D-FORMAL",
+      "deliverable": "Vocabulary, forms and typed grammar contracts",
+      "obligations": [
+        "PIA-049",
+        "PIA-050",
+        "PIA-051",
+        "PIA-052",
+        "PIA-053",
+        "PIA-054",
+        "PIA-055",
+        "PIA-056",
+        "PIA-057",
+        "PIA-058",
+        "PIA-059",
+        "PIA-060"
+      ],
+      "dependencies": [
+        "D-CUSTODY"
+      ],
+      "production_paths": [
+        "docs/FORMAL_VOCABULARY.md",
+        "docs/SCIENTIFIC_FOUNDATIONS.md",
+        "registry/vocabulary.json"
+      ],
+      "guards": [
+        "established versus house definitions",
+        "type/domain/evidence separation"
+      ],
+      "evidence_families": [
+        "ACC-MATH",
+        "ACC-NATIVE"
+      ],
+      "status": "SPECIFIED",
+      "initial_package_contains": "Bootstrap code and specifications where listed; existence does not establish full-mission acceptance."
+    },
+    {
+      "id": "D-PROMOTION",
+      "deliverable": "Grammars as letters and towers",
+      "obligations": [
+        "PIA-061",
+        "PIA-062",
+        "PIA-063",
+        "PIA-064",
+        "PIA-065",
+        "PIA-066",
+        "PIA-067",
+        "PIA-068",
+        "PIA-069",
+        "PIA-070",
+        "PIA-071",
+        "PIA-072"
+      ],
+      "dependencies": [
+        "D-FORMAL"
+      ],
+      "production_paths": [
+        "polyia/experiments.py",
+        "docs/SCIENTIFIC_FOUNDATIONS.md"
+      ],
+      "guards": [
+        "separate expansion and semantic checks",
+        "declared loss and recurrence scope"
+      ],
+      "evidence_families": [
+        "ACC-PROMOTION"
+      ],
+      "status": "SPECIFIED",
+      "initial_package_contains": "Bootstrap code and specifications where listed; existence does not establish full-mission acceptance."
+    },
+    {
+      "id": "D-QPATH",
+      "deliverable": "Joint typed relation composition",
+      "obligations": [
+        "PIA-073",
+        "PIA-074",
+        "PIA-075",
+        "PIA-076",
+        "PIA-077",
+        "PIA-078",
+        "PIA-079",
+        "PIA-080",
+        "PIA-081",
+        "PIA-082",
+        "PIA-083",
+        "PIA-084"
+      ],
+      "dependencies": [
+        "D-FORMAL"
+      ],
+      "production_paths": [
+        "polyia/experiments.py",
+        "docs/SCIENTIFIC_FOUNDATIONS.md"
+      ],
+      "guards": [
+        "all joint premises",
+        "contexts/roles/witnesses",
+        "finite search limits"
+      ],
+      "evidence_families": [
+        "ACC-QPATH"
+      ],
+      "status": "SPECIFIED",
+      "initial_package_contains": "Bootstrap code and specifications where listed; existence does not establish full-mission acceptance."
+    },
+    {
+      "id": "D-COMPILER",
+      "deliverable": "Native compiler, tool broker and agency SDK",
+      "obligations": [
+        "PIA-085",
+        "PIA-086",
+        "PIA-087",
+        "PIA-088",
+        "PIA-089",
+        "PIA-090",
+        "PIA-091",
+        "PIA-092",
+        "PIA-093",
+        "PIA-094",
+        "PIA-095",
+        "PIA-096"
+      ],
+      "dependencies": [
+        "D-PROMOTION",
+        "D-QPATH"
+      ],
+      "production_paths": [
+        "docs/TOOL_AND_MODEL_CONTRACTS.md",
+        "registry/tool_contracts.json"
+      ],
+      "guards": [
+        "real native language",
+        "no ambient arbitrary execution",
+        "versioned public interfaces"
+      ],
+      "evidence_families": [
+        "ACC-NATIVE",
+        "ACC-TOOLS"
+      ],
+      "status": "SPECIFIED",
+      "initial_package_contains": "Bootstrap code and specifications where listed; existence does not establish full-mission acceptance."
+    },
+    {
+      "id": "D-GENERATORS",
+      "deliverable": "Constructive models and state maps",
+      "obligations": [
+        "PIA-097",
+        "PIA-098",
+        "PIA-099",
+        "PIA-100",
+        "PIA-101",
+        "PIA-102",
+        "PIA-103",
+        "PIA-104",
+        "PIA-105",
+        "PIA-106",
+        "PIA-107",
+        "PIA-108"
+      ],
+      "dependencies": [
+        "D-COMPILER"
+      ],
+      "production_paths": [
+        "docs/SCIENTIFIC_FOUNDATIONS.md",
+        "docs/FORMAL_VOCABULARY.md"
+      ],
+      "guards": [
+        "no LLM core",
+        "actual specialized packages",
+        "bounded search"
+      ],
+      "evidence_families": [
+        "ACC-MODELS"
+      ],
+      "status": "SPECIFIED",
+      "initial_package_contains": "Bootstrap code and specifications where listed; existence does not establish full-mission acceptance."
+    },
+    {
+      "id": "D-SUBJECTS",
+      "deliverable": "Math, CS and scientific subject families",
+      "obligations": [
+        "PIA-109",
+        "PIA-110",
+        "PIA-111",
+        "PIA-112",
+        "PIA-113",
+        "PIA-114",
+        "PIA-115",
+        "PIA-116",
+        "PIA-117",
+        "PIA-118",
+        "PIA-119",
+        "PIA-120"
+      ],
+      "dependencies": [
+        "D-FORMAL",
+        "D-COMPILER"
+      ],
+      "production_paths": [
+        "registry/university.json",
+        "registry/inherited_obligations.json"
+      ],
+      "guards": [
+        "domain-aware methods",
+        "all inherited quantitative acceptance conditions"
+      ],
+      "evidence_families": [
+        "ACC-MATH",
+        "ACC-CHEMISTRY"
+      ],
+      "status": "SPECIFIED",
+      "initial_package_contains": "Bootstrap code and specifications where listed; existence does not establish full-mission acceptance."
+    },
+    {
+      "id": "D-CORPUS",
+      "deliverable": "Corpus and language specialists",
+      "obligations": [
+        "PIA-121",
+        "PIA-122",
+        "PIA-123",
+        "PIA-124",
+        "PIA-125",
+        "PIA-126",
+        "PIA-127",
+        "PIA-128",
+        "PIA-129",
+        "PIA-130",
+        "PIA-131",
+        "PIA-132"
+      ],
+      "dependencies": [
+        "D-COMPILER",
+        "D-CUSTODY"
+      ],
+      "production_paths": [
+        "sources/",
+        "registry/books.json"
+      ],
+      "guards": [
+        "source spans",
+        "attestation",
+        "destination content policies"
+      ],
+      "evidence_families": [
+        "ACC-CORPUS"
+      ],
+      "status": "SPECIFIED",
+      "initial_package_contains": "Bootstrap code and specifications where listed; existence does not establish full-mission acceptance."
+    },
+    {
+      "id": "D-EXPERIMENTS",
+      "deliverable": "Bounded continuous experimental service",
+      "obligations": [
+        "PIA-133",
+        "PIA-134",
+        "PIA-135",
+        "PIA-136",
+        "PIA-137",
+        "PIA-138",
+        "PIA-139",
+        "PIA-140",
+        "PIA-141",
+        "PIA-142",
+        "PIA-143",
+        "PIA-144"
+      ],
+      "dependencies": [
+        "D-SERVICE",
+        "D-COMPILER"
+      ],
+      "production_paths": [
+        "polyia/cli.py",
+        "docs/ACCEPTANCE_SYSTEM.md"
+      ],
+      "guards": [
+        "seal-before-witness",
+        "enforced read grants",
+        "budgets/leases/pause"
+      ],
+      "evidence_families": [
+        "ACC-EXPERIMENT"
+      ],
+      "status": "SPECIFIED",
+      "initial_package_contains": "Bootstrap code and specifications where listed; existence does not establish full-mission acceptance."
+    },
+    {
+      "id": "D-EVOLUTION",
+      "deliverable": "Versioned packages and admitted improvements",
+      "obligations": [
+        "PIA-145",
+        "PIA-146",
+        "PIA-147",
+        "PIA-148",
+        "PIA-149",
+        "PIA-150",
+        "PIA-151",
+        "PIA-152",
+        "PIA-153",
+        "PIA-154",
+        "PIA-155",
+        "PIA-156"
+      ],
+      "dependencies": [
+        "D-EXPERIMENTS"
+      ],
+      "production_paths": [
+        "docs/DIVISION_CHARTERS.md",
+        "registry/work_contracts.json"
+      ],
+      "guards": [
+        "declared baseline",
+        "regression gates",
+        "activation epoch and rollback"
+      ],
+      "evidence_families": [
+        "ACC-EVOLUTION"
+      ],
+      "status": "SPECIFIED",
+      "initial_package_contains": "Bootstrap code and specifications where listed; existence does not establish full-mission acceptance."
+    },
+    {
+      "id": "D-ASTRA",
+      "deliverable": "Source-grounded Astra and project adapters",
+      "obligations": [
+        "PIA-157",
+        "PIA-158",
+        "PIA-159",
+        "PIA-160",
+        "PIA-161",
+        "PIA-162",
+        "PIA-163",
+        "PIA-164",
+        "PIA-165",
+        "PIA-166",
+        "PIA-167",
+        "PIA-168"
+      ],
+      "dependencies": [
+        "D-CUSTODY",
+        "D-COMPILER"
+      ],
+      "production_paths": [
+        "docs/ASTRA_INTEGRATION.md",
+        "registry/repositories.json"
+      ],
+      "guards": [
+        "ATOM guards",
+        "geometry hypotheses",
+        "actual project capabilities"
+      ],
+      "evidence_families": [
+        "ACC-ASTRA",
+        "ACC-ADAPTERS"
+      ],
+      "status": "SPECIFIED",
+      "initial_package_contains": "Bootstrap code and specifications where listed; existence does not establish full-mission acceptance."
+    },
+    {
+      "id": "D-APPLICATION",
+      "deliverable": "Human/machine scientific workbench",
+      "obligations": [
+        "PIA-169",
+        "PIA-170",
+        "PIA-171",
+        "PIA-172",
+        "PIA-173",
+        "PIA-174",
+        "PIA-175",
+        "PIA-176",
+        "PIA-177",
+        "PIA-178",
+        "PIA-179",
+        "PIA-180"
+      ],
+      "dependencies": [
+        "D-GENERATORS",
+        "D-CORPUS",
+        "D-SUBJECTS",
+        "D-QPATH"
+      ],
+      "production_paths": [
+        "web/",
+        "registry/openapi.json"
+      ],
+      "guards": [
+        "real supported intake",
+        "honest unknowns",
+        "accessible source/evidence inspection"
+      ],
+      "evidence_families": [
+        "ACC-INTAKE",
+        "ACC-HTTP",
+        "ACC-NOLLM"
+      ],
+      "status": "SPECIFIED",
+      "initial_package_contains": "Bootstrap code and specifications where listed; existence does not establish full-mission acceptance."
+    },
+    {
+      "id": "D-RELEASE",
+      "deliverable": "Operational finite acceptance and release",
+      "obligations": [
+        "PIA-181",
+        "PIA-182",
+        "PIA-183",
+        "PIA-184",
+        "PIA-185",
+        "PIA-186"
+      ],
+      "dependencies": [
+        "D-EVOLUTION",
+        "D-ASTRA",
+        "D-APPLICATION"
+      ],
+      "production_paths": [
+        "docs/OPERATOR_RUNBOOK.md",
+        "evidence/",
+        "CODEX_START.md"
+      ],
+      "guards": [
+        "all mandatory receipts",
+        "actual target service",
+        "unresolved blockers visible"
+      ],
+      "evidence_families": [
+        "ACC-OPERATIONS",
+        "ACC-RELEASE"
+      ],
+      "status": "SPECIFIED",
+      "initial_package_contains": "Bootstrap code and specifications where listed; existence does not establish full-mission acceptance."
+    },
+    {
+      "id": "D-UNIVERSITY",
+      "deliverable": "Automaton Science University continuation",
+      "obligations": [
+        "PIA-187",
+        "PIA-188",
+        "PIA-189",
+        "PIA-190",
+        "PIA-191",
+        "PIA-192"
+      ],
+      "dependencies": [
+        "D-RELEASE"
+      ],
+      "production_paths": [
+        "docs/AUTOMATON_SCIENCE_UNIVERSITY.md",
+        "docs/DIVISION_CHARTERS.md"
+      ],
+      "guards": [
+        "VII/VIII provisional",
+        "Infinity IX",
+        "bounded inspectable research and publications"
+      ],
+      "evidence_families": [
+        "ACC-UNIVERSITY"
+      ],
+      "status": "SPECIFIED",
+      "initial_package_contains": "Bootstrap code and specifications where listed; existence does not establish full-mission acceptance."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "snad.corpus-intake-audit.v1",
+  "date": "2026-10-18",
+  "command": "python scripts/prepare-corpus.py; exhaustive independent JSON/roundtrip/compact-equivalence assertions",
+  "sourceTextRoundtrips": 6236,
+  "uniqueLoci": 6236,
+  "surahs": 114,
+  "allMorphologyLoci": 6236,
+  "compactLoci": 6236,
+  "deterministicRegeneration": true,
+  "featureIndexBoundsChecked": 72590,
+  "conflictFieldsAbsentFromAggregate": true,
+  "shortEmptyFeatureExample": "quran:20:1",
+  "artifactSha256": {
+    "quran.json": "67dbdb41e338b04ed022c04ecd9ae63f833202ed6b281dc3ca60c23955630361",
+    "quran.morphology.json": "679c3585237ea3dcf9a6e82d4b34d1c8fdb1bb2db9446e192f45d51d4ac2eaaa",
+    "quran.features.json": "611c13996fb6b4e58e6be1ee143429549b1a5e4b99c3dd65f4a837b7a146a523",
+    "quran.provenance.json": "dc162d1db1d97fd682a5cf4bdc8d77ae9e8d028fe421a6192f7c7313d6077772",
+    "quran.morphology.provenance.json": "f51912e54679f70aaaf5ccb4a7dd3915a785b640ec6393fde8931f742e3169e5"
+  },
+  "interpretationsVerified": 0,
+  "audioVerified": 0
+}
